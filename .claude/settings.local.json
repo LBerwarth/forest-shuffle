@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.lookout-spiele.de)",
+      "WebFetch(domain:www.geekyhobbies.com)",
+      "WebFetch(domain:playeraid.net)",
+      "WebFetch(domain:officialgamerules.org)",
+      "WebFetch(domain:en.boardgamearena.com)",
+      "Bash(rm:*)",
+      "Bash(*)",
+      "Bash(tail:*)",
+      "Bash(true:*)",
+      "Bash(cd /c/Users/florent.mouton_merci/Tech/forest-shuffle-app && npm run build 2>&1)",
+      "Bash(cd:*)"
+    ]
+  }
+}

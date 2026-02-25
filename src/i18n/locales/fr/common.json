@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "score": "Score",
+    "history": "Historique",
+    "stats": "Stats"
+  },
+  "category": {
+    "tree": "Arbres",
+    "top": "Haut",
+    "bottom": "Bas",
+    "left": "Gauche",
+    "right": "Droite",
+    "cave": "Grotte"
+  },
+  "home": {
+    "title": "Forest Shuffle",
+    "subtitle": "Application Compagnon",
+    "scoreNewGame": "Nouvelle Partie",
+    "newGame": "Nouvelle Partie",
+    "scoreGame": "Compter les points",
+    "history": "Historique",
+    "pastGames": "Parties pass\u00e9es",
+    "players": "Joueurs",
+    "managePlayers": "G\u00e9rer les joueurs",
+    "leaderboard": "Classement",
+    "rankings": "Classements",
+    "lastGame": "Derni\u00e8re Partie",
+    "playerCount": "{{count}} joueurs",
+    "winner": "Gagnant\u00a0: {{name}}",
+    "pts": "{{count}} pts",
+    "games": "Parties",
+    "settings": "Param\u00e8tres"
+  },
+  "newGame": {
+    "title": "Nouvelle Partie",
+    "selectPlayers": "S\u00e9lectionnez les joueurs (2-5)",
+    "playerName": "Nom du joueur",
+    "add": "Ajouter",
+    "addNewPlayer": "Ajouter un joueur",
+    "alpineEnabled": "Extension Alpine activ\u00e9e",
+    "baseOnly": "Jeu de base uniquement",
+    "changeInSettings": "Modifier dans les param\u00e8tres",
+    "startScoring": "Commencer ({{count}} joueurs)"
+  },
+  "wizard": {
+    "scoreEntry": "Saisie des scores",
+    "fullyOccupiedTrees": "Arbres compl\u00e8tement occup\u00e9s",
+    "fullyOccupiedDesc": "Arbres avec les 4 emplacements remplis (pour le score du Ch\u00eane)",
+    "back": "Retour",
+    "next": "Suivant",
+    "finish": "Terminer"
+  },
+  "result": {
+    "wins": "{{name}} gagne\u00a0!",
+    "points": "{{count}} points",
+    "scoreBreakdown": "D\u00e9tail des scores",
+    "category": "Cat\u00e9gorie",
+    "total": "Total",
+    "saveGame": "Sauvegarder",
+    "newGame": "Nouvelle Partie",
+    "home": "Accueil"
+  },
+  "history": {
+    "title": "Historique des parties",
+    "gameCount": "{{count}} parties",
+    "noGames": "Aucune partie enregistr\u00e9e.",
+    "noGamesHint": "Jouez votre premi\u00e8re partie pour la voir ici\u00a0!",
+    "deleteConfirm": "Supprimer cette partie\u00a0?"
+  },
+  "gameDetail": {
+    "title": "D\u00e9tails de la partie",
+    "playerCount": "{{count}} joueurs",
+    "scoreBreakdown": "D\u00e9tail des scores",
+    "category": "Cat\u00e9gorie",
+    "total": "Total",
+    "notFound": "Partie introuvable."
+  },
+  "players": {
+    "title": "Joueurs",
+    "stats": "{{games}} parties \u2022 {{wins}} victoires",
+    "noPlayers": "Aucun joueur. Ajoutez votre premier joueur ci-dessous\u00a0!",
+    "playerName": "Nom du joueur",
+    "add": "Ajouter",
+    "addPlayer": "Ajouter un joueur",
+    "removeConfirm": "Supprimer {{name}}\u00a0?"
+  },
+  "playerDetail": {
+    "wins": "Victoires ({{rate}}\u00a0%)",
+    "avgScore": "Score moyen",
+    "bestScore": "Meilleur score",
+    "strategyProfile": "Profil strat\u00e9gique",
+    "scoreHistory": "Historique des scores",
+    "gameHistory": "Historique des parties",
+    "noGames": "Aucune partie",
+    "rank": "{{rank}}e sur {{count}}",
+    "notFound": "Joueur introuvable."
+  },
+  "leaderboard": {
+    "title": "Classement",
+    "wins": "Victoires",
+    "winRate": "Taux %",
+    "avg": "Moy.",
+    "best": "Max",
+    "games": "Parties",
+    "noData": "Jouez des parties pour voir le classement\u00a0!",
+    "winsLabel": "vic.",
+    "avgLabel": "moy.",
+    "bestLabel": "max",
+    "records": "Records",
+    "mostWins": "Plus de victoires",
+    "highestScore": "Meilleur score",
+    "highestAverage": "Meilleure moyenne"
+  },
+  "settings": {
+    "title": "Param\u00e8tres",
+    "expansions": "Extensions",
+    "alpineExpansion": "Extension Alpine",
+    "alpineDesc": "Inclure les cartes Alpine dans l\u2019assistant de score",
+    "language": "Langue",
+    "languageDesc": "Choisissez votre langue pr\u00e9f\u00e9r\u00e9e",
+    "data": "Donn\u00e9es",
+    "exportData": "Exporter les donn\u00e9es",
+    "exportDesc": "T\u00e9l\u00e9charger joueurs et parties en JSON",
+    "export": "Exporter",
+    "clearData": "Supprimer toutes les donn\u00e9es",
+    "clearDesc": "Suppression d\u00e9finitive de tout",
+    "clear": "Supprimer",
+    "clearConfirm1": "Cela supprimera TOUS les joueurs et l\u2019historique des parties. \u00cates-vous s\u00fbr\u00a0?",
+    "clearConfirm2": "Cette action est irr\u00e9versible. \u00cates-vous vraiment s\u00fbr\u00a0?",
+    "appName": "Forest Shuffle Companion",
+    "version": "v0.1.0",
+    "appDesc": "Calculateur de scores et suivi de parties pour le jeu Forest Shuffle."
+  },
+  "scoring": {
+    "alpine": "Alpine",
+    "pts": "pts",
+    "total": "Total"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "birch": {
+    "name": "Birch",
+    "scoring": "1 point per Birch"
+  },
+  "beech": {
+    "name": "Beech",
+    "scoring": "5 points if you have 4+ Beeches"
+  },
+  "spruce": {
+    "name": "Spruce",
+    "scoring": "2 points per tree species in your forest"
+  },
+  "douglas_fir": {
+    "name": "Douglas Fir",
+    "scoring": "5 points per Douglas Fir"
+  },
+  "oak": {
+    "name": "Oak",
+    "scoring": "10 points per fully occupied Oak"
+  },
+  "horse_chestnut": {
+    "name": "Horse Chestnut",
+    "scoring": "Set scoring: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Linden",
+    "scoring": "3 points each if you have the most Lindens (or tied)"
+  },
+  "sycamore": {
+    "name": "Sycamore",
+    "scoring": "1 point per card in your forest"
+  },
+  "silver_fir": {
+    "name": "Silver Fir",
+    "scoring": "2 points per card attached to Silver Firs",
+    "context": "Cards attached to Silver Firs"
+  },
+  "european_larch": {
+    "name": "European Larch",
+    "scoring": "2 points per Alpine card"
+  },
+  "stone_pine": {
+    "name": "Stone Pine",
+    "scoring": "1 point per card in the top and bottom slots of Stone Pines",
+    "context": "Cards attached to Stone Pines"
+  },
+  "bullfinch": {
+    "name": "Bullfinch",
+    "scoring": "2 points per insect in your forest"
+  },
+  "chaffinch": {
+    "name": "Chaffinch",
+    "scoring": "5 points if on a Beech",
+    "context": "How many Chaffinches are on a Beech?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Great Spotted Woodpecker",
+    "scoring": "10 points if you have the most trees (or tied)"
+  },
+  "goshawk": {
+    "name": "Goshawk",
+    "scoring": "3 points per bird (including itself)"
+  },
+  "jay": {
+    "name": "Jay",
+    "scoring": "1 point per tree species"
+  },
+  "great_tit": {
+    "name": "Great Tit",
+    "scoring": "2 points per mushroom"
+  },
+  "robin": {
+    "name": "Robin",
+    "scoring": "2 points per plant"
+  },
+  "owl": {
+    "name": "Owl",
+    "scoring": "3 points per bat"
+  },
+  "tree_frog_top": {
+    "name": "Tree Frog (top)",
+    "scoring": "1 point per tree species"
+  },
+  "peacock_butterfly": {
+    "name": "Peacock Butterfly",
+    "scoring": "Butterflies set: 0/3/6/12/20/30/42/56"
+  },
+  "purple_emperor": {
+    "name": "Purple Emperor",
+    "scoring": "Butterflies set: 0/3/6/12/20/30/42/56"
+  },
+  "silver_washed_fritillary": {
+    "name": "Silver-washed Fritillary",
+    "scoring": "Butterflies set: 0/3/6/12/20/30/42/56"
+  },
+  "swallowtail": {
+    "name": "Swallowtail",
+    "scoring": "Butterflies set: 0/3/6/12/20/30/42/56"
+  },
+  "camberwell_beauty": {
+    "name": "Camberwell Beauty",
+    "scoring": "Butterflies set: 0/3/6/12/20/30/42/56"
+  },
+  "red_squirrel": {
+    "name": "Red Squirrel",
+    "scoring": "5 points if on an Oak",
+    "context": "How many Red Squirrels are on an Oak?"
+  },
+  "golden_eagle": {
+    "name": "Golden Eagle",
+    "scoring": "3 points per alpine card (including itself)"
+  },
+  "bearded_vulture": {
+    "name": "Bearded Vulture",
+    "scoring": "3 points per pawed animal"
+  },
+  "common_raven": {
+    "name": "Common Raven",
+    "scoring": "2 points per Common Raven"
+  },
+  "phoebus_apollo": {
+    "name": "Phoebus Apollo",
+    "scoring": "Butterflies set: 0/3/6/12/20/30/42/56"
+  },
+  "fire_salamander": {
+    "name": "Fire Salamander",
+    "scoring": "1 point per amphibian (including itself)"
+  },
+  "tree_frog_bottom": {
+    "name": "Tree Frog (bottom)",
+    "scoring": "1 point per tree species"
+  },
+  "stag_beetle": {
+    "name": "Stag Beetle",
+    "scoring": "1 point per tree in your forest"
+  },
+  "wood_ant": {
+    "name": "Wood Ant",
+    "scoring": "Set scoring: 2/5 (pairs)"
+  },
+  "penny_bun": {
+    "name": "Penny Bun",
+    "scoring": "Set scoring: 2/5 (pairs)"
+  },
+  "chanterelle": {
+    "name": "Chanterelle",
+    "scoring": "Set scoring: 2/5 (pairs)"
+  },
+  "fly_agaric": {
+    "name": "Fly Agaric",
+    "scoring": "Set scoring: 2/5 (pairs)"
+  },
+  "parasol_mushroom": {
+    "name": "Parasol Mushroom",
+    "scoring": "Set scoring: 2/5 (pairs)"
+  },
+  "moss": {
+    "name": "Moss",
+    "scoring": "10 points if you have 10+ trees"
+  },
+  "fern": {
+    "name": "Fern",
+    "scoring": "1 point per plant and mushroom in your forest"
+  },
+  "wood_strawberry": {
+    "name": "Wood Strawberry",
+    "scoring": "Set scoring: 3/6/10/15/21/28"
+  },
+  "hedgehog": {
+    "name": "Hedgehog",
+    "scoring": "3 points per hedgehog pair (rounded down)"
+  },
+  "european_hare_bottom": {
+    "name": "European Hare (bottom)",
+    "scoring": "0 points (cost reduction card)"
+  },
+  "alpine_newt": {
+    "name": "Alpine Newt",
+    "scoring": "2 points per amphibian (including itself)"
+  },
+  "blueberry": {
+    "name": "Blueberry",
+    "scoring": "1 point per bird"
+  },
+  "gentian": {
+    "name": "Gentian",
+    "scoring": "2 points per butterfly"
+  },
+  "edelweiss": {
+    "name": "Edelweiss",
+    "scoring": "10 points if 3+ alpine cards"
+  },
+  "barbastelle": {
+    "name": "Barbastelle",
+    "scoring": "Bats set: 0/5/10/15/20/25"
+  },
+  "bechsteins_bat": {
+    "name": "Bechstein's Bat",
+    "scoring": "Bats set: 0/5/10/15/20/25"
+  },
+  "brown_long_eared_bat": {
+    "name": "Brown Long-eared Bat",
+    "scoring": "Bats set: 0/5/10/15/20/25"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Greater Horseshoe Bat",
+    "scoring": "Bats set: 0/5/10/15/20/25"
+  },
+  "roe_deer": {
+    "name": "Roe Deer",
+    "scoring": "Deer set: 3/8/15 (pairs/triples)"
+  },
+  "red_deer": {
+    "name": "Red Deer",
+    "scoring": "Deer set: 3/8/15 (pairs/triples)"
+  },
+  "lynx": {
+    "name": "Lynx",
+    "scoring": "5 points per deer"
+  },
+  "wolf": {
+    "name": "Wolf",
+    "scoring": "5 points per pawed animal (excluding wolves)"
+  },
+  "wild_boar": {
+    "name": "Wild Boar",
+    "scoring": "0 points (cost reduction card)"
+  },
+  "badger": {
+    "name": "Badger",
+    "scoring": "3 points per mushroom pair"
+  },
+  "european_hare_left": {
+    "name": "European Hare (left)",
+    "scoring": "0 points (cost reduction card)"
+  },
+  "savis_pipistrelle": {
+    "name": "Savi's Pipistrelle",
+    "scoring": "Bats set: 0/5/10/15/20/25"
+  },
+  "chamois": {
+    "name": "Chamois",
+    "scoring": "Deer set: 3/8/15 (pairs/triples)"
+  },
+  "steinbock": {
+    "name": "Steinbock",
+    "scoring": "Deer set: 3/8/15 (pairs/triples)"
+  },
+  "brown_bear": {
+    "name": "Brown Bear",
+    "scoring": "2 points per bee and 2 points per fish"
+  },
+  "fox": {
+    "name": "Fox",
+    "scoring": "0 points (cost reduction card)"
+  },
+  "red_squirrel_right": {
+    "name": "Red Squirrel (right)",
+    "scoring": "5 points if on an Oak",
+    "context": "How many are on an Oak?"
+  },
+  "violet_carpenter_bee": {
+    "name": "Violet Carpenter Bee",
+    "scoring": "1 point per plant and mushroom"
+  },
+  "pond_turtle": {
+    "name": "Pond Turtle",
+    "scoring": "5 points per amphibian pair"
+  },
+  "tree_frog_right": {
+    "name": "Tree Frog (right)",
+    "scoring": "1 point per tree species"
+  },
+  "wild_strawberry_right": {
+    "name": "Wood Anemone",
+    "scoring": "1 point per plant and mushroom"
+  },
+  "deer_fern": {
+    "name": "Deer Fern",
+    "scoring": "1 point per deer"
+  },
+  "alpine_marmot": {
+    "name": "Alpine Marmot",
+    "scoring": "Marmots set: 0/5/10/20"
+  },
+  "mountain_hare": {
+    "name": "Mountain Hare",
+    "scoring": "0 points (cost reduction card)"
+  },
+  "capercaillie": {
+    "name": "Capercaillie",
+    "scoring": "1 point per plant"
+  },
+  "cave": {
+    "name": "Cave",
+    "scoring": "1 point per card in the cave"
+  }
+}

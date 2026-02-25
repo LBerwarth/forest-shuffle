@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Home",
+    "score": "Score",
+    "history": "History",
+    "stats": "Stats"
+  },
+  "category": {
+    "tree": "Trees",
+    "top": "Top",
+    "bottom": "Bottom",
+    "left": "Left",
+    "right": "Right",
+    "cave": "Cave"
+  },
+  "home": {
+    "title": "Forest Shuffle",
+    "subtitle": "Companion App",
+    "scoreNewGame": "Score a New Game",
+    "newGame": "New Game",
+    "scoreGame": "Score a game",
+    "history": "History",
+    "pastGames": "Past games",
+    "players": "Players",
+    "managePlayers": "Manage players",
+    "leaderboard": "Leaderboard",
+    "rankings": "Rankings",
+    "lastGame": "Last Game",
+    "playerCount": "{{count}} players",
+    "winner": "Winner: {{name}}",
+    "pts": "{{count}} pts",
+    "games": "Games",
+    "settings": "Settings"
+  },
+  "newGame": {
+    "title": "New Game",
+    "selectPlayers": "Select players (2-5)",
+    "playerName": "Player name",
+    "add": "Add",
+    "addNewPlayer": "Add New Player",
+    "alpineEnabled": "Alpine expansion enabled",
+    "baseOnly": "Base game only",
+    "changeInSettings": "Change in settings",
+    "startScoring": "Start Scoring ({{count}} players)"
+  },
+  "wizard": {
+    "scoreEntry": "Score Entry",
+    "fullyOccupiedTrees": "Fully Occupied Trees",
+    "fullyOccupiedDesc": "Trees with all 4 slots filled (for Oak scoring)",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish"
+  },
+  "result": {
+    "wins": "{{name}} wins!",
+    "points": "{{count}} points",
+    "scoreBreakdown": "Score Breakdown",
+    "category": "Category",
+    "total": "Total",
+    "saveGame": "Save Game",
+    "newGame": "New Game",
+    "home": "Home"
+  },
+  "history": {
+    "title": "Game History",
+    "gameCount": "{{count}} games",
+    "noGames": "No games recorded yet.",
+    "noGamesHint": "Play your first game to see it here!",
+    "deleteConfirm": "Delete this game?"
+  },
+  "gameDetail": {
+    "title": "Game Details",
+    "playerCount": "{{count}} players",
+    "scoreBreakdown": "Score Breakdown",
+    "category": "Category",
+    "total": "Total",
+    "notFound": "Game not found."
+  },
+  "players": {
+    "title": "Players",
+    "stats": "{{games}} games \u2022 {{wins}} wins",
+    "noPlayers": "No players yet. Add your first player below!",
+    "playerName": "Player name",
+    "add": "Add",
+    "addPlayer": "Add Player",
+    "removeConfirm": "Remove {{name}}?"
+  },
+  "playerDetail": {
+    "wins": "Wins ({{rate}}%)",
+    "avgScore": "Avg Score",
+    "bestScore": "Best Score",
+    "strategyProfile": "Strategy Profile",
+    "scoreHistory": "Score History",
+    "gameHistory": "Game History",
+    "noGames": "No games yet",
+    "rank": "Rank #{{rank}} of {{count}}",
+    "notFound": "Player not found."
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "wins": "Wins",
+    "winRate": "Win %",
+    "avg": "Avg",
+    "best": "Best",
+    "games": "Games",
+    "noData": "Play some games to see the leaderboard!",
+    "winsLabel": "wins",
+    "avgLabel": "avg",
+    "bestLabel": "best",
+    "records": "Records",
+    "mostWins": "Most Wins",
+    "highestScore": "Highest Score",
+    "highestAverage": "Highest Average"
+  },
+  "settings": {
+    "title": "Settings",
+    "expansions": "Expansions",
+    "alpineExpansion": "Alpine Expansion",
+    "alpineDesc": "Include Alpine cards in scoring wizard",
+    "language": "Language",
+    "languageDesc": "Choose your preferred language",
+    "data": "Data",
+    "exportData": "Export Data",
+    "exportDesc": "Download all players & games as JSON",
+    "export": "Export",
+    "clearData": "Clear All Data",
+    "clearDesc": "Permanently delete everything",
+    "clear": "Clear",
+    "clearConfirm1": "This will delete ALL players and game history. Are you sure?",
+    "clearConfirm2": "This cannot be undone. Are you really sure?",
+    "appName": "Forest Shuffle Companion",
+    "version": "v0.1.0",
+    "appDesc": "Score calculator & game tracker for the Forest Shuffle board game."
+  },
+  "scoring": {
+    "alpine": "Alpine",
+    "pts": "pts",
+    "total": "Total"
+  }
+}

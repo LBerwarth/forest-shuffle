@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /* Forest Shuffle color palette */
+  --color-forest-50: #f0f5f0;
+  --color-forest-100: #d4e6d4;
+  --color-forest-200: #b8d7b8;
+  --color-forest-300: #8cc08c;
+  --color-forest-400: #6aaa6a;
+  --color-forest-500: #4a7c59;
+  --color-forest-600: #3d6b4a;
+  --color-forest-700: #2d4a2e;
+  --color-forest-800: #1e3320;
+  --color-forest-900: #0f1a10;
+
+  --color-bark-50: #faf6f0;
+  --color-bark-100: #f0e6d4;
+  --color-bark-200: #e0d0b0;
+  --color-bark-300: #c4a77d;
+  --color-bark-400: #a88a5a;
+  --color-bark-500: #8c7040;
+  --color-bark-600: #6e5830;
+  --color-bark-700: #5c4a2a;
+  --color-bark-800: #3d3020;
+  --color-bark-900: #1e1810;
+
+  --color-cream: #f0f5f0;
+  --color-cream-warm: #faf6f0;
+
+  /* Semantic colors */
+  --color-primary: #4a7c59;
+  --color-primary-dark: #2d4a2e;
+  --color-primary-light: #d4e6d4;
+
+  /* Typography */
+  --font-heading: "Lora", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(45, 74, 46, 0.1), 0 1px 2px rgba(45, 74, 46, 0.06);
+  --shadow-card-hover: 0 4px 6px rgba(45, 74, 46, 0.1), 0 2px 4px rgba(45, 74, 46, 0.06);
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-forest-800);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Utility for safe area insets (mobile PWA) */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
