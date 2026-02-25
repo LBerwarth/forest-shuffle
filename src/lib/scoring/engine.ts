@@ -267,7 +267,7 @@ export function buildForestContext(
   }
 
   const slotCounts: Record<CardCategory, number> = {
-    tree: 0, top: 0, bottom: 0, left: 0, right: 0, cave: 0,
+    tree: 0, top: 0, bottom: 0, lateral: 0, cave: 0,
   }
 
   const treeSpeciesPresent = new Set<string>()
@@ -341,7 +341,7 @@ export function computeScoreBreakdown(
 
   const entries: ScoreEntry[] = []
   const categoryTotals: Record<CardCategory, number> = {
-    tree: 0, top: 0, bottom: 0, left: 0, right: 0, cave: 0,
+    tree: 0, top: 0, bottom: 0, lateral: 0, cave: 0,
   }
 
   for (const cardKey of activeCards) {
@@ -372,20 +372,20 @@ export function computeScoreBreakdown(
 
   const batPoints = scoreBatSet(context)
   if (batPoints > 0) {
-    entries.push({ cardKey: '_bat_set', cardCategory: 'left', count: 1, points: batPoints })
-    categoryTotals.left += batPoints
+    entries.push({ cardKey: '_bat_set', cardCategory: 'lateral', count: 1, points: batPoints })
+    categoryTotals.lateral += batPoints
   }
 
   const deerPoints = scoreDeerSet(context)
   if (deerPoints > 0) {
-    entries.push({ cardKey: '_deer_set', cardCategory: 'left', count: 1, points: deerPoints })
-    categoryTotals.left += deerPoints
+    entries.push({ cardKey: '_deer_set', cardCategory: 'lateral', count: 1, points: deerPoints })
+    categoryTotals.lateral += deerPoints
   }
 
   const marmotPoints = scoreMarmotSet(context)
   if (marmotPoints > 0) {
-    entries.push({ cardKey: '_marmot_set', cardCategory: 'right', count: 1, points: marmotPoints })
-    categoryTotals.right += marmotPoints
+    entries.push({ cardKey: '_marmot_set', cardCategory: 'lateral', count: 1, points: marmotPoints })
+    categoryTotals.lateral += marmotPoints
   }
 
   // Comparison cards (cross-player)

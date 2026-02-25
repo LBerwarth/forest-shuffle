@@ -16,8 +16,7 @@ const STEP_CATEGORIES: CardCategory[][] = [
   ['tree'],
   ['top'],
   ['bottom'],
-  ['left'],
-  ['right'],
+  ['lateral'],
   ['cave'],
 ]
 
@@ -42,12 +41,17 @@ export function ScoreWizardPage() {
 
   const currentPlayer = players[currentPlayerIndex]
 
+  const tc = useTranslation('cards').t
+
   const stepCards = useMemo(() => {
     if (!STEP_CATEGORIES[currentStep]) return []
-    return STEP_CATEGORIES[currentStep]!.flatMap(
+    const cards = STEP_CATEGORIES[currentStep]!.flatMap(
       (cat) => cardsByCategory[cat] || [],
     )
-  }, [currentStep, cardsByCategory])
+    return cards.sort((a, b) =>
+      tc(`${a.key}.name`).localeCompare(tc(`${b.key}.name`)),
+    )
+  }, [currentStep, cardsByCategory, tc])
 
   const getCardPoints = useCallback(
     (cardKey: string) => {

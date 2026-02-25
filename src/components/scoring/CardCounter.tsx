@@ -1,6 +1,7 @@
 import { Minus, Plus } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { CARD_ICONS } from '@/data/cardIcons'
 import type { CardDefinition } from '@/types/card'
 
 interface CardCounterProps {
@@ -28,6 +29,9 @@ export function CardCounter({
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
+            {CARD_ICONS[card.key] && (
+              <span className="shrink-0 text-base">{CARD_ICONS[card.key]}</span>
+            )}
             <span className="font-medium text-forest-800 text-sm truncate">
               {tc(`${card.key}.name`)}
             </span>

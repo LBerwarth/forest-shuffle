@@ -1,6 +1,6 @@
 export type Expansion = 'base' | 'alpine'
 
-export type CardCategory = 'tree' | 'top' | 'bottom' | 'left' | 'right' | 'cave'
+export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'cave'
 
 export type CardTag =
   | 'bird'

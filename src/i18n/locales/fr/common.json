@@ -9,8 +9,7 @@
     "tree": "Arbres",
     "top": "Haut",
     "bottom": "Bas",
-    "left": "Gauche",
-    "right": "Droite",
+    "lateral": "Latéral",
     "cave": "Grotte"
   },
   "home": {

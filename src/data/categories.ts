@@ -4,8 +4,7 @@ export const CATEGORY_ICONS: Record<CardCategory, string> = {
   tree: '🌲',
   top: '🐦',
   bottom: '🌿',
-  left: '🦇',
-  right: '🦊',
+  lateral: '🦌',
   cave: '🕳️',
 }
 
@@ -13,7 +12,6 @@ export const CATEGORY_ORDER: CardCategory[] = [
   'tree',
   'top',
   'bottom',
-  'left',
-  'right',
+  'lateral',
   'cave',
 ]
