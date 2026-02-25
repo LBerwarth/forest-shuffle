@@ -169,11 +169,11 @@
   },
   "hedgehog": {
     "name": "Hedgehog",
-    "scoring": "3 points per hedgehog pair (rounded down)"
+    "scoring": "2 points per butterfly"
   },
   "european_hare_bottom": {
     "name": "European Hare (bottom)",
-    "scoring": "0 points (cost reduction card)"
+    "scoring": "Points equal to total Hare count"
   },
   "alpine_newt": {
     "name": "Alpine Newt",
@@ -217,7 +217,7 @@
   },
   "lynx": {
     "name": "Lynx",
-    "scoring": "5 points per deer"
+    "scoring": "10 points if at least 1 Roe Deer"
   },
   "wolf": {
     "name": "Wolf",
@@ -225,7 +225,7 @@
   },
   "wild_boar": {
     "name": "Wild Boar",
-    "scoring": "0 points (cost reduction card)"
+    "scoring": "10 points if at least 1 Squeaker in your forest"
   },
   "badger": {
     "name": "Badger",
@@ -233,7 +233,7 @@
   },
   "european_hare_left": {
     "name": "European Hare (left)",
-    "scoring": "0 points (cost reduction card)"
+    "scoring": "Points equal to total Hare count"
   },
   "savis_pipistrelle": {
     "name": "Savi's Pipistrelle",
@@ -253,7 +253,7 @@
   },
   "fox": {
     "name": "Fox",
-    "scoring": "0 points (cost reduction card)"
+    "scoring": "2 points per Hare in your forest"
   },
   "red_squirrel_right": {
     "name": "Red Squirrel (right)",
@@ -286,11 +286,15 @@
   },
   "mountain_hare": {
     "name": "Mountain Hare",
-    "scoring": "0 points (cost reduction card)"
+    "scoring": "Points equal to total Hare count (counts as Hare)"
   },
   "capercaillie": {
     "name": "Capercaillie",
     "scoring": "1 point per plant"
+  },
+  "squeaker": {
+    "name": "Squeaker",
+    "scoring": "1 point per Squeaker"
   },
   "cave": {
     "name": "Cave",

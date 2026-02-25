@@ -42,6 +42,10 @@ function countCard(ctx: ForestContext, key: string): number {
   return ctx.cardCounts[key] || 0
 }
 
+function countHares(ctx: ForestContext): number {
+  return countCard(ctx, 'european_hare_bottom') + countCard(ctx, 'european_hare_left') + countCard(ctx, 'mountain_hare')
+}
+
 // ============================================================
 // INDIVIDUAL CARD SCORING FUNCTIONS
 // ============================================================
@@ -115,8 +119,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   moss: (count, ctx) => ctx.totalTrees >= 10 ? count * 10 : 0,
   fern: (count, ctx) => count * (countTag(ctx, 'plant') + countTag(ctx, 'mushroom')),
   wood_strawberry: (count) => lookupSet(STRAWBERRY_SET, count),
-  hedgehog: (count) => Math.floor(count / 2) * 3,
-  european_hare_bottom: () => 0,
+  hedgehog: (count, ctx) => count * (countTag(ctx, 'butterfly') * 2),
+  european_hare_bottom: (count, ctx) => count * countHares(ctx),
 
   // Alpine bottom
   alpine_newt: (count, ctx) => count * (countTag(ctx, 'amphibian') * 2),
@@ -138,21 +142,22 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   chamois: () => 0,
   steinbock: () => 0,
 
-  lynx: (count, ctx) => count * (countTag(ctx, 'deer') * 5),
+  lynx: (count, ctx) => countCard(ctx, 'roe_deer') >= 1 ? count * 10 : 0,
   wolf: (count, ctx) => {
     const pawedExcludingWolves = countTag(ctx, 'pawed') - countCard(ctx, 'wolf')
     return count * (pawedExcludingWolves * 5)
   },
-  wild_boar: () => 0,
+  wild_boar: (count, ctx) => countCard(ctx, 'squeaker') >= 1 ? count * 10 : 0,
   badger: (count, ctx) => count * (Math.floor(countTag(ctx, 'mushroom') / 2) * 3),
-  european_hare_left: () => 0,
+  european_hare_left: (count, ctx) => count * countHares(ctx),
+  squeaker: (count) => count * 1,
 
   // --- RIGHT SLOT ---
   brown_bear: (count, ctx) => {
     // 2 per bee (insect) + 2 per fish (amphibian) - simplified to per insect + amphibian
     return count * ((countTag(ctx, 'insect') + countTag(ctx, 'amphibian')) * 2)
   },
-  fox: () => 0,
+  fox: (count, ctx) => count * (countHares(ctx) * 2),
   red_squirrel_right: (_count, _ctx, metadata) => {
     return (metadata?.contextValue ?? 0) * 5
   },
@@ -162,7 +167,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   wild_strawberry_right: (count, ctx) => count * (countTag(ctx, 'plant') + countTag(ctx, 'mushroom')),
   deer_fern: (count, ctx) => count * countTag(ctx, 'deer'),
   alpine_marmot: () => 0, // scored via marmot set
-  mountain_hare: () => 0,
+  mountain_hare: (count, ctx) => count * countHares(ctx),
   capercaillie: (count, ctx) => count * countTag(ctx, 'plant'),
 
   // --- CAVE ---

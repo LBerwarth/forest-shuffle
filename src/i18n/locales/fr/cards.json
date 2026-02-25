@@ -169,11 +169,11 @@
   },
   "hedgehog": {
     "name": "H\u00e9risson",
-    "scoring": "3 points par paire de h\u00e9rissons (arrondi inf\u00e9rieur)"
+    "scoring": "2 points par papillon"
   },
   "european_hare_bottom": {
     "name": "Li\u00e8vre d\u2019Europe (bas)",
-    "scoring": "0 point (carte de r\u00e9duction de co\u00fbt)"
+    "scoring": "Points \u00e9gaux au nombre total de Li\u00e8vres"
   },
   "alpine_newt": {
     "name": "Triton alpin",
@@ -217,7 +217,7 @@
   },
   "lynx": {
     "name": "Lynx",
-    "scoring": "5 points par cervid\u00e9"
+    "scoring": "10 points si au moins 1 Chevreuil"
   },
   "wolf": {
     "name": "Loup",
@@ -225,7 +225,7 @@
   },
   "wild_boar": {
     "name": "Sanglier",
-    "scoring": "0 point (carte de r\u00e9duction de co\u00fbt)"
+    "scoring": "10 points si au moins 1 Muscardin dans votre for\u00eat"
   },
   "badger": {
     "name": "Blaireau",
@@ -233,7 +233,7 @@
   },
   "european_hare_left": {
     "name": "Li\u00e8vre d\u2019Europe (gauche)",
-    "scoring": "0 point (carte de r\u00e9duction de co\u00fbt)"
+    "scoring": "Points \u00e9gaux au nombre total de Li\u00e8vres"
   },
   "savis_pipistrelle": {
     "name": "Vespr\u00e8re de Savi",
@@ -253,7 +253,7 @@
   },
   "fox": {
     "name": "Renard",
-    "scoring": "0 point (carte de r\u00e9duction de co\u00fbt)"
+    "scoring": "2 points par Li\u00e8vre dans votre for\u00eat"
   },
   "red_squirrel_right": {
     "name": "\u00c9cureuil roux (droite)",
@@ -286,11 +286,15 @@
   },
   "mountain_hare": {
     "name": "Li\u00e8vre variable",
-    "scoring": "0 point (carte de r\u00e9duction de co\u00fbt)"
+    "scoring": "Points \u00e9gaux au nombre total de Li\u00e8vres (compte comme Li\u00e8vre)"
   },
   "capercaillie": {
     "name": "Grand t\u00e9tras",
     "scoring": "1 point par plante"
+  },
+  "squeaker": {
+    "name": "Muscardin",
+    "scoring": "1 point par Muscardin"
   },
   "cave": {
     "name": "Grotte",

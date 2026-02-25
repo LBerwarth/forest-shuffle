@@ -317,7 +317,7 @@ export const CARDS: CardDefinition[] = [
     category: 'bottom',
     tags: ['pawed'],
     expansion: 'base',
-    scoringType: 'fixed',
+    scoringType: 'per_tag',
   },
   // Alpine bottom cards
   {
@@ -399,7 +399,7 @@ export const CARDS: CardDefinition[] = [
     category: 'left',
     tags: ['pawed'],
     expansion: 'base',
-    scoringType: 'per_tag',
+    scoringType: 'threshold',
   },
   {
     key: 'wolf',
@@ -413,7 +413,7 @@ export const CARDS: CardDefinition[] = [
     category: 'left',
     tags: ['pawed'],
     expansion: 'base',
-    scoringType: 'fixed',
+    scoringType: 'threshold',
   },
   {
     key: 'badger',
@@ -424,6 +424,13 @@ export const CARDS: CardDefinition[] = [
   },
   {
     key: 'european_hare_left',
+    category: 'left',
+    tags: ['pawed'],
+    expansion: 'base',
+    scoringType: 'per_tag',
+  },
+  {
+    key: 'squeaker',
     category: 'left',
     tags: ['pawed'],
     expansion: 'base',
@@ -467,7 +474,7 @@ export const CARDS: CardDefinition[] = [
     category: 'right',
     tags: ['pawed'],
     expansion: 'base',
-    scoringType: 'fixed',
+    scoringType: 'per_tag',
   },
   {
     key: 'red_squirrel_right',
@@ -525,7 +532,7 @@ export const CARDS: CardDefinition[] = [
     category: 'right',
     tags: ['pawed', 'alpine'],
     expansion: 'alpine',
-    scoringType: 'fixed',
+    scoringType: 'per_tag',
   },
   {
     key: 'capercaillie',
