@@ -1,3 +1,4 @@
+import { useState, useRef } from 'react'
 import { Minus, Plus } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
@@ -11,6 +12,80 @@ interface CardCounterProps {
   onCountChange: (count: number) => void
   contextValue?: number
   onContextChange?: (value: number) => void
+}
+
+function TappableNumber({
+  value,
+  onChange,
+  min = 0,
+  max,
+  className,
+}: {
+  value: number
+  onChange: (v: number) => void
+  min?: number
+  max?: number
+  className?: string
+}) {
+  const [editing, setEditing] = useState(false)
+  const [draft, setDraft] = useState('')
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  function startEditing() {
+    setDraft(value === 0 ? '' : String(value))
+    setEditing(true)
+    requestAnimationFrame(() => inputRef.current?.select())
+  }
+
+  function commit() {
+    setEditing(false)
+    const parsed = parseInt(draft, 10)
+    if (isNaN(parsed) || parsed < min) {
+      onChange(min)
+    } else if (max !== undefined && parsed > max) {
+      onChange(max)
+    } else {
+      onChange(parsed)
+    }
+  }
+
+  if (editing) {
+    return (
+      <input
+        ref={inputRef}
+        type="text"
+        inputMode="numeric"
+        pattern="[0-9]*"
+        value={draft}
+        onChange={(e) => setDraft(e.target.value.replace(/[^0-9]/g, ''))}
+        onBlur={commit}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault()
+            commit()
+          }
+        }}
+        autoFocus
+        className={cn(
+          'w-10 text-center font-semibold tabular-nums bg-forest-100 rounded-md border border-forest-300 outline-none focus:border-forest-500',
+          className,
+        )}
+      />
+    )
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={startEditing}
+      className={cn(
+        'w-10 text-center font-semibold tabular-nums rounded-md cursor-text hover:bg-forest-100 transition-colors',
+        className,
+      )}
+    >
+      {value}
+    </button>
+  )
 }
 
 export function CardCounter({
@@ -59,9 +134,11 @@ export function CardCounter({
             <Minus className="h-4 w-4" />
           </button>
 
-          <span className="w-8 text-center text-lg font-semibold text-forest-800 tabular-nums">
-            {count}
-          </span>
+          <TappableNumber
+            value={count}
+            onChange={onCountChange}
+            className="text-lg text-forest-800"
+          />
 
           <button
             type="button"
@@ -100,9 +177,12 @@ export function CardCounter({
             >
               <Minus className="h-3 w-3" />
             </button>
-            <span className="w-6 text-center text-sm font-semibold tabular-nums">
-              {contextValue ?? 0}
-            </span>
+            <TappableNumber
+              value={contextValue ?? 0}
+              onChange={onContextChange}
+              max={card.contextCappedByCount ? count : undefined}
+              className="text-sm text-bark-800"
+            />
             <button
               type="button"
               onClick={() => onContextChange((contextValue ?? 0) + 1)}
