@@ -10,12 +10,14 @@ import { cn } from '@/lib/utils'
 const LANGUAGES = [
   { code: 'en' as const, label: 'English' },
   { code: 'fr' as const, label: 'Français' },
+  { code: 'de' as const, label: 'Deutsch' },
+  { code: 'es' as const, label: 'Español' },
 ]
 
 export function SettingsPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const { includeAlpine, toggleAlpine, language, setLanguage } = useSettingsStore()
+  const { includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, language, setLanguage } = useSettingsStore()
   const games = useGameStore((s) => s.games)
   const players = useGameStore((s) => s.players)
 
@@ -48,7 +50,7 @@ export function SettingsPage() {
         <h1 className="font-heading text-xl font-bold text-forest-800">{t('settings.title')}</h1>
       </div>
 
-      {/* Expansion toggle */}
+      {/* Expansion toggles */}
       <Card className="mb-4">
         <CardHeader>
           <div className="flex items-center gap-2">
@@ -56,7 +58,7 @@ export function SettingsPage() {
             <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.expansions')}</h2>
           </div>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-3">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-forest-700">{t('settings.alpineExpansion')}</p>
@@ -72,6 +74,25 @@ export function SettingsPage() {
               <span
                 className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
                   includeAlpine ? 'translate-x-6' : 'translate-x-1'
+                }`}
+              />
+            </button>
+          </div>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm font-medium text-forest-700">{t('settings.woodlandExpansion')}</p>
+              <p className="text-xs text-forest-400">{t('settings.woodlandDesc')}</p>
+            </div>
+            <button
+              type="button"
+              onClick={toggleWoodland}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                includeWoodland ? 'bg-forest-500' : 'bg-forest-200'
+              }`}
+            >
+              <span
+                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  includeWoodland ? 'translate-x-6' : 'translate-x-1'
                 }`}
               />
             </button>

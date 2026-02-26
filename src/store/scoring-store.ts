@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import type { CardMetadata, ScoreBreakdown } from '@/types/scoring'
+import type { Expansion } from '@/types/card'
 import { computeScoreBreakdown } from '@/lib/scoring'
 import { getCards } from '@/data/cards'
 
@@ -16,13 +17,13 @@ export interface PlayerScoring {
 interface ScoringState {
   // Game session
   sessionActive: boolean
-  includeAlpine: boolean
+  expansions: Expansion[]
   players: PlayerScoring[]
   currentPlayerIndex: number
   currentStep: number
 
   // Actions
-  startSession: (playerNames: { id: string; name: string }[], includeAlpine: boolean) => void
+  startSession: (playerNames: { id: string; name: string }[], expansions: Expansion[]) => void
   endSession: () => void
   setCurrentPlayer: (index: number) => void
   setCurrentStep: (step: number) => void
@@ -33,11 +34,11 @@ interface ScoringState {
   getPlayerBreakdown: (playerId: string) => ScoreBreakdown | null
 }
 
-function recalcPlayer(player: PlayerScoring, allPlayers: PlayerScoring[], includeAlpine: boolean): ScoreBreakdown {
-  const activeCardKeys = getCards(includeAlpine).map((c) => c.key)
+function recalcPlayer(player: PlayerScoring, allPlayers: PlayerScoring[], expansions: Expansion[]): ScoreBreakdown {
+  const activeCardKeys = getCards(expansions).map((c) => c.key)
   const allLindenCounts = allPlayers.map((p) => p.cardCounts['linden'] || 0)
   const allTreeCounts = allPlayers.map((p) => {
-    const treeCards = getCards(includeAlpine).filter((c) => c.category === 'tree')
+    const treeCards = getCards(expansions).filter((c) => c.category === 'tree')
     return treeCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0)
   })
 
@@ -55,12 +56,12 @@ export const useScoringStore = create<ScoringState>()(
   persist(
     (set, get) => ({
       sessionActive: false,
-      includeAlpine: false,
+      expansions: ['base'] as Expansion[],
       players: [],
       currentPlayerIndex: 0,
       currentStep: 0,
 
-      startSession: (playerNames, includeAlpine) => {
+      startSession: (playerNames, expansions) => {
         const players: PlayerScoring[] = playerNames.map(({ id, name }) => ({
           playerId: id,
           playerName: name,
@@ -69,7 +70,7 @@ export const useScoringStore = create<ScoringState>()(
           fullyOccupiedTrees: 0,
           breakdown: null,
         }))
-        set({ sessionActive: true, players, includeAlpine, currentPlayerIndex: 0, currentStep: 0 })
+        set({ sessionActive: true, players, expansions, currentPlayerIndex: 0, currentStep: 0 })
       },
 
       endSession: () => {
@@ -95,7 +96,7 @@ export const useScoringStore = create<ScoringState>()(
         // Recalculate all players (cross-player cards)
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.includeAlpine),
+          breakdown: recalcPlayer(p, players, state.expansions),
         }))
         set({ players: updatedPlayers })
       },
@@ -115,7 +116,7 @@ export const useScoringStore = create<ScoringState>()(
         })
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.includeAlpine),
+          breakdown: recalcPlayer(p, players, state.expansions),
         }))
         set({ players: updatedPlayers })
       },
@@ -128,7 +129,7 @@ export const useScoringStore = create<ScoringState>()(
         })
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.includeAlpine),
+          breakdown: recalcPlayer(p, players, state.expansions),
         }))
         set({ players: updatedPlayers })
       },
@@ -137,7 +138,7 @@ export const useScoringStore = create<ScoringState>()(
         const state = get()
         const updatedPlayers = state.players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, state.players, state.includeAlpine),
+          breakdown: recalcPlayer(p, state.players, state.expansions),
         }))
         set({ players: updatedPlayers })
       },

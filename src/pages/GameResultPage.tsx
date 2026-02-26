@@ -10,6 +10,7 @@ import { useGameStore } from '@/store/game-store'
 import { CATEGORY_ICONS, CATEGORY_ORDER } from '@/data/categories'
 import type { GameWithPlayers, GamePlayer } from '@/types/game'
 import { cn } from '@/lib/utils'
+import { LanguageToggle } from '@/components/LanguageToggle'
 
 const MEDAL_COLORS = ['#FFD700', '#C0C0C0', '#CD7F32']
 
@@ -69,6 +70,9 @@ export function GameResultPage() {
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-8">
+      <div className="flex justify-end mb-2">
+        <LanguageToggle />
+      </div>
       {/* Winner announcement */}
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}

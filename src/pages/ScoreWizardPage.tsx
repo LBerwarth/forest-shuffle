@@ -10,6 +10,7 @@ import { useScoringStore } from '@/store/scoring-store'
 import { getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext } from '@/lib/scoring'
 import { cn } from '@/lib/utils'
+import { LanguageToggle } from '@/components/LanguageToggle'
 import type { CardCategory } from '@/types/card'
 
 const STEP_CATEGORIES: CardCategory[][] = [
@@ -27,7 +28,7 @@ export function ScoreWizardPage() {
   const {
     sessionActive,
     players,
-    includeAlpine,
+    expansions,
     currentPlayerIndex,
     currentStep,
     setCurrentPlayer,
@@ -37,7 +38,7 @@ export function ScoreWizardPage() {
     setFullyOccupiedTrees,
   } = useScoringStore()
 
-  const cardsByCategory = useMemo(() => getCardsByCategory(includeAlpine), [includeAlpine])
+  const cardsByCategory = useMemo(() => getCardsByCategory(expansions), [expansions])
 
   const currentPlayer = players[currentPlayerIndex]
 
@@ -112,7 +113,7 @@ export function ScoreWizardPage() {
               <ArrowLeft className="h-5 w-5" />
             </button>
             <h1 className="font-heading text-lg font-bold text-forest-800">{t('wizard.scoreEntry')}</h1>
-            <div className="w-5" />
+            <LanguageToggle />
           </div>
 
           {/* Player tabs */}

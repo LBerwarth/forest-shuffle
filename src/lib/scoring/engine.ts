@@ -9,20 +9,17 @@ import { CARDS } from '@/data/cards'
 /** Horse Chestnut: 1/4/9/16/25/36/49 (perfect squares) */
 const CHESTNUT_SET = [0, 1, 4, 9, 16, 25, 36, 49]
 
-/** Butterflies (different species): 0/3/6/12/20/30/42/56 */
-const BUTTERFLY_SET = [0, 0, 3, 6, 12, 20, 30, 42, 56]
+/** Butterflies (different species): 0/3/6/12/20/35/55/80 */
+const BUTTERFLY_SET = [0, 0, 3, 6, 12, 20, 35, 55, 80]
 
-/** Bats (different species): 0/5/10/15/20/25 */
-const BAT_SET = [0, 0, 5, 10, 15, 20, 25]
+/** Firefly set: 0/10/15/20 */
+const FIREFLY_SET = [0, 0, 10, 15, 20]
 
-/** Deer (different species): 0/3/8/15 */
-const DEER_SET = [0, 0, 3, 8, 15]
+/** Fire Salamander set: 0/5/15/25 */
+const FIRE_SALAMANDER_SET = [0, 5, 15, 25]
 
-/** Wood Strawberry: 3/6/10/15/21/28 */
-const STRAWBERRY_SET = [0, 3, 6, 10, 15, 21, 28]
-
-/** Alpine Marmot: 0/5/10/20 */
-const MARMOT_SET = [0, 0, 5, 10, 20]
+/** Plant diversity set (for Digitalis): 0/1/3/6/10/15 */
+const PLANT_DIVERSITY_SET = [0, 1, 3, 6, 10, 15]
 
 function lookupSet(table: number[], count: number): number {
   if (count < 0) return 0
@@ -43,7 +40,47 @@ function countCard(ctx: ForestContext, key: string): number {
 }
 
 function countHares(ctx: ForestContext): number {
-  return countCard(ctx, 'european_hare_bottom') + countCard(ctx, 'european_hare_left') + countCard(ctx, 'mountain_hare')
+  return countCard(ctx, 'european_hare') + countCard(ctx, 'mountain_hare')
+}
+
+// ============================================================
+// BUTTERFLY SET - multi-set algorithm
+// ============================================================
+
+const BUTTERFLY_KEYS = [
+  'peacock_butterfly', 'purple_emperor', 'silver_washed_fritillary',
+  'camberwell_beauty', 'large_tortoiseshell', 'phoebus_apollo',
+  'map_butterfly', 'brimstone',
+]
+
+export function scoreButterflySet(ctx: ForestContext): number {
+  const counts = BUTTERFLY_KEYS.map((k) => countCard(ctx, k))
+  // Multi-set: for set i (1-indexed), size = number of species with count >= i
+  let total = 0
+  const maxCount = Math.max(0, ...counts)
+  for (let i = 1; i <= maxCount; i++) {
+    const setSize = counts.filter((c) => c >= i).length
+    total += lookupSet(BUTTERFLY_SET, setSize)
+  }
+  return total
+}
+
+// ============================================================
+// BAT SET - threshold scoring
+// ============================================================
+
+const BAT_KEYS = [
+  'barbastelle', 'bechsteins_bat', 'brown_long_eared_bat',
+  'greater_horseshoe_bat', 'savis_pipistrelle', 'common_pipistrelle',
+]
+
+export function scoreBatSet(ctx: ForestContext): number {
+  const uniqueSpecies = BAT_KEYS.filter((k) => countCard(ctx, k) > 0).length
+  if (uniqueSpecies >= 3) {
+    const totalBats = BAT_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0)
+    return totalBats * 5
+  }
+  return 0
 }
 
 // ============================================================
@@ -53,17 +90,12 @@ function countHares(ctx: ForestContext): number {
 const scoringFunctions: Record<string, ScoringFunction> = {
   // --- TREES ---
   birch: (count) => count * 1,
-  beech: (count) => count * 5, // each Beech is worth 5 if you have 4+; handled at threshold
-  spruce: (count, ctx) => count * (ctx.treeSpeciesCount * 2),
+  beech: (count) => count >= 4 ? count * 5 : 0,
   douglas_fir: (count) => count * 5,
-  oak: (count, ctx) => {
-    // Each Oak with all 4 slots occupied = 10 points
-    // In simplified scoring, user enters how many are fully occupied
-    return count * 0 + ctx.fullyOccupiedTrees * 0 // Will be handled via metadata
-  },
+  oak: (count, ctx) => ctx.treeSpeciesCount >= 8 ? count * 10 : 0,
   horse_chestnut: (count) => lookupSet(CHESTNUT_SET, count),
   linden: () => 0, // comparison card - handled separately
-  sycamore: (count, ctx) => count * ctx.totalCards,
+  sycamore: (count, ctx) => count * ctx.totalTrees,
 
   // Silver Fir: 2 points per card attached to Silver Firs
   silver_fir: (_count, _ctx, metadata) => {
@@ -71,10 +103,12 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   },
 
   // Alpine trees
-  european_larch: (count, ctx) => count * (countTag(ctx, 'alpine') * 2),
-  stone_pine: (_count, _ctx, metadata) => {
-    return metadata?.contextValue ?? 0 // points = number of cards attached
-  },
+  european_larch: (count) => count * 3,
+  stone_pine: (count, ctx) => count * countTag(ctx, 'alpine'),
+
+  // Woodland trees
+  palm_tree: (count, ctx) => count * countTag(ctx, 'bird'),
+  turkey_oak: (count, ctx) => count * countTag(ctx, 'cloven_hoofed'),
 
   // --- TOP SLOT ---
   bullfinch: (count, ctx) => count * (countTag(ctx, 'insect') * 2),
@@ -84,145 +118,160 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   },
   great_spotted_woodpecker: () => 0, // comparison card
   goshawk: (count, ctx) => count * (countTag(ctx, 'bird') * 3),
-  jay: (count, ctx) => count * ctx.treeSpeciesCount,
-  great_tit: (count, ctx) => count * (countTag(ctx, 'mushroom') * 2),
-  robin: (count, ctx) => count * (countTag(ctx, 'plant') * 2),
-  owl: (count, ctx) => count * (countTag(ctx, 'bat') * 3),
-  tree_frog_top: (count, ctx) => count * ctx.treeSpeciesCount,
+  eurasian_jay: (count) => count * 3,
+  tawny_owl: (count) => count * 5,
 
-  // Butterflies - each counts as 1 unique species for set scoring
-  peacock_butterfly: () => 0, // scored via butterfly set
+  // Butterflies - scored via butterfly set
+  peacock_butterfly: () => 0,
   purple_emperor: () => 0,
   silver_washed_fritillary: () => 0,
-  swallowtail: () => 0,
   camberwell_beauty: () => 0,
-  phoebus_apollo: () => 0, // alpine butterfly
+  large_tortoiseshell: () => 0,
+  phoebus_apollo: () => 0,
+  brimstone: () => 0,
+  map_butterfly: () => 0,
 
   red_squirrel: (_count, _ctx, metadata) => {
     return (metadata?.contextValue ?? 0) * 5
   },
 
   // Alpine top
-  golden_eagle: (count, ctx) => count * (countTag(ctx, 'alpine') * 3),
-  bearded_vulture: (count, ctx) => count * (countTag(ctx, 'pawed') * 3),
-  common_raven: (count) => count * 2,
+  golden_eagle: (count, ctx) => count * (countTag(ctx, 'pawed') + countTag(ctx, 'amphibian')),
+  bearded_vulture: (count, ctx) => count * ctx.slotCounts.cave,
+  common_raven: (count) => count * 5,
+
+  // Woodland top
+  barn_owl: (count, ctx) => count * (countTag(ctx, 'bat') * 3),
+  cardinal: (count) => count * 5,
+  cuckoo: (count) => count * 7,
+  eurasian_magpie: (count) => count * 3,
+  mistletoe: (count, ctx) => count * countTag(ctx, 'plant'),
+  nightingale: (_count, _ctx, metadata) => {
+    // 5pts per nightingale if on shrub (needsContext)
+    return (metadata?.contextValue ?? 0) * 5
+  },
+  robin: (count, ctx) => count * countTag(ctx, 'insect'),
+  whinchat: (count, ctx) => count * countTag(ctx, 'plant'),
 
   // --- BOTTOM SLOT ---
-  fire_salamander: (count, ctx) => count * countTag(ctx, 'amphibian'),
-  tree_frog_bottom: (count, ctx) => count * ctx.treeSpeciesCount,
-  stag_beetle: (count, ctx) => count * ctx.totalTrees,
-  wood_ant: (count) => Math.floor(count / 2) * 5 + (count % 2 === 0 ? 0 : (count >= 1 ? 2 : 0)),
-  penny_bun: (count) => Math.floor(count / 2) * 5 + (count % 2 === 0 ? 0 : 2),
-  chanterelle: (count) => Math.floor(count / 2) * 5 + (count % 2 === 0 ? 0 : 2),
-  fly_agaric: (count) => Math.floor(count / 2) * 5 + (count % 2 === 0 ? 0 : 2),
-  parasol_mushroom: (count) => Math.floor(count / 2) * 5 + (count % 2 === 0 ? 0 : 2),
+  common_toad: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 5,
+  fire_salamander: (count) => lookupSet(FIRE_SALAMANDER_SET, count),
+  tree_frog: (count, ctx) => count * (5 * countCard(ctx, 'gnat')),
+  stag_beetle: (count, ctx) => count * countTag(ctx, 'pawed'),
+  wood_ant: (count, ctx) => count * 2 * ctx.slotCounts.bottom,
+  penny_bun: () => 0,
+  chanterelle: () => 0,
+  fly_agaric: () => 0,
+  parasol_mushroom: () => 0,
   moss: (count, ctx) => ctx.totalTrees >= 10 ? count * 10 : 0,
-  fern: (count, ctx) => count * (countTag(ctx, 'plant') + countTag(ctx, 'mushroom')),
-  wood_strawberry: (count) => lookupSet(STRAWBERRY_SET, count),
+  wild_strawberries: (count, ctx) => ctx.treeSpeciesCount >= 8 ? count * 10 : 0,
   hedgehog: (count, ctx) => count * (countTag(ctx, 'butterfly') * 2),
-  european_hare_bottom: (count, ctx) => count * countHares(ctx),
+  pond_turtle: (count) => count * 5,
+  blackberries: (count, ctx) => count * (countTag(ctx, 'plant') * 2),
+  fireflies: (count) => lookupSet(FIREFLY_SET, count),
+  mole: () => 0,
+  tree_ferns: (count, ctx) => count * (countTag(ctx, 'amphibian') * 6),
 
   // Alpine bottom
-  alpine_newt: (count, ctx) => count * (countTag(ctx, 'amphibian') * 2),
-  blueberry: (count, ctx) => count * countTag(ctx, 'bird'),
-  gentian: (count, ctx) => count * (countTag(ctx, 'butterfly') * 2),
-  edelweiss: (count, ctx) => countTag(ctx, 'alpine') >= 3 ? count * 10 : 0,
+  alpine_newt: (count, ctx) => count * (2 * countTag(ctx, 'insect')),
+  blueberry: (count, ctx) => {
+    // 2pts per unique bird type
+    const birdKeys = CARDS.filter((c) => c.tags.includes('bird')).map((c) => c.key)
+    const uniqueBirdTypes = birdKeys.filter((k) => countCard(ctx, k) > 0).length
+    return count * (2 * uniqueBirdTypes)
+  },
+  gentian: (count, ctx) => count * (3 * countTag(ctx, 'butterfly')),
+  edelweiss: (count) => count * 3,
 
-  // --- LEFT SLOT ---
+  // Woodland bottom
+  black_trumpet: () => 0,
+  digitalis: (count, ctx) => {
+    // Plant diversity set multiplied by count
+    const plantKeys = CARDS.filter((c) => c.tags.includes('plant')).map((c) => c.key)
+    const uniquePlantTypes = plantKeys.filter((k) => countCard(ctx, k) > 0).length
+    return count * lookupSet(PLANT_DIVERSITY_SET, uniquePlantTypes)
+  },
+  great_green_bush_cricket: (count, ctx) => count * countTag(ctx, 'insect'),
+  marsh_cinquefoil: (count, ctx) => {
+    // 15/7/3 based on tree count ranges
+    const trees = ctx.totalTrees
+    let pts: number
+    if (trees <= 3) pts = 15
+    else if (trees <= 6) pts = 7
+    else pts = 3
+    return count * pts
+  },
+  stinging_nettle: (count, ctx) => count * (2 * countTag(ctx, 'butterfly')),
+  water_vole: () => 0,
+  wild_tulip: (count) => count * 3,
+
+  // --- LATERAL SLOT ---
   // Bats - scored via bat set
   barbastelle: () => 0,
   bechsteins_bat: () => 0,
   brown_long_eared_bat: () => 0,
   greater_horseshoe_bat: () => 0,
   savis_pipistrelle: () => 0,
+  common_pipistrelle: () => 0,
 
-  // Deer - scored via deer set
-  roe_deer: () => 0,
-  red_deer: () => 0,
-  chamois: () => 0,
-  steinbock: () => 0,
+  // Deer
+  roe_deer: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 3,
+  red_deer: (count) => count * 5,
+  chamois: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 3,
+  steinbock: (count) => count * 10,
 
   lynx: (count, ctx) => countCard(ctx, 'roe_deer') >= 1 ? count * 10 : 0,
-  wolf: (count, ctx) => {
-    const pawedExcludingWolves = countTag(ctx, 'pawed') - countCard(ctx, 'wolf')
-    return count * (pawedExcludingWolves * 5)
-  },
+  wolf: (count, ctx) => count * (5 * countTag(ctx, 'deer')),
   wild_boar: (count, ctx) => countCard(ctx, 'squeaker') >= 1 ? count * 10 : 0,
-  badger: (count, ctx) => count * (Math.floor(countTag(ctx, 'mushroom') / 2) * 3),
-  european_hare_left: (count, ctx) => count * countHares(ctx),
+  european_badger: (count) => count * 2,
+  european_hare: (count, ctx) => count * countHares(ctx),
+  european_fat_dormouse: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 15,
   squeaker: (count) => count * 1,
 
-  // --- RIGHT SLOT ---
-  brown_bear: (count, ctx) => {
-    // 2 per bee (insect) + 2 per fish (amphibian) - simplified to per insect + amphibian
-    return count * ((countTag(ctx, 'insect') + countTag(ctx, 'amphibian')) * 2)
-  },
+  brown_bear: () => 0,
   fox: (count, ctx) => count * (countHares(ctx) * 2),
-  red_squirrel_right: (_count, _ctx, metadata) => {
-    return (metadata?.contextValue ?? 0) * 5
+  violet_carpenter_bee: () => 0,
+
+  // New base lateral
+  beech_marten: (count, ctx) => count * ctx.fullyOccupiedTrees * 5,
+  fallow_deer: (count, ctx) => count * (3 * countTag(ctx, 'cloven_hoofed')),
+  gnat: (count, ctx) => count * countTag(ctx, 'bat'),
+  raccoon: () => 0,
+
+  alpine_marmot: (count, ctx) => {
+    // 3pts per unique plant type
+    const plantKeys = CARDS.filter((c) => c.tags.includes('plant')).map((c) => c.key)
+    const uniquePlantTypes = plantKeys.filter((k) => countCard(ctx, k) > 0).length
+    return count * (3 * uniquePlantTypes)
   },
-  violet_carpenter_bee: (count, ctx) => count * (countTag(ctx, 'plant') + countTag(ctx, 'mushroom')),
-  pond_turtle: (count, ctx) => count * (Math.floor(countTag(ctx, 'amphibian') / 2) * 5),
-  tree_frog_right: (count, ctx) => count * ctx.treeSpeciesCount,
-  wild_strawberry_right: (count, ctx) => count * (countTag(ctx, 'plant') + countTag(ctx, 'mushroom')),
-  deer_fern: (count, ctx) => count * countTag(ctx, 'deer'),
-  alpine_marmot: () => 0, // scored via marmot set
   mountain_hare: (count, ctx) => count * countHares(ctx),
   capercaillie: (count, ctx) => count * countTag(ctx, 'plant'),
 
+  // Woodland lateral
+  bee_swarm: (count, ctx) => count * countTag(ctx, 'plant'),
+  crane_fly: (count, ctx) => count * countTag(ctx, 'bat'),
+  elk: (_count, _ctx, metadata) => {
+    // needsContext: tree symbols + saplings
+    return metadata?.contextValue ?? 0
+  },
+  european_bison: (_count, _ctx, metadata) => {
+    // needsContext: matching tree symbols
+    return metadata?.contextValue ?? 0
+  },
+  european_polecat: (_count, _ctx, metadata) => {
+    // 10pts if alone on tree (needsContext)
+    return (metadata?.contextValue ?? 0) * 10
+  },
+  european_wildcat: (count, ctx) => count * countTag(ctx, 'woodland_edge'),
+  genet: (count) => count * 5,
+  red_panda: (count) => count * 2,
+  sable: (count, ctx) => count * (3 * countTag(ctx, 'pawed')),
+  troll: (count, ctx) => count * ctx.totalTrees,
+  white_stork: (count, ctx) => count * (countTag(ctx, 'insect') + countTag(ctx, 'amphibian')),
+  wild_boar_female: (count, ctx) => count * (10 * countCard(ctx, 'squeaker')),
+
   // --- CAVE ---
   cave: (count) => count,
-}
-
-// ============================================================
-// OAK SCORING (special: points per fully occupied tree)
-// ============================================================
-
-export function scoreOak(oakCount: number, fullyOccupiedOaks: number): number {
-  // Oaks don't score for existing, only for being fully occupied
-  void oakCount
-  return fullyOccupiedOaks * 10
-}
-
-// ============================================================
-// BEECH THRESHOLD SCORING
-// ============================================================
-
-export function scoreBeech(beechCount: number): number {
-  return beechCount >= 4 ? beechCount * 5 : 0
-}
-
-// ============================================================
-// SET SCORING (butterflies, bats, deer)
-// ============================================================
-
-export function scoreButterflySet(ctx: ForestContext): number {
-  const butterflyKeys = [
-    'peacock_butterfly', 'purple_emperor', 'silver_washed_fritillary',
-    'swallowtail', 'camberwell_beauty', 'phoebus_apollo',
-  ]
-  const uniqueSpecies = butterflyKeys.filter((k) => countCard(ctx, k) > 0).length
-  // Total points = set value for unique species count
-  // Then add extra for duplicates (each extra = same as having that species once more)
-  // Actually in Forest Shuffle, butterflies score for number of DIFFERENT species
-  return lookupSet(BUTTERFLY_SET, uniqueSpecies)
-}
-
-export function scoreBatSet(ctx: ForestContext): number {
-  const batKeys = ['barbastelle', 'bechsteins_bat', 'brown_long_eared_bat', 'greater_horseshoe_bat', 'savis_pipistrelle']
-  const uniqueSpecies = batKeys.filter((k) => countCard(ctx, k) > 0).length
-  return lookupSet(BAT_SET, uniqueSpecies)
-}
-
-export function scoreDeerSet(ctx: ForestContext): number {
-  const deerKeys = ['roe_deer', 'red_deer', 'chamois', 'steinbock']
-  const uniqueSpecies = deerKeys.filter((k) => countCard(ctx, k) > 0).length
-  return lookupSet(DEER_SET, uniqueSpecies)
-}
-
-export function scoreMarmotSet(ctx: ForestContext): number {
-  const count = countCard(ctx, 'alpine_marmot')
-  return lookupSet(MARMOT_SET, count)
 }
 
 // ============================================================
@@ -234,10 +283,10 @@ export function scoreLinden(
   allPlayerLindenCounts: number[],
 ): number {
   const maxLindens = Math.max(...allPlayerLindenCounts)
-  if (playerLindenCount === maxLindens && playerLindenCount > 0) {
+  if (playerLindenCount >= maxLindens && playerLindenCount > 0) {
     return playerLindenCount * 3
   }
-  return 0
+  return playerLindenCount * 1
 }
 
 export function scoreWoodpecker(
@@ -263,7 +312,8 @@ export function buildForestContext(
 ): ForestContext {
   const tagCounts: Record<CardTag, number> = {
     bird: 0, butterfly: 0, insect: 0, amphibian: 0,
-    pawed: 0, deer: 0, bat: 0, plant: 0, mushroom: 0, alpine: 0,
+    pawed: 0, deer: 0, bat: 0, plant: 0, mushroom: 0,
+    alpine: 0, cloven_hoofed: 0, woodland_edge: 0,
   }
 
   const slotCounts: Record<CardCategory, number> = {
@@ -314,12 +364,6 @@ export function scoreCard(
   context: ForestContext,
   metadata?: CardMetadata,
 ): number {
-  // Special handling for Beech threshold
-  if (cardKey === 'beech') return scoreBeech(count)
-
-  // Special handling for Oak
-  if (cardKey === 'oak') return scoreOak(count, metadata?.contextValue ?? 0)
-
   const fn = scoringFunctions[cardKey]
   if (!fn) return 0
   return fn(count, context, metadata)
@@ -352,7 +396,7 @@ export function computeScoreBreakdown(
     if (!card) continue
 
     const metadata = cardMetadata[cardKey]
-    let points = scoreCard(cardKey, count, context, metadata)
+    const points = scoreCard(cardKey, count, context, metadata)
 
     entries.push({
       cardKey,
@@ -374,18 +418,6 @@ export function computeScoreBreakdown(
   if (batPoints > 0) {
     entries.push({ cardKey: '_bat_set', cardCategory: 'lateral', count: 1, points: batPoints })
     categoryTotals.lateral += batPoints
-  }
-
-  const deerPoints = scoreDeerSet(context)
-  if (deerPoints > 0) {
-    entries.push({ cardKey: '_deer_set', cardCategory: 'lateral', count: 1, points: deerPoints })
-    categoryTotals.lateral += deerPoints
-  }
-
-  const marmotPoints = scoreMarmotSet(context)
-  if (marmotPoints > 0) {
-    entries.push({ cardKey: '_marmot_set', cardCategory: 'lateral', count: 1, points: marmotPoints })
-    categoryTotals.lateral += marmotPoints
   }
 
   // Comparison cards (cross-player)

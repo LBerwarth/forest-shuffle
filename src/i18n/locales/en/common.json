@@ -37,7 +37,7 @@
     "playerName": "Player name",
     "add": "Add",
     "addNewPlayer": "Add New Player",
-    "alpineEnabled": "Alpine expansion enabled",
+    "expansionsEnabled": "expansion(s) enabled",
     "baseOnly": "Base game only",
     "changeInSettings": "Change in settings",
     "startScoring": "Start Scoring ({{count}} players)"
@@ -116,6 +116,8 @@
     "expansions": "Expansions",
     "alpineExpansion": "Alpine Expansion",
     "alpineDesc": "Include Alpine cards in scoring wizard",
+    "woodlandExpansion": "Woodland Expansion",
+    "woodlandDesc": "Include Woodland cards in scoring wizard",
     "language": "Language",
     "languageDesc": "Choose your preferred language",
     "data": "Data",

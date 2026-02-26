@@ -17,7 +17,10 @@
       "WebFetch(domain:cdn.svc.asmodee.net)",
       "WebFetch(domain:lookout-spiele.de)",
       "WebFetch(domain:www.rulespal.com)",
-      "WebFetch(domain:europemasters.eu)"
+      "WebFetch(domain:europemasters.eu)",
+      "WebFetch(domain:www.scribd.com)",
+      "WebFetch(domain:boardgoats.org)",
+      "WebFetch(domain:digidiced.com)"
     ]
   }
 }

@@ -9,6 +9,7 @@ import { useScoringStore } from '@/store/scoring-store'
 import { useSettingsStore } from '@/store/settings-store'
 import { PLAYER_COLORS } from '@/types/player'
 import { cn } from '@/lib/utils'
+import type { Expansion } from '@/types/card'
 
 export function NewGamePage() {
   const { t } = useTranslation()
@@ -17,6 +18,7 @@ export function NewGamePage() {
   const addPlayer = useGameStore((s) => s.addPlayer)
   const startSession = useScoringStore((s) => s.startSession)
   const includeAlpine = useSettingsStore((s) => s.includeAlpine)
+  const includeWoodland = useSettingsStore((s) => s.includeWoodland)
 
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
   const [newPlayerName, setNewPlayerName] = useState('')
@@ -45,9 +47,17 @@ export function NewGamePage() {
       .filter(Boolean)
       .map((p) => ({ id: p!.id, name: p!.name }))
 
-    startSession(players, includeAlpine)
+    const expansions: Expansion[] = ['base']
+    if (includeAlpine) expansions.push('alpine')
+    if (includeWoodland) expansions.push('woodland')
+
+    startSession(players, expansions)
     navigate(`/score/${crypto.randomUUID()}`)
   }
+
+  const expansionLabels: string[] = []
+  if (includeAlpine) expansionLabels.push('Alpine')
+  if (includeWoodland) expansionLabels.push('Woodland')
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
@@ -131,9 +141,12 @@ export function NewGamePage() {
         </button>
       )}
 
-      {/* Alpine toggle info */}
+      {/* Expansion info */}
       <p className="mb-4 text-xs text-center text-forest-400">
-        {includeAlpine ? `🏔️ ${t('newGame.alpineEnabled')}` : t('newGame.baseOnly')} •{' '}
+        {expansionLabels.length > 0
+          ? `${expansionLabels.join(' + ')} ${t('newGame.expansionsEnabled')}`
+          : t('newGame.baseOnly')
+        } •{' '}
         <button type="button" onClick={() => navigate('/settings')} className="underline hover:text-forest-500">
           {t('newGame.changeInSettings')}
         </button>

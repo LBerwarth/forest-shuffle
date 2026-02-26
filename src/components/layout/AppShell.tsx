@@ -2,6 +2,7 @@ import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import { Home, Calculator, History, BarChart3 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { LanguageToggle } from '@/components/LanguageToggle'
 
 const navItems = [
   { to: '/', icon: Home, key: 'nav.home' },
@@ -41,6 +42,7 @@ export function AppShell() {
                 <span>{t(key)}</span>
               </NavLink>
             ))}
+            <LanguageToggle />
           </div>
         </nav>
       )}

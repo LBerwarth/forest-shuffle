@@ -1,0 +1,442 @@
+{
+  "birch": {
+    "name": "Birke",
+    "scoring": "1 Punkt pro Birke"
+  },
+  "beech": {
+    "name": "Buche",
+    "scoring": "5 Punkte je, wenn du 4+ Buchen hast"
+  },
+  "douglas_fir": {
+    "name": "Douglasie",
+    "scoring": "5 Punkte pro Douglasie"
+  },
+  "oak": {
+    "name": "Eiche",
+    "scoring": "10 Punkte je, wenn du 8+ Baumarten hast"
+  },
+  "horse_chestnut": {
+    "name": "Rosskastanie",
+    "scoring": "Sammlung: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Linde",
+    "scoring": "1 Pkt. je; 3 Pkt. je, wenn du die meisten Linden hast (oder Gleichstand)"
+  },
+  "sycamore": {
+    "name": "Bergahorn",
+    "scoring": "1 Punkt pro Baum in deinem Wald"
+  },
+  "silver_fir": {
+    "name": "Weißtanne",
+    "scoring": "2 Punkte pro an Weißtannen angelegter Karte",
+    "context": "An Weißtannen angelegte Karten"
+  },
+  "european_larch": {
+    "name": "Europäische Lärche",
+    "scoring": "3 Punkte pro Europäische Lärche"
+  },
+  "stone_pine": {
+    "name": "Zirbelkiefer",
+    "scoring": "1 Punkt pro Alpine-Karte (sich selbst eingeschlossen)",
+    "context": "An Zirbelkiefern angelegte Karten"
+  },
+  "palm_tree": {
+    "name": "Palme",
+    "scoring": "1 Punkt pro Vogel"
+  },
+  "turkey_oak": {
+    "name": "Zerreiche",
+    "scoring": "1 Punkt pro Paarhufer"
+  },
+  "bullfinch": {
+    "name": "Gimpel",
+    "scoring": "2 Punkte pro Insekt in deinem Wald"
+  },
+  "chaffinch": {
+    "name": "Buchfink",
+    "scoring": "5 Punkte wenn auf einer Buche",
+    "context": "Wie viele Buchfinken sind auf einer Buche?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Buntspecht",
+    "scoring": "10 Punkte wenn du die meisten Bäume hast (oder Gleichstand)"
+  },
+  "goshawk": {
+    "name": "Habicht",
+    "scoring": "3 Punkte pro Vogel (sich selbst eingeschlossen)"
+  },
+  "eurasian_jay": {
+    "name": "Eichelhäher",
+    "scoring": "3 Punkte pro Eichelhäher"
+  },
+  "tawny_owl": {
+    "name": "Waldkauz",
+    "scoring": "5 Punkte pro Waldkauz"
+  },
+  "peacock_butterfly": {
+    "name": "Tagpfauenauge",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Großer Schillerfalter",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Kaisermantel",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Trauermantel",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Großer Fuchs",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Eichhörnchen",
+    "scoring": "5 Punkte wenn auf einer Eiche",
+    "context": "Wie viele Eichhörnchen sind auf einer Eiche?"
+  },
+  "golden_eagle": {
+    "name": "Steinadler",
+    "scoring": "1 Punkt pro Pfotentier + 1 pro Amphibie"
+  },
+  "bearded_vulture": {
+    "name": "Bartgeier",
+    "scoring": "1 Punkt pro Höhlenkarte"
+  },
+  "common_raven": {
+    "name": "Kolkrabe",
+    "scoring": "5 Punkte pro Kolkrabe"
+  },
+  "phoebus_apollo": {
+    "name": "Apollofalter",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Schleiereule",
+    "scoring": "3 Punkte pro Fledermaus"
+  },
+  "brimstone": {
+    "name": "Zitronenfalter",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Kardinal",
+    "scoring": "5 Punkte pro Kardinal"
+  },
+  "cuckoo": {
+    "name": "Kuckuck",
+    "scoring": "7 Punkte pro Kuckuck"
+  },
+  "eurasian_magpie": {
+    "name": "Elster",
+    "scoring": "3 Punkte pro Elster"
+  },
+  "map_butterfly": {
+    "name": "Landkärtchen",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Mistel",
+    "scoring": "1 Punkt pro Pflanze"
+  },
+  "nightingale": {
+    "name": "Nachtigall",
+    "scoring": "5 Punkte wenn auf einem Strauch",
+    "context": "Wie viele Nachtigallen sind auf einem Strauch?"
+  },
+  "robin": {
+    "name": "Rotkehlchen",
+    "scoring": "1 Punkt pro Insekt"
+  },
+  "whinchat": {
+    "name": "Braunkehlchen",
+    "scoring": "1 Punkt pro Pflanze"
+  },
+  "common_toad": {
+    "name": "Erdkröte",
+    "scoring": "5 Punkte pro Erdkröte, die einen Baum mit einer anderen teilt",
+    "context": "Wie viele Erdkröten teilen einen Baum mit einer anderen?"
+  },
+  "fire_salamander": {
+    "name": "Feuersalamander",
+    "scoring": "Sammlung: 5/15/25 für 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Laubfrosch",
+    "scoring": "5 Punkte pro Mücke pro Laubfrosch"
+  },
+  "stag_beetle": {
+    "name": "Hirschkäfer",
+    "scoring": "1 Punkt pro Pfotentier"
+  },
+  "wood_ant": {
+    "name": "Waldameise",
+    "scoring": "2 Punkte pro Karte in unteren Plätzen (automatisch gezählt)"
+  },
+  "penny_bun": {
+    "name": "Steinpilz",
+    "scoring": "0 Punkte (zählt als Pilz)"
+  },
+  "chanterelle": {
+    "name": "Pfifferling",
+    "scoring": "0 Punkte (zählt als Pilz)"
+  },
+  "fly_agaric": {
+    "name": "Fliegenpilz",
+    "scoring": "0 Punkte (zählt als Pilz)"
+  },
+  "parasol_mushroom": {
+    "name": "Riesenschirmling",
+    "scoring": "0 Punkte (zählt als Pilz)"
+  },
+  "moss": {
+    "name": "Moos",
+    "scoring": "10 Punkte je, wenn du 10+ Bäume hast"
+  },
+  "wild_strawberries": {
+    "name": "Walderdbeeren",
+    "scoring": "10 Punkte je, wenn du 8+ Baumarten hast"
+  },
+  "hedgehog": {
+    "name": "Igel",
+    "scoring": "2 Punkte pro Schmetterling"
+  },
+  "pond_turtle": {
+    "name": "Europäische Sumpfschildkröte",
+    "scoring": "5 Punkte pro Sumpfschildkröte"
+  },
+  "blackberries": {
+    "name": "Brombeeren",
+    "scoring": "2 Punkte pro Pflanze (sich selbst eingeschlossen)"
+  },
+  "fireflies": {
+    "name": "Glühwürmchen",
+    "scoring": "Sammlung: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Maulwurf",
+    "scoring": "0 Punkte"
+  },
+  "tree_ferns": {
+    "name": "Baumfarne",
+    "scoring": "6 Punkte pro Amphibie"
+  },
+  "alpine_newt": {
+    "name": "Bergmolch",
+    "scoring": "2 Punkte pro Insekt"
+  },
+  "blueberry": {
+    "name": "Heidelbeere",
+    "scoring": "2 Punkte pro einzigartiger Vogelart"
+  },
+  "gentian": {
+    "name": "Enzian",
+    "scoring": "3 Punkte pro Schmetterling"
+  },
+  "edelweiss": {
+    "name": "Edelweiß",
+    "scoring": "3 Punkte pro Edelweiß"
+  },
+  "black_trumpet": {
+    "name": "Herbsttrompete",
+    "scoring": "0 Punkte (zählt als Pilz)"
+  },
+  "digitalis": {
+    "name": "Fingerhut",
+    "scoring": "Pflanzenvielfalt: 0/1/3/6/10/15 pro einzigartiger Pflanzenart"
+  },
+  "great_green_bush_cricket": {
+    "name": "Grünes Heupferd",
+    "scoring": "1 Punkt pro Insekt (sich selbst eingeschlossen)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Sumpf-Blutauge",
+    "scoring": "15/7/3 Pkt. je nach Baumanzahl (0-3/4-6/7+)"
+  },
+  "stinging_nettle": {
+    "name": "Brennnessel",
+    "scoring": "2 Punkte pro Schmetterling"
+  },
+  "water_vole": {
+    "name": "Schermaus",
+    "scoring": "0 Punkte (zählt als Amphibie)"
+  },
+  "wild_tulip": {
+    "name": "Wildtulpe",
+    "scoring": "3 Punkte pro Wildtulpe"
+  },
+  "barbastelle": {
+    "name": "Mopsfledermaus",
+    "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
+  },
+  "bechsteins_bat": {
+    "name": "Bechsteinfledermaus",
+    "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
+  },
+  "brown_long_eared_bat": {
+    "name": "Braunes Langohr",
+    "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Große Hufeisennase",
+    "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
+  },
+  "savis_pipistrelle": {
+    "name": "Alpenfledermaus",
+    "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
+  },
+  "common_pipistrelle": {
+    "name": "Zwergfledermaus",
+    "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
+  },
+  "roe_deer": {
+    "name": "Reh",
+    "scoring": "3 Punkte pro Karte mit gleichem Baumsymbol (sich selbst eingeschlossen)",
+    "context": "Karten mit gleichem Baumsymbol wie dein Reh"
+  },
+  "red_deer": {
+    "name": "Rothirsch",
+    "scoring": "5 Punkte pro Rothirsch"
+  },
+  "chamois": {
+    "name": "Gämse",
+    "scoring": "3 Punkte pro Karte mit gleichem Baumsymbol (sich selbst eingeschlossen)",
+    "context": "Karten mit gleichem Baumsymbol wie deine Gämse"
+  },
+  "steinbock": {
+    "name": "Steinbock",
+    "scoring": "10 Punkte pro Steinbock"
+  },
+  "lynx": {
+    "name": "Luchs",
+    "scoring": "10 Punkte wenn mindestens 1 Reh"
+  },
+  "wolf": {
+    "name": "Wolf",
+    "scoring": "5 Punkte pro Hirsch"
+  },
+  "wild_boar": {
+    "name": "Wildschwein",
+    "scoring": "10 Punkte wenn mindestens 1 Haselmaus in deinem Wald"
+  },
+  "european_badger": {
+    "name": "Europäischer Dachs",
+    "scoring": "2 Punkte pro Europäischer Dachs"
+  },
+  "european_hare": {
+    "name": "Feldhase",
+    "scoring": "Punkte gleich der Gesamtzahl aller Hasen pro Hase"
+  },
+  "european_fat_dormouse": {
+    "name": "Siebenschläfer",
+    "scoring": "15 Punkte wenn an einem Baum mit einer Fledermaus (gegenüberliegender Platz)",
+    "context": "Wie viele sind an einem Baum mit einer Fledermaus?"
+  },
+  "squeaker": {
+    "name": "Haselmaus",
+    "scoring": "1 Punkt pro Haselmaus"
+  },
+  "brown_bear": {
+    "name": "Braunbär",
+    "scoring": "0 Punkte"
+  },
+  "fox": {
+    "name": "Fuchs",
+    "scoring": "2 Punkte pro Hase in deinem Wald"
+  },
+  "violet_carpenter_bee": {
+    "name": "Holzbiene",
+    "scoring": "0 Punkte"
+  },
+  "beech_marten": {
+    "name": "Steinmarder",
+    "scoring": "5 Punkte pro voll besetztem Baum (automatisch gezählt)"
+  },
+  "fallow_deer": {
+    "name": "Damhirsch",
+    "scoring": "3 Punkte pro Paarhufer (sich selbst eingeschlossen)"
+  },
+  "gnat": {
+    "name": "Mücke",
+    "scoring": "1 Punkt pro Fledermaus"
+  },
+  "large_tortoiseshell": {
+    "name": "Großer Fuchs",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Waschbär",
+    "scoring": "0 Punkte"
+  },
+  "alpine_marmot": {
+    "name": "Alpenmurmeltier",
+    "scoring": "3 Punkte pro einzigartiger Pflanzenart"
+  },
+  "mountain_hare": {
+    "name": "Schneehase",
+    "scoring": "Punkte gleich der Gesamtzahl aller Hasen (zählt als Hase)"
+  },
+  "capercaillie": {
+    "name": "Auerhuhn",
+    "scoring": "1 Punkt pro Pflanze"
+  },
+  "bee_swarm": {
+    "name": "Bienenschwarm",
+    "scoring": "1 Punkt pro Pflanze"
+  },
+  "crane_fly": {
+    "name": "Schnake",
+    "scoring": "1 Punkt pro Fledermaus"
+  },
+  "elk": {
+    "name": "Elch",
+    "scoring": "Punkte basierend auf Baumsymbolen und Setzlingen",
+    "context": "Gesamtpunkte aus Baumsymbolen und Setzlingen"
+  },
+  "european_bison": {
+    "name": "Wisent",
+    "scoring": "Punkte basierend auf passenden Baumsymbolen",
+    "context": "Gesamtpunkte aus passenden Baumsymbolen"
+  },
+  "european_polecat": {
+    "name": "Europäischer Iltis",
+    "scoring": "10 Punkte wenn allein auf seinem Baum",
+    "context": "Wie viele sind allein auf ihrem Baum?"
+  },
+  "european_wildcat": {
+    "name": "Wildkatze",
+    "scoring": "1 Punkt pro Waldrand-Karte (sich selbst eingeschlossen)"
+  },
+  "genet": {
+    "name": "Ginsterkatze",
+    "scoring": "5 Punkte pro Ginsterkatze"
+  },
+  "red_panda": {
+    "name": "Kleiner Panda",
+    "scoring": "2 Punkte pro Kleiner Panda"
+  },
+  "sable": {
+    "name": "Zobel",
+    "scoring": "3 Punkte pro Pfotentier"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 Punkt pro Baum"
+  },
+  "white_stork": {
+    "name": "Weißstorch",
+    "scoring": "1 Punkt pro Insekt + 1 pro Amphibie"
+  },
+  "wild_boar_female": {
+    "name": "Wildschwein (Bache)",
+    "scoring": "10 Punkte pro Haselmaus"
+  },
+  "cave": {
+    "name": "Höhle",
+    "scoring": "1 Punkt pro Karte in der Höhle"
+  }
+}

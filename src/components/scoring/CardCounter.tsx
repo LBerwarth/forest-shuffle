@@ -106,7 +106,7 @@ export function CardCounter({
             <button
               type="button"
               onClick={() => onContextChange((contextValue ?? 0) + 1)}
-              disabled={(contextValue ?? 0) >= count}
+              disabled={card.contextCappedByCount && (contextValue ?? 0) >= count}
               className="flex h-7 w-7 items-center justify-center rounded-md bg-bark-200 text-bark-700 hover:bg-bark-300 transition-colors"
             >
               <Plus className="h-3 w-3" />

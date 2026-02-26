@@ -1,0 +1,442 @@
+{
+  "birch": {
+    "name": "Abedul",
+    "scoring": "1 punto por Abedul"
+  },
+  "beech": {
+    "name": "Haya",
+    "scoring": "5 puntos cada uno si tienes 4+ Hayas"
+  },
+  "douglas_fir": {
+    "name": "Abeto de Douglas",
+    "scoring": "5 puntos por Abeto de Douglas"
+  },
+  "oak": {
+    "name": "Roble",
+    "scoring": "10 puntos cada uno si tienes 8+ especies de árboles"
+  },
+  "horse_chestnut": {
+    "name": "Castaño de Indias",
+    "scoring": "Colección: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Tilo",
+    "scoring": "1 pto cada uno; 3 pts cada uno si tienes más Tilos (o empate)"
+  },
+  "sycamore": {
+    "name": "Arce",
+    "scoring": "1 punto por árbol en tu bosque"
+  },
+  "silver_fir": {
+    "name": "Abeto blanco",
+    "scoring": "2 puntos por carta adjunta a Abetos blancos",
+    "context": "Cartas adjuntas a Abetos blancos"
+  },
+  "european_larch": {
+    "name": "Alerce europeo",
+    "scoring": "3 puntos por Alerce europeo"
+  },
+  "stone_pine": {
+    "name": "Pino cembro",
+    "scoring": "1 punto por carta Alpine (incluido él mismo)",
+    "context": "Cartas adjuntas a Pinos cembro"
+  },
+  "palm_tree": {
+    "name": "Palmera",
+    "scoring": "1 punto por ave"
+  },
+  "turkey_oak": {
+    "name": "Roble turco",
+    "scoring": "1 punto por animal de pezuña"
+  },
+  "bullfinch": {
+    "name": "Camachuelo",
+    "scoring": "2 puntos por insecto en tu bosque"
+  },
+  "chaffinch": {
+    "name": "Pinzón",
+    "scoring": "5 puntos si está en un Haya",
+    "context": "¿Cuántos Pinzones están en un Haya?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Pico picapinos",
+    "scoring": "10 puntos si tienes más árboles (o empate)"
+  },
+  "goshawk": {
+    "name": "Azor",
+    "scoring": "3 puntos por ave (incluido él mismo)"
+  },
+  "eurasian_jay": {
+    "name": "Arrendajo",
+    "scoring": "3 puntos por Arrendajo"
+  },
+  "tawny_owl": {
+    "name": "Cárabo",
+    "scoring": "5 puntos por Cárabo"
+  },
+  "peacock_butterfly": {
+    "name": "Mariposa pavo real",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Tornasolada",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Nacarada",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Antiopa",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Olmera",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Ardilla roja",
+    "scoring": "5 puntos si está en un Roble",
+    "context": "¿Cuántas Ardillas rojas están en un Roble?"
+  },
+  "golden_eagle": {
+    "name": "Águila real",
+    "scoring": "1 punto por animal con patas + 1 por anfibio"
+  },
+  "bearded_vulture": {
+    "name": "Quebrantahuesos",
+    "scoring": "1 punto por carta de cueva"
+  },
+  "common_raven": {
+    "name": "Cuervo",
+    "scoring": "5 puntos por Cuervo"
+  },
+  "phoebus_apollo": {
+    "name": "Apolo",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Lechuza",
+    "scoring": "3 puntos por murciélago"
+  },
+  "brimstone": {
+    "name": "Limonera",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Cardenal",
+    "scoring": "5 puntos por Cardenal"
+  },
+  "cuckoo": {
+    "name": "Cuco",
+    "scoring": "7 puntos por Cuco"
+  },
+  "eurasian_magpie": {
+    "name": "Urraca",
+    "scoring": "3 puntos por Urraca"
+  },
+  "map_butterfly": {
+    "name": "Mariposa geográfica",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Muérdago",
+    "scoring": "1 punto por planta"
+  },
+  "nightingale": {
+    "name": "Ruiseñor",
+    "scoring": "5 puntos si está en un arbusto",
+    "context": "¿Cuántos Ruiseñores están en un arbusto?"
+  },
+  "robin": {
+    "name": "Petirrojo",
+    "scoring": "1 punto por insecto"
+  },
+  "whinchat": {
+    "name": "Tarabilla norteña",
+    "scoring": "1 punto por planta"
+  },
+  "common_toad": {
+    "name": "Sapo común",
+    "scoring": "5 puntos por Sapo que comparte árbol con otro Sapo",
+    "context": "¿Cuántos Sapos comparten árbol con otro?"
+  },
+  "fire_salamander": {
+    "name": "Salamandra",
+    "scoring": "Colección: 5/15/25 para 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Rana de San Antonio",
+    "scoring": "5 puntos por mosquito por Rana"
+  },
+  "stag_beetle": {
+    "name": "Ciervo volante",
+    "scoring": "1 punto por animal con patas"
+  },
+  "wood_ant": {
+    "name": "Hormiga roja",
+    "scoring": "2 puntos por carta en ranuras inferiores (conteo automático)"
+  },
+  "penny_bun": {
+    "name": "Boleto",
+    "scoring": "0 puntos (cuenta como seta)"
+  },
+  "chanterelle": {
+    "name": "Rebozuelo",
+    "scoring": "0 puntos (cuenta como seta)"
+  },
+  "fly_agaric": {
+    "name": "Amanita",
+    "scoring": "0 puntos (cuenta como seta)"
+  },
+  "parasol_mushroom": {
+    "name": "Parasol",
+    "scoring": "0 puntos (cuenta como seta)"
+  },
+  "moss": {
+    "name": "Musgo",
+    "scoring": "10 puntos cada uno si tienes 10+ árboles"
+  },
+  "wild_strawberries": {
+    "name": "Fresas silvestres",
+    "scoring": "10 puntos cada uno si tienes 8+ especies de árboles"
+  },
+  "hedgehog": {
+    "name": "Erizo",
+    "scoring": "2 puntos por mariposa"
+  },
+  "pond_turtle": {
+    "name": "Galápago europeo",
+    "scoring": "5 puntos por Galápago"
+  },
+  "blackberries": {
+    "name": "Moras",
+    "scoring": "2 puntos por planta (incluida ella misma)"
+  },
+  "fireflies": {
+    "name": "Luciérnagas",
+    "scoring": "Colección: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Topo",
+    "scoring": "0 puntos"
+  },
+  "tree_ferns": {
+    "name": "Helechos arborescentes",
+    "scoring": "6 puntos por anfibio"
+  },
+  "alpine_newt": {
+    "name": "Tritón alpino",
+    "scoring": "2 puntos por insecto"
+  },
+  "blueberry": {
+    "name": "Arándano",
+    "scoring": "2 puntos por tipo de ave único"
+  },
+  "gentian": {
+    "name": "Genciana",
+    "scoring": "3 puntos por mariposa"
+  },
+  "edelweiss": {
+    "name": "Edelweiss",
+    "scoring": "3 puntos por Edelweiss"
+  },
+  "black_trumpet": {
+    "name": "Trompeta negra",
+    "scoring": "0 puntos (cuenta como seta)"
+  },
+  "digitalis": {
+    "name": "Digital",
+    "scoring": "Diversidad de plantas: 0/1/3/6/10/15 por tipo único"
+  },
+  "great_green_bush_cricket": {
+    "name": "Saltamontes verde",
+    "scoring": "1 punto por insecto (incluido él mismo)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Cincoenrama",
+    "scoring": "15/7/3 pts según cantidad de árboles (0-3/4-6/7+)"
+  },
+  "stinging_nettle": {
+    "name": "Ortiga",
+    "scoring": "2 puntos por mariposa"
+  },
+  "water_vole": {
+    "name": "Rata de agua",
+    "scoring": "0 puntos (cuenta como anfibio)"
+  },
+  "wild_tulip": {
+    "name": "Tulipán silvestre",
+    "scoring": "3 puntos por Tulipán silvestre"
+  },
+  "barbastelle": {
+    "name": "Barbastela",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "bechsteins_bat": {
+    "name": "Murciélago de Bechstein",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "brown_long_eared_bat": {
+    "name": "Orejudo dorado",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Murciélago de herradura",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "savis_pipistrelle": {
+    "name": "Murciélago de Savi",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "common_pipistrelle": {
+    "name": "Pipistrelo común",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "roe_deer": {
+    "name": "Corzo",
+    "scoring": "3 puntos por carta con el mismo símbolo de árbol (incluido él mismo)",
+    "context": "Cartas con el mismo símbolo de árbol que tu Corzo"
+  },
+  "red_deer": {
+    "name": "Ciervo rojo",
+    "scoring": "5 puntos por Ciervo rojo"
+  },
+  "chamois": {
+    "name": "Gamuza",
+    "scoring": "3 puntos por carta con el mismo símbolo de árbol (incluido él mismo)",
+    "context": "Cartas con el mismo símbolo de árbol que tu Gamuza"
+  },
+  "steinbock": {
+    "name": "Cabra montés",
+    "scoring": "10 puntos por Cabra montés"
+  },
+  "lynx": {
+    "name": "Lince",
+    "scoring": "10 puntos si al menos 1 Corzo"
+  },
+  "wolf": {
+    "name": "Lobo",
+    "scoring": "5 puntos por ciervo"
+  },
+  "wild_boar": {
+    "name": "Jabalí",
+    "scoring": "10 puntos si al menos 1 Lirón en tu bosque"
+  },
+  "european_badger": {
+    "name": "Tejón europeo",
+    "scoring": "2 puntos por Tejón europeo"
+  },
+  "european_hare": {
+    "name": "Liebre europea",
+    "scoring": "Puntos iguales al total de Liebres por Liebre"
+  },
+  "european_fat_dormouse": {
+    "name": "Lirón gris",
+    "scoring": "15 puntos si en un árbol con un murciélago (ranura opuesta)",
+    "context": "¿Cuántos están en un árbol con un murciélago?"
+  },
+  "squeaker": {
+    "name": "Lirón",
+    "scoring": "1 punto por Lirón"
+  },
+  "brown_bear": {
+    "name": "Oso pardo",
+    "scoring": "0 puntos"
+  },
+  "fox": {
+    "name": "Zorro",
+    "scoring": "2 puntos por Liebre en tu bosque"
+  },
+  "violet_carpenter_bee": {
+    "name": "Abeja carpintera",
+    "scoring": "0 puntos"
+  },
+  "beech_marten": {
+    "name": "Garduña",
+    "scoring": "5 puntos por árbol completamente ocupado (conteo automático)"
+  },
+  "fallow_deer": {
+    "name": "Gamo",
+    "scoring": "3 puntos por animal de pezuña (incluido él mismo)"
+  },
+  "gnat": {
+    "name": "Mosquito",
+    "scoring": "1 punto por murciélago"
+  },
+  "large_tortoiseshell": {
+    "name": "Olmera",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Mapache",
+    "scoring": "0 puntos"
+  },
+  "alpine_marmot": {
+    "name": "Marmota alpina",
+    "scoring": "3 puntos por tipo de planta único"
+  },
+  "mountain_hare": {
+    "name": "Liebre de montaña",
+    "scoring": "Puntos iguales al total de Liebres (cuenta como Liebre)"
+  },
+  "capercaillie": {
+    "name": "Urogallo",
+    "scoring": "1 punto por planta"
+  },
+  "bee_swarm": {
+    "name": "Enjambre de abejas",
+    "scoring": "1 punto por planta"
+  },
+  "crane_fly": {
+    "name": "Típula",
+    "scoring": "1 punto por murciélago"
+  },
+  "elk": {
+    "name": "Alce",
+    "scoring": "Puntos según símbolos de árboles y plantones",
+    "context": "Puntos totales de símbolos de árboles y plantones"
+  },
+  "european_bison": {
+    "name": "Bisonte europeo",
+    "scoring": "Puntos según símbolos de árboles coincidentes",
+    "context": "Puntos totales de símbolos de árboles coincidentes"
+  },
+  "european_polecat": {
+    "name": "Turón europeo",
+    "scoring": "10 puntos si está solo en su árbol",
+    "context": "¿Cuántos están solos en su árbol?"
+  },
+  "european_wildcat": {
+    "name": "Gato montés",
+    "scoring": "1 punto por carta de borde del bosque (incluido él mismo)"
+  },
+  "genet": {
+    "name": "Gineta",
+    "scoring": "5 puntos por Gineta"
+  },
+  "red_panda": {
+    "name": "Panda rojo",
+    "scoring": "2 puntos por Panda rojo"
+  },
+  "sable": {
+    "name": "Marta cibelina",
+    "scoring": "3 puntos por animal con patas"
+  },
+  "troll": {
+    "name": "Trol",
+    "scoring": "1 punto por árbol"
+  },
+  "white_stork": {
+    "name": "Cigüeña blanca",
+    "scoring": "1 punto por insecto + 1 por anfibio"
+  },
+  "wild_boar_female": {
+    "name": "Jabalina",
+    "scoring": "10 puntos por Lirón"
+  },
+  "cave": {
+    "name": "Cueva",
+    "scoring": "1 punto por carta en la cueva"
+  }
+}

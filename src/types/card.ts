@@ -1,4 +1,4 @@
-export type Expansion = 'base' | 'alpine'
+export type Expansion = 'base' | 'alpine' | 'woodland'
 
 export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'cave'
 
@@ -13,6 +13,8 @@ export type CardTag =
   | 'plant'
   | 'mushroom'
   | 'alpine'
+  | 'cloven_hoofed'
+  | 'woodland_edge'
 
 export type ScoringType =
   | 'fixed'
@@ -34,4 +36,6 @@ export interface CardDefinition {
   scoringType: ScoringType
   /** If true, wizard shows a sub-question for additional context */
   needsContext?: boolean
+  /** If true, context value is capped at the card count (e.g. "how many of these are on X?") */
+  contextCappedByCount?: boolean
 }
