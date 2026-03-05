@@ -1,8 +1,8 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import type { CardMetadata, ScoreBreakdown } from '@/types/scoring'
-import type { Expansion } from '@/types/card'
-import { computeScoreBreakdown } from '@/lib/scoring'
+import type { Expansion, GameEdition } from '@/types/card'
+import { computeScoreBreakdown, computeDartmoorScoreBreakdown } from '@/lib/scoring'
 import { getCards } from '@/data/cards'
 
 export interface PlayerScoring {
@@ -18,12 +18,13 @@ interface ScoringState {
   // Game session
   sessionActive: boolean
   expansions: Expansion[]
+  edition: GameEdition
   players: PlayerScoring[]
   currentPlayerIndex: number
   currentStep: number
 
   // Actions
-  startSession: (playerNames: { id: string; name: string }[], expansions: Expansion[]) => void
+  startSession: (playerNames: { id: string; name: string }[], expansions: Expansion[], edition?: GameEdition) => void
   endSession: () => void
   setCurrentPlayer: (index: number) => void
   setCurrentStep: (step: number) => void
@@ -34,7 +35,22 @@ interface ScoringState {
   getPlayerBreakdown: (playerId: string) => ScoreBreakdown | null
 }
 
-function recalcPlayer(player: PlayerScoring, allPlayers: PlayerScoring[], expansions: Expansion[]): ScoreBreakdown {
+function recalcPlayer(player: PlayerScoring, allPlayers: PlayerScoring[], expansions: Expansion[], edition: GameEdition = 'classic'): ScoreBreakdown {
+  if (edition === 'dartmoor') {
+    const activeCardKeys = getCards([], 'dartmoor').map((c) => c.key)
+    const allMoorCounts = allPlayers.map((p) => {
+      const moorCards = getCards([], 'dartmoor').filter((c) => c.category === 'moor')
+      return moorCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0)
+    })
+    return computeDartmoorScoreBreakdown(
+      player.cardCounts,
+      player.cardMetadata,
+      player.fullyOccupiedTrees,
+      activeCardKeys,
+      allMoorCounts,
+    )
+  }
+
   const activeCardKeys = getCards(expansions).map((c) => c.key)
   const allLindenCounts = allPlayers.map((p) => p.cardCounts['linden'] || 0)
   const allTreeCounts = allPlayers.map((p) => {
@@ -57,11 +73,12 @@ export const useScoringStore = create<ScoringState>()(
     (set, get) => ({
       sessionActive: false,
       expansions: ['base'] as Expansion[],
+      edition: 'classic' as GameEdition,
       players: [],
       currentPlayerIndex: 0,
       currentStep: 0,
 
-      startSession: (playerNames, expansions) => {
+      startSession: (playerNames, expansions, edition = 'classic') => {
         const players: PlayerScoring[] = playerNames.map(({ id, name }) => ({
           playerId: id,
           playerName: name,
@@ -70,7 +87,7 @@ export const useScoringStore = create<ScoringState>()(
           fullyOccupiedTrees: 0,
           breakdown: null,
         }))
-        set({ sessionActive: true, players, expansions, currentPlayerIndex: 0, currentStep: 0 })
+        set({ sessionActive: true, players, expansions, edition, currentPlayerIndex: 0, currentStep: 0 })
       },
 
       endSession: () => {
@@ -96,7 +113,7 @@ export const useScoringStore = create<ScoringState>()(
         // Recalculate all players (cross-player cards)
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.expansions),
+          breakdown: recalcPlayer(p, players, state.expansions, state.edition),
         }))
         set({ players: updatedPlayers })
       },
@@ -116,7 +133,7 @@ export const useScoringStore = create<ScoringState>()(
         })
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.expansions),
+          breakdown: recalcPlayer(p, players, state.expansions, state.edition),
         }))
         set({ players: updatedPlayers })
       },
@@ -129,7 +146,7 @@ export const useScoringStore = create<ScoringState>()(
         })
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.expansions),
+          breakdown: recalcPlayer(p, players, state.expansions, state.edition),
         }))
         set({ players: updatedPlayers })
       },
@@ -138,7 +155,7 @@ export const useScoringStore = create<ScoringState>()(
         const state = get()
         const updatedPlayers = state.players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, state.players, state.expansions),
+          breakdown: recalcPlayer(p, state.players, state.expansions, state.edition),
         }))
         set({ players: updatedPlayers })
       },
@@ -151,6 +168,11 @@ export const useScoringStore = create<ScoringState>()(
     {
       name: 'forest-shuffle-scoring',
       storage: createJSONStorage(() => sessionStorage),
+      merge: (persisted, current) => ({
+        ...current,
+        ...(persisted as Partial<ScoringState>),
+        edition: (persisted as Partial<ScoringState>)?.edition ?? current.edition,
+      }),
     },
   ),
 )

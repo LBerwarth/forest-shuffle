@@ -3,7 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Trophy, Target, TrendingUp } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
-import { useGameStore } from '@/store/game-store'
+import { usePlayers } from '@/hooks/use-players'
+import { useGames } from '@/hooks/use-games'
 import { CATEGORY_ORDER } from '@/data/categories'
 import {
   ResponsiveContainer,
@@ -23,8 +24,9 @@ export function PlayerDetailPage() {
   const { t, i18n } = useTranslation()
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
-  const player = useGameStore((s) => s.players.find((p) => p.id === id))
-  const games = useGameStore((s) => s.games)
+  const { data: allPlayers = [] } = usePlayers()
+  const { data: games = [] } = useGames()
+  const player = allPlayers.find((p) => p.id === id)
 
   const playerGames = useMemo(() => {
     return games

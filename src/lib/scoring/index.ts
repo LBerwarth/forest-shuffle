@@ -7,3 +7,7 @@ export {
   scoreLinden,
   scoreWoodpecker,
 } from './engine'
+
+export {
+  computeDartmoorScoreBreakdown,
+} from './dartmoor-engine'

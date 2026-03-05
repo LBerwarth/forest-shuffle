@@ -3,13 +3,15 @@
     "home": "Inicio",
     "score": "Puntos",
     "history": "Historial",
-    "stats": "Estadísticas"
+    "stats": "Estadísticas",
+    "settings": "Ajustes"
   },
   "category": {
     "tree": "Árboles",
     "top": "Arriba",
     "bottom": "Abajo",
     "lateral": "Lateral",
+    "moor": "Páramo",
     "cave": "Cueva"
   },
   "home": {
@@ -46,6 +48,8 @@
     "scoreEntry": "Entrada de puntos",
     "fullyOccupiedTrees": "Árboles completamente ocupados",
     "fullyOccupiedDesc": "Árboles con las 4 ranuras llenas (para puntuación del Roble)",
+    "specialCave": "Cueva especial",
+    "noneCave": "Ninguna",
     "back": "Atrás",
     "next": "Siguiente",
     "finish": "Finalizar"
@@ -118,6 +122,8 @@
     "alpineDesc": "Incluir cartas Alpine en el asistente de puntuación",
     "woodlandExpansion": "Expansión Woodland",
     "woodlandDesc": "Incluir cartas Woodland en el asistente de puntuación",
+    "explorationExpansion": "Expansión Exploration",
+    "explorationDesc": "Incluir cuevas especiales en el asistente de puntuación",
     "language": "Idioma",
     "languageDesc": "Elige tu idioma preferido",
     "data": "Datos",
@@ -129,6 +135,10 @@
     "clear": "Borrar",
     "clearConfirm1": "Esto eliminará TODOS los jugadores y el historial de partidas. ¿Estás seguro?",
     "clearConfirm2": "Esto no se puede deshacer. ¿Estás realmente seguro?",
+    "edition": "Edición del juego",
+    "classicEdition": "Forest Shuffle",
+    "dartmoorEdition": "Dartmoor",
+    "editionDesc": "Elige qué juego Forest Shuffle puntuar",
     "appName": "Forest Shuffle Companion",
     "version": "v0.1.0",
     "appDesc": "Calculadora de puntos y seguimiento de partidas para el juego de mesa Forest Shuffle."

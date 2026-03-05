@@ -1,16 +1,16 @@
 import { useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Trophy, Home, Save, RotateCcw } from 'lucide-react'
+import { Trophy, Home, Save, RotateCcw, Settings } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { useScoringStore } from '@/store/scoring-store'
-import { useGameStore } from '@/store/game-store'
-import { CATEGORY_ICONS, CATEGORY_ORDER } from '@/data/categories'
+import { useCreateGame } from '@/hooks/use-games'
+import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
 import type { GameWithPlayers, GamePlayer } from '@/types/game'
 import { cn } from '@/lib/utils'
-import { LanguageToggle } from '@/components/LanguageToggle'
+import { Link } from 'react-router-dom'
 
 const MEDAL_COLORS = ['#FFD700', '#C0C0C0', '#CD7F32']
 
@@ -18,11 +18,13 @@ export function GameResultPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const { gameId } = useParams<{ gameId: string }>()
-  const { players, endSession, recalculateAll } = useScoringStore()
-  const addGame = useGameStore((s) => s.addGame)
+  const { players, edition, endSession, recalculateAll } = useScoringStore()
+  const createGameMutation = useCreateGame()
 
   // Recalculate to ensure cross-player scoring is current
   useMemo(() => recalculateAll(), [recalculateAll])
+
+  const categoryOrder = getCategoryOrder(edition)
 
   const rankedPlayers = useMemo(() => {
     return [...players]
@@ -32,7 +34,7 @@ export function GameResultPage() {
 
   const winner = rankedPlayers[0]
 
-  function handleSave() {
+  async function handleSave() {
     if (!gameId) return
 
     const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
@@ -50,10 +52,11 @@ export function GameResultPage() {
       id: gameId,
       played_at: new Date().toISOString(),
       player_count: players.length,
+      edition: edition !== 'classic' ? edition : undefined,
       players: gamePlayers,
     }
 
-    addGame(game)
+    await createGameMutation.mutateAsync(game)
     endSession()
     navigate('/history')
   }
@@ -71,7 +74,9 @@ export function GameResultPage() {
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-8">
       <div className="flex justify-end mb-2">
-        <LanguageToggle />
+        <Link to="/settings" className="text-forest-500">
+          <Settings className="h-5 w-5" />
+        </Link>
       </div>
       {/* Winner announcement */}
       <motion.div
@@ -133,7 +138,7 @@ export function GameResultPage() {
                 {/* Category breakdown */}
                 {player.breakdown && (
                   <div className="mt-2 flex gap-2 overflow-x-auto scrollbar-hide">
-                    {CATEGORY_ORDER.map((cat) => {
+                    {categoryOrder.map((cat) => {
                       const pts = player.breakdown?.categoryTotals[cat]
                       if (!pts || pts <= 0) return null
                       return (

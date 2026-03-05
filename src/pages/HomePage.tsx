@@ -3,12 +3,13 @@ import { useTranslation } from 'react-i18next'
 import { Calculator, History, Users, BarChart3, Settings, TreePine } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { useGameStore } from '@/store/game-store'
+import { usePlayers } from '@/hooks/use-players'
+import { useGames } from '@/hooks/use-games'
 
 export function HomePage() {
   const { t, i18n } = useTranslation()
-  const games = useGameStore((s) => s.games)
-  const players = useGameStore((s) => s.players)
+  const { data: games = [] } = useGames()
+  const { data: players = [] } = usePlayers()
   const recentGame = games[0]
 
   const quickActions = [

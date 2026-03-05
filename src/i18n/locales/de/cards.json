@@ -255,7 +255,7 @@
   },
   "marsh_cinquefoil": {
     "name": "Sumpf-Blutauge",
-    "scoring": "15/7/3 Pkt. je nach Baumanzahl (0-3/4-6/7+)"
+    "scoring": "15/7/3 Pkt. je nach Baumanzahl (0-5/6-10/11+)"
   },
   "stinging_nettle": {
     "name": "Brennnessel",
@@ -300,7 +300,7 @@
   },
   "red_deer": {
     "name": "Rothirsch",
-    "scoring": "5 Punkte pro Rothirsch"
+    "scoring": "1 Punkt pro Baum und pro Pflanze"
   },
   "chamois": {
     "name": "Gämse",
@@ -394,13 +394,13 @@
   },
   "elk": {
     "name": "Elch",
-    "scoring": "Punkte basierend auf Baumsymbolen und Setzlingen",
-    "context": "Gesamtpunkte aus Baumsymbolen und Setzlingen"
+    "scoring": "2 Pkt. pro Setzling und pro Karte mit den Baumsymbolen des Elchs (sich selbst eingeschlossen)",
+    "context": "Karten mit Baumsymbolen des Elchs + Setzlinge"
   },
   "european_bison": {
     "name": "Wisent",
-    "scoring": "Punkte basierend auf passenden Baumsymbolen",
-    "context": "Gesamtpunkte aus passenden Baumsymbolen"
+    "scoring": "2 Pkt. pro Karte mit einem seiner Baumsymbole (sich selbst eingeschlossen)",
+    "context": "Karten mit Baumsymbolen des Wisents (sich selbst eingeschlossen)"
   },
   "european_polecat": {
     "name": "Europäischer Iltis",
@@ -438,5 +438,17 @@
   "cave": {
     "name": "Höhle",
     "scoring": "1 Punkt pro Karte in der Höhle"
+  },
+  "collectors_cave": {
+    "name": "Sammlerhöhle",
+    "scoring": "Jede normale Höhlenkarte bringt 2 statt 1 Punkt"
+  },
+  "bat_cave": {
+    "name": "Fledermaushöhle",
+    "scoring": "Jede Fledermaus bringt zusätzlich 3 Punkte"
+  },
+  "lonely_cave": {
+    "name": "Einsame Höhle",
+    "scoring": "5 Punkte wenn keine normalen Höhlenkarten; sonst 0"
   }
 }

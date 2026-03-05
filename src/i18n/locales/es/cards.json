@@ -255,7 +255,7 @@
   },
   "marsh_cinquefoil": {
     "name": "Cincoenrama",
-    "scoring": "15/7/3 pts según cantidad de árboles (0-3/4-6/7+)"
+    "scoring": "15/7/3 pts según cantidad de árboles (0-5/6-10/11+)"
   },
   "stinging_nettle": {
     "name": "Ortiga",
@@ -300,7 +300,7 @@
   },
   "red_deer": {
     "name": "Ciervo rojo",
-    "scoring": "5 puntos por Ciervo rojo"
+    "scoring": "1 punto por árbol y por planta"
   },
   "chamois": {
     "name": "Gamuza",
@@ -394,13 +394,13 @@
   },
   "elk": {
     "name": "Alce",
-    "scoring": "Puntos según símbolos de árboles y plantones",
-    "context": "Puntos totales de símbolos de árboles y plantones"
+    "scoring": "2 pts por plantón y por carta con los símbolos de árbol del Alce (incluido él mismo)",
+    "context": "Cartas con los símbolos de árbol del Alce + plantones"
   },
   "european_bison": {
     "name": "Bisonte europeo",
-    "scoring": "Puntos según símbolos de árboles coincidentes",
-    "context": "Puntos totales de símbolos de árboles coincidentes"
+    "scoring": "2 pts por carta con uno de sus símbolos de árbol (incluido él mismo)",
+    "context": "Cartas con los símbolos de árbol del Bisonte (incluido él mismo)"
   },
   "european_polecat": {
     "name": "Turón europeo",
@@ -438,5 +438,17 @@
   "cave": {
     "name": "Cueva",
     "scoring": "1 punto por carta en la cueva"
+  },
+  "collectors_cave": {
+    "name": "Cueva del coleccionista",
+    "scoring": "Cada carta de cueva normal puntúa 2 en vez de 1"
+  },
+  "bat_cave": {
+    "name": "Cueva de murciélagos",
+    "scoring": "Cada murciélago puntúa 3 puntos adicionales"
+  },
+  "lonely_cave": {
+    "name": "Cueva solitaria",
+    "scoring": "5 puntos si no hay cartas de cueva normales; sino 0"
   }
 }

@@ -1,4 +1,5 @@
-import type { CardDefinition, Expansion } from '@/types/card'
+import type { CardDefinition, Expansion, GameEdition } from '@/types/card'
+import { DARTMOOR_CARDS } from './dartmoor-cards'
 
 export const CARDS: CardDefinition[] = [
   // ============================================================
@@ -93,7 +94,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'brown_long_eared_bat', category: 'lateral', tags: ['bat'], expansion: 'base', scoringType: 'set' },
   { key: 'greater_horseshoe_bat', category: 'lateral', tags: ['bat'], expansion: 'base', scoringType: 'set' },
   { key: 'roe_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'custom', needsContext: true },
-  { key: 'red_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'fixed' },
+  { key: 'red_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'lynx', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'threshold' },
   { key: 'wolf', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'wild_boar', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'base', scoringType: 'threshold' },
@@ -134,28 +135,34 @@ export const CARDS: CardDefinition[] = [
   // CAVE
   // ============================================================
   { key: 'cave', category: 'cave', tags: [], expansion: 'base', scoringType: 'fixed' },
+  // Exploration special caves
+  { key: 'collectors_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
+  { key: 'bat_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
+  { key: 'lonely_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
 ]
 
-/** Get cards filtered by enabled expansions */
-export function getCards(expansions: Expansion[]): CardDefinition[] {
+/** Get cards filtered by enabled expansions and edition */
+export function getCards(expansions: Expansion[], edition: GameEdition = 'classic'): CardDefinition[] {
+  if (edition === 'dartmoor') return DARTMOOR_CARDS
   const enabled = new Set(expansions)
   enabled.add('base') // always include base
   return CARDS.filter((c) => enabled.has(c.expansion))
 }
 
 /** Get cards grouped by category */
-export function getCardsByCategory(expansions: Expansion[]) {
-  const cards = getCards(expansions)
+export function getCardsByCategory(expansions: Expansion[], edition: GameEdition = 'classic') {
+  const cards = getCards(expansions, edition)
   return {
     tree: cards.filter((c) => c.category === 'tree'),
     top: cards.filter((c) => c.category === 'top'),
     bottom: cards.filter((c) => c.category === 'bottom'),
     lateral: cards.filter((c) => c.category === 'lateral'),
+    moor: cards.filter((c) => c.category === 'moor'),
     cave: cards.filter((c) => c.category === 'cave'),
   }
 }
 
-/** Get a single card by key */
+/** Get a single card by key (searches both classic and Dartmoor) */
 export function getCard(key: string): CardDefinition | undefined {
-  return CARDS.find((c) => c.key === key)
+  return CARDS.find((c) => c.key === key) ?? DARTMOOR_CARDS.find((c) => c.key === key)
 }

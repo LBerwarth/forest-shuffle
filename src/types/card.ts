@@ -1,6 +1,8 @@
-export type Expansion = 'base' | 'alpine' | 'woodland'
+export type GameEdition = 'classic' | 'dartmoor'
 
-export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'cave'
+export type Expansion = 'base' | 'alpine' | 'woodland' | 'exploration' | 'dartmoor_base'
+
+export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'moor' | 'cave'
 
 export type CardTag =
   | 'bird'
@@ -15,6 +17,10 @@ export type CardTag =
   | 'alpine'
   | 'cloven_hoofed'
   | 'woodland_edge'
+  | 'dragonfly'
+  | 'mouse'
+  | 'rabbit'
+  | 'hoofed'
 
 export type ScoringType =
   | 'fixed'

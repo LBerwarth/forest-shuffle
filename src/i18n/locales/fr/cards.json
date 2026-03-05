@@ -8,8 +8,8 @@
     "scoring": "5 points chacun si vous avez 4+ Hêtres"
   },
   "douglas_fir": {
-    "name": "Douglas",
-    "scoring": "5 points par Douglas"
+    "name": "Sapin Douglas",
+    "scoring": "5 points par Sapin Douglas"
   },
   "oak": {
     "name": "Chêne",
@@ -24,7 +24,7 @@
     "scoring": "1pt chacun ; 3pts chacun si vous avez le plus de Tilleuls (ou égalité)"
   },
   "sycamore": {
-    "name": "Platane",
+    "name": "Érable",
     "scoring": "1 point par arbre dans votre forêt"
   },
   "silver_fir": {
@@ -255,7 +255,7 @@
   },
   "marsh_cinquefoil": {
     "name": "Comaret",
-    "scoring": "15/7/3 pts selon le nombre d'arbres (0-3/4-6/7+)"
+    "scoring": "15/7/3 pts selon le nombre d'arbres (0-5/6-10/11+)"
   },
   "stinging_nettle": {
     "name": "Ortie",
@@ -300,7 +300,7 @@
   },
   "red_deer": {
     "name": "Cerf élaphe",
-    "scoring": "5 points par Cerf élaphe"
+    "scoring": "1 point par arbre et par plante"
   },
   "chamois": {
     "name": "Chamois",
@@ -390,13 +390,13 @@
   },
   "elk": {
     "name": "Élan",
-    "scoring": "Points selon les symboles d'arbres et les jeunes pousses",
-    "context": "Total des points des symboles d'arbres et jeunes pousses"
+    "scoring": "2 pts par jeune pousse et par carte avec les symboles d'arbre de l'Élan (lui-même inclus)",
+    "context": "Cartes avec les symboles d'arbre de l'Élan + jeunes pousses"
   },
   "european_bison": {
     "name": "Bison d'Europe",
-    "scoring": "Points selon les symboles d'arbres correspondants",
-    "context": "Total des points des symboles d'arbres correspondants"
+    "scoring": "2 pts par carte avec un de ses symboles d'arbre (lui-même inclus)",
+    "context": "Cartes avec les symboles d'arbre du Bison (lui-même inclus)"
   },
   "european_polecat": {
     "name": "Putois d'Europe",
@@ -434,5 +434,17 @@
   "cave": {
     "name": "Grotte",
     "scoring": "1 point par carte dans la grotte"
+  },
+  "collectors_cave": {
+    "name": "Grotte du collectionneur",
+    "scoring": "Chaque carte grotte standard rapporte 2 au lieu de 1"
+  },
+  "bat_cave": {
+    "name": "Grotte des chauves-souris",
+    "scoring": "Chaque chauve-souris rapporte 3 points suppl\u00e9mentaires"
+  },
+  "lonely_cave": {
+    "name": "Grotte solitaire",
+    "scoring": "5 points si aucune carte grotte standard\u00a0; sinon 0"
   }
 }

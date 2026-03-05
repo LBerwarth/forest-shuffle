@@ -3,13 +3,15 @@
     "home": "Start",
     "score": "Punkte",
     "history": "Verlauf",
-    "stats": "Statistik"
+    "stats": "Statistik",
+    "settings": "Einstellungen"
   },
   "category": {
     "tree": "Bäume",
     "top": "Oben",
     "bottom": "Unten",
     "lateral": "Seitlich",
+    "moor": "Moor",
     "cave": "Höhle"
   },
   "home": {
@@ -46,6 +48,8 @@
     "scoreEntry": "Punkteingabe",
     "fullyOccupiedTrees": "Voll besetzte Bäume",
     "fullyOccupiedDesc": "Bäume mit allen 4 Plätzen besetzt (für Eiche-Wertung)",
+    "specialCave": "Spezialhöhle",
+    "noneCave": "Keine",
     "back": "Zurück",
     "next": "Weiter",
     "finish": "Fertig"
@@ -118,6 +122,8 @@
     "alpineDesc": "Alpine-Karten im Punkteassistenten einbeziehen",
     "woodlandExpansion": "Woodland-Erweiterung",
     "woodlandDesc": "Woodland-Karten im Punkteassistenten einbeziehen",
+    "explorationExpansion": "Exploration-Erweiterung",
+    "explorationDesc": "Spezialhöhlen im Punkteassistenten einbeziehen",
     "language": "Sprache",
     "languageDesc": "Wähle deine bevorzugte Sprache",
     "data": "Daten",
@@ -129,6 +135,10 @@
     "clear": "Löschen",
     "clearConfirm1": "Dies löscht ALLE Spieler und den Spielverlauf. Bist du sicher?",
     "clearConfirm2": "Dies kann nicht rückgängig gemacht werden. Bist du wirklich sicher?",
+    "edition": "Spielversion",
+    "classicEdition": "Forest Shuffle",
+    "dartmoorEdition": "Dartmoor",
+    "editionDesc": "Wähle welches Forest Shuffle Spiel gewertet werden soll",
     "appName": "Forest Shuffle Companion",
     "version": "v0.1.0",
     "appDesc": "Punkterechner & Spielverfolgung für das Brettspiel Forest Shuffle."

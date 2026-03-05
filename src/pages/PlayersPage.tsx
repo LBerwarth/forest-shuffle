@@ -4,28 +4,32 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, UserPlus, X, Trash2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/Card'
-import { useGameStore } from '@/store/game-store'
+import { usePlayers, useCreatePlayer, useDeletePlayer } from '@/hooks/use-players'
+import { useGames } from '@/hooks/use-games'
 import { PLAYER_COLORS } from '@/types/player'
 
 export function PlayersPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const players = useGameStore((s) => s.players)
-  const addPlayer = useGameStore((s) => s.addPlayer)
-  const removePlayer = useGameStore((s) => s.removePlayer)
-  const games = useGameStore((s) => s.games)
+  const { data: players = [] } = usePlayers()
+  const createPlayerMutation = useCreatePlayer()
+  const deletePlayerMutation = useDeletePlayer()
+  const { data: games = [] } = useGames()
 
   const [newName, setNewName] = useState('')
   const [showForm, setShowForm] = useState(false)
 
-  function handleAdd() {
+  async function handleAdd() {
     if (!newName.trim()) return
-    addPlayer({
-      id: crypto.randomUUID(),
-      name: newName.trim(),
-      color: PLAYER_COLORS[players.length % PLAYER_COLORS.length]!,
-      created_at: new Date().toISOString(),
-    })
+    try {
+      await createPlayerMutation.mutateAsync({
+        id: crypto.randomUUID(),
+        name: newName.trim(),
+        color: PLAYER_COLORS[players.length % PLAYER_COLORS.length]!,
+      })
+    } catch (err) {
+      console.error('Failed to create player:', err)
+    }
     setNewName('')
     setShowForm(false)
   }
@@ -74,7 +78,7 @@ export function PlayersPage() {
                       onClick={(e) => {
                         e.preventDefault()
                         e.stopPropagation()
-                        if (confirm(t('players.removeConfirm', { name: player.name }))) removePlayer(player.id)
+                        if (confirm(t('players.removeConfirm', { name: player.name }))) deletePlayerMutation.mutate(player.id)
                       }}
                       className="text-forest-300 hover:text-red-500 transition-colors p-1"
                     >
@@ -97,23 +101,22 @@ export function PlayersPage() {
       {showForm ? (
         <Card>
           <CardContent className="py-3">
-            <div className="flex items-center gap-2">
+            <form onSubmit={(e) => { e.preventDefault(); handleAdd() }} className="flex items-center gap-2">
               <input
                 type="text"
                 placeholder={t('players.playerName')}
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleAdd()}
                 autoFocus
                 className="flex-1 rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
               />
-              <Button size="sm" onClick={handleAdd} disabled={!newName.trim()}>
+              <Button type="submit" size="sm" disabled={!newName.trim()}>
                 {t('players.add')}
               </Button>
               <button type="button" onClick={() => setShowForm(false)} className="text-forest-400">
                 <X className="h-4 w-4" />
               </button>
-            </div>
+            </form>
           </CardContent>
         </Card>
       ) : (

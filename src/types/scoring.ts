@@ -18,6 +18,8 @@ export interface ForestContext {
   fullyOccupiedTrees: number
   /** Total card count across all categories */
   totalCards: number
+  /** Total number of moor cards (Dartmoor edition) */
+  totalMoors: number
   /** Per-card metadata (e.g., contextual answers) */
   cardMetadata: Record<string, CardMetadata>
 }

@@ -2,14 +2,22 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Calendar, Users } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
-import { useGameStore } from '@/store/game-store'
-import { CATEGORY_ICONS, CATEGORY_ORDER } from '@/data/categories'
+import { useGame } from '@/hooks/use-games'
+import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
 
 export function GameDetailPage() {
   const { t, i18n } = useTranslation()
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
-  const game = useGameStore((s) => s.games.find((g) => g.id === id))
+  const { data: game, isLoading } = useGame(id)
+
+  if (isLoading) {
+    return (
+      <div className="mx-auto max-w-lg px-4 pt-8 text-center">
+        <p className="text-forest-400">Loading…</p>
+      </div>
+    )
+  }
 
   if (!game) {
     return (
@@ -19,6 +27,8 @@ export function GameDetailPage() {
     )
   }
 
+  const edition = game.edition ?? 'classic'
+  const categoryOrder = getCategoryOrder(edition)
   const sortedPlayers = [...game.players].sort((a, b) => a.rank - b.rank)
 
   return (
@@ -89,7 +99,7 @@ export function GameDetailPage() {
                 </tr>
               </thead>
               <tbody>
-                {CATEGORY_ORDER.map((cat) => (
+                {categoryOrder.map((cat) => (
                   <tr key={cat} className="border-b border-forest-100">
                     <td className="py-1.5 pr-2 text-forest-600">{CATEGORY_ICONS[cat]} {t(`category.${cat}`)}</td>
                     {sortedPlayers.map((p) => (

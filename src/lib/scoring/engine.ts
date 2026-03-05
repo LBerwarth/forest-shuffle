@@ -137,7 +137,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 
   // Alpine top
   golden_eagle: (count, ctx) => count * (countTag(ctx, 'pawed') + countTag(ctx, 'amphibian')),
-  bearded_vulture: (count, ctx) => count * ctx.slotCounts.cave,
+  bearded_vulture: (count, ctx) => count * countCard(ctx, 'cave'),
   common_raven: (count) => count * 5,
 
   // Woodland top
@@ -193,11 +193,11 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   },
   great_green_bush_cricket: (count, ctx) => count * countTag(ctx, 'insect'),
   marsh_cinquefoil: (count, ctx) => {
-    // 15/7/3 based on tree count ranges
+    // 15/7/3 based on tree count ranges (per official appendix)
     const trees = ctx.totalTrees
     let pts: number
-    if (trees <= 3) pts = 15
-    else if (trees <= 6) pts = 7
+    if (trees <= 5) pts = 15
+    else if (trees <= 10) pts = 7
     else pts = 3
     return count * pts
   },
@@ -216,7 +216,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 
   // Deer
   roe_deer: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 3,
-  red_deer: (count) => count * 5,
+  red_deer: (count, ctx) => count * (ctx.totalTrees + countTag(ctx, 'plant')),
   chamois: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 3,
   steinbock: (count) => count * 10,
 
@@ -251,12 +251,12 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   bee_swarm: (count, ctx) => count * countTag(ctx, 'plant'),
   crane_fly: (count, ctx) => count * countTag(ctx, 'bat'),
   elk: (_count, _ctx, metadata) => {
-    // needsContext: tree symbols + saplings
-    return metadata?.contextValue ?? 0
+    // 2pts per tree sapling and per card showing Elk's tree symbols (incl self)
+    return (metadata?.contextValue ?? 0) * 2
   },
   european_bison: (_count, _ctx, metadata) => {
-    // needsContext: matching tree symbols
-    return metadata?.contextValue ?? 0
+    // 2pts per card showing one of its tree symbols (incl self)
+    return (metadata?.contextValue ?? 0) * 2
   },
   european_polecat: (_count, _ctx, metadata) => {
     // 10pts if alone on tree (needsContext)
@@ -271,7 +271,19 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   wild_boar_female: (count, ctx) => count * (10 * countCard(ctx, 'squeaker')),
 
   // --- CAVE ---
-  cave: (count) => count,
+  cave: (count, ctx) => {
+    if (countCard(ctx, 'collectors_cave') > 0) return count * 2
+    return count * 1
+  },
+
+  // --- EXPLORATION SPECIAL CAVES ---
+  collectors_cave: () => 0, // effect is on the 'cave' card scoring above
+  bat_cave: (count, ctx) => count > 0 ? countTag(ctx, 'bat') * 3 : 0,
+  lonely_cave: (count, ctx) => {
+    if (count === 0) return 0
+    const regularCaveCount = countCard(ctx, 'cave')
+    return regularCaveCount === 0 ? 5 : 0
+  },
 }
 
 // ============================================================
@@ -314,10 +326,11 @@ export function buildForestContext(
     bird: 0, butterfly: 0, insect: 0, amphibian: 0,
     pawed: 0, deer: 0, bat: 0, plant: 0, mushroom: 0,
     alpine: 0, cloven_hoofed: 0, woodland_edge: 0,
+    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0,
   }
 
   const slotCounts: Record<CardCategory, number> = {
-    tree: 0, top: 0, bottom: 0, lateral: 0, cave: 0,
+    tree: 0, top: 0, bottom: 0, lateral: 0, moor: 0, cave: 0,
   }
 
   const treeSpeciesPresent = new Set<string>()
@@ -350,6 +363,7 @@ export function buildForestContext(
     slotCounts,
     fullyOccupiedTrees,
     totalCards,
+    totalMoors: 0,
     cardMetadata,
   }
 }
@@ -385,7 +399,7 @@ export function computeScoreBreakdown(
 
   const entries: ScoreEntry[] = []
   const categoryTotals: Record<CardCategory, number> = {
-    tree: 0, top: 0, bottom: 0, lateral: 0, cave: 0,
+    tree: 0, top: 0, bottom: 0, lateral: 0, moor: 0, cave: 0,
   }
 
   for (const cardKey of activeCards) {

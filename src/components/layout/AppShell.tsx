@@ -1,14 +1,14 @@
 import { Outlet, NavLink, useLocation } from 'react-router-dom'
-import { Home, Calculator, History, BarChart3 } from 'lucide-react'
+import { Home, Calculator, History, BarChart3, Settings } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
-import { LanguageToggle } from '@/components/LanguageToggle'
 
 const navItems = [
   { to: '/', icon: Home, key: 'nav.home' },
   { to: '/new-game', icon: Calculator, key: 'nav.score' },
   { to: '/history', icon: History, key: 'nav.history' },
   { to: '/leaderboard', icon: BarChart3, key: 'nav.stats' },
+  { to: '/settings', icon: Settings, key: 'nav.settings' },
 ] as const
 
 export function AppShell() {
@@ -42,7 +42,6 @@ export function AppShell() {
                 <span>{t(key)}</span>
               </NavLink>
             ))}
-            <LanguageToggle />
           </div>
         </nav>
       )}

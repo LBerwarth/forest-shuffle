@@ -131,4 +131,102 @@ export const CARD_ICONS: Record<string, string> = {
 
   // Cave
   cave: '🕳️',
+  collectors_cave: '🕳️',
+  bat_cave: '🦇',
+  lonely_cave: '🕳️',
+
+  // ============================================================
+  // DARTMOOR EDITION
+  // ============================================================
+
+  // Dartmoor Trees
+  ash: '🌳',
+  black_alder: '🌳',
+  crab_apple: '🌳',
+  goat_willow: '🌳',
+  moor_birch: '🌳',
+  sessile_oak: '🌳',
+
+  // Dartmoor Shrubs
+  common_hazel_d: '🌳',
+  elderberry_d: '🌳',
+
+  // Dartmoor Moors
+  blanket_bog: '🏞️',
+  fountainhead: '🏞️',
+  lowland_heath: '🏞️',
+  rhos_pasture: '🏞️',
+  rivulet: '🏞️',
+  tor: '🏞️',
+  valley_mire: '🏞️',
+  warrens: '🏞️',
+  wet_woodland: '🏞️',
+
+  // Dartmoor Birds
+  barn_owl_d: '🐦',
+  black_tailed_godwit: '🐦',
+  buzzard: '🐦',
+  common_moorhen: '🐦',
+  cuckoo_d: '🐦',
+  curlew: '🐦',
+  grey_heron: '🐦',
+  meadow_pipit: '🐦',
+  wheatear: '🐦',
+  capercaillie_d: '🐦',
+  common_pheasant: '🐦',
+  nuthatch: '🐦',
+  treecreeper: '🐦',
+
+  // Dartmoor Dragonflies
+  beautiful_demoiselle: '🪰',
+  emerald_damselfly: '🪰',
+  keeled_skimmer: '🪰',
+  small_red_damselfly: '🪰',
+  southern_damselfly: '🪰',
+
+  // Dartmoor Amphibians / Reptiles
+  adder: '🐍',
+  common_lizard: '🦎',
+  grass_snake: '🐍',
+  moor_frog: '🐸',
+  warty_newt: '🐸',
+
+  // Dartmoor Plants
+  adders_tongue: '🌱',
+  bog_asphodel: '🌱',
+  blueberry_d: '🌱',
+  greater_butterfly_orchid: '🌱',
+  heather: '🌱',
+  meadowsweet: '🌱',
+  royal_fern: '🌱',
+  water_soldiers: '🌱',
+
+  // Dartmoor Other Bottom
+  beaver: '🦫',
+  blue_ground_beetle: '🪲',
+  otter: '🦦',
+
+  // Dartmoor Bats
+  alcathoe_bat: '🦇',
+  brandts_bat: '🦇',
+  common_noctule: '🦇',
+  daubentons_bat: '🦇',
+  serotine_bat: '🦇',
+
+  // Dartmoor Pawed / Hoofed
+  dartmoor_badger: '🐾',
+  dartmoor_black_rabbit: '🐇',
+  dartmoor_pony: '🐴',
+  dartmoor_sheep: '🐑',
+  field_vole: '🐭',
+  wood_mouse: '🐭',
+  shrew: '🐭',
+  roe_deer_d: '🦌',
+
+  // Dartmoor Insects
+  gnat_d: '🪲',
+  lake_fly: '🪲',
+
+  // Dartmoor Cave
+  cave_d: '🕳️',
 }
