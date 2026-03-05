@@ -11,7 +11,16 @@
       "Bash(tail:*)",
       "Bash(true:*)",
       "Bash(cd /c/Users/florent.mouton_merci/Tech/forest-shuffle-app && npm run build 2>&1)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "WebSearch",
+      "WebFetch(domain:boardgamegeek.com)",
+      "WebFetch(domain:cdn.svc.asmodee.net)",
+      "WebFetch(domain:lookout-spiele.de)",
+      "WebFetch(domain:www.rulespal.com)",
+      "WebFetch(domain:europemasters.eu)",
+      "WebFetch(domain:www.scribd.com)",
+      "WebFetch(domain:boardgoats.org)",
+      "WebFetch(domain:digidiced.com)"
     ]
   }
 }

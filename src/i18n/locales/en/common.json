@@ -3,14 +3,15 @@
     "home": "Home",
     "score": "Score",
     "history": "History",
-    "stats": "Stats"
+    "stats": "Stats",
+    "settings": "Settings"
   },
   "category": {
     "tree": "Trees",
     "top": "Top",
     "bottom": "Bottom",
-    "left": "Left",
-    "right": "Right",
+    "lateral": "Lateral",
+    "moor": "Moor",
     "cave": "Cave"
   },
   "home": {
@@ -38,7 +39,7 @@
     "playerName": "Player name",
     "add": "Add",
     "addNewPlayer": "Add New Player",
-    "alpineEnabled": "Alpine expansion enabled",
+    "expansionsEnabled": "expansion(s) enabled",
     "baseOnly": "Base game only",
     "changeInSettings": "Change in settings",
     "startScoring": "Start Scoring ({{count}} players)"
@@ -47,6 +48,8 @@
     "scoreEntry": "Score Entry",
     "fullyOccupiedTrees": "Fully Occupied Trees",
     "fullyOccupiedDesc": "Trees with all 4 slots filled (for Oak scoring)",
+    "specialCave": "Special Cave",
+    "noneCave": "None",
     "back": "Back",
     "next": "Next",
     "finish": "Finish"
@@ -117,6 +120,10 @@
     "expansions": "Expansions",
     "alpineExpansion": "Alpine Expansion",
     "alpineDesc": "Include Alpine cards in scoring wizard",
+    "woodlandExpansion": "Woodland Expansion",
+    "woodlandDesc": "Include Woodland cards in scoring wizard",
+    "explorationExpansion": "Exploration Expansion",
+    "explorationDesc": "Include special cave cards in scoring wizard",
     "language": "Language",
     "languageDesc": "Choose your preferred language",
     "data": "Data",
@@ -128,6 +135,10 @@
     "clear": "Clear",
     "clearConfirm1": "This will delete ALL players and game history. Are you sure?",
     "clearConfirm2": "This cannot be undone. Are you really sure?",
+    "edition": "Game Edition",
+    "classicEdition": "Forest Shuffle",
+    "dartmoorEdition": "Dartmoor",
+    "editionDesc": "Choose which Forest Shuffle game to score",
     "appName": "Forest Shuffle Companion",
     "version": "v0.1.0",
     "appDesc": "Score calculator & game tracker for the Forest Shuffle board game."

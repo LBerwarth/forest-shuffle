@@ -1,17 +1,20 @@
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import type { ScoreBreakdown } from '@/types/scoring'
-import { CATEGORY_ICONS, CATEGORY_ORDER } from '@/data/categories'
+import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
+import type { GameEdition } from '@/types/card'
 
 interface ScoreSummaryProps {
   breakdown: ScoreBreakdown | null
   className?: string
+  edition?: GameEdition
 }
 
-export function ScoreSummary({ breakdown, className }: ScoreSummaryProps) {
+export function ScoreSummary({ breakdown, className, edition = 'classic' }: ScoreSummaryProps) {
   const { t } = useTranslation()
   const total = breakdown?.total ?? 0
   const categories = breakdown?.categoryTotals
+  const categoryOrder = getCategoryOrder(edition)
 
   return (
     <div className={cn(
@@ -20,7 +23,7 @@ export function ScoreSummary({ breakdown, className }: ScoreSummaryProps) {
     )}>
       <div className="flex flex-1 items-center gap-2 overflow-x-auto scrollbar-hide">
         {categories &&
-          CATEGORY_ORDER.map((cat) => {
+          categoryOrder.map((cat) => {
             const pts = categories[cat]
             if (pts == null) return null
             return (

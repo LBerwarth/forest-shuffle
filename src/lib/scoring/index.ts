@@ -4,10 +4,10 @@ export {
   computeScoreBreakdown,
   scoreButterflySet,
   scoreBatSet,
-  scoreDeerSet,
-  scoreMarmotSet,
   scoreLinden,
   scoreWoodpecker,
-  scoreBeech,
-  scoreOak,
 } from './engine'
+
+export {
+  computeDartmoorScoreBreakdown,
+} from './dartmoor-engine'

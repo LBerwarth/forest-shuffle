@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "score": "Puntos",
+    "history": "Historial",
+    "stats": "Estadísticas",
+    "settings": "Ajustes"
+  },
+  "category": {
+    "tree": "Árboles",
+    "top": "Arriba",
+    "bottom": "Abajo",
+    "lateral": "Lateral",
+    "moor": "Páramo",
+    "cave": "Cueva"
+  },
+  "home": {
+    "title": "Forest Shuffle",
+    "subtitle": "App Compañera",
+    "scoreNewGame": "Puntuar nueva partida",
+    "newGame": "Nueva Partida",
+    "scoreGame": "Puntuar una partida",
+    "history": "Historial",
+    "pastGames": "Partidas anteriores",
+    "players": "Jugadores",
+    "managePlayers": "Gestionar jugadores",
+    "leaderboard": "Clasificación",
+    "rankings": "Ranking",
+    "lastGame": "Última Partida",
+    "playerCount": "{{count}} jugadores",
+    "winner": "Ganador: {{name}}",
+    "pts": "{{count}} pts",
+    "games": "Partidas",
+    "settings": "Ajustes"
+  },
+  "newGame": {
+    "title": "Nueva Partida",
+    "selectPlayers": "Seleccionar jugadores (2-5)",
+    "playerName": "Nombre del jugador",
+    "add": "Añadir",
+    "addNewPlayer": "Añadir nuevo jugador",
+    "expansionsEnabled": "expansión(es) activada(s)",
+    "baseOnly": "Solo juego base",
+    "changeInSettings": "Cambiar en ajustes",
+    "startScoring": "Empezar puntuación ({{count}} jugadores)"
+  },
+  "wizard": {
+    "scoreEntry": "Entrada de puntos",
+    "fullyOccupiedTrees": "Árboles completamente ocupados",
+    "fullyOccupiedDesc": "Árboles con las 4 ranuras llenas (para puntuación del Roble)",
+    "specialCave": "Cueva especial",
+    "noneCave": "Ninguna",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Finalizar"
+  },
+  "result": {
+    "wins": "¡{{name}} gana!",
+    "points": "{{count}} puntos",
+    "scoreBreakdown": "Desglose de puntos",
+    "category": "Categoría",
+    "total": "Total",
+    "saveGame": "Guardar partida",
+    "newGame": "Nueva Partida",
+    "home": "Inicio"
+  },
+  "history": {
+    "title": "Historial de partidas",
+    "gameCount": "{{count}} partidas",
+    "noGames": "Aún no hay partidas registradas.",
+    "noGamesHint": "¡Juega tu primera partida para verla aquí!",
+    "deleteConfirm": "¿Eliminar esta partida?"
+  },
+  "gameDetail": {
+    "title": "Detalles de la partida",
+    "playerCount": "{{count}} jugadores",
+    "scoreBreakdown": "Desglose de puntos",
+    "category": "Categoría",
+    "total": "Total",
+    "notFound": "Partida no encontrada."
+  },
+  "players": {
+    "title": "Jugadores",
+    "stats": "{{games}} partidas • {{wins}} victorias",
+    "noPlayers": "Aún no hay jugadores. ¡Añade tu primer jugador!",
+    "playerName": "Nombre del jugador",
+    "add": "Añadir",
+    "addPlayer": "Añadir jugador",
+    "removeConfirm": "¿Eliminar a {{name}}?"
+  },
+  "playerDetail": {
+    "wins": "Victorias ({{rate}}%)",
+    "avgScore": "Puntuación media",
+    "bestScore": "Mejor puntuación",
+    "strategyProfile": "Perfil estratégico",
+    "scoreHistory": "Historial de puntos",
+    "gameHistory": "Historial de partidas",
+    "noGames": "Sin partidas aún",
+    "rank": "Puesto #{{rank}} de {{count}}",
+    "notFound": "Jugador no encontrado."
+  },
+  "leaderboard": {
+    "title": "Clasificación",
+    "wins": "Victorias",
+    "winRate": "% Vic.",
+    "avg": "Media",
+    "best": "Mejor",
+    "games": "Partidas",
+    "noData": "¡Juega algunas partidas para ver la clasificación!",
+    "winsLabel": "vic.",
+    "avgLabel": "media",
+    "bestLabel": "mejor",
+    "records": "Récords",
+    "mostWins": "Más victorias",
+    "highestScore": "Mayor puntuación",
+    "highestAverage": "Mayor media"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "expansions": "Expansiones",
+    "alpineExpansion": "Expansión Alpine",
+    "alpineDesc": "Incluir cartas Alpine en el asistente de puntuación",
+    "woodlandExpansion": "Expansión Woodland",
+    "woodlandDesc": "Incluir cartas Woodland en el asistente de puntuación",
+    "explorationExpansion": "Expansión Exploration",
+    "explorationDesc": "Incluir cuevas especiales en el asistente de puntuación",
+    "language": "Idioma",
+    "languageDesc": "Elige tu idioma preferido",
+    "data": "Datos",
+    "exportData": "Exportar datos",
+    "exportDesc": "Descargar jugadores y partidas como JSON",
+    "export": "Exportar",
+    "clearData": "Borrar todos los datos",
+    "clearDesc": "Eliminar todo permanentemente",
+    "clear": "Borrar",
+    "clearConfirm1": "Esto eliminará TODOS los jugadores y el historial de partidas. ¿Estás seguro?",
+    "clearConfirm2": "Esto no se puede deshacer. ¿Estás realmente seguro?",
+    "edition": "Edición del juego",
+    "classicEdition": "Forest Shuffle",
+    "dartmoorEdition": "Dartmoor",
+    "editionDesc": "Elige qué juego Forest Shuffle puntuar",
+    "appName": "Forest Shuffle Companion",
+    "version": "v0.1.0",
+    "appDesc": "Calculadora de puntos y seguimiento de partidas para el juego de mesa Forest Shuffle."
+  },
+  "scoring": {
+    "alpine": "Alpine",
+    "pts": "pts",
+    "total": "Total"
+  }
+}

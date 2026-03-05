@@ -4,20 +4,16 @@
     "scoring": "1 point par Bouleau"
   },
   "beech": {
-    "name": "H\u00eatre",
-    "scoring": "5 points si vous avez 4+ H\u00eatres"
-  },
-  "spruce": {
-    "name": "\u00c9pic\u00e9a",
-    "scoring": "2 points par esp\u00e8ce d\u2019arbre dans votre for\u00eat"
+    "name": "Hêtre",
+    "scoring": "5 points chacun si vous avez 4+ Hêtres"
   },
   "douglas_fir": {
-    "name": "Douglas",
-    "scoring": "5 points par Douglas"
+    "name": "Sapin Douglas",
+    "scoring": "5 points par Sapin Douglas"
   },
   "oak": {
-    "name": "Ch\u00eane",
-    "scoring": "10 points par Ch\u00eane enti\u00e8rement occup\u00e9"
+    "name": "Chêne",
+    "scoring": "10 points chacun si vous avez 8+ espèces d'arbres"
   },
   "horse_chestnut": {
     "name": "Marronnier",
@@ -25,195 +21,295 @@
   },
   "linden": {
     "name": "Tilleul",
-    "scoring": "3 points chacun si vous avez le plus de Tilleuls (ou \u00e9galit\u00e9)"
+    "scoring": "1pt chacun ; 3pts chacun si vous avez le plus de Tilleuls (ou égalité)"
   },
   "sycamore": {
-    "name": "Platane",
-    "scoring": "1 point par carte dans votre for\u00eat"
+    "name": "Érable",
+    "scoring": "1 point par arbre dans votre forêt"
   },
   "silver_fir": {
     "name": "Sapin blanc",
-    "scoring": "2 points par carte attach\u00e9e aux Sapins blancs",
-    "context": "Cartes attach\u00e9es aux Sapins blancs"
+    "scoring": "2 points par carte attachée aux Sapins blancs",
+    "context": "Cartes attachées aux Sapins blancs"
   },
   "european_larch": {
-    "name": "M\u00e9l\u00e8ze d\u2019Europe",
-    "scoring": "2 points par carte Alpine"
+    "name": "Mélèze d'Europe",
+    "scoring": "3 points par Mélèze d'Europe"
   },
   "stone_pine": {
     "name": "Pin cembro",
-    "scoring": "1 point par carte en haut et en bas des Pins cembro",
-    "context": "Cartes attach\u00e9es aux Pins cembro"
+    "scoring": "1 point par carte Alpine (lui-même inclus)",
+    "context": "Cartes attachées aux Pins cembro"
+  },
+  "palm_tree": {
+    "name": "Palmier",
+    "scoring": "1 point par oiseau"
+  },
+  "turkey_oak": {
+    "name": "Chêne chevelu",
+    "scoring": "1 point par animal à sabots"
   },
   "bullfinch": {
     "name": "Bouvreuil",
-    "scoring": "2 points par insecte dans votre for\u00eat"
+    "scoring": "2 points par insecte dans votre forêt"
   },
   "chaffinch": {
     "name": "Pinson",
-    "scoring": "5 points si sur un H\u00eatre",
-    "context": "Combien de Pinsons sont sur un H\u00eatre\u00a0?"
+    "scoring": "5 points si sur un Hêtre",
+    "context": "Combien de Pinsons sont sur un Hêtre\u00a0?"
   },
   "great_spotted_woodpecker": {
-    "name": "Pic \u00e9peiche",
-    "scoring": "10 points si vous avez le plus d\u2019arbres (ou \u00e9galit\u00e9)"
+    "name": "Pic épeiche",
+    "scoring": "10 points si vous avez le plus d'arbres (ou égalité)"
   },
   "goshawk": {
     "name": "Autour des palombes",
-    "scoring": "3 points par oiseau (lui-m\u00eame inclus)"
+    "scoring": "3 points par oiseau (lui-même inclus)"
   },
-  "jay": {
-    "name": "Geai",
-    "scoring": "1 point par esp\u00e8ce d\u2019arbre"
+  "eurasian_jay": {
+    "name": "Geai des chênes",
+    "scoring": "3 points par Geai des chênes"
   },
-  "great_tit": {
-    "name": "M\u00e9sange charbonni\u00e8re",
-    "scoring": "2 points par champignon"
-  },
-  "robin": {
-    "name": "Rouge-gorge",
-    "scoring": "2 points par plante"
-  },
-  "owl": {
+  "tawny_owl": {
     "name": "Chouette hulotte",
-    "scoring": "3 points par chauve-souris"
-  },
-  "tree_frog_top": {
-    "name": "Rainette verte (haut)",
-    "scoring": "1 point par esp\u00e8ce d\u2019arbre"
+    "scoring": "5 points par Chouette hulotte"
   },
   "peacock_butterfly": {
     "name": "Paon-du-jour",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/30/42/56"
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
   },
   "purple_emperor": {
     "name": "Grand mars changeant",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/30/42/56"
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
   },
   "silver_washed_fritillary": {
-    "name": "Tabac d\u2019Espagne",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/30/42/56"
-  },
-  "swallowtail": {
-    "name": "Machaon",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/30/42/56"
+    "name": "Tabac d'Espagne",
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
   },
   "camberwell_beauty": {
     "name": "Morio",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/30/42/56"
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Grande tortue",
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
   },
   "red_squirrel": {
-    "name": "\u00c9cureuil roux",
-    "scoring": "5 points si sur un Ch\u00eane",
-    "context": "Combien d\u2019\u00c9cureuils roux sont sur un Ch\u00eane\u00a0?"
+    "name": "Écureuil roux",
+    "scoring": "5 points si sur un Chêne",
+    "context": "Combien d'Écureuils roux sont sur un Chêne\u00a0?"
   },
   "golden_eagle": {
     "name": "Aigle royal",
-    "scoring": "3 points par carte Alpine (lui-m\u00eame inclus)"
+    "scoring": "1 point par animal à pattes + 1 par amphibien"
   },
   "bearded_vulture": {
-    "name": "Gypa\u00e8te barbu",
-    "scoring": "3 points par animal \u00e0 pattes"
+    "name": "Gypaète barbu",
+    "scoring": "1 point par carte grotte"
   },
   "common_raven": {
     "name": "Grand corbeau",
-    "scoring": "2 points par Grand corbeau"
+    "scoring": "5 points par Grand corbeau"
   },
   "phoebus_apollo": {
     "name": "Apollon",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/30/42/56"
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Effraie des clochers",
+    "scoring": "3 points par chauve-souris"
+  },
+  "brimstone": {
+    "name": "Citron",
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Cardinal",
+    "scoring": "5 points par Cardinal"
+  },
+  "cuckoo": {
+    "name": "Coucou",
+    "scoring": "7 points par Coucou"
+  },
+  "eurasian_magpie": {
+    "name": "Pie bavarde",
+    "scoring": "3 points par Pie bavarde"
+  },
+  "map_butterfly": {
+    "name": "Carte géographique",
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Gui",
+    "scoring": "1 point par plante"
+  },
+  "nightingale": {
+    "name": "Rossignol",
+    "scoring": "5 points si sur un buisson",
+    "context": "Combien de Rossignols sont sur un buisson\u00a0?"
+  },
+  "robin": {
+    "name": "Rouge-gorge",
+    "scoring": "1 point par insecte"
+  },
+  "whinchat": {
+    "name": "Tarier des prés",
+    "scoring": "1 point par plante"
+  },
+  "common_toad": {
+    "name": "Crapaud commun",
+    "scoring": "5 points par Crapaud partageant un arbre avec un autre",
+    "context": "Combien de Crapauds partagent un arbre avec un autre\u00a0?"
   },
   "fire_salamander": {
-    "name": "Salamandre tachet\u00e9e",
-    "scoring": "1 point par amphibien (elle-m\u00eame incluse)"
+    "name": "Salamandre tachetée",
+    "scoring": "Score par collection\u00a0: 5/15/25 pour 1/2/3"
   },
-  "tree_frog_bottom": {
-    "name": "Rainette verte (bas)",
-    "scoring": "1 point par esp\u00e8ce d\u2019arbre"
+  "tree_frog": {
+    "name": "Rainette verte",
+    "scoring": "5 points par moucheron par Rainette"
   },
   "stag_beetle": {
     "name": "Lucane cerf-volant",
-    "scoring": "1 point par arbre dans votre for\u00eat"
+    "scoring": "1 point par animal à pattes"
   },
   "wood_ant": {
     "name": "Fourmi rousse",
-    "scoring": "Score par paires\u00a0: 2/5"
+    "scoring": "2 points par carte en emplacement bas (comptage auto)"
   },
   "penny_bun": {
-    "name": "C\u00e8pe de Bordeaux",
-    "scoring": "Score par paires\u00a0: 2/5"
+    "name": "Cèpe de Bordeaux",
+    "scoring": "0 points (compte comme champignon)"
   },
   "chanterelle": {
     "name": "Girolle",
-    "scoring": "Score par paires\u00a0: 2/5"
+    "scoring": "0 points (compte comme champignon)"
   },
   "fly_agaric": {
     "name": "Amanite tue-mouches",
-    "scoring": "Score par paires\u00a0: 2/5"
+    "scoring": "0 points (compte comme champignon)"
   },
   "parasol_mushroom": {
-    "name": "L\u00e9piote \u00e9lev\u00e9e",
-    "scoring": "Score par paires\u00a0: 2/5"
+    "name": "Lépiote élevée",
+    "scoring": "0 points (compte comme champignon)"
   },
   "moss": {
     "name": "Mousse",
-    "scoring": "10 points si vous avez 10+ arbres"
+    "scoring": "10 points chacun si vous avez 10+ arbres"
   },
-  "fern": {
-    "name": "Foug\u00e8re",
-    "scoring": "1 point par plante et champignon dans votre for\u00eat"
-  },
-  "wood_strawberry": {
-    "name": "Fraise des bois",
-    "scoring": "Score par collection\u00a0: 3/6/10/15/21/28"
+  "wild_strawberries": {
+    "name": "Fraises des bois",
+    "scoring": "10 points chacun si vous avez 8+ espèces d'arbres"
   },
   "hedgehog": {
-    "name": "H\u00e9risson",
+    "name": "Hérisson",
     "scoring": "2 points par papillon"
   },
-  "european_hare_bottom": {
-    "name": "Li\u00e8vre d\u2019Europe (bas)",
-    "scoring": "Points \u00e9gaux au nombre total de Li\u00e8vres"
+  "pond_turtle": {
+    "name": "Cistude d'Europe",
+    "scoring": "5 points par Cistude"
+  },
+  "blackberries": {
+    "name": "Mûres",
+    "scoring": "2 points par plante (elle-même incluse)"
+  },
+  "fireflies": {
+    "name": "Lucioles",
+    "scoring": "Score par collection\u00a0: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Taupe",
+    "scoring": "0 points"
+  },
+  "tree_ferns": {
+    "name": "Fougères arborescentes",
+    "scoring": "6 points par amphibien"
   },
   "alpine_newt": {
     "name": "Triton alpin",
-    "scoring": "2 points par amphibien (lui-m\u00eame inclus)"
+    "scoring": "2 points par insecte"
   },
   "blueberry": {
     "name": "Myrtille",
-    "scoring": "1 point par oiseau"
+    "scoring": "2 points par type d'oiseau unique"
   },
   "gentian": {
     "name": "Gentiane",
-    "scoring": "2 points par papillon"
+    "scoring": "3 points par papillon"
   },
   "edelweiss": {
     "name": "Edelweiss",
-    "scoring": "10 points si 3+ cartes Alpine"
+    "scoring": "3 points par Edelweiss"
+  },
+  "black_trumpet": {
+    "name": "Trompette de la mort",
+    "scoring": "0 points (compte comme champignon)"
+  },
+  "digitalis": {
+    "name": "Digitale",
+    "scoring": "Diversité plantes\u00a0: 0/1/3/6/10/15 par type unique"
+  },
+  "great_green_bush_cricket": {
+    "name": "Grande sauterelle verte",
+    "scoring": "1 point par insecte (elle-même incluse)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Comaret",
+    "scoring": "15/7/3 pts selon le nombre d'arbres (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Ortie",
+    "scoring": "2 points par papillon"
+  },
+  "water_vole": {
+    "name": "Campagnol amphibie",
+    "scoring": "0 points (compte comme amphibien)"
+  },
+  "wild_tulip": {
+    "name": "Tulipe sauvage",
+    "scoring": "3 points par Tulipe sauvage"
   },
   "barbastelle": {
     "name": "Barbastelle",
-    "scoring": "Chauves-souris\u00a0: 0/5/10/15/20/25"
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "bechsteins_bat": {
     "name": "Murin de Bechstein",
-    "scoring": "Chauves-souris\u00a0: 0/5/10/15/20/25"
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "brown_long_eared_bat": {
     "name": "Oreillard brun",
-    "scoring": "Chauves-souris\u00a0: 0/5/10/15/20/25"
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "greater_horseshoe_bat": {
     "name": "Grand rhinolophe",
-    "scoring": "Chauves-souris\u00a0: 0/5/10/15/20/25"
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "savis_pipistrelle": {
+    "name": "Vespère de Savi",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "common_pipistrelle": {
+    "name": "Pipistrelle commune",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "roe_deer": {
     "name": "Chevreuil",
-    "scoring": "Cervid\u00e9s\u00a0: 3/8/15 (paires/triples)"
+    "scoring": "3 points par carte avec le même symbole d'arbre (lui-même inclus)",
+    "context": "Cartes avec le même symbole d'arbre que votre Chevreuil"
   },
   "red_deer": {
-    "name": "Cerf \u00e9laphe",
-    "scoring": "Cervid\u00e9s\u00a0: 3/8/15 (paires/triples)"
+    "name": "Cerf élaphe",
+    "scoring": "1 point par arbre et par plante"
+  },
+  "chamois": {
+    "name": "Chamois",
+    "scoring": "3 points par carte avec le même symbole d'arbre (lui-même inclus)",
+    "context": "Cartes avec le même symbole d'arbre que votre Chamois"
+  },
+  "steinbock": {
+    "name": "Bouquetin",
+    "scoring": "10 points par Bouquetin"
   },
   "lynx": {
     "name": "Lynx",
@@ -221,83 +317,134 @@
   },
   "wolf": {
     "name": "Loup",
-    "scoring": "5 points par animal \u00e0 pattes (loups exclus)"
+    "scoring": "5 points par cervidé"
   },
   "wild_boar": {
     "name": "Sanglier",
-    "scoring": "10 points si au moins 1 Muscardin dans votre for\u00eat"
+    "scoring": "10 points si au moins 1 Muscardin dans votre forêt"
   },
-  "badger": {
-    "name": "Blaireau",
-    "scoring": "3 points par paire de champignons"
+  "european_badger": {
+    "name": "Blaireau européen",
+    "scoring": "2 points par Blaireau européen"
   },
-  "european_hare_left": {
-    "name": "Li\u00e8vre d\u2019Europe (gauche)",
-    "scoring": "Points \u00e9gaux au nombre total de Li\u00e8vres"
+  "european_hare": {
+    "name": "Lièvre d'Europe",
+    "scoring": "Points égaux au nombre total de Lièvres par Lièvre"
   },
-  "savis_pipistrelle": {
-    "name": "Vespr\u00e8re de Savi",
-    "scoring": "Chauves-souris\u00a0: 0/5/10/15/20/25"
-  },
-  "chamois": {
-    "name": "Chamois",
-    "scoring": "Cervid\u00e9s\u00a0: 3/8/15 (paires/triples)"
-  },
-  "steinbock": {
-    "name": "Bouquetin",
-    "scoring": "Cervid\u00e9s\u00a0: 3/8/15 (paires/triples)"
-  },
-  "brown_bear": {
-    "name": "Ours brun",
-    "scoring": "2 points par abeille et 2 points par poisson"
-  },
-  "fox": {
-    "name": "Renard",
-    "scoring": "2 points par Li\u00e8vre dans votre for\u00eat"
-  },
-  "red_squirrel_right": {
-    "name": "\u00c9cureuil roux (droite)",
-    "scoring": "5 points si sur un Ch\u00eane",
-    "context": "Combien sont sur un Ch\u00eane\u00a0?"
-  },
-  "violet_carpenter_bee": {
-    "name": "Abeille charpenti\u00e8re",
-    "scoring": "1 point par plante et champignon"
-  },
-  "pond_turtle": {
-    "name": "Cistude d\u2019Europe",
-    "scoring": "5 points par paire d\u2019amphibiens"
-  },
-  "tree_frog_right": {
-    "name": "Rainette verte (droite)",
-    "scoring": "1 point par esp\u00e8ce d\u2019arbre"
-  },
-  "wild_strawberry_right": {
-    "name": "An\u00e9mone des bois",
-    "scoring": "1 point par plante et champignon"
-  },
-  "deer_fern": {
-    "name": "Blechnum en \u00e9pi",
-    "scoring": "1 point par cervid\u00e9"
-  },
-  "alpine_marmot": {
-    "name": "Marmotte alpine",
-    "scoring": "Marmottes\u00a0: 0/5/10/20"
-  },
-  "mountain_hare": {
-    "name": "Li\u00e8vre variable",
-    "scoring": "Points \u00e9gaux au nombre total de Li\u00e8vres (compte comme Li\u00e8vre)"
-  },
-  "capercaillie": {
-    "name": "Grand t\u00e9tras",
-    "scoring": "1 point par plante"
+  "european_fat_dormouse": {
+    "name": "Loir gris",
+    "scoring": "15 points si sur un arbre avec une chauve-souris (emplacement opposé)",
+    "context": "Combien sont sur un arbre avec une chauve-souris\u00a0?"
   },
   "squeaker": {
     "name": "Muscardin",
     "scoring": "1 point par Muscardin"
   },
+  "brown_bear": {
+    "name": "Ours brun",
+    "scoring": "0 points"
+  },
+  "fox": {
+    "name": "Renard",
+    "scoring": "2 points par Lièvre dans votre forêt"
+  },
+  "violet_carpenter_bee": {
+    "name": "Abeille charpentière",
+    "scoring": "0 points"
+  },
+  "beech_marten": {
+    "name": "Fouine",
+    "scoring": "5 points par arbre entièrement occupé (comptage auto)"
+  },
+  "fallow_deer": {
+    "name": "Daim",
+    "scoring": "3 points par animal à sabots (lui-même inclus)"
+  },
+  "gnat": {
+    "name": "Moucheron",
+    "scoring": "1 point par chauve-souris"
+  },
+  "raccoon": {
+    "name": "Raton laveur",
+    "scoring": "0 points"
+  },
+  "alpine_marmot": {
+    "name": "Marmotte alpine",
+    "scoring": "3 points par type de plante unique"
+  },
+  "mountain_hare": {
+    "name": "Lièvre variable",
+    "scoring": "Points égaux au nombre total de Lièvres (compte comme Lièvre)"
+  },
+  "capercaillie": {
+    "name": "Grand tétras",
+    "scoring": "1 point par plante"
+  },
+  "bee_swarm": {
+    "name": "Essaim d'abeilles",
+    "scoring": "1 point par plante"
+  },
+  "crane_fly": {
+    "name": "Tipule",
+    "scoring": "1 point par chauve-souris"
+  },
+  "elk": {
+    "name": "Élan",
+    "scoring": "2 pts par jeune pousse et par carte avec les symboles d'arbre de l'Élan (lui-même inclus)",
+    "context": "Cartes avec les symboles d'arbre de l'Élan + jeunes pousses"
+  },
+  "european_bison": {
+    "name": "Bison d'Europe",
+    "scoring": "2 pts par carte avec un de ses symboles d'arbre (lui-même inclus)",
+    "context": "Cartes avec les symboles d'arbre du Bison (lui-même inclus)"
+  },
+  "european_polecat": {
+    "name": "Putois d'Europe",
+    "scoring": "10 points si seul sur son arbre",
+    "context": "Combien sont seuls sur leur arbre\u00a0?"
+  },
+  "european_wildcat": {
+    "name": "Chat forestier",
+    "scoring": "1 point par carte lisière de forêt (lui-même inclus)"
+  },
+  "genet": {
+    "name": "Genette",
+    "scoring": "5 points par Genette"
+  },
+  "red_panda": {
+    "name": "Panda roux",
+    "scoring": "2 points par Panda roux"
+  },
+  "sable": {
+    "name": "Zibeline",
+    "scoring": "3 points par animal à pattes"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 point par arbre"
+  },
+  "white_stork": {
+    "name": "Cigogne blanche",
+    "scoring": "1 point par insecte + 1 par amphibien"
+  },
+  "wild_boar_female": {
+    "name": "Laie",
+    "scoring": "10 points par Muscardin"
+  },
   "cave": {
     "name": "Grotte",
     "scoring": "1 point par carte dans la grotte"
+  },
+  "collectors_cave": {
+    "name": "Grotte du collectionneur",
+    "scoring": "Chaque carte grotte standard rapporte 2 au lieu de 1"
+  },
+  "bat_cave": {
+    "name": "Grotte des chauves-souris",
+    "scoring": "Chaque chauve-souris rapporte 3 points suppl\u00e9mentaires"
+  },
+  "lonely_cave": {
+    "name": "Grotte solitaire",
+    "scoring": "5 points si aucune carte grotte standard\u00a0; sinon 0"
   }
 }

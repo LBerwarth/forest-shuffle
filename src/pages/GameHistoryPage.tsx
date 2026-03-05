@@ -2,13 +2,13 @@ import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Calendar, Users, Trash2 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
-import { useGameStore } from '@/store/game-store'
+import { useGames, useDeleteGame } from '@/hooks/use-games'
 
 export function GameHistoryPage() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
-  const games = useGameStore((s) => s.games)
-  const removeGame = useGameStore((s) => s.removeGame)
+  const { data: games = [], isLoading } = useGames()
+  const deleteGameMutation = useDeleteGame()
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
@@ -53,6 +53,11 @@ export function GameHistoryPage() {
                             <Users className="h-3 w-3" />
                             {game.player_count}
                           </span>
+                          {game.edition === 'dartmoor' && (
+                            <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                              Dartmoor
+                            </span>
+                          )}
                         </div>
 
                         {/* Player scores */}
@@ -79,7 +84,7 @@ export function GameHistoryPage() {
                         type="button"
                         onClick={(e) => {
                           e.stopPropagation()
-                          if (confirm(t('history.deleteConfirm'))) removeGame(game.id)
+                          if (confirm(t('history.deleteConfirm'))) deleteGameMutation.mutate(game.id)
                         }}
                         className="shrink-0 p-1 text-forest-300 hover:text-red-500 transition-colors"
                       >

@@ -1,25 +1,20 @@
 import { useMemo, useCallback } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, Check } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, Settings } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
-import { WizardStepper, WIZARD_STEPS } from '@/components/scoring/WizardStepper'
+import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
 import { ScoreSummary } from '@/components/scoring/ScoreSummary'
 import { useScoringStore } from '@/store/scoring-store'
 import { getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext } from '@/lib/scoring'
 import { cn } from '@/lib/utils'
-import type { CardCategory } from '@/types/card'
+import { Link } from 'react-router-dom'
+import { CARD_ICONS } from '@/data/cardIcons'
+import { getCategoryOrder } from '@/data/categories'
 
-const STEP_CATEGORIES: CardCategory[][] = [
-  ['tree'],
-  ['top'],
-  ['bottom'],
-  ['left'],
-  ['right'],
-  ['cave'],
-]
+const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave'] as const
 
 export function ScoreWizardPage() {
   const { t } = useTranslation()
@@ -28,7 +23,8 @@ export function ScoreWizardPage() {
   const {
     sessionActive,
     players,
-    includeAlpine,
+    expansions,
+    edition,
     currentPlayerIndex,
     currentStep,
     setCurrentPlayer,
@@ -38,31 +34,68 @@ export function ScoreWizardPage() {
     setFullyOccupiedTrees,
   } = useScoringStore()
 
-  const cardsByCategory = useMemo(() => getCardsByCategory(includeAlpine), [includeAlpine])
+  const wizardSteps = useMemo(() => getWizardSteps(edition), [edition])
+  const stepCategories = useMemo(() => getCategoryOrder(edition).map(cat => [cat]), [edition])
+
+  const cardsByCategory = useMemo(() => getCardsByCategory(expansions, edition), [expansions, edition])
 
   const currentPlayer = players[currentPlayerIndex]
 
+  const tc = useTranslation('cards').t
+
+  const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
+  const hasExploration = edition === 'classic' && expansions.includes('exploration')
+
   const stepCards = useMemo(() => {
-    if (!STEP_CATEGORIES[currentStep]) return []
-    return STEP_CATEGORIES[currentStep]!.flatMap(
-      (cat) => cardsByCategory[cat] || [],
+    if (!stepCategories[currentStep]) return []
+    const cards = stepCategories[currentStep]!.flatMap(
+      (cat) => cardsByCategory[cat as keyof typeof cardsByCategory] || [],
     )
-  }, [currentStep, cardsByCategory])
+    const sorted = cards.sort((a, b) =>
+      tc(`${a.key}.name`).localeCompare(tc(`${b.key}.name`)),
+    )
+    // Filter out special caves when exploration is on — they're shown as a pill selector
+    if (isCaveStep && hasExploration) {
+      return sorted.filter(c => !(SPECIAL_CAVE_KEYS as readonly string[]).includes(c.key))
+    }
+    return sorted
+  }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasExploration])
+
+  const selectedSpecialCave = useMemo(() => {
+    if (!currentPlayer) return null
+    return SPECIAL_CAVE_KEYS.find(
+      k => (currentPlayer.cardCounts[k] || 0) > 0,
+    ) ?? null
+  }, [currentPlayer])
+
+  function handleSpecialCaveSelect(key: string | null) {
+    if (!currentPlayer) return
+    for (const k of SPECIAL_CAVE_KEYS) {
+      setCardCount(currentPlayer.playerId, k, k === key ? 1 : 0)
+    }
+  }
 
   const getCardPoints = useCallback(
     (cardKey: string) => {
       if (!currentPlayer) return 0
       const count = currentPlayer.cardCounts[cardKey] || 0
       if (count === 0) return 0
-      const ctx = buildForestContext(
-        currentPlayer.cardCounts,
-        currentPlayer.cardMetadata,
-        currentPlayer.fullyOccupiedTrees,
-      )
-      const metadata = currentPlayer.cardMetadata[cardKey]
-      return scoreCard(cardKey, count, ctx, metadata)
+      // For both editions, use the pre-computed breakdown entries from the store
+      const entry = currentPlayer.breakdown?.entries.find(e => e.cardKey === cardKey)
+      if (entry) return entry.points
+      // Fallback for classic: compute inline
+      if (edition !== 'dartmoor') {
+        const ctx = buildForestContext(
+          currentPlayer.cardCounts,
+          currentPlayer.cardMetadata,
+          currentPlayer.fullyOccupiedTrees,
+        )
+        const metadata = currentPlayer.cardMetadata[cardKey]
+        return scoreCard(cardKey, count, ctx, metadata)
+      }
+      return 0
     },
-    [currentPlayer],
+    [currentPlayer, edition],
   )
 
   if (!sessionActive || !currentPlayer) {
@@ -70,7 +103,7 @@ export function ScoreWizardPage() {
     return null
   }
 
-  const isLastStep = currentStep === WIZARD_STEPS.length - 1
+  const isLastStep = currentStep === wizardSteps.length - 1
   const isFirstStep = currentStep === 0
   const isLastPlayer = currentPlayerIndex === players.length - 1
 
@@ -91,7 +124,7 @@ export function ScoreWizardPage() {
     if (isFirstStep) {
       if (currentPlayerIndex > 0) {
         setCurrentPlayer(currentPlayerIndex - 1)
-        setCurrentStep(WIZARD_STEPS.length - 1)
+        setCurrentStep(wizardSteps.length - 1)
       }
     } else {
       setCurrentStep(currentStep - 1)
@@ -108,7 +141,9 @@ export function ScoreWizardPage() {
               <ArrowLeft className="h-5 w-5" />
             </button>
             <h1 className="font-heading text-lg font-bold text-forest-800">{t('wizard.scoreEntry')}</h1>
-            <div className="w-5" />
+            <Link to="/settings" className="text-forest-500">
+              <Settings className="h-5 w-5" />
+            </Link>
           </div>
 
           {/* Player tabs */}
@@ -140,6 +175,7 @@ export function ScoreWizardPage() {
           <WizardStepper
             currentStep={currentStep}
             onStepChange={setCurrentStep}
+            edition={edition}
           />
         </div>
       </div>
@@ -177,6 +213,46 @@ export function ScoreWizardPage() {
             </div>
           )}
 
+          {/* Special cave selector for Exploration expansion */}
+          {isCaveStep && hasExploration && (
+            <div className="rounded-xl border border-forest-200 bg-white p-3 mb-1">
+              <p className="text-xs font-medium text-forest-600 mb-2">{t('wizard.specialCave')}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {/* None option */}
+                <button
+                  type="button"
+                  onClick={() => handleSpecialCaveSelect(null)}
+                  className={cn(
+                    'rounded-full px-3 py-1.5 text-xs font-medium transition-all',
+                    selectedSpecialCave === null
+                      ? 'bg-forest-500 text-white'
+                      : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+                  )}
+                >
+                  {t('wizard.noneCave')}
+                </button>
+                {SPECIAL_CAVE_KEYS.map(key => (
+                  <button
+                    key={key}
+                    type="button"
+                    onClick={() => handleSpecialCaveSelect(key)}
+                    className={cn(
+                      'rounded-full px-3 py-1.5 text-xs font-medium transition-all',
+                      selectedSpecialCave === key
+                        ? 'bg-forest-500 text-white'
+                        : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+                    )}
+                  >
+                    {CARD_ICONS[key]} {tc(`${key}.name`)}
+                    {selectedSpecialCave === key && (
+                      <span className="ml-1 opacity-75">({getCardPoints(key)} {t('scoring.pts')})</span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           {stepCards.map((card) => (
             <CardCounter
               key={card.key}
@@ -201,7 +277,7 @@ export function ScoreWizardPage() {
       {/* Footer */}
       <div className="sticky bottom-0 border-t border-forest-200 bg-white/95 backdrop-blur-sm">
         <div className="mx-auto max-w-lg px-4 py-3 space-y-2">
-          <ScoreSummary breakdown={currentPlayer.breakdown} />
+          <ScoreSummary breakdown={currentPlayer.breakdown} edition={edition} />
           <div className="flex gap-3">
             <Button
               variant="secondary"

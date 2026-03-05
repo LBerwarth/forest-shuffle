@@ -3,14 +3,15 @@
     "home": "Accueil",
     "score": "Score",
     "history": "Historique",
-    "stats": "Stats"
+    "stats": "Stats",
+    "settings": "Paramètres"
   },
   "category": {
     "tree": "Arbres",
     "top": "Haut",
     "bottom": "Bas",
-    "left": "Gauche",
-    "right": "Droite",
+    "lateral": "Latéral",
+    "moor": "Lande",
     "cave": "Grotte"
   },
   "home": {
@@ -38,7 +39,7 @@
     "playerName": "Nom du joueur",
     "add": "Ajouter",
     "addNewPlayer": "Ajouter un joueur",
-    "alpineEnabled": "Extension Alpine activ\u00e9e",
+    "expansionsEnabled": "extension(s) activée(s)",
     "baseOnly": "Jeu de base uniquement",
     "changeInSettings": "Modifier dans les param\u00e8tres",
     "startScoring": "Commencer ({{count}} joueurs)"
@@ -47,6 +48,8 @@
     "scoreEntry": "Saisie des scores",
     "fullyOccupiedTrees": "Arbres compl\u00e8tement occup\u00e9s",
     "fullyOccupiedDesc": "Arbres avec les 4 emplacements remplis (pour le score du Ch\u00eane)",
+    "specialCave": "Grotte spéciale",
+    "noneCave": "Aucune",
     "back": "Retour",
     "next": "Suivant",
     "finish": "Terminer"
@@ -116,7 +119,11 @@
     "title": "Param\u00e8tres",
     "expansions": "Extensions",
     "alpineExpansion": "Extension Alpine",
-    "alpineDesc": "Inclure les cartes Alpine dans l\u2019assistant de score",
+    "alpineDesc": "Inclure les cartes Alpine dans l'assistant de score",
+    "woodlandExpansion": "Extension Woodland",
+    "woodlandDesc": "Inclure les cartes Woodland dans l'assistant de score",
+    "explorationExpansion": "Extension Exploration",
+    "explorationDesc": "Inclure les grottes sp\u00e9ciales dans l'assistant de score",
     "language": "Langue",
     "languageDesc": "Choisissez votre langue pr\u00e9f\u00e9r\u00e9e",
     "data": "Donn\u00e9es",
@@ -128,6 +135,10 @@
     "clear": "Supprimer",
     "clearConfirm1": "Cela supprimera TOUS les joueurs et l\u2019historique des parties. \u00cates-vous s\u00fbr\u00a0?",
     "clearConfirm2": "Cette action est irr\u00e9versible. \u00cates-vous vraiment s\u00fbr\u00a0?",
+    "edition": "\u00c9dition du jeu",
+    "classicEdition": "Forest Shuffle",
+    "dartmoorEdition": "Dartmoor",
+    "editionDesc": "Choisissez quel jeu Forest Shuffle scorer",
     "appName": "Forest Shuffle Companion",
     "version": "v0.1.0",
     "appDesc": "Calculateur de scores et suivi de parties pour le jeu Forest Shuffle."

@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Trophy } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
-import { useGameStore } from '@/store/game-store'
+import { usePlayers } from '@/hooks/use-players'
+import { useGames } from '@/hooks/use-games'
 import { cn } from '@/lib/utils'
 
 type SortField = 'wins' | 'winRate' | 'avgScore' | 'bestScore' | 'gamesPlayed'
@@ -22,8 +23,8 @@ interface LeaderboardEntry {
 export function LeaderboardPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const players = useGameStore((s) => s.players)
-  const games = useGameStore((s) => s.games)
+  const { data: players = [] } = usePlayers()
+  const { data: games = [] } = useGames()
   const [sortBy, setSortBy] = useState<SortField>('wins')
 
   const entries = useMemo((): LeaderboardEntry[] => {

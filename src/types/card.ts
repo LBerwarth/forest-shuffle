@@ -1,6 +1,8 @@
-export type Expansion = 'base' | 'alpine'
+export type GameEdition = 'classic' | 'dartmoor'
 
-export type CardCategory = 'tree' | 'top' | 'bottom' | 'left' | 'right' | 'cave'
+export type Expansion = 'base' | 'alpine' | 'woodland' | 'exploration' | 'dartmoor_base'
+
+export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'moor' | 'cave'
 
 export type CardTag =
   | 'bird'
@@ -13,6 +15,12 @@ export type CardTag =
   | 'plant'
   | 'mushroom'
   | 'alpine'
+  | 'cloven_hoofed'
+  | 'woodland_edge'
+  | 'dragonfly'
+  | 'mouse'
+  | 'rabbit'
+  | 'hoofed'
 
 export type ScoringType =
   | 'fixed'
@@ -34,4 +42,6 @@ export interface CardDefinition {
   scoringType: ScoringType
   /** If true, wizard shows a sub-question for additional context */
   needsContext?: boolean
+  /** If true, context value is capped at the card count (e.g. "how many of these are on X?") */
+  contextCappedByCount?: boolean
 }

@@ -1,10 +1,12 @@
 import type { ScoreBreakdown } from './scoring'
+import type { GameEdition } from './card'
 
 export interface Game {
   id: string
   played_at: string
   player_count: number
   notes?: string
+  edition?: GameEdition
 }
 
 export interface GamePlayer {

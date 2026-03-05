@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Start",
+    "score": "Punkte",
+    "history": "Verlauf",
+    "stats": "Statistik",
+    "settings": "Einstellungen"
+  },
+  "category": {
+    "tree": "Bäume",
+    "top": "Oben",
+    "bottom": "Unten",
+    "lateral": "Seitlich",
+    "moor": "Moor",
+    "cave": "Höhle"
+  },
+  "home": {
+    "title": "Forest Shuffle",
+    "subtitle": "Begleit-App",
+    "scoreNewGame": "Neues Spiel werten",
+    "newGame": "Neues Spiel",
+    "scoreGame": "Spiel werten",
+    "history": "Verlauf",
+    "pastGames": "Vergangene Spiele",
+    "players": "Spieler",
+    "managePlayers": "Spieler verwalten",
+    "leaderboard": "Rangliste",
+    "rankings": "Platzierungen",
+    "lastGame": "Letztes Spiel",
+    "playerCount": "{{count}} Spieler",
+    "winner": "Gewinner: {{name}}",
+    "pts": "{{count}} Pkt.",
+    "games": "Spiele",
+    "settings": "Einstellungen"
+  },
+  "newGame": {
+    "title": "Neues Spiel",
+    "selectPlayers": "Spieler auswählen (2-5)",
+    "playerName": "Spielername",
+    "add": "Hinzufügen",
+    "addNewPlayer": "Neuen Spieler hinzufügen",
+    "expansionsEnabled": "Erweiterung(en) aktiviert",
+    "baseOnly": "Nur Grundspiel",
+    "changeInSettings": "In den Einstellungen ändern",
+    "startScoring": "Wertung starten ({{count}} Spieler)"
+  },
+  "wizard": {
+    "scoreEntry": "Punkteingabe",
+    "fullyOccupiedTrees": "Voll besetzte Bäume",
+    "fullyOccupiedDesc": "Bäume mit allen 4 Plätzen besetzt (für Eiche-Wertung)",
+    "specialCave": "Spezialhöhle",
+    "noneCave": "Keine",
+    "back": "Zurück",
+    "next": "Weiter",
+    "finish": "Fertig"
+  },
+  "result": {
+    "wins": "{{name}} gewinnt!",
+    "points": "{{count}} Punkte",
+    "scoreBreakdown": "Punkteübersicht",
+    "category": "Kategorie",
+    "total": "Gesamt",
+    "saveGame": "Spiel speichern",
+    "newGame": "Neues Spiel",
+    "home": "Start"
+  },
+  "history": {
+    "title": "Spielverlauf",
+    "gameCount": "{{count}} Spiele",
+    "noGames": "Noch keine Spiele aufgezeichnet.",
+    "noGamesHint": "Spiele dein erstes Spiel, um es hier zu sehen!",
+    "deleteConfirm": "Dieses Spiel löschen?"
+  },
+  "gameDetail": {
+    "title": "Spieldetails",
+    "playerCount": "{{count}} Spieler",
+    "scoreBreakdown": "Punkteübersicht",
+    "category": "Kategorie",
+    "total": "Gesamt",
+    "notFound": "Spiel nicht gefunden."
+  },
+  "players": {
+    "title": "Spieler",
+    "stats": "{{games}} Spiele • {{wins}} Siege",
+    "noPlayers": "Noch keine Spieler. Füge deinen ersten Spieler hinzu!",
+    "playerName": "Spielername",
+    "add": "Hinzufügen",
+    "addPlayer": "Spieler hinzufügen",
+    "removeConfirm": "{{name}} entfernen?"
+  },
+  "playerDetail": {
+    "wins": "Siege ({{rate}}%)",
+    "avgScore": "Ø Punkte",
+    "bestScore": "Bestpunktzahl",
+    "strategyProfile": "Strategieprofil",
+    "scoreHistory": "Punkteverlauf",
+    "gameHistory": "Spielverlauf",
+    "noGames": "Noch keine Spiele",
+    "rank": "Rang #{{rank}} von {{count}}",
+    "notFound": "Spieler nicht gefunden."
+  },
+  "leaderboard": {
+    "title": "Rangliste",
+    "wins": "Siege",
+    "winRate": "Sieg-%",
+    "avg": "Ø",
+    "best": "Best",
+    "games": "Spiele",
+    "noData": "Spiele ein paar Partien, um die Rangliste zu sehen!",
+    "winsLabel": "Siege",
+    "avgLabel": "Ø",
+    "bestLabel": "Best",
+    "records": "Rekorde",
+    "mostWins": "Meiste Siege",
+    "highestScore": "Höchste Punktzahl",
+    "highestAverage": "Höchster Durchschnitt"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "expansions": "Erweiterungen",
+    "alpineExpansion": "Alpine-Erweiterung",
+    "alpineDesc": "Alpine-Karten im Punkteassistenten einbeziehen",
+    "woodlandExpansion": "Woodland-Erweiterung",
+    "woodlandDesc": "Woodland-Karten im Punkteassistenten einbeziehen",
+    "explorationExpansion": "Exploration-Erweiterung",
+    "explorationDesc": "Spezialhöhlen im Punkteassistenten einbeziehen",
+    "language": "Sprache",
+    "languageDesc": "Wähle deine bevorzugte Sprache",
+    "data": "Daten",
+    "exportData": "Daten exportieren",
+    "exportDesc": "Alle Spieler & Spiele als JSON herunterladen",
+    "export": "Exportieren",
+    "clearData": "Alle Daten löschen",
+    "clearDesc": "Alles unwiderruflich löschen",
+    "clear": "Löschen",
+    "clearConfirm1": "Dies löscht ALLE Spieler und den Spielverlauf. Bist du sicher?",
+    "clearConfirm2": "Dies kann nicht rückgängig gemacht werden. Bist du wirklich sicher?",
+    "edition": "Spielversion",
+    "classicEdition": "Forest Shuffle",
+    "dartmoorEdition": "Dartmoor",
+    "editionDesc": "Wähle welches Forest Shuffle Spiel gewertet werden soll",
+    "appName": "Forest Shuffle Companion",
+    "version": "v0.1.0",
+    "appDesc": "Punkterechner & Spielverfolgung für das Brettspiel Forest Shuffle."
+  },
+  "scoring": {
+    "alpine": "Alpin",
+    "pts": "Pkt.",
+    "total": "Gesamt"
+  }
+}

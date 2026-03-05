@@ -4,20 +4,26 @@ import { ArrowLeft, Mountain, Globe, Download, Trash2 } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { useSettingsStore } from '@/store/settings-store'
-import { useGameStore } from '@/store/game-store'
+import { usePlayers } from '@/hooks/use-players'
+import { useGames } from '@/hooks/use-games'
+import { useScoringStore } from '@/store/scoring-store'
 import { cn } from '@/lib/utils'
 
 const LANGUAGES = [
   { code: 'en' as const, label: 'English' },
   { code: 'fr' as const, label: 'Français' },
+  { code: 'de' as const, label: 'Deutsch' },
+  { code: 'es' as const, label: 'Español' },
 ]
 
 export function SettingsPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const { includeAlpine, toggleAlpine, language, setLanguage } = useSettingsStore()
-  const games = useGameStore((s) => s.games)
-  const players = useGameStore((s) => s.players)
+  const { edition, setEdition, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, language, setLanguage } = useSettingsStore()
+  const endScoringSession = useScoringStore((s) => s.endSession)
+  const scoringSessionActive = useScoringStore((s) => s.sessionActive)
+  const { data: games = [] } = useGames()
+  const { data: players = [] } = usePlayers()
 
   function handleExport() {
     const data = { players, games, exportedAt: new Date().toISOString() }
@@ -48,7 +54,56 @@ export function SettingsPage() {
         <h1 className="font-heading text-xl font-bold text-forest-800">{t('settings.title')}</h1>
       </div>
 
-      {/* Expansion toggle */}
+      {/* Edition selector */}
+      <Card className="mb-4">
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.edition')}</h2>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <p className="text-xs text-forest-400 mb-3">{t('settings.editionDesc')}</p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                if (edition !== 'classic') {
+                  setEdition('classic')
+                  if (scoringSessionActive) endScoringSession()
+                }
+              }}
+              className={cn(
+                'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                edition === 'classic'
+                  ? 'bg-forest-500 text-white'
+                  : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+              )}
+            >
+              {t('settings.classicEdition')}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (edition !== 'dartmoor') {
+                  setEdition('dartmoor')
+                  if (scoringSessionActive) endScoringSession()
+                }
+              }}
+              className={cn(
+                'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                edition === 'dartmoor'
+                  ? 'bg-forest-500 text-white'
+                  : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+              )}
+            >
+              {t('settings.dartmoorEdition')}
+            </button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Expansion toggles — only for classic edition */}
+      {edition === 'classic' && (
       <Card className="mb-4">
         <CardHeader>
           <div className="flex items-center gap-2">
@@ -56,7 +111,7 @@ export function SettingsPage() {
             <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.expansions')}</h2>
           </div>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-3">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-forest-700">{t('settings.alpineExpansion')}</p>
@@ -76,8 +131,47 @@ export function SettingsPage() {
               />
             </button>
           </div>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm font-medium text-forest-700">{t('settings.woodlandExpansion')}</p>
+              <p className="text-xs text-forest-400">{t('settings.woodlandDesc')}</p>
+            </div>
+            <button
+              type="button"
+              onClick={toggleWoodland}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                includeWoodland ? 'bg-forest-500' : 'bg-forest-200'
+              }`}
+            >
+              <span
+                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  includeWoodland ? 'translate-x-6' : 'translate-x-1'
+                }`}
+              />
+            </button>
+          </div>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm font-medium text-forest-700">{t('settings.explorationExpansion')}</p>
+              <p className="text-xs text-forest-400">{t('settings.explorationDesc')}</p>
+            </div>
+            <button
+              type="button"
+              onClick={toggleExploration}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                includeExploration ? 'bg-forest-500' : 'bg-forest-200'
+              }`}
+            >
+              <span
+                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  includeExploration ? 'translate-x-6' : 'translate-x-1'
+                }`}
+              />
+            </button>
+          </div>
         </CardContent>
       </Card>
+      )}
 
       {/* Language */}
       <Card className="mb-4">

@@ -13,7 +13,8 @@ create table if not exists games (
   id uuid primary key default gen_random_uuid(),
   played_at timestamptz not null default now(),
   player_count int not null,
-  notes text
+  notes text,
+  edition text default 'classic'
 );
 
 -- Game-player associations with scores
@@ -21,6 +22,7 @@ create table if not exists game_players (
   id uuid primary key default gen_random_uuid(),
   game_id uuid not null references games(id) on delete cascade,
   player_id uuid not null references profiles(id) on delete cascade,
+  player_name text not null default '',
   total_score int not null default 0,
   rank int not null default 0,
   is_winner boolean not null default false,

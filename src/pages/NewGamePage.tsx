@@ -4,19 +4,23 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, X, UserPlus } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/Card'
-import { useGameStore } from '@/store/game-store'
+import { usePlayers, useCreatePlayer } from '@/hooks/use-players'
 import { useScoringStore } from '@/store/scoring-store'
 import { useSettingsStore } from '@/store/settings-store'
 import { PLAYER_COLORS } from '@/types/player'
 import { cn } from '@/lib/utils'
+import type { Expansion } from '@/types/card'
 
 export function NewGamePage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const storedPlayers = useGameStore((s) => s.players)
-  const addPlayer = useGameStore((s) => s.addPlayer)
+  const { data: storedPlayers = [], isLoading: playersLoading } = usePlayers()
+  const createPlayerMutation = useCreatePlayer()
   const startSession = useScoringStore((s) => s.startSession)
+  const edition = useSettingsStore((s) => s.edition)
   const includeAlpine = useSettingsStore((s) => s.includeAlpine)
+  const includeWoodland = useSettingsStore((s) => s.includeWoodland)
+  const includeExploration = useSettingsStore((s) => s.includeExploration)
 
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
   const [newPlayerName, setNewPlayerName] = useState('')
@@ -28,11 +32,15 @@ export function NewGamePage() {
     )
   }
 
-  function handleAddPlayer() {
+  async function handleAddPlayer() {
     if (!newPlayerName.trim()) return
     const id = crypto.randomUUID()
     const color = PLAYER_COLORS[storedPlayers.length % PLAYER_COLORS.length]!
-    addPlayer({ id, name: newPlayerName.trim(), color, created_at: new Date().toISOString() })
+    try {
+      await createPlayerMutation.mutateAsync({ id, name: newPlayerName.trim(), color })
+    } catch (err) {
+      console.error('Failed to create player:', err)
+    }
     setSelectedPlayerIds((prev) => [...prev, id])
     setNewPlayerName('')
     setShowNewPlayer(false)
@@ -45,8 +53,27 @@ export function NewGamePage() {
       .filter(Boolean)
       .map((p) => ({ id: p!.id, name: p!.name }))
 
-    startSession(players, includeAlpine)
+    let expansions: Expansion[]
+    if (edition === 'dartmoor') {
+      expansions = ['dartmoor_base']
+    } else {
+      expansions = ['base']
+      if (includeAlpine) expansions.push('alpine')
+      if (includeWoodland) expansions.push('woodland')
+      if (includeExploration) expansions.push('exploration')
+    }
+
+    startSession(players, expansions, edition)
     navigate(`/score/${crypto.randomUUID()}`)
+  }
+
+  const expansionLabels: string[] = []
+  if (edition === 'dartmoor') {
+    expansionLabels.push('Dartmoor')
+  } else {
+    if (includeAlpine) expansionLabels.push('Alpine')
+    if (includeWoodland) expansionLabels.push('Woodland')
+    if (includeExploration) expansionLabels.push('Exploration')
   }
 
   return (
@@ -101,23 +128,22 @@ export function NewGamePage() {
       {showNewPlayer ? (
         <Card className="mb-6">
           <CardContent className="py-3">
-            <div className="flex items-center gap-2">
+            <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} className="flex items-center gap-2">
               <input
                 type="text"
                 placeholder={t('newGame.playerName')}
                 value={newPlayerName}
                 onChange={(e) => setNewPlayerName(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleAddPlayer()}
                 autoFocus
                 className="flex-1 rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
               />
-              <Button size="sm" onClick={handleAddPlayer} disabled={!newPlayerName.trim()}>
+              <Button type="submit" size="sm" disabled={!newPlayerName.trim()}>
                 {t('newGame.add')}
               </Button>
               <button type="button" onClick={() => setShowNewPlayer(false)} className="text-forest-400">
                 <X className="h-4 w-4" />
               </button>
-            </div>
+            </form>
           </CardContent>
         </Card>
       ) : (
@@ -131,9 +157,12 @@ export function NewGamePage() {
         </button>
       )}
 
-      {/* Alpine toggle info */}
+      {/* Expansion info */}
       <p className="mb-4 text-xs text-center text-forest-400">
-        {includeAlpine ? `🏔️ ${t('newGame.alpineEnabled')}` : t('newGame.baseOnly')} •{' '}
+        {expansionLabels.length > 0
+          ? `${expansionLabels.join(' + ')} ${t('newGame.expansionsEnabled')}`
+          : t('newGame.baseOnly')
+        } •{' '}
         <button type="button" onClick={() => navigate('/settings')} className="underline hover:text-forest-500">
           {t('newGame.changeInSettings')}
         </button>

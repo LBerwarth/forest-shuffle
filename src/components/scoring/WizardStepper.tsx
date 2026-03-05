@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { Check } from 'lucide-react'
-import { CATEGORY_ICONS, CATEGORY_ORDER } from '@/data/categories'
+import { CATEGORY_ICONS, CATEGORY_ORDER, getCategoryOrder } from '@/data/categories'
+import type { GameEdition } from '@/types/card'
 
 export const WIZARD_STEPS = CATEGORY_ORDER.map((cat, id) => ({
   id,
@@ -9,18 +10,28 @@ export const WIZARD_STEPS = CATEGORY_ORDER.map((cat, id) => ({
   icon: CATEGORY_ICONS[cat],
 }))
 
+export function getWizardSteps(edition: GameEdition) {
+  return getCategoryOrder(edition).map((cat, id) => ({
+    id,
+    category: cat,
+    icon: CATEGORY_ICONS[cat],
+  }))
+}
+
 interface WizardStepperProps {
   currentStep: number
   onStepChange: (step: number) => void
   completedSteps?: Set<number>
+  edition?: GameEdition
 }
 
-export function WizardStepper({ currentStep, onStepChange, completedSteps }: WizardStepperProps) {
+export function WizardStepper({ currentStep, onStepChange, completedSteps, edition = 'classic' }: WizardStepperProps) {
   const { t } = useTranslation()
+  const steps = getWizardSteps(edition)
 
   return (
     <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide px-1 py-2">
-      {WIZARD_STEPS.map((step) => {
+      {steps.map((step) => {
         const isComplete = completedSteps?.has(step.id) ?? false
         const isCurrent = step.id === currentStep
 
