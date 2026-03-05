@@ -1,4 +1,4 @@
-import { supabase } from './supabase'
+import { supabase, getDeviceId } from './supabase'
 import type { Player } from '@/types/player'
 import type { GameWithPlayers } from '@/types/game'
 import type { ScoreBreakdown } from '@/types/scoring'
@@ -12,6 +12,7 @@ export async function fetchPlayers(): Promise<Player[]> {
   const { data, error } = await supabase
     .from('profiles')
     .select('*')
+    .eq('device_id', getDeviceId())
     .order('created_at', { ascending: true })
   if (error) throw error
   return data as Player[]
@@ -23,7 +24,7 @@ export async function createPlayer(
   if (!supabase) throw new Error('Supabase not configured')
   const { data, error } = await supabase
     .from('profiles')
-    .insert({ id: player.id, name: player.name, color: player.color })
+    .insert({ id: player.id, name: player.name, color: player.color, device_id: getDeviceId() })
     .select()
     .single()
   if (error) throw error
@@ -62,6 +63,7 @@ export async function fetchGames(): Promise<GameWithPlayers[]> {
       *,
       game_players (*)
     `)
+    .eq('device_id', getDeviceId())
     .order('played_at', { ascending: false })
 
   if (error) throw error
@@ -135,6 +137,7 @@ export async function createGame(
     player_count: game.player_count,
     notes: game.notes ?? null,
     edition: game.edition ?? 'classic',
+    device_id: getDeviceId(),
   })
   if (gameError) throw gameError
 
