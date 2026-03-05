@@ -147,5 +147,26 @@
     "alpine": "Alpine",
     "pts": "pts",
     "total": "Total"
+  },
+  "live": {
+    "joinSession": "Unirse a sesión",
+    "createSession": "Crear sesión en vivo",
+    "joinTitle": "Unirse",
+    "enterCode": "Introduce el código de 4 caracteres",
+    "selectPlayer": "Selecciona tu jugador",
+    "joining": "Conectando...",
+    "sessionNotFound": "Sesión no encontrada",
+    "sessionAlreadyStarted": "Esta sesión ya ha comenzado",
+    "joinError": "Error al unirse a la sesión",
+    "lobby": "Sala de espera",
+    "joinCode": "Código de acceso",
+    "shareCode": "Comparte este código con los demás jugadores",
+    "players": "{{count}} jugador(es) conectado(s)",
+    "host": "Anfitrión",
+    "startScoring": "Iniciar puntuación",
+    "waitingForHost": "Esperando al anfitrión...",
+    "submit": "Enviar",
+    "waitingForOthers": "Esperando a los demás jugadores...",
+    "playersFinished": "{{done}} de {{total}} jugadores han terminado"
   }
 }

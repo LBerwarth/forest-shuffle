@@ -450,5 +450,285 @@
   "lonely_cave": {
     "name": "Cueva solitaria",
     "scoring": "5 puntos si no hay cartas de cueva normales; sino 0"
+  },
+
+  "ash": {
+    "name": "Fresno común",
+    "scoring": "1 punto por símbolo de árbol + 1 por planta"
+  },
+  "black_alder": {
+    "name": "Aliso negro",
+    "scoring": "5 puntos por Aliso negro"
+  },
+  "crab_apple": {
+    "name": "Manzano silvestre",
+    "scoring": "8 puntos por Manzano silvestre completamente ocupado",
+    "context": "¿Cuántos Manzanos silvestres están completamente ocupados?"
+  },
+  "goat_willow": {
+    "name": "Sauce cabruno",
+    "scoring": "1 punto por páramo en tu bosque"
+  },
+  "moor_birch": {
+    "name": "Abedul pubescente",
+    "scoring": "1 punto por Abedul pubescente"
+  },
+  "sessile_oak": {
+    "name": "Roble albar",
+    "scoring": "1 punto por árbol/arbusto en tu bosque"
+  },
+  "common_hazel_d": {
+    "name": "Avellano común",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "elderberry_d": {
+    "name": "Saúco negro",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+
+  "blanket_bog": {
+    "name": "Turbera",
+    "scoring": "Duplica los puntos de las cartas colocadas debajo",
+    "context": "Puntos extra por la duplicación de la Turbera"
+  },
+  "fountainhead": {
+    "name": "Manantial",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "lowland_heath": {
+    "name": "Brezal",
+    "scoring": "2 puntos por anfibio en tu bosque"
+  },
+  "rhos_pasture": {
+    "name": "Pasto de rhôs",
+    "scoring": "2 puntos por ungulado en tu bosque"
+  },
+  "rivulet": {
+    "name": "Arroyo",
+    "scoring": "2 puntos por símbolo de árbol en tu bosque"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "valley_mire": {
+    "name": "Pantano de valle",
+    "scoring": "2 puntos por insecto en tu bosque"
+  },
+  "warrens": {
+    "name": "Madriguera",
+    "scoring": "2 puntos por plantígrado en tu bosque"
+  },
+  "wet_woodland": {
+    "name": "Bosque húmedo",
+    "scoring": "2 puntos por páramo en tu bosque (incluyéndose)"
+  },
+
+  "barn_owl_d": {
+    "name": "Lechuza común",
+    "scoring": "3 puntos por murciélago en tu bosque"
+  },
+  "beautiful_demoiselle": {
+    "name": "Caballito del diablo",
+    "scoring": "Libélulas: 0/5/10/15/30 por 1-5 especies"
+  },
+  "black_tailed_godwit": {
+    "name": "Aguja colinegra",
+    "scoring": "10 puntos cada una si tienes más páramos (o empate)"
+  },
+  "buzzard": {
+    "name": "Busardo ratonero",
+    "scoring": "2 puntos por ratón en tu bosque"
+  },
+  "common_moorhen": {
+    "name": "Gallineta común",
+    "scoring": "2 puntos por libélula en tu bosque"
+  },
+  "cuckoo_d": {
+    "name": "Cuco",
+    "scoring": "7 puntos por Cuco"
+  },
+  "curlew": {
+    "name": "Zarapito real",
+    "scoring": "10 puntos cada uno si 5+ insectos; sino 3 cada uno"
+  },
+  "emerald_damselfly": {
+    "name": "Damisela esmeralda",
+    "scoring": "Libélulas: 0/5/10/15/30 por 1-5 especies"
+  },
+  "grey_heron": {
+    "name": "Garza real",
+    "scoring": "8 puntos por Garza real"
+  },
+  "keeled_skimmer": {
+    "name": "Libélula azul",
+    "scoring": "Libélulas: 0/5/10/15/30 por 1-5 especies"
+  },
+  "meadow_pipit": {
+    "name": "Bisbita pratense",
+    "scoring": "1/3/6/10 pts por 1/2/4/6+ especies de aves"
+  },
+  "small_red_damselfly": {
+    "name": "Damisela roja",
+    "scoring": "Libélulas: 0/5/10/15/30 por 1-5 especies"
+  },
+  "southern_damselfly": {
+    "name": "Damisela del sur",
+    "scoring": "Libélulas: 0/5/10/15/30 por 1-5 especies"
+  },
+  "wheatear": {
+    "name": "Collalba gris",
+    "scoring": "5 puntos cada uno si en un páramo",
+    "context": "¿Cuántas Collalbas están en un páramo?"
+  },
+
+  "adder": {
+    "name": "Víbora",
+    "scoring": "1 punto por anfibio + 1 por ratón en tu bosque"
+  },
+  "adders_tongue": {
+    "name": "Lengua de serpiente",
+    "scoring": "3 puntos por Lengua de serpiente"
+  },
+  "beaver": {
+    "name": "Castor europeo",
+    "scoring": "Puntos iguales al número de cartas en tu cueva"
+  },
+  "blue_ground_beetle": {
+    "name": "Escarabajo azul",
+    "scoring": "1 punto por carta inferior (incluyéndose)"
+  },
+  "blueberry_d": {
+    "name": "Arándano",
+    "scoring": "2 puntos por especie de ave diferente"
+  },
+  "bog_asphodel": {
+    "name": "Asfódelo de pantano",
+    "scoring": "1 punto por páramo en tu bosque"
+  },
+  "common_lizard": {
+    "name": "Lagartija vivípara",
+    "scoring": "15 puntos cada uno si 3+ especies de anfibios; sino 5 cada uno"
+  },
+  "grass_snake": {
+    "name": "Culebra de collar",
+    "scoring": "5 puntos por Culebra de collar"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Orquídea mariposa",
+    "scoring": "15 puntos cada una si 5+ especies de plantas; sino 3 cada una"
+  },
+  "heather": {
+    "name": "Brezo",
+    "scoring": "1 punto por insecto en tu bosque"
+  },
+  "meadowsweet": {
+    "name": "Reina de los prados",
+    "scoring": "5 puntos cada una si en un páramo",
+    "context": "¿Cuántas Reinas de los prados están en un páramo?"
+  },
+  "moor_frog": {
+    "name": "Rana de páramo",
+    "scoring": "8 puntos cada una si 5+ páramos; sino 0"
+  },
+  "otter": {
+    "name": "Nutria europea",
+    "scoring": "3 puntos por anfibio en tu bosque"
+  },
+  "royal_fern": {
+    "name": "Helecho real",
+    "scoring": "2 puntos por especie de planta diferente"
+  },
+  "warty_newt": {
+    "name": "Tritón crestado",
+    "scoring": "Colección: 5/15/25 por 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Soldado de agua",
+    "scoring": "2 puntos por libélula en tu bosque"
+  },
+
+  "alcathoe_bat": {
+    "name": "Murciélago de Alcathoe",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "brandts_bat": {
+    "name": "Murciélago de Brandt",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "common_noctule": {
+    "name": "Nóctulo común",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "daubentons_bat": {
+    "name": "Murciélago de Daubenton",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "serotine_bat": {
+    "name": "Murciélago hortelano",
+    "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
+  },
+  "capercaillie_d": {
+    "name": "Urogallo",
+    "scoring": "1 punto por planta en tu bosque"
+  },
+  "common_pheasant": {
+    "name": "Faisán común",
+    "scoring": "1 punto por ungulado + 1 por ave en tu bosque"
+  },
+  "dartmoor_badger": {
+    "name": "Tejón de Dartmoor",
+    "scoring": "2 puntos por plantígrado (incluyéndose)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Conejo de Dartmoor",
+    "scoring": "Cada conejo puntúa igual al total de conejos"
+  },
+  "dartmoor_pony": {
+    "name": "Poni de Dartmoor",
+    "scoring": "15 puntos cada uno si más páramos (o empate); sino 5 cada uno"
+  },
+  "dartmoor_sheep": {
+    "name": "Oveja de Dartmoor",
+    "scoring": "2 puntos por ungulado (incluyéndose)"
+  },
+  "field_vole": {
+    "name": "Topillo campesino",
+    "scoring": "1 punto por ratón en tu bosque (incluyéndose)"
+  },
+  "gnat_d": {
+    "name": "Mosquito",
+    "scoring": "1 punto por murciélago en tu bosque"
+  },
+  "lake_fly": {
+    "name": "Quironómido",
+    "scoring": "1 punto por murciélago en tu bosque"
+  },
+  "nuthatch": {
+    "name": "Trepador azul",
+    "scoring": "10 puntos cada uno si en árbol completamente ocupado",
+    "context": "¿Cuántos Trepadores están en árboles completamente ocupados?"
+  },
+  "roe_deer_d": {
+    "name": "Corzo",
+    "scoring": "3 puntos por carta con el mismo símbolo de árbol (incluyéndose)",
+    "context": "Cartas con el mismo símbolo de árbol que tu Corzo"
+  },
+  "shrew": {
+    "name": "Musaraña de Miller",
+    "scoring": "1 punto por Musaraña de Miller"
+  },
+  "treecreeper": {
+    "name": "Agateador común",
+    "scoring": "5 puntos por Agateador común"
+  },
+  "wood_mouse": {
+    "name": "Ratón de campo",
+    "scoring": "1 punto por ratón en tu bosque (incluyéndose)"
+  },
+
+  "cave_d": {
+    "name": "Cueva",
+    "scoring": "1 punto por carta en la cueva"
   }
 }

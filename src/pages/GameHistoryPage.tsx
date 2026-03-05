@@ -7,7 +7,7 @@ import { useGames, useDeleteGame } from '@/hooks/use-games'
 export function GameHistoryPage() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
-  const { data: games = [], isLoading } = useGames()
+  const { data: games = [] } = useGames()
   const deleteGameMutation = useDeleteGame()
 
   return (

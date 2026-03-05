@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Calculator, History, Users, BarChart3, Settings, TreePine } from 'lucide-react'
+import { Calculator, History, Users, BarChart3, Settings, TreePine, Wifi } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { usePlayers } from '@/hooks/use-players'
@@ -36,9 +36,15 @@ export function HomePage() {
 
       {/* Quick start */}
       <Link to="/new-game">
-        <Button size="lg" className="w-full mb-6 text-base">
+        <Button size="lg" className="w-full mb-3 text-base">
           <Calculator className="h-5 w-5" />
           {t('home.scoreNewGame')}
+        </Button>
+      </Link>
+      <Link to="/join">
+        <Button variant="secondary" size="lg" className="w-full mb-6 text-base">
+          <Wifi className="h-5 w-5" />
+          {t('live.joinSession')}
         </Button>
       </Link>
 

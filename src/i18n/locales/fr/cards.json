@@ -446,5 +446,285 @@
   "lonely_cave": {
     "name": "Grotte solitaire",
     "scoring": "5 points si aucune carte grotte standard\u00a0; sinon 0"
+  },
+
+  "ash": {
+    "name": "Frêne commun",
+    "scoring": "1 point par icône d'arbre + 1 par plante"
+  },
+  "black_alder": {
+    "name": "Aulne glutineux",
+    "scoring": "5 points par Aulne glutineux"
+  },
+  "crab_apple": {
+    "name": "Pommier sauvage",
+    "scoring": "8 points par Pommier sauvage entièrement occupé",
+    "context": "Combien de Pommiers sauvages sont entièrement occupés\u00a0?"
+  },
+  "goat_willow": {
+    "name": "Saule marsault",
+    "scoring": "1 point par Lande dans votre forêt"
+  },
+  "moor_birch": {
+    "name": "Bouleau pubescent",
+    "scoring": "1 point par Bouleau pubescent"
+  },
+  "sessile_oak": {
+    "name": "Chêne rouvre",
+    "scoring": "1 point par arbre/arbuste dans votre forêt"
+  },
+  "common_hazel_d": {
+    "name": "Noisetier commun",
+    "scoring": "0 points (effet permanent uniquement)"
+  },
+  "elderberry_d": {
+    "name": "Sureau noir",
+    "scoring": "0 points (effet permanent uniquement)"
+  },
+
+  "blanket_bog": {
+    "name": "Tourbière",
+    "scoring": "Double les points des cartes placées en dessous",
+    "context": "Points bonus de la Tourbière (doublement)"
+  },
+  "fountainhead": {
+    "name": "Source vive",
+    "scoring": "0 points (effet permanent uniquement)"
+  },
+  "lowland_heath": {
+    "name": "Bruyère de plaine",
+    "scoring": "2 points par amphibien/reptile dans votre forêt"
+  },
+  "rhos_pasture": {
+    "name": "Pâturage de rhôs",
+    "scoring": "2 points par ongulé dans votre forêt"
+  },
+  "rivulet": {
+    "name": "Ruisseau",
+    "scoring": "2 points par icône d'arbre dans votre forêt"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 points (effet permanent uniquement)"
+  },
+  "valley_mire": {
+    "name": "Marécage tourbeux",
+    "scoring": "2 points par insecte dans votre forêt"
+  },
+  "warrens": {
+    "name": "Garenne",
+    "scoring": "2 points par plantigrade/digitigrade dans votre forêt"
+  },
+  "wet_woodland": {
+    "name": "Forêt humide",
+    "scoring": "2 points par Lande dans votre forêt (elle-même incluse)"
+  },
+
+  "barn_owl_d": {
+    "name": "Effraie des clochers",
+    "scoring": "3 points par chauve-souris dans votre forêt"
+  },
+  "beautiful_demoiselle": {
+    "name": "Caloptéryx vierge",
+    "scoring": "Libellules\u00a0: 0/5/10/15/30 pour 1-5 espèces"
+  },
+  "black_tailed_godwit": {
+    "name": "Barge à queue noire",
+    "scoring": "10 points chacune si vous avez le plus de Landes (ou égalité)"
+  },
+  "buzzard": {
+    "name": "Buse variable",
+    "scoring": "2 points par souris dans votre forêt"
+  },
+  "common_moorhen": {
+    "name": "Gallinule poule-d'eau",
+    "scoring": "2 points par libellule dans votre forêt"
+  },
+  "cuckoo_d": {
+    "name": "Coucou gris",
+    "scoring": "7 points par Coucou gris"
+  },
+  "curlew": {
+    "name": "Courlis cendré",
+    "scoring": "10 points chacun si 5+ insectes\u00a0; sinon 3 chacun"
+  },
+  "emerald_damselfly": {
+    "name": "Leste fiancé",
+    "scoring": "Libellules\u00a0: 0/5/10/15/30 pour 1-5 espèces"
+  },
+  "grey_heron": {
+    "name": "Héron cendré",
+    "scoring": "8 points par Héron cendré"
+  },
+  "keeled_skimmer": {
+    "name": "Orthétrum bleuissant",
+    "scoring": "Libellules\u00a0: 0/5/10/15/30 pour 1-5 espèces"
+  },
+  "meadow_pipit": {
+    "name": "Pipit farlouse",
+    "scoring": "1/3/6/10 pts pour 1/2/4/6+ espèces d'oiseaux"
+  },
+  "small_red_damselfly": {
+    "name": "Cériagrion délicat",
+    "scoring": "Libellules\u00a0: 0/5/10/15/30 pour 1-5 espèces"
+  },
+  "southern_damselfly": {
+    "name": "Agrion de Mercure",
+    "scoring": "Libellules\u00a0: 0/5/10/15/30 pour 1-5 espèces"
+  },
+  "wheatear": {
+    "name": "Traquet motteux",
+    "scoring": "5 points chacun si sur une Lande",
+    "context": "Combien de Traquets motteux sont sur une Lande\u00a0?"
+  },
+
+  "adder": {
+    "name": "Vipère péliade",
+    "scoring": "1 point par amphibien + 1 par souris dans votre forêt"
+  },
+  "adders_tongue": {
+    "name": "Ophioglosse commun",
+    "scoring": "3 points par Ophioglosse commun"
+  },
+  "beaver": {
+    "name": "Castor d'Europe",
+    "scoring": "Points égaux au nombre de cartes dans votre Grotte"
+  },
+  "blue_ground_beetle": {
+    "name": "Carabe embrouillé",
+    "scoring": "1 point par carte en dessous (lui-même inclus)"
+  },
+  "blueberry_d": {
+    "name": "Myrtille",
+    "scoring": "2 points par espèce d'oiseau différente"
+  },
+  "bog_asphodel": {
+    "name": "Narthécie des marais",
+    "scoring": "1 point par Lande dans votre forêt"
+  },
+  "common_lizard": {
+    "name": "Lézard vivipare",
+    "scoring": "15 points chacun si 3+ espèces d'amphibiens\u00a0; sinon 5 chacun"
+  },
+  "grass_snake": {
+    "name": "Couleuvre à collier",
+    "scoring": "5 points par Couleuvre à collier"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Platanthère à fleurs verdâtres",
+    "scoring": "15 points chacune si 5+ espèces de plantes\u00a0; sinon 3 chacune"
+  },
+  "heather": {
+    "name": "Callune",
+    "scoring": "1 point par insecte dans votre forêt"
+  },
+  "meadowsweet": {
+    "name": "Reine-des-prés",
+    "scoring": "5 points chacune si sur une Lande",
+    "context": "Combien de Reines-des-prés sont sur une Lande\u00a0?"
+  },
+  "moor_frog": {
+    "name": "Grenouille des champs",
+    "scoring": "8 points chacune si 5+ Landes\u00a0; sinon 0"
+  },
+  "otter": {
+    "name": "Loutre d'Europe",
+    "scoring": "3 points par amphibien dans votre forêt"
+  },
+  "royal_fern": {
+    "name": "Osmonde royale",
+    "scoring": "2 points par espèce de plante différente"
+  },
+  "warty_newt": {
+    "name": "Triton crêté",
+    "scoring": "Score par collection\u00a0: 5/15/25 pour 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Faux aloès",
+    "scoring": "2 points par libellule dans votre forêt"
+  },
+
+  "alcathoe_bat": {
+    "name": "Murin d'Alcathoe",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "brandts_bat": {
+    "name": "Murin de Brandt",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "common_noctule": {
+    "name": "Noctule commune",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "daubentons_bat": {
+    "name": "Murin de Daubenton",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "serotine_bat": {
+    "name": "Sérotine commune",
+    "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
+  },
+  "capercaillie_d": {
+    "name": "Grand tétras",
+    "scoring": "1 point par plante dans votre forêt"
+  },
+  "common_pheasant": {
+    "name": "Faisan de Colchide",
+    "scoring": "1 point par ongulé + 1 par oiseau dans votre forêt"
+  },
+  "dartmoor_badger": {
+    "name": "Blaireau du Dartmoor",
+    "scoring": "2 points par plantigrade/digitigrade (lui-même inclus)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Lapin commun du Dartmoor",
+    "scoring": "Chaque lapin rapporte des points égaux au nombre total de lapins"
+  },
+  "dartmoor_pony": {
+    "name": "Poney Dartmoor",
+    "scoring": "15 points chacun si le plus de Landes (ou égalité)\u00a0; sinon 5 chacun"
+  },
+  "dartmoor_sheep": {
+    "name": "Mouton domestique du Dartmoor",
+    "scoring": "2 points par ongulé (lui-même inclus)"
+  },
+  "field_vole": {
+    "name": "Campagnol agreste",
+    "scoring": "1 point par souris dans votre forêt (lui-même inclus)"
+  },
+  "gnat_d": {
+    "name": "Moustique",
+    "scoring": "1 point par chauve-souris dans votre forêt"
+  },
+  "lake_fly": {
+    "name": "Chironome",
+    "scoring": "1 point par chauve-souris dans votre forêt"
+  },
+  "nuthatch": {
+    "name": "Sittelle torchepot",
+    "scoring": "10 points chacune si sur un arbre entièrement occupé",
+    "context": "Combien de Sittelles sont sur un arbre entièrement occupé\u00a0?"
+  },
+  "roe_deer_d": {
+    "name": "Chevreuil",
+    "scoring": "3 points par carte avec le même symbole d'arbre (lui-même inclus)",
+    "context": "Cartes avec le même symbole d'arbre que votre Chevreuil"
+  },
+  "shrew": {
+    "name": "Musaraigne de Miller",
+    "scoring": "1 point par Musaraigne de Miller"
+  },
+  "treecreeper": {
+    "name": "Grimpereau des bois",
+    "scoring": "5 points par Grimpereau des bois"
+  },
+  "wood_mouse": {
+    "name": "Mulot sylvestre",
+    "scoring": "1 point par souris dans votre forêt (lui-même inclus)"
+  },
+
+  "cave_d": {
+    "name": "Grotte",
+    "scoring": "1 point par carte dans la grotte"
   }
 }

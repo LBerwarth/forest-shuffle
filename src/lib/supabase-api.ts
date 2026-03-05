@@ -1,7 +1,9 @@
 import { supabase } from './supabase'
 import type { Player } from '@/types/player'
-import type { GameWithPlayers, GamePlayer } from '@/types/game'
+import type { GameWithPlayers } from '@/types/game'
 import type { ScoreBreakdown } from '@/types/scoring'
+import type { LiveSession, LiveSessionPlayer, LiveSessionStatus } from '@/types/live-session'
+import type { Expansion, GameEdition } from '@/types/card'
 
 // ─── Players ────────────────────────────────────────────────────────────────
 
@@ -187,5 +189,148 @@ export async function createGame(
 export async function deleteGame(id: string): Promise<void> {
   if (!supabase) throw new Error('Supabase not configured')
   const { error } = await supabase.from('games').delete().eq('id', id)
+  if (error) throw error
+}
+
+// ─── Live Sessions ──────────────────────────────────────────────────────────
+
+const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
+
+function generateSessionCode(): string {
+  let code = ''
+  for (let i = 0; i < 4; i++) {
+    code += CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)]
+  }
+  return code
+}
+
+export async function createLiveSession(
+  edition: GameEdition,
+  expansions: Expansion[],
+  hostPlayerId: string,
+): Promise<LiveSession> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const code = generateSessionCode()
+  const { data, error } = await supabase
+    .from('live_sessions')
+    .insert({
+      code,
+      edition,
+      expansions,
+      host_player_id: hostPlayerId,
+    })
+    .select()
+    .single()
+  if (error) throw error
+  return data as LiveSession
+}
+
+export async function fetchLiveSessionByCode(code: string): Promise<LiveSession | null> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { data, error } = await supabase
+    .from('live_sessions')
+    .select('*')
+    .eq('code', code.toUpperCase())
+    .single()
+  if (error) {
+    if (error.code === 'PGRST116') return null
+    throw error
+  }
+  return data as LiveSession
+}
+
+export async function fetchLiveSession(id: string): Promise<LiveSession | null> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { data, error } = await supabase
+    .from('live_sessions')
+    .select('*')
+    .eq('id', id)
+    .single()
+  if (error) {
+    if (error.code === 'PGRST116') return null
+    throw error
+  }
+  return data as LiveSession
+}
+
+export async function updateLiveSessionStatus(
+  id: string,
+  status: LiveSessionStatus,
+): Promise<void> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { error } = await supabase
+    .from('live_sessions')
+    .update({ status })
+    .eq('id', id)
+  if (error) throw error
+}
+
+export async function joinLiveSession(
+  sessionId: string,
+  playerId: string,
+  playerName: string,
+): Promise<LiveSessionPlayer> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { data, error } = await supabase
+    .from('live_session_players')
+    .insert({
+      session_id: sessionId,
+      player_id: playerId,
+      player_name: playerName,
+    })
+    .select()
+    .single()
+  if (error) throw error
+  return data as LiveSessionPlayer
+}
+
+export async function fetchLiveSessionPlayers(
+  sessionId: string,
+): Promise<LiveSessionPlayer[]> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { data, error } = await supabase
+    .from('live_session_players')
+    .select('*')
+    .eq('session_id', sessionId)
+    .order('id', { ascending: true })
+  if (error) throw error
+  return data as LiveSessionPlayer[]
+}
+
+export async function submitPlayerScoring(
+  playerId: string,
+  sessionId: string,
+  scoring: {
+    card_counts: Record<string, number>
+    card_metadata: Record<string, unknown>
+    fully_occupied_trees: number
+  },
+): Promise<void> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { error } = await supabase
+    .from('live_session_players')
+    .update({
+      card_counts: scoring.card_counts,
+      card_metadata: scoring.card_metadata,
+      fully_occupied_trees: scoring.fully_occupied_trees,
+      status: 'done',
+      submitted_at: new Date().toISOString(),
+    })
+    .eq('session_id', sessionId)
+    .eq('player_id', playerId)
+  if (error) throw error
+}
+
+export async function updateLivePlayerStatus(
+  playerId: string,
+  sessionId: string,
+  status: 'joined' | 'scoring' | 'done',
+): Promise<void> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { error } = await supabase
+    .from('live_session_players')
+    .update({ status })
+    .eq('session_id', sessionId)
+    .eq('player_id', playerId)
   if (error) throw error
 }

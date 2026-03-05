@@ -2,8 +2,7 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import type { CardMetadata, ScoreBreakdown } from '@/types/scoring'
 import type { Expansion, GameEdition } from '@/types/card'
-import { computeScoreBreakdown, computeDartmoorScoreBreakdown } from '@/lib/scoring'
-import { getCards } from '@/data/cards'
+import { recalcPlayer } from '@/lib/scoring/recalc'
 
 export interface PlayerScoring {
   playerId: string
@@ -33,39 +32,6 @@ interface ScoringState {
   setFullyOccupiedTrees: (playerId: string, count: number) => void
   recalculateAll: () => void
   getPlayerBreakdown: (playerId: string) => ScoreBreakdown | null
-}
-
-function recalcPlayer(player: PlayerScoring, allPlayers: PlayerScoring[], expansions: Expansion[], edition: GameEdition = 'classic'): ScoreBreakdown {
-  if (edition === 'dartmoor') {
-    const activeCardKeys = getCards([], 'dartmoor').map((c) => c.key)
-    const allMoorCounts = allPlayers.map((p) => {
-      const moorCards = getCards([], 'dartmoor').filter((c) => c.category === 'moor')
-      return moorCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0)
-    })
-    return computeDartmoorScoreBreakdown(
-      player.cardCounts,
-      player.cardMetadata,
-      player.fullyOccupiedTrees,
-      activeCardKeys,
-      allMoorCounts,
-    )
-  }
-
-  const activeCardKeys = getCards(expansions).map((c) => c.key)
-  const allLindenCounts = allPlayers.map((p) => p.cardCounts['linden'] || 0)
-  const allTreeCounts = allPlayers.map((p) => {
-    const treeCards = getCards(expansions).filter((c) => c.category === 'tree')
-    return treeCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0)
-  })
-
-  return computeScoreBreakdown(
-    player.cardCounts,
-    player.cardMetadata,
-    player.fullyOccupiedTrees,
-    activeCardKeys,
-    allLindenCounts,
-    allTreeCounts,
-  )
 }
 
 export const useScoringStore = create<ScoringState>()(
