@@ -1,7 +1,7 @@
 import { useMemo, useCallback, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, Check, Loader2 } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, Loader2, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
@@ -68,6 +68,8 @@ export function LiveScoreWizardPage() {
   const currentPlayer = players[0] // Only one player in live mode
   const tc = useTranslation('cards').t
 
+  const [cardSearch, setCardSearch] = useState('')
+
   const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
   const hasExploration = edition === 'classic' && expansions.includes('exploration')
 
@@ -84,6 +86,14 @@ export function LiveScoreWizardPage() {
     }
     return sorted
   }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasExploration])
+
+  const filteredCards = useMemo(() => {
+    if (!cardSearch.trim()) return stepCards
+    const query = cardSearch.toLowerCase()
+    return stepCards.filter(card =>
+      tc(`${card.key}.name`).toLowerCase().includes(query),
+    )
+  }, [stepCards, cardSearch, tc])
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
@@ -153,6 +163,7 @@ export function LiveScoreWizardPage() {
   const isFirstStep = currentStep === 0
 
   function handleNext() {
+    setCardSearch('')
     if (isLastStep) {
       handleSubmit()
     } else {
@@ -161,6 +172,7 @@ export function LiveScoreWizardPage() {
   }
 
   function handlePrev() {
+    setCardSearch('')
     if (!isFirstStep) {
       setCurrentStep(currentStep - 1)
     }
@@ -188,6 +200,27 @@ export function LiveScoreWizardPage() {
       {/* Content */}
       <div className="flex-1 mx-auto w-full max-w-lg px-4 py-4">
         <div className="space-y-2">
+          {/* Card search filter */}
+          <div className="relative mb-1">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-forest-400" />
+            <input
+              type="text"
+              value={cardSearch}
+              onChange={(e) => setCardSearch(e.target.value)}
+              placeholder={t('wizard.searchCards')}
+              className="w-full rounded-xl border border-forest-200 bg-white py-2.5 pl-9 pr-9 text-sm text-forest-800 placeholder:text-forest-400 focus:border-forest-500 focus:outline-none"
+            />
+            {cardSearch && (
+              <button
+                type="button"
+                onClick={() => setCardSearch('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-forest-400 hover:text-forest-600"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            )}
+          </div>
+
           {currentStep === 0 && (
             <div className="flex items-center justify-between rounded-xl border border-bark-200 bg-bark-50 px-4 py-3 mb-3">
               <div>
@@ -255,7 +288,7 @@ export function LiveScoreWizardPage() {
             </div>
           )}
 
-          {stepCards.map((card) => (
+          {filteredCards.map((card) => (
             <CardCounter
               key={card.key}
               card={card}

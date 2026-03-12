@@ -1,7 +1,7 @@
-import { useMemo, useCallback } from 'react'
+import { useMemo, useCallback, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, Check, Settings } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, Settings, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
@@ -43,6 +43,8 @@ export function ScoreWizardPage() {
 
   const tc = useTranslation('cards').t
 
+  const [cardSearch, setCardSearch] = useState('')
+
   const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
   const hasExploration = edition === 'classic' && expansions.includes('exploration')
 
@@ -60,6 +62,14 @@ export function ScoreWizardPage() {
     }
     return sorted
   }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasExploration])
+
+  const filteredCards = useMemo(() => {
+    if (!cardSearch.trim()) return stepCards
+    const query = cardSearch.toLowerCase()
+    return stepCards.filter(card =>
+      tc(`${card.key}.name`).toLowerCase().includes(query),
+    )
+  }, [stepCards, cardSearch, tc])
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
@@ -108,6 +118,7 @@ export function ScoreWizardPage() {
   const isLastPlayer = currentPlayerIndex === players.length - 1
 
   function handleNext() {
+    setCardSearch('')
     if (isLastStep) {
       if (isLastPlayer) {
         navigate(`/score/${gameId}/results`)
@@ -121,6 +132,7 @@ export function ScoreWizardPage() {
   }
 
   function handlePrev() {
+    setCardSearch('')
     if (isFirstStep) {
       if (currentPlayerIndex > 0) {
         setCurrentPlayer(currentPlayerIndex - 1)
@@ -183,6 +195,27 @@ export function ScoreWizardPage() {
       {/* Content */}
       <div className="flex-1 mx-auto w-full max-w-lg px-4 py-4">
         <div className="space-y-2">
+          {/* Card search filter */}
+          <div className="relative mb-1">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-forest-400" />
+            <input
+              type="text"
+              value={cardSearch}
+              onChange={(e) => setCardSearch(e.target.value)}
+              placeholder={t('wizard.searchCards')}
+              className="w-full rounded-xl border border-forest-200 bg-white py-2.5 pl-9 pr-9 text-sm text-forest-800 placeholder:text-forest-400 focus:border-forest-500 focus:outline-none"
+            />
+            {cardSearch && (
+              <button
+                type="button"
+                onClick={() => setCardSearch('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-forest-400 hover:text-forest-600"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            )}
+          </div>
+
           {/* Special: fully occupied trees for Oak step */}
           {currentStep === 0 && (
             <div className="flex items-center justify-between rounded-xl border border-bark-200 bg-bark-50 px-4 py-3 mb-3">
@@ -253,7 +286,7 @@ export function ScoreWizardPage() {
             </div>
           )}
 
-          {stepCards.map((card) => (
+          {filteredCards.map((card) => (
             <CardCounter
               key={card.key}
               card={card}
