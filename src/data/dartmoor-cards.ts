@@ -93,4 +93,5 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   // CAVE
   // ============================================================
   { key: 'cave_d', category: 'cave', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'lonely_cave_d', category: 'cave', tags: [], expansion: 'dartmoor_base', scoringType: 'custom' },
 ]

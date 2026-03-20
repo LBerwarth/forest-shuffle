@@ -229,4 +229,5 @@ export const CARD_ICONS: Record<string, string> = {
 
   // Dartmoor Cave
   cave_d: '🕳️',
+  lonely_cave_d: '🕳️',
 }

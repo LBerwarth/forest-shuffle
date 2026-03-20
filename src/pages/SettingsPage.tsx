@@ -68,6 +68,7 @@ export function SettingsPage() {
               type="button"
               onClick={() => {
                 if (edition !== 'classic') {
+                  if (scoringSessionActive && !confirm(t('settings.editionChangeConfirm'))) return
                   setEdition('classic')
                   if (scoringSessionActive) endScoringSession()
                 }
@@ -85,6 +86,7 @@ export function SettingsPage() {
               type="button"
               onClick={() => {
                 if (edition !== 'dartmoor') {
+                  if (scoringSessionActive && !confirm(t('settings.editionChangeConfirm'))) return
                   setEdition('dartmoor')
                   if (scoringSessionActive) endScoringSession()
                 }

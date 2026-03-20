@@ -1,5 +1,5 @@
 import { useMemo, useCallback, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Check, Settings, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -15,6 +15,7 @@ import { CARD_ICONS } from '@/data/cardIcons'
 import { getCategoryOrder } from '@/data/categories'
 
 const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave'] as const
+const DARTMOOR_SPECIAL_CAVE_KEYS = ['lonely_cave_d'] as const
 
 export function ScoreWizardPage() {
   const { t } = useTranslation()
@@ -47,6 +48,9 @@ export function ScoreWizardPage() {
 
   const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
   const hasExploration = edition === 'classic' && expansions.includes('exploration')
+  const isDartmoor = edition === 'dartmoor'
+  const activeSpecialCaveKeys = hasExploration ? SPECIAL_CAVE_KEYS : isDartmoor ? DARTMOOR_SPECIAL_CAVE_KEYS : []
+  const hasSpecialCaves = activeSpecialCaveKeys.length > 0
 
   const stepCards = useMemo(() => {
     if (!stepCategories[currentStep]) return []
@@ -56,12 +60,12 @@ export function ScoreWizardPage() {
     const sorted = cards.sort((a, b) =>
       tc(`${a.key}.name`).localeCompare(tc(`${b.key}.name`)),
     )
-    // Filter out special caves when exploration is on — they're shown as a pill selector
-    if (isCaveStep && hasExploration) {
-      return sorted.filter(c => !(SPECIAL_CAVE_KEYS as readonly string[]).includes(c.key))
+    // Filter out special caves — they're shown as a pill selector
+    if (isCaveStep && hasSpecialCaves) {
+      return sorted.filter(c => !(activeSpecialCaveKeys as readonly string[]).includes(c.key))
     }
     return sorted
-  }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasExploration])
+  }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasSpecialCaves, activeSpecialCaveKeys])
 
   const filteredCards = useMemo(() => {
     if (!cardSearch.trim()) return stepCards
@@ -73,14 +77,14 @@ export function ScoreWizardPage() {
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
-    return SPECIAL_CAVE_KEYS.find(
+    return activeSpecialCaveKeys.find(
       k => (currentPlayer.cardCounts[k] || 0) > 0,
     ) ?? null
-  }, [currentPlayer])
+  }, [currentPlayer, activeSpecialCaveKeys])
 
   function handleSpecialCaveSelect(key: string | null) {
     if (!currentPlayer) return
-    for (const k of SPECIAL_CAVE_KEYS) {
+    for (const k of activeSpecialCaveKeys) {
       setCardCount(currentPlayer.playerId, k, k === key ? 1 : 0)
     }
   }
@@ -109,8 +113,7 @@ export function ScoreWizardPage() {
   )
 
   if (!sessionActive || !currentPlayer) {
-    navigate('/new-game')
-    return null
+    return <Navigate to="/new-game" replace />
   }
 
   const isLastStep = currentStep === wizardSteps.length - 1
@@ -186,7 +189,7 @@ export function ScoreWizardPage() {
           {/* Step indicator */}
           <WizardStepper
             currentStep={currentStep}
-            onStepChange={setCurrentStep}
+            onStepChange={(step) => { setCardSearch(''); setCurrentStep(step) }}
             edition={edition}
           />
         </div>
@@ -246,8 +249,8 @@ export function ScoreWizardPage() {
             </div>
           )}
 
-          {/* Special cave selector for Exploration expansion */}
-          {isCaveStep && hasExploration && (
+          {/* Special cave selector */}
+          {isCaveStep && hasSpecialCaves && (
             <div className="rounded-xl border border-forest-200 bg-white p-3 mb-1">
               <p className="text-xs font-medium text-forest-600 mb-2">{t('wizard.specialCave')}</p>
               <div className="flex flex-wrap gap-1.5">
@@ -264,7 +267,7 @@ export function ScoreWizardPage() {
                 >
                   {t('wizard.noneCave')}
                 </button>
-                {SPECIAL_CAVE_KEYS.map(key => (
+                {activeSpecialCaveKeys.map(key => (
                   <button
                     key={key}
                     type="button"

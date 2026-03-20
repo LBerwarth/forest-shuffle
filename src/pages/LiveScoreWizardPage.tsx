@@ -17,6 +17,7 @@ import { getCategoryOrder } from '@/data/categories'
 import { submitPlayerScoring, updateLivePlayerStatus } from '@/lib/supabase-api'
 
 const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave'] as const
+const DARTMOOR_SPECIAL_CAVE_KEYS = ['lonely_cave_d'] as const
 
 export function LiveScoreWizardPage() {
   const { t } = useTranslation()
@@ -72,6 +73,9 @@ export function LiveScoreWizardPage() {
 
   const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
   const hasExploration = edition === 'classic' && expansions.includes('exploration')
+  const isDartmoor = edition === 'dartmoor'
+  const activeSpecialCaveKeys = hasExploration ? SPECIAL_CAVE_KEYS : isDartmoor ? DARTMOOR_SPECIAL_CAVE_KEYS : []
+  const hasSpecialCaves = activeSpecialCaveKeys.length > 0
 
   const stepCards = useMemo(() => {
     if (!stepCategories[currentStep]) return []
@@ -81,11 +85,11 @@ export function LiveScoreWizardPage() {
     const sorted = cards.sort((a, b) =>
       tc(`${a.key}.name`).localeCompare(tc(`${b.key}.name`)),
     )
-    if (isCaveStep && hasExploration) {
-      return sorted.filter((c) => !(SPECIAL_CAVE_KEYS as readonly string[]).includes(c.key))
+    if (isCaveStep && hasSpecialCaves) {
+      return sorted.filter((c) => !(activeSpecialCaveKeys as readonly string[]).includes(c.key))
     }
     return sorted
-  }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasExploration])
+  }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasSpecialCaves, activeSpecialCaveKeys])
 
   const filteredCards = useMemo(() => {
     if (!cardSearch.trim()) return stepCards
@@ -97,12 +101,12 @@ export function LiveScoreWizardPage() {
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
-    return SPECIAL_CAVE_KEYS.find((k) => (currentPlayer.cardCounts[k] || 0) > 0) ?? null
-  }, [currentPlayer])
+    return activeSpecialCaveKeys.find((k) => (currentPlayer.cardCounts[k] || 0) > 0) ?? null
+  }, [currentPlayer, activeSpecialCaveKeys])
 
   function handleSpecialCaveSelect(key: string | null) {
     if (!currentPlayer) return
-    for (const k of SPECIAL_CAVE_KEYS) {
+    for (const k of activeSpecialCaveKeys) {
       setCardCount(currentPlayer.playerId, k, k === key ? 1 : 0)
     }
   }
@@ -191,7 +195,7 @@ export function LiveScoreWizardPage() {
 
           <WizardStepper
             currentStep={currentStep}
-            onStepChange={setCurrentStep}
+            onStepChange={(step) => { setCardSearch(''); setCurrentStep(step) }}
             edition={edition}
           />
         </div>
@@ -250,7 +254,7 @@ export function LiveScoreWizardPage() {
             </div>
           )}
 
-          {isCaveStep && hasExploration && (
+          {isCaveStep && hasSpecialCaves && (
             <div className="rounded-xl border border-forest-200 bg-white p-3 mb-1">
               <p className="text-xs font-medium text-forest-600 mb-2">{t('wizard.specialCave')}</p>
               <div className="flex flex-wrap gap-1.5">
@@ -266,7 +270,7 @@ export function LiveScoreWizardPage() {
                 >
                   {t('wizard.noneCave')}
                 </button>
-                {SPECIAL_CAVE_KEYS.map((key) => (
+                {activeSpecialCaveKeys.map((key) => (
                   <button
                     key={key}
                     type="button"

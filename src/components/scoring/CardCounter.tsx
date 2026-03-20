@@ -194,6 +194,12 @@ export function CardCounter({
           </div>
         </div>
       )}
+
+      {card.scoringType === 'comparison' && count > 0 && (
+        <div className="flex items-center gap-2 rounded-lg bg-blue-50 px-3 py-2 ml-2 border-l-2 border-blue-300">
+          <span className="text-xs text-blue-600">{t('wizard.comparisonNotice')}</span>
+        </div>
+      )}
     </div>
   )
 }

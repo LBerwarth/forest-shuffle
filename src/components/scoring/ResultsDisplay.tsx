@@ -1,11 +1,14 @@
 import { useTranslation } from 'react-i18next'
-import { Trophy } from 'lucide-react'
+import { Trophy, Info } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
+import { CARD_ICONS } from '@/data/cardIcons'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { GameEdition } from '@/types/card'
 import { cn } from '@/lib/utils'
+
+const COMPARISON_CARD_KEYS = ['linden', 'great_spotted_woodpecker', 'black_tailed_godwit', 'dartmoor_pony']
 
 const MEDAL_COLORS = ['#FFD700', '#C0C0C0', '#CD7F32']
 
@@ -23,6 +26,7 @@ interface ResultsDisplayProps {
 
 export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) {
   const { t } = useTranslation()
+  const tc = useTranslation('cards').t
   const categoryOrder = getCategoryOrder(edition)
   const winner = rankedPlayers[0]
 
@@ -159,6 +163,68 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
           </div>
         </CardContent>
       </Card>
+
+      {/* Comparison card details */}
+      {rankedPlayers.some((p) =>
+        p.breakdown?.entries.some((e) => COMPARISON_CARD_KEYS.includes(e.cardKey)),
+      ) && (
+        <Card className="mb-6 border-blue-200 bg-blue-50/30">
+          <CardHeader>
+            <div className="flex items-center gap-2">
+              <Info className="h-4 w-4 text-blue-500" />
+              <h2 className="font-heading text-base font-semibold text-forest-700">
+                {t('result.comparisonTitle')}
+              </h2>
+            </div>
+            <p className="text-xs text-forest-500 mt-1">{t('result.comparisonDesc')}</p>
+          </CardHeader>
+          <CardContent>
+            <div className="overflow-x-auto">
+              {COMPARISON_CARD_KEYS.filter((key) =>
+                rankedPlayers.some((p) =>
+                  p.breakdown?.entries.some((e) => e.cardKey === key && e.count > 0),
+                ),
+              ).map((cardKey) => (
+                <div key={cardKey} className="mb-3 last:mb-0">
+                  <p className="text-xs font-medium text-forest-700 mb-1.5">
+                    {CARD_ICONS[cardKey]} {tc(`${cardKey}.name`)}
+                  </p>
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr className="border-b border-blue-100">
+                        <th className="text-left py-1 pr-2 font-medium text-forest-500">{t('result.player')}</th>
+                        <th className="text-right py-1 px-2 font-medium text-forest-500">{t('result.cards')}</th>
+                        <th className="text-right py-1 px-2 font-medium text-forest-500">{t('result.perCard')}</th>
+                        <th className="text-right py-1 pl-2 font-medium text-forest-500">{t('result.total')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {rankedPlayers
+                        .filter((p) =>
+                          p.breakdown?.entries.some((e) => e.cardKey === cardKey && e.count > 0),
+                        )
+                        .map((p) => {
+                          const entry = p.breakdown?.entries.find((e) => e.cardKey === cardKey)
+                          const count = entry?.count ?? 0
+                          const points = entry?.points ?? 0
+                          const perCard = count > 0 ? Math.round(points / count) : 0
+                          return (
+                            <tr key={p.playerId} className="border-b border-blue-50">
+                              <td className="py-1.5 pr-2 text-forest-600">{p.playerName}</td>
+                              <td className="text-right py-1.5 px-2 tabular-nums text-forest-500">{count}</td>
+                              <td className="text-right py-1.5 px-2 tabular-nums text-forest-500">{perCard} {t('scoring.pts')}</td>
+                              <td className="text-right py-1.5 pl-2 tabular-nums font-semibold text-forest-700">{points}</td>
+                            </tr>
+                          )
+                        })}
+                    </tbody>
+                  </table>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </>
   )
 }

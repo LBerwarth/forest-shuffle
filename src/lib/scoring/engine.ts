@@ -409,6 +409,9 @@ export function computeScoreBreakdown(
     const card = CARDS.find((c) => c.key === cardKey)
     if (!card) continue
 
+    // Skip comparison cards here — they are scored separately below with cross-player data
+    if (card.scoringType === 'comparison') continue
+
     const metadata = cardMetadata[cardKey]
     const points = scoreCard(cardKey, count, context, metadata)
 

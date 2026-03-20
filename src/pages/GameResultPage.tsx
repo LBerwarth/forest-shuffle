@@ -6,23 +6,26 @@ import { Button } from '@/components/ui/Button'
 import { ResultsDisplay } from '@/components/scoring/ResultsDisplay'
 import { useScoringStore } from '@/store/scoring-store'
 import { useCreateGame } from '@/hooks/use-games'
+import { recalcPlayer } from '@/lib/scoring/recalc'
 import type { GameWithPlayers, GamePlayer } from '@/types/game'
 
 export function GameResultPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const { gameId } = useParams<{ gameId: string }>()
-  const { players, edition, endSession, recalculateAll } = useScoringStore()
+  const { players, expansions, edition, endSession } = useScoringStore()
   const createGameMutation = useCreateGame()
 
-  // Recalculate to ensure cross-player scoring is current
-  useMemo(() => recalculateAll(), [recalculateAll])
-
+  // Recalculate with cross-player data to ensure comparison cards are scored correctly
   const rankedPlayers = useMemo(() => {
-    return [...players]
+    const recalculated = players.map((p) => ({
+      ...p,
+      breakdown: recalcPlayer(p, players, expansions, edition),
+    }))
+    return recalculated
       .sort((a, b) => (b.breakdown?.total ?? 0) - (a.breakdown?.total ?? 0))
       .map((p, idx) => ({ ...p, rank: idx + 1 }))
-  }, [players])
+  }, [players, expansions, edition])
 
   const winner = rankedPlayers[0]
 

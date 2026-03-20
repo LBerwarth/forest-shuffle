@@ -51,6 +51,7 @@
     "specialCave": "Cueva especial",
     "noneCave": "Ninguna",
     "searchCards": "Buscar cartas...",
+    "comparisonNotice": "Los puntos de esta carta se calcularán automáticamente al final, una vez que todos los jugadores hayan terminado.",
     "back": "Atrás",
     "next": "Siguiente",
     "finish": "Finalizar"
@@ -61,6 +62,11 @@
     "scoreBreakdown": "Desglose de puntos",
     "category": "Categoría",
     "total": "Total",
+    "comparisonTitle": "Cartas de comparación",
+    "comparisonDesc": "Estas cartas puntúan según quién tiene más. Los puntos están incluidos en los totales anteriores.",
+    "player": "Jugador",
+    "cards": "Cartas",
+    "perCard": "Por carta",
     "saveGame": "Guardar partida",
     "newGame": "Nueva Partida",
     "home": "Inicio"
@@ -140,6 +146,7 @@
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
     "editionDesc": "Elige qué juego Forest Shuffle puntuar",
+    "editionChangeConfirm": "Cambiar la edición reiniciará tu sesión de puntuación actual. ¿Estás seguro?",
     "appName": "Forest Shuffle Companion",
     "version": "v0.1.0",
     "appDesc": "Calculadora de puntos y seguimiento de partidas para el juego de mesa Forest Shuffle."

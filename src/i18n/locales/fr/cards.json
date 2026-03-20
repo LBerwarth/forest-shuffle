@@ -726,5 +726,9 @@
   "cave_d": {
     "name": "Grotte",
     "scoring": "1 point par carte dans la grotte"
+  },
+  "lonely_cave_d": {
+    "name": "Grotte solitaire",
+    "scoring": "5 points si aucune carte grotte standard ; sinon 0"
   }
 }

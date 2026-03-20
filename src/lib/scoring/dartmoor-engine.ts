@@ -188,6 +188,11 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 
   // --- CAVE ---
   cave_d: (count) => count * 1,
+  lonely_cave_d: (count, ctx) => {
+    if (count === 0) return 0
+    const regularCaveCount = countCard(ctx, 'cave_d')
+    return regularCaveCount === 0 ? 5 : 0
+  },
 }
 
 // ============================================================
@@ -319,6 +324,9 @@ export function computeDartmoorScoreBreakdown(
 
     const card = DARTMOOR_CARDS.find((c) => c.key === cardKey)
     if (!card) continue
+
+    // Skip comparison cards here — they are scored separately below with cross-player data
+    if (card.scoringType === 'comparison') continue
 
     const metadata = cardMetadata[cardKey]
     const points = scoreDartmoorCard(cardKey, count, context, metadata)
