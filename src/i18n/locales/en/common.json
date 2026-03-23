@@ -68,6 +68,7 @@
     "player": "Player",
     "cards": "Cards",
     "perCard": "Per card",
+    "saving": "Saving game...",
     "saveGame": "Save Game",
     "newGame": "New Game",
     "home": "Home"

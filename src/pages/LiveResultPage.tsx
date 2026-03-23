@@ -1,7 +1,7 @@
-import { useMemo } from 'react'
+import { useMemo, useEffect, useRef } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Home, Save, Loader2 } from 'lucide-react'
+import { Home, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ResultsDisplay, type RankedPlayer } from '@/components/scoring/ResultsDisplay'
 import { useLiveSession } from '@/hooks/use-live-session'
@@ -18,6 +18,7 @@ export function LiveResultPage() {
   const { session, players: livePlayers, allDone, isLoading } = useLiveSession(sessionId)
   const { isHost, clearSession } = useLiveSessionStore()
   const createGameMutation = useCreateGame()
+  const savedRef = useRef(false)
 
   // Compute cross-player scoring from all submitted data
   const rankedPlayers = useMemo<RankedPlayer[]>(() => {
@@ -46,8 +47,10 @@ export function LiveResultPage() {
       }))
   }, [session, allDone, livePlayers])
 
-  async function handleSave() {
-    if (!sessionId || !session || rankedPlayers.length === 0) return
+  // Auto-save game when results are ready
+  useEffect(() => {
+    if (!sessionId || !session || rankedPlayers.length === 0 || savedRef.current || createGameMutation.isPending) return
+    savedRef.current = true
 
     const gameId = crypto.randomUUID()
     const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
@@ -69,11 +72,14 @@ export function LiveResultPage() {
       players: gamePlayers,
     }
 
-    await createGameMutation.mutateAsync(game)
-    await updateLiveSessionStatus(sessionId, 'completed')
-    clearSession()
-    navigate('/history')
-  }
+    createGameMutation.mutateAsync(game).then(() => {
+      if (isHost) {
+        updateLiveSessionStatus(sessionId, 'completed')
+      }
+    }).catch(() => {
+      savedRef.current = false
+    })
+  }, [sessionId, session, rankedPlayers, isHost, createGameMutation])
 
   function handleHome() {
     clearSession()
@@ -92,13 +98,15 @@ export function LiveResultPage() {
     <div className="mx-auto max-w-lg px-4 pt-6 pb-8">
       <ResultsDisplay rankedPlayers={rankedPlayers} edition={session?.edition ?? 'classic'} />
 
+      {/* Save status */}
+      {createGameMutation.isPending && (
+        <div className="flex items-center justify-center gap-2 mb-4 text-sm text-forest-500">
+          <Loader2 className="h-4 w-4 animate-spin" />
+          {t('result.saving')}
+        </div>
+      )}
+
       <div className="space-y-2">
-        {isHost && (
-          <Button size="lg" className="w-full" onClick={handleSave}>
-            <Save className="h-5 w-5" />
-            {t('result.saveGame')}
-          </Button>
-        )}
         <Button variant="ghost" className="w-full" onClick={handleHome}>
           <Home className="h-4 w-4" />
           {t('result.home')}

@@ -68,6 +68,7 @@
     "player": "Joueur",
     "cards": "Cartes",
     "perCard": "Par carte",
+    "saving": "Sauvegarde en cours...",
     "saveGame": "Sauvegarder",
     "newGame": "Nouvelle Partie",
     "home": "Accueil"
