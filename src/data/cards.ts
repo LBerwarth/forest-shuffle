@@ -19,6 +19,7 @@ export const CARDS: CardDefinition[] = [
   // Woodland trees
   { key: 'palm_tree', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'turkey_oak', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'tree_sapling', category: 'tree', tags: [], expansion: 'woodland', scoringType: 'fixed' },
 
   // ============================================================
   // TOP SLOT

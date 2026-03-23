@@ -13,6 +13,7 @@ export const CARD_ICONS: Record<string, string> = {
   stone_pine: '🌳',
   palm_tree: '🌳',
   turkey_oak: '🌳',
+  tree_sapling: '🌱',
 
   // Birds — all use the bird emoji
   bullfinch: '🐦',
@@ -161,6 +162,7 @@ export const CARD_ICONS: Record<string, string> = {
   valley_mire: '🏞️',
   warrens: '🏞️',
   wet_woodland: '🏞️',
+  universal_moor: '🏞️',
 
   // Dartmoor Birds
   barn_owl_d: '🐦',

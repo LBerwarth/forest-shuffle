@@ -10,4 +10,6 @@ export {
 
 export {
   computeDartmoorScoreBreakdown,
+  buildDartmoorForestContext,
+  scoreDartmoorCard,
 } from './dartmoor-engine'

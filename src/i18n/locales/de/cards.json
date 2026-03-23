@@ -49,6 +49,10 @@
     "name": "Zerreiche",
     "scoring": "1 Punkt pro Paarhufer"
   },
+  "tree_sapling": {
+    "name": "Baumsetzling",
+    "scoring": "0 Punkte (zählt als Baum)"
+  },
   "bullfinch": {
     "name": "Gimpel",
     "scoring": "2 Punkte pro Insekt in deinem Wald"
@@ -454,7 +458,8 @@
 
   "ash": {
     "name": "Gemeine Esche",
-    "scoring": "1 Punkt pro Baumsymbol + 1 pro Pflanze"
+    "scoring": "1 Punkt pro Karte mit dem gleichen Baumsymbol + 1 pro Pflanze (Pflanzen automatisch gezählt)",
+    "context": "Karten mit dem gleichen farbigen Baumsymbol"
   },
   "black_alder": {
     "name": "Schwarzerle",
@@ -522,6 +527,10 @@
   "wet_woodland": {
     "name": "Feuchtwald",
     "scoring": "2 Punkte pro Moor in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "universal_moor": {
+    "name": "Universelles Moor",
+    "scoring": "0 Punkte (zählt als Moor)"
   },
 
   "barn_owl_d": {

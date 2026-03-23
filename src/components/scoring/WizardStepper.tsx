@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { Check } from 'lucide-react'
@@ -28,6 +29,11 @@ interface WizardStepperProps {
 export function WizardStepper({ currentStep, onStepChange, completedSteps, edition = 'classic' }: WizardStepperProps) {
   const { t } = useTranslation()
   const steps = getWizardSteps(edition)
+  const activeRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    activeRef.current?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+  }, [currentStep])
 
   return (
     <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide px-1 py-2">
@@ -38,10 +44,11 @@ export function WizardStepper({ currentStep, onStepChange, completedSteps, editi
         return (
           <button
             key={step.id}
+            ref={isCurrent ? activeRef : undefined}
             type="button"
             onClick={() => onStepChange(step.id)}
             className={cn(
-              'flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-all',
+              'flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-all shrink-0',
               isCurrent
                 ? 'bg-forest-500 text-white shadow-sm'
                 : isComplete

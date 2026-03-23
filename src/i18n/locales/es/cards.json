@@ -49,6 +49,10 @@
     "name": "Roble turco",
     "scoring": "1 punto por animal de pezuña"
   },
+  "tree_sapling": {
+    "name": "Retoño de árbol",
+    "scoring": "0 puntos (cuenta como un árbol)"
+  },
   "bullfinch": {
     "name": "Camachuelo",
     "scoring": "2 puntos por insecto en tu bosque"
@@ -454,7 +458,8 @@
 
   "ash": {
     "name": "Fresno común",
-    "scoring": "1 punto por símbolo de árbol + 1 por planta"
+    "scoring": "1 punto por carta con el mismo símbolo de árbol + 1 por planta (plantas contadas automáticamente)",
+    "context": "Cartas con el mismo símbolo de árbol coloreado"
   },
   "black_alder": {
     "name": "Aliso negro",
@@ -522,6 +527,10 @@
   "wet_woodland": {
     "name": "Bosque húmedo",
     "scoring": "2 puntos por páramo en tu bosque (incluyéndose)"
+  },
+  "universal_moor": {
+    "name": "Páramo universal",
+    "scoring": "0 puntos (cuenta como un páramo)"
   },
 
   "barn_owl_d": {

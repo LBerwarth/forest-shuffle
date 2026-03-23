@@ -49,6 +49,10 @@
     "name": "Chêne chevelu",
     "scoring": "1 point par animal à sabots"
   },
+  "tree_sapling": {
+    "name": "Pousse d'arbre",
+    "scoring": "0 point (compte comme un arbre)"
+  },
   "bullfinch": {
     "name": "Bouvreuil",
     "scoring": "2 points par insecte dans votre forêt"
@@ -450,7 +454,8 @@
 
   "ash": {
     "name": "Frêne commun",
-    "scoring": "1 point par icône d'arbre + 1 par plante"
+    "scoring": "1 point par carte avec le même symbole d'arbre + 1 par plante (plantes comptées automatiquement)",
+    "context": "Cartes avec le même symbole d'arbre coloré"
   },
   "black_alder": {
     "name": "Aulne glutineux",
@@ -518,6 +523,10 @@
   "wet_woodland": {
     "name": "Forêt humide",
     "scoring": "2 points par Lande dans votre forêt (elle-même incluse)"
+  },
+  "universal_moor": {
+    "name": "Lande universelle",
+    "scoring": "0 point (compte comme une lande)"
   },
 
   "barn_owl_d": {

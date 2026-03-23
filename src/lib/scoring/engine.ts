@@ -109,6 +109,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   // Woodland trees
   palm_tree: (count, ctx) => count * countTag(ctx, 'bird'),
   turkey_oak: (count, ctx) => count * countTag(ctx, 'cloven_hoofed'),
+  tree_sapling: () => 0, // 0 points but counts as a tree
 
   // --- TOP SLOT ---
   bullfinch: (count, ctx) => count * (countTag(ctx, 'insect') * 2),

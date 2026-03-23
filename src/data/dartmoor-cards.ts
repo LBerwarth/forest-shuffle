@@ -4,7 +4,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   // TREES (6)
   // ============================================================
-  { key: 'ash', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
+  { key: 'ash', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
   { key: 'black_alder', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
   { key: 'crab_apple', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
   { key: 'goat_willow', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
@@ -27,6 +27,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   { key: 'valley_mire', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'warrens', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'wet_woodland', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
+  { key: 'universal_moor', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
 
   // ============================================================
   // TOP SLOT (14)

@@ -10,7 +10,7 @@ import { useScoringStore } from '@/store/scoring-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { getCardsByCategory } from '@/data/cards'
-import { scoreCard, buildForestContext } from '@/lib/scoring'
+import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext } from '@/lib/scoring'
 import { cn } from '@/lib/utils'
 import { CARD_ICONS } from '@/data/cardIcons'
 import { getCategoryOrder } from '@/data/categories'
@@ -115,19 +115,30 @@ export function LiveScoreWizardPage() {
     (cardKey: string) => {
       if (!currentPlayer) return 0
       const count = currentPlayer.cardCounts[cardKey] || 0
-      if (count === 0) return 0
+      // For the regular cave card, show lonely cave points when cave is empty
+      if (count === 0) {
+        if (cardKey === 'cave_d' && (currentPlayer.cardCounts['lonely_cave_d'] || 0) > 0) return 5
+        if (cardKey === 'cave' && (currentPlayer.cardCounts['lonely_cave'] || 0) > 0) return 5
+        return 0
+      }
       const entry = currentPlayer.breakdown?.entries.find((e) => e.cardKey === cardKey)
       if (entry) return entry.points
-      if (edition !== 'dartmoor') {
-        const ctx = buildForestContext(
+      if (edition === 'dartmoor') {
+        const ctx = buildDartmoorForestContext(
           currentPlayer.cardCounts,
           currentPlayer.cardMetadata,
           currentPlayer.fullyOccupiedTrees,
         )
         const metadata = currentPlayer.cardMetadata[cardKey]
-        return scoreCard(cardKey, count, ctx, metadata)
+        return scoreDartmoorCard(cardKey, count, ctx, metadata)
       }
-      return 0
+      const ctx = buildForestContext(
+        currentPlayer.cardCounts,
+        currentPlayer.cardMetadata,
+        currentPlayer.fullyOccupiedTrees,
+      )
+      const metadata = currentPlayer.cardMetadata[cardKey]
+      return scoreCard(cardKey, count, ctx, metadata)
     },
     [currentPlayer, edition],
   )

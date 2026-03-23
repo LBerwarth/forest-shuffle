@@ -89,7 +89,7 @@ function scoreMeadowPipit(count: number, ctx: ForestContext): number {
 
 const scoringFunctions: Record<string, ScoringFunction> = {
   // --- TREES ---
-  ash: (count, ctx) => count * (ctx.totalTrees + countTag(ctx, 'plant')),
+  ash: (count, ctx, metadata) => count * ((metadata?.contextValue ?? 0) + countTag(ctx, 'plant')),
   black_alder: (count) => count * 5,
   crab_apple: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 8,
   goat_willow: (count, ctx) => count * ctx.totalMoors,
@@ -110,6 +110,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   valley_mire: (count, ctx) => count * (2 * countTag(ctx, 'insect')),
   warrens: (count, ctx) => count * (2 * countTag(ctx, 'pawed')),
   wet_woodland: (count, ctx) => count * (2 * ctx.totalMoors),
+  universal_moor: () => 0, // 0 points but counts as a moor
 
   // --- TOP SLOT ---
   barn_owl_d: (count, ctx) => count * (3 * countTag(ctx, 'bat')),
@@ -289,7 +290,7 @@ export function buildDartmoorForestContext(
 // SCORE A SINGLE DARTMOOR CARD
 // ============================================================
 
-function scoreDartmoorCard(
+export function scoreDartmoorCard(
   cardKey: string,
   count: number,
   context: ForestContext,

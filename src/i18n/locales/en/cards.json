@@ -49,6 +49,10 @@
     "name": "Turkey Oak",
     "scoring": "1 point per cloven-hoofed animal"
   },
+  "tree_sapling": {
+    "name": "Tree Sapling",
+    "scoring": "0 points (counts as a tree)"
+  },
   "bullfinch": {
     "name": "Bullfinch",
     "scoring": "2 points per insect in your forest"
@@ -454,7 +458,8 @@
 
   "ash": {
     "name": "Ash",
-    "scoring": "1 point per tree + 1 per plant in your forest"
+    "scoring": "1 point per card with the same tree symbol + 1 per plant (plants counted automatically)",
+    "context": "Cards with the same coloured tree symbol"
   },
   "black_alder": {
     "name": "Black Alder",
@@ -522,6 +527,10 @@
   "wet_woodland": {
     "name": "Wet Woodland",
     "scoring": "2 points per moor in your forest (incl. itself)"
+  },
+  "universal_moor": {
+    "name": "Universal Moor",
+    "scoring": "0 points (counts as a moor)"
   },
 
   "barn_owl_d": {
