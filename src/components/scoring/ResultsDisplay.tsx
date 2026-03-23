@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Trophy, Info } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
-import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
+import { CATEGORY_ICONS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 import { CARD_ICONS } from '@/data/cardIcons'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { GameEdition } from '@/types/card'
@@ -94,7 +94,7 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
                           key={cat}
                           className="whitespace-nowrap rounded-full bg-forest-100 px-2 py-0.5 text-[10px] font-medium text-forest-600"
                         >
-                          {t(`category.${cat}`)}: {pts}
+                          {t(`category.${getCategoryLabel(cat, edition)}`)}: {pts}
                         </span>
                       )
                     })}
@@ -135,7 +135,7 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
                 {categoryOrder.map((cat) => (
                   <tr key={cat} className="border-b border-forest-100">
                     <td className="py-1.5 pr-2 text-forest-600">
-                      {CATEGORY_ICONS[cat]} {t(`category.${cat}`)}
+                      {CATEGORY_ICONS[cat]} {t(`category.${getCategoryLabel(cat, edition)}`)}
                     </td>
                     {rankedPlayers.map((p) => (
                       <td

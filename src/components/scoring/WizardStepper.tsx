@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { Check } from 'lucide-react'
-import { CATEGORY_ICONS, CATEGORY_ORDER, getCategoryOrder } from '@/data/categories'
+import { CATEGORY_ICONS, CATEGORY_ORDER, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 import type { GameEdition } from '@/types/card'
 
 export const WIZARD_STEPS = CATEGORY_ORDER.map((cat, id) => ({
@@ -54,7 +54,7 @@ export function WizardStepper({ currentStep, onStepChange, completedSteps, editi
             ) : (
               <span className="text-xs">{step.icon}</span>
             )}
-            {t(`category.${step.category}`)}
+            {t(`category.${getCategoryLabel(step.category, edition)}`)}
           </button>
         )
       })}
