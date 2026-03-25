@@ -16,7 +16,7 @@
     "scoring": "10 points chacun si vous avez 8+ espèces d'arbres"
   },
   "horse_chestnut": {
-    "name": "Marronnier",
+    "name": "Marronnier commun",
     "scoring": "Score par collection\u00a0: 1/4/9/16/25/36/49"
   },
   "linden": {
@@ -54,13 +54,13 @@
     "scoring": "0 point (compte comme un arbre)"
   },
   "bullfinch": {
-    "name": "Bouvreuil",
+    "name": "Bouvreuil pivoine",
     "scoring": "2 points par insecte dans votre forêt"
   },
   "chaffinch": {
-    "name": "Pinson",
+    "name": "Pinson des arbres",
     "scoring": "5 points si sur un Hêtre",
-    "context": "Combien de Pinsons sont sur un Hêtre\u00a0?"
+    "context": "Combien de Pinsons des arbres sont sur un Hêtre\u00a0?"
   },
   "great_spotted_woodpecker": {
     "name": "Pic épeiche",
@@ -171,10 +171,10 @@
   },
   "tree_frog": {
     "name": "Rainette verte",
-    "scoring": "5 points par moucheron par Rainette"
+    "scoring": "5 points par moustique par Rainette"
   },
   "stag_beetle": {
-    "name": "Lucane cerf-volant",
+    "name": "Lucane",
     "scoring": "1 point par animal à pattes"
   },
   "wood_ant": {
@@ -194,7 +194,7 @@
     "scoring": "0 points (compte comme champignon)"
   },
   "parasol_mushroom": {
-    "name": "Lépiote élevée",
+    "name": "Coulemelle",
     "scoring": "0 points (compte comme champignon)"
   },
   "moss": {
@@ -206,11 +206,11 @@
     "scoring": "10 points chacun si vous avez 8+ espèces d'arbres"
   },
   "hedgehog": {
-    "name": "Hérisson",
+    "name": "Hérisson commun",
     "scoring": "2 points par papillon"
   },
   "pond_turtle": {
-    "name": "Cistude d'Europe",
+    "name": "Cistude",
     "scoring": "5 points par Cistude"
   },
   "blackberries": {
@@ -274,7 +274,7 @@
     "scoring": "3 points par Tulipe sauvage"
   },
   "barbastelle": {
-    "name": "Barbastelle",
+    "name": "Barbastelle d'Europe",
     "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "bechsteins_bat": {
@@ -282,7 +282,7 @@
     "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "brown_long_eared_bat": {
-    "name": "Oreillard brun",
+    "name": "Oreillard roux",
     "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
   },
   "greater_horseshoe_bat": {
@@ -349,11 +349,11 @@
     "scoring": "0 points"
   },
   "fox": {
-    "name": "Renard",
+    "name": "Renard roux",
     "scoring": "2 points par Lièvre dans votre forêt"
   },
   "violet_carpenter_bee": {
-    "name": "Abeille charpentière",
+    "name": "Xylocope violet",
     "scoring": "0 points"
   },
   "beech_marten": {
@@ -365,7 +365,7 @@
     "scoring": "3 points par animal à sabots (lui-même inclus)"
   },
   "gnat": {
-    "name": "Moucheron",
+    "name": "Moustique",
     "scoring": "1 point par chauve-souris"
   },
   "raccoon": {
@@ -738,6 +738,6 @@
   },
   "lonely_cave_d": {
     "name": "Grotte solitaire",
-    "scoring": "5 points si aucune carte grotte standard ; sinon 0"
+    "scoring": "5 points de base + 1 point par carte grotte"
   }
 }

@@ -742,6 +742,6 @@
   },
   "lonely_cave_d": {
     "name": "Cueva solitaria",
-    "scoring": "5 puntos si no hay cartas de cueva normales; sino 0"
+    "scoring": "5 puntos base + 1 punto por carta de cueva"
   }
 }

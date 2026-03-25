@@ -1,7 +1,7 @@
 import { useMemo, useEffect, useRef } from 'react'
 import { useNavigate, useParams, Link, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Home, RotateCcw, Settings, Loader2 } from 'lucide-react'
+import { Home, RotateCcw, Settings, Loader2, ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ResultsDisplay } from '@/components/scoring/ResultsDisplay'
 import { useScoringStore } from '@/store/scoring-store'
@@ -88,6 +88,10 @@ export function GameResultPage() {
 
       {/* Actions */}
       <div className="space-y-2">
+        <Button size="lg" className="w-full" onClick={() => navigate(`/score/${gameId}`)}>
+          <ArrowLeft className="h-5 w-5" />
+          {t('result.editScores')}
+        </Button>
         <Button variant="secondary" size="lg" className="w-full" onClick={handleNewGame}>
           <RotateCcw className="h-5 w-5" />
           {t('result.newGame')}

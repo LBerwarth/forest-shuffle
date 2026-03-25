@@ -43,6 +43,11 @@
     "expansionsEnabled": "Erweiterung(en) aktiviert",
     "baseOnly": "Nur Grundspiel",
     "changeInSettings": "In den Einstellungen ändern",
+    "chooseMode": "Wie möchtest du das Spiel werten?",
+    "localMode": "Ein Gerät",
+    "localModeDesc": "Alle Spieler von diesem Gerät aus werten",
+    "liveMode": "Live-Session",
+    "liveModeDesc": "Jeder Spieler wertet auf seinem eigenen Gerät",
     "startScoring": "Wertung starten ({{count}} Spieler)"
   },
   "wizard": {
@@ -70,6 +75,7 @@
     "perCard": "Pro Karte",
     "saving": "Spiel wird gespeichert...",
     "saveGame": "Spiel speichern",
+    "editScores": "Punkte bearbeiten",
     "newGame": "Neues Spiel",
     "home": "Start"
   },

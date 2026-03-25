@@ -742,6 +742,6 @@
   },
   "lonely_cave_d": {
     "name": "Solitary Cave",
-    "scoring": "5 points if no regular cave cards; otherwise 0"
+    "scoring": "5 base points + 1 point per cave card"
   }
 }

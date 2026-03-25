@@ -43,6 +43,11 @@
     "expansionsEnabled": "expansión(es) activada(s)",
     "baseOnly": "Solo juego base",
     "changeInSettings": "Cambiar en ajustes",
+    "chooseMode": "¿Cómo vas a puntuar esta partida?",
+    "localMode": "Un solo dispositivo",
+    "localModeDesc": "Puntuar a todos los jugadores desde este dispositivo",
+    "liveMode": "Sesión en vivo",
+    "liveModeDesc": "Cada jugador puntúa en su propio dispositivo",
     "startScoring": "Empezar puntuación ({{count}} jugadores)"
   },
   "wizard": {
@@ -70,6 +75,7 @@
     "perCard": "Por carta",
     "saving": "Guardando partida...",
     "saveGame": "Guardar partida",
+    "editScores": "Editar puntuaciones",
     "newGame": "Nueva Partida",
     "home": "Inicio"
   },

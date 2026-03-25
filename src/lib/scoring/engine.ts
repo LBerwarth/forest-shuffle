@@ -84,6 +84,26 @@ export function scoreBatSet(ctx: ForestContext): number {
 }
 
 // ============================================================
+// PER-CARD SET HELPERS — distribute set points to individual cards
+// ============================================================
+
+function batCardPoints(count: number, ctx: ForestContext): number {
+  if (count === 0) return 0
+  const uniqueSpecies = BAT_KEYS.filter((k) => countCard(ctx, k) > 0).length
+  return uniqueSpecies >= 3 ? count * 5 : 0
+}
+
+function butterflyCardPoints(key: string, count: number, ctx: ForestContext): number {
+  if (count === 0) return 0
+  const total = scoreButterflySet(ctx)
+  if (total === 0) return 0
+  // Distribute proportionally by count
+  const totalButterflies = BUTTERFLY_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0)
+  if (totalButterflies === 0) return 0
+  return Math.round((count / totalButterflies) * total)
+}
+
+// ============================================================
 // INDIVIDUAL CARD SCORING FUNCTIONS
 // ============================================================
 
@@ -122,15 +142,15 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   eurasian_jay: (count) => count * 3,
   tawny_owl: (count) => count * 5,
 
-  // Butterflies - scored via butterfly set
-  peacock_butterfly: () => 0,
-  purple_emperor: () => 0,
-  silver_washed_fritillary: () => 0,
-  camberwell_beauty: () => 0,
-  large_tortoiseshell: () => 0,
-  phoebus_apollo: () => 0,
-  brimstone: () => 0,
-  map_butterfly: () => 0,
+  // Butterflies - each card shows its share of the butterfly set bonus
+  peacock_butterfly: (count, ctx) => butterflyCardPoints('peacock_butterfly', count, ctx),
+  purple_emperor: (count, ctx) => butterflyCardPoints('purple_emperor', count, ctx),
+  silver_washed_fritillary: (count, ctx) => butterflyCardPoints('silver_washed_fritillary', count, ctx),
+  camberwell_beauty: (count, ctx) => butterflyCardPoints('camberwell_beauty', count, ctx),
+  large_tortoiseshell: (count, ctx) => butterflyCardPoints('large_tortoiseshell', count, ctx),
+  phoebus_apollo: (count, ctx) => butterflyCardPoints('phoebus_apollo', count, ctx),
+  brimstone: (count, ctx) => butterflyCardPoints('brimstone', count, ctx),
+  map_butterfly: (count, ctx) => butterflyCardPoints('map_butterfly', count, ctx),
 
   red_squirrel: (_count, _ctx, metadata) => {
     return (metadata?.contextValue ?? 0) * 5
@@ -207,13 +227,13 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   wild_tulip: (count) => count * 3,
 
   // --- LATERAL SLOT ---
-  // Bats - scored via bat set
-  barbastelle: () => 0,
-  bechsteins_bat: () => 0,
-  brown_long_eared_bat: () => 0,
-  greater_horseshoe_bat: () => 0,
-  savis_pipistrelle: () => 0,
-  common_pipistrelle: () => 0,
+  // Bats - each bat scores 5 pts per copy when 3+ unique species
+  barbastelle: (count, ctx) => batCardPoints(count, ctx),
+  bechsteins_bat: (count, ctx) => batCardPoints(count, ctx),
+  brown_long_eared_bat: (count, ctx) => batCardPoints(count, ctx),
+  greater_horseshoe_bat: (count, ctx) => batCardPoints(count, ctx),
+  savis_pipistrelle: (count, ctx) => batCardPoints(count, ctx),
+  common_pipistrelle: (count, ctx) => batCardPoints(count, ctx),
 
   // Deer
   roe_deer: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 3,
@@ -405,7 +425,6 @@ export function computeScoreBreakdown(
 
   for (const cardKey of activeCards) {
     const count = cardCounts[cardKey] || 0
-    if (count === 0) continue
 
     const card = CARDS.find((c) => c.key === cardKey)
     if (!card) continue
@@ -416,6 +435,9 @@ export function computeScoreBreakdown(
     const metadata = cardMetadata[cardKey]
     const points = scoreCard(cardKey, count, context, metadata)
 
+    // Include entry even when count is 0 if there are synergy points
+    if (count === 0 && points === 0) continue
+
     entries.push({
       cardKey,
       cardCategory: card.category,
@@ -423,19 +445,6 @@ export function computeScoreBreakdown(
       points,
     })
     categoryTotals[card.category] += points
-  }
-
-  // Add set bonuses
-  const butterflyPoints = scoreButterflySet(context)
-  if (butterflyPoints > 0) {
-    entries.push({ cardKey: '_butterfly_set', cardCategory: 'top', count: 1, points: butterflyPoints })
-    categoryTotals.top += butterflyPoints
-  }
-
-  const batPoints = scoreBatSet(context)
-  if (batPoints > 0) {
-    entries.push({ cardKey: '_bat_set', cardCategory: 'lateral', count: 1, points: batPoints })
-    categoryTotals.lateral += batPoints
   }
 
   // Comparison cards (cross-player)

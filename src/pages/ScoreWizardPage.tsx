@@ -1,7 +1,7 @@
 import { useMemo, useCallback, useState } from 'react'
 import { useNavigate, useParams, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, Check, Settings, Search, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
@@ -10,7 +10,6 @@ import { useScoringStore } from '@/store/scoring-store'
 import { getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext } from '@/lib/scoring'
 import { cn } from '@/lib/utils'
-import { Link } from 'react-router-dom'
 import { CARD_ICONS } from '@/data/cardIcons'
 import { getCategoryOrder } from '@/data/categories'
 
@@ -69,9 +68,9 @@ export function ScoreWizardPage() {
 
   const filteredCards = useMemo(() => {
     if (!cardSearch.trim()) return stepCards
-    const query = cardSearch.toLowerCase()
+    const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     return stepCards.filter(card =>
-      tc(`${card.key}.name`).toLowerCase().includes(query),
+      tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query),
     )
   }, [stepCards, cardSearch, tc])
 
@@ -92,17 +91,12 @@ export function ScoreWizardPage() {
   const getCardPoints = useCallback(
     (cardKey: string) => {
       if (!currentPlayer) return 0
-      const count = currentPlayer.cardCounts[cardKey] || 0
-      // For the regular cave card, show lonely cave points when cave is empty
-      if (count === 0) {
-        if (cardKey === 'cave_d' && (currentPlayer.cardCounts['lonely_cave_d'] || 0) > 0) return 5
-        if (cardKey === 'cave' && (currentPlayer.cardCounts['lonely_cave'] || 0) > 0) return 5
-        return 0
-      }
-      // For both editions, use the pre-computed breakdown entries from the store
+      // Always check the pre-computed breakdown first — it includes synergy effects
       const entry = currentPlayer.breakdown?.entries.find(e => e.cardKey === cardKey)
       if (entry) return entry.points
       // Fallback: compute inline
+      const count = currentPlayer.cardCounts[cardKey] || 0
+      if (count === 0) return 0
       if (edition === 'dartmoor') {
         const ctx = buildDartmoorForestContext(
           currentPlayer.cardCounts,
@@ -167,9 +161,7 @@ export function ScoreWizardPage() {
               <ArrowLeft className="h-5 w-5" />
             </button>
             <h1 className="font-heading text-lg font-bold text-forest-800">{t('wizard.scoreEntry')}</h1>
-            <Link to="/settings" className="text-forest-500">
-              <Settings className="h-5 w-5" />
-            </Link>
+            <div className="w-5" />
           </div>
 
           {/* Player tabs */}
@@ -230,8 +222,8 @@ export function ScoreWizardPage() {
             )}
           </div>
 
-          {/* Special: fully occupied trees for Oak step */}
-          {currentStep === 0 && (
+          {/* Special: fully occupied trees — shown on tree step (for Oak) and lateral step (for Beech Marten) */}
+          {(stepCategories[currentStep]?.[0] === 'tree' || stepCategories[currentStep]?.[0] === 'lateral') && (
             <div className="flex items-center justify-between rounded-xl border border-bark-200 bg-bark-50 px-4 py-3 mb-3">
               <div>
                 <p className="text-sm font-medium text-bark-700">{t('wizard.fullyOccupiedTrees')}</p>

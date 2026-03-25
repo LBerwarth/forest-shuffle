@@ -69,6 +69,26 @@ export function scoreDartmoorBatSet(ctx: ForestContext): number {
 }
 
 // ============================================================
+// PER-CARD SET HELPERS — distribute set points to individual cards
+// ============================================================
+
+function dartmoorBatCardPoints(count: number, ctx: ForestContext): number {
+  if (count === 0) return 0
+  const uniqueSpecies = DARTMOOR_BAT_KEYS.filter((k) => countCard(ctx, k) > 0).length
+  return uniqueSpecies >= 3 ? count * 5 : 0
+}
+
+function dragonflyCardPoints(key: string, count: number, ctx: ForestContext): number {
+  if (count === 0) return 0
+  const total = scoreDragonflySet(ctx)
+  if (total === 0) return 0
+  // Distribute proportionally by count
+  const totalDragonflies = DRAGONFLY_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0)
+  if (totalDragonflies === 0) return 0
+  return Math.round((count / totalDragonflies) * total)
+}
+
+// ============================================================
 // MEADOW PIPIT - bird species table
 // ============================================================
 
@@ -114,12 +134,12 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 
   // --- TOP SLOT ---
   barn_owl_d: (count, ctx) => count * (3 * countTag(ctx, 'bat')),
-  // Dragonflies — scored via dragonfly set
-  beautiful_demoiselle: () => 0,
-  emerald_damselfly: () => 0,
-  keeled_skimmer: () => 0,
-  small_red_damselfly: () => 0,
-  southern_damselfly: () => 0,
+  // Dragonflies — each card shows its share of the dragonfly set bonus
+  beautiful_demoiselle: (count, ctx) => dragonflyCardPoints('beautiful_demoiselle', count, ctx),
+  emerald_damselfly: (count, ctx) => dragonflyCardPoints('emerald_damselfly', count, ctx),
+  keeled_skimmer: (count, ctx) => dragonflyCardPoints('keeled_skimmer', count, ctx),
+  small_red_damselfly: (count, ctx) => dragonflyCardPoints('small_red_damselfly', count, ctx),
+  southern_damselfly: (count, ctx) => dragonflyCardPoints('southern_damselfly', count, ctx),
 
   black_tailed_godwit: () => 0, // comparison card — handled separately
   buzzard: (count, ctx) => count * (2 * countTag(ctx, 'mouse')),
@@ -165,12 +185,12 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   water_soldiers: (count, ctx) => count * (2 * countTag(ctx, 'dragonfly')),
 
   // --- LATERAL SLOT ---
-  // Bats — scored via bat set
-  alcathoe_bat: () => 0,
-  brandts_bat: () => 0,
-  common_noctule: () => 0,
-  daubentons_bat: () => 0,
-  serotine_bat: () => 0,
+  // Bats — each bat scores 5 pts per copy when 3+ unique species
+  alcathoe_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
+  brandts_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
+  common_noctule: (count, ctx) => dartmoorBatCardPoints(count, ctx),
+  daubentons_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
+  serotine_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
 
   capercaillie_d: (count, ctx) => count * countTag(ctx, 'plant'),
   common_pheasant: (count, ctx) => count * (countTag(ctx, 'hoofed') + countTag(ctx, 'bird')),
@@ -192,7 +212,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   lonely_cave_d: (count, ctx) => {
     if (count === 0) return 0
     const regularCaveCount = countCard(ctx, 'cave_d')
-    return regularCaveCount === 0 ? 5 : 0
+    return 5 + regularCaveCount
   },
 }
 
@@ -321,7 +341,6 @@ export function computeDartmoorScoreBreakdown(
 
   for (const cardKey of activeCards) {
     const count = cardCounts[cardKey] || 0
-    if (count === 0) continue
 
     const card = DARTMOOR_CARDS.find((c) => c.key === cardKey)
     if (!card) continue
@@ -332,6 +351,9 @@ export function computeDartmoorScoreBreakdown(
     const metadata = cardMetadata[cardKey]
     const points = scoreDartmoorCard(cardKey, count, context, metadata)
 
+    // Include entry even when count is 0 if there are synergy points
+    if (count === 0 && points === 0) continue
+
     entries.push({
       cardKey,
       cardCategory: card.category,
@@ -341,19 +363,6 @@ export function computeDartmoorScoreBreakdown(
     categoryTotals[card.category] += points
   }
 
-  // Add dragonfly set bonus
-  const dragonflyPoints = scoreDragonflySet(context)
-  if (dragonflyPoints > 0) {
-    entries.push({ cardKey: '_dragonfly_set', cardCategory: 'top', count: 1, points: dragonflyPoints })
-    categoryTotals.top += dragonflyPoints
-  }
-
-  // Add bat set bonus
-  const batPoints = scoreDartmoorBatSet(context)
-  if (batPoints > 0) {
-    entries.push({ cardKey: '_bat_set', cardCategory: 'lateral', count: 1, points: batPoints })
-    categoryTotals.lateral += batPoints
-  }
 
   // Comparison cards
   if (allPlayerMoorCounts && allPlayerMoorCounts.length > 0) {

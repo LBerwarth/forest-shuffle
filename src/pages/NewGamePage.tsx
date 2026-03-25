@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, X, UserPlus, Wifi } from 'lucide-react'
+import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Globe, Calculator } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
-import { Card, CardContent } from '@/components/ui/Card'
+import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { usePlayers, useCreatePlayer } from '@/hooks/use-players'
 import { useScoringStore } from '@/store/scoring-store'
 import { useSettingsStore } from '@/store/settings-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { createLiveSession, joinLiveSession } from '@/lib/supabase-api'
+import { LanguagePicker } from '@/components/LanguagePicker'
 import { PLAYER_COLORS } from '@/types/player'
 import { cn } from '@/lib/utils'
 import type { Expansion } from '@/types/card'
@@ -20,11 +21,10 @@ export function NewGamePage() {
   const createPlayerMutation = useCreatePlayer()
   const startSession = useScoringStore((s) => s.startSession)
   const { setSession, setPlayer } = useLiveSessionStore()
-  const edition = useSettingsStore((s) => s.edition)
-  const includeAlpine = useSettingsStore((s) => s.includeAlpine)
-  const includeWoodland = useSettingsStore((s) => s.includeWoodland)
-  const includeExploration = useSettingsStore((s) => s.includeExploration)
+  const { edition, setEdition, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration } = useSettingsStore()
 
+  const [step, setStep] = useState<'setup' | 'mode' | 'players'>('setup')
+  const [mode, setMode] = useState<'local' | 'live' | null>(null)
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
   const [newPlayerName, setNewPlayerName] = useState('')
   const [showNewPlayer, setShowNewPlayer] = useState(false)
@@ -85,30 +85,205 @@ export function NewGamePage() {
     }
   }
 
-  const expansionLabels: string[] = []
-  if (edition === 'dartmoor') {
-    expansionLabels.push('Dartmoor')
-  } else {
-    if (includeAlpine) expansionLabels.push('Alpine')
-    if (includeWoodland) expansionLabels.push('Woodland')
-    if (includeExploration) expansionLabels.push('Exploration')
+  if (step === 'setup') {
+    return (
+      <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
+        {/* Header */}
+        <div className="mb-6 flex items-center gap-3">
+          <button type="button" onClick={() => navigate(-1)} className="text-forest-500 hover:text-forest-600">
+            <ArrowLeft className="h-5 w-5" />
+          </button>
+          <h1 className="font-heading text-xl font-bold text-forest-800">{t('newGame.title')}</h1>
+        </div>
+
+        {/* Edition selector */}
+        <Card className="mb-4">
+          <CardHeader>
+            <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.edition')}</h2>
+          </CardHeader>
+          <CardContent>
+            <p className="text-xs text-forest-400 mb-3">{t('settings.editionDesc')}</p>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setEdition('classic')}
+                className={cn(
+                  'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                  edition === 'classic'
+                    ? 'bg-forest-500 text-white'
+                    : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+                )}
+              >
+                {t('settings.classicEdition')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setEdition('dartmoor')}
+                className={cn(
+                  'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                  edition === 'dartmoor'
+                    ? 'bg-forest-500 text-white'
+                    : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+                )}
+              >
+                {t('settings.dartmoorEdition')}
+              </button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Expansion toggles — only for classic edition */}
+        {edition === 'classic' && (
+          <Card className="mb-4">
+            <CardHeader>
+              <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.expansions')}</h2>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-forest-700">{t('settings.alpineExpansion')}</p>
+                  <p className="text-xs text-forest-400">{t('settings.alpineDesc')}</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={toggleAlpine}
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                    includeAlpine ? 'bg-forest-500' : 'bg-forest-200'
+                  }`}
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      includeAlpine ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-forest-700">{t('settings.woodlandExpansion')}</p>
+                  <p className="text-xs text-forest-400">{t('settings.woodlandDesc')}</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={toggleWoodland}
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                    includeWoodland ? 'bg-forest-500' : 'bg-forest-200'
+                  }`}
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      includeWoodland ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-forest-700">{t('settings.explorationExpansion')}</p>
+                  <p className="text-xs text-forest-400">{t('settings.explorationDesc')}</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={toggleExploration}
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                    includeExploration ? 'bg-forest-500' : 'bg-forest-200'
+                  }`}
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      includeExploration ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Language */}
+        <Card className="mb-6">
+          <CardHeader>
+            <div className="flex items-center gap-2">
+              <Globe className="h-4 w-4 text-forest-500" />
+              <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.language')}</h2>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <LanguagePicker />
+          </CardContent>
+        </Card>
+
+        {/* Continue to mode selection */}
+        <Button
+          size="lg"
+          className="w-full"
+          onClick={() => setStep('mode')}
+        >
+          {t('wizard.next')}
+          <ArrowRight className="h-4 w-4" />
+        </Button>
+      </div>
+    )
+  }
+
+  if (step === 'mode') {
+    return (
+      <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
+        {/* Header */}
+        <div className="mb-6 flex items-center gap-3">
+          <button type="button" onClick={() => setStep('setup')} className="text-forest-500 hover:text-forest-600">
+            <ArrowLeft className="h-5 w-5" />
+          </button>
+          <h1 className="font-heading text-xl font-bold text-forest-800">{t('newGame.title')}</h1>
+        </div>
+
+        <p className="text-sm font-medium text-forest-600 mb-4">{t('newGame.chooseMode')}</p>
+
+        <div className="space-y-3 mb-6">
+          <button
+            type="button"
+            onClick={() => { setMode('local'); setStep('players') }}
+            className="flex w-full items-center gap-4 rounded-xl border-2 border-forest-100 bg-white px-4 py-4 text-left transition-all hover:border-forest-300"
+          >
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forest-100 text-forest-600 shrink-0">
+              <Calculator className="h-5 w-5" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-forest-700">{t('newGame.localMode')}</p>
+              <p className="text-xs text-forest-400">{t('newGame.localModeDesc')}</p>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => { setMode('live'); setStep('players') }}
+            className="flex w-full items-center gap-4 rounded-xl border-2 border-forest-100 bg-white px-4 py-4 text-left transition-all hover:border-forest-300"
+          >
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forest-100 text-forest-600 shrink-0">
+              <Wifi className="h-5 w-5" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-forest-700">{t('newGame.liveMode')}</p>
+              <p className="text-xs text-forest-400">{t('newGame.liveModeDesc')}</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    )
   }
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
       {/* Header */}
       <div className="mb-6 flex items-center gap-3">
-        <button type="button" onClick={() => navigate(-1)} className="text-forest-500 hover:text-forest-600">
+        <button type="button" onClick={() => setStep('mode')} className="text-forest-500 hover:text-forest-600">
           <ArrowLeft className="h-5 w-5" />
         </button>
-        <h1 className="font-heading text-xl font-bold text-forest-800">{t('newGame.title')}</h1>
+        <h1 className="font-heading text-xl font-bold text-forest-800">{t('newGame.selectPlayers')}</h1>
       </div>
 
       {/* Player selection */}
       <div className="mb-4">
-        <p className="text-sm font-medium text-forest-600 mb-2">
-          {t('newGame.selectPlayers')}
-        </p>
         <div className="space-y-2">
           {storedPlayers.map((player) => {
             const isSelected = selectedPlayerIds.includes(player.id)
@@ -175,38 +350,27 @@ export function NewGamePage() {
         </button>
       )}
 
-      {/* Expansion info */}
-      <p className="mb-4 text-xs text-center text-forest-400">
-        {expansionLabels.length > 0
-          ? `${expansionLabels.join(' + ')} ${t('newGame.expansionsEnabled')}`
-          : t('newGame.baseOnly')
-        } •{' '}
-        <button type="button" onClick={() => navigate('/settings')} className="underline hover:text-forest-500">
-          {t('newGame.changeInSettings')}
-        </button>
-      </p>
-
-      {/* Start button */}
-      <Button
-        size="lg"
-        className="w-full mb-3"
-        onClick={handleStart}
-        disabled={selectedPlayerIds.length < 2}
-      >
-        {t('newGame.startScoring', { count: selectedPlayerIds.length })}
-      </Button>
-
-      {/* Create live session */}
-      <Button
-        variant="secondary"
-        size="lg"
-        className="w-full"
-        onClick={handleCreateLive}
-        disabled={selectedPlayerIds.length < 1}
-      >
-        <Wifi className="h-5 w-5" />
-        {t('live.createSession')}
-      </Button>
+      {/* Start button — depends on mode */}
+      {mode === 'local' ? (
+        <Button
+          size="lg"
+          className="w-full"
+          onClick={handleStart}
+          disabled={selectedPlayerIds.length < 2}
+        >
+          {t('newGame.startScoring', { count: selectedPlayerIds.length })}
+        </Button>
+      ) : (
+        <Button
+          size="lg"
+          className="w-full"
+          onClick={handleCreateLive}
+          disabled={selectedPlayerIds.length < 1}
+        >
+          <Wifi className="h-5 w-5" />
+          {t('live.createSession')}
+        </Button>
+      )}
     </div>
   )
 }

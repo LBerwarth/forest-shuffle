@@ -742,6 +742,6 @@
   },
   "lonely_cave_d": {
     "name": "Einsame Höhle",
-    "scoring": "5 Punkte wenn keine normalen Höhlenkarten; sonst 0"
+    "scoring": "5 Basispunkte + 1 Punkt pro Höhlenkarte"
   }
 }

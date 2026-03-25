@@ -43,6 +43,11 @@
     "expansionsEnabled": "expansion(s) enabled",
     "baseOnly": "Base game only",
     "changeInSettings": "Change in settings",
+    "chooseMode": "How will you score this game?",
+    "localMode": "Single Device",
+    "localModeDesc": "Score all players from this device",
+    "liveMode": "Live Session",
+    "liveModeDesc": "Each player scores on their own device",
     "startScoring": "Start Scoring ({{count}} players)"
   },
   "wizard": {
@@ -70,6 +75,7 @@
     "perCard": "Per card",
     "saving": "Saving game...",
     "saveGame": "Save Game",
+    "editScores": "Edit Scores",
     "newGame": "New Game",
     "home": "Home"
   },

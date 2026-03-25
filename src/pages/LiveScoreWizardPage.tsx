@@ -93,9 +93,9 @@ export function LiveScoreWizardPage() {
 
   const filteredCards = useMemo(() => {
     if (!cardSearch.trim()) return stepCards
-    const query = cardSearch.toLowerCase()
+    const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     return stepCards.filter(card =>
-      tc(`${card.key}.name`).toLowerCase().includes(query),
+      tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query),
     )
   }, [stepCards, cardSearch, tc])
 
@@ -114,15 +114,12 @@ export function LiveScoreWizardPage() {
   const getCardPoints = useCallback(
     (cardKey: string) => {
       if (!currentPlayer) return 0
-      const count = currentPlayer.cardCounts[cardKey] || 0
-      // For the regular cave card, show lonely cave points when cave is empty
-      if (count === 0) {
-        if (cardKey === 'cave_d' && (currentPlayer.cardCounts['lonely_cave_d'] || 0) > 0) return 5
-        if (cardKey === 'cave' && (currentPlayer.cardCounts['lonely_cave'] || 0) > 0) return 5
-        return 0
-      }
+      // Always check the pre-computed breakdown first — it includes synergy effects
       const entry = currentPlayer.breakdown?.entries.find((e) => e.cardKey === cardKey)
       if (entry) return entry.points
+      // Fallback: compute inline
+      const count = currentPlayer.cardCounts[cardKey] || 0
+      if (count === 0) return 0
       if (edition === 'dartmoor') {
         const ctx = buildDartmoorForestContext(
           currentPlayer.cardCounts,
@@ -236,7 +233,7 @@ export function LiveScoreWizardPage() {
             )}
           </div>
 
-          {currentStep === 0 && (
+          {(stepCategories[currentStep]?.[0] === 'tree' || stepCategories[currentStep]?.[0] === 'lateral') && (
             <div className="flex items-center justify-between rounded-xl border border-bark-200 bg-bark-50 px-4 py-3 mb-3">
               <div>
                 <p className="text-sm font-medium text-bark-700">{t('wizard.fullyOccupiedTrees')}</p>
