@@ -737,7 +737,7 @@
     "scoring": "1 point par carte dans la grotte"
   },
   "lonely_cave_d": {
-    "name": "Grotte solitaire",
+    "name": "Grotte 4",
     "scoring": "5 points de base + 1 point par carte grotte"
   }
 }
