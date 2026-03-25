@@ -93,7 +93,7 @@ function batCardPoints(count: number, ctx: ForestContext): number {
   return uniqueSpecies >= 3 ? count * 5 : 0
 }
 
-function butterflyCardPoints(key: string, count: number, ctx: ForestContext): number {
+function butterflyCardPoints(_key: string, count: number, ctx: ForestContext): number {
   if (count === 0) return 0
   const total = scoreButterflySet(ctx)
   if (total === 0) return 0

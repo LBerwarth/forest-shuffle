@@ -78,7 +78,7 @@ function dartmoorBatCardPoints(count: number, ctx: ForestContext): number {
   return uniqueSpecies >= 3 ? count * 5 : 0
 }
 
-function dragonflyCardPoints(key: string, count: number, ctx: ForestContext): number {
+function dragonflyCardPoints(_key: string, count: number, ctx: ForestContext): number {
   if (count === 0) return 0
   const total = scoreDragonflySet(ctx)
   if (total === 0) return 0
