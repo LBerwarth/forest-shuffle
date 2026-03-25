@@ -14,6 +14,10 @@ export const CARD_ICONS: Record<string, string> = {
   palm_tree: '🌳',
   turkey_oak: '🌳',
   tree_sapling: '🌱',
+  // Shrubs
+  common_hazel: '🌿',
+  elderberry: '🌿',
+  blackthorn: '🌿',
 
   // Birds — all use the bird emoji
   bullfinch: '🐦',

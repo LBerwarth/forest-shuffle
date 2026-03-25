@@ -53,6 +53,18 @@
     "name": "Pousse d'arbre",
     "scoring": "0 point (compte comme un arbre)"
   },
+  "common_hazel": {
+    "name": "Noisetier commun",
+    "scoring": "0 point (arbuste — effet permanent uniquement)"
+  },
+  "elderberry": {
+    "name": "Sureau noir",
+    "scoring": "0 point (arbuste — effet permanent uniquement)"
+  },
+  "blackthorn": {
+    "name": "Prunellier",
+    "scoring": "0 point (arbuste — effet permanent uniquement)"
+  },
   "bullfinch": {
     "name": "Bouvreuil pivoine",
     "scoring": "2 points par insecte dans votre forêt"

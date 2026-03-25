@@ -53,6 +53,18 @@
     "name": "Retoño de árbol",
     "scoring": "0 puntos (cuenta como un árbol)"
   },
+  "common_hazel": {
+    "name": "Avellano común",
+    "scoring": "0 puntos (arbusto — solo efecto permanente)"
+  },
+  "elderberry": {
+    "name": "Saúco negro",
+    "scoring": "0 puntos (arbusto — solo efecto permanente)"
+  },
+  "blackthorn": {
+    "name": "Endrino",
+    "scoring": "0 puntos (arbusto — solo efecto permanente)"
+  },
   "bullfinch": {
     "name": "Camachuelo",
     "scoring": "2 puntos por insecto en tu bosque"

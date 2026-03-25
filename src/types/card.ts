@@ -21,6 +21,7 @@ export type CardTag =
   | 'mouse'
   | 'rabbit'
   | 'hoofed'
+  | 'shrub'
 
 export type ScoringType =
   | 'fixed'

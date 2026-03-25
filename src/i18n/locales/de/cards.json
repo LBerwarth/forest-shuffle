@@ -53,6 +53,18 @@
     "name": "Baumsetzling",
     "scoring": "0 Punkte (zählt als Baum)"
   },
+  "common_hazel": {
+    "name": "Gemeine Hasel",
+    "scoring": "0 Punkte (Strauch — nur Dauereffekt)"
+  },
+  "elderberry": {
+    "name": "Schwarzer Holunder",
+    "scoring": "0 Punkte (Strauch — nur Dauereffekt)"
+  },
+  "blackthorn": {
+    "name": "Schlehe",
+    "scoring": "0 Punkte (Strauch — nur Dauereffekt)"
+  },
   "bullfinch": {
     "name": "Gimpel",
     "scoring": "2 Punkte pro Insekt in deinem Wald"

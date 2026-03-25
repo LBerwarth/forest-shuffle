@@ -20,6 +20,10 @@ export const CARDS: CardDefinition[] = [
   { key: 'palm_tree', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'turkey_oak', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'tree_sapling', category: 'tree', tags: [], expansion: 'woodland', scoringType: 'fixed' },
+  // Woodland shrubs (count as trees for card slots, but NOT for tree counts)
+  { key: 'common_hazel', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'elderberry', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'blackthorn', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },
 
   // ============================================================
   // TOP SLOT

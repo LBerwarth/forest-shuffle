@@ -53,6 +53,18 @@
     "name": "Tree Sapling",
     "scoring": "0 points (counts as a tree)"
   },
+  "common_hazel": {
+    "name": "Common Hazel",
+    "scoring": "0 points (shrub — permanent effect only)"
+  },
+  "elderberry": {
+    "name": "Elderberry",
+    "scoring": "0 points (shrub — permanent effect only)"
+  },
+  "blackthorn": {
+    "name": "Blackthorn",
+    "scoring": "0 points (shrub — permanent effect only)"
+  },
   "bullfinch": {
     "name": "Bullfinch",
     "scoring": "2 points per insect in your forest"

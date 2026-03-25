@@ -129,7 +129,11 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   // Woodland trees
   palm_tree: (count, ctx) => count * countTag(ctx, 'bird'),
   turkey_oak: (count, ctx) => count * countTag(ctx, 'cloven_hoofed'),
-  tree_sapling: () => 0, // 0 points but counts as a tree
+  tree_sapling: () => 0,
+  // Woodland shrubs — 0 points (permanent effects only)
+  common_hazel: () => 0,
+  elderberry: () => 0,
+  blackthorn: () => 0, // 0 points but counts as a tree
 
   // --- TOP SLOT ---
   bullfinch: (count, ctx) => count * (countTag(ctx, 'insect') * 2),
@@ -347,7 +351,7 @@ export function buildForestContext(
     bird: 0, butterfly: 0, insect: 0, amphibian: 0,
     pawed: 0, deer: 0, bat: 0, plant: 0, mushroom: 0,
     alpine: 0, cloven_hoofed: 0, woodland_edge: 0,
-    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0,
+    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0, shrub: 0,
   }
 
   const slotCounts: Record<CardCategory, number> = {
@@ -365,7 +369,7 @@ export function buildForestContext(
     totalCards += count
     slotCounts[card.category] += count
 
-    if (card.category === 'tree') {
+    if (card.category === 'tree' && !card.tags.includes('shrub')) {
       totalTrees += count
       treeSpeciesPresent.add(card.key)
     }
