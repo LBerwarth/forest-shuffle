@@ -49,6 +49,11 @@
     "name": "Turkey Oak",
     "scoring": "1 point per cloven-hoofed animal"
   },
+  "o_christmas_tree": {
+    "name": "O Christmas Tree",
+    "scoring": "2 points per card attached to this tree",
+    "context": "Cards attached to O Christmas Trees"
+  },
   "tree_sapling": {
     "name": "Tree Sapling",
     "scoring": "0 points (counts as a tree)"
@@ -522,7 +527,8 @@
   },
   "rivulet": {
     "name": "Rivulet",
-    "scoring": "2 points per tree in your forest"
+    "scoring": "2 points per tree symbol in your forest",
+    "context": "How many tree symbols are in your forest?"
   },
   "tor": {
     "name": "Tor",

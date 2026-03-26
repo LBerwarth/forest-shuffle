@@ -22,7 +22,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   { key: 'fountainhead', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
   { key: 'lowland_heath', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'rhos_pasture', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
-  { key: 'rivulet', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
+  { key: 'rivulet', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
   { key: 'tor', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
   { key: 'valley_mire', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'warrens', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },

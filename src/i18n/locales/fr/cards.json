@@ -49,6 +49,11 @@
     "name": "Chêne chevelu",
     "scoring": "1 point par animal à sabots"
   },
+  "o_christmas_tree": {
+    "name": "Sapin de Noël",
+    "scoring": "2 points par carte attachée à cet arbre",
+    "context": "Cartes attachées aux Sapins de Noël"
+  },
   "tree_sapling": {
     "name": "Pousse d'arbre",
     "scoring": "0 point (compte comme un arbre)"
@@ -518,7 +523,8 @@
   },
   "rivulet": {
     "name": "Ruisseau",
-    "scoring": "2 points par icône d'arbre dans votre forêt"
+    "scoring": "2 points par icône d'arbre dans votre forêt",
+    "context": "Combien d'icônes d'arbre dans votre forêt\u00a0?"
   },
   "tor": {
     "name": "Tor",

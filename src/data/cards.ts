@@ -19,6 +19,7 @@ export const CARDS: CardDefinition[] = [
   // Woodland trees
   { key: 'palm_tree', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'turkey_oak', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'o_christmas_tree', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
   { key: 'tree_sapling', category: 'tree', tags: [], expansion: 'base', scoringType: 'fixed' },
   // Woodland shrubs (count as trees for card slots, but NOT for tree counts)
   { key: 'common_hazel', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },

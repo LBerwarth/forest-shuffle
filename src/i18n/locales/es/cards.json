@@ -49,6 +49,11 @@
     "name": "Roble turco",
     "scoring": "1 punto por animal de pezuña"
   },
+  "o_christmas_tree": {
+    "name": "Oh árbol de Navidad",
+    "scoring": "2 puntos por carta adjunta a este árbol",
+    "context": "Cartas adjuntas a Oh árbol de Navidad"
+  },
   "tree_sapling": {
     "name": "Retoño de árbol",
     "scoring": "0 puntos (cuenta como un árbol)"
@@ -522,7 +527,8 @@
   },
   "rivulet": {
     "name": "Arroyo",
-    "scoring": "2 puntos por símbolo de árbol en tu bosque"
+    "scoring": "2 puntos por símbolo de árbol en tu bosque",
+    "context": "¿Cuántos símbolos de árbol hay en tu bosque?"
   },
   "tor": {
     "name": "Tor",

@@ -13,6 +13,7 @@ export const CARD_ICONS: Record<string, string> = {
   stone_pine: '🌳',
   palm_tree: '🌳',
   turkey_oak: '🌳',
+  o_christmas_tree: '🌳',
   tree_sapling: '🌱',
   // Shrubs
   common_hazel: '🌿',

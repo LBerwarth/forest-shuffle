@@ -49,6 +49,11 @@
     "name": "Zerreiche",
     "scoring": "1 Punkt pro Paarhufer"
   },
+  "o_christmas_tree": {
+    "name": "O Tannenbaum",
+    "scoring": "2 Punkte pro an diesen Baum angelegter Karte",
+    "context": "An O Tannenbaum angelegte Karten"
+  },
   "tree_sapling": {
     "name": "Baumsetzling",
     "scoring": "0 Punkte (zählt als Baum)"
@@ -522,7 +527,8 @@
   },
   "rivulet": {
     "name": "Bächlein",
-    "scoring": "2 Punkte pro Baumsymbol in deinem Wald"
+    "scoring": "2 Punkte pro Baumsymbol in deinem Wald",
+    "context": "Wie viele Baumsymbole sind in deinem Wald?"
   },
   "tor": {
     "name": "Tor",

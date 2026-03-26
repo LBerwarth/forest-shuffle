@@ -129,6 +129,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   // Woodland trees
   palm_tree: (count, ctx) => count * countTag(ctx, 'bird'),
   turkey_oak: (count, ctx) => count * countTag(ctx, 'cloven_hoofed'),
+  o_christmas_tree: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 2,
   tree_sapling: () => 0,
   // Woodland shrubs — 0 points (permanent effects only)
   common_hazel: () => 0,
