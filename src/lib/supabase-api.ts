@@ -211,6 +211,7 @@ export async function createLiveSession(
   edition: GameEdition,
   expansions: Expansion[],
   hostPlayerId: string,
+  language: string,
 ): Promise<LiveSession> {
   if (!supabase) throw new Error('Supabase not configured')
   const code = generateSessionCode()
@@ -221,6 +222,7 @@ export async function createLiveSession(
       edition,
       expansions,
       host_player_id: hostPlayerId,
+      language,
     })
     .select()
     .single()

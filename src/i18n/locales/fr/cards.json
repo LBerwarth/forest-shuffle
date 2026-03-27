@@ -279,7 +279,7 @@
     "scoring": "15/7/3 pts selon le nombre d'arbres (0-5/6-10/11+)"
   },
   "stinging_nettle": {
-    "name": "Ortie",
+    "name": "Grande ortie",
     "scoring": "2 points par papillon"
   },
   "water_vole": {
@@ -287,8 +287,8 @@
     "scoring": "0 points (compte comme amphibien)"
   },
   "wild_tulip": {
-    "name": "Tulipe sauvage",
-    "scoring": "3 points par Tulipe sauvage"
+    "name": "Tulipe des bois",
+    "scoring": "3 points par Tulipe des bois"
   },
   "barbastelle": {
     "name": "Barbastelle d'Europe",
@@ -417,7 +417,7 @@
   "european_bison": {
     "name": "Bison d'Europe",
     "scoring": "2 pts par carte avec un de ses symboles d'arbre (lui-même inclus)",
-    "context": "Cartes avec les symboles d'arbre du Bison (lui-même inclus)"
+    "context": "Cartes avec les symboles d'arbre par Bison (lui-même inclus)"
   },
   "european_polecat": {
     "name": "Putois d'Europe",
@@ -450,7 +450,7 @@
   },
   "wild_boar_female": {
     "name": "Laie",
-    "scoring": "10 points par Muscardin"
+    "scoring": "10 points chacune si au moins 1 Marcassin\u00a0; sinon 0"
   },
   "cave": {
     "name": "Grotte",
@@ -467,6 +467,18 @@
   "lonely_cave": {
     "name": "Grotte solitaire",
     "scoring": "5 points si aucune carte grotte standard\u00a0; sinon 0"
+  },
+  "clouded_apollo": {
+    "name": "Petit Apollon",
+    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
+  },
+  "wild_boar_piglet": {
+    "name": "Marcassin",
+    "scoring": "5 points chacun si au moins 1 Sanglier\u00a0; sinon 0"
+  },
+  "honey_bee": {
+    "name": "Abeille mellifère",
+    "scoring": "1 point par plante"
   },
 
   "ash": {

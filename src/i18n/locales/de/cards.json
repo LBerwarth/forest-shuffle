@@ -421,7 +421,7 @@
   "european_bison": {
     "name": "Wisent",
     "scoring": "2 Pkt. pro Karte mit einem seiner Baumsymbole (sich selbst eingeschlossen)",
-    "context": "Karten mit Baumsymbolen des Wisents (sich selbst eingeschlossen)"
+    "context": "Passende Baumsymbol-Karten pro Wisent (sich selbst eingeschlossen)"
   },
   "european_polecat": {
     "name": "Europäischer Iltis",
@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Wildschwein (Bache)",
-    "scoring": "10 Punkte pro Haselmaus"
+    "scoring": "10 Punkte pro Stück wenn mind. 1 Frischling; sonst 0"
   },
   "cave": {
     "name": "Höhle",
@@ -471,6 +471,18 @@
   "lonely_cave": {
     "name": "Einsame Höhle",
     "scoring": "5 Punkte wenn keine normalen Höhlenkarten; sonst 0"
+  },
+  "clouded_apollo": {
+    "name": "Schwarzer Apollo",
+    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
+  },
+  "wild_boar_piglet": {
+    "name": "Frischling",
+    "scoring": "5 Punkte pro Stück wenn mind. 1 Wildschwein; sonst 0"
+  },
+  "honey_bee": {
+    "name": "Honigbiene",
+    "scoring": "1 Punkt pro Pflanze"
   },
 
   "ash": {

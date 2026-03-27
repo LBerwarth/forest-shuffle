@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/Card'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { useLiveSessionStore } from '@/store/live-session-store'
+import { useSettingsStore } from '@/store/settings-store'
 import { updateLiveSessionStatus } from '@/lib/supabase-api'
 
 export function LiveLobbyPage() {
@@ -14,6 +15,14 @@ export function LiveLobbyPage() {
   const { sessionId } = useParams<{ sessionId: string }>()
   const { session, players, isHost, isLoading } = useLiveSession(sessionId)
   const clearSession = useLiveSessionStore((s) => s.clearSession)
+  const { language, setLanguage } = useSettingsStore()
+
+  // Sync language with session language
+  useEffect(() => {
+    if (session?.language && session.language !== language) {
+      setLanguage(session.language)
+    }
+  }, [session?.language, language, setLanguage])
 
   // Auto-navigate when host starts scoring
   useEffect(() => {

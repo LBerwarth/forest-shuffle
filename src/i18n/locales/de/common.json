@@ -53,7 +53,7 @@
   "wizard": {
     "scoreEntry": "Punkteingabe",
     "fullyOccupiedTrees": "Voll besetzte Bäume",
-    "fullyOccupiedDesc": "Bäume mit allen 4 Plätzen besetzt (für Eiche-Wertung)",
+    "fullyOccupiedDesc": "Bäume mit allen 4 Plätzen besetzt (für Marder-Wertung)",
     "specialCave": "Spezialhöhle",
     "noneCave": "Keine",
     "searchCards": "Karten suchen...",
@@ -183,6 +183,7 @@
     "waitingForHost": "Warte auf den Host...",
     "submit": "Abschicken",
     "waitingForOthers": "Warte auf andere Spieler...",
-    "playersFinished": "{{done}} von {{total}} Spielern fertig"
+    "playersFinished": "{{done}} von {{total}} Spielern fertig",
+    "editScores": "Meine Punkte bearbeiten"
   }
 }

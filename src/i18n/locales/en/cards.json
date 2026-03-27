@@ -421,7 +421,7 @@
   "european_bison": {
     "name": "European Bison",
     "scoring": "2 pts per card showing one of its tree symbols (incl. itself)",
-    "context": "Cards showing Bison's tree symbols (incl. itself)"
+    "context": "Matching tree-symbol cards per Bison (incl. itself)"
   },
   "european_polecat": {
     "name": "European Polecat",
@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Wild Boar (Female)",
-    "scoring": "10 points per Squeaker"
+    "scoring": "10 points each if at least 1 Wild Boar Piglet; otherwise 0"
   },
   "cave": {
     "name": "Cave",
@@ -471,6 +471,18 @@
   "lonely_cave": {
     "name": "Lonely Cave",
     "scoring": "5 points if no regular cave cards; otherwise 0"
+  },
+  "clouded_apollo": {
+    "name": "Clouded Apollo",
+    "scoring": "Butterflies: 0/3/6/12/20/35/55/80"
+  },
+  "wild_boar_piglet": {
+    "name": "Wild Boar Piglet",
+    "scoring": "5 points each if at least 1 Wild Boar; otherwise 0"
+  },
+  "honey_bee": {
+    "name": "Honey Bee",
+    "scoring": "1 point per plant"
   },
 
   "ash": {

@@ -21,7 +21,7 @@ export function NewGamePage() {
   const createPlayerMutation = useCreatePlayer()
   const startSession = useScoringStore((s) => s.startSession)
   const { setSession, setPlayer } = useLiveSessionStore()
-  const { edition, setEdition, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration } = useSettingsStore()
+  const { edition, setEdition, language, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration } = useSettingsStore()
 
   const [step, setStep] = useState<'setup' | 'mode' | 'players'>('setup')
   const [mode, setMode] = useState<'local' | 'live' | null>(null)
@@ -75,7 +75,7 @@ export function NewGamePage() {
     if (!host) return
 
     try {
-      const session = await createLiveSession(edition, getExpansions(), host.id)
+      const session = await createLiveSession(edition, getExpansions(), host.id, language)
       await joinLiveSession(session.id, host.id, host.name)
       setSession(session.id, session.code, true)
       setPlayer(host.id, host.name)

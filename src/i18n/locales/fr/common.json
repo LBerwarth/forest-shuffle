@@ -53,7 +53,7 @@
   "wizard": {
     "scoreEntry": "Saisie des scores",
     "fullyOccupiedTrees": "Arbres compl\u00e8tement occup\u00e9s",
-    "fullyOccupiedDesc": "Arbres avec les 4 emplacements remplis (pour le score du Ch\u00eane)",
+    "fullyOccupiedDesc": "Arbres avec les 4 emplacements remplis (pour le score de la Fouine)",
     "specialCave": "Grotte spéciale",
     "noneCave": "Aucune",
     "searchCards": "Rechercher des cartes...",
@@ -183,6 +183,7 @@
     "waitingForHost": "En attente du lancement par l'hôte...",
     "submit": "Soumettre",
     "waitingForOthers": "En attente des autres joueurs...",
-    "playersFinished": "{{done}} sur {{total}} joueurs ont terminé"
+    "playersFinished": "{{done}} sur {{total}} joueurs ont terminé",
+    "editScores": "Modifier mes scores"
   }
 }

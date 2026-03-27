@@ -9,6 +9,7 @@ export interface LiveSession {
   code: string
   edition: GameEdition
   expansions: Expansion[]
+  language: 'en' | 'fr' | 'de' | 'es'
   status: LiveSessionStatus
   host_player_id: string
   created_at: string

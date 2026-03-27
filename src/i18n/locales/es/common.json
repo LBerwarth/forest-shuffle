@@ -53,7 +53,7 @@
   "wizard": {
     "scoreEntry": "Entrada de puntos",
     "fullyOccupiedTrees": "Árboles completamente ocupados",
-    "fullyOccupiedDesc": "Árboles con las 4 ranuras llenas (para puntuación del Roble)",
+    "fullyOccupiedDesc": "Árboles con las 4 ranuras llenas (para puntuación de la Garduña)",
     "specialCave": "Cueva especial",
     "noneCave": "Ninguna",
     "searchCards": "Buscar cartas...",
@@ -183,6 +183,7 @@
     "waitingForHost": "Esperando al anfitrión...",
     "submit": "Enviar",
     "waitingForOthers": "Esperando a los demás jugadores...",
-    "playersFinished": "{{done}} de {{total}} jugadores han terminado"
+    "playersFinished": "{{done}} de {{total}} jugadores han terminado",
+    "editScores": "Editar mis puntuaciones"
   }
 }

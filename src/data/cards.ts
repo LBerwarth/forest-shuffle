@@ -52,6 +52,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'cardinal', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'cuckoo', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'eurasian_magpie', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'clouded_apollo', category: 'top', tags: ['butterfly', 'insect'], expansion: 'woodland', scoringType: 'set' },
   { key: 'map_butterfly', category: 'top', tags: ['butterfly', 'insect'], expansion: 'woodland', scoringType: 'set' },
   { key: 'mistletoe', category: 'top', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'nightingale', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'conditional', needsContext: true, contextCappedByCount: true },
@@ -91,6 +92,8 @@ export const CARDS: CardDefinition[] = [
   { key: 'stinging_nettle', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'water_vole', category: 'bottom', tags: ['amphibian'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'wild_boar_piglet', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'custom' },
+  { key: 'honey_bee', category: 'bottom', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
 
   // ============================================================
   // LATERAL SLOT

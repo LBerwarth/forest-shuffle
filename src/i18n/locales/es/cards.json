@@ -421,7 +421,7 @@
   "european_bison": {
     "name": "Bisonte europeo",
     "scoring": "2 pts por carta con uno de sus símbolos de árbol (incluido él mismo)",
-    "context": "Cartas con los símbolos de árbol del Bisonte (incluido él mismo)"
+    "context": "Cartas con símbolos de árbol por Bisonte (incluido él mismo)"
   },
   "european_polecat": {
     "name": "Turón europeo",
@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Jabalina",
-    "scoring": "10 puntos por Lirón"
+    "scoring": "10 puntos cada una si al menos 1 Jabato; sino 0"
   },
   "cave": {
     "name": "Cueva",
@@ -471,6 +471,18 @@
   "lonely_cave": {
     "name": "Cueva solitaria",
     "scoring": "5 puntos si no hay cartas de cueva normales; sino 0"
+  },
+  "clouded_apollo": {
+    "name": "Apolo nublado",
+    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
+  },
+  "wild_boar_piglet": {
+    "name": "Jabato",
+    "scoring": "5 puntos cada uno si al menos 1 Jabalí; sino 0"
+  },
+  "honey_bee": {
+    "name": "Abeja melífera",
+    "scoring": "1 punto por planta"
   },
 
   "ash": {

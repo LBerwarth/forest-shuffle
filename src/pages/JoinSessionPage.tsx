@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/Card'
 import { usePlayers, useCreatePlayer } from '@/hooks/use-players'
 import { useLiveSessionStore } from '@/store/live-session-store'
+import { useSettingsStore } from '@/store/settings-store'
 import { fetchLiveSessionByCode, joinLiveSession } from '@/lib/supabase-api'
 import { PLAYER_COLORS } from '@/types/player'
 import { cn } from '@/lib/utils'
@@ -16,6 +17,7 @@ export function JoinSessionPage() {
   const { data: storedPlayers = [] } = usePlayers()
   const createPlayerMutation = useCreatePlayer()
   const { setSession, setPlayer } = useLiveSessionStore()
+  const setLanguage = useSettingsStore((s) => s.setLanguage)
 
   const [code, setCode] = useState('')
   const [selectedPlayerId, setSelectedPlayerId] = useState<string | null>(null)
@@ -62,6 +64,8 @@ export function JoinSessionPage() {
       await joinLiveSession(session.id, player.id, player.name)
       setSession(session.id, session.code, false)
       setPlayer(player.id, player.name)
+      // Force the joining player's language to match the session's language
+      setLanguage(session.language)
       navigate(`/live/${session.id}`)
     } catch (err) {
       console.error('Failed to join session:', err)

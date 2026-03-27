@@ -48,6 +48,7 @@ export const CARD_ICONS: Record<string, string> = {
   large_tortoiseshell: '🦋',
   phoebus_apollo: '🦋',
   brimstone: '🦋',
+  clouded_apollo: '🦋',
   map_butterfly: '🦋',
 
   // Amphibians — all use the frog emoji
@@ -68,6 +69,7 @@ export const CARD_ICONS: Record<string, string> = {
   fireflies: '🪲',
   gnat: '🪲',
   great_green_bush_cricket: '🪲',
+  honey_bee: '🪲',
   bee_swarm: '🪲',
   crane_fly: '🪲',
 
@@ -119,6 +121,7 @@ export const CARD_ICONS: Record<string, string> = {
   chamois: '🦌',
   steinbock: '🦌',
   fallow_deer: '🦌',
+  wild_boar_piglet: '🐾',
   wild_boar_female: '🐾',
   elk: '🦌',
   european_bison: '🦌',

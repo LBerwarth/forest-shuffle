@@ -1,7 +1,7 @@
 import { useMemo, useCallback, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, Check, Loader2, Search, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, Loader2, Pencil, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
@@ -158,6 +158,13 @@ export function LiveScoreWizardPage() {
     )
   }
 
+  async function handleEditScores() {
+    setSubmitted(false)
+    if (myPlayerId && sessionId) {
+      await updateLivePlayerStatus(myPlayerId, sessionId, 'scoring')
+    }
+  }
+
   if (submitted && !allDone) {
     const donePlayers = livePlayers.filter((p) => p.status === 'done').length
     return (
@@ -167,6 +174,14 @@ export function LiveScoreWizardPage() {
         <p className="mt-2 text-sm text-forest-500">
           {t('live.playersFinished', { done: donePlayers, total: livePlayers.length })}
         </p>
+        <Button
+          variant="secondary"
+          className="mt-6"
+          onClick={handleEditScores}
+        >
+          <Pencil className="h-4 w-4" />
+          {t('live.editScores')}
+        </Button>
       </div>
     )
   }

@@ -50,7 +50,7 @@ function countHares(ctx: ForestContext): number {
 const BUTTERFLY_KEYS = [
   'peacock_butterfly', 'purple_emperor', 'silver_washed_fritillary',
   'camberwell_beauty', 'large_tortoiseshell', 'phoebus_apollo',
-  'map_butterfly', 'brimstone',
+  'map_butterfly', 'brimstone', 'clouded_apollo',
 ]
 
 export function scoreButterflySet(ctx: ForestContext): number {
@@ -156,6 +156,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   phoebus_apollo: (count, ctx) => butterflyCardPoints('phoebus_apollo', count, ctx),
   brimstone: (count, ctx) => butterflyCardPoints('brimstone', count, ctx),
   map_butterfly: (count, ctx) => butterflyCardPoints('map_butterfly', count, ctx),
+  clouded_apollo: (count, ctx) => butterflyCardPoints('clouded_apollo', count, ctx),
 
   red_squirrel: (_count, _ctx, metadata) => {
     return (metadata?.contextValue ?? 0) * 5
@@ -230,6 +231,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   stinging_nettle: (count, ctx) => count * (2 * countTag(ctx, 'butterfly')),
   water_vole: () => 0,
   wild_tulip: (count) => count * 3,
+  wild_boar_piglet: (count, ctx) => countCard(ctx, 'wild_boar') >= 1 ? count * 5 : 0,
+  honey_bee: (count, ctx) => count * countTag(ctx, 'plant'),
 
   // --- LATERAL SLOT ---
   // Bats - each bat scores 5 pts per copy when 3+ unique species
@@ -280,9 +283,10 @@ const scoringFunctions: Record<string, ScoringFunction> = {
     // 2pts per tree sapling and per card showing Elk's tree symbols (incl self)
     return (metadata?.contextValue ?? 0) * 2
   },
-  european_bison: (_count, _ctx, metadata) => {
-    // 2pts per card showing one of its tree symbols (incl self)
-    return (metadata?.contextValue ?? 0) * 2
+  european_bison: (count, _ctx, metadata) => {
+    // 2pts per card showing one of its tree symbols (incl self), per Bison
+    if (count === 0) return 0
+    return count * (metadata?.contextValue ?? 0) * 2
   },
   european_polecat: (_count, _ctx, metadata) => {
     // 10pts if alone on tree (needsContext)
@@ -294,7 +298,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   sable: (count, ctx) => count * (3 * countTag(ctx, 'pawed')),
   troll: (count, ctx) => count * ctx.totalTrees,
   white_stork: (count, ctx) => count * (countTag(ctx, 'insect') + countTag(ctx, 'amphibian')),
-  wild_boar_female: (count, ctx) => count * (10 * countCard(ctx, 'squeaker')),
+  wild_boar_female: (count, ctx) => countCard(ctx, 'wild_boar_piglet') >= 1 ? count * 10 : 0,
 
   // --- CAVE ---
   cave: (count, ctx) => {
