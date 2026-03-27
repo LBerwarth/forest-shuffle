@@ -92,7 +92,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'stinging_nettle', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'water_vole', category: 'bottom', tags: ['amphibian'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'wild_boar_piglet', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'custom' },
+  { key: 'wild_boar_piglet', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'honey_bee', category: 'bottom', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
 
   // ============================================================

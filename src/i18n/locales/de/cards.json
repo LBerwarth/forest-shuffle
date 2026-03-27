@@ -342,7 +342,7 @@
   },
   "wild_boar": {
     "name": "Wildschwein",
-    "scoring": "10 Punkte wenn mindestens 1 Haselmaus in deinem Wald"
+    "scoring": "10 Punkte pro Stück wenn mind. 1 Frischling; sonst 0"
   },
   "european_badger": {
     "name": "Europäischer Dachs",
@@ -478,7 +478,7 @@
   },
   "wild_boar_piglet": {
     "name": "Frischling",
-    "scoring": "5 Punkte pro Stück wenn mind. 1 Wildschwein; sonst 0"
+    "scoring": "1 Punkt pro Frischling"
   },
   "honey_bee": {
     "name": "Honigbiene",

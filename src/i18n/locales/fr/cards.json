@@ -342,7 +342,7 @@
   },
   "wild_boar": {
     "name": "Sanglier",
-    "scoring": "10 points si au moins 1 Muscardin dans votre forêt"
+    "scoring": "10 points chacun si au moins 1 Marcassin\u00a0; sinon 0"
   },
   "european_badger": {
     "name": "Blaireau européen",
@@ -474,7 +474,7 @@
   },
   "wild_boar_piglet": {
     "name": "Marcassin",
-    "scoring": "5 points chacun si au moins 1 Sanglier\u00a0; sinon 0"
+    "scoring": "1 point par Marcassin"
   },
   "honey_bee": {
     "name": "Abeille mellifère",

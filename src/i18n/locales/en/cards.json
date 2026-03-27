@@ -342,7 +342,7 @@
   },
   "wild_boar": {
     "name": "Wild Boar",
-    "scoring": "10 points if at least 1 Squeaker in your forest"
+    "scoring": "10 points each if at least 1 Wild Boar Piglet; otherwise 0"
   },
   "european_badger": {
     "name": "European Badger",
@@ -478,7 +478,7 @@
   },
   "wild_boar_piglet": {
     "name": "Wild Boar Piglet",
-    "scoring": "5 points each if at least 1 Wild Boar; otherwise 0"
+    "scoring": "1 point per Wild Boar Piglet"
   },
   "honey_bee": {
     "name": "Honey Bee",

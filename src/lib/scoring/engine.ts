@@ -231,7 +231,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   stinging_nettle: (count, ctx) => count * (2 * countTag(ctx, 'butterfly')),
   water_vole: () => 0,
   wild_tulip: (count) => count * 3,
-  wild_boar_piglet: (count, ctx) => countCard(ctx, 'wild_boar') >= 1 ? count * 5 : 0,
+  wild_boar_piglet: (count) => count * 1,
   honey_bee: (count, ctx) => count * countTag(ctx, 'plant'),
 
   // --- LATERAL SLOT ---
@@ -251,7 +251,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 
   lynx: (count, ctx) => countCard(ctx, 'roe_deer') >= 1 ? count * 10 : 0,
   wolf: (count, ctx) => count * (5 * countTag(ctx, 'deer')),
-  wild_boar: (count, ctx) => countCard(ctx, 'squeaker') >= 1 ? count * 10 : 0,
+  wild_boar: (count, ctx) => countCard(ctx, 'wild_boar_piglet') >= 1 ? count * 10 : 0,
   european_badger: (count) => count * 2,
   european_hare: (count, ctx) => count * countHares(ctx),
   european_fat_dormouse: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 15,

@@ -342,7 +342,7 @@
   },
   "wild_boar": {
     "name": "Jabalí",
-    "scoring": "10 puntos si al menos 1 Lirón en tu bosque"
+    "scoring": "10 puntos cada uno si al menos 1 Jabato; sino 0"
   },
   "european_badger": {
     "name": "Tejón europeo",
@@ -478,7 +478,7 @@
   },
   "wild_boar_piglet": {
     "name": "Jabato",
-    "scoring": "5 puntos cada uno si al menos 1 Jabalí; sino 0"
+    "scoring": "1 punto por Jabato"
   },
   "honey_bee": {
     "name": "Abeja melífera",
