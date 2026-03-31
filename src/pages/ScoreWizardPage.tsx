@@ -67,12 +67,20 @@ export function ScoreWizardPage() {
   }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasSpecialCaves, activeSpecialCaveKeys])
 
   const filteredCards = useMemo(() => {
-    if (!cardSearch.trim()) return stepCards
-    const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-    return stepCards.filter(card =>
-      tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query),
-    )
-  }, [stepCards, cardSearch, tc])
+    const cards = cardSearch.trim()
+      ? stepCards.filter(card => {
+          const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+          return tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)
+        })
+      : stepCards
+    if (!currentPlayer) return cards
+    const counts = currentPlayer.cardCounts
+    return [...cards].sort((a, b) => {
+      const aHas = (counts[a.key] || 0) > 0 ? 0 : 1
+      const bHas = (counts[b.key] || 0) > 0 ? 0 : 1
+      return aHas - bHas
+    })
+  }, [stepCards, cardSearch, tc, currentPlayer])
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
@@ -291,6 +299,16 @@ export function ScoreWizardPage() {
               </div>
             </div>
           )}
+
+          {currentPlayer && (() => {
+            const totalCards = stepCards.reduce((sum, card) => sum + (currentPlayer.cardCounts[card.key] || 0), 0)
+            return totalCards > 0 ? (
+              <div className="flex items-center justify-between rounded-lg bg-forest-100 px-3 py-1.5">
+                <span className="text-xs font-medium text-forest-600">{t('wizard.categoryTotal')}</span>
+                <span className="text-sm font-bold text-forest-700 tabular-nums">{totalCards} {totalCards === 1 ? t('wizard.card') : t('wizard.cards')}</span>
+              </div>
+            ) : null
+          })()}
 
           {filteredCards.map((card) => (
             <CardCounter

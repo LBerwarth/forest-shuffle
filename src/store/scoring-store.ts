@@ -16,6 +16,7 @@ export interface PlayerScoring {
 interface ScoringState {
   // Game session
   sessionActive: boolean
+  sessionId: string | null
   expansions: Expansion[]
   edition: GameEdition
   players: PlayerScoring[]
@@ -23,7 +24,7 @@ interface ScoringState {
   currentStep: number
 
   // Actions
-  startSession: (playerNames: { id: string; name: string }[], expansions: Expansion[], edition?: GameEdition) => void
+  startSession: (playerNames: { id: string; name: string }[], expansions: Expansion[], edition?: GameEdition, sessionId?: string) => void
   endSession: () => void
   setCurrentPlayer: (index: number) => void
   setCurrentStep: (step: number) => void
@@ -38,13 +39,14 @@ export const useScoringStore = create<ScoringState>()(
   persist(
     (set, get) => ({
       sessionActive: false,
+      sessionId: null,
       expansions: ['base'] as Expansion[],
       edition: 'classic' as GameEdition,
       players: [],
       currentPlayerIndex: 0,
       currentStep: 0,
 
-      startSession: (playerNames, expansions, edition = 'classic') => {
+      startSession: (playerNames, expansions, edition = 'classic', sessionId) => {
         const players: PlayerScoring[] = playerNames.map(({ id, name }) => ({
           playerId: id,
           playerName: name,
@@ -53,11 +55,11 @@ export const useScoringStore = create<ScoringState>()(
           fullyOccupiedTrees: 0,
           breakdown: null,
         }))
-        set({ sessionActive: true, players, expansions, edition, currentPlayerIndex: 0, currentStep: 0 })
+        set({ sessionActive: true, sessionId: sessionId ?? null, players, expansions, edition, currentPlayerIndex: 0, currentStep: 0 })
       },
 
       endSession: () => {
-        set({ sessionActive: false, players: [], currentPlayerIndex: 0, currentStep: 0 })
+        set({ sessionActive: false, sessionId: null, players: [], currentPlayerIndex: 0, currentStep: 0 })
       },
 
       setCurrentPlayer: (index) => set({ currentPlayerIndex: index }),

@@ -713,7 +713,7 @@
   },
   "common_pheasant": {
     "name": "Faisán común",
-    "scoring": "1 punto por ungulado + 1 por ave en tu bosque"
+    "scoring": "1 punto por árbol y arbusto en tu bosque"
   },
   "dartmoor_badger": {
     "name": "Tejón de Dartmoor",

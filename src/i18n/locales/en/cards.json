@@ -713,7 +713,7 @@
   },
   "common_pheasant": {
     "name": "Common Pheasant",
-    "scoring": "1 point per hoofed + 1 per bird in your forest"
+    "scoring": "1 point per tree and shrub in your forest"
   },
   "dartmoor_badger": {
     "name": "Dartmoor Badger",

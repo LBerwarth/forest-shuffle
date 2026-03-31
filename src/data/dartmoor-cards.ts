@@ -52,7 +52,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   { key: 'adder', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'adders_tongue', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'fixed' },
-  { key: 'beaver', category: 'bottom', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
+  { key: 'beaver', category: 'bottom', tags: ['pawed'], expansion: 'dartmoor_base', scoringType: 'per_card' },
   { key: 'blue_ground_beetle', category: 'bottom', tags: ['insect'], expansion: 'dartmoor_base', scoringType: 'per_card' },
   { key: 'blueberry_d', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'custom' },
   { key: 'bog_asphodel', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'per_card' },
@@ -62,7 +62,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   { key: 'heather', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'meadowsweet', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
   { key: 'moor_frog', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_base', scoringType: 'threshold' },
-  { key: 'otter', category: 'bottom', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
+  { key: 'otter', category: 'bottom', tags: ['pawed'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'royal_fern', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'custom' },
   { key: 'warty_newt', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_base', scoringType: 'set' },
   { key: 'water_soldiers', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_base', scoringType: 'per_tag' },

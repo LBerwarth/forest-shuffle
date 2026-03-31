@@ -60,7 +60,10 @@
     "comparisonNotice": "Points for this card will be calculated automatically at the end, once all players have finished scoring.",
     "back": "Back",
     "next": "Next",
-    "finish": "Finish"
+    "finish": "Finish",
+    "categoryTotal": "Cards in category",
+    "card": "card",
+    "cards": "cards"
   },
   "result": {
     "wins": "{{name}} wins!",

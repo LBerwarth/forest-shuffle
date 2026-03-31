@@ -713,7 +713,7 @@
   },
   "common_pheasant": {
     "name": "Fasan",
-    "scoring": "1 Punkt pro Huftier + 1 pro Vogel in deinem Wald"
+    "scoring": "1 Punkt pro Baum und Strauch in deinem Wald"
   },
   "dartmoor_badger": {
     "name": "Dartmoor-Dachs",

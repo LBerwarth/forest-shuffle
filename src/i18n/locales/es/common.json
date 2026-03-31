@@ -60,7 +60,10 @@
     "comparisonNotice": "Los puntos de esta carta se calcularán automáticamente al final, una vez que todos los jugadores hayan terminado.",
     "back": "Atrás",
     "next": "Siguiente",
-    "finish": "Finalizar"
+    "finish": "Finalizar",
+    "categoryTotal": "Cartas en categoría",
+    "card": "carta",
+    "cards": "cartas"
   },
   "result": {
     "wins": "¡{{name}} gana!",

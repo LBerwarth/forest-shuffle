@@ -60,7 +60,10 @@
     "comparisonNotice": "Die Punkte für diese Karte werden am Ende automatisch berechnet, sobald alle Spieler ihre Wertung abgeschlossen haben.",
     "back": "Zurück",
     "next": "Weiter",
-    "finish": "Fertig"
+    "finish": "Fertig",
+    "categoryTotal": "Karten in Kategorie",
+    "card": "Karte",
+    "cards": "Karten"
   },
   "result": {
     "wins": "{{name}} gewinnt!",

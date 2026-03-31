@@ -709,7 +709,7 @@
   },
   "common_pheasant": {
     "name": "Faisan de Colchide",
-    "scoring": "1 point par ongulé + 1 par oiseau dans votre forêt"
+    "scoring": "1 point par arbre et arbuste dans votre forêt"
   },
   "dartmoor_badger": {
     "name": "Blaireau du Dartmoor",

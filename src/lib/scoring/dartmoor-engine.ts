@@ -193,7 +193,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   serotine_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
 
   capercaillie_d: (count, ctx) => count * countTag(ctx, 'plant'),
-  common_pheasant: (count, ctx) => count * (countTag(ctx, 'hoofed') + countTag(ctx, 'bird')),
+  common_pheasant: (count, ctx) => count * ctx.totalTrees,
   dartmoor_badger: (count, ctx) => count * (2 * countTag(ctx, 'pawed')),
   dartmoor_black_rabbit: (count) => count * count, // square scoring
   dartmoor_pony: () => 0, // comparison card — handled separately
