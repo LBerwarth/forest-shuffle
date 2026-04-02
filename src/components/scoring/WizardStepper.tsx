@@ -2,20 +2,20 @@ import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { Check } from 'lucide-react'
-import { CATEGORY_ICONS, CATEGORY_ORDER, getCategoryOrder, getCategoryLabel } from '@/data/categories'
+import { CATEGORY_ICON_URLS, CATEGORY_ORDER, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 import type { GameEdition } from '@/types/card'
 
 export const WIZARD_STEPS = CATEGORY_ORDER.map((cat, id) => ({
   id,
   category: cat,
-  icon: CATEGORY_ICONS[cat],
+  icon: CATEGORY_ICON_URLS[cat],
 }))
 
 export function getWizardSteps(edition: GameEdition) {
   return getCategoryOrder(edition).map((cat, id) => ({
     id,
     category: cat,
-    icon: CATEGORY_ICONS[cat],
+    icon: CATEGORY_ICON_URLS[cat],
   }))
 }
 
@@ -59,7 +59,7 @@ export function WizardStepper({ currentStep, onStepChange, completedSteps, editi
             {isComplete && !isCurrent ? (
               <Check className="h-3 w-3" />
             ) : (
-              <span className="text-xs">{step.icon}</span>
+              <img src={step.icon} alt="" className="h-3.5 w-3.5 rounded-sm" />
             )}
             {t(`category.${getCategoryLabel(step.category, edition)}`)}
           </button>

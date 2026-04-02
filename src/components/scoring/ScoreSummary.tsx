@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import type { ScoreBreakdown } from '@/types/scoring'
-import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
+import { CATEGORY_ICON_URLS, getCategoryOrder } from '@/data/categories'
 import type { GameEdition } from '@/types/card'
 
 interface ScoreSummaryProps {
@@ -32,7 +32,7 @@ export function ScoreSummary({ breakdown, className, edition = 'classic' }: Scor
                 key={cat}
                 className="flex items-center gap-1 text-xs text-forest-500 whitespace-nowrap"
               >
-                <span>{CATEGORY_ICONS[cat]}</span>
+                <img src={CATEGORY_ICON_URLS[cat]} alt="" className="h-4 w-4 rounded-sm" />
                 <span className="font-medium tabular-nums">{pts}</span>
               </div>
             )

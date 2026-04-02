@@ -3,7 +3,7 @@ import { Trophy, Info } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
-import { CATEGORY_ICONS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
+import { CATEGORY_ICON_URLS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 import { getCardIconUrl } from '@/data/cardIcons'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { GameEdition } from '@/types/card'
@@ -138,7 +138,7 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
                 {categoryOrder.map((cat) => (
                   <tr key={cat} className="border-b border-forest-100">
                     <td className="py-1.5 pr-2 text-forest-600">
-                      {CATEGORY_ICONS[cat]} {t(`category.${getCategoryLabel(cat, edition)}`)}
+                      <img src={CATEGORY_ICON_URLS[cat]} alt="" className="inline-block h-4 w-4 rounded-sm mr-1" />{t(`category.${getCategoryLabel(cat, edition)}`)}
                     </td>
                     {rankedPlayers.map((p) => (
                       <td
