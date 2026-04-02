@@ -67,20 +67,12 @@ export function ScoreWizardPage() {
   }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasSpecialCaves, activeSpecialCaveKeys])
 
   const filteredCards = useMemo(() => {
-    const cards = cardSearch.trim()
-      ? stepCards.filter(card => {
-          const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-          return tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)
-        })
-      : stepCards
-    if (!currentPlayer) return cards
-    const counts = currentPlayer.cardCounts
-    return [...cards].sort((a, b) => {
-      const aHas = (counts[a.key] || 0) > 0 ? 0 : 1
-      const bHas = (counts[b.key] || 0) > 0 ? 0 : 1
-      return aHas - bHas
+    if (!cardSearch.trim()) return stepCards
+    return stepCards.filter(card => {
+      const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      return tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)
     })
-  }, [stepCards, cardSearch, tc, currentPlayer])
+  }, [stepCards, cardSearch, tc])
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null

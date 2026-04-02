@@ -167,6 +167,11 @@
     "pts": "pts",
     "total": "Total"
   },
+  "install": {
+    "message": "Install this app on your phone for a better experience!",
+    "action": "Install",
+    "dismiss": "Dismiss"
+  },
   "live": {
     "joinSession": "Join Live Session",
     "createSession": "Create Live Session",

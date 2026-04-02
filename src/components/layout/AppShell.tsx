@@ -2,6 +2,7 @@ import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import { Home, Calculator, History, BarChart3, Settings } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { InstallBanner } from '@/components/InstallBanner'
 
 const navItems = [
   { to: '/', icon: Home, key: 'nav.home' },
@@ -18,6 +19,7 @@ export function AppShell() {
 
   return (
     <div className="flex min-h-screen flex-col bg-forest-50">
+      <InstallBanner />
       <main className={cn('flex-1', !isWizard && 'pb-20')}>
         <Outlet />
       </main>
