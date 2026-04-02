@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import type { ScoreBreakdown } from '@/types/scoring'
@@ -12,7 +11,6 @@ interface ScoreSummaryProps {
 }
 
 export function ScoreSummary({ breakdown, className, edition = 'classic' }: ScoreSummaryProps) {
-  const { t } = useTranslation()
   const total = breakdown?.total ?? 0
   const categories = breakdown?.categoryTotals
   const categoryOrder = getCategoryOrder(edition)
