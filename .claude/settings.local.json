@@ -20,7 +20,14 @@
       "WebFetch(domain:europemasters.eu)",
       "WebFetch(domain:www.scribd.com)",
       "WebFetch(domain:boardgoats.org)",
-      "WebFetch(domain:digidiced.com)"
+      "WebFetch(domain:digidiced.com)",
+      "WebFetch(domain:regle.escaleajeux.fr)",
+      "WebFetch(domain:en.doc.boardgamearena.com)",
+      "WebFetch(domain:www.boardgamequest.com)",
+      "WebFetch(domain:tesera.ru)",
+      "WebFetch(domain:www.jungundaltspielt.de)",
+      "WebFetch(domain:www.board-game.co.uk)",
+      "WebFetch(domain:zatu.com)"
     ]
   }
 }
