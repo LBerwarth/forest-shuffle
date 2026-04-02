@@ -1,4 +1,4 @@
-import { useMemo, useCallback, useState } from 'react'
+import { useMemo, useCallback, useState, useRef } from 'react'
 import { useNavigate, useParams, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Check, Search, X } from 'lucide-react'
@@ -66,13 +66,29 @@ export function ScoreWizardPage() {
     return sorted
   }, [currentStep, stepCategories, cardsByCategory, tc, isCaveStep, hasSpecialCaves, activeSpecialCaveKeys])
 
+  // Snapshot which cards have counts when entering a step, so the sort
+  // order stays stable while the user is actively editing.
+  const countsSnapshotRef = useRef<Record<string, number>>({})
+  const prevStepRef = useRef(currentStep)
+  if (currentStep !== prevStepRef.current) {
+    prevStepRef.current = currentStep
+    countsSnapshotRef.current = currentPlayer ? { ...currentPlayer.cardCounts } : {}
+  }
+
   const filteredCards = useMemo(() => {
-    if (!cardSearch.trim()) return stepCards
-    return stepCards.filter(card => {
-      const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-      return tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)
+    const cards = cardSearch.trim()
+      ? stepCards.filter(card => {
+          const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+          return tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)
+        })
+      : stepCards
+    const snapshot = countsSnapshotRef.current
+    return [...cards].sort((a, b) => {
+      const aHas = (snapshot[a.key] || 0) > 0 ? 0 : 1
+      const bHas = (snapshot[b.key] || 0) > 0 ? 0 : 1
+      return aHas - bHas
     })
-  }, [stepCards, cardSearch, tc])
+  }, [stepCards, cardSearch, tc, currentStep])
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
