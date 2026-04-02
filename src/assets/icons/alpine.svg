@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#D8D0E8"/>
+  <g transform="translate(16,20)">
+    <!-- Back mountain (left) -->
+    <path d="M-14,6 L-6,-6 L2,6Z" fill="#A898C0" opacity="0.7"/>
+    <!-- Back mountain (right) -->
+    <path d="M4,6 L10,-4 L16,6Z" fill="#A898C0" opacity="0.7"/>
+    <!-- Main mountain (center) -->
+    <path d="M-10,6 L0,-10 L10,6Z" fill="#9888B0"/>
+    <!-- Snow cap -->
+    <path d="M0,-10 L-3,-4 L-1,-5 L1,-3 L3,-5Z" fill="white"/>
+  </g>
+</svg>

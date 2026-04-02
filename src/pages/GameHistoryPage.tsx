@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Calendar, Users, Trash2 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import { useGames, useDeleteGame } from '@/hooks/use-games'
 
 export function GameHistoryPage() {
@@ -74,7 +75,7 @@ export function GameHistoryPage() {
                                 }`}
                               >
                                 {p.is_winner && '🏆 '}
-                                {p.player_name}: {p.total_score}
+                                {p.player_name}: {p.total_score}<AcornIcon className="h-3 w-3 inline-block ml-0.5" />
                               </span>
                             ))}
                         </div>

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import type { ScoreBreakdown } from '@/types/scoring'
 import { CATEGORY_ICONS, getCategoryOrder } from '@/data/categories'
 import type { GameEdition } from '@/types/card'
@@ -37,9 +38,9 @@ export function ScoreSummary({ breakdown, className, edition = 'classic' }: Scor
             )
           })}
       </div>
-      <div className="flex items-center gap-1.5 border-l border-forest-200 pl-3">
-        <span className="text-xs text-forest-500 font-medium">{t('scoring.total')}</span>
+      <div className="flex items-center gap-1 border-l border-forest-200 pl-3">
         <span className="text-xl font-bold text-forest-700 tabular-nums">{total}</span>
+        <AcornIcon className="h-5 w-5" />
       </div>
     </div>
   )

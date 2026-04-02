@@ -9,8 +9,10 @@ import { ScoreSummary } from '@/components/scoring/ScoreSummary'
 import { useScoringStore } from '@/store/scoring-store'
 import { getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext } from '@/lib/scoring'
+import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { cn } from '@/lib/utils'
-import { CARD_ICONS } from '@/data/cardIcons'
+import { AcornIcon } from '@/components/ui/AcornIcon'
+import { getCardIconUrl } from '@/data/cardIcons'
 import { getCategoryOrder } from '@/data/categories'
 
 const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave'] as const
@@ -133,6 +135,22 @@ export function ScoreWizardPage() {
     [currentPlayer, edition],
   )
 
+  const forestContext = useMemo(() => {
+    if (!currentPlayer) return null
+    if (edition === 'dartmoor') {
+      return buildDartmoorForestContext(
+        currentPlayer.cardCounts,
+        currentPlayer.cardMetadata,
+        currentPlayer.fullyOccupiedTrees,
+      )
+    }
+    return buildForestContext(
+      currentPlayer.cardCounts,
+      currentPlayer.cardMetadata,
+      currentPlayer.fullyOccupiedTrees,
+    )
+  }, [currentPlayer, edition])
+
   if (!sessionActive || !currentPlayer) {
     return <Navigate to="/new-game" replace />
   }
@@ -199,7 +217,7 @@ export function ScoreWizardPage() {
               >
                 {player.playerName}
                 {player.breakdown && (
-                  <span className="ml-1 opacity-75">{player.breakdown.total}</span>
+                  <span className="ml-1 opacity-75 inline-flex items-center gap-0.5">{player.breakdown.total}<AcornIcon className="h-3 w-3" /></span>
                 )}
               </button>
             ))}
@@ -298,9 +316,9 @@ export function ScoreWizardPage() {
                         : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                     )}
                   >
-                    {CARD_ICONS[key]} {tc(`${key}.name`)}
+                    {getCardIconUrl(key) && <img src={getCardIconUrl(key)} alt="" className="inline-block h-4 w-4 rounded-sm" />} {tc(`${key}.name`)}
                     {selectedSpecialCave === key && (
-                      <span className="ml-1 opacity-75">({getCardPoints(key)} {t('scoring.pts')})</span>
+                      <span className="ml-1 opacity-75 inline-flex items-center gap-0.5">({getCardPoints(key)}<AcornIcon className="h-3 w-3" />)</span>
                     )}
                   </button>
                 ))}
@@ -334,6 +352,7 @@ export function ScoreWizardPage() {
                       setCardMetadata(currentPlayer.playerId, card.key, { contextValue: value })
                   : undefined
               }
+              multiplierStats={forestContext ? getMultiplierStats(card.key, forestContext, edition) : undefined}
             />
           ))}
         </div>

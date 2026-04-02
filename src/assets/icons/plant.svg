@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#8AAA8A"/>
+  <g transform="translate(16,16)">
+    <!-- Main stem -->
+    <path d="M0,11 C0,5 0.5,-6 1,-10" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Leaflets — thick, angled upward, alternating -->
+    <!-- Bottom left -->
+    <path d="M0,9 C-2,8 -5,6 -8,6 C-5,7.5 -2,8.5 0,8Z" fill="white"/>
+    <!-- Bottom right -->
+    <path d="M0,8 C2,7 5,5 8,5 C5,6.5 2,7.5 0,7Z" fill="white"/>
+    <!-- Lower-mid left -->
+    <path d="M0,6 C-2,5 -6,3 -9,3 C-6,4.5 -2,5.5 0,5Z" fill="white"/>
+    <!-- Lower-mid right -->
+    <path d="M0.5,5 C2.5,4 6,2 9,2 C6,3.5 2.5,4.5 0.5,4Z" fill="white"/>
+    <!-- Mid left -->
+    <path d="M0,3 C-2,2 -6,0 -8,-1 C-5.5,0.5 -2,2 0,2Z" fill="white"/>
+    <!-- Mid right -->
+    <path d="M0.5,2 C2.5,1 6,-1 8,-2 C5.5,-0.5 2.5,1 0.5,1Z" fill="white"/>
+    <!-- Upper-mid left -->
+    <path d="M0.5,0 C-1.5,-1 -5,-3 -7,-4 C-4.5,-2.5 -1.5,-1 0.5,-1Z" fill="white"/>
+    <!-- Upper-mid right -->
+    <path d="M0.5,-1 C2.5,-2 5.5,-4 7,-5 C5,-3.5 2.5,-2 0.5,-2Z" fill="white"/>
+    <!-- Upper left -->
+    <path d="M0.5,-3 C-1,-4 -4,-6 -5.5,-7 C-3.5,-5.5 -1,-4 0.5,-4Z" fill="white"/>
+    <!-- Upper right -->
+    <path d="M1,-4 C2.5,-5 4.5,-7 5.5,-8 C4,-6.5 2,-5 1,-5Z" fill="white"/>
+    <!-- Top left -->
+    <path d="M1,-6 C-0.5,-7 -2.5,-8.5 -3.5,-9 C-2,-8 -0.5,-7 1,-7Z" fill="white"/>
+    <!-- Top right -->
+    <path d="M1,-7 C2,-8 3,-9 3.5,-10 C2.5,-8.5 1.5,-7.5 1,-8Z" fill="white"/>
+  </g>
+</svg>

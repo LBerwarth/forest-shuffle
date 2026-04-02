@@ -2,8 +2,9 @@ import { useTranslation } from 'react-i18next'
 import { Trophy, Info } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import { CATEGORY_ICONS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
-import { CARD_ICONS } from '@/data/cardIcons'
+import { getCardIconUrl } from '@/data/cardIcons'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { GameEdition } from '@/types/card'
 import { cn } from '@/lib/utils'
@@ -49,8 +50,9 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
         <h1 className="font-heading text-2xl font-bold text-forest-800">
           {t('result.wins', { name: winner.playerName })}
         </h1>
-        <p className="mt-1 text-3xl font-bold text-forest-600 tabular-nums">
-          {t('result.points', { count: winner.breakdown?.total ?? 0 })}
+        <p className="mt-1 flex items-center justify-center gap-1 text-3xl font-bold text-forest-600 tabular-nums">
+          {winner.breakdown?.total ?? 0}
+          <AcornIcon className="h-7 w-7" />
         </p>
       </motion.div>
 
@@ -77,10 +79,11 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
                       {player.playerName}
                     </p>
                   </div>
-                  <div className="text-right">
+                  <div className="flex items-center gap-0.5">
                     <p className="text-lg font-bold text-forest-600 tabular-nums">
                       {player.breakdown?.total ?? 0}
                     </p>
+                    <AcornIcon className="h-4 w-4" />
                   </div>
                 </div>
 
@@ -187,7 +190,7 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
               ).map((cardKey) => (
                 <div key={cardKey} className="mb-3 last:mb-0">
                   <p className="text-xs font-medium text-forest-700 mb-1.5">
-                    {CARD_ICONS[cardKey]} {tc(`${cardKey}.name`)}
+                    {getCardIconUrl(cardKey) && <img src={getCardIconUrl(cardKey)} alt="" className="inline-block h-4 w-4 rounded-sm mr-1" />}{tc(`${cardKey}.name`)}
                   </p>
                   <table className="w-full text-xs">
                     <thead>
@@ -212,7 +215,7 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
                             <tr key={p.playerId} className="border-b border-blue-50">
                               <td className="py-1.5 pr-2 text-forest-600">{p.playerName}</td>
                               <td className="text-right py-1.5 px-2 tabular-nums text-forest-500">{count}</td>
-                              <td className="text-right py-1.5 px-2 tabular-nums text-forest-500">{perCard} {t('scoring.pts')}</td>
+                              <td className="text-right py-1.5 px-2 tabular-nums text-forest-500"><span className="inline-flex items-center gap-0.5">{perCard}<AcornIcon className="h-3 w-3" /></span></td>
                               <td className="text-right py-1.5 pl-2 tabular-nums font-semibold text-forest-700">{points}</td>
                             </tr>
                           )

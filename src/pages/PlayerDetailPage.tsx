@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Trophy, Target, TrendingUp } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { CATEGORY_ORDER } from '@/data/categories'
@@ -113,14 +114,14 @@ export function PlayerDetailPage() {
           <Card>
             <CardContent className="py-3 text-center">
               <Target className="h-4 w-4 text-forest-500 mx-auto mb-1" />
-              <p className="text-lg font-bold text-forest-600">{stats.avgScore}</p>
+              <p className="text-lg font-bold text-forest-600 flex items-center justify-center gap-0.5">{stats.avgScore}<AcornIcon className="h-4 w-4" /></p>
               <p className="text-[10px] text-forest-400">{t('playerDetail.avgScore')}</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="py-3 text-center">
               <TrendingUp className="h-4 w-4 text-forest-500 mx-auto mb-1" />
-              <p className="text-lg font-bold text-forest-600">{stats.bestScore}</p>
+              <p className="text-lg font-bold text-forest-600 flex items-center justify-center gap-0.5">{stats.bestScore}<AcornIcon className="h-4 w-4" /></p>
               <p className="text-[10px] text-forest-400">{t('playerDetail.bestScore')}</p>
             </CardContent>
           </Card>
@@ -201,8 +202,9 @@ export function PlayerDetailPage() {
                       {t('playerDetail.rank', { rank: g.playerData.rank, count: g.player_count })}
                     </p>
                   </div>
-                  <span className="text-sm font-bold text-forest-600 tabular-nums">
-                    {g.playerData.total_score} {t('scoring.pts')}
+                  <span className="flex items-center gap-0.5 text-sm font-bold text-forest-600 tabular-nums">
+                    {g.playerData.total_score}
+                    <AcornIcon className="h-3.5 w-3.5" />
                   </span>
                 </button>
               ))}

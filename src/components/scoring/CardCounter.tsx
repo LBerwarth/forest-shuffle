@@ -2,8 +2,11 @@ import { useState, useRef } from 'react'
 import { Minus, Plus } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
-import { CARD_ICONS } from '@/data/cardIcons'
+import { getCardIconUrl } from '@/data/cardIcons'
+import { STAT_ICONS } from '@/assets/icons'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import type { CardDefinition } from '@/types/card'
+import type { MultiplierStat } from '@/lib/scoring/multiplier-stats'
 
 interface CardCounterProps {
   card: CardDefinition
@@ -12,6 +15,7 @@ interface CardCounterProps {
   onCountChange: (count: number) => void
   contextValue?: number
   onContextChange?: (value: number) => void
+  multiplierStats?: MultiplierStat[]
 }
 
 function TappableNumber({
@@ -95,6 +99,7 @@ export function CardCounter({
   onCountChange,
   contextValue,
   onContextChange,
+  multiplierStats,
 }: CardCounterProps) {
   const { t } = useTranslation()
   const tc = useTranslation('cards').t
@@ -104,8 +109,8 @@ export function CardCounter({
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
-            {CARD_ICONS[card.key] && (
-              <span className="shrink-0 text-base">{CARD_ICONS[card.key]}</span>
+            {getCardIconUrl(card.key) && (
+              <img src={getCardIconUrl(card.key)} alt="" className="shrink-0 h-5 w-5 rounded-sm" />
             )}
             <span className="font-medium text-forest-800 text-sm truncate">
               {tc(`${card.key}.name`)}
@@ -116,7 +121,29 @@ export function CardCounter({
               </span>
             )}
           </div>
-          <p className="text-xs text-forest-500 mt-0.5">{tc(`${card.key}.scoring`)}</p>
+          <div className="flex items-center gap-1.5 mt-0.5 flex-wrap">
+            <p className="text-xs text-forest-500">{tc(`${card.key}.scoring`)}</p>
+            {multiplierStats && multiplierStats.length > 0 && (
+              <div className="flex items-center gap-1 flex-wrap">
+                {multiplierStats.map((stat) => (
+                  <span
+                    key={stat.iconKey}
+                    className={cn(
+                      'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[10px] font-medium',
+                      stat.value > 0
+                        ? 'bg-amber-100 text-amber-700'
+                        : 'bg-gray-100 text-gray-400',
+                    )}
+                  >
+                    {STAT_ICONS[stat.iconKey] && (
+                      <img src={STAT_ICONS[stat.iconKey]} alt="" className="h-3.5 w-3.5 rounded-sm" />
+                    )}
+                    {stat.value}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
@@ -149,14 +176,14 @@ export function CardCounter({
           </button>
         </div>
 
-        <div className="w-14 text-right">
+        <div className="flex items-center gap-0.5 shrink-0">
           <span className={cn(
             'text-lg font-bold tabular-nums',
             points > 0 ? 'text-forest-600' : 'text-forest-300',
           )}>
             {points}
           </span>
-          <span className="text-xs text-forest-400 ml-0.5">{t('scoring.pts')}</span>
+          <AcornIcon className={cn('h-4 w-4', points > 0 ? 'opacity-80' : 'opacity-30')} />
         </div>
       </div>
 

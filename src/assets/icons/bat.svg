@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#2A2A2A"/>
+  <g transform="translate(16,15)">
+    <!-- Left wing with scalloped/pointed edges -->
+    <path d="M-2,-1 C-3,-3 -5,-5 -8,-6 L-7,-3 L-10,-4 L-9,-1 L-13,-2 L-11,2 C-9,4 -6,4 -3,2Z" fill="white"/>
+    <!-- Right wing with scalloped/pointed edges -->
+    <path d="M2,-1 C3,-3 5,-5 8,-6 L7,-3 L10,-4 L9,-1 L13,-2 L11,2 C9,4 6,4 3,2Z" fill="white"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="2.2" ry="3" fill="white"/>
+    <!-- Head -->
+    <circle cx="0" cy="-3.5" r="2" fill="white"/>
+    <!-- Left ear -->
+    <path d="M-1.2,-5 L-2.8,-8.5 L-0.3,-5.8" fill="white"/>
+    <!-- Right ear -->
+    <path d="M1.2,-5 L2.8,-8.5 L0.3,-5.8" fill="white"/>
+  </g>
+</svg>

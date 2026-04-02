@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#A0C0D0"/>
+  <!-- Sky -->
+  <rect x="0" y="0" width="32" height="18" rx="6" fill="#A0C0D0"/>
+  <!-- Tree canopy background -->
+  <path d="M0,20 C4,14 8,10 12,12 C14,13 16,10 18,11 C22,12 26,14 32,16 L32,32 L0,32Z" fill="#6A9A58"/>
+  <!-- Tree trunk -->
+  <rect x="10" y="16" width="3" height="8" fill="#8A7A5A"/>
+  <!-- Tree canopy -->
+  <circle cx="11.5" cy="13" r="6" fill="#7AAA68"/>
+  <!-- Meadow foreground -->
+  <path d="M0,24 C8,22 24,23 32,24 L32,32 L0,32Z" fill="#90B878"/>
+</svg>

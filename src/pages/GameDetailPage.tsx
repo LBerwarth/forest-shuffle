@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Calendar, Users } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { useGame } from '@/hooks/use-games'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import { CATEGORY_ICONS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 
 export function GameDetailPage() {
@@ -71,8 +72,9 @@ export function GameDetailPage() {
                     {p.is_winner && '🏆 '}{p.player_name}
                   </p>
                 </div>
-                <span className="text-lg font-bold text-forest-600 tabular-nums">
+                <span className="flex items-center gap-0.5 text-lg font-bold text-forest-600 tabular-nums">
                   {p.total_score}
+                  <AcornIcon className="h-4 w-4" />
                 </span>
               </div>
             </CardContent>

@@ -5,6 +5,7 @@ import { ArrowLeft, Trophy } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import { cn } from '@/lib/utils'
 
 type SortField = 'wins' | 'winRate' | 'avgScore' | 'bestScore' | 'gamesPlayed'
@@ -140,11 +141,11 @@ export function LeaderboardPage() {
                         <p className="text-[10px]">{t('leaderboard.winsLabel')}</p>
                       </div>
                       <div className="text-center">
-                        <p className="font-bold text-forest-600 tabular-nums">{entry.avgScore}</p>
+                        <p className="font-bold text-forest-600 tabular-nums flex items-center gap-0.5">{entry.avgScore}<AcornIcon className="h-3 w-3" /></p>
                         <p className="text-[10px]">{t('leaderboard.avgLabel')}</p>
                       </div>
                       <div className="text-center">
-                        <p className="font-bold text-forest-600 tabular-nums">{entry.bestScore}</p>
+                        <p className="font-bold text-forest-600 tabular-nums flex items-center gap-0.5">{entry.bestScore}<AcornIcon className="h-3 w-3" /></p>
                         <p className="text-[10px]">{t('leaderboard.bestLabel')}</p>
                       </div>
                     </div>

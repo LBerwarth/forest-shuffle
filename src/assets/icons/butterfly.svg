@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#8B5EC0"/>
+  <g transform="translate(16,16)">
+    <!-- Left upper wing -->
+    <path d="M-2,-2 C-4,-6 -9,-9 -12,-7 C-14,-5.5 -13,-2 -10,0 C-8,1.5 -4,1 -2,0Z" fill="white" opacity="0.95"/>
+    <!-- Left lower wing -->
+    <path d="M-2,1 C-4,3 -9,6 -11,5 C-13,4 -12,1 -9,0 C-7,-0.5 -4,0 -2,0.5Z" fill="white" opacity="0.9"/>
+    <!-- Right upper wing -->
+    <path d="M2,-2 C4,-6 9,-9 12,-7 C14,-5.5 13,-2 10,0 C8,1.5 4,1 2,0Z" fill="white" opacity="0.95"/>
+    <!-- Right lower wing -->
+    <path d="M2,1 C4,3 9,6 11,5 C13,4 12,1 9,0 C7,-0.5 4,0 2,0.5Z" fill="white" opacity="0.9"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="-0.5" rx="1.2" ry="5" fill="white"/>
+    <!-- Antennae -->
+    <path d="M-0.5,-5.5 C-2,-8 -4,-9 -5,-8.5" stroke="white" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M0.5,-5.5 C2,-8 4,-9 5,-8.5" stroke="white" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

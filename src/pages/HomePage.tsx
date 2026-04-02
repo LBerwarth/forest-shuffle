@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Calculator, History, Users, BarChart3, Settings, TreePine, Wifi } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
+import { AcornIcon } from '@/components/ui/AcornIcon'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 
@@ -85,8 +86,9 @@ export function HomePage() {
                 <p className="text-sm font-bold text-forest-600">
                   {t('home.winner', { name: recentGame.players.find((p) => p.is_winner)?.player_name ?? '—' })}
                 </p>
-                <p className="text-xs text-forest-400">
-                  {t('home.pts', { count: recentGame.players.find((p) => p.is_winner)?.total_score ?? 0 })}
+                <p className="text-xs text-forest-400 flex items-center justify-end gap-0.5">
+                  {recentGame.players.find((p) => p.is_winner)?.total_score ?? 0}
+                  <AcornIcon className="h-3 w-3" />
                 </p>
               </div>
             </div>

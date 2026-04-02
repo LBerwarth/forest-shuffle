@@ -1,243 +1,139 @@
-/** Emoji icon for each card — consistent per category/group for easy scanning */
-export const CARD_ICONS: Record<string, string> = {
-  // Trees — all use the tree emoji
-  birch: '🌳',
-  beech: '🌳',
-  douglas_fir: '🌳',
-  oak: '🌳',
-  horse_chestnut: '🌳',
-  linden: '🌳',
-  sycamore: '🌳',
-  silver_fir: '🌳',
-  european_larch: '🌳',
-  stone_pine: '🌳',
-  palm_tree: '🌳',
-  turkey_oak: '🌳',
-  o_christmas_tree: '🌳',
-  tree_sapling: '🌱',
+import { STAT_ICONS } from '@/assets/icons'
+
+/**
+ * Maps each card key to an SVG icon key from STAT_ICONS.
+ * Uses the card's primary visual category for icon selection.
+ */
+const CARD_ICON_KEYS: Record<string, string> = {
+  // Trees
+  birch: 'tree', beech: 'tree', douglas_fir: 'tree', oak: 'tree',
+  horse_chestnut: 'tree', linden: 'tree', sycamore: 'tree', silver_fir: 'tree',
+  european_larch: 'tree', stone_pine: 'tree', palm_tree: 'tree', turkey_oak: 'tree',
+  o_christmas_tree: 'tree', tree_sapling: 'tree',
   // Shrubs
-  common_hazel: '🌿',
-  elderberry: '🌿',
-  blackthorn: '🌿',
+  common_hazel: 'plant', elderberry: 'plant', blackthorn: 'plant',
 
-  // Birds — all use the bird emoji
-  bullfinch: '🐦',
-  chaffinch: '🐦',
-  great_spotted_woodpecker: '🐦',
-  goshawk: '🐦',
-  eurasian_jay: '🐦',
-  tawny_owl: '🐦',
-  golden_eagle: '🐦',
-  bearded_vulture: '🐦',
-  common_raven: '🐦',
-  capercaillie: '🐦',
-  barn_owl: '🐦',
-  cardinal: '🐦',
-  cuckoo: '🐦',
-  eurasian_magpie: '🐦',
-  nightingale: '🐦',
-  robin: '🐦',
-  whinchat: '🐦',
-  white_stork: '🐦',
+  // Birds
+  bullfinch: 'bird', chaffinch: 'bird', great_spotted_woodpecker: 'bird',
+  goshawk: 'bird', eurasian_jay: 'bird', tawny_owl: 'bird',
+  golden_eagle: 'bird', bearded_vulture: 'bird', common_raven: 'bird',
+  capercaillie: 'bird', barn_owl: 'bird', cardinal: 'bird', cuckoo: 'bird',
+  eurasian_magpie: 'bird', nightingale: 'bird', robin: 'bird', whinchat: 'bird',
+  white_stork: 'bird',
 
-  // Butterflies — all use the butterfly emoji
-  peacock_butterfly: '🦋',
-  purple_emperor: '🦋',
-  silver_washed_fritillary: '🦋',
-  camberwell_beauty: '🦋',
-  large_tortoiseshell: '🦋',
-  phoebus_apollo: '🦋',
-  brimstone: '🦋',
-  clouded_apollo: '🦋',
-  map_butterfly: '🦋',
+  // Butterflies
+  peacock_butterfly: 'butterfly', purple_emperor: 'butterfly',
+  silver_washed_fritillary: 'butterfly', camberwell_beauty: 'butterfly',
+  large_tortoiseshell: 'butterfly', phoebus_apollo: 'butterfly',
+  brimstone: 'butterfly', clouded_apollo: 'butterfly', map_butterfly: 'butterfly',
 
-  // Amphibians — all use the frog emoji
-  tree_frog: '🐸',
-  common_toad: '🐸',
-  fire_salamander: '🐸',
-  alpine_newt: '🐸',
-  pond_turtle: '🐢',
-  water_vole: '🐸',
+  // Amphibians
+  tree_frog: 'amphibian', common_toad: 'amphibian', fire_salamander: 'amphibian',
+  alpine_newt: 'amphibian', pond_turtle: 'amphibian', water_vole: 'amphibian',
 
-  // Squirrel
-  red_squirrel: '🐿️',
+  // Squirrel / Pawed
+  red_squirrel: 'pawed',
 
-  // Insects — all use the bug emoji
-  stag_beetle: '🪲',
-  wood_ant: '🪲',
-  violet_carpenter_bee: '🪲',
-  fireflies: '🪲',
-  gnat: '🪲',
-  great_green_bush_cricket: '🪲',
-  honey_bee: '🪲',
-  bee_swarm: '🪲',
-  crane_fly: '🪲',
+  // Insects
+  stag_beetle: 'insect', wood_ant: 'insect', violet_carpenter_bee: 'insect',
+  fireflies: 'insect', gnat: 'gnat', great_green_bush_cricket: 'insect',
+  honey_bee: 'insect', bee_swarm: 'insect', crane_fly: 'insect',
 
-  // Mushrooms — all use the mushroom emoji
-  penny_bun: '🍄',
-  chanterelle: '🍄',
-  fly_agaric: '🍄',
-  parasol_mushroom: '🍄',
-  black_trumpet: '🍄',
+  // Mushrooms — use plant icon
+  penny_bun: 'plant', chanterelle: 'plant', fly_agaric: 'plant',
+  parasol_mushroom: 'plant', black_trumpet: 'plant',
 
-  // Plants — all use the seedling emoji
-  moss: '🌱',
-  wild_strawberries: '🌱',
-  blackberries: '🌱',
-  tree_ferns: '🌱',
-  blueberry: '🌱',
-  gentian: '🌱',
-  edelweiss: '🌱',
-  mistletoe: '🌱',
-  digitalis: '🌱',
-  marsh_cinquefoil: '🌱',
-  stinging_nettle: '🌱',
-  wild_tulip: '🌱',
+  // Plants
+  moss: 'plant', wild_strawberries: 'plant', blackberries: 'plant',
+  tree_ferns: 'plant', blueberry: 'plant', gentian: 'plant', edelweiss: 'plant',
+  mistletoe: 'plant', digitalis: 'plant', marsh_cinquefoil: 'plant',
+  stinging_nettle: 'plant', wild_tulip: 'plant',
 
-  // Pawed animals — all use the paw emoji
-  hedgehog: '🐾',
-  european_hare: '🐾',
-  mountain_hare: '🐾',
-  lynx: '🐾',
-  wolf: '🐾',
-  wild_boar: '🐾',
-  european_badger: '🐾',
-  fox: '🐾',
-  brown_bear: '🐾',
-  european_fat_dormouse: '🐾',
-  squeaker: '🐾',
-  alpine_marmot: '🐾',
-  beech_marten: '🐾',
-  raccoon: '🐾',
-  european_polecat: '🐾',
-  european_wildcat: '🐾',
-  genet: '🐾',
-  red_panda: '🐾',
-  sable: '🐾',
+  // Pawed animals
+  hedgehog: 'pawed', european_hare: 'pawed', mountain_hare: 'pawed',
+  lynx: 'pawed', wolf: 'pawed', wild_boar: 'wild_boar',
+  european_badger: 'pawed', fox: 'pawed', brown_bear: 'pawed',
+  european_fat_dormouse: 'pawed', squeaker: 'pawed', alpine_marmot: 'pawed',
+  beech_marten: 'pawed', raccoon: 'pawed', european_polecat: 'pawed',
+  european_wildcat: 'pawed', genet: 'pawed', red_panda: 'pawed', sable: 'pawed',
+  mole: 'pawed',
 
-  // Deer / Cloven-hoofed — all use the deer emoji
-  roe_deer: '🦌',
-  red_deer: '🦌',
-  chamois: '🦌',
-  steinbock: '🦌',
-  fallow_deer: '🦌',
-  wild_boar_piglet: '🐾',
-  wild_boar_female: '🐾',
-  elk: '🦌',
-  european_bison: '🦌',
+  // Deer / Cloven-hoofed — all use cloven_hoofed icon (the game symbol)
+  roe_deer: 'cloven_hoofed', red_deer: 'cloven_hoofed', chamois: 'cloven_hoofed',
+  steinbock: 'cloven_hoofed', fallow_deer: 'cloven_hoofed', wild_boar_piglet: 'wild_boar',
+  wild_boar_female: 'wild_boar', elk: 'cloven_hoofed', european_bison: 'cloven_hoofed',
 
-  // Bats — all use the bat emoji
-  barbastelle: '🦇',
-  bechsteins_bat: '🦇',
-  brown_long_eared_bat: '🦇',
-  greater_horseshoe_bat: '🦇',
-  savis_pipistrelle: '🦇',
-  common_pipistrelle: '🦇',
+  // Bats
+  barbastelle: 'bat', bechsteins_bat: 'bat', brown_long_eared_bat: 'bat',
+  greater_horseshoe_bat: 'bat', savis_pipistrelle: 'bat', common_pipistrelle: 'bat',
 
   // Other
-  troll: '👹',
-  mole: '🐾',
+  troll: 'pawed',
 
   // Cave
-  cave: '🕳️',
-  collectors_cave: '🕳️',
-  bat_cave: '🦇',
-  lonely_cave: '🕳️',
+  cave: 'cave', collectors_cave: 'cave', bat_cave: 'bat', lonely_cave: 'cave',
 
   // ============================================================
   // DARTMOOR EDITION
   // ============================================================
 
-  // Dartmoor Trees
-  ash: '🌳',
-  black_alder: '🌳',
-  crab_apple: '🌳',
-  goat_willow: '🌳',
-  moor_birch: '🌳',
-  sessile_oak: '🌳',
+  // Trees
+  ash: 'tree', black_alder: 'tree', crab_apple: 'tree', goat_willow: 'tree',
+  moor_birch: 'tree', sessile_oak: 'tree',
+  // Shrubs
+  common_hazel_d: 'plant', elderberry_d: 'plant',
 
-  // Dartmoor Shrubs
-  common_hazel_d: '🌳',
-  elderberry_d: '🌳',
+  // Moors
+  blanket_bog: 'moor', fountainhead: 'moor', lowland_heath: 'moor',
+  rhos_pasture: 'moor', rivulet: 'moor', tor: 'moor', valley_mire: 'moor',
+  warrens: 'moor', wet_woodland: 'moor', universal_moor: 'moor',
 
-  // Dartmoor Moors
-  blanket_bog: '🏞️',
-  fountainhead: '🏞️',
-  lowland_heath: '🏞️',
-  rhos_pasture: '🏞️',
-  rivulet: '🏞️',
-  tor: '🏞️',
-  valley_mire: '🏞️',
-  warrens: '🏞️',
-  wet_woodland: '🏞️',
-  universal_moor: '🏞️',
+  // Birds
+  barn_owl_d: 'bird', black_tailed_godwit: 'bird', buzzard: 'bird',
+  common_moorhen: 'bird', cuckoo_d: 'bird', curlew: 'bird', grey_heron: 'bird',
+  meadow_pipit: 'bird', wheatear: 'bird', capercaillie_d: 'bird',
+  common_pheasant: 'bird', nuthatch: 'bird', treecreeper: 'bird',
 
-  // Dartmoor Birds
-  barn_owl_d: '🐦',
-  black_tailed_godwit: '🐦',
-  buzzard: '🐦',
-  common_moorhen: '🐦',
-  cuckoo_d: '🐦',
-  curlew: '🐦',
-  grey_heron: '🐦',
-  meadow_pipit: '🐦',
-  wheatear: '🐦',
-  capercaillie_d: '🐦',
-  common_pheasant: '🐦',
-  nuthatch: '🐦',
-  treecreeper: '🐦',
+  // Dragonflies
+  beautiful_demoiselle: 'dragonfly', emerald_damselfly: 'dragonfly',
+  keeled_skimmer: 'dragonfly', small_red_damselfly: 'dragonfly',
+  southern_damselfly: 'dragonfly',
 
-  // Dartmoor Dragonflies
-  beautiful_demoiselle: '🪰',
-  emerald_damselfly: '🪰',
-  keeled_skimmer: '🪰',
-  small_red_damselfly: '🪰',
-  southern_damselfly: '🪰',
+  // Amphibians / Reptiles
+  adder: 'amphibian', common_lizard: 'amphibian', grass_snake: 'amphibian',
+  moor_frog: 'amphibian', warty_newt: 'amphibian',
 
-  // Dartmoor Amphibians / Reptiles
-  adder: '🐍',
-  common_lizard: '🦎',
-  grass_snake: '🐍',
-  moor_frog: '🐸',
-  warty_newt: '🐸',
+  // Plants
+  adders_tongue: 'plant', bog_asphodel: 'plant', blueberry_d: 'plant',
+  greater_butterfly_orchid: 'plant', heather: 'plant', meadowsweet: 'plant',
+  royal_fern: 'plant', water_soldiers: 'plant',
 
-  // Dartmoor Plants
-  adders_tongue: '🌱',
-  bog_asphodel: '🌱',
-  blueberry_d: '🌱',
-  greater_butterfly_orchid: '🌱',
-  heather: '🌱',
-  meadowsweet: '🌱',
-  royal_fern: '🌱',
-  water_soldiers: '🌱',
+  // Other bottom
+  beaver: 'pawed', blue_ground_beetle: 'insect', otter: 'pawed',
 
-  // Dartmoor Other Bottom
-  beaver: '🦫',
-  blue_ground_beetle: '🪲',
-  otter: '🦦',
+  // Bats
+  alcathoe_bat: 'bat', brandts_bat: 'bat', common_noctule: 'bat',
+  daubentons_bat: 'bat', serotine_bat: 'bat',
 
-  // Dartmoor Bats
-  alcathoe_bat: '🦇',
-  brandts_bat: '🦇',
-  common_noctule: '🦇',
-  daubentons_bat: '🦇',
-  serotine_bat: '🦇',
+  // Pawed / Hoofed / Lateral
+  dartmoor_badger: 'pawed', dartmoor_black_rabbit: 'pawed',
+  dartmoor_pony: 'cloven_hoofed', dartmoor_sheep: 'cloven_hoofed',
+  field_vole: 'mouse', wood_mouse: 'mouse', shrew: 'mouse',
+  roe_deer_d: 'cloven_hoofed',
 
-  // Dartmoor Pawed / Hoofed
-  dartmoor_badger: '🐾',
-  dartmoor_black_rabbit: '🐇',
-  dartmoor_pony: '🐴',
-  dartmoor_sheep: '🐑',
-  field_vole: '🐭',
-  wood_mouse: '🐭',
-  shrew: '🐭',
-  roe_deer_d: '🦌',
+  // Insects
+  gnat_d: 'gnat', lake_fly: 'insect',
 
-  // Dartmoor Insects
-  gnat_d: '🪲',
-  lake_fly: '🪲',
-
-  // Dartmoor Cave
-  cave_d: '🕳️',
-  lonely_cave_d: '🕳️',
+  // Cave
+  cave_d: 'cave', lonely_cave_d: 'cave',
 }
+
+/** Returns the SVG icon URL for a card, or undefined if not mapped */
+export function getCardIconUrl(cardKey: string): string | undefined {
+  const iconKey = CARD_ICON_KEYS[cardKey]
+  if (!iconKey) return undefined
+  return STAT_ICONS[iconKey]
+}
+
+// Keep backward-compatible export for any remaining emoji usages
+export const CARD_ICONS = CARD_ICON_KEYS

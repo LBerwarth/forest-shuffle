@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#D4B85C"/>
+  <g transform="translate(16,19) scale(1.25)">
+    <!-- Base/skull top -->
+    <path d="M-1.5,2 C-1,0 1,0 1.5,2" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Left antler main beam -->
+    <path d="M-1.5,1 C-2,-2 -3,-5 -5,-8" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Left tine 1 -->
+    <path d="M-2.5,-2 C-4,-3 -5.5,-2.5 -6,-1.5" stroke="white" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Left tine 2 -->
+    <path d="M-3.5,-5 C-5.5,-6 -7,-5 -7.5,-4" stroke="white" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Left tine top -->
+    <path d="M-5,-8 C-6,-10 -7.5,-10.5 -8,-10" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <!-- Right antler main beam -->
+    <path d="M1.5,1 C2,-2 3,-5 5,-8" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Right tine 1 -->
+    <path d="M2.5,-2 C4,-3 5.5,-2.5 6,-1.5" stroke="white" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Right tine 2 -->
+    <path d="M3.5,-5 C5.5,-6 7,-5 7.5,-4" stroke="white" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Right tine top -->
+    <path d="M5,-8 C6,-10 7.5,-10.5 8,-10" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

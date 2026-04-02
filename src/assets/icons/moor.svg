@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#C8D4C8"/>
+  <!-- Sky -->
+  <rect x="0" y="0" width="32" height="16" rx="6" fill="#B8C8C0"/>
+  <!-- Hills -->
+  <path d="M0,18 C4,14 8,12 12,13 C16,14 20,12 24,13 C28,14 32,16 32,18 L32,32 L0,32Z" fill="#7AA068"/>
+  <!-- Foreground earth -->
+  <path d="M0,22 C8,20 16,21 24,20 C28,20 32,21 32,22 L32,32 L0,32Z" fill="#A89878" rx="6"/>
+  <!-- Water reflection -->
+  <path d="M4,24 C8,23 12,24 16,23 C20,23 24,24 28,23" stroke="#8AA078" stroke-width="0.8" fill="none" opacity="0.5"/>
+</svg>
