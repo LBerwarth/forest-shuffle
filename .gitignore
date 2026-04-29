@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 dev-dist
+
+# Local-only seed data utility (not committed)
+src/lib/seed-data.ts
 *.local
 
 # Editor directories and files
