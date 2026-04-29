@@ -11,6 +11,7 @@ import { PlayersPage } from '@/pages/PlayersPage'
 import { PlayerDetailPage } from '@/pages/PlayerDetailPage'
 import { LeaderboardPage } from '@/pages/LeaderboardPage'
 import { SettingsPage } from '@/pages/SettingsPage'
+import { PrivacyPage } from '@/pages/PrivacyPage'
 import { JoinSessionPage } from '@/pages/JoinSessionPage'
 import { LiveLobbyPage } from '@/pages/LiveLobbyPage'
 import { LiveScoreWizardPage } from '@/pages/LiveScoreWizardPage'
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="/players/:id" element={<PlayerDetailPage />} />
             <Route path="/leaderboard" element={<LeaderboardPage />} />
             <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
           </Route>
           {/* Wizard routes without bottom nav */}
           <Route path="/score/:gameId" element={<ScoreWizardPage />} />

@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.ico', 'favicon.svg', 'apple-touch-icon-180x180.png'],
       manifest: {
         name: 'Forest Shuffle Companion',
         short_name: 'Forest Shuffle',
@@ -20,9 +20,10 @@ export default defineConfig({
         display: 'standalone',
         orientation: 'portrait',
         icons: [
+          { src: '/pwa-64x64.png', sizes: '64x64', type: 'image/png' },
           { src: '/pwa-192x192.png', sizes: '192x192', type: 'image/png' },
           { src: '/pwa-512x512.png', sizes: '512x512', type: 'image/png' },
-          { src: '/pwa-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          { src: '/maskable-icon-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
       workbox: {
@@ -30,6 +31,9 @@ export default defineConfig({
         // Do not cache Supabase API requests — they must always be fresh
         // for realtime session updates to work
         navigateFallbackDenylist: [/^\/rest/],
+      },
+      devOptions: {
+        enabled: true,
       },
     }),
   ],
