@@ -163,6 +163,9 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
       const entries = p.score_breakdown?.entries ?? []
       for (const e of entries) {
         if (e.count <= 0) continue
+        // Skip legacy synthetic aggregate entries (e.g. "_bat_set", "_butterfly_set")
+        // produced by an older scoring engine — they're not real cards.
+        if (e.cardKey.startsWith('_')) continue
         let entry = map.get(e.cardKey)
         if (!entry) {
           entry = {
