@@ -375,7 +375,8 @@
   },
   "beech_marten": {
     "name": "Steinmarder",
-    "scoring": "5 Punkte pro voll besetztem Baum (automatisch gezählt)"
+    "scoring": "5 Punkte pro voll besetztem Baum",
+    "context": "Wie viele voll besetzte Bäume in deinem Wald?"
   },
   "fallow_deer": {
     "name": "Damhirsch",
@@ -471,10 +472,6 @@
   "lonely_cave": {
     "name": "Einsame Höhle",
     "scoring": "5 Punkte wenn keine normalen Höhlenkarten; sonst 0"
-  },
-  "clouded_apollo": {
-    "name": "Schwarzer Apollo",
-    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
   },
   "wild_boar_piglet": {
     "name": "Frischling",

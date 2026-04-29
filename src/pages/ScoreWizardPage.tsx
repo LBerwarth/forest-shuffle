@@ -33,7 +33,6 @@ export function ScoreWizardPage() {
     setCurrentStep,
     setCardCount,
     setCardMetadata,
-    setFullyOccupiedTrees,
   } = useScoringStore()
 
   const wizardSteps = useMemo(() => getWizardSteps(edition), [edition])
@@ -255,36 +254,6 @@ export function ScoreWizardPage() {
               </button>
             )}
           </div>
-
-          {/* Special: fully occupied trees — shown on tree step (for Oak) and lateral step (for Beech Marten) */}
-          {(stepCategories[currentStep]?.[0] === 'tree' || stepCategories[currentStep]?.[0] === 'lateral') && (
-            <div className="flex items-center justify-between rounded-xl border border-bark-200 bg-bark-50 px-4 py-3 mb-3">
-              <div>
-                <p className="text-sm font-medium text-bark-700">{t('wizard.fullyOccupiedTrees')}</p>
-                <p className="text-xs text-bark-500">{t('wizard.fullyOccupiedDesc')}</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => setFullyOccupiedTrees(currentPlayer.playerId, currentPlayer.fullyOccupiedTrees - 1)}
-                  disabled={currentPlayer.fullyOccupiedTrees <= 0}
-                  className="flex h-8 w-8 items-center justify-center rounded-lg bg-bark-100 text-bark-600 hover:bg-bark-200 disabled:opacity-40"
-                >
-                  -
-                </button>
-                <span className="w-6 text-center font-bold text-bark-700 tabular-nums">
-                  {currentPlayer.fullyOccupiedTrees}
-                </span>
-                <button
-                  type="button"
-                  onClick={() => setFullyOccupiedTrees(currentPlayer.playerId, currentPlayer.fullyOccupiedTrees + 1)}
-                  className="flex h-8 w-8 items-center justify-center rounded-lg bg-bark-200 text-bark-700 hover:bg-bark-300"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-          )}
 
           {/* Special cave selector */}
           {isCaveStep && hasSpecialCaves && (

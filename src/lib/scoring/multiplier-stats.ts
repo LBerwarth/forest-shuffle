@@ -21,7 +21,7 @@ const BAT_KEYS = [
 const BUTTERFLY_KEYS = [
   'peacock_butterfly', 'purple_emperor', 'silver_washed_fritillary',
   'camberwell_beauty', 'large_tortoiseshell', 'phoebus_apollo',
-  'map_butterfly', 'brimstone', 'clouded_apollo',
+  'map_butterfly', 'brimstone',
 ]
 
 const DARTMOOR_BAT_KEYS = [

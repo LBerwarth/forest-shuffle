@@ -133,7 +133,7 @@
     "scoring": "5 points par Grand corbeau"
   },
   "phoebus_apollo": {
-    "name": "Apollon",
+    "name": "Petit Apollon",
     "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
   },
   "barn_owl": {
@@ -375,7 +375,8 @@
   },
   "beech_marten": {
     "name": "Fouine",
-    "scoring": "5 points par arbre entièrement occupé (comptage auto)"
+    "scoring": "5 points par arbre entièrement occupé",
+    "context": "Combien d'arbres entièrement occupés dans votre forêt ?"
   },
   "fallow_deer": {
     "name": "Daim",
@@ -465,12 +466,8 @@
     "scoring": "Chaque chauve-souris rapporte 3 points suppl\u00e9mentaires"
   },
   "lonely_cave": {
-    "name": "Grotte solitaire",
+    "name": "Grotte abandonnée",
     "scoring": "5 points si aucune carte grotte standard\u00a0; sinon 0"
-  },
-  "clouded_apollo": {
-    "name": "Petit Apollon",
-    "scoring": "Papillons\u00a0: 0/3/6/12/20/35/55/80"
   },
   "wild_boar_piglet": {
     "name": "Marcassin",

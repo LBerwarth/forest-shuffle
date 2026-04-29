@@ -375,7 +375,8 @@
   },
   "beech_marten": {
     "name": "Garduña",
-    "scoring": "5 puntos por árbol completamente ocupado (conteo automático)"
+    "scoring": "5 puntos por árbol completamente ocupado",
+    "context": "¿Cuántos árboles completamente ocupados hay en tu bosque?"
   },
   "fallow_deer": {
     "name": "Gamo",
@@ -471,10 +472,6 @@
   "lonely_cave": {
     "name": "Cueva solitaria",
     "scoring": "5 puntos si no hay cartas de cueva normales; sino 0"
-  },
-  "clouded_apollo": {
-    "name": "Apolo nublado",
-    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
   },
   "wild_boar_piglet": {
     "name": "Jabato",

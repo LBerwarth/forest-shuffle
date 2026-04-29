@@ -375,7 +375,8 @@
   },
   "beech_marten": {
     "name": "Beech Marten",
-    "scoring": "5 points per fully occupied tree (auto-counted)"
+    "scoring": "5 points per fully occupied tree",
+    "context": "How many fully occupied trees in your forest?"
   },
   "fallow_deer": {
     "name": "Fallow Deer",
@@ -471,10 +472,6 @@
   "lonely_cave": {
     "name": "Lonely Cave",
     "scoring": "5 points if no regular cave cards; otherwise 0"
-  },
-  "clouded_apollo": {
-    "name": "Clouded Apollo",
-    "scoring": "Butterflies: 0/3/6/12/20/35/55/80"
   },
   "wild_boar_piglet": {
     "name": "Wild Boar Piglet",

@@ -52,7 +52,6 @@ export const CARDS: CardDefinition[] = [
   { key: 'cardinal', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'cuckoo', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'eurasian_magpie', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'clouded_apollo', category: 'top', tags: ['butterfly', 'insect'], expansion: 'woodland', scoringType: 'set' },
   { key: 'map_butterfly', category: 'top', tags: ['butterfly', 'insect'], expansion: 'woodland', scoringType: 'set' },
   { key: 'mistletoe', category: 'top', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'nightingale', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'conditional', needsContext: true, contextCappedByCount: true },
@@ -77,7 +76,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'pond_turtle', category: 'bottom', tags: ['amphibian'], expansion: 'base', scoringType: 'fixed' },
   { key: 'blackberries', category: 'bottom', tags: ['plant'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'fireflies', category: 'bottom', tags: ['insect'], expansion: 'base', scoringType: 'set' },
-  { key: 'mole', category: 'bottom', tags: [], expansion: 'base', scoringType: 'fixed' },
+  { key: 'mole', category: 'bottom', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'tree_ferns', category: 'bottom', tags: ['plant'], expansion: 'base', scoringType: 'per_tag' },
   // Alpine bottom
   { key: 'alpine_newt', category: 'bottom', tags: ['amphibian', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
@@ -93,7 +92,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'water_vole', category: 'bottom', tags: ['amphibian'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'wild_boar_piglet', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'honey_bee', category: 'bottom', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'honey_bee', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
 
   // ============================================================
   // LATERAL SLOT
@@ -115,7 +114,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'fox', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'violet_carpenter_bee', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'fixed' },
   { key: 'steinbock', category: 'lateral', tags: ['deer', 'alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'fixed' },
-  { key: 'beech_marten', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom' },
+  { key: 'beech_marten', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom', needsContext: true },
   { key: 'fallow_deer', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'gnat', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'raccoon', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },

@@ -25,7 +25,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
   peacock_butterfly: 'butterfly', purple_emperor: 'butterfly',
   silver_washed_fritillary: 'butterfly', camberwell_beauty: 'butterfly',
   large_tortoiseshell: 'butterfly', phoebus_apollo: 'butterfly',
-  brimstone: 'butterfly', clouded_apollo: 'butterfly', map_butterfly: 'butterfly',
+  brimstone: 'butterfly', map_butterfly: 'butterfly',
 
   // Amphibians
   tree_frog: 'amphibian', common_toad: 'amphibian', fire_salamander: 'amphibian',

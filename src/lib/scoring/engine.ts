@@ -50,7 +50,7 @@ function countHares(ctx: ForestContext): number {
 const BUTTERFLY_KEYS = [
   'peacock_butterfly', 'purple_emperor', 'silver_washed_fritillary',
   'camberwell_beauty', 'large_tortoiseshell', 'phoebus_apollo',
-  'map_butterfly', 'brimstone', 'clouded_apollo',
+  'map_butterfly', 'brimstone',
 ]
 
 export function scoreButterflySet(ctx: ForestContext): number {
@@ -156,7 +156,6 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   phoebus_apollo: (count, ctx) => butterflyCardPoints('phoebus_apollo', count, ctx),
   brimstone: (count, ctx) => butterflyCardPoints('brimstone', count, ctx),
   map_butterfly: (count, ctx) => butterflyCardPoints('map_butterfly', count, ctx),
-  clouded_apollo: (count, ctx) => butterflyCardPoints('clouded_apollo', count, ctx),
 
   red_squirrel: (_count, _ctx, metadata) => {
     return (metadata?.contextValue ?? 0) * 5
@@ -391,7 +390,7 @@ export function buildForestContext(
     tagCounts,
     cardCounts,
     slotCounts,
-    fullyOccupiedTrees,
+    fullyOccupiedTrees: cardMetadata['beech_marten']?.contextValue ?? fullyOccupiedTrees,
     totalCards,
     totalMoors: 0,
     cardMetadata,

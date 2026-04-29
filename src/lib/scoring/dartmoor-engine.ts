@@ -299,7 +299,7 @@ export function buildDartmoorForestContext(
     tagCounts,
     cardCounts,
     slotCounts,
-    fullyOccupiedTrees,
+    fullyOccupiedTrees: cardMetadata['beech_marten']?.contextValue ?? fullyOccupiedTrees,
     totalCards,
     totalMoors,
     cardMetadata,
