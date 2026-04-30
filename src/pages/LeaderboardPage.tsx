@@ -8,6 +8,7 @@ import {
   applyFilters,
   aggregatePlayers,
   aggregateCardStats,
+  aggregateTagStats,
   aggregatePlayerStrategies,
   computeAtAGlance,
   type EditionFilter,
@@ -20,6 +21,7 @@ import { AtAGlance } from '@/components/stats/AtAGlance'
 import { LeaderboardList } from '@/components/stats/LeaderboardList'
 import { PlayerStrategies } from '@/components/stats/PlayerStrategies'
 import { CardAnalytics } from '@/components/stats/CardAnalytics'
+import { TagInsights } from '@/components/stats/TagInsights'
 import { Records } from '@/components/stats/Records'
 
 export function LeaderboardPage() {
@@ -50,6 +52,11 @@ export function LeaderboardPage() {
 
   const cardAggregates = useMemo(
     () => aggregateCardStats(filteredGames),
+    [filteredGames],
+  )
+
+  const tagAggregates = useMemo(
+    () => aggregateTagStats(filteredGames),
     [filteredGames],
   )
 
@@ -119,6 +126,7 @@ export function LeaderboardPage() {
               <LeaderboardList players={aggregatedPlayers} />
               <PlayerStrategies players={playerStrategies} />
               <CardAnalytics cards={cardAggregates} />
+              <TagInsights tags={tagAggregates} />
               <Records aggregatedPlayers={aggregatedPlayers} cardAggregates={cardAggregates} />
             </>
           )}

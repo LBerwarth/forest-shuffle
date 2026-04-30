@@ -320,6 +320,48 @@ export function aggregatePlayerStrategies(
   return result
 }
 
+export interface TagAggregate {
+  tag: CardTag
+  totalCards: number
+  totalPoints: number
+  avgPointsPerCard: number
+}
+
+export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
+  const map = new Map<CardTag, { totalCards: number; totalPoints: number }>()
+
+  for (const g of games) {
+    for (const p of g.players) {
+      const entries = p.score_breakdown?.entries ?? []
+      for (const e of entries) {
+        if (e.count <= 0) continue
+        if (e.cardKey.startsWith('_')) continue
+        const tags = CARD_TAGS_BY_KEY.get(e.cardKey)
+        if (!tags) continue
+        for (const tag of tags) {
+          const acc = map.get(tag) ?? { totalCards: 0, totalPoints: 0 }
+          acc.totalCards += e.count
+          acc.totalPoints += e.points
+          map.set(tag, acc)
+        }
+      }
+    }
+  }
+
+  const result: TagAggregate[] = []
+  for (const [tag, acc] of map) {
+    if (acc.totalCards === 0) continue
+    result.push({
+      tag,
+      totalCards: acc.totalCards,
+      totalPoints: acc.totalPoints,
+      avgPointsPerCard: Math.round((acc.totalPoints / acc.totalCards) * 10) / 10,
+    })
+  }
+  result.sort((a, b) => b.avgPointsPerCard - a.avgPointsPerCard)
+  return result
+}
+
 export interface AtAGlanceMetrics {
   totalGames: number
   avgScore: number
