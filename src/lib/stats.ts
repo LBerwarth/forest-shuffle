@@ -28,6 +28,7 @@ export function applyFilters(
   games: GameWithPlayers[],
   edition: EditionFilter,
   time: TimeFilter,
+  playerIds: string[] = [],
   now: Date = new Date(),
 ): GameWithPlayers[] {
   const cutoff = computeCutoff(time, now)
@@ -35,6 +36,12 @@ export function applyFilters(
     const gameEdition = g.edition ?? 'classic'
     if (edition !== 'all' && gameEdition !== edition) return false
     if (cutoff !== null && new Date(g.played_at).getTime() < cutoff) return false
+    if (playerIds.length > 0) {
+      const inGame = new Set(g.players.map((p) => p.player_id))
+      for (const id of playerIds) {
+        if (!inGame.has(id)) return false
+      }
+    }
     return true
   })
 }

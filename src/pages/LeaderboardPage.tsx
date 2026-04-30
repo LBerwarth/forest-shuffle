@@ -14,6 +14,7 @@ import {
   type TimeFilter,
 } from '@/lib/stats'
 import { StatsFilters } from '@/components/stats/StatsFilters'
+import { PlayerFilter } from '@/components/stats/PlayerFilter'
 import { AtAGlance } from '@/components/stats/AtAGlance'
 import { LeaderboardList } from '@/components/stats/LeaderboardList'
 import { PlayerStrategies } from '@/components/stats/PlayerStrategies'
@@ -28,10 +29,16 @@ export function LeaderboardPage() {
 
   const [edition, setEdition] = useState<EditionFilter>('all')
   const [time, setTime] = useState<TimeFilter>('all')
+  const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
+
+  const allPlayersEver = useMemo(
+    () => aggregatePlayers(games, localPlayers),
+    [games, localPlayers],
+  )
 
   const filteredGames = useMemo(
-    () => applyFilters(games, edition, time),
-    [games, edition, time],
+    () => applyFilters(games, edition, time, selectedPlayerIds),
+    [games, edition, time, selectedPlayerIds],
   )
 
   const aggregatedPlayers = useMemo(
@@ -52,7 +59,7 @@ export function LeaderboardPage() {
   const atAGlance = useMemo(() => computeAtAGlance(filteredGames), [filteredGames])
 
   const hasAnyGames = games.length > 0
-  const filtersActive = edition !== 'all' || time !== 'all'
+  const filtersActive = edition !== 'all' || time !== 'all' || selectedPlayerIds.length > 0
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
@@ -78,6 +85,11 @@ export function LeaderboardPage() {
             onEditionChange={setEdition}
             onTimeChange={setTime}
           />
+          <PlayerFilter
+            players={allPlayersEver}
+            selected={selectedPlayerIds}
+            onChange={setSelectedPlayerIds}
+          />
 
           {filteredGames.length === 0 ? (
             <div className="text-center py-12">
@@ -89,6 +101,7 @@ export function LeaderboardPage() {
                   onClick={() => {
                     setEdition('all')
                     setTime('all')
+                    setSelectedPlayerIds([])
                   }}
                   className="rounded-full bg-forest-100 px-4 py-1.5 text-xs font-medium text-forest-600 hover:bg-forest-200"
                 >
