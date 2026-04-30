@@ -12,6 +12,7 @@ import hare from './hare.svg'
 import insect from './insect.svg'
 import moor from './moor.svg'
 import mouse from './mouse.svg'
+import mushroom from './mushroom.svg'
 import pawed from './pawed.svg'
 import plant from './plant.svg'
 import shrub from './shrub.svg'
@@ -34,7 +35,9 @@ export const STAT_ICONS: Record<string, string> = {
   insect,
   moor,
   mouse,
+  mushroom,
   pawed,
+  rabbit: pawed,
   plant,
   shrub,
   tree,

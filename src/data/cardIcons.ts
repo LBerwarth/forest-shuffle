@@ -39,9 +39,9 @@ const CARD_ICON_KEYS: Record<string, string> = {
   fireflies: 'insect', gnat: 'gnat', great_green_bush_cricket: 'insect',
   honey_bee: 'insect', bee_swarm: 'insect', crane_fly: 'insect',
 
-  // Mushrooms — use plant icon
-  penny_bun: 'plant', chanterelle: 'plant', fly_agaric: 'plant',
-  parasol_mushroom: 'plant', black_trumpet: 'plant',
+  // Mushrooms
+  penny_bun: 'mushroom', chanterelle: 'mushroom', fly_agaric: 'mushroom',
+  parasol_mushroom: 'mushroom', black_trumpet: 'mushroom',
 
   // Plants
   moss: 'plant', wild_strawberries: 'plant', blackberries: 'plant',
