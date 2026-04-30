@@ -38,10 +38,9 @@ export function applyFilters(
     if (edition !== 'all' && gameEdition !== edition) return false
     if (cutoff !== null && new Date(g.played_at).getTime() < cutoff) return false
     if (selectedSet.size > 0) {
-      const inGame = new Set(g.players.map((p) => p.player_id))
-      for (const id of selectedSet) {
-        if (!inGame.has(id)) return false
-      }
+      // Union semantics: keep the game if any selected player was in it.
+      const hasAny = g.players.some((p) => selectedSet.has(p.player_id))
+      if (!hasAny) return false
     }
     return true
   })
