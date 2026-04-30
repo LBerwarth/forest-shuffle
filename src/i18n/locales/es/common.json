@@ -4,7 +4,23 @@
     "score": "Puntos",
     "history": "Historial",
     "stats": "Estadísticas",
+    "rules": "Reglas",
     "settings": "Ajustes"
+  },
+  "rules": {
+    "title": "Reglas de las cartas",
+    "search": "Buscar cartas",
+    "edition": "Edición",
+    "edition_all": "Todas",
+    "edition_classic": "Clásica",
+    "edition_dartmoor": "Dartmoor",
+    "category": "Categoría",
+    "category_all": "Todas",
+    "exp_alpine": "Alpina",
+    "exp_woodland": "Lindero",
+    "exp_exploration": "Exploración",
+    "exp_dartmoor_base": "Dartmoor",
+    "noMatches": "Ninguna carta coincide."
   },
   "category": {
     "tree": "Árboles",

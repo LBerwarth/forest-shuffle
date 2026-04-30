@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <rect width="32" height="32" rx="6" fill="#B08860"/>
-  <g transform="translate(16,17) scale(1.3)">
-    <!-- Main pad -->
-    <path d="M-4,-1 C-5,1 -4,4 -2,5 C-0.5,5.8 0.5,5.8 2,5 C4,4 5,1 4,-1 C3,-2 1,-2.5 0,-2 C-1,-2.5 -3,-2 -4,-1Z" fill="white"/>
-    <!-- Toe 1 (left outer) -->
-    <ellipse cx="-5" cy="-5" rx="1.8" ry="2.2" transform="rotate(-15 -5 -5)" fill="white"/>
-    <!-- Toe 2 (left inner) -->
-    <ellipse cx="-2" cy="-6.5" rx="1.7" ry="2" fill="white"/>
-    <!-- Toe 3 (right inner) -->
-    <ellipse cx="2" cy="-6.5" rx="1.7" ry="2" fill="white"/>
-    <!-- Toe 4 (right outer) -->
-    <ellipse cx="5" cy="-5" rx="1.8" ry="2.2" transform="rotate(15 5 -5)" fill="white"/>
+  <g fill="white">
+    <path d="M16,28
+             C 9,28 7,22.5 9,18.5
+             C 11,16.5 13,16 16,16
+             C 19,16 21,16.5 23,18.5
+             C 25,22.5 23,28 16,28 Z"/>
+    <ellipse cx="8" cy="14" rx="2.2" ry="3"/>
+    <ellipse cx="13" cy="9" rx="2.4" ry="3.4"/>
+    <ellipse cx="19" cy="9" rx="2.4" ry="3.4"/>
+    <ellipse cx="24" cy="14" rx="2.2" ry="3"/>
   </g>
 </svg>

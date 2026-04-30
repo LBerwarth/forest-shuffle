@@ -91,7 +91,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'stinging_nettle', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'water_vole', category: 'bottom', tags: ['amphibian'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'wild_boar_piglet', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'wild_boar_piglet', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'honey_bee', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
 
   // ============================================================
@@ -105,7 +105,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'red_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'lynx', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'threshold' },
   { key: 'wolf', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
-  { key: 'wild_boar', category: 'lateral', tags: ['pawed', 'cloven_hoofed'], expansion: 'base', scoringType: 'threshold' },
+  { key: 'wild_boar', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'threshold' },
   { key: 'european_badger', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'european_hare', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'european_fat_dormouse', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
@@ -137,7 +137,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'sable', category: 'lateral', tags: ['pawed'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'troll', category: 'lateral', tags: [], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'white_stork', category: 'lateral', tags: ['bird'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'wild_boar_female', category: 'lateral', tags: ['cloven_hoofed', 'pawed'], expansion: 'woodland', scoringType: 'per_card' },
+  { key: 'wild_boar_female', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'per_card' },
 
   // ============================================================
   // CAVE

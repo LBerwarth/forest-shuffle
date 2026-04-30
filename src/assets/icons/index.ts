@@ -9,14 +9,13 @@ import deer from './deer.svg'
 import dragonfly from './dragonfly.svg'
 import gnat from './gnat.svg'
 import hare from './hare.svg'
-import hoofed from './hoofed.svg'
 import insect from './insect.svg'
 import moor from './moor.svg'
 import mouse from './mouse.svg'
 import pawed from './pawed.svg'
 import plant from './plant.svg'
+import shrub from './shrub.svg'
 import tree from './tree.svg'
-import wild_boar from './wild_boar.svg'
 import woodland_edge from './woodland_edge.svg'
 
 export const STAT_ICONS: Record<string, string> = {
@@ -31,13 +30,13 @@ export const STAT_ICONS: Record<string, string> = {
   dragonfly,
   gnat,
   hare,
-  hoofed,
+  hoofed: cloven_hoofed,
   insect,
   moor,
   mouse,
   pawed,
   plant,
+  shrub,
   tree,
-  wild_boar,
   woodland_edge,
 }

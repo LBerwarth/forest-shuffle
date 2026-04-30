@@ -93,8 +93,8 @@ const classicStats: Record<string, StatDef> = {
   european_hare: (ctx) => [{ iconKey: 'hare', value: countCard(ctx, 'european_hare') + countCard(ctx, 'mountain_hare') }],
   mountain_hare: (ctx) => [{ iconKey: 'hare', value: countCard(ctx, 'european_hare') + countCard(ctx, 'mountain_hare') }],
   lynx: (ctx) => [{ iconKey: 'deer', value: countCard(ctx, 'roe_deer') }],
-  wild_boar: (ctx) => [{ iconKey: 'wild_boar', value: countCard(ctx, 'wild_boar_piglet') }],
-  wild_boar_female: (ctx) => [{ iconKey: 'wild_boar', value: countCard(ctx, 'wild_boar_piglet') }],
+  wild_boar: (ctx) => [{ iconKey: 'cloven_hoofed', value: countCard(ctx, 'wild_boar_piglet') }],
+  wild_boar_female: (ctx) => [{ iconKey: 'cloven_hoofed', value: countCard(ctx, 'wild_boar_piglet') }],
   beech_marten: (ctx) => [{ iconKey: 'tree', value: ctx.fullyOccupiedTrees }],
   red_deer: (ctx) => [
     { iconKey: 'tree', value: ctx.totalTrees },

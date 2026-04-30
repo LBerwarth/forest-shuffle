@@ -11,7 +11,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
   european_larch: 'tree', stone_pine: 'tree', palm_tree: 'tree', turkey_oak: 'tree',
   o_christmas_tree: 'tree', tree_sapling: 'tree',
   // Shrubs
-  common_hazel: 'plant', elderberry: 'plant', blackthorn: 'plant',
+  common_hazel: 'shrub', elderberry: 'shrub', blackthorn: 'shrub',
 
   // Birds
   bullfinch: 'bird', chaffinch: 'bird', great_spotted_woodpecker: 'bird',
@@ -51,7 +51,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
 
   // Pawed animals
   hedgehog: 'pawed', european_hare: 'pawed', mountain_hare: 'pawed',
-  lynx: 'pawed', wolf: 'pawed', wild_boar: 'wild_boar',
+  lynx: 'pawed', wolf: 'pawed', wild_boar: 'cloven_hoofed',
   european_badger: 'pawed', fox: 'pawed', brown_bear: 'pawed',
   european_fat_dormouse: 'pawed', squeaker: 'pawed', alpine_marmot: 'pawed',
   beech_marten: 'pawed', raccoon: 'pawed', european_polecat: 'pawed',
@@ -60,8 +60,8 @@ const CARD_ICON_KEYS: Record<string, string> = {
 
   // Deer / Cloven-hoofed — all use cloven_hoofed icon (the game symbol)
   roe_deer: 'cloven_hoofed', red_deer: 'cloven_hoofed', chamois: 'cloven_hoofed',
-  steinbock: 'cloven_hoofed', fallow_deer: 'cloven_hoofed', wild_boar_piglet: 'wild_boar',
-  wild_boar_female: 'wild_boar', elk: 'cloven_hoofed', european_bison: 'cloven_hoofed',
+  steinbock: 'cloven_hoofed', fallow_deer: 'cloven_hoofed', wild_boar_piglet: 'cloven_hoofed',
+  wild_boar_female: 'cloven_hoofed', elk: 'cloven_hoofed', european_bison: 'cloven_hoofed',
 
   // Bats
   barbastelle: 'bat', bechsteins_bat: 'bat', brown_long_eared_bat: 'bat',
@@ -81,7 +81,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
   ash: 'tree', black_alder: 'tree', crab_apple: 'tree', goat_willow: 'tree',
   moor_birch: 'tree', sessile_oak: 'tree',
   // Shrubs
-  common_hazel_d: 'plant', elderberry_d: 'plant',
+  common_hazel_d: 'shrub', elderberry_d: 'shrub',
 
   // Moors
   blanket_bog: 'moor', fountainhead: 'moor', lowland_heath: 'moor',

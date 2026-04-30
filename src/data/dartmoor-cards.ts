@@ -12,8 +12,8 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   { key: 'sessile_oak', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
 
   // SHRUBS (2) — category 'tree', score 0
-  { key: 'common_hazel_d', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
-  { key: 'elderberry_d', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'common_hazel_d', category: 'tree', tags: ['shrub'], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'elderberry_d', category: 'tree', tags: ['shrub'], expansion: 'dartmoor_base', scoringType: 'fixed' },
 
   // ============================================================
   // MOOR (9)

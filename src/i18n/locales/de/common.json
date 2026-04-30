@@ -4,7 +4,23 @@
     "score": "Punkte",
     "history": "Verlauf",
     "stats": "Statistik",
+    "rules": "Regeln",
     "settings": "Einstellungen"
+  },
+  "rules": {
+    "title": "Kartenregeln",
+    "search": "Karten suchen",
+    "edition": "Edition",
+    "edition_all": "Alle",
+    "edition_classic": "Klassisch",
+    "edition_dartmoor": "Dartmoor",
+    "category": "Kategorie",
+    "category_all": "Alle",
+    "exp_alpine": "Alpin",
+    "exp_woodland": "Waldrand",
+    "exp_exploration": "Exploration",
+    "exp_dartmoor_base": "Dartmoor",
+    "noMatches": "Keine Karten gefunden."
   },
   "category": {
     "tree": "Bäume",
