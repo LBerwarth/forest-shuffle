@@ -324,41 +324,58 @@ export interface TagAggregate {
   tag: CardTag
   totalCards: number
   totalPoints: number
-  avgPointsPerCard: number
+  playerGames: number
+  avgPointsPerPlayerGame: number
 }
 
 export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
-  const map = new Map<CardTag, { totalCards: number; totalPoints: number }>()
+  const map = new Map<
+    CardTag,
+    { totalCards: number; totalPoints: number; playerGames: number }
+  >()
 
   for (const g of games) {
     for (const p of g.players) {
       const entries = p.score_breakdown?.entries ?? []
+      // Aggregate this player-game's contributions per tag first, so we can
+      // count player-games (one per tag) regardless of how many distinct
+      // cards of that tag the player held.
+      const perTag = new Map<CardTag, { cards: number; points: number }>()
       for (const e of entries) {
         if (e.count <= 0) continue
         if (e.cardKey.startsWith('_')) continue
         const tags = CARD_TAGS_BY_KEY.get(e.cardKey)
         if (!tags) continue
         for (const tag of tags) {
-          const acc = map.get(tag) ?? { totalCards: 0, totalPoints: 0 }
-          acc.totalCards += e.count
-          acc.totalPoints += e.points
-          map.set(tag, acc)
+          const acc = perTag.get(tag) ?? { cards: 0, points: 0 }
+          acc.cards += e.count
+          acc.points += e.points
+          perTag.set(tag, acc)
         }
+      }
+      for (const [tag, acc] of perTag) {
+        const overall = map.get(tag) ?? { totalCards: 0, totalPoints: 0, playerGames: 0 }
+        overall.totalCards += acc.cards
+        overall.totalPoints += acc.points
+        overall.playerGames += 1
+        map.set(tag, overall)
       }
     }
   }
 
   const result: TagAggregate[] = []
   for (const [tag, acc] of map) {
-    if (acc.totalCards === 0) continue
+    if (acc.playerGames === 0) continue
     result.push({
       tag,
       totalCards: acc.totalCards,
       totalPoints: acc.totalPoints,
-      avgPointsPerCard: Math.round((acc.totalPoints / acc.totalCards) * 10) / 10,
+      playerGames: acc.playerGames,
+      avgPointsPerPlayerGame:
+        Math.round((acc.totalPoints / acc.playerGames) * 10) / 10,
     })
   }
-  result.sort((a, b) => b.avgPointsPerCard - a.avgPointsPerCard)
+  result.sort((a, b) => b.avgPointsPerPlayerGame - a.avgPointsPerPlayerGame)
   return result
 }
 

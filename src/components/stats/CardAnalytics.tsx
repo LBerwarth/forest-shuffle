@@ -6,7 +6,7 @@ import { getCardIconUrl } from '@/data/cardIcons'
 import { cn } from '@/lib/utils'
 import type { CardAggregate } from '@/lib/stats'
 
-type Mode = 'topScoring' | 'mostPlayed' | 'bigPlays'
+type Mode = 'topScoring' | 'mostPoints' | 'mostPlayed' | 'bigPlays'
 
 interface CardAnalyticsProps {
   cards: CardAggregate[]
@@ -21,6 +21,8 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
     const list = [...cards]
     if (mode === 'topScoring') {
       list.sort((a, b) => b.avgPointsPerAppearance - a.avgPointsPerAppearance)
+    } else if (mode === 'mostPoints') {
+      list.sort((a, b) => b.totalPoints - a.totalPoints)
     } else if (mode === 'mostPlayed') {
       list.sort((a, b) => b.appearances - a.appearances)
     } else {
@@ -31,6 +33,7 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
 
   const modes: { id: Mode; label: string }[] = [
     { id: 'topScoring', label: t('leaderboard.modeTopScoring') },
+    { id: 'mostPoints', label: t('leaderboard.modeMostPoints') },
     { id: 'mostPlayed', label: t('leaderboard.modeMostPlayed') },
     { id: 'bigPlays', label: t('leaderboard.modeBigPlays') },
   ]
@@ -38,9 +41,11 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
   const hint =
     mode === 'topScoring'
       ? t('leaderboard.topScoringHint')
-      : mode === 'mostPlayed'
-        ? t('leaderboard.mostPlayedHint')
-        : t('leaderboard.bigPlaysHint')
+      : mode === 'mostPoints'
+        ? t('leaderboard.mostPointsHint')
+        : mode === 'mostPlayed'
+          ? t('leaderboard.mostPlayedHint')
+          : t('leaderboard.bigPlaysHint')
 
   if (cards.length === 0) {
     return (
@@ -117,7 +122,12 @@ function CardPrimary({ mode, card }: { mode: Mode; card: CardAggregate }) {
       </span>
     )
   }
-  const value = mode === 'topScoring' ? card.avgPointsPerAppearance : card.maxPointsSingle
+  const value =
+    mode === 'topScoring'
+      ? card.avgPointsPerAppearance
+      : mode === 'mostPoints'
+        ? card.totalPoints
+        : card.maxPointsSingle
   return (
     <span className="flex items-center gap-0.5 text-sm font-bold text-forest-600 tabular-nums shrink-0">
       {value}
@@ -129,6 +139,13 @@ function CardPrimary({ mode, card }: { mode: Mode; card: CardAggregate }) {
 function CardSubline({ mode, card, lang }: { mode: Mode; card: CardAggregate; lang: string }) {
   const { t } = useTranslation()
   if (mode === 'topScoring') {
+    return (
+      <p className="text-[10px] text-forest-400">
+        {t('leaderboard.appearancesShort', { count: card.appearances })}
+      </p>
+    )
+  }
+  if (mode === 'mostPoints') {
     return (
       <p className="text-[10px] text-forest-400">
         {t('leaderboard.appearancesShort', { count: card.appearances })}
