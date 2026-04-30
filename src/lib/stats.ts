@@ -32,18 +32,27 @@ export function applyFilters(
   now: Date = new Date(),
 ): GameWithPlayers[] {
   const cutoff = computeCutoff(time, now)
-  return games.filter((g) => {
+  const selectedSet = new Set(playerIds)
+  const matched = games.filter((g) => {
     const gameEdition = g.edition ?? 'classic'
     if (edition !== 'all' && gameEdition !== edition) return false
     if (cutoff !== null && new Date(g.played_at).getTime() < cutoff) return false
-    if (playerIds.length > 0) {
+    if (selectedSet.size > 0) {
       const inGame = new Set(g.players.map((p) => p.player_id))
-      for (const id of playerIds) {
+      for (const id of selectedSet) {
         if (!inGame.has(id)) return false
       }
     }
     return true
   })
+  if (selectedSet.size === 0) return matched
+  // Narrow each matched game's players list to only the selected ones, so
+  // downstream aggregations don't include non-selected players who happened
+  // to be in the game.
+  return matched.map((g) => ({
+    ...g,
+    players: g.players.filter((p) => selectedSet.has(p.player_id)),
+  }))
 }
 
 function computeCutoff(time: TimeFilter, now: Date): number | null {
