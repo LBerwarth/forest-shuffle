@@ -23,12 +23,14 @@ export const STRATEGY_TAGS: readonly CardTag[] = [
 
 export type EditionFilter = 'all' | 'classic' | 'dartmoor'
 export type TimeFilter = 'all' | 'year' | 'month' | 'week'
+export type PlayerMatchMode = 'union' | 'intersection'
 
 export function applyFilters(
   games: GameWithPlayers[],
   edition: EditionFilter,
   time: TimeFilter,
   playerIds: string[] = [],
+  matchMode: PlayerMatchMode = 'union',
   now: Date = new Date(),
 ): GameWithPlayers[] {
   const cutoff = computeCutoff(time, now)
@@ -38,9 +40,18 @@ export function applyFilters(
     if (edition !== 'all' && gameEdition !== edition) return false
     if (cutoff !== null && new Date(g.played_at).getTime() < cutoff) return false
     if (selectedSet.size > 0) {
-      // Union semantics: keep the game if any selected player was in it.
-      const hasAny = g.players.some((p) => selectedSet.has(p.player_id))
-      if (!hasAny) return false
+      const inGame = new Set(g.players.map((p) => p.player_id))
+      if (matchMode === 'intersection') {
+        for (const id of selectedSet) {
+          if (!inGame.has(id)) return false
+        }
+      } else {
+        let any = false
+        for (const id of selectedSet) {
+          if (inGame.has(id)) { any = true; break }
+        }
+        if (!any) return false
+      }
     }
     return true
   })

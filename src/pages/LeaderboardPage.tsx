@@ -12,6 +12,7 @@ import {
   computeAtAGlance,
   type EditionFilter,
   type TimeFilter,
+  type PlayerMatchMode,
 } from '@/lib/stats'
 import { StatsFilters } from '@/components/stats/StatsFilters'
 import { PlayerFilter } from '@/components/stats/PlayerFilter'
@@ -30,6 +31,7 @@ export function LeaderboardPage() {
   const [edition, setEdition] = useState<EditionFilter>('all')
   const [time, setTime] = useState<TimeFilter>('all')
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
+  const [matchMode, setMatchMode] = useState<PlayerMatchMode>('union')
 
   const allPlayersEver = useMemo(
     () => aggregatePlayers(games, localPlayers),
@@ -37,8 +39,8 @@ export function LeaderboardPage() {
   )
 
   const filteredGames = useMemo(
-    () => applyFilters(games, edition, time, selectedPlayerIds),
-    [games, edition, time, selectedPlayerIds],
+    () => applyFilters(games, edition, time, selectedPlayerIds, matchMode),
+    [games, edition, time, selectedPlayerIds, matchMode],
   )
 
   const aggregatedPlayers = useMemo(
@@ -88,7 +90,9 @@ export function LeaderboardPage() {
           <PlayerFilter
             players={allPlayersEver}
             selected={selectedPlayerIds}
+            matchMode={matchMode}
             onChange={setSelectedPlayerIds}
+            onMatchModeChange={setMatchMode}
           />
 
           {filteredGames.length === 0 ? (
