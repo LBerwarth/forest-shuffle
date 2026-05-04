@@ -165,6 +165,7 @@ export function computeWinStreak(
 export interface CardAggregate {
   cardKey: string
   category: CardCategory
+  tags: readonly CardTag[]
   appearances: number
   totalPoints: number
   avgPointsPerAppearance: number
@@ -222,6 +223,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
     result.push({
       cardKey,
       category: entry.category,
+      tags: CARD_TAGS_BY_KEY.get(cardKey) ?? [],
       appearances: entry.appearances,
       totalPoints: entry.totalPoints,
       avgPointsPerAppearance:

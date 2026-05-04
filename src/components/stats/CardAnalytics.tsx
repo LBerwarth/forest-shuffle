@@ -3,10 +3,32 @@ import { useTranslation } from 'react-i18next'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { getCardIconUrl } from '@/data/cardIcons'
+import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
 import type { CardAggregate } from '@/lib/stats'
+import type { CardTag } from '@/types/card'
 
 type Mode = 'topScoring' | 'mostPoints' | 'mostPlayed' | 'bigPlays'
+
+const TAG_ORDER: readonly CardTag[] = [
+  'bird',
+  'butterfly',
+  'insect',
+  'dragonfly',
+  'bat',
+  'mouse',
+  'pawed',
+  'rabbit',
+  'cloven_hoofed',
+  'hoofed',
+  'deer',
+  'amphibian',
+  'plant',
+  'mushroom',
+  'shrub',
+  'alpine',
+  'woodland_edge',
+] as const
 
 interface CardAnalyticsProps {
   cards: CardAggregate[]
@@ -16,9 +38,18 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
   const { t, i18n } = useTranslation()
   const tc = useTranslation('cards').t
   const [mode, setMode] = useState<Mode>('topScoring')
+  const [filterTag, setFilterTag] = useState<CardTag | null>(null)
+
+  const availableTags = useMemo<CardTag[]>(() => {
+    const present = new Set<CardTag>()
+    for (const c of cards) for (const tag of c.tags) present.add(tag)
+    return TAG_ORDER.filter((tag) => present.has(tag) && STAT_ICONS[tag])
+  }, [cards])
 
   const sorted = useMemo(() => {
-    const list = [...cards]
+    const filtered =
+      filterTag === null ? cards : cards.filter((c) => c.tags.includes(filterTag))
+    const list = [...filtered]
     if (mode === 'topScoring') {
       list.sort((a, b) => b.avgPointsPerAppearance - a.avgPointsPerAppearance)
     } else if (mode === 'mostPoints') {
@@ -29,7 +60,7 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
       list.sort((a, b) => b.maxPointsSingle - a.maxPointsSingle)
     }
     return list.slice(0, 10)
-  }, [cards, mode])
+  }, [cards, mode, filterTag])
 
   const modes: { id: Mode; label: string }[] = [
     { id: 'topScoring', label: t('leaderboard.modeTopScoring') },
@@ -87,6 +118,46 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
             </button>
           ))}
         </div>
+        {availableTags.length > 0 && (
+          <div className="flex gap-1 mb-2 overflow-x-auto scrollbar-hide">
+            <button
+              type="button"
+              onClick={() => setFilterTag(null)}
+              className={cn(
+                'rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-all shrink-0',
+                filterTag === null
+                  ? 'bg-forest-500 text-white'
+                  : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
+              )}
+            >
+              {t('leaderboard.allTags')}
+            </button>
+            {availableTags.map((tag) => {
+              const active = filterTag === tag
+              return (
+                <button
+                  key={tag}
+                  type="button"
+                  onClick={() => setFilterTag(active ? null : tag)}
+                  title={t(`tag.${tag}`)}
+                  aria-label={t(`tag.${tag}`)}
+                  className={cn(
+                    'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
+                    active
+                      ? 'ring-2 ring-forest-500 bg-forest-500'
+                      : 'bg-forest-100 hover:bg-forest-200',
+                  )}
+                >
+                  <img
+                    src={STAT_ICONS[tag]}
+                    alt=""
+                    className="h-5 w-5 rounded-full"
+                  />
+                </button>
+              )
+            })}
+          </div>
+        )}
         <p className="text-[10px] text-forest-400 mb-2">{hint}</p>
         <div className="space-y-1.5">
           {sorted.map((c) => {
