@@ -371,7 +371,8 @@
   },
   "violet_carpenter_bee": {
     "name": "Holzbiene",
-    "scoring": "0 Punkte"
+    "scoring": "Zählt als ein zusätzlicher Baum der Art, an der sie angebracht ist",
+    "context": "An welchem Baum angebracht?"
   },
   "beech_marten": {
     "name": "Steinmarder",

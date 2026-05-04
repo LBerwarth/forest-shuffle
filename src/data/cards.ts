@@ -112,7 +112,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'squeaker', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'brown_bear', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'fox', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
-  { key: 'violet_carpenter_bee', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'fixed' },
+  { key: 'violet_carpenter_bee', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'custom', needsHostTreeContext: true },
   { key: 'steinbock', category: 'lateral', tags: ['deer', 'alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'fixed' },
   { key: 'beech_marten', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom', needsContext: true },
   { key: 'fallow_deer', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },

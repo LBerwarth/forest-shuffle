@@ -371,7 +371,8 @@
   },
   "violet_carpenter_bee": {
     "name": "Xylocope violet",
-    "scoring": "0 points"
+    "scoring": "Compte comme un arbre supplémentaire de l'espèce sur laquelle il est posé",
+    "context": "Posé sur quel arbre ?"
   },
   "beech_marten": {
     "name": "Fouine",

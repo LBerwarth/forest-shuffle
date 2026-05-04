@@ -45,4 +45,6 @@ export interface CardDefinition {
   needsContext?: boolean
   /** If true, context value is capped at the card count (e.g. "how many of these are on X?") */
   contextCappedByCount?: boolean
+  /** If true, wizard shows a tree-species picker (e.g. Violet Carpenter Bee) */
+  needsHostTreeContext?: boolean
 }

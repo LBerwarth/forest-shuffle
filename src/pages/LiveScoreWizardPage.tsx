@@ -73,6 +73,15 @@ export function LiveScoreWizardPage() {
   const cardsByCategory = useMemo(() => getCardsByCategory(expansions, edition), [expansions, edition])
 
   const currentPlayer = players[0] // Only one player in live mode
+
+  const availableHostKeys = useMemo<readonly string[]>(() => {
+    if (!currentPlayer) return []
+    const treeCards = cardsByCategory.tree || []
+    return treeCards
+      .filter((c) => !c.tags.includes('shrub'))
+      .filter((c) => (currentPlayer.cardCounts[c.key] || 0) > 0)
+      .map((c) => c.key)
+  }, [cardsByCategory, currentPlayer])
   const tc = useTranslation('cards').t
 
   const [cardSearch, setCardSearch] = useState('')
@@ -345,6 +354,14 @@ export function LiveScoreWizardPage() {
               onContextChange={
                 card.needsContext
                   ? (value) => setCardMetadata(currentPlayer.playerId, card.key, { contextValue: value })
+                  : undefined
+              }
+              hostCardKey={currentPlayer.cardMetadata[card.key]?.hostCardKey}
+              availableHostKeys={card.needsHostTreeContext ? availableHostKeys : undefined}
+              onHostChange={
+                card.needsHostTreeContext
+                  ? (key) =>
+                      setCardMetadata(currentPlayer.playerId, card.key, { hostCardKey: key })
                   : undefined
               }
               multiplierStats={forestContext ? getMultiplierStats(card.key, forestContext, edition) : undefined}

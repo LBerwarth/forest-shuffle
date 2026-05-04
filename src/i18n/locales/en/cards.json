@@ -371,7 +371,8 @@
   },
   "violet_carpenter_bee": {
     "name": "Violet Carpenter Bee",
-    "scoring": "0 points"
+    "scoring": "Counts as one extra of the tree species it is attached to",
+    "context": "Attached to which tree?"
   },
   "beech_marten": {
     "name": "Beech Marten",

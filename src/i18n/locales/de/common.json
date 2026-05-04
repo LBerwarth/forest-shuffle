@@ -79,7 +79,9 @@
     "finish": "Fertig",
     "categoryTotal": "Karten in Kategorie",
     "card": "Karte",
-    "cards": "Karten"
+    "cards": "Karten",
+    "selectHostTree": "Baum wählen…",
+    "noHostTreeAvailable": "Erst einen Baum hinzufügen"
   },
   "result": {
     "wins": "{{name}} gewinnt!",

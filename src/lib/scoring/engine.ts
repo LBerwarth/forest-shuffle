@@ -383,12 +383,26 @@ export function buildForestContext(
     }
   }
 
+  // Apply Violet Carpenter Bee bonus: each bee acts as +1 of its host tree
+  // species for the host's own scoring formula. The bee itself stays a 1-count
+  // insect lateral — totals, tags, slot counts, and species/tree counts above
+  // are computed from the original cardCounts and are not affected.
+  const beeCount = cardCounts['violet_carpenter_bee'] || 0
+  const beeHost = cardMetadata['violet_carpenter_bee']?.hostCardKey
+  let effectiveCardCounts = cardCounts
+  if (beeCount > 0 && beeHost) {
+    effectiveCardCounts = {
+      ...cardCounts,
+      [beeHost]: (cardCounts[beeHost] || 0) + beeCount,
+    }
+  }
+
   return {
     totalTrees,
     treeSpeciesCount: treeSpeciesPresent.size,
     treeSpeciesPresent,
     tagCounts,
-    cardCounts,
+    cardCounts: effectiveCardCounts,
     slotCounts,
     fullyOccupiedTrees: cardMetadata['beech_marten']?.contextValue ?? fullyOccupiedTrees,
     totalCards,
@@ -433,6 +447,9 @@ export function computeScoreBreakdown(
 
   for (const cardKey of activeCards) {
     const count = cardCounts[cardKey] || 0
+    // For the bee's host tree, ctx.cardCounts has the +1 bonus applied; pass
+    // that to the scoring function so threshold/set-scoring rules see it.
+    const effectiveCount = context.cardCounts[cardKey] ?? count
 
     const card = CARDS.find((c) => c.key === cardKey)
     if (!card) continue
@@ -441,7 +458,7 @@ export function computeScoreBreakdown(
     if (card.scoringType === 'comparison') continue
 
     const metadata = cardMetadata[cardKey]
-    const points = scoreCard(cardKey, count, context, metadata)
+    const points = scoreCard(cardKey, effectiveCount, context, metadata)
 
     // Include entry even when count is 0 if there are synergy points
     if (count === 0 && points === 0) continue

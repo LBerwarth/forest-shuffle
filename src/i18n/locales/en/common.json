@@ -79,7 +79,9 @@
     "finish": "Finish",
     "categoryTotal": "Cards in category",
     "card": "card",
-    "cards": "cards"
+    "cards": "cards",
+    "selectHostTree": "Select a tree…",
+    "noHostTreeAvailable": "Add a tree first"
   },
   "result": {
     "wins": "{{name}} wins!",

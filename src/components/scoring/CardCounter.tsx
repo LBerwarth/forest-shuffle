@@ -15,6 +15,9 @@ interface CardCounterProps {
   onCountChange: (count: number) => void
   contextValue?: number
   onContextChange?: (value: number) => void
+  hostCardKey?: string
+  availableHostKeys?: readonly string[]
+  onHostChange?: (key: string | undefined) => void
   multiplierStats?: MultiplierStat[]
 }
 
@@ -99,6 +102,9 @@ export function CardCounter({
   onCountChange,
   contextValue,
   onContextChange,
+  hostCardKey,
+  availableHostKeys,
+  onHostChange,
   multiplierStats,
 }: CardCounterProps) {
   const { t } = useTranslation()
@@ -219,6 +225,28 @@ export function CardCounter({
               <Plus className="h-3 w-3" />
             </button>
           </div>
+        </div>
+      )}
+
+      {card.needsHostTreeContext && count > 0 && onHostChange && (
+        <div className="flex items-center justify-between gap-2 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
+          <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
+          {availableHostKeys && availableHostKeys.length > 0 ? (
+            <select
+              value={hostCardKey ?? ''}
+              onChange={(e) => onHostChange(e.target.value || undefined)}
+              className="rounded-md bg-bark-100 px-2 py-1 text-xs text-bark-800 outline-none border border-bark-200 focus:border-bark-400"
+            >
+              <option value="">{t('wizard.selectHostTree')}</option>
+              {availableHostKeys.map((key) => (
+                <option key={key} value={key}>
+                  {tc(`${key}.name`)}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <span className="text-[10px] italic text-bark-400">{t('wizard.noHostTreeAvailable')}</span>
+          )}
         </div>
       )}
 

@@ -371,7 +371,8 @@
   },
   "violet_carpenter_bee": {
     "name": "Abeja carpintera",
-    "scoring": "0 puntos"
+    "scoring": "Cuenta como un árbol adicional de la especie a la que está unida",
+    "context": "¿Pegada a qué árbol?"
   },
   "beech_marten": {
     "name": "Garduña",
