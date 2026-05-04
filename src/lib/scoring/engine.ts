@@ -355,7 +355,7 @@ export function buildForestContext(
     bird: 0, butterfly: 0, insect: 0, amphibian: 0,
     pawed: 0, deer: 0, bat: 0, plant: 0, mushroom: 0,
     alpine: 0, cloven_hoofed: 0, woodland_edge: 0,
-    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0, shrub: 0,
+    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0, shrub: 0, tree: 0,
   }
 
   const slotCounts: Record<CardCategory, number> = {
@@ -383,18 +383,20 @@ export function buildForestContext(
     }
   }
 
-  // Apply Violet Carpenter Bee bonus: each bee acts as +1 of its host tree
+  // Apply Violet Carpenter Bee bonuses: each bee acts as +1 of its host tree
   // species for the host's own scoring formula. The bee itself stays a 1-count
   // insect lateral — totals, tags, slot counts, and species/tree counts above
-  // are computed from the original cardCounts and are not affected.
-  const beeCount = cardCounts['violet_carpenter_bee'] || 0
-  const beeHost = cardMetadata['violet_carpenter_bee']?.hostCardKey
+  // are computed from the original cardCounts and are not affected. Each bee
+  // can have its own host tree.
   let effectiveCardCounts = cardCounts
-  if (beeCount > 0 && beeHost) {
-    effectiveCardCounts = {
-      ...cardCounts,
-      [beeHost]: (cardCounts[beeHost] || 0) + beeCount,
+  const beeHostKeys = cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? []
+  if (beeHostKeys.length > 0) {
+    const bumped = { ...cardCounts }
+    for (const hostKey of beeHostKeys) {
+      if (!hostKey) continue
+      bumped[hostKey] = (bumped[hostKey] || 0) + 1
     }
+    effectiveCardCounts = bumped
   }
 
   return {

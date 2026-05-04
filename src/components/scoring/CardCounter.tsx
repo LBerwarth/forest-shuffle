@@ -15,9 +15,9 @@ interface CardCounterProps {
   onCountChange: (count: number) => void
   contextValue?: number
   onContextChange?: (value: number) => void
-  hostCardKey?: string
+  hostCardKeys?: readonly string[]
   availableHostKeys?: readonly string[]
-  onHostChange?: (key: string | undefined) => void
+  onHostsChange?: (next: string[]) => void
   multiplierStats?: MultiplierStat[]
 }
 
@@ -102,9 +102,9 @@ export function CardCounter({
   onCountChange,
   contextValue,
   onContextChange,
-  hostCardKey,
+  hostCardKeys,
   availableHostKeys,
-  onHostChange,
+  onHostsChange,
   multiplierStats,
 }: CardCounterProps) {
   const { t } = useTranslation()
@@ -115,15 +115,42 @@ export function CardCounter({
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
-            {getCardIconUrl(card.key) && (
-              <img src={getCardIconUrl(card.key)} alt="" className="shrink-0 h-5 w-5 rounded-sm" />
-            )}
+            {(() => {
+              const seen = new Set<string>()
+              const urls: string[] = []
+              for (const tag of card.tags) {
+                if (tag === 'alpine' || tag === 'woodland_edge') continue
+                const url = STAT_ICONS[tag]
+                if (url && !seen.has(url)) {
+                  seen.add(url)
+                  urls.push(url)
+                }
+              }
+              if (urls.length === 0) {
+                const fallback = getCardIconUrl(card.key)
+                if (fallback) urls.push(fallback)
+              }
+              return urls.length > 0 ? (
+                <div className="flex items-center gap-0.5 shrink-0">
+                  {urls.map((url, i) => (
+                    <img key={i} src={url} alt="" className="h-5 w-5 rounded-sm" />
+                  ))}
+                </div>
+              ) : null
+            })()}
             <span className="font-medium text-forest-800 text-sm truncate">
               {tc(`${card.key}.name`)}
             </span>
-            {card.expansion === 'alpine' && (
-              <span className="shrink-0 rounded-full bg-blue-100 px-1.5 py-0.5 text-[10px] font-medium text-blue-700">
-                {t('scoring.alpine')}
+            {card.expansion !== 'base' && card.expansion !== 'dartmoor_base' && (
+              <span
+                className={cn(
+                  'shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-medium',
+                  card.expansion === 'alpine' && 'bg-blue-100 text-blue-700',
+                  card.expansion === 'woodland' && 'bg-amber-100 text-amber-700',
+                  card.expansion === 'exploration' && 'bg-purple-100 text-purple-700',
+                )}
+              >
+                {t(`expansion.${card.expansion}`)}
               </span>
             )}
           </div>
@@ -228,22 +255,41 @@ export function CardCounter({
         </div>
       )}
 
-      {card.needsHostTreeContext && count > 0 && onHostChange && (
-        <div className="flex items-center justify-between gap-2 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
+      {card.needsHostTreeContext && count > 0 && onHostsChange && (
+        <div className="flex flex-col gap-1 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
           <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
           {availableHostKeys && availableHostKeys.length > 0 ? (
-            <select
-              value={hostCardKey ?? ''}
-              onChange={(e) => onHostChange(e.target.value || undefined)}
-              className="rounded-md bg-bark-100 px-2 py-1 text-xs text-bark-800 outline-none border border-bark-200 focus:border-bark-400"
-            >
-              <option value="">{t('wizard.selectHostTree')}</option>
-              {availableHostKeys.map((key) => (
-                <option key={key} value={key}>
-                  {tc(`${key}.name`)}
-                </option>
-              ))}
-            </select>
+            <div className="flex flex-col gap-1.5">
+              {Array.from({ length: count }).map((_, i) => {
+                const current = hostCardKeys?.[i] ?? ''
+                return (
+                  <div key={i} className="flex items-center justify-between gap-2">
+                    <span className="text-[11px] text-bark-500 tabular-nums">
+                      {count > 1 ? `#${i + 1}` : ''}
+                    </span>
+                    <select
+                      value={current}
+                      onChange={(e) => {
+                        const next = Array.from(
+                          { length: count },
+                          (_, idx) => hostCardKeys?.[idx] ?? '',
+                        )
+                        next[i] = e.target.value
+                        onHostsChange(next)
+                      }}
+                      className="flex-1 rounded-md bg-bark-100 px-2 py-1 text-xs text-bark-800 outline-none border border-bark-200 focus:border-bark-400"
+                    >
+                      <option value="">{t('wizard.selectHostTree')}</option>
+                      {availableHostKeys.map((key) => (
+                        <option key={key} value={key}>
+                          {tc(`${key}.name`)}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )
+              })}
+            </div>
           ) : (
             <span className="text-[10px] italic text-bark-400">{t('wizard.noHostTreeAvailable')}</span>
           )}

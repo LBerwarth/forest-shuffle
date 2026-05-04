@@ -11,6 +11,8 @@ import type { CardTag } from '@/types/card'
 type Mode = 'topScoring' | 'mostPoints' | 'mostPlayed' | 'bigPlays'
 
 const TAG_ORDER: readonly CardTag[] = [
+  'tree',
+  'shrub',
   'bird',
   'butterfly',
   'insect',
@@ -25,7 +27,6 @@ const TAG_ORDER: readonly CardTag[] = [
   'amphibian',
   'plant',
   'mushroom',
-  'shrub',
   'alpine',
   'woodland_edge',
 ] as const
@@ -119,44 +120,44 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
           ))}
         </div>
         {availableTags.length > 0 && (
-          <div className="flex gap-1 mb-2 overflow-x-auto scrollbar-hide">
-            <button
-              type="button"
-              onClick={() => setFilterTag(null)}
-              className={cn(
-                'rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-all shrink-0',
-                filterTag === null
-                  ? 'bg-forest-500 text-white'
-                  : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
-              )}
-            >
-              {t('leaderboard.allTags')}
-            </button>
-            {availableTags.map((tag) => {
-              const active = filterTag === tag
-              return (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => setFilterTag(active ? null : tag)}
-                  title={t(`tag.${tag}`)}
-                  aria-label={t(`tag.${tag}`)}
-                  className={cn(
-                    'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
-                    active
-                      ? 'ring-2 ring-forest-500 bg-forest-500'
-                      : 'bg-forest-100 hover:bg-forest-200',
-                  )}
-                >
-                  <img
-                    src={STAT_ICONS[tag]}
-                    alt=""
-                    className="h-5 w-5 rounded-full"
-                  />
-                </button>
-              )
-            })}
-          </div>
+        <div className="flex gap-1 mb-2 overflow-x-auto scrollbar-hide">
+          <button
+            type="button"
+            onClick={() => setFilterTag(null)}
+            className={cn(
+              'rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-all shrink-0',
+              filterTag === null
+                ? 'bg-forest-500 text-white'
+                : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
+            )}
+          >
+            {t('leaderboard.allTags')}
+          </button>
+          {availableTags.map((tag) => {
+            const active = filterTag === tag
+            return (
+              <button
+                key={tag}
+                type="button"
+                onClick={() => setFilterTag(active ? null : tag)}
+                title={t(`tag.${tag}`)}
+                aria-label={t(`tag.${tag}`)}
+                className={cn(
+                  'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
+                  active
+                    ? 'ring-2 ring-forest-500 bg-forest-500'
+                    : 'bg-forest-100 hover:bg-forest-200',
+                )}
+              >
+                <img
+                  src={STAT_ICONS[tag]}
+                  alt=""
+                  className="h-5 w-5 rounded-full"
+                />
+              </button>
+            )
+          })}
+        </div>
         )}
         <p className="text-[10px] text-forest-400 mb-2">{hint}</p>
         <div className="space-y-1.5">

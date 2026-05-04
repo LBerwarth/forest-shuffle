@@ -4,23 +4,7 @@
     "score": "Score",
     "history": "History",
     "stats": "Stats",
-    "rules": "Rules",
     "settings": "Settings"
-  },
-  "rules": {
-    "title": "Card rules",
-    "search": "Search cards",
-    "edition": "Edition",
-    "edition_all": "All",
-    "edition_classic": "Classic",
-    "edition_dartmoor": "Dartmoor",
-    "category": "Category",
-    "category_all": "All",
-    "exp_alpine": "Alpine",
-    "exp_woodland": "Woodland",
-    "exp_exploration": "Exploration",
-    "exp_dartmoor_base": "Dartmoor",
-    "noMatches": "No cards match your search."
   },
   "category": {
     "tree": "Trees",
@@ -213,7 +197,15 @@
     "mouse": "Mice",
     "rabbit": "Rabbits",
     "hoofed": "Hoofed",
-    "shrub": "Shrubs"
+    "shrub": "Shrubs",
+    "tree": "Trees"
+  },
+  "expansion": {
+    "base": "Base",
+    "alpine": "Alpine",
+    "woodland": "Woodland",
+    "exploration": "Exploration",
+    "dartmoor_base": "Dartmoor"
   },
   "settings": {
     "title": "Settings",

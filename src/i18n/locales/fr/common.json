@@ -4,23 +4,7 @@
     "score": "Score",
     "history": "Historique",
     "stats": "Stats",
-    "rules": "Règles",
     "settings": "Paramètres"
-  },
-  "rules": {
-    "title": "Règles des cartes",
-    "search": "Rechercher des cartes",
-    "edition": "Édition",
-    "edition_all": "Toutes",
-    "edition_classic": "Classique",
-    "edition_dartmoor": "Dartmoor",
-    "category": "Catégorie",
-    "category_all": "Toutes",
-    "exp_alpine": "Alpine",
-    "exp_woodland": "Lisière",
-    "exp_exploration": "Exploration",
-    "exp_dartmoor_base": "Dartmoor",
-    "noMatches": "Aucune carte ne correspond."
   },
   "category": {
     "tree": "Arbres",
@@ -213,7 +197,15 @@
     "mouse": "Souris",
     "rabbit": "Lapins",
     "hoofed": "Sabots",
-    "shrub": "Arbustes"
+    "shrub": "Arbustes",
+    "tree": "Arbres"
+  },
+  "expansion": {
+    "base": "Base",
+    "alpine": "Alpine",
+    "woodland": "Lisière",
+    "exploration": "Exploration",
+    "dartmoor_base": "Dartmoor"
   },
   "settings": {
     "title": "Param\u00e8tres",

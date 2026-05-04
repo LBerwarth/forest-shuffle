@@ -4,23 +4,7 @@
     "score": "Punkte",
     "history": "Verlauf",
     "stats": "Statistik",
-    "rules": "Regeln",
     "settings": "Einstellungen"
-  },
-  "rules": {
-    "title": "Kartenregeln",
-    "search": "Karten suchen",
-    "edition": "Edition",
-    "edition_all": "Alle",
-    "edition_classic": "Klassisch",
-    "edition_dartmoor": "Dartmoor",
-    "category": "Kategorie",
-    "category_all": "Alle",
-    "exp_alpine": "Alpin",
-    "exp_woodland": "Waldrand",
-    "exp_exploration": "Exploration",
-    "exp_dartmoor_base": "Dartmoor",
-    "noMatches": "Keine Karten gefunden."
   },
   "category": {
     "tree": "Bäume",
@@ -213,7 +197,15 @@
     "mouse": "Mäuse",
     "rabbit": "Kaninchen",
     "hoofed": "Huftiere",
-    "shrub": "Sträucher"
+    "shrub": "Sträucher",
+    "tree": "Bäume"
+  },
+  "expansion": {
+    "base": "Grundspiel",
+    "alpine": "Alpin",
+    "woodland": "Waldrand",
+    "exploration": "Exploration",
+    "dartmoor_base": "Dartmoor"
   },
   "settings": {
     "title": "Einstellungen",

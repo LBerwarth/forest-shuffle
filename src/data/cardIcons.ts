@@ -36,7 +36,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
 
   // Insects
   stag_beetle: 'insect', wood_ant: 'insect', violet_carpenter_bee: 'insect',
-  fireflies: 'insect', gnat: 'gnat', great_green_bush_cricket: 'insect',
+  fireflies: 'insect', gnat: 'insect', great_green_bush_cricket: 'insect',
   honey_bee: 'insect', bee_swarm: 'insect', crane_fly: 'insect',
 
   // Mushrooms
@@ -122,7 +122,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
   roe_deer_d: 'cloven_hoofed',
 
   // Insects
-  gnat_d: 'gnat', lake_fly: 'insect',
+  gnat_d: 'insect', lake_fly: 'insect',
 
   // Cave
   cave_d: 'cave', lonely_cave_d: 'cave',

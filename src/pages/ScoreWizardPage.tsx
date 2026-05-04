@@ -1,4 +1,4 @@
-import { useMemo, useCallback, useState, useRef } from 'react'
+import { useMemo, useCallback, useEffect, useState, useRef } from 'react'
 import { useNavigate, useParams, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Check, Search, X } from 'lucide-react'
@@ -13,7 +13,26 @@ import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { cn } from '@/lib/utils'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { getCardIconUrl } from '@/data/cardIcons'
+import { STAT_ICONS } from '@/assets/icons'
 import { getCategoryOrder } from '@/data/categories'
+import type { CardTag, Expansion } from '@/types/card'
+
+const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland'] as const
+
+const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
+  base: null,
+  alpine: 'alpine',
+  woodland: 'woodland_edge',
+  exploration: null,
+  dartmoor_base: null,
+}
+
+const TAG_ORDER: readonly CardTag[] = [
+  'tree', 'shrub',
+  'bird', 'butterfly', 'insect', 'dragonfly', 'bat', 'mouse',
+  'pawed', 'cloven_hoofed', 'hoofed', 'deer',
+  'amphibian', 'plant', 'mushroom',
+] as const
 
 const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave'] as const
 const DARTMOOR_SPECIAL_CAVE_KEYS = ['lonely_cave_d'] as const
@@ -54,6 +73,13 @@ export function ScoreWizardPage() {
   const tc = useTranslation('cards').t
 
   const [cardSearch, setCardSearch] = useState('')
+  const [tagFilter, setTagFilter] = useState<CardTag | null>(null)
+  const [expansionFilter, setExpansionFilter] = useState<Expansion | null>(null)
+
+  useEffect(() => {
+    setTagFilter(null)
+    setExpansionFilter(null)
+  }, [currentStep])
 
   const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
   const hasExploration = edition === 'classic' && expansions.includes('exploration')
@@ -85,20 +111,39 @@ export function ScoreWizardPage() {
     countsSnapshotRef.current = currentPlayer ? { ...currentPlayer.cardCounts } : {}
   }
 
+  const availableStepTags = useMemo<CardTag[]>(() => {
+    const present = new Set<CardTag>()
+    for (const c of stepCards) for (const tag of c.tags) present.add(tag)
+    return TAG_ORDER.filter((tag) => present.has(tag) && STAT_ICONS[tag])
+  }, [stepCards])
+
+  const availableStepExpansions = useMemo<Expansion[]>(() => {
+    const present = new Set<Expansion>()
+    for (const c of stepCards) present.add(c.expansion)
+    return EXPANSION_ORDER.filter((exp) => present.has(exp))
+  }, [stepCards])
+
   const filteredCards = useMemo(() => {
-    const cards = cardSearch.trim()
-      ? stepCards.filter(card => {
-          const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-          return tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)
-        })
-      : stepCards
+    let cards = stepCards
+    if (cardSearch.trim()) {
+      const query = cardSearch.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      cards = cards.filter(card =>
+        tc(`${card.key}.name`).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query),
+      )
+    }
+    if (tagFilter) {
+      cards = cards.filter(card => card.tags.includes(tagFilter))
+    }
+    if (expansionFilter) {
+      cards = cards.filter(card => card.expansion === expansionFilter)
+    }
     const snapshot = countsSnapshotRef.current
     return [...cards].sort((a, b) => {
       const aHas = (snapshot[a.key] || 0) > 0 ? 0 : 1
       const bHas = (snapshot[b.key] || 0) > 0 ? 0 : 1
       return aHas - bHas
     })
-  }, [stepCards, cardSearch, tc, currentStep])
+  }, [stepCards, cardSearch, tagFilter, expansionFilter, tc, currentStep])
 
   const selectedSpecialCave = useMemo(() => {
     if (!currentPlayer) return null
@@ -264,6 +309,77 @@ export function ScoreWizardPage() {
             )}
           </div>
 
+          {/* Tag + expansion filter chips */}
+          {(availableStepTags.length > 0 || availableStepExpansions.length > 0) && (
+            <div className="flex gap-1 overflow-x-auto scrollbar-hide pb-1">
+              <button
+                type="button"
+                onClick={() => {
+                  setTagFilter(null)
+                  setExpansionFilter(null)
+                }}
+                className={cn(
+                  'rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-all shrink-0',
+                  tagFilter === null && expansionFilter === null
+                    ? 'bg-forest-500 text-white'
+                    : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
+                )}
+              >
+                {t('leaderboard.allTags')}
+              </button>
+              {availableStepTags.map((tag) => {
+                const active = tagFilter === tag
+                return (
+                  <button
+                    key={`tag-${tag}`}
+                    type="button"
+                    onClick={() => setTagFilter(active ? null : tag)}
+                    title={t(`tag.${tag}`)}
+                    aria-label={t(`tag.${tag}`)}
+                    className={cn(
+                      'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
+                      active
+                        ? 'ring-2 ring-forest-500 bg-forest-500'
+                        : 'bg-forest-100 hover:bg-forest-200',
+                    )}
+                  >
+                    <img
+                      src={STAT_ICONS[tag]}
+                      alt=""
+                      className="h-5 w-5 rounded-full"
+                    />
+                  </button>
+                )
+              })}
+              {availableStepExpansions.map((exp) => {
+                const iconKey = EXPANSION_ICON_KEY[exp]
+                if (!iconKey) return null
+                const active = expansionFilter === exp
+                return (
+                  <button
+                    key={`exp-${exp}`}
+                    type="button"
+                    onClick={() => setExpansionFilter(active ? null : exp)}
+                    title={t(`expansion.${exp}`)}
+                    aria-label={t(`expansion.${exp}`)}
+                    className={cn(
+                      'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
+                      active
+                        ? 'ring-2 ring-forest-500 bg-forest-500'
+                        : 'bg-forest-100 hover:bg-forest-200',
+                    )}
+                  >
+                    <img
+                      src={STAT_ICONS[iconKey]}
+                      alt=""
+                      className="h-5 w-5 rounded-full"
+                    />
+                  </button>
+                )
+              })}
+            </div>
+          )}
+
           {/* Special cave selector */}
           {isCaveStep && hasSpecialCaves && (
             <div className="rounded-xl border border-forest-200 bg-white p-3 mb-1">
@@ -330,12 +446,12 @@ export function ScoreWizardPage() {
                       setCardMetadata(currentPlayer.playerId, card.key, { contextValue: value })
                   : undefined
               }
-              hostCardKey={currentPlayer.cardMetadata[card.key]?.hostCardKey}
+              hostCardKeys={currentPlayer.cardMetadata[card.key]?.hostCardKeys}
               availableHostKeys={card.needsHostTreeContext ? availableHostKeys : undefined}
-              onHostChange={
+              onHostsChange={
                 card.needsHostTreeContext
-                  ? (key) =>
-                      setCardMetadata(currentPlayer.playerId, card.key, { hostCardKey: key })
+                  ? (next) =>
+                      setCardMetadata(currentPlayer.playerId, card.key, { hostCardKeys: next })
                   : undefined
               }
               multiplierStats={forestContext ? getMultiplierStats(card.key, forestContext, edition) : undefined}

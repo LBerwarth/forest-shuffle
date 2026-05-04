@@ -29,8 +29,8 @@ export interface CardMetadata {
   count: number
   /** Answer to context question if applicable (e.g., "on beech?" true/false) */
   contextValue?: number
-  /** Card key of the tree this card is attached to (for cards like Violet Carpenter Bee) */
-  hostCardKey?: string
+  /** Per-instance host tree keys (one entry per card copy). Empty string = not set. */
+  hostCardKeys?: string[]
 }
 
 export interface ScoreEntry {

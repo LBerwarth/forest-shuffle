@@ -7,7 +7,6 @@ import cave from './cave.svg'
 import cloven_hoofed from './cloven_hoofed.svg'
 import deer from './deer.svg'
 import dragonfly from './dragonfly.svg'
-import gnat from './gnat.svg'
 import hare from './hare.svg'
 import insect from './insect.svg'
 import moor from './moor.svg'
@@ -29,7 +28,6 @@ export const STAT_ICONS: Record<string, string> = {
   cloven_hoofed,
   deer,
   dragonfly,
-  gnat,
   hare,
   hoofed: cloven_hoofed,
   insect,

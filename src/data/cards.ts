@@ -5,22 +5,22 @@ export const CARDS: CardDefinition[] = [
   // ============================================================
   // TREES
   // ============================================================
-  { key: 'birch', category: 'tree', tags: [], expansion: 'base', scoringType: 'fixed' },
-  { key: 'beech', category: 'tree', tags: [], expansion: 'base', scoringType: 'threshold' },
-  { key: 'douglas_fir', category: 'tree', tags: [], expansion: 'base', scoringType: 'fixed' },
-  { key: 'oak', category: 'tree', tags: [], expansion: 'base', scoringType: 'threshold' },
-  { key: 'horse_chestnut', category: 'tree', tags: [], expansion: 'base', scoringType: 'set' },
-  { key: 'linden', category: 'tree', tags: [], expansion: 'base', scoringType: 'comparison' },
-  { key: 'sycamore', category: 'tree', tags: [], expansion: 'base', scoringType: 'per_card' },
-  { key: 'silver_fir', category: 'tree', tags: [], expansion: 'base', scoringType: 'custom', needsContext: true },
+  { key: 'birch', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'fixed' },
+  { key: 'beech', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'threshold' },
+  { key: 'douglas_fir', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'fixed' },
+  { key: 'oak', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'threshold' },
+  { key: 'horse_chestnut', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'set' },
+  { key: 'linden', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'comparison' },
+  { key: 'sycamore', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'per_card' },
+  { key: 'silver_fir', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'custom', needsContext: true },
   // Alpine trees
-  { key: 'european_larch', category: 'tree', tags: ['alpine'], expansion: 'alpine', scoringType: 'fixed' },
-  { key: 'stone_pine', category: 'tree', tags: ['alpine'], expansion: 'alpine', scoringType: 'per_tag' },
+  { key: 'european_larch', category: 'tree', tags: ['tree', 'alpine'], expansion: 'alpine', scoringType: 'fixed' },
+  { key: 'stone_pine', category: 'tree', tags: ['tree', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
   // Woodland trees
-  { key: 'palm_tree', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'turkey_oak', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'o_christmas_tree', category: 'tree', tags: ['woodland_edge'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
-  { key: 'tree_sapling', category: 'tree', tags: [], expansion: 'base', scoringType: 'fixed' },
+  { key: 'palm_tree', category: 'tree', tags: ['tree', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'turkey_oak', category: 'tree', tags: ['tree', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'o_christmas_tree', category: 'tree', tags: ['tree', 'woodland_edge'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
+  { key: 'tree_sapling', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'fixed' },
   // Woodland shrubs (count as trees for card slots, but NOT for tree counts)
   { key: 'common_hazel', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'elderberry', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },

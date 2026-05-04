@@ -4,12 +4,12 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   // TREES (6)
   // ============================================================
-  { key: 'ash', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
-  { key: 'black_alder', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
-  { key: 'crab_apple', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
-  { key: 'goat_willow', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
-  { key: 'moor_birch', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
-  { key: 'sessile_oak', category: 'tree', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
+  { key: 'ash', category: 'tree', tags: ['tree'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
+  { key: 'black_alder', category: 'tree', tags: ['tree'], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'crab_apple', category: 'tree', tags: ['tree'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
+  { key: 'goat_willow', category: 'tree', tags: ['tree'], expansion: 'dartmoor_base', scoringType: 'per_card' },
+  { key: 'moor_birch', category: 'tree', tags: ['tree'], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'sessile_oak', category: 'tree', tags: ['tree'], expansion: 'dartmoor_base', scoringType: 'per_card' },
 
   // SHRUBS (2) — category 'tree', score 0
   { key: 'common_hazel_d', category: 'tree', tags: ['shrub'], expansion: 'dartmoor_base', scoringType: 'fixed' },

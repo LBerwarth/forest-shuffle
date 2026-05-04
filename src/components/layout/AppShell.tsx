@@ -1,5 +1,5 @@
 import { Outlet, NavLink, useLocation } from 'react-router-dom'
-import { Home, Calculator, History, BarChart3, BookOpen, Settings } from 'lucide-react'
+import { Home, Calculator, History, BarChart3, Settings } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { InstallBanner } from '@/components/InstallBanner'
@@ -9,7 +9,6 @@ const navItems = [
   { to: '/new-game', icon: Calculator, key: 'nav.score' },
   { to: '/history', icon: History, key: 'nav.history' },
   { to: '/leaderboard', icon: BarChart3, key: 'nav.stats' },
-  { to: '/rules', icon: BookOpen, key: 'nav.rules' },
   { to: '/settings', icon: Settings, key: 'nav.settings' },
 ] as const
 
