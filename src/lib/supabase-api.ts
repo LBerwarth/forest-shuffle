@@ -339,3 +339,36 @@ export async function updateLivePlayerStatus(
     .eq('player_id', playerId)
   if (error) throw error
 }
+
+// ─── Global Hall of Fame (cross-device) ────────────────────────────────────
+
+export interface GlobalGamePlayerRow {
+  player_name: string
+  total_score: number
+  is_winner: boolean
+  score_breakdown: ScoreBreakdown | null
+  played_at: string
+}
+
+export async function fetchGlobalGamePlayers(): Promise<GlobalGamePlayerRow[]> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { data, error } = await supabase
+    .from('game_players')
+    .select(`
+      player_name,
+      total_score,
+      is_winner,
+      score_breakdown,
+      games!inner ( played_at )
+    `)
+    .order('total_score', { ascending: false })
+    .limit(500)
+  if (error) throw error
+  return (data ?? []).map((row: any) => ({
+    player_name: row.player_name,
+    total_score: row.total_score,
+    is_winner: row.is_winner,
+    score_breakdown: row.score_breakdown as ScoreBreakdown | null,
+    played_at: row.games?.played_at ?? '',
+  }))
+}

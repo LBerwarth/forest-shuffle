@@ -23,6 +23,7 @@ import { PlayerStrategies } from '@/components/stats/PlayerStrategies'
 import { CardAnalytics } from '@/components/stats/CardAnalytics'
 import { TagInsights } from '@/components/stats/TagInsights'
 import { Records } from '@/components/stats/Records'
+import { HallOfFame } from '@/components/stats/HallOfFame'
 
 export function LeaderboardPage() {
   const { t } = useTranslation()
@@ -128,6 +129,7 @@ export function LeaderboardPage() {
               <CardAnalytics cards={cardAggregates} />
               <TagInsights tags={tagAggregates} />
               <Records aggregatedPlayers={aggregatedPlayers} cardAggregates={cardAggregates} />
+              <HallOfFame />
             </>
           )}
         </>

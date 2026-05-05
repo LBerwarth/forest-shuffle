@@ -381,6 +381,83 @@ export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
   return result
 }
 
+export interface HallOfFameRecord {
+  playerName: string
+  value: number
+  detail?: string
+  playedAt: string
+}
+
+export interface HallOfFame {
+  topGameScore: HallOfFameRecord | null
+  topCardScore: (HallOfFameRecord & { cardKey: string }) | null
+  mostWins: { playerName: string; wins: number } | null
+  totalGames: number
+  totalPlayers: number
+}
+
+export function aggregateHallOfFame(
+  rows: ReadonlyArray<{
+    player_name: string
+    total_score: number
+    is_winner: boolean
+    score_breakdown: { entries?: { cardKey: string; points: number }[] } | null
+    played_at: string
+  }>,
+): HallOfFame {
+  if (rows.length === 0) {
+    return {
+      topGameScore: null,
+      topCardScore: null,
+      mostWins: null,
+      totalGames: 0,
+      totalPlayers: 0,
+    }
+  }
+  const top = rows[0]!
+  const topGameScore: HallOfFameRecord = {
+    playerName: top.player_name,
+    value: top.total_score,
+    playedAt: top.played_at,
+  }
+
+  let topCardScore: (HallOfFameRecord & { cardKey: string }) | null = null
+  const winsByName = new Map<string, number>()
+  const seenGames = new Set<string>()
+  let totalGames = 0
+  for (const row of rows) {
+    if (row.is_winner) {
+      winsByName.set(row.player_name, (winsByName.get(row.player_name) ?? 0) + 1)
+    }
+    const key = `${row.player_name}|${row.played_at}|${row.total_score}`
+    if (!seenGames.has(key)) {
+      seenGames.add(key)
+      totalGames++
+    }
+    const entries = row.score_breakdown?.entries ?? []
+    for (const e of entries) {
+      if (e.cardKey.startsWith('_')) continue
+      if (!topCardScore || e.points > topCardScore.value) {
+        topCardScore = {
+          playerName: row.player_name,
+          value: e.points,
+          cardKey: e.cardKey,
+          playedAt: row.played_at,
+        }
+      }
+    }
+  }
+
+  let mostWins: { playerName: string; wins: number } | null = null
+  for (const [name, wins] of winsByName) {
+    if (!mostWins || wins > mostWins.wins) mostWins = { playerName: name, wins }
+  }
+
+  const totalPlayers = new Set(rows.map((r) => r.player_name)).size
+
+  return { topGameScore, topCardScore, mostWins, totalGames, totalPlayers }
+}
+
 export interface AtAGlanceMetrics {
   totalGames: number
   avgScore: number
