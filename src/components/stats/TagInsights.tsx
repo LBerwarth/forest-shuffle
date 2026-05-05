@@ -6,9 +6,10 @@ import type { TagAggregate } from '@/lib/stats'
 
 interface TagInsightsProps {
   tags: TagAggregate[]
+  singleGame?: boolean
 }
 
-export function TagInsights({ tags }: TagInsightsProps) {
+export function TagInsights({ tags, singleGame = false }: TagInsightsProps) {
   const { t } = useTranslation()
 
   if (tags.length === 0) {
@@ -50,11 +51,13 @@ export function TagInsights({ tags }: TagInsightsProps) {
                   <p className="text-xs font-medium text-forest-700 truncate">
                     {t(`tag.${row.tag}`)}
                   </p>
-                  <p className="text-[10px] text-forest-400">
-                    {t('leaderboard.tagInsightsSubline', {
-                      games: row.playerGames,
-                      cards: row.totalCards,
-                    })}
+                  <p className="text-[10px] text-forest-400 truncate">
+                    {singleGame
+                      ? row.byPlayer.map((p) => `${p.playerName} (${p.points})`).join(' · ')
+                      : t('leaderboard.tagInsightsSubline', {
+                          games: row.playerGames,
+                          cards: row.totalCards,
+                        })}
                   </p>
                 </div>
                 <span className="flex items-center gap-0.5 text-sm font-bold text-forest-600 tabular-nums shrink-0">

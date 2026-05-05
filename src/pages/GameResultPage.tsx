@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Home, RotateCcw, Settings, Loader2, ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ResultsDisplay } from '@/components/scoring/ResultsDisplay'
+import { GameInsights } from '@/components/scoring/GameInsights'
 import { useScoringStore } from '@/store/scoring-store'
 import { useCreateGame } from '@/hooks/use-games'
 import { recalcPlayer } from '@/lib/scoring/recalc'
@@ -77,6 +78,8 @@ export function GameResultPage() {
       </div>
 
       <ResultsDisplay rankedPlayers={rankedPlayers} edition={edition} />
+
+      <GameInsights rankedPlayers={rankedPlayers} />
 
       {/* Save status */}
       {createGameMutation.isPending && (

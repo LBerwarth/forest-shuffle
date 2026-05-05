@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Home, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ResultsDisplay, type RankedPlayer } from '@/components/scoring/ResultsDisplay'
+import { GameInsights } from '@/components/scoring/GameInsights'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { recalcPlayer } from '@/lib/scoring/recalc'
@@ -104,6 +105,8 @@ export function LiveResultPage() {
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-8">
       <ResultsDisplay rankedPlayers={rankedPlayers} edition={session?.edition ?? 'classic'} />
+
+      <GameInsights rankedPlayers={rankedPlayers} />
 
       {/* Save status */}
       {createGameMutation.isPending && (

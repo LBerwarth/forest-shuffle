@@ -33,9 +33,10 @@ const TAG_ORDER: readonly CardTag[] = [
 
 interface CardAnalyticsProps {
   cards: CardAggregate[]
+  singleGame?: boolean
 }
 
-export function CardAnalytics({ cards }: CardAnalyticsProps) {
+export function CardAnalytics({ cards, singleGame = false }: CardAnalyticsProps) {
   const { t, i18n } = useTranslation()
   const tc = useTranslation('cards').t
   const [mode, setMode] = useState<Mode>('topScoring')
@@ -174,7 +175,7 @@ export function CardAnalytics({ cards }: CardAnalyticsProps) {
                 )}
                 <div className="flex-1 min-w-0">
                   <p className="text-xs font-medium text-forest-700 truncate">{name}</p>
-                  <CardSubline mode={mode} card={c} lang={i18n.language} />
+                  <CardSubline mode={mode} card={c} lang={i18n.language} singleGame={singleGame} />
                 </div>
                 <CardPrimary mode={mode} card={c} />
               </div>
@@ -208,8 +209,29 @@ function CardPrimary({ mode, card }: { mode: Mode; card: CardAggregate }) {
   )
 }
 
-function CardSubline({ mode, card, lang }: { mode: Mode; card: CardAggregate; lang: string }) {
+function CardSubline({
+  mode,
+  card,
+  lang,
+  singleGame,
+}: {
+  mode: Mode
+  card: CardAggregate
+  lang: string
+  singleGame: boolean
+}) {
   const { t } = useTranslation()
+  if (singleGame) {
+    if (mode === 'bigPlays' && card.maxBy) {
+      return (
+        <p className="text-[10px] text-forest-400 truncate">{card.maxBy.playerName}</p>
+      )
+    }
+    const names = card.byPlayer.map((p) => `${p.playerName} (${p.points})`).join(' · ')
+    return (
+      <p className="text-[10px] text-forest-400 truncate">{names}</p>
+    )
+  }
   if (mode === 'topScoring') {
     return (
       <p className="text-[10px] text-forest-400">

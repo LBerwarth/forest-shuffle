@@ -174,6 +174,7 @@ export interface CardAggregate {
   avgPointsPerAppearance: number
   maxPointsSingle: number
   maxBy: { playerName: string; gameId: string; playedAt: string } | null
+  byPlayer: { playerName: string; count: number; points: number }[]
 }
 
 export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
@@ -185,6 +186,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
       totalPoints: number
       maxPointsSingle: number
       maxBy: { playerName: string; gameId: string; playedAt: string } | null
+      byPlayer: Map<string, { count: number; points: number }>
     }
   >()
 
@@ -204,6 +206,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
             totalPoints: 0,
             maxPointsSingle: 0,
             maxBy: null,
+            byPlayer: new Map(),
           }
           map.set(e.cardKey, entry)
         }
@@ -217,6 +220,10 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
             playedAt: g.played_at,
           }
         }
+        const pe = entry.byPlayer.get(p.player_name) ?? { count: 0, points: 0 }
+        pe.count += e.count
+        pe.points += e.points
+        entry.byPlayer.set(p.player_name, pe)
       }
     }
   }
@@ -235,6 +242,9 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
           : 0,
       maxPointsSingle: entry.maxPointsSingle,
       maxBy: entry.maxBy,
+      byPlayer: [...entry.byPlayer.entries()]
+        .map(([playerName, v]) => ({ playerName, ...v }))
+        .sort((a, b) => b.points - a.points),
     })
   }
   return result
@@ -331,12 +341,18 @@ export interface TagAggregate {
   totalPoints: number
   playerGames: number
   avgPointsPerPlayerGame: number
+  byPlayer: { playerName: string; cards: number; points: number }[]
 }
 
 export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
   const map = new Map<
     CardTag,
-    { totalCards: number; totalPoints: number; playerGames: number }
+    {
+      totalCards: number
+      totalPoints: number
+      playerGames: number
+      byPlayer: Map<string, { cards: number; points: number }>
+    }
   >()
 
   for (const g of games) {
@@ -359,10 +375,16 @@ export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
         }
       }
       for (const [tag, acc] of perTag) {
-        const overall = map.get(tag) ?? { totalCards: 0, totalPoints: 0, playerGames: 0 }
+        const overall =
+          map.get(tag) ??
+          { totalCards: 0, totalPoints: 0, playerGames: 0, byPlayer: new Map() }
         overall.totalCards += acc.cards
         overall.totalPoints += acc.points
         overall.playerGames += 1
+        const pe = overall.byPlayer.get(p.player_name) ?? { cards: 0, points: 0 }
+        pe.cards += acc.cards
+        pe.points += acc.points
+        overall.byPlayer.set(p.player_name, pe)
         map.set(tag, overall)
       }
     }
@@ -378,6 +400,9 @@ export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
       playerGames: acc.playerGames,
       avgPointsPerPlayerGame:
         Math.round((acc.totalPoints / acc.playerGames) * 10) / 10,
+      byPlayer: [...acc.byPlayer.entries()]
+        .map(([playerName, v]) => ({ playerName, ...v }))
+        .sort((a, b) => b.points - a.points),
     })
   }
   result.sort((a, b) => b.avgPointsPerPlayerGame - a.avgPointsPerPlayerGame)
