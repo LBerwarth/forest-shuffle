@@ -348,6 +348,7 @@ export interface GlobalGamePlayerRow {
   is_winner: boolean
   score_breakdown: ScoreBreakdown | null
   played_at: string
+  player_count: number
 }
 
 export async function fetchGlobalGamePlayers(): Promise<GlobalGamePlayerRow[]> {
@@ -359,7 +360,7 @@ export async function fetchGlobalGamePlayers(): Promise<GlobalGamePlayerRow[]> {
       total_score,
       is_winner,
       score_breakdown,
-      games!inner ( played_at )
+      games!inner ( played_at, player_count )
     `)
     .order('total_score', { ascending: false })
     .limit(500)
@@ -370,5 +371,6 @@ export async function fetchGlobalGamePlayers(): Promise<GlobalGamePlayerRow[]> {
     is_winner: row.is_winner,
     score_breakdown: row.score_breakdown as ScoreBreakdown | null,
     played_at: row.games?.played_at ?? '',
+    player_count: row.games?.player_count ?? 0,
   }))
 }

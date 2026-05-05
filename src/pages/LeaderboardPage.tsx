@@ -14,6 +14,7 @@ import {
   type EditionFilter,
   type TimeFilter,
   type PlayerMatchMode,
+  type PlayerCountFilter,
 } from '@/lib/stats'
 import { StatsFilters } from '@/components/stats/StatsFilters'
 import { PlayerFilter } from '@/components/stats/PlayerFilter'
@@ -35,6 +36,7 @@ export function LeaderboardPage() {
   const [time, setTime] = useState<TimeFilter>('all')
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
   const [matchMode, setMatchMode] = useState<PlayerMatchMode>('union')
+  const [playerCount, setPlayerCount] = useState<PlayerCountFilter>('all')
 
   const allPlayersEver = useMemo(
     () => aggregatePlayers(games, localPlayers),
@@ -42,8 +44,8 @@ export function LeaderboardPage() {
   )
 
   const filteredGames = useMemo(
-    () => applyFilters(games, edition, time, selectedPlayerIds, matchMode),
-    [games, edition, time, selectedPlayerIds, matchMode],
+    () => applyFilters(games, edition, time, selectedPlayerIds, matchMode, playerCount),
+    [games, edition, time, selectedPlayerIds, matchMode, playerCount],
   )
 
   const aggregatedPlayers = useMemo(
@@ -69,7 +71,7 @@ export function LeaderboardPage() {
   const atAGlance = useMemo(() => computeAtAGlance(filteredGames), [filteredGames])
 
   const hasAnyGames = games.length > 0
-  const filtersActive = edition !== 'all' || time !== 'all' || selectedPlayerIds.length > 0
+  const filtersActive = edition !== 'all' || time !== 'all' || selectedPlayerIds.length > 0 || playerCount !== 'all'
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-4 pb-6">
@@ -92,8 +94,10 @@ export function LeaderboardPage() {
           <StatsFilters
             edition={edition}
             time={time}
+            playerCount={playerCount}
             onEditionChange={setEdition}
             onTimeChange={setTime}
+            onPlayerCountChange={setPlayerCount}
           />
           <PlayerFilter
             players={allPlayersEver}
@@ -114,6 +118,7 @@ export function LeaderboardPage() {
                     setEdition('all')
                     setTime('all')
                     setSelectedPlayerIds([])
+                    setPlayerCount('all')
                   }}
                   className="rounded-full bg-forest-100 px-4 py-1.5 text-xs font-medium text-forest-600 hover:bg-forest-200"
                 >
@@ -129,9 +134,11 @@ export function LeaderboardPage() {
               <CardAnalytics cards={cardAggregates} />
               <TagInsights tags={tagAggregates} />
               <Records aggregatedPlayers={aggregatedPlayers} cardAggregates={cardAggregates} />
-              <HallOfFame />
             </>
           )}
+
+          {/* Hall of Fame is global — always render regardless of local data */}
+          <HallOfFame playerCount={playerCount} />
         </>
       )}
     </div>

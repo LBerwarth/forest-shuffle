@@ -5,17 +5,25 @@ import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { getCardIconUrl } from '@/data/cardIcons'
 import { useHallOfFame } from '@/hooks/use-hall-of-fame'
-import { aggregateHallOfFame } from '@/lib/stats'
+import { aggregateHallOfFame, type PlayerCountFilter } from '@/lib/stats'
 
-export function HallOfFame() {
+interface HallOfFameProps {
+  playerCount: PlayerCountFilter
+}
+
+export function HallOfFame({ playerCount }: HallOfFameProps) {
   const { t, i18n } = useTranslation()
   const tc = useTranslation('cards').t
   const { data, isLoading, isError } = useHallOfFame()
 
-  const records = useMemo(
-    () => aggregateHallOfFame(data ?? []),
-    [data],
-  )
+  const records = useMemo(() => {
+    const rows = data ?? []
+    const filtered =
+      playerCount === 'all'
+        ? rows
+        : rows.filter((r) => r.player_count === playerCount)
+    return aggregateHallOfFame(filtered)
+  }, [data, playerCount])
 
   if (isLoading) {
     return (
@@ -34,7 +42,25 @@ export function HallOfFame() {
     )
   }
 
-  if (isError || records.totalGames === 0) return null
+  if (isError) return null
+
+  if (records.totalGames === 0) {
+    return (
+      <Card className="mb-4">
+        <CardHeader>
+          <h2 className="font-heading text-base font-semibold text-forest-700 flex items-center gap-1.5">
+            <Trophy className="h-4 w-4 text-amber-500" />
+            {t('leaderboard.hallOfFame')}
+          </h2>
+        </CardHeader>
+        <CardContent>
+          <p className="text-xs text-forest-400 text-center py-4">
+            {t('leaderboard.hallOfFameEmpty')}
+          </p>
+        </CardContent>
+      </Card>
+    )
+  }
 
   const formatDate = (iso: string) =>
     iso
