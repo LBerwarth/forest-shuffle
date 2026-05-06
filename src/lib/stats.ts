@@ -170,6 +170,7 @@ export interface CardAggregate {
   category: CardCategory
   tags: readonly CardTag[]
   appearances: number
+  totalCount: number
   totalPoints: number
   avgPointsPerAppearance: number
   maxPointsSingle: number
@@ -183,6 +184,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
     {
       category: CardCategory
       appearances: number
+      totalCount: number
       totalPoints: number
       maxPointsSingle: number
       maxBy: { playerName: string; gameId: string; playedAt: string } | null
@@ -203,6 +205,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
           entry = {
             category: e.cardCategory,
             appearances: 0,
+            totalCount: 0,
             totalPoints: 0,
             maxPointsSingle: 0,
             maxBy: null,
@@ -211,6 +214,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
           map.set(e.cardKey, entry)
         }
         entry.appearances++
+        entry.totalCount += e.count
         entry.totalPoints += e.points
         if (e.points > entry.maxPointsSingle) {
           entry.maxPointsSingle = e.points
@@ -235,6 +239,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
       category: entry.category,
       tags: CARD_TAGS_BY_KEY.get(cardKey) ?? [],
       appearances: entry.appearances,
+      totalCount: entry.totalCount,
       totalPoints: entry.totalPoints,
       avgPointsPerAppearance:
         entry.appearances > 0
@@ -380,7 +385,9 @@ export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
           { totalCards: 0, totalPoints: 0, playerGames: 0, byPlayer: new Map() }
         overall.totalCards += acc.cards
         overall.totalPoints += acc.points
-        overall.playerGames += 1
+        // Only count this player-game toward the avg-denominator if the tag
+        // actually scored — holding a 0-point card shouldn't dilute the avg.
+        if (acc.points > 0) overall.playerGames += 1
         const pe = overall.byPlayer.get(p.player_name) ?? { cards: 0, points: 0 }
         pe.cards += acc.cards
         pe.points += acc.points

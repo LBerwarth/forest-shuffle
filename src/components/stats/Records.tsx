@@ -1,15 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
-import type { AggregatedPlayer, CardAggregate } from '@/lib/stats'
+import type { AggregatedPlayer } from '@/lib/stats'
 
 interface RecordsProps {
   aggregatedPlayers: AggregatedPlayer[]
-  cardAggregates: CardAggregate[]
 }
 
-export function Records({ aggregatedPlayers, cardAggregates }: RecordsProps) {
+export function Records({ aggregatedPlayers }: RecordsProps) {
   const { t } = useTranslation()
-  const tc = useTranslation('cards').t
 
   if (aggregatedPlayers.length === 0) return null
 
@@ -18,9 +16,6 @@ export function Records({ aggregatedPlayers, cardAggregates }: RecordsProps) {
   const highestAvg = [...aggregatedPlayers].sort((a, b) => b.avgScore - a.avgScore)[0]
   const longestStreak = [...aggregatedPlayers].sort(
     (a, b) => b.longestStreak - a.longestStreak,
-  )[0]
-  const bestCard = [...cardAggregates].sort(
-    (a, b) => b.maxPointsSingle - a.maxPointsSingle,
   )[0]
 
   return (
@@ -51,12 +46,6 @@ export function Records({ aggregatedPlayers, cardAggregates }: RecordsProps) {
             <Row
               label={t('leaderboard.longestStreak')}
               value={`${longestStreak.name} (${longestStreak.longestStreak})`}
-            />
-          )}
-          {bestCard && bestCard.maxBy && (
-            <Row
-              label={t('leaderboard.bestSingleCard')}
-              value={`${tc(`${bestCard.cardKey}.name`)} — ${bestCard.maxBy.playerName} (${bestCard.maxPointsSingle})`}
             />
           )}
         </div>

@@ -351,9 +351,11 @@ export interface GlobalGamePlayerRow {
   player_count: number
 }
 
-export async function fetchGlobalGamePlayers(): Promise<GlobalGamePlayerRow[]> {
+export async function fetchGlobalGamePlayers(
+  playerCount?: number,
+): Promise<GlobalGamePlayerRow[]> {
   if (!supabase) throw new Error('Supabase not configured')
-  const { data, error } = await supabase
+  let query = supabase
     .from('game_players')
     .select(`
       player_name,
@@ -364,6 +366,10 @@ export async function fetchGlobalGamePlayers(): Promise<GlobalGamePlayerRow[]> {
     `)
     .order('total_score', { ascending: false })
     .limit(500)
+  if (playerCount !== undefined) {
+    query = query.eq('games.player_count', playerCount)
+  }
+  const { data, error } = await query
   if (error) throw error
   return (data ?? []).map((row: any) => ({
     player_name: row.player_name,

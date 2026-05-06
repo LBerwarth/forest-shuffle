@@ -141,7 +141,7 @@ export function LeaderboardPage() {
               <CardAnalytics cards={cardAggregates} />
               <TagInsights tags={tagAggregates} />
               <TagSynergies rows={tagSynergies} />
-              <Records aggregatedPlayers={aggregatedPlayers} cardAggregates={cardAggregates} />
+              <Records aggregatedPlayers={aggregatedPlayers} />
             </>
           )}
 

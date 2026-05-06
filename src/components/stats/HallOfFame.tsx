@@ -14,16 +14,11 @@ interface HallOfFameProps {
 export function HallOfFame({ playerCount }: HallOfFameProps) {
   const { t, i18n } = useTranslation()
   const tc = useTranslation('cards').t
-  const { data, isLoading, isError } = useHallOfFame()
+  const { data, isLoading, isError } = useHallOfFame(
+    playerCount === 'all' ? undefined : playerCount,
+  )
 
-  const records = useMemo(() => {
-    const rows = data ?? []
-    const filtered =
-      playerCount === 'all'
-        ? rows
-        : rows.filter((r) => r.player_count === playerCount)
-    return aggregateHallOfFame(filtered)
-  }, [data, playerCount])
+  const records = useMemo(() => aggregateHallOfFame(data ?? []), [data])
 
   if (isLoading) {
     return (

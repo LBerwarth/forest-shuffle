@@ -178,8 +178,12 @@
     "tagInsightsSubline": "in {{games}} Spieler-Partien · {{cards}} Karten",
     "noTagData": "Spiele mehr Partien für Tag-Einblicke.",
     "tagSynergies": "Tag-Synergien",
-    "tagSynergiesHint": "Punkte von Karten, die mit jedem Tag skalieren",
+    "tagSynergiesHint": "Punkte von Karten, die mit jedem Tag skalieren (Karten mit mehreren Multiplikatoren werden mehrfach gezählt)",
     "tagSynergiesSubline": "von {{count}} Kartenarten",
+    "synergyLabel": {
+      "cave": "Höhlen",
+      "hare": "Hasen"
+    },
     "hallOfFame": "Hall of Fame",
     "hallOfFameLoading": "Lade weltweite Rekorde…",
     "hallOfFameEmpty": "Noch keine Partien für diesen Filter.",

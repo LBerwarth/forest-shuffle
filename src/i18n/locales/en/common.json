@@ -178,8 +178,12 @@
     "tagInsightsSubline": "in {{games}} player-games · {{cards}} cards",
     "noTagData": "Play more games to see tag insights.",
     "tagSynergies": "Tag synergies",
-    "tagSynergiesHint": "Total points from cards that scale with each tag",
+    "tagSynergiesHint": "Total points from cards that scale with each tag (cards with multiple multipliers count toward each)",
     "tagSynergiesSubline": "from {{count}} card types",
+    "synergyLabel": {
+      "cave": "Caves",
+      "hare": "Hares"
+    },
     "hallOfFame": "Hall of Fame",
     "hallOfFameLoading": "Loading global records…",
     "hallOfFameEmpty": "No games match this filter yet.",

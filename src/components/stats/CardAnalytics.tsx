@@ -58,7 +58,7 @@ export function CardAnalytics({ cards, singleGame = false }: CardAnalyticsProps)
     } else if (mode === 'mostPoints') {
       list.sort((a, b) => b.totalPoints - a.totalPoints)
     } else if (mode === 'mostPlayed') {
-      list.sort((a, b) => b.appearances - a.appearances)
+      list.sort((a, b) => b.totalCount - a.totalCount)
     } else {
       list.sort((a, b) => b.maxPointsSingle - a.maxPointsSingle)
     }
@@ -192,7 +192,7 @@ function CardPrimary({ mode, card }: { mode: Mode; card: CardAggregate }) {
   if (mode === 'mostPlayed') {
     return (
       <span className="flex items-center gap-0.5 text-sm font-bold text-forest-600 tabular-nums shrink-0">
-        × {card.appearances}
+        × {card.totalCount}
       </span>
     )
   }

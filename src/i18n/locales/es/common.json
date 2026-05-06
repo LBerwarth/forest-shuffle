@@ -178,8 +178,12 @@
     "tagInsightsSubline": "en {{games}} partidas-jugador · {{cards}} cartas",
     "noTagData": "Juega más partidas para ver el análisis por etiqueta.",
     "tagSynergies": "Sinergias por etiqueta",
-    "tagSynergiesHint": "Puntos totales de cartas que dependen de cada etiqueta",
+    "tagSynergiesHint": "Puntos totales de cartas que dependen de cada etiqueta (las cartas con múltiples multiplicadores cuentan para cada una)",
     "tagSynergiesSubline": "de {{count}} tipos de cartas",
+    "synergyLabel": {
+      "cave": "Cuevas",
+      "hare": "Liebres"
+    },
     "hallOfFame": "Salón de la fama",
     "hallOfFameLoading": "Cargando récords mundiales…",
     "hallOfFameEmpty": "Ninguna partida coincide con este filtro.",

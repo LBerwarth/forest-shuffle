@@ -9,11 +9,6 @@ interface TagSynergiesProps {
   singleGame?: boolean
 }
 
-const TAG_LABEL_FALLBACKS: Record<string, string> = {
-  hare: 'Hares',
-  cave: 'Caves',
-}
-
 export function TagSynergies({ rows, singleGame = false }: TagSynergiesProps) {
   const { t } = useTranslation()
 
@@ -35,7 +30,9 @@ export function TagSynergies({ rows, singleGame = false }: TagSynergiesProps) {
   const labelFor = (iconKey: string) => {
     const tagLabel = t(`tag.${iconKey}`, { defaultValue: '' })
     if (tagLabel) return tagLabel
-    return TAG_LABEL_FALLBACKS[iconKey] ?? iconKey
+    const synergyLabel = t(`leaderboard.synergyLabel.${iconKey}`, { defaultValue: '' })
+    if (synergyLabel) return synergyLabel
+    return iconKey
   }
 
   return (
