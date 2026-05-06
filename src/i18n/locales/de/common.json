@@ -177,6 +177,9 @@
     "tagInsightsHint": "Durchschnittliche Punkte pro Tag pro Spieler pro Partie",
     "tagInsightsSubline": "in {{games}} Spieler-Partien · {{cards}} Karten",
     "noTagData": "Spiele mehr Partien für Tag-Einblicke.",
+    "tagSynergies": "Tag-Synergien",
+    "tagSynergiesHint": "Punkte von Karten, die mit jedem Tag skalieren",
+    "tagSynergiesSubline": "von {{count}} Kartenarten",
     "hallOfFame": "Hall of Fame",
     "hallOfFameLoading": "Lade weltweite Rekorde…",
     "hallOfFameEmpty": "Noch keine Partien für diesen Filter.",
@@ -207,7 +210,8 @@
     "rabbit": "Kaninchen",
     "hoofed": "Huftiere",
     "shrub": "Sträucher",
-    "tree": "Bäume"
+    "tree": "Bäume",
+    "moor": "Moore"
   },
   "expansion": {
     "base": "Grundspiel",

@@ -18,16 +18,16 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   // MOOR (9)
   // ============================================================
-  { key: 'blanket_bog', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
-  { key: 'fountainhead', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
-  { key: 'lowland_heath', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
-  { key: 'rhos_pasture', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
-  { key: 'rivulet', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
-  { key: 'tor', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
-  { key: 'valley_mire', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
-  { key: 'warrens', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_tag' },
-  { key: 'wet_woodland', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'per_card' },
-  { key: 'universal_moor', category: 'moor', tags: [], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'blanket_bog', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
+  { key: 'fountainhead', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'lowland_heath', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
+  { key: 'rhos_pasture', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
+  { key: 'rivulet', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
+  { key: 'tor', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'fixed' },
+  { key: 'valley_mire', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
+  { key: 'warrens', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
+  { key: 'wet_woodland', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_card' },
+  { key: 'universal_moor', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'fixed' },
 
   // ============================================================
   // TOP SLOT (14)

@@ -13,6 +13,7 @@ type Mode = 'topScoring' | 'mostPoints' | 'mostPlayed' | 'bigPlays'
 const TAG_ORDER: readonly CardTag[] = [
   'tree',
   'shrub',
+  'moor',
   'bird',
   'butterfly',
   'insect',

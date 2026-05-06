@@ -188,3 +188,36 @@ export function getMultiplierStats(
   if (!fn) return []
   return fn(ctx)
 }
+
+// Synthetic context — values don't matter, we just need the iconKeys back.
+const EMPTY_CTX: ForestContext = {
+  totalTrees: 0,
+  treeSpeciesCount: 0,
+  treeSpeciesPresent: new Set(),
+  tagCounts: {
+    bird: 0, butterfly: 0, insect: 0, amphibian: 0, pawed: 0, deer: 0,
+    bat: 0, plant: 0, mushroom: 0, alpine: 0, cloven_hoofed: 0,
+    woodland_edge: 0, dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0,
+    shrub: 0, tree: 0, moor: 0,
+  },
+  cardCounts: {},
+  slotCounts: { tree: 0, top: 0, bottom: 0, lateral: 0, moor: 0, cave: 0 },
+  fullyOccupiedTrees: 0,
+  totalCards: 0,
+  totalMoors: 0,
+  cardMetadata: {},
+}
+
+export function getMultiplierIconKeys(
+  cardKey: string,
+  edition: GameEdition,
+): string[] {
+  const map = edition === 'dartmoor' ? dartmoorStats : classicStats
+  const fn = map[cardKey]
+  if (!fn) return []
+  try {
+    return fn(EMPTY_CTX).map((s) => s.iconKey)
+  } catch {
+    return []
+  }
+}

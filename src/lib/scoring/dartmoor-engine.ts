@@ -259,7 +259,7 @@ export function buildDartmoorForestContext(
     bird: 0, butterfly: 0, insect: 0, amphibian: 0,
     pawed: 0, deer: 0, bat: 0, plant: 0, mushroom: 0,
     alpine: 0, cloven_hoofed: 0, woodland_edge: 0,
-    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0, shrub: 0, tree: 0,
+    dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0, shrub: 0, tree: 0, moor: 0,
   }
 
   const slotCounts: Record<CardCategory, number> = {

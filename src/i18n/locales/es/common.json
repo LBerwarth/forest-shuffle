@@ -177,6 +177,9 @@
     "tagInsightsHint": "Puntos medios que cada etiqueta aporta por jugador por partida",
     "tagInsightsSubline": "en {{games}} partidas-jugador · {{cards}} cartas",
     "noTagData": "Juega más partidas para ver el análisis por etiqueta.",
+    "tagSynergies": "Sinergias por etiqueta",
+    "tagSynergiesHint": "Puntos totales de cartas que dependen de cada etiqueta",
+    "tagSynergiesSubline": "de {{count}} tipos de cartas",
     "hallOfFame": "Salón de la fama",
     "hallOfFameLoading": "Cargando récords mundiales…",
     "hallOfFameEmpty": "Ninguna partida coincide con este filtro.",
@@ -207,7 +210,8 @@
     "rabbit": "Conejos",
     "hoofed": "Pezuñas",
     "shrub": "Arbustos",
-    "tree": "Árboles"
+    "tree": "Árboles",
+    "moor": "Páramos"
   },
   "expansion": {
     "base": "Base",

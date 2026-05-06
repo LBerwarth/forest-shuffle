@@ -1,7 +1,8 @@
 import { useMemo } from 'react'
 import { CardAnalytics } from '@/components/stats/CardAnalytics'
 import { TagInsights } from '@/components/stats/TagInsights'
-import { aggregateCardStats, aggregateTagStats } from '@/lib/stats'
+import { TagSynergies } from '@/components/stats/TagSynergies'
+import { aggregateCardStats, aggregateTagStats, aggregateTagSynergies } from '@/lib/stats'
 import type { RankedPlayer } from '@/components/scoring/ResultsDisplay'
 import type { GameWithPlayers } from '@/types/game'
 
@@ -34,6 +35,7 @@ export function GameInsights({ rankedPlayers }: GameInsightsProps) {
 
   const cardAggregates = useMemo(() => aggregateCardStats(games), [games])
   const tagAggregates = useMemo(() => aggregateTagStats(games), [games])
+  const tagSynergies = useMemo(() => aggregateTagSynergies(games), [games])
 
   if (cardAggregates.length === 0 && tagAggregates.length === 0) return null
 
@@ -41,6 +43,7 @@ export function GameInsights({ rankedPlayers }: GameInsightsProps) {
     <>
       <CardAnalytics cards={cardAggregates} singleGame />
       <TagInsights tags={tagAggregates} singleGame />
+      {tagSynergies.length > 0 && <TagSynergies rows={tagSynergies} singleGame />}
     </>
   )
 }

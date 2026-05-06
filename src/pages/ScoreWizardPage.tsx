@@ -28,7 +28,7 @@ const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
 }
 
 const TAG_ORDER: readonly CardTag[] = [
-  'tree', 'shrub',
+  'tree', 'shrub', 'moor',
   'bird', 'butterfly', 'insect', 'dragonfly', 'bat', 'mouse',
   'pawed', 'cloven_hoofed', 'hoofed', 'deer',
   'amphibian', 'plant', 'mushroom',

@@ -177,6 +177,9 @@
     "tagInsightsHint": "Average points each tag contributes per player per game",
     "tagInsightsSubline": "in {{games}} player-games · {{cards}} cards",
     "noTagData": "Play more games to see tag insights.",
+    "tagSynergies": "Tag synergies",
+    "tagSynergiesHint": "Total points from cards that scale with each tag",
+    "tagSynergiesSubline": "from {{count}} card types",
     "hallOfFame": "Hall of Fame",
     "hallOfFameLoading": "Loading global records…",
     "hallOfFameEmpty": "No games match this filter yet.",
@@ -207,7 +210,8 @@
     "rabbit": "Rabbits",
     "hoofed": "Hoofed",
     "shrub": "Shrubs",
-    "tree": "Trees"
+    "tree": "Trees",
+    "moor": "Moors"
   },
   "expansion": {
     "base": "Base",

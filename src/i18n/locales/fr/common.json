@@ -177,6 +177,9 @@
     "tagInsightsHint": "Points moyens apportés par chaque tag, par joueur et par partie",
     "tagInsightsSubline": "sur {{games}} parties-joueur · {{cards}} cartes",
     "noTagData": "Jouez plus de parties pour voir les analyses par tag.",
+    "tagSynergies": "Synergies par tag",
+    "tagSynergiesHint": "Points totaux des cartes qui dépendent de chaque tag",
+    "tagSynergiesSubline": "depuis {{count}} types de cartes",
     "hallOfFame": "Hall of Fame",
     "hallOfFameLoading": "Chargement des records mondiaux…",
     "hallOfFameEmpty": "Aucune partie ne correspond à ce filtre.",
@@ -207,7 +210,8 @@
     "rabbit": "Lapins",
     "hoofed": "Sabots",
     "shrub": "Arbustes",
-    "tree": "Arbres"
+    "tree": "Arbres",
+    "moor": "Landes"
   },
   "expansion": {
     "base": "Base",

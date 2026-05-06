@@ -486,6 +486,58 @@ export function aggregateHallOfFame(
   return { topGameScore, topCardScore, mostWins, totalGames, totalPlayers }
 }
 
+export interface TagSynergyAggregate {
+  iconKey: string
+  totalPoints: number
+  cardCount: number
+  byPlayer: { playerName: string; points: number }[]
+}
+
+import { getMultiplierIconKeys } from './scoring/multiplier-stats'
+
+export function aggregateTagSynergies(games: GameWithPlayers[]): TagSynergyAggregate[] {
+  const map = new Map<
+    string,
+    { totalPoints: number; cardKeys: Set<string>; byPlayer: Map<string, number> }
+  >()
+
+  for (const g of games) {
+    const edition = g.edition ?? 'classic'
+    for (const p of g.players) {
+      const entries = p.score_breakdown?.entries ?? []
+      for (const e of entries) {
+        if (e.cardKey.startsWith('_')) continue
+        if (e.points <= 0) continue
+        const iconKeys = getMultiplierIconKeys(e.cardKey, edition)
+        if (iconKeys.length === 0) continue
+        for (const iconKey of iconKeys) {
+          const acc =
+            map.get(iconKey) ??
+            { totalPoints: 0, cardKeys: new Set<string>(), byPlayer: new Map<string, number>() }
+          acc.totalPoints += e.points
+          acc.cardKeys.add(e.cardKey)
+          acc.byPlayer.set(
+            p.player_name,
+            (acc.byPlayer.get(p.player_name) ?? 0) + e.points,
+          )
+          map.set(iconKey, acc)
+        }
+      }
+    }
+  }
+
+  return [...map.entries()]
+    .map(([iconKey, acc]) => ({
+      iconKey,
+      totalPoints: acc.totalPoints,
+      cardCount: acc.cardKeys.size,
+      byPlayer: [...acc.byPlayer.entries()]
+        .map(([playerName, points]) => ({ playerName, points }))
+        .sort((a, b) => b.points - a.points),
+    }))
+    .sort((a, b) => b.totalPoints - a.totalPoints)
+}
+
 export interface AtAGlanceMetrics {
   totalGames: number
   avgScore: number

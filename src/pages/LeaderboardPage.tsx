@@ -9,6 +9,7 @@ import {
   aggregatePlayers,
   aggregateCardStats,
   aggregateTagStats,
+  aggregateTagSynergies,
   aggregatePlayerStrategies,
   computeAtAGlance,
   type EditionFilter,
@@ -23,6 +24,7 @@ import { LeaderboardList } from '@/components/stats/LeaderboardList'
 import { PlayerStrategies } from '@/components/stats/PlayerStrategies'
 import { CardAnalytics } from '@/components/stats/CardAnalytics'
 import { TagInsights } from '@/components/stats/TagInsights'
+import { TagSynergies } from '@/components/stats/TagSynergies'
 import { Records } from '@/components/stats/Records'
 import { HallOfFame } from '@/components/stats/HallOfFame'
 
@@ -60,6 +62,11 @@ export function LeaderboardPage() {
 
   const tagAggregates = useMemo(
     () => aggregateTagStats(filteredGames),
+    [filteredGames],
+  )
+
+  const tagSynergies = useMemo(
+    () => aggregateTagSynergies(filteredGames),
     [filteredGames],
   )
 
@@ -133,6 +140,7 @@ export function LeaderboardPage() {
               <PlayerStrategies players={playerStrategies} />
               <CardAnalytics cards={cardAggregates} />
               <TagInsights tags={tagAggregates} />
+              <TagSynergies rows={tagSynergies} />
               <Records aggregatedPlayers={aggregatedPlayers} cardAggregates={cardAggregates} />
             </>
           )}

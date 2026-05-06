@@ -23,6 +23,7 @@ export type CardTag =
   | 'hoofed'
   | 'shrub'
   | 'tree'
+  | 'moor'
 
 export type ScoringType =
   | 'fixed'
