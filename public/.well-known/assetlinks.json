@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "app.forestshuffle.companion",
       "sha256_cert_fingerprints": [
-        "ED:DE:40:3A:04:F2:93:3E:DB:F2:FB:F0:5F:4E:18:A0:79:E3:28:36:F8:A1:21:D4:B5:10:D1:52:58:99:95:56"
+        "ED:DE:40:3A:04:F2:93:3E:DB:F2:FB:F0:5F:4E:18:A0:79:E3:28:36:F8:A1:21:D4:B5:10:D1:52:58:99:95:56",
+        "7E:10:EA:5D:CF:C9:18:65:65:52:C6:F2:9D:F1:20:73:54:08:8A:26:D5:F9:DA:DC:E6:B0:2C:0A:B4:FD:11:7F"
       ]
     }
   }
