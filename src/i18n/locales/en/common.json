@@ -65,7 +65,11 @@
     "card": "card",
     "cards": "cards",
     "selectHostTree": "Select a tree…",
-    "noHostTreeAvailable": "Add a tree first"
+    "noHostTreeAvailable": "Add a tree first",
+    "set": "Set",
+    "series": "Series {{index}}",
+    "dragonflySet": "Dragonfly Set",
+    "butterflySet": "Butterfly Set"
   },
   "result": {
     "wins": "{{name}} wins!",

@@ -4,13 +4,14 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Check, Loader2, Pencil, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
+import { SetSeriesBreakdown } from '@/components/scoring/SetSeriesBreakdown'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
 import { ScoreSummary } from '@/components/scoring/ScoreSummary'
 import { useScoringStore } from '@/store/scoring-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { getCardsByCategory } from '@/data/cards'
-import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext } from '@/lib/scoring'
+import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { cn } from '@/lib/utils'
@@ -459,6 +460,22 @@ export function LiveScoreWizardPage() {
             ) : null
           })()}
 
+          {stepCategories[currentStep]?.[0] === 'top' && forestContext && (
+            edition === 'dartmoor' ? (
+              <SetSeriesBreakdown
+                series={getDragonflySeriesBreakdown(forestContext)}
+                iconUrl={STAT_ICONS.dragonfly}
+                titleKey="wizard.dragonflySet"
+              />
+            ) : (
+              <SetSeriesBreakdown
+                series={getButterflySeriesBreakdown(forestContext)}
+                iconUrl={STAT_ICONS.butterfly}
+                titleKey="wizard.butterflySet"
+              />
+            )
+          )}
+
           {filteredCards.map((card) => (
             <CardCounter
               key={card.key}
@@ -481,6 +498,15 @@ export function LiveScoreWizardPage() {
                   : undefined
               }
               multiplierStats={forestContext ? getMultiplierStats(card.key, forestContext, edition) : undefined}
+              setBonus={
+                card.scoringType === 'set' && forestContext
+                  ? card.tags.includes('dragonfly')
+                    ? scoreDragonflySet(forestContext)
+                    : card.tags.includes('butterfly')
+                      ? scoreButterflySet(forestContext)
+                      : undefined
+                  : undefined
+              }
             />
           ))}
         </div>

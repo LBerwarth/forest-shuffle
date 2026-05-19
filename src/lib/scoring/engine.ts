@@ -65,6 +65,23 @@ export function scoreButterflySet(ctx: ForestContext): number {
   return total
 }
 
+export interface SetSeries {
+  index: number
+  setSize: number
+  points: number
+}
+
+export function getButterflySeriesBreakdown(ctx: ForestContext): SetSeries[] {
+  const counts = BUTTERFLY_KEYS.map((k) => countCard(ctx, k))
+  const maxCount = Math.max(0, ...counts)
+  const series: SetSeries[] = []
+  for (let i = 1; i <= maxCount; i++) {
+    const setSize = counts.filter((c) => c >= i).length
+    series.push({ index: i, setSize, points: lookupSet(BUTTERFLY_SET, setSize) })
+  }
+  return series
+}
+
 // ============================================================
 // BAT SET - threshold scoring
 // ============================================================
@@ -93,14 +110,35 @@ function batCardPoints(count: number, ctx: ForestContext): number {
   return uniqueSpecies >= 3 ? count * 5 : 0
 }
 
-function butterflyCardPoints(_key: string, count: number, ctx: ForestContext): number {
-  if (count === 0) return 0
+// Distribute set points across butterfly cards using largest-remainder rounding
+// so per-card values sum exactly to scoreButterflySet(ctx). Math.round per card
+// could leave the displayed total ±1 off the real total.
+function distributeButterflyPoints(ctx: ForestContext): Record<string, number> {
+  const counts = BUTTERFLY_KEYS.map((k) => countCard(ctx, k))
+  const totalButterflies = counts.reduce((a, b) => a + b, 0)
   const total = scoreButterflySet(ctx)
-  if (total === 0) return 0
-  // Distribute proportionally by count
-  const totalButterflies = BUTTERFLY_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0)
-  if (totalButterflies === 0) return 0
-  return Math.round((count / totalButterflies) * total)
+  const result: Record<string, number> = Object.fromEntries(BUTTERFLY_KEYS.map((k) => [k, 0]))
+  if (totalButterflies === 0 || total === 0) return result
+
+  const exact = counts.map((c) => (c / totalButterflies) * total)
+  const floors = exact.map((v) => Math.floor(v))
+  let leftover = total - floors.reduce((a, b) => a + b, 0)
+  const remainders = exact
+    .map((v, i) => ({ i, frac: v - Math.floor(v) }))
+    .sort((a, b) => b.frac - a.frac || counts[b.i]! - counts[a.i]!)
+
+  for (let r = 0; r < remainders.length && leftover > 0; r++) {
+    floors[remainders[r]!.i]! += 1
+    leftover -= 1
+  }
+
+  BUTTERFLY_KEYS.forEach((k, i) => { result[k] = floors[i]! })
+  return result
+}
+
+function butterflyCardPoints(key: string, count: number, ctx: ForestContext): number {
+  if (count === 0) return 0
+  return distributeButterflyPoints(ctx)[key] ?? 0
 }
 
 // ============================================================

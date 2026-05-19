@@ -65,7 +65,11 @@
     "card": "Karte",
     "cards": "Karten",
     "selectHostTree": "Baum wählen…",
-    "noHostTreeAvailable": "Erst einen Baum hinzufügen"
+    "noHostTreeAvailable": "Erst einen Baum hinzufügen",
+    "set": "Set",
+    "series": "Serie {{index}}",
+    "dragonflySet": "Libellen-Set",
+    "butterflySet": "Schmetterlings-Set"
   },
   "result": {
     "wins": "{{name}} gewinnt!",

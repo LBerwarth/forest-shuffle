@@ -185,14 +185,14 @@ export function SettingsPage() {
         </CardHeader>
         <CardContent>
           <p className="text-xs text-forest-400 mb-3">{t('settings.languageDesc')}</p>
-          <div className="flex gap-2">
+          <div className="grid grid-cols-2 gap-2">
             {LANGUAGES.map(({ code, label }) => (
               <button
                 key={code}
                 type="button"
                 onClick={() => setLanguage(code)}
                 className={cn(
-                  'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                  'rounded-lg px-3 py-2 text-sm font-medium transition-all',
                   language === code
                     ? 'bg-forest-500 text-white'
                     : 'bg-forest-100 text-forest-600 hover:bg-forest-200',

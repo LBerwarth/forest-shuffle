@@ -19,6 +19,11 @@ interface CardCounterProps {
   availableHostKeys?: readonly string[]
   onHostsChange?: (next: string[]) => void
   multiplierStats?: MultiplierStat[]
+  /** When provided, the displayed points represent a shared set bonus across
+   *  all cards in the set (e.g. butterflies, dragonflies) rather than this
+   *  card's individual contribution. The same value is shown on every card
+   *  in the set. */
+  setBonus?: number
 }
 
 function TappableNumber({
@@ -106,15 +111,18 @@ export function CardCounter({
   availableHostKeys,
   onHostsChange,
   multiplierStats,
+  setBonus,
 }: CardCounterProps) {
   const { t } = useTranslation()
   const tc = useTranslation('cards').t
+  const isSetBonus = setBonus !== undefined && count > 0
+  const displayPoints = isSetBonus ? setBonus : points
 
   return (
     <div className="flex flex-col gap-2 rounded-xl border border-forest-200 bg-white p-3">
-      <div className="flex items-center justify-between gap-3">
+      <div className="flex items-center justify-between gap-2">
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             {(() => {
               const seen = new Set<string>()
               const urls: string[] = []
@@ -138,7 +146,7 @@ export function CardCounter({
                 </div>
               ) : null
             })()}
-            <span className="font-medium text-forest-800 text-sm truncate">
+            <span className="font-medium text-forest-800 text-sm leading-tight break-words">
               {tc(`${card.key}.name`)}
             </span>
             {card.expansion !== 'base' && card.expansion !== 'dartmoor_base' && (
@@ -179,44 +187,49 @@ export function CardCounter({
           </div>
         </div>
 
-        <div className="flex items-center gap-1.5 shrink-0">
+        <div className="flex items-center gap-1 shrink-0">
           <button
             type="button"
             onClick={() => onCountChange(count - 1)}
             disabled={count <= 0}
             className={cn(
-              'flex h-9 w-9 items-center justify-center rounded-lg transition-colors',
+              'flex h-8 w-8 items-center justify-center rounded-lg transition-colors',
               count <= 0
                 ? 'bg-forest-100 text-forest-300'
                 : 'bg-forest-100 text-forest-600 hover:bg-forest-200 active:bg-forest-300',
             )}
           >
-            <Minus className="h-4 w-4" />
+            <Minus className="h-3.5 w-3.5" />
           </button>
 
           <TappableNumber
             value={count}
             onChange={onCountChange}
-            className="text-lg text-forest-800"
+            className="text-base text-forest-800 w-8"
           />
 
           <button
             type="button"
             onClick={() => onCountChange(count + 1)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg bg-forest-500 text-white hover:bg-forest-600 active:bg-forest-700 transition-colors"
+            className="flex h-8 w-8 items-center justify-center rounded-lg bg-forest-500 text-white hover:bg-forest-600 active:bg-forest-700 transition-colors"
           >
-            <Plus className="h-4 w-4" />
+            <Plus className="h-3.5 w-3.5" />
           </button>
         </div>
 
         <div className="flex items-center gap-0.5 shrink-0">
+          {isSetBonus && (
+            <span className="mr-0.5 rounded bg-forest-100 px-1 text-[10px] font-semibold uppercase tracking-wide text-forest-500">
+              {t('wizard.set')}
+            </span>
+          )}
           <span className={cn(
             'text-lg font-bold tabular-nums',
-            points > 0 ? 'text-forest-600' : 'text-forest-300',
+            displayPoints > 0 ? 'text-forest-600' : 'text-forest-300',
           )}>
-            {points}
+            {displayPoints}
           </span>
-          <AcornIcon className={cn('h-4 w-4', points > 0 ? 'opacity-80' : 'opacity-30')} />
+          <AcornIcon className={cn('h-4 w-4', displayPoints > 0 ? 'opacity-80' : 'opacity-30')} />
         </div>
       </div>
 

@@ -3,6 +3,7 @@ export {
   scoreCard,
   computeScoreBreakdown,
   scoreButterflySet,
+  getButterflySeriesBreakdown,
   scoreBatSet,
   scoreLinden,
   scoreWoodpecker,
@@ -12,4 +13,8 @@ export {
   computeDartmoorScoreBreakdown,
   buildDartmoorForestContext,
   scoreDartmoorCard,
+  scoreDragonflySet,
+  getDragonflySeriesBreakdown,
 } from './dartmoor-engine'
+
+export type { SetSeries } from './engine'
