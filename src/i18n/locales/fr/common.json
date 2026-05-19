@@ -110,7 +110,9 @@
     "playerName": "Nom du joueur",
     "add": "Ajouter",
     "addPlayer": "Ajouter un joueur",
-    "removeConfirm": "Supprimer {{name}}\u00a0?"
+    "removeConfirm": "Supprimer {{name}}\u00a0?",
+    "removeWithHistoryWarning": "{{name}} a {{count}} partie(s) dans tes statistiques. La suppression supprimera d\u00e9finitivement l'acc\u00e8s \u00e0 ces donn\u00e9es. Continuer quand m\u00eame\u00a0?",
+    "removeConfirmFinal": "Vraiment supprimer {{name}}\u00a0? Cette action est irr\u00e9versible."
   },
   "playerDetail": {
     "wins": "Victoires ({{rate}}\u00a0%)",
@@ -248,6 +250,7 @@
     "clear": "Supprimer",
     "clearConfirm1": "Cela supprimera TOUS les joueurs et l\u2019historique des parties. \u00cates-vous s\u00fbr\u00a0?",
     "clearConfirm2": "Cette action est irr\u00e9versible. \u00cates-vous vraiment s\u00fbr\u00a0?",
+    "clearError": "\u00c9chec de la suppression. V\u00e9rifie ta connexion et r\u00e9essaie.",
     "edition": "\u00c9dition du jeu",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
@@ -273,7 +276,11 @@
     "joinTitle": "Rejoindre",
     "enterCode": "Entrez le code à 4 caractères",
     "selectPlayer": "Sélectionnez votre joueur",
+    "yourName": "Ton prénom",
+    "noAppTitle": "Un joueur sans l'appli ?",
+    "noAppBody": "Il peut rejoindre depuis n'importe quel navigateur sur :",
     "joining": "Connexion...",
+    "creating": "Création...",
     "sessionNotFound": "Session introuvable",
     "sessionAlreadyStarted": "Cette session a déjà commencé",
     "joinError": "Impossible de rejoindre la session",

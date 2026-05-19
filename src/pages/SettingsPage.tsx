@@ -7,6 +7,7 @@ import { useSettingsStore } from '@/store/settings-store'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { useScoringStore } from '@/store/scoring-store'
+import { deleteAllDeviceData } from '@/lib/supabase-api'
 import { cn } from '@/lib/utils'
 
 const LANGUAGES = [
@@ -36,12 +37,27 @@ export function SettingsPage() {
     URL.revokeObjectURL(url)
   }
 
-  function handleClearData() {
+  async function handleClearData() {
     if (!confirm(t('settings.clearConfirm1'))) return
     if (!confirm(t('settings.clearConfirm2'))) return
-    localStorage.removeItem('forest-shuffle-games')
-    localStorage.removeItem('forest-shuffle-settings')
-    sessionStorage.removeItem('forest-shuffle-scoring')
+    try {
+      await deleteAllDeviceData()
+    } catch (err) {
+      console.error('Failed to delete device data from Supabase:', err)
+      alert(t('settings.clearError'))
+      return
+    }
+    // Wipe every forest-shuffle-* key from both storages so settings,
+    // last-joined-player, active live sessions and the scoring wizard
+    // all reset.
+    for (const storage of [localStorage, sessionStorage]) {
+      const keys: string[] = []
+      for (let i = 0; i < storage.length; i++) {
+        const key = storage.key(i)
+        if (key?.startsWith('forest-shuffle-')) keys.push(key)
+      }
+      for (const key of keys) storage.removeItem(key)
+    }
     window.location.reload()
   }
 

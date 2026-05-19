@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Copy, Users, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent } from '@/components/ui/Card'
+import { NoAppNotice } from '@/components/NoAppNotice'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { useSettingsStore } from '@/store/settings-store'
@@ -76,7 +77,7 @@ export function LiveLobbyPage() {
       </div>
 
       {/* Join code */}
-      <Card className="mb-6">
+      <Card className="mb-4">
         <CardContent className="py-6 text-center">
           <p className="text-sm font-medium text-forest-500 mb-2">{t('live.joinCode')}</p>
           <div className="flex items-center justify-center gap-3">
@@ -94,6 +95,9 @@ export function LiveLobbyPage() {
           <p className="mt-2 text-xs text-forest-400">{t('live.shareCode')}</p>
         </CardContent>
       </Card>
+
+      {/* No-app notice */}
+      <NoAppNotice className="mb-6" />
 
       {/* Player list */}
       <div className="mb-6">

@@ -52,6 +52,23 @@ export async function deletePlayer(id: string): Promise<void> {
   if (error) throw error
 }
 
+export async function deleteAllDeviceData(): Promise<void> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const deviceId = getDeviceId()
+  // Order matters when cascades aren't guaranteed: games first (and their
+  // game_players via cascade), then profiles.
+  const { error: gamesError } = await supabase
+    .from('games')
+    .delete()
+    .eq('device_id', deviceId)
+  if (gamesError) throw gamesError
+  const { error: profilesError } = await supabase
+    .from('profiles')
+    .delete()
+    .eq('device_id', deviceId)
+  if (profilesError) throw profilesError
+}
+
 // ─── Games ──────────────────────────────────────────────────────────────────
 
 export async function fetchGames(): Promise<GameWithPlayers[]> {

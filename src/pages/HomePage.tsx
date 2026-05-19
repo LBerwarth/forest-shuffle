@@ -4,6 +4,7 @@ import { Calculator, History, Users, BarChart3, Settings, TreePine, Wifi } from 
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { AcornIcon } from '@/components/ui/AcornIcon'
+import { NoAppNotice } from '@/components/NoAppNotice'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 
@@ -43,11 +44,13 @@ export function HomePage() {
         </Button>
       </Link>
       <Link to="/join">
-        <Button variant="secondary" size="lg" className="w-full mb-6 text-base">
+        <Button variant="secondary" size="lg" className="w-full mb-3 text-base">
           <Wifi className="h-5 w-5" />
           {t('live.joinSession')}
         </Button>
       </Link>
+
+      <NoAppNotice className="mb-6" />
 
       {/* Quick actions grid */}
       <div className="grid grid-cols-2 gap-3 mb-6">

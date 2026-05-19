@@ -110,7 +110,9 @@
     "playerName": "Player name",
     "add": "Add",
     "addPlayer": "Add Player",
-    "removeConfirm": "Remove {{name}}?"
+    "removeConfirm": "Remove {{name}}?",
+    "removeWithHistoryWarning": "{{name}} has {{count}} game(s) in your stats history. Deleting will permanently remove access to these stats. Continue anyway?",
+    "removeConfirmFinal": "Really delete {{name}}? This cannot be undone."
   },
   "playerDetail": {
     "wins": "Wins ({{rate}}%)",
@@ -248,6 +250,7 @@
     "clear": "Clear",
     "clearConfirm1": "This will delete ALL players and game history. Are you sure?",
     "clearConfirm2": "This cannot be undone. Are you really sure?",
+    "clearError": "Failed to delete data. Please check your connection and try again.",
     "edition": "Game Edition",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
@@ -273,7 +276,11 @@
     "joinTitle": "Join Session",
     "enterCode": "Enter the 4-character join code",
     "selectPlayer": "Select your player",
+    "yourName": "Your name",
+    "noAppTitle": "Player without the app?",
+    "noAppBody": "They can join from any browser at:",
     "joining": "Joining...",
+    "creating": "Creating...",
     "sessionNotFound": "Session not found",
     "sessionAlreadyStarted": "This session has already started",
     "joinError": "Failed to join session",

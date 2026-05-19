@@ -110,7 +110,9 @@
     "playerName": "Spielername",
     "add": "Hinzufügen",
     "addPlayer": "Spieler hinzufügen",
-    "removeConfirm": "{{name}} entfernen?"
+    "removeConfirm": "{{name}} entfernen?",
+    "removeWithHistoryWarning": "{{name}} hat {{count}} Spiel(e) in deiner Statistik. Beim Löschen verlierst du dauerhaft den Zugriff auf diese Daten. Trotzdem fortfahren?",
+    "removeConfirmFinal": "{{name}} wirklich löschen? Das kann nicht rückgängig gemacht werden."
   },
   "playerDetail": {
     "wins": "Siege ({{rate}}%)",
@@ -248,6 +250,7 @@
     "clear": "Löschen",
     "clearConfirm1": "Dies löscht ALLE Spieler und den Spielverlauf. Bist du sicher?",
     "clearConfirm2": "Dies kann nicht rückgängig gemacht werden. Bist du wirklich sicher?",
+    "clearError": "Daten konnten nicht gelöscht werden. Prüfe deine Verbindung und versuche es erneut.",
     "edition": "Spielversion",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
@@ -273,7 +276,11 @@
     "joinTitle": "Beitreten",
     "enterCode": "4-stelligen Zugangscode eingeben",
     "selectPlayer": "Wähle deinen Spieler",
+    "yourName": "Dein Name",
+    "noAppTitle": "Mitspieler ohne App?",
+    "noAppBody": "Sie können von jedem Browser aus beitreten unter:",
     "joining": "Verbinden...",
+    "creating": "Erstelle...",
     "sessionNotFound": "Session nicht gefunden",
     "sessionAlreadyStarted": "Diese Session hat bereits begonnen",
     "joinError": "Beitritt fehlgeschlagen",

@@ -1,47 +1,33 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, UserPlus, X } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
-import { Card, CardContent } from '@/components/ui/Card'
-import { usePlayers, useCreatePlayer } from '@/hooks/use-players'
+import { usePlayers, useCreatePlayer, useUpdatePlayer } from '@/hooks/use-players'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { useSettingsStore } from '@/store/settings-store'
 import { fetchLiveSessionByCode, joinLiveSession } from '@/lib/supabase-api'
+import { readLastJoinedPlayer, writeLastJoinedPlayer } from '@/lib/last-joined-player'
 import { PLAYER_COLORS } from '@/types/player'
-import { cn } from '@/lib/utils'
 
 export function JoinSessionPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const { data: storedPlayers = [] } = usePlayers()
   const createPlayerMutation = useCreatePlayer()
+  const updatePlayerMutation = useUpdatePlayer()
   const { setSession, setPlayer } = useLiveSessionStore()
   const setLanguage = useSettingsStore((s) => s.setLanguage)
 
+  const lastPlayer = useMemo(() => readLastJoinedPlayer(), [])
   const [code, setCode] = useState('')
-  const [selectedPlayerId, setSelectedPlayerId] = useState<string | null>(null)
+  const [playerName, setPlayerName] = useState(lastPlayer?.name ?? '')
   const [error, setError] = useState<string | null>(null)
   const [joining, setJoining] = useState(false)
-  const [newPlayerName, setNewPlayerName] = useState('')
-  const [showNewPlayer, setShowNewPlayer] = useState(false)
-
-  async function handleAddPlayer() {
-    if (!newPlayerName.trim()) return
-    const id = crypto.randomUUID()
-    const color = PLAYER_COLORS[storedPlayers.length % PLAYER_COLORS.length]!
-    try {
-      await createPlayerMutation.mutateAsync({ id, name: newPlayerName.trim(), color })
-      setSelectedPlayerId(id)
-    } catch (err) {
-      console.error('Failed to create player:', err)
-    }
-    setNewPlayerName('')
-    setShowNewPlayer(false)
-  }
 
   async function handleJoin() {
-    if (code.length !== 4 || !selectedPlayerId) return
+    const trimmedName = playerName.trim()
+    if (code.length !== 4 || !trimmedName) return
     setError(null)
     setJoining(true)
 
@@ -58,12 +44,36 @@ export function JoinSessionPage() {
         return
       }
 
-      const player = storedPlayers.find((p) => p.id === selectedPlayerId)
-      if (!player) return
+      // Resolve player identity: reuse the last-joined player if still in DB,
+      // updating the stored name if the user tweaked it. Otherwise create a
+      // fresh player record.
+      let playerId: string
+      const existing = lastPlayer
+        ? storedPlayers.find((p) => p.id === lastPlayer.id)
+        : null
+      if (existing) {
+        playerId = existing.id
+        if (existing.name !== trimmedName) {
+          await updatePlayerMutation.mutateAsync({
+            id: existing.id,
+            updates: { name: trimmedName },
+          })
+        }
+      } else {
+        playerId = crypto.randomUUID()
+        const color = PLAYER_COLORS[storedPlayers.length % PLAYER_COLORS.length]!
+        await createPlayerMutation.mutateAsync({
+          id: playerId,
+          name: trimmedName,
+          color,
+        })
+      }
 
-      await joinLiveSession(session.id, player.id, player.name)
+      writeLastJoinedPlayer({ id: playerId, name: trimmedName })
+
+      await joinLiveSession(session.id, playerId, trimmedName)
       setSession(session.id, session.code, false)
-      setPlayer(player.id, player.name)
+      setPlayer(playerId, trimmedName)
       // Force the joining player's language to match the session's language
       setLanguage(session.language)
       navigate(`/live/${session.id}`)
@@ -97,69 +107,18 @@ export function JoinSessionPage() {
         />
       </div>
 
-      {/* Player selection */}
-      <div className="mb-4">
-        <p className="text-sm font-medium text-forest-600 mb-2">{t('live.selectPlayer')}</p>
-        <div className="space-y-2">
-          {storedPlayers.map((player) => {
-            const isSelected = selectedPlayerId === player.id
-            return (
-              <button
-                key={player.id}
-                type="button"
-                onClick={() => setSelectedPlayerId(player.id)}
-                className={cn(
-                  'flex w-full items-center gap-3 rounded-xl border-2 px-4 py-3 transition-all text-left',
-                  isSelected
-                    ? 'border-forest-500 bg-forest-50'
-                    : 'border-forest-100 bg-white hover:border-forest-200',
-                )}
-              >
-                <div
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-white text-sm font-bold shrink-0"
-                  style={{ backgroundColor: player.color }}
-                >
-                  {player.name.charAt(0).toUpperCase()}
-                </div>
-                <span className="text-sm font-medium text-forest-700">{player.name}</span>
-              </button>
-            )
-          })}
-        </div>
+      {/* Player name */}
+      <div className="mb-6">
+        <p className="text-sm font-medium text-forest-600 mb-2">{t('live.yourName')}</p>
+        <input
+          type="text"
+          value={playerName}
+          onChange={(e) => setPlayerName(e.target.value)}
+          placeholder={t('newGame.playerName')}
+          autoFocus={!lastPlayer}
+          className="w-full rounded-xl border-2 border-forest-200 bg-white px-4 py-3 text-base text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
+        />
       </div>
-
-      {/* Add new player */}
-      {showNewPlayer ? (
-        <Card className="mb-6">
-          <CardContent className="py-3">
-            <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} className="flex items-center gap-2">
-              <input
-                type="text"
-                placeholder={t('newGame.playerName')}
-                value={newPlayerName}
-                onChange={(e) => setNewPlayerName(e.target.value)}
-                autoFocus
-                className="flex-1 rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
-              />
-              <Button type="submit" size="sm" disabled={!newPlayerName.trim()}>
-                {t('newGame.add')}
-              </Button>
-              <button type="button" onClick={() => setShowNewPlayer(false)} className="text-forest-400">
-                <X className="h-4 w-4" />
-              </button>
-            </form>
-          </CardContent>
-        </Card>
-      ) : (
-        <button
-          type="button"
-          onClick={() => setShowNewPlayer(true)}
-          className="mb-6 flex w-full items-center justify-center gap-2 rounded-xl border-2 border-dashed border-forest-200 py-3 text-sm font-medium text-forest-400 hover:border-forest-300 hover:text-forest-500 transition-colors"
-        >
-          <UserPlus className="h-4 w-4" />
-          {t('newGame.addNewPlayer')}
-        </button>
-      )}
 
       {error && (
         <p className="mb-4 text-center text-sm text-red-500">{error}</p>
@@ -169,7 +128,7 @@ export function JoinSessionPage() {
         size="lg"
         className="w-full"
         onClick={handleJoin}
-        disabled={code.length !== 4 || !selectedPlayerId || joining}
+        disabled={code.length !== 4 || !playerName.trim() || joining}
       >
         {joining ? t('live.joining') : t('live.joinSession')}
       </Button>

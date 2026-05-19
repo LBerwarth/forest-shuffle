@@ -78,7 +78,13 @@ export function PlayersPage() {
                       onClick={(e) => {
                         e.preventDefault()
                         e.stopPropagation()
-                        if (confirm(t('players.removeConfirm', { name: player.name }))) deletePlayerMutation.mutate(player.id)
+                        if (stats.gamesPlayed > 0) {
+                          if (!confirm(t('players.removeWithHistoryWarning', { name: player.name, count: stats.gamesPlayed }))) return
+                          if (!confirm(t('players.removeConfirmFinal', { name: player.name }))) return
+                        } else {
+                          if (!confirm(t('players.removeConfirm', { name: player.name }))) return
+                        }
+                        deletePlayerMutation.mutate(player.id)
                       }}
                       className="text-forest-300 hover:text-red-500 transition-colors p-1"
                     >

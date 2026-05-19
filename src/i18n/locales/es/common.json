@@ -110,7 +110,9 @@
     "playerName": "Nombre del jugador",
     "add": "Añadir",
     "addPlayer": "Añadir jugador",
-    "removeConfirm": "¿Eliminar a {{name}}?"
+    "removeConfirm": "¿Eliminar a {{name}}?",
+    "removeWithHistoryWarning": "{{name}} tiene {{count}} partida(s) en tus estadísticas. Al eliminar perderás el acceso permanente a estos datos. ¿Continuar de todos modos?",
+    "removeConfirmFinal": "¿Eliminar realmente a {{name}}? Esta acción no se puede deshacer."
   },
   "playerDetail": {
     "wins": "Victorias ({{rate}}%)",
@@ -248,6 +250,7 @@
     "clear": "Borrar",
     "clearConfirm1": "Esto eliminará TODOS los jugadores y el historial de partidas. ¿Estás seguro?",
     "clearConfirm2": "Esto no se puede deshacer. ¿Estás realmente seguro?",
+    "clearError": "No se pudieron eliminar los datos. Verifica tu conexión e inténtalo de nuevo.",
     "edition": "Edición del juego",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
@@ -273,7 +276,11 @@
     "joinTitle": "Unirse",
     "enterCode": "Introduce el código de 4 caracteres",
     "selectPlayer": "Selecciona tu jugador",
+    "yourName": "Tu nombre",
+    "noAppTitle": "¿Algún jugador sin la app?",
+    "noAppBody": "Puede unirse desde cualquier navegador en:",
     "joining": "Conectando...",
+    "creating": "Creando...",
     "sessionNotFound": "Sesión no encontrada",
     "sessionAlreadyStarted": "Esta sesión ya ha comenzado",
     "joinError": "Error al unirse a la sesión",
