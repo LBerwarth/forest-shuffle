@@ -769,7 +769,7 @@
     "scoring": "1 point per card in the cave"
   },
   "lonely_cave_d": {
-    "name": "Solitary Cave",
-    "scoring": "5 base points + 1 point per cave card"
+    "name": "Cave 4",
+    "scoring": "5 points"
   }
 }

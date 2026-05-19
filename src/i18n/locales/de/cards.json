@@ -769,7 +769,7 @@
     "scoring": "1 Punkt pro Karte in der Höhle"
   },
   "lonely_cave_d": {
-    "name": "Einsame Höhle",
-    "scoring": "5 Basispunkte + 1 Punkt pro Höhlenkarte"
+    "name": "Höhle 4",
+    "scoring": "5 Punkte"
   }
 }

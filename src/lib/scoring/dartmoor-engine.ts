@@ -247,11 +247,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 
   // --- CAVE ---
   cave_d: (count) => count * 1,
-  lonely_cave_d: (count, ctx) => {
-    if (count === 0) return 0
-    const regularCaveCount = countCard(ctx, 'cave_d')
-    return 5 + regularCaveCount
-  },
+  lonely_cave_d: (count) => count > 0 ? 5 : 0,
 }
 
 // ============================================================
