@@ -66,6 +66,7 @@
     "cards": "Karten",
     "selectHostTree": "Baum wählen…",
     "noHostTreeAvailable": "Erst einen Baum hinzufügen",
+    "noHostPlantsAvailable": "Erst Pflanzen hinzufügen",
     "set": "Set",
     "series": "Serie {{index}}",
     "dragonflySet": "Libellen-Set",

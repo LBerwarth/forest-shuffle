@@ -212,6 +212,22 @@ export async function deleteGame(id: string): Promise<void> {
   if (error) throw error
 }
 
+/**
+ * Idempotent save: replaces any existing game with the same id (cascades to
+ * game_players and score_entries) and inserts a fresh record. Use when the
+ * user finishes the same scoring session more than once (e.g. via Edit Scores).
+ */
+export async function saveGame(game: GameWithPlayers): Promise<GameWithPlayers> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { error: deleteError } = await supabase
+    .from('games')
+    .delete()
+    .eq('id', game.id)
+    .eq('device_id', getDeviceId())
+  if (deleteError) throw deleteError
+  return createGame(game)
+}
+
 // ─── Live Sessions ──────────────────────────────────────────────────────────
 
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'

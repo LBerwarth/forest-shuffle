@@ -66,6 +66,7 @@
     "cards": "cards",
     "selectHostTree": "Select a tree…",
     "noHostTreeAvailable": "Add a tree first",
+    "noHostPlantsAvailable": "Add some plants first",
     "set": "Set",
     "series": "Series {{index}}",
     "dragonflySet": "Dragonfly Set",

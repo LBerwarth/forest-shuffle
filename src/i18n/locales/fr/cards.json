@@ -516,8 +516,8 @@
 
   "blanket_bog": {
     "name": "Tourbière",
-    "scoring": "Double les points des cartes placées en dessous",
-    "context": "Points bonus de la Tourbière (doublement)"
+    "scoring": "Double les points des plantes placées en dessous",
+    "context": "Quelles plantes sont sous cette Tourbière ?"
   },
   "fountainhead": {
     "name": "Source vive",

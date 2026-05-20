@@ -309,6 +309,40 @@ export function CardCounter({
         </div>
       )}
 
+      {card.needsHostPlantContext && count > 0 && onHostsChange && (
+        <div className="flex flex-col gap-1 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
+          <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
+          {availableHostKeys && availableHostKeys.length > 0 ? (
+            <div className="grid grid-cols-2 gap-x-3 gap-y-1.5">
+              {availableHostKeys.map((key) => {
+                const checked = (hostCardKeys ?? []).includes(key)
+                return (
+                  <label
+                    key={key}
+                    className="flex items-center gap-2 text-xs text-bark-700 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={checked}
+                      onChange={(e) => {
+                        const current = new Set(hostCardKeys ?? [])
+                        if (e.target.checked) current.add(key)
+                        else current.delete(key)
+                        onHostsChange(Array.from(current))
+                      }}
+                      className="h-3.5 w-3.5 accent-bark-500"
+                    />
+                    <span className="truncate">{tc(`${key}.name`)}</span>
+                  </label>
+                )
+              })}
+            </div>
+          ) : (
+            <span className="text-[10px] italic text-bark-400">{t('wizard.noHostPlantsAvailable')}</span>
+          )}
+        </div>
+      )}
+
       {card.scoringType === 'comparison' && count > 0 && (
         <div className="flex items-center gap-2 rounded-lg bg-blue-50 px-3 py-2 ml-2 border-l-2 border-blue-300">
           <span className="text-xs text-blue-600">{t('wizard.comparisonNotice')}</span>

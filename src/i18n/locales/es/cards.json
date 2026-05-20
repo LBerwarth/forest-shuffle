@@ -520,8 +520,8 @@
 
   "blanket_bog": {
     "name": "Turbera",
-    "scoring": "Duplica los puntos de las cartas colocadas debajo",
-    "context": "Puntos extra por la duplicación de la Turbera"
+    "scoring": "Duplica los puntos de las plantas colocadas debajo",
+    "context": "¿Qué plantas están bajo esta Turbera?"
   },
   "fountainhead": {
     "name": "Manantial",

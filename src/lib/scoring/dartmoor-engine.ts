@@ -159,7 +159,20 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   elderberry_d: () => 0,
 
   // --- MOOR ---
-  blanket_bog: (_count, _ctx, metadata) => metadata?.contextValue ?? 0,
+  // Blanket Bog doubles the points of plants placed under it. The user picks
+  // which plant keys are below the bog (stored in metadata.hostCardKeys); the
+  // bog's own score is the sum of those plants' single-copy values, which
+  // mirrors the in-game "the plant scores twice" effect (the plant scores its
+  // normal value, the bog adds another copy of that value on top).
+  blanket_bog: (_count, ctx, metadata) => {
+    const hostKeys = metadata?.hostCardKeys ?? []
+    let bonus = 0
+    for (const hostKey of hostKeys) {
+      if (!hostKey || hostKey === 'blanket_bog') continue
+      bonus += scoreDartmoorCard(hostKey, 1, ctx, ctx.cardMetadata[hostKey])
+    }
+    return bonus
+  },
   fountainhead: () => 0,
   lowland_heath: (count, ctx) => count * (2 * countTag(ctx, 'amphibian')),
   rhos_pasture: (count, ctx) => count * (2 * countTag(ctx, 'hoofed')),

@@ -8,7 +8,7 @@ import { GameInsights } from '@/components/scoring/GameInsights'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { recalcPlayer } from '@/lib/scoring/recalc'
-import { useCreateGame } from '@/hooks/use-games'
+import { useSaveGame } from '@/hooks/use-games'
 import { updateLivePlayerStatus, updateLiveSessionStatus } from '@/lib/supabase-api'
 import type { GameWithPlayers, GamePlayer } from '@/types/game'
 
@@ -18,7 +18,7 @@ export function LiveResultPage() {
   const { sessionId } = useParams<{ sessionId: string }>()
   const { session, players: livePlayers, allDone, isLoading } = useLiveSession(sessionId)
   const { isHost, myPlayerId, clearSession } = useLiveSessionStore()
-  const createGameMutation = useCreateGame()
+  const saveGameMutation = useSaveGame()
   const savedRef = useRef(false)
 
   // Compute cross-player scoring from all submitted data
@@ -48,12 +48,16 @@ export function LiveResultPage() {
       }))
   }, [session, allDone, livePlayers])
 
-  // Auto-save game when results are ready
+  // Auto-save game when results are ready. Use sessionId as the gameId so
+  // re-finishing after Edit Scores replaces the prior record idempotently
+  // (saveGame deletes the old row, cascades game_players + score_entries,
+  // and inserts fresh). Previously this generated a fresh UUID per mount,
+  // which created a duplicate game in history every time someone edited.
   useEffect(() => {
-    if (!sessionId || !session || rankedPlayers.length === 0 || savedRef.current || createGameMutation.isPending) return
+    if (!sessionId || !session || rankedPlayers.length === 0 || savedRef.current || saveGameMutation.isPending) return
     savedRef.current = true
 
-    const gameId = crypto.randomUUID()
+    const gameId = sessionId
     const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
       id: crypto.randomUUID(),
       game_id: gameId,
@@ -73,14 +77,14 @@ export function LiveResultPage() {
       players: gamePlayers,
     }
 
-    createGameMutation.mutateAsync(game).then(() => {
+    saveGameMutation.mutateAsync(game).then(() => {
       if (isHost) {
         updateLiveSessionStatus(sessionId, 'completed')
       }
     }).catch(() => {
       savedRef.current = false
     })
-  }, [sessionId, session, rankedPlayers, isHost, createGameMutation])
+  }, [sessionId, session, rankedPlayers, isHost, saveGameMutation])
 
   async function handleEditScores() {
     if (myPlayerId && sessionId) {
@@ -109,7 +113,7 @@ export function LiveResultPage() {
       <GameInsights rankedPlayers={rankedPlayers} />
 
       {/* Save status */}
-      {createGameMutation.isPending && (
+      {saveGameMutation.isPending && (
         <div className="flex items-center justify-center gap-2 mb-4 text-sm text-forest-500">
           <Loader2 className="h-4 w-4 animate-spin" />
           {t('result.saving')}

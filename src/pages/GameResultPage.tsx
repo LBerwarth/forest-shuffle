@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/Button'
 import { ResultsDisplay } from '@/components/scoring/ResultsDisplay'
 import { GameInsights } from '@/components/scoring/GameInsights'
 import { useScoringStore } from '@/store/scoring-store'
-import { useCreateGame } from '@/hooks/use-games'
+import { useSaveGame } from '@/hooks/use-games'
 import { recalcPlayer } from '@/lib/scoring/recalc'
 import type { GameWithPlayers, GamePlayer } from '@/types/game'
 
@@ -15,7 +15,7 @@ export function GameResultPage() {
   const navigate = useNavigate()
   const { gameId } = useParams<{ gameId: string }>()
   const { players, expansions, edition, endSession } = useScoringStore()
-  const createGameMutation = useCreateGame()
+  const saveGameMutation = useSaveGame()
   const savedRef = useRef(false)
 
   // Recalculate with cross-player data to ensure comparison cards are scored correctly
@@ -31,9 +31,11 @@ export function GameResultPage() {
 
   const winner = rankedPlayers[0]
 
-  // Auto-save game when results are ready
+  // Auto-save game when results are ready. saveGameMutation is idempotent on
+  // game.id, so re-finishing after Edit Scores replaces the prior record
+  // instead of inserting a duplicate.
   useEffect(() => {
-    if (!gameId || !winner || savedRef.current || createGameMutation.isPending) return
+    if (!gameId || !winner || savedRef.current || saveGameMutation.isPending) return
     savedRef.current = true
 
     const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
@@ -55,10 +57,10 @@ export function GameResultPage() {
       players: gamePlayers,
     }
 
-    createGameMutation.mutateAsync(game).catch(() => {
+    saveGameMutation.mutateAsync(game).catch(() => {
       savedRef.current = false
     })
-  }, [gameId, winner, rankedPlayers, players.length, edition, createGameMutation])
+  }, [gameId, winner, rankedPlayers, players.length, edition, saveGameMutation])
 
   function handleNewGame() {
     endSession()
@@ -82,7 +84,7 @@ export function GameResultPage() {
       <GameInsights rankedPlayers={rankedPlayers} />
 
       {/* Save status */}
-      {createGameMutation.isPending && (
+      {saveGameMutation.isPending && (
         <div className="flex items-center justify-center gap-2 mb-4 text-sm text-forest-500">
           <Loader2 className="h-4 w-4 animate-spin" />
           {t('result.saving')}

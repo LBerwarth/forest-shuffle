@@ -520,8 +520,8 @@
 
   "blanket_bog": {
     "name": "Hochmoor",
-    "scoring": "Verdoppelt Punkte der Karten darunter",
-    "context": "Bonuspunkte durch Hochmoor-Verdopplung"
+    "scoring": "Verdoppelt Punkte der Pflanzen darunter",
+    "context": "Welche Pflanzen sind unter diesem Hochmoor?"
   },
   "fountainhead": {
     "name": "Quelle",

@@ -520,8 +520,8 @@
 
   "blanket_bog": {
     "name": "Blanket Bog",
-    "scoring": "Doubles points of cards placed below it",
-    "context": "Enter bonus points from Blanket Bog doubling"
+    "scoring": "Doubles points of plants placed below it",
+    "context": "Which plants are below this Blanket Bog?"
   },
   "fountainhead": {
     "name": "Fountainhead",

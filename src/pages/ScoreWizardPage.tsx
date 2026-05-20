@@ -71,6 +71,15 @@ export function ScoreWizardPage() {
       .map((c) => c.key)
   }, [cardsByCategory, currentPlayer])
 
+  const availableHostPlantKeys = useMemo<readonly string[]>(() => {
+    if (!currentPlayer) return []
+    const bottomCards = cardsByCategory.bottom || []
+    return bottomCards
+      .filter((c) => c.tags.includes('plant'))
+      .filter((c) => (currentPlayer.cardCounts[c.key] || 0) > 0)
+      .map((c) => c.key)
+  }, [cardsByCategory, currentPlayer])
+
   const tc = useTranslation('cards').t
 
   const [cardSearch, setCardSearch] = useState('')
@@ -464,9 +473,15 @@ export function ScoreWizardPage() {
                   : undefined
               }
               hostCardKeys={currentPlayer.cardMetadata[card.key]?.hostCardKeys}
-              availableHostKeys={card.needsHostTreeContext ? availableHostKeys : undefined}
-              onHostsChange={
+              availableHostKeys={
                 card.needsHostTreeContext
+                  ? availableHostKeys
+                  : card.needsHostPlantContext
+                    ? availableHostPlantKeys
+                    : undefined
+              }
+              onHostsChange={
+                card.needsHostTreeContext || card.needsHostPlantContext
                   ? (next) =>
                       setCardMetadata(currentPlayer.playerId, card.key, { hostCardKeys: next })
                   : undefined

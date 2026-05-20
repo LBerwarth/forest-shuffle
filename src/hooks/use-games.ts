@@ -4,6 +4,7 @@ import {
   fetchGame,
   createGame,
   deleteGame,
+  saveGame,
 } from '@/lib/supabase-api'
 import type { GameWithPlayers } from '@/types/game'
 
@@ -28,6 +29,14 @@ export function useCreateGame() {
   const qc = useQueryClient()
   return useMutation({
     mutationFn: (game: GameWithPlayers) => createGame(game),
+    onSuccess: () => qc.invalidateQueries({ queryKey: GAMES_KEY }),
+  })
+}
+
+export function useSaveGame() {
+  const qc = useQueryClient()
+  return useMutation({
+    mutationFn: (game: GameWithPlayers) => saveGame(game),
     onSuccess: () => qc.invalidateQueries({ queryKey: GAMES_KEY }),
   })
 }

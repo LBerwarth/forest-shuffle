@@ -49,4 +49,7 @@ export interface CardDefinition {
   contextCappedByCount?: boolean
   /** If true, wizard shows a tree-species picker (e.g. Violet Carpenter Bee) */
   needsHostTreeContext?: boolean
+  /** If true, wizard shows a multi-select of plants placed under this card
+   *  (e.g. Blanket Bog, which doubles the points of plants in its slots) */
+  needsHostPlantContext?: boolean
 }

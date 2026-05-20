@@ -66,6 +66,7 @@
     "cards": "cartas",
     "selectHostTree": "Elige un árbol…",
     "noHostTreeAvailable": "Añade un árbol primero",
+    "noHostPlantsAvailable": "Añade plantas primero",
     "set": "Set",
     "series": "Serie {{index}}",
     "dragonflySet": "Set de libélulas",

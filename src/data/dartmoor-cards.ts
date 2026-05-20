@@ -18,7 +18,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   // MOOR (9)
   // ============================================================
-  { key: 'blanket_bog', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
+  { key: 'blanket_bog', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'custom', needsHostPlantContext: true },
   { key: 'fountainhead', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'fixed' },
   { key: 'lowland_heath', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'rhos_pasture', category: 'moor', tags: ['moor'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
