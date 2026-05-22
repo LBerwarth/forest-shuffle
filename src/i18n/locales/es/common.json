@@ -52,6 +52,8 @@
   },
   "wizard": {
     "scoreEntry": "Entrada de puntos",
+    "cancel": "Cancelar puntuación",
+    "cancelConfirm": "¿Cancelar la puntuación? Se perderán todas las cartas introducidas.",
     "fullyOccupiedTrees": "Árboles completamente ocupados",
     "fullyOccupiedDesc": "Árboles con las 4 ranuras llenas (para puntuación de la Garduña)",
     "specialCave": "Cueva especial",
@@ -74,6 +76,7 @@
   },
   "result": {
     "wins": "¡{{name}} gana!",
+    "tieWins": "¡{{names}} comparten la victoria!",
     "points": "{{count}} puntos",
     "scoreBreakdown": "Desglose de puntos",
     "category": "Categoría",

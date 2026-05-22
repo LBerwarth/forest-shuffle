@@ -21,7 +21,8 @@ export function LiveResultPage() {
   const saveGameMutation = useSaveGame()
   const savedRef = useRef(false)
 
-  // Compute cross-player scoring from all submitted data
+  // Compute cross-player scoring from all submitted data, then assign
+  // competition ranks (1,1,3,4 style) so tied players share the same rank.
   const rankedPlayers = useMemo<RankedPlayer[]>(() => {
     if (!session || !allDone || livePlayers.length === 0) return []
 
@@ -38,14 +39,24 @@ export function LiveResultPage() {
       breakdown: recalcPlayer(player, scoringData, session.expansions, session.edition),
     }))
 
-    return withBreakdowns
-      .sort((a, b) => (b.breakdown?.total ?? 0) - (a.breakdown?.total ?? 0))
-      .map((p, idx) => ({
+    const sorted = withBreakdowns.sort(
+      (a, b) => (b.breakdown?.total ?? 0) - (a.breakdown?.total ?? 0),
+    )
+    let lastScore = Infinity
+    let currentRank = 0
+    return sorted.map((p, idx) => {
+      const score = p.breakdown?.total ?? 0
+      if (score < lastScore) {
+        currentRank = idx + 1
+        lastScore = score
+      }
+      return {
         playerId: p.playerId,
         playerName: p.playerName,
         breakdown: p.breakdown,
-        rank: idx + 1,
-      }))
+        rank: currentRank,
+      }
+    })
   }, [session, allDone, livePlayers])
 
   // Auto-save game when results are ready. Use sessionId as the gameId so
@@ -94,8 +105,8 @@ export function LiveResultPage() {
   }
 
   function handleHome() {
-    clearSession()
     navigate('/')
+    clearSession()
   }
 
   if (isLoading || !allDone) {

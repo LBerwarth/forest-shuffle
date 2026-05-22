@@ -52,6 +52,8 @@
   },
   "wizard": {
     "scoreEntry": "Punkteingabe",
+    "cancel": "Scoring abbrechen",
+    "cancelConfirm": "Scoring abbrechen? Alle eingegebenen Karten gehen verloren.",
     "fullyOccupiedTrees": "Voll besetzte Bäume",
     "fullyOccupiedDesc": "Bäume mit allen 4 Plätzen besetzt (für Marder-Wertung)",
     "specialCave": "Spezialhöhle",
@@ -74,6 +76,7 @@
   },
   "result": {
     "wins": "{{name}} gewinnt!",
+    "tieWins": "{{names}} gewinnen gemeinsam!",
     "points": "{{count}} Punkte",
     "scoreBreakdown": "Punkteübersicht",
     "category": "Kategorie",

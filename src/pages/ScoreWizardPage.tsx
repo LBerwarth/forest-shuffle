@@ -53,7 +53,14 @@ export function ScoreWizardPage() {
     setCurrentStep,
     setCardCount,
     setCardMetadata,
+    endSession,
   } = useScoringStore()
+
+  function handleCancel() {
+    if (!confirm(t('wizard.cancelConfirm'))) return
+    navigate('/')
+    endSession()
+  }
 
   const wizardSteps = useMemo(() => getWizardSteps(edition), [edition])
   const stepCategories = useMemo(() => getCategoryOrder(edition).map(cat => [cat]), [edition])
@@ -258,7 +265,14 @@ export function ScoreWizardPage() {
               <ArrowLeft className="h-5 w-5" />
             </button>
             <h1 className="font-heading text-lg font-bold text-forest-800">{t('wizard.scoreEntry')}</h1>
-            <div className="w-5" />
+            <button
+              type="button"
+              onClick={handleCancel}
+              aria-label={t('wizard.cancel')}
+              className="text-forest-400 hover:text-red-500 transition-colors"
+            >
+              <X className="h-5 w-5" />
+            </button>
           </div>
 
           {/* Player tabs */}

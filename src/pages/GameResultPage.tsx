@@ -18,15 +18,27 @@ export function GameResultPage() {
   const saveGameMutation = useSaveGame()
   const savedRef = useRef(false)
 
-  // Recalculate with cross-player data to ensure comparison cards are scored correctly
+  // Recalculate with cross-player data to ensure comparison cards are scored
+  // correctly, then assign competition ranks (1,1,3,4 style) so tied players
+  // share the same rank instead of one being arbitrarily picked as #1.
   const rankedPlayers = useMemo(() => {
     const recalculated = players.map((p) => ({
       ...p,
       breakdown: recalcPlayer(p, players, expansions, edition),
     }))
-    return recalculated
-      .sort((a, b) => (b.breakdown?.total ?? 0) - (a.breakdown?.total ?? 0))
-      .map((p, idx) => ({ ...p, rank: idx + 1 }))
+    const sorted = recalculated.sort(
+      (a, b) => (b.breakdown?.total ?? 0) - (a.breakdown?.total ?? 0),
+    )
+    let lastScore = Infinity
+    let currentRank = 0
+    return sorted.map((p, idx) => {
+      const score = p.breakdown?.total ?? 0
+      if (score < lastScore) {
+        currentRank = idx + 1
+        lastScore = score
+      }
+      return { ...p, rank: currentRank }
+    })
   }, [players, expansions, edition])
 
   const winner = rankedPlayers[0]
@@ -63,12 +75,16 @@ export function GameResultPage() {
   }, [gameId, winner, rankedPlayers, players.length, edition, saveGameMutation])
 
   function handleNewGame() {
-    endSession()
+    // Navigate first so the result page unmounts before endSession() clears
+    // the players array — otherwise the !winner guard below races the route
+    // change and replaces the URL with /new-game (which the bottom nav labels
+    // "Score", confusing users who actually want Home).
     navigate('/new-game')
+    endSession()
   }
 
   if (!winner) {
-    return <Navigate to="/new-game" replace />
+    return <Navigate to="/" replace />
   }
 
   return (
@@ -101,7 +117,7 @@ export function GameResultPage() {
           <RotateCcw className="h-5 w-5" />
           {t('result.newGame')}
         </Button>
-        <Button variant="ghost" className="w-full" onClick={() => { endSession(); navigate('/') }}>
+        <Button variant="ghost" className="w-full" onClick={() => { navigate('/'); endSession() }}>
           <Home className="h-4 w-4" />
           {t('result.home')}
         </Button>

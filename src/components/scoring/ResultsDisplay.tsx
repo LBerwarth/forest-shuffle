@@ -26,12 +26,18 @@ interface ResultsDisplayProps {
 }
 
 export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const tc = useTranslation('cards').t
   const categoryOrder = getCategoryOrder(edition)
-  const winner = rankedPlayers[0]
+  const winners = rankedPlayers.filter((p) => p.rank === 1)
+  const winnerScore = winners[0]?.breakdown?.total ?? 0
 
-  if (!winner) return null
+  if (winners.length === 0) return null
+
+  const winnerNames = new Intl.ListFormat(i18n.language, {
+    style: 'long',
+    type: 'conjunction',
+  }).format(winners.map((w) => w.playerName))
 
   return (
     <>
@@ -48,10 +54,12 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
           </div>
         </div>
         <h1 className="font-heading text-2xl font-bold text-forest-800">
-          {t('result.wins', { name: winner.playerName })}
+          {winners.length === 1
+            ? t('result.wins', { name: winnerNames })
+            : t('result.tieWins', { names: winnerNames })}
         </h1>
         <p className="mt-1 flex items-center justify-center gap-1 text-3xl font-bold text-forest-600 tabular-nums">
-          {winner.breakdown?.total ?? 0}
+          {winnerScore}
           <AcornIcon className="h-7 w-7" />
         </p>
       </motion.div>
@@ -65,12 +73,12 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: idx * 0.1 }}
           >
-            <Card className={cn(idx === 0 && 'border-yellow-300 bg-yellow-50/50')}>
+            <Card className={cn(player.rank === 1 && 'border-yellow-300 bg-yellow-50/50')}>
               <CardContent className="py-3">
                 <div className="flex items-center gap-3">
                   <div
                     className="flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white shrink-0"
-                    style={{ backgroundColor: MEDAL_COLORS[idx] ?? '#94a3b8' }}
+                    style={{ backgroundColor: MEDAL_COLORS[player.rank - 1] ?? '#94a3b8' }}
                   >
                     {player.rank}
                   </div>

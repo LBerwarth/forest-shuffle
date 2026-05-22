@@ -52,6 +52,8 @@
   },
   "wizard": {
     "scoreEntry": "Score Entry",
+    "cancel": "Cancel scoring",
+    "cancelConfirm": "Cancel scoring? All entered cards will be lost.",
     "fullyOccupiedTrees": "Fully Occupied Trees",
     "fullyOccupiedDesc": "Trees with all 4 slots filled (for Beech Marten scoring)",
     "specialCave": "Special Cave",
@@ -74,6 +76,7 @@
   },
   "result": {
     "wins": "{{name}} wins!",
+    "tieWins": "{{names}} share the win!",
     "points": "{{count}} points",
     "scoreBreakdown": "Score Breakdown",
     "category": "Category",

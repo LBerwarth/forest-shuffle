@@ -52,6 +52,8 @@
   },
   "wizard": {
     "scoreEntry": "Saisie des scores",
+    "cancel": "Annuler la saisie",
+    "cancelConfirm": "Annuler la saisie ? Toutes les cartes saisies seront perdues.",
     "fullyOccupiedTrees": "Arbres compl\u00e8tement occup\u00e9s",
     "fullyOccupiedDesc": "Arbres avec les 4 emplacements remplis (pour le score de la Fouine)",
     "specialCave": "Grotte spéciale",
@@ -74,6 +76,7 @@
   },
   "result": {
     "wins": "{{name}} gagne\u00a0!",
+    "tieWins": "{{names}} gagnent ensemble !",
     "points": "{{count}} points",
     "scoreBreakdown": "D\u00e9tail des scores",
     "category": "Cat\u00e9gorie",

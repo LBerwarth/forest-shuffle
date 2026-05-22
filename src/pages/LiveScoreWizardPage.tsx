@@ -46,7 +46,7 @@ export function LiveScoreWizardPage() {
   const navigate = useNavigate()
   const { sessionId } = useParams<{ sessionId: string }>()
   const { session, players: livePlayers, allDone } = useLiveSession(sessionId)
-  const { myPlayerId } = useLiveSessionStore()
+  const { myPlayerId, clearSession } = useLiveSessionStore()
   const [submitted, setSubmitted] = useState(false)
 
   const {
@@ -61,6 +61,14 @@ export function LiveScoreWizardPage() {
     setCardMetadata,
   } = useScoringStore()
   const startSession = useScoringStore((s) => s.startSession)
+  const endSession = useScoringStore((s) => s.endSession)
+
+  function handleCancel() {
+    if (!confirm(t('wizard.cancelConfirm'))) return
+    navigate('/')
+    clearSession()
+    endSession()
+  }
 
   // Start a single-player scoring session for this player
   // Reset if the stored session doesn't match the current live session
@@ -315,7 +323,17 @@ export function LiveScoreWizardPage() {
           <div className="flex items-center justify-between mb-2">
             <div className="text-xs text-forest-400">{currentPlayer.playerName}</div>
             <h1 className="font-heading text-lg font-bold text-forest-800">{t('wizard.scoreEntry')}</h1>
-            <div className="text-xs text-forest-400">{session.code}</div>
+            <div className="flex items-center gap-2">
+              <div className="text-xs text-forest-400">{session.code}</div>
+              <button
+                type="button"
+                onClick={handleCancel}
+                aria-label={t('wizard.cancel')}
+                className="text-forest-400 hover:text-red-500 transition-colors"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
           </div>
 
           <WizardStepper
