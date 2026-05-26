@@ -10,6 +10,7 @@ import { useLiveSessionStore } from '@/store/live-session-store'
 import { recalcPlayer } from '@/lib/scoring/recalc'
 import { useSaveGame } from '@/hooks/use-games'
 import { updateLivePlayerStatus, updateLiveSessionStatus } from '@/lib/supabase-api'
+import { getOrCreateLocalGameId } from '@/lib/local-game-id'
 import type { GameWithPlayers, GamePlayer } from '@/types/game'
 
 export function LiveResultPage() {
@@ -59,16 +60,16 @@ export function LiveResultPage() {
     })
   }, [session, allDone, livePlayers])
 
-  // Auto-save game when results are ready. Use sessionId as the gameId so
-  // re-finishing after Edit Scores replaces the prior record idempotently
-  // (saveGame deletes the old row, cascades game_players + score_entries,
-  // and inserts fresh). Previously this generated a fresh UUID per mount,
-  // which created a duplicate game in history every time someone edited.
+  // Auto-save game when results are ready. Each device persists its own
+  // stable gameId for this session in localStorage so Edit Scores → finish
+  // is idempotent on this device, while host and other players each save
+  // their own copy of the game into their own device-scoped history
+  // without primary-key collisions on the shared sessionId.
   useEffect(() => {
     if (!sessionId || !session || rankedPlayers.length === 0 || savedRef.current || saveGameMutation.isPending) return
     savedRef.current = true
 
-    const gameId = sessionId
+    const gameId = getOrCreateLocalGameId(sessionId)
     const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
       id: crypto.randomUUID(),
       game_id: gameId,
@@ -92,8 +93,11 @@ export function LiveResultPage() {
       if (isHost) {
         updateLiveSessionStatus(sessionId, 'completed')
       }
-    }).catch(() => {
-      savedRef.current = false
+    }).catch((err) => {
+      // Keep savedRef true on failure so the effect doesn't tight-loop the
+      // failing save (used to spin "saving in progress" forever). User can
+      // refresh or use Edit Scores → finish again to retry.
+      console.error('Failed to save live game:', err)
     })
   }, [sessionId, session, rankedPlayers, isHost, saveGameMutation])
 

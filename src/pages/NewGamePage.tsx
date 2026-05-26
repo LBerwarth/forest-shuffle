@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Globe, Calculator, Trash2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { NoAppNotice } from '@/components/NoAppNotice'
-import { usePlayers, useCreatePlayer, useUpdatePlayer, useDeletePlayer } from '@/hooks/use-players'
+import { usePlayers, useCreatePlayer, useDeletePlayer } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { useScoringStore } from '@/store/scoring-store'
 import { useSettingsStore } from '@/store/settings-store'
@@ -23,7 +23,6 @@ export function NewGamePage() {
   const { data: storedPlayers = [] } = usePlayers()
   const { data: games = [] } = useGames()
   const createPlayerMutation = useCreatePlayer()
-  const updatePlayerMutation = useUpdatePlayer()
   const deletePlayerMutation = useDeletePlayer()
   const startSession = useScoringStore((s) => s.startSession)
   const { setSession, setPlayer } = useLiveSessionStore()
@@ -34,9 +33,19 @@ export function NewGamePage() {
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
   const [newPlayerName, setNewPlayerName] = useState('')
   const [showNewPlayer, setShowNewPlayer] = useState(false)
-  const lastPlayer = useMemo(() => readLastJoinedPlayer(), [])
-  const [liveHostName, setLiveHostName] = useState(lastPlayer?.name ?? '')
+  const [selectedLiveHostId, setSelectedLiveHostId] = useState<string | null>(null)
   const [creatingLive, setCreatingLive] = useState(false)
+
+  // Pre-select the last-joined player as host once stored players load —
+  // common case: the host running this device joins their own session as
+  // themselves, so they should not have to tap anything.
+  useEffect(() => {
+    if (selectedLiveHostId) return
+    const lastPlayer = readLastJoinedPlayer()
+    if (lastPlayer && storedPlayers.some((p) => p.id === lastPlayer.id)) {
+      setSelectedLiveHostId(lastPlayer.id)
+    }
+  }, [storedPlayers, selectedLiveHostId])
 
   function togglePlayer(id: string) {
     setSelectedPlayerIds((prev) =>
@@ -67,7 +76,11 @@ export function NewGamePage() {
     } catch (err) {
       console.error('Failed to create player:', err)
     }
-    setSelectedPlayerIds((prev) => [...prev, id])
+    if (mode === 'live') {
+      setSelectedLiveHostId(id)
+    } else {
+      setSelectedPlayerIds((prev) => [...prev, id])
+    }
     setNewPlayerName('')
     setShowNewPlayer(false)
   }
@@ -93,41 +106,18 @@ export function NewGamePage() {
   }
 
   async function handleCreateLive() {
-    const trimmedName = liveHostName.trim()
-    if (!trimmedName || creatingLive) return
+    if (!selectedLiveHostId || creatingLive) return
+    const host = storedPlayers.find((p) => p.id === selectedLiveHostId)
+    if (!host) return
     setCreatingLive(true)
 
     try {
-      // Resolve host identity: reuse last-joined player if still in DB,
-      // updating its name if the user tweaked it; otherwise create a new one.
-      let hostId: string
-      let hostName: string = trimmedName
-      const existing = lastPlayer
-        ? storedPlayers.find((p) => p.id === lastPlayer.id)
-        : null
-      if (existing) {
-        hostId = existing.id
-        if (existing.name !== trimmedName) {
-          await updatePlayerMutation.mutateAsync({
-            id: existing.id,
-            updates: { name: trimmedName },
-          })
-        }
-      } else {
-        hostId = crypto.randomUUID()
-        const color = PLAYER_COLORS[storedPlayers.length % PLAYER_COLORS.length]!
-        await createPlayerMutation.mutateAsync({
-          id: hostId,
-          name: trimmedName,
-          color,
-        })
-      }
-      writeLastJoinedPlayer({ id: hostId, name: trimmedName })
+      writeLastJoinedPlayer({ id: host.id, name: host.name })
 
-      const session = await createLiveSession(edition, getExpansions(), hostId, language)
-      await joinLiveSession(session.id, hostId, hostName)
+      const session = await createLiveSession(edition, getExpansions(), host.id, language)
+      await joinLiveSession(session.id, host.id, host.name)
       setSession(session.id, session.code, true)
-      setPlayer(hostId, hostName)
+      setPlayer(host.id, host.name)
       navigate(`/live/${session.id}`)
     } catch (err) {
       console.error('Failed to create live session:', err)
@@ -333,17 +323,67 @@ export function NewGamePage() {
           <h1 className="font-heading text-xl font-bold text-forest-800">{t('live.createSession')}</h1>
         </div>
 
-        <div className="mb-6">
-          <p className="text-sm font-medium text-forest-600 mb-2">{t('live.yourName')}</p>
-          <input
-            type="text"
-            value={liveHostName}
-            onChange={(e) => setLiveHostName(e.target.value)}
-            placeholder={t('newGame.playerName')}
-            autoFocus={!lastPlayer}
-            className="w-full rounded-xl border-2 border-forest-200 bg-white px-4 py-3 text-base text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
-          />
+        <div className="mb-4">
+          <p className="text-sm font-medium text-forest-600 mb-2">{t('live.selectPlayer')}</p>
+          <div className="space-y-2">
+            {storedPlayers.map((player) => {
+              const isSelected = selectedLiveHostId === player.id
+              return (
+                <button
+                  key={player.id}
+                  type="button"
+                  onClick={() => setSelectedLiveHostId(player.id)}
+                  className={cn(
+                    'flex w-full items-center gap-3 rounded-xl border-2 px-4 py-3 transition-all text-left',
+                    isSelected
+                      ? 'border-forest-500 bg-forest-50'
+                      : 'border-forest-100 bg-white hover:border-forest-200',
+                  )}
+                >
+                  <div
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-white text-sm font-bold shrink-0"
+                    style={{ backgroundColor: player.color }}
+                  >
+                    {player.name.charAt(0).toUpperCase()}
+                  </div>
+                  <span className="text-sm font-medium text-forest-700">{player.name}</span>
+                </button>
+              )
+            })}
+          </div>
         </div>
+
+        {showNewPlayer ? (
+          <Card className="mb-6">
+            <CardContent className="py-3">
+              <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} className="flex items-center gap-2">
+                <input
+                  type="text"
+                  placeholder={t('newGame.playerName')}
+                  value={newPlayerName}
+                  onChange={(e) => setNewPlayerName(e.target.value)}
+                  autoFocus
+                  className="flex-1 rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
+                />
+                <Button type="submit" size="sm" disabled={!newPlayerName.trim()}>
+                  {t('newGame.add')}
+                </Button>
+                <button type="button" onClick={() => setShowNewPlayer(false)} className="text-forest-400">
+                  <X className="h-4 w-4" />
+                </button>
+              </form>
+            </CardContent>
+          </Card>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setShowNewPlayer(true)}
+            className="mb-6 flex w-full items-center justify-center gap-2 rounded-xl border-2 border-dashed border-forest-200 py-3 text-sm font-medium text-forest-400 hover:border-forest-300 hover:text-forest-500 transition-colors"
+          >
+            <UserPlus className="h-4 w-4" />
+            {t('newGame.addNewPlayer')}
+          </button>
+        )}
 
         <NoAppNotice className="mb-6" />
 
@@ -351,7 +391,7 @@ export function NewGamePage() {
           size="lg"
           className="w-full"
           onClick={handleCreateLive}
-          disabled={!liveHostName.trim() || creatingLive}
+          disabled={!selectedLiveHostId || creatingLive}
         >
           <Wifi className="h-5 w-5" />
           {creatingLive ? t('live.creating') : t('live.createSession')}

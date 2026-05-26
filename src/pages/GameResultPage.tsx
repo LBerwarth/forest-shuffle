@@ -69,8 +69,11 @@ export function GameResultPage() {
       players: gamePlayers,
     }
 
-    saveGameMutation.mutateAsync(game).catch(() => {
-      savedRef.current = false
+    saveGameMutation.mutateAsync(game).catch((err) => {
+      // Keep savedRef true on failure so the effect doesn't tight-loop the
+      // failing save. User can refresh or use Edit Scores → finish again
+      // to retry instead of seeing "Saving..." forever.
+      console.error('Failed to save game:', err)
     })
   }, [gameId, winner, rankedPlayers, players.length, edition, saveGameMutation])
 
