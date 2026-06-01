@@ -42,8 +42,10 @@ export function JoinSessionPage() {
     const id = crypto.randomUUID()
     const color = PLAYER_COLORS[storedPlayers.length % PLAYER_COLORS.length]!
     try {
-      await createPlayerMutation.mutateAsync({ id, name: newPlayerName.trim(), color })
-      setSelectedPlayerId(id)
+      // createPlayer may return an existing same-name profile — select the id
+      // it returns, not the one we generated (they differ on reuse).
+      const created = await createPlayerMutation.mutateAsync({ id, name: newPlayerName.trim(), color })
+      setSelectedPlayerId(created.id)
     } catch (err) {
       console.error('Failed to create player:', err)
     }

@@ -72,14 +72,18 @@ export function NewGamePage() {
     const id = crypto.randomUUID()
     const color = PLAYER_COLORS[storedPlayers.length % PLAYER_COLORS.length]!
     try {
-      await createPlayerMutation.mutateAsync({ id, name: newPlayerName.trim(), color })
+      // createPlayer may return an existing same-name profile, whose id differs
+      // from the one we generated — always select the id it hands back.
+      const created = await createPlayerMutation.mutateAsync({ id, name: newPlayerName.trim(), color })
+      if (mode === 'live') {
+        setSelectedLiveHostId(created.id)
+      } else {
+        setSelectedPlayerIds((prev) =>
+          prev.includes(created.id) ? prev : [...prev, created.id],
+        )
+      }
     } catch (err) {
       console.error('Failed to create player:', err)
-    }
-    if (mode === 'live') {
-      setSelectedLiveHostId(id)
-    } else {
-      setSelectedPlayerIds((prev) => [...prev, id])
     }
     setNewPlayerName('')
     setShowNewPlayer(false)

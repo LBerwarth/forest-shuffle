@@ -64,7 +64,7 @@ export function applyFilters(
   // to be in the game.
   return matched.map((g) => ({
     ...g,
-    players: g.players.filter((p) => selectedSet.has(p.player_id)),
+    players: g.players.filter((p) => p.player_id !== null && selectedSet.has(p.player_id)),
   }))
 }
 
@@ -111,6 +111,7 @@ export function aggregatePlayers(
 
   for (const g of games) {
     for (const p of g.players) {
+      if (!p.player_id) continue // deleted player — kept in history, excluded from stats
       let entry = map.get(p.player_id)
       if (!entry) {
         entry = { name: p.player_name, games: [], scores: [], wins: 0 }
@@ -287,6 +288,7 @@ export function aggregatePlayerStrategies(
 
   for (const g of games) {
     for (const p of g.players) {
+      if (!p.player_id) continue // deleted player — kept in history, excluded from stats
       let entry = players.get(p.player_id)
       if (!entry) {
         entry = { name: p.player_name, gameIds: new Set(), tags: new Map() }

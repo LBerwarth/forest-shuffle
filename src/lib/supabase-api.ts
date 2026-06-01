@@ -18,16 +18,52 @@ export async function fetchPlayers(): Promise<Player[]> {
   return data as Player[]
 }
 
+/** Normalized key for matching player names (trim + case-insensitive). */
+function playerNameKey(name: string): string {
+  return name.trim().toLowerCase()
+}
+
+/**
+ * Create a player, or reuse an existing same-name profile on this device.
+ *
+ * Matching is trim + case-insensitive, so re-adding someone who already exists
+ * (e.g. from a different screen) returns their existing profile instead of
+ * minting a duplicate. The DB unique index uq_profiles_name_device is the
+ * backstop for any concurrent insert that slips past this check.
+ */
 export async function createPlayer(
   player: Omit<Player, 'created_at'>,
 ): Promise<Player> {
   if (!supabase) throw new Error('Supabase not configured')
+  const deviceId = getDeviceId()
+  const name = player.name.trim()
+  const key = playerNameKey(name)
+
+  const { data: existing, error: lookupError } = await supabase
+    .from('profiles')
+    .select('*')
+    .eq('device_id', deviceId)
+  if (lookupError) throw lookupError
+  const match = (existing ?? []).find((p) => playerNameKey(p.name) === key)
+  if (match) return match as Player
+
   const { data, error } = await supabase
     .from('profiles')
-    .insert({ id: player.id, name: player.name, color: player.color, device_id: getDeviceId() })
+    .insert({ id: player.id, name, color: player.color, device_id: deviceId })
     .select()
     .single()
-  if (error) throw error
+  if (error) {
+    // Unique-index race: another insert won. Return whichever row exists now.
+    if (error.code === '23505') {
+      const { data: raced } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('device_id', deviceId)
+      const winner = (raced ?? []).find((p) => playerNameKey(p.name) === key)
+      if (winner) return winner as Player
+    }
+    throw error
+  }
   return data as Player
 }
 
