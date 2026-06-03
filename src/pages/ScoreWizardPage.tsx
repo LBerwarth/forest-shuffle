@@ -494,6 +494,9 @@ export function ScoreWizardPage() {
                     ? availableHostPlantKeys
                     : undefined
               }
+              availableHostCounts={
+                card.needsHostPlantContext ? currentPlayer.cardCounts : undefined
+              }
               onHostsChange={
                 card.needsHostTreeContext || card.needsHostPlantContext
                   ? (next) =>

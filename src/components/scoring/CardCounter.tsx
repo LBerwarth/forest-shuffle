@@ -17,6 +17,9 @@ interface CardCounterProps {
   onContextChange?: (value: number) => void
   hostCardKeys?: readonly string[]
   availableHostKeys?: readonly string[]
+  /** Maps a host card key to how many copies the player owns, used to cap how
+   *  many times a plant can be placed below a Blanket Bog. */
+  availableHostCounts?: Record<string, number>
   onHostsChange?: (next: string[]) => void
   multiplierStats?: MultiplierStat[]
   /** When provided, the displayed points represent a shared set bonus across
@@ -109,6 +112,7 @@ export function CardCounter({
   onContextChange,
   hostCardKeys,
   availableHostKeys,
+  availableHostCounts,
   onHostsChange,
   multiplierStats,
   setBonus,
@@ -313,27 +317,56 @@ export function CardCounter({
         <div className="flex flex-col gap-1 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
           <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
           {availableHostKeys && availableHostKeys.length > 0 ? (
-            <div className="grid grid-cols-2 gap-x-3 gap-y-1.5">
+            <div className="flex flex-col gap-1.5">
               {availableHostKeys.map((key) => {
-                const checked = (hostCardKeys ?? []).includes(key)
+                const selected = (hostCardKeys ?? []).filter((k) => k === key).length
+                const max = availableHostCounts?.[key] ?? 1
+                const setSelected = (next: number) => {
+                  const clamped = Math.max(0, Math.min(max, next))
+                  const others = (hostCardKeys ?? []).filter((k) => k !== key)
+                  const repeats = Array.from({ length: clamped }, () => key)
+                  onHostsChange([...others, ...repeats])
+                }
                 return (
-                  <label
-                    key={key}
-                    className="flex items-center gap-2 text-xs text-bark-700 cursor-pointer"
-                  >
-                    <input
-                      type="checkbox"
-                      checked={checked}
-                      onChange={(e) => {
-                        const current = new Set(hostCardKeys ?? [])
-                        if (e.target.checked) current.add(key)
-                        else current.delete(key)
-                        onHostsChange(Array.from(current))
-                      }}
-                      className="h-3.5 w-3.5 accent-bark-500"
-                    />
-                    <span className="truncate">{tc(`${key}.name`)}</span>
-                  </label>
+                  <div key={key} className="flex items-center justify-between gap-2">
+                    <span className="truncate text-xs text-bark-700">
+                      {tc(`${key}.name`)}
+                      {max > 1 && (
+                        <span className="ml-1 text-[10px] text-bark-400 tabular-nums">×{max}</span>
+                      )}
+                    </span>
+                    <div className="flex items-center gap-1 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => setSelected(selected - 1)}
+                        disabled={selected <= 0}
+                        className={cn(
+                          'flex h-7 w-7 items-center justify-center rounded-md text-sm transition-colors',
+                          selected <= 0
+                            ? 'bg-bark-100 text-bark-300'
+                            : 'bg-bark-100 text-bark-600 hover:bg-bark-200',
+                        )}
+                      >
+                        <Minus className="h-3 w-3" />
+                      </button>
+                      <span className="w-6 text-center text-sm font-semibold tabular-nums text-bark-800">
+                        {selected}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setSelected(selected + 1)}
+                        disabled={selected >= max}
+                        className={cn(
+                          'flex h-7 w-7 items-center justify-center rounded-md text-sm transition-colors',
+                          selected >= max
+                            ? 'bg-bark-100 text-bark-300'
+                            : 'bg-bark-200 text-bark-700 hover:bg-bark-300',
+                        )}
+                      >
+                        <Plus className="h-3 w-3" />
+                      </button>
+                    </div>
+                  </div>
                 )
               })}
             </div>
