@@ -484,7 +484,7 @@
   },
 
   "ash": {
-    "name": "Gemeine Esche",
+    "name": "Esche",
     "scoring": "1 Punkt pro Karte mit dem gleichen Baumsymbol + 1 pro Pflanze (Pflanzen automatisch gezählt)",
     "context": "Karten mit dem gleichen farbigen Baumsymbol"
   },
@@ -493,12 +493,12 @@
     "scoring": "5 Punkte pro Schwarzerle"
   },
   "crab_apple": {
-    "name": "Holzapfel",
-    "scoring": "8 Punkte pro voll besetztem Holzapfel",
-    "context": "Wie viele Holzäpfel sind voll besetzt?"
+    "name": "Apfelbaum",
+    "scoring": "8 Punkte pro voll besetztem Apfelbaum",
+    "context": "Wie viele Apfelbäume sind voll besetzt?"
   },
   "goat_willow": {
-    "name": "Salweide",
+    "name": "Palmweide",
     "scoring": "1 Punkt pro Moor in deinem Wald"
   },
   "moor_birch": {
@@ -510,33 +510,33 @@
     "scoring": "1 Punkt pro Baum/Strauch in deinem Wald"
   },
   "common_hazel_d": {
-    "name": "Gemeine Hasel",
+    "name": "Hasel",
     "scoring": "0 Punkte (nur Dauereffekt)"
   },
   "elderberry_d": {
-    "name": "Schwarzer Holunder",
+    "name": "Holunder",
     "scoring": "0 Punkte (nur Dauereffekt)"
   },
 
   "blanket_bog": {
-    "name": "Hochmoor",
+    "name": "Deckenmoor",
     "scoring": "Verdoppelt Punkte der Pflanzen darunter",
-    "context": "Welche Pflanzen sind unter diesem Hochmoor?"
+    "context": "Welche Pflanzen sind unter diesem Deckenmoor?"
   },
   "fountainhead": {
     "name": "Quelle",
     "scoring": "0 Punkte (nur Dauereffekt)"
   },
   "lowland_heath": {
-    "name": "Heideflachland",
+    "name": "Flachlandheide",
     "scoring": "2 Punkte pro Amphibie in deinem Wald"
   },
   "rhos_pasture": {
-    "name": "Rhôs-Weide",
+    "name": "Moorweide",
     "scoring": "2 Punkte pro Huftier in deinem Wald"
   },
   "rivulet": {
-    "name": "Bächlein",
+    "name": "Rinnsal",
     "scoring": "2 Punkte pro Baumsymbol in deinem Wald",
     "context": "Wie viele Baumsymbole sind in deinem Wald?"
   },
@@ -545,15 +545,15 @@
     "scoring": "0 Punkte (nur Dauereffekt)"
   },
   "valley_mire": {
-    "name": "Talsumpf",
+    "name": "Talmoor",
     "scoring": "2 Punkte pro Insekt in deinem Wald"
   },
   "warrens": {
-    "name": "Kaninchenbau",
+    "name": "Tierbau",
     "scoring": "2 Punkte pro Sohlengänger in deinem Wald"
   },
   "wet_woodland": {
-    "name": "Feuchtwald",
+    "name": "Feuchtgebiet",
     "scoring": "2 Punkte pro Moor in deinem Wald (sich selbst eingeschlossen)"
   },
   "universal_moor": {
@@ -574,7 +574,7 @@
     "scoring": "10 Punkte je, wenn du die meisten Moore hast (oder Gleichstand)"
   },
   "buzzard": {
-    "name": "Mäusebussard",
+    "name": "Bussard",
     "scoring": "2 Punkte pro Maus in deinem Wald"
   },
   "common_moorhen": {
@@ -606,7 +606,7 @@
     "scoring": "1/3/6/10 Pkt. für 1/2/4/6+ Vogelarten"
   },
   "small_red_damselfly": {
-    "name": "Zarte Rubinjungfer",
+    "name": "Scharlachlibelle",
     "scoring": "Libellen: 0/5/10/15/30 für 1-5 Arten"
   },
   "southern_damselfly": {
@@ -624,15 +624,15 @@
     "scoring": "1 Punkt pro Amphibie + 1 pro Maus in deinem Wald"
   },
   "adders_tongue": {
-    "name": "Natternzunge",
-    "scoring": "3 Punkte pro Natternzunge"
+    "name": "Natternzungenfarn",
+    "scoring": "3 Punkte pro Natternzungenfarn"
   },
   "beaver": {
-    "name": "Europäischer Biber",
+    "name": "Biber",
     "scoring": "Punkte gleich der Anzahl der Karten in deiner Höhle"
   },
   "blue_ground_beetle": {
-    "name": "Blauer Laufkäfer",
+    "name": "Dunkelblauer Laubkäfer",
     "scoring": "1 Punkt pro Karte unten (sich selbst eingeschlossen)"
   },
   "blueberry_d": {
@@ -640,16 +640,16 @@
     "scoring": "2 Punkte pro unterschiedliche Vogelart"
   },
   "bog_asphodel": {
-    "name": "Beinbrech",
+    "name": "Moorlilie",
     "scoring": "1 Punkt pro Moor in deinem Wald"
   },
   "common_lizard": {
-    "name": "Waldeidechse",
+    "name": "Mooreidechse",
     "scoring": "15 Punkte je bei 3+ Amphibienarten; sonst 5 je"
   },
   "grass_snake": {
-    "name": "Ringelnatter",
-    "scoring": "5 Punkte pro Ringelnatter"
+    "name": "Barrenringelnatter",
+    "scoring": "5 Punkte pro Barrenringelnatter"
   },
   "greater_butterfly_orchid": {
     "name": "Grünliche Waldhyazinthe",
@@ -669,7 +669,7 @@
     "scoring": "8 Punkte je bei 5+ Mooren; sonst 0"
   },
   "otter": {
-    "name": "Fischotter",
+    "name": "Otter",
     "scoring": "3 Punkte pro Amphibie in deinem Wald"
   },
   "royal_fern": {
@@ -690,7 +690,7 @@
     "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
   },
   "brandts_bat": {
-    "name": "Brandtfledermaus",
+    "name": "Bartfledermaus",
     "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
   },
   "common_noctule": {
@@ -718,7 +718,7 @@
     "scoring": "2 Punkte pro Sohlengänger (sich selbst eingeschlossen)"
   },
   "dartmoor_black_rabbit": {
-    "name": "Dartmoor-Kaninchen",
+    "name": "Wildkaninchen",
     "scoring": "Jedes Kaninchen bringt Punkte gleich der Gesamtzahl der Kaninchen"
   },
   "dartmoor_pony": {
@@ -726,15 +726,15 @@
     "scoring": "15 Punkte je bei meisten Mooren (oder Gleichstand); sonst 5 je"
   },
   "dartmoor_sheep": {
-    "name": "Dartmoor-Schaf",
+    "name": "Dartmoorschaf",
     "scoring": "2 Punkte pro Huftier (sich selbst eingeschlossen)"
   },
   "field_vole": {
-    "name": "Feldmaus",
+    "name": "Erdmaus",
     "scoring": "1 Punkt pro Maus in deinem Wald (sich selbst eingeschlossen)"
   },
   "gnat_d": {
-    "name": "Stechmücke",
+    "name": "Mücke",
     "scoring": "1 Punkt pro Fledermaus in deinem Wald"
   },
   "lake_fly": {
@@ -752,8 +752,8 @@
     "context": "Karten mit dem gleichen Baumsymbol wie dein Reh"
   },
   "shrew": {
-    "name": "Millerspitzmaus",
-    "scoring": "1 Punkt pro Millerspitzmaus"
+    "name": "Spitzmaus",
+    "scoring": "1 Punkt pro Spitzmaus"
   },
   "treecreeper": {
     "name": "Waldbaumläufer",
