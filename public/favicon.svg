@@ -1,5 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <circle cx="16" cy="16" r="15" fill="#4a7c59"/>
-  <path d="M16 5 L10 14 H14 L9 22 H13 L8 28 H24 L19 22 H23 L18 14 H22 Z" fill="#d4e6d4"/>
-  <rect x="14" y="26" width="4" height="4" rx="1" fill="#5c4a2a"/>
+  <defs>
+    <radialGradient id="fbg" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#5e9669"/>
+      <stop offset="1" stop-color="#2b4a2c"/>
+    </radialGradient>
+    <linearGradient id="fcap" x1="0.1" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#a6d196"/>
+      <stop offset="0.55" stop-color="#5c9468"/>
+      <stop offset="1" stop-color="#34563a"/>
+    </linearGradient>
+    <linearGradient id="fnut" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#f7dca6"/>
+      <stop offset="0.45" stop-color="#e2ab57"/>
+      <stop offset="1" stop-color="#b3751f"/>
+    </linearGradient>
+    <linearGradient id="fstem" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a6238"/>
+      <stop offset="1" stop-color="#4f3d20"/>
+    </linearGradient>
+  </defs>
+  <circle cx="16" cy="16" r="15" fill="url(#fbg)"/>
+  <g transform="translate(6,4) scale(0.2)">
+    <path d="M19,53 C17,82 31,107 50,115 C69,107 83,82 81,53 C81,53 66,57 50,57 C34,57 19,53 19,53 Z" fill="url(#fnut)"/>
+    <rect x="45" y="2" width="10" height="20" rx="5" fill="url(#fstem)"/>
+    <path d="M13,52 C13,29 28,21 50,21 C72,21 87,29 87,52 C87,56 70,60 50,60 C30,60 13,56 13,52 Z" fill="url(#fcap)"/>
+    <path d="M17,39 C30,30 70,30 83,39" stroke="#c8e6b8" stroke-width="2.4" fill="none" opacity="0.5" stroke-linecap="round"/>
+  </g>
 </svg>

@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Calculator, History, Users, BarChart3, Settings, TreePine, Wifi } from 'lucide-react'
+import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { AcornIcon } from '@/components/ui/AcornIcon'
+import { AcornLogo } from '@/components/ui/AcornLogo'
+import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
@@ -23,18 +25,40 @@ export function HomePage() {
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
-      {/* Header */}
-      <div className="mb-8 text-center">
-        <div className="mb-3 flex justify-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-forest-500 shadow-lg">
-            <TreePine className="h-8 w-8 text-white" />
+      {/* Hero */}
+      <header className="relative mb-6 overflow-hidden rounded-3xl bg-gradient-to-br from-forest-500 via-forest-600 to-forest-800 px-5 py-7 text-white shadow-hero">
+        <div className="relative z-10 flex items-center gap-3.5">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/90 shadow-sm ring-1 ring-white/50">
+            <AcornLogo className="h-10 w-10" />
+          </div>
+          <div className="min-w-0">
+            <h1 className="font-heading text-2xl font-bold tracking-tight">
+              {t('home.title')}
+            </h1>
+            <p className="mt-0.5 text-sm font-light text-forest-50/90">
+              {t('home.subtitle')}
+            </p>
           </div>
         </div>
-        <h1 className="font-heading text-2xl font-bold text-forest-800">
-          {t('home.title')}
-        </h1>
-        <p className="mt-1 text-sm text-forest-500">{t('home.subtitle')}</p>
-      </div>
+        {/* Decorative rolling-hill silhouette along the bottom edge */}
+        <svg
+          className="pointer-events-none absolute -bottom-px left-0 w-full text-white/10"
+          viewBox="0 0 400 48"
+          fill="none"
+          aria-hidden="true"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 30 C 60 12, 120 38, 200 26 S 340 10, 400 28 V 48 H 0 Z"
+            fill="currentColor"
+          />
+          <path
+            d="M0 40 C 80 26, 160 44, 240 34 S 360 24, 400 40 V 48 H 0 Z"
+            fill="currentColor"
+            opacity="0.6"
+          />
+        </svg>
+      </header>
 
       {/* Quick start */}
       <Link to="/new-game">
@@ -85,11 +109,12 @@ export function HomePage() {
                   {new Date(recentGame.played_at).toLocaleDateString(i18n.language)}
                 </p>
               </div>
-              <div className="text-right">
-                <p className="text-sm font-bold text-forest-600">
-                  {t('home.winner', { name: recentGame.players.find((p) => p.is_winner)?.player_name ?? '—' })}
-                </p>
-                <p className="text-xs text-forest-400 flex items-center justify-end gap-0.5">
+              <div className="flex flex-col items-end gap-1">
+                <Badge tone="forest">
+                  <Trophy className="h-3 w-3" />
+                  {recentGame.players.find((p) => p.is_winner)?.player_name ?? '—'}
+                </Badge>
+                <p className="text-xs text-forest-400 flex items-center gap-0.5">
                   {recentGame.players.find((p) => p.is_winner)?.total_score ?? 0}
                   <AcornIcon className="h-3 w-3" />
                 </p>
