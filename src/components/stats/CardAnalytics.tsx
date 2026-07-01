@@ -228,7 +228,13 @@ function CardSubline({
         <p className="text-[10px] text-forest-400 truncate">{card.maxBy.playerName}</p>
       )
     }
-    const names = card.byPlayer.map((p) => `${p.playerName} (${p.points})`).join(' · ')
+    const byPlayer =
+      mode === 'mostPlayed'
+        ? [...card.byPlayer].sort((a, b) => b.count - a.count)
+        : card.byPlayer
+    const names = byPlayer
+      .map((p) => `${p.playerName} (${mode === 'mostPlayed' ? p.count : p.points})`)
+      .join(' · ')
     return (
       <p className="text-[10px] text-forest-400 truncate">{names}</p>
     )
