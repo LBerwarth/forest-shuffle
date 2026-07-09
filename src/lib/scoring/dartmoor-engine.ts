@@ -169,7 +169,9 @@ const scoringFunctions: Record<string, ScoringFunction> = {
     let bonus = 0
     for (const hostKey of hostKeys) {
       if (!hostKey || hostKey === 'blanket_bog') continue
-      bonus += scoreDartmoorCard(hostKey, 1, ctx, ctx.cardMetadata[hostKey])
+      // contextValue:1 so context-driven hosts (Meadowsweet scores contextValue×5)
+      // double one hosted copy, not their whole in-moor count.
+      bonus += scoreDartmoorCard(hostKey, 1, ctx, { ...ctx.cardMetadata[hostKey], contextValue: 1 })
     }
     return bonus
   },
