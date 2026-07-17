@@ -232,7 +232,8 @@
     "alpine": "Alpine",
     "woodland": "Lisière",
     "exploration": "Exploration",
-    "dartmoor_base": "Dartmoor"
+    "dartmoor_base": "Dartmoor",
+    "dartmoor_exmoor": "Exmoor"
   },
   "settings": {
     "title": "Param\u00e8tres",

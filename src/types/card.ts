@@ -1,6 +1,6 @@
 export type GameEdition = 'classic' | 'dartmoor'
 
-export type Expansion = 'base' | 'alpine' | 'woodland' | 'exploration' | 'dartmoor_base'
+export type Expansion = 'base' | 'alpine' | 'woodland' | 'exploration' | 'dartmoor_base' | 'dartmoor_exmoor'
 
 export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'moor' | 'cave'
 

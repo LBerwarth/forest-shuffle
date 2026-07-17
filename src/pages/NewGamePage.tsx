@@ -27,7 +27,7 @@ export function NewGamePage() {
   const deletePlayerMutation = useDeletePlayer()
   const startSession = useScoringStore((s) => s.startSession)
   const { setSession, setPlayer } = useLiveSessionStore()
-  const { edition, setEdition, language, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration } = useSettingsStore()
+  const { edition, setEdition, language, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, includeExmoor } = useSettingsStore()
 
   const [step, setStep] = useState<'setup' | 'mode' | 'players'>('setup')
   const [mode, setMode] = useState<'local' | 'live' | null>(null)
@@ -102,7 +102,7 @@ export function NewGamePage() {
   }
 
   function getExpansions(): Expansion[] {
-    if (edition === 'dartmoor') return ['dartmoor_base']
+    if (edition === 'dartmoor') return includeExmoor ? ['dartmoor_base', 'dartmoor_exmoor'] : ['dartmoor_base']
     const exp: Expansion[] = ['base']
     if (includeAlpine) exp.push('alpine')
     if (includeWoodland) exp.push('woodland')

@@ -26,6 +26,7 @@ const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
   woodland: 'woodland_edge',
   exploration: null,
   dartmoor_base: null,
+  dartmoor_exmoor: 'exmoor',
 }
 
 const TAG_ORDER: readonly CardTag[] = [

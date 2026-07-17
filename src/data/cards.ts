@@ -1,5 +1,6 @@
 import type { CardDefinition, Expansion, GameEdition } from '@/types/card'
 import { DARTMOOR_CARDS } from './dartmoor-cards'
+import { EXMOOR_CARDS } from './exmoor-cards'
 
 export const CARDS: CardDefinition[] = [
   // ============================================================
@@ -151,7 +152,9 @@ export const CARDS: CardDefinition[] = [
 
 /** Get cards filtered by enabled expansions and edition */
 export function getCards(expansions: Expansion[], edition: GameEdition = 'classic'): CardDefinition[] {
-  if (edition === 'dartmoor') return DARTMOOR_CARDS
+  if (edition === 'dartmoor') {
+    return expansions.includes('dartmoor_exmoor') ? [...DARTMOOR_CARDS, ...EXMOOR_CARDS] : DARTMOOR_CARDS
+  }
   const enabled = new Set(expansions)
   enabled.add('base') // always include base
   return CARDS.filter((c) => enabled.has(c.expansion))
@@ -170,7 +173,11 @@ export function getCardsByCategory(expansions: Expansion[], edition: GameEdition
   }
 }
 
-/** Get a single card by key (searches both classic and Dartmoor) */
+/** Get a single card by key (searches classic, Dartmoor, and Exmoor) */
 export function getCard(key: string): CardDefinition | undefined {
-  return CARDS.find((c) => c.key === key) ?? DARTMOOR_CARDS.find((c) => c.key === key)
+  return (
+    CARDS.find((c) => c.key === key) ??
+    DARTMOOR_CARDS.find((c) => c.key === key) ??
+    EXMOOR_CARDS.find((c) => c.key === key)
+  )
 }
