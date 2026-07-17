@@ -14,6 +14,7 @@ import { createLiveSession, joinLiveSession } from '@/lib/supabase-api'
 import { readLastJoinedPlayer, writeLastJoinedPlayer } from '@/lib/last-joined-player'
 import { LanguagePicker } from '@/components/LanguagePicker'
 import { PLAYER_COLORS } from '@/types/player'
+import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
 import type { Expansion } from '@/types/card'
 
@@ -186,7 +187,10 @@ export function NewGamePage() {
             <CardContent className="space-y-3">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-forest-700">{t('settings.alpineExpansion')}</p>
+                  <div className="flex items-center gap-2">
+                    <img src={STAT_ICONS.alpine} alt="" className="h-4 w-4 rounded-sm" />
+                    <p className="text-sm font-medium text-forest-700">{t('settings.alpineExpansion')}</p>
+                  </div>
                   <p className="text-xs text-forest-400">{t('settings.alpineDesc')}</p>
                 </div>
                 <button
@@ -205,7 +209,10 @@ export function NewGamePage() {
               </div>
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-forest-700">{t('settings.woodlandExpansion')}</p>
+                  <div className="flex items-center gap-2">
+                    <img src={STAT_ICONS.woodland_edge} alt="" className="h-4 w-4 rounded-sm" />
+                    <p className="text-sm font-medium text-forest-700">{t('settings.woodlandExpansion')}</p>
+                  </div>
                   <p className="text-xs text-forest-400">{t('settings.woodlandDesc')}</p>
                 </div>
                 <button
@@ -224,7 +231,10 @@ export function NewGamePage() {
               </div>
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-forest-700">{t('settings.explorationExpansion')}</p>
+                  <div className="flex items-center gap-2">
+                    <img src={STAT_ICONS.cave} alt="" className="h-4 w-4 rounded-sm" />
+                    <p className="text-sm font-medium text-forest-700">{t('settings.explorationExpansion')}</p>
+                  </div>
                   <p className="text-xs text-forest-400">{t('settings.explorationDesc')}</p>
                 </div>
                 <button
@@ -239,6 +249,36 @@ export function NewGamePage() {
                       includeExploration ? 'translate-x-6' : 'translate-x-1'
                     }`}
                   />
+                </button>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Exmoor teaser — not yet scorable, toggle stays disabled */}
+        {edition === 'dartmoor' && (
+          <Card className="mb-4">
+            <CardHeader>
+              <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.expansions')}</h2>
+            </CardHeader>
+            <CardContent>
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <img src={STAT_ICONS.exmoor} alt="" className="h-4 w-4" />
+                    <p className="text-sm font-medium text-forest-700">{t('settings.exmoorExpansion')}</p>
+                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
+                      {t('settings.exmoorSoon')}
+                    </span>
+                  </div>
+                  <p className="text-xs text-forest-400">{t('settings.exmoorDesc')}</p>
+                </div>
+                <button
+                  type="button"
+                  disabled
+                  className="relative inline-flex h-6 w-11 shrink-0 cursor-not-allowed items-center rounded-full bg-forest-200 opacity-60"
+                >
+                  <span className="inline-block h-4 w-4 translate-x-1 transform rounded-full bg-white" />
                 </button>
               </div>
             </CardContent>
