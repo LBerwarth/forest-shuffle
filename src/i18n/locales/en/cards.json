@@ -832,7 +832,8 @@
   },
   "smooth_snake": {
     "name": "Smooth Snake",
-    "scoring": "1 point per tree"
+    "scoring": "1 point per tree symbol in your forest",
+    "context": "How many tree symbols are in your forest?"
   },
   "sundew": {
     "name": "Sundew",

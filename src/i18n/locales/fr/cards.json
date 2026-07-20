@@ -828,7 +828,8 @@
   },
   "smooth_snake": {
     "name": "Coronelle lisse",
-    "scoring": "1 point par arbre"
+    "scoring": "1 point par icône d'arbre dans votre forêt",
+    "context": "Combien d'icônes d'arbre dans votre forêt ?"
   },
   "sundew": {
     "name": "Droséra",

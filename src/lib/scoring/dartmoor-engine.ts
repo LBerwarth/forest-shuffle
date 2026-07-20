@@ -305,7 +305,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   // Bottom slot
   bank_vole: (count) => count * 3,
   natterjack_toad: (count) => count * 1,
-  smooth_snake: (count, ctx) => count * ctx.totalTrees,
+  // 1 pt per tree symbol — entered manually, like Rivulet
+  smooth_snake: (count, _ctx, metadata) => count * (metadata?.contextValue ?? 0),
   sundew: (count, ctx) => count * countTag(ctx, 'insect'),
   tormentil: (count) => count * 5,
   wood_rush: (count) => count * 3,

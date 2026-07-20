@@ -31,7 +31,7 @@ export const EXMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   { key: 'bank_vole', category: 'bottom', tags: ['mouse', 'pawed'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'natterjack_toad', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
-  { key: 'smooth_snake', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
+  { key: 'smooth_snake', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_exmoor', scoringType: 'custom', needsContext: true },
   { key: 'sundew', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
   { key: 'tormentil', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'wood_rush', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },

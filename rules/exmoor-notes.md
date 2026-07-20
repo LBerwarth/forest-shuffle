@@ -53,7 +53,7 @@ Alternative for 2p: split into 3 equal piles, remove 1 unseen. For 3p: 5 piles, 
 | dormouse | E11 R | lateral | Loir gris | 15 each if bat on same tree |
 | red_devon_cow | E12 L | lateral | Vache Devon rouge | 1 × plant |
 | dartford_warbler | E20/E25/E30 T | top | Fauvette pitchou | 1 |
-| smooth_snake | E20/E24 B | bottom | Coronelle lisse | 1 × tree |
+| smooth_snake | E20/E24 B | bottom | Coronelle lisse | 1 × tree symbol (manual entry) |
 | peregrine_falcon | E21 T | top | Faucon pèlerin | 1 × mouse |
 | wood_rush | E21 B | bottom | Luzule des bois | 3 |
 | harvest_mouse | E22/E27 T | top | Rat des moissons | 1 × bird |

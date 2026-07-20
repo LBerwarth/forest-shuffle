@@ -832,7 +832,8 @@
   },
   "smooth_snake": {
     "name": "Schlingnatter",
-    "scoring": "1 Punkt pro Baum"
+    "scoring": "1 Punkt pro Baumsymbol in deinem Wald",
+    "context": "Wie viele Baumsymbole sind in deinem Wald?"
   },
   "sundew": {
     "name": "Sonnentau",

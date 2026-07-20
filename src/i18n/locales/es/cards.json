@@ -832,7 +832,8 @@
   },
   "smooth_snake": {
     "name": "Culebra lisa europea",
-    "scoring": "1 punto por árbol"
+    "scoring": "1 punto por símbolo de árbol en tu bosque",
+    "context": "¿Cuántos símbolos de árbol hay en tu bosque?"
   },
   "sundew": {
     "name": "Drosera",

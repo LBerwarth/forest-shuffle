@@ -181,7 +181,6 @@ const dartmoorStats: Record<string, StatDef> = {
   }],
   harvest_mouse: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
   peregrine_falcon: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
-  smooth_snake: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
   sundew: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
   bilberry_bumblebee: (ctx) => [{ iconKey: 'shrub', value: ctx.tagCounts.shrub }],
   dormouse: (ctx) => [{ iconKey: 'bat', value: ctx.tagCounts.bat }],
