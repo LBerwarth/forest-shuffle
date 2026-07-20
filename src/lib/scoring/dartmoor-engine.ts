@@ -1,13 +1,18 @@
 import type { ForestContext, ScoringFunction, CardMetadata, ScoreBreakdown, ScoreEntry } from '@/types/scoring'
 import type { CardCategory, CardTag } from '@/types/card'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
+import { EXMOOR_CARDS } from '@/data/exmoor-cards'
+
+// Exmoor keys count 0 when the expansion is off, so the combined list is
+// always safe to score against.
+const ALL_DARTMOOR_CARDS = [...DARTMOOR_CARDS, ...EXMOOR_CARDS]
 
 // ============================================================
 // SET SCORING TABLES
 // ============================================================
 
-/** Dragonfly set: 0/5/10/15/30 for 1-5 species */
-const DRAGONFLY_SET = [0, 0, 5, 10, 15, 30]
+/** Dragonfly set: 0/5/10/15/30/50 for 1-6 species (6th is Exmoor's) */
+const DRAGONFLY_SET = [0, 0, 5, 10, 15, 30, 50]
 
 /** Warty Newt set: 5/15/25 for 1/2/3 */
 const WARTY_NEWT_SET = [0, 5, 15, 25]
@@ -36,7 +41,7 @@ function countCard(ctx: ForestContext, key: string): number {
 
 const DRAGONFLY_KEYS = [
   'beautiful_demoiselle', 'emerald_damselfly', 'keeled_skimmer',
-  'small_red_damselfly', 'southern_damselfly',
+  'small_red_damselfly', 'southern_damselfly', 'golden_ringed_dragonfly',
 ]
 
 export function scoreDragonflySet(ctx: ForestContext): number {
@@ -73,7 +78,7 @@ export function getDragonflySeriesBreakdown(ctx: ForestContext): SetSeries[] {
 
 const DARTMOOR_BAT_KEYS = [
   'alcathoe_bat', 'brandts_bat', 'common_noctule',
-  'daubentons_bat', 'serotine_bat',
+  'daubentons_bat', 'serotine_bat', 'whiskered_bat',
 ]
 
 export function scoreDartmoorBatSet(ctx: ForestContext): number {
@@ -131,7 +136,7 @@ function dragonflyCardPoints(key: string, count: number, ctx: ForestContext): nu
 // ============================================================
 
 function scoreMeadowPipit(count: number, ctx: ForestContext): number {
-  const birdKeys = DARTMOOR_CARDS.filter((c) => c.tags.includes('bird')).map((c) => c.key)
+  const birdKeys = ALL_DARTMOOR_CARDS.filter((c) => c.tags.includes('bird')).map((c) => c.key)
   const uniqueBirdSpecies = birdKeys.filter((k) => countCard(ctx, k) > 0).length
   let ptsPerCard: number
   if (uniqueBirdSpecies >= 6) ptsPerCard = 10
@@ -206,22 +211,23 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   // --- BOTTOM SLOT ---
   adder: (count, ctx) => count * (countTag(ctx, 'amphibian') + countTag(ctx, 'mouse')),
   adders_tongue: (count) => count * 3,
-  beaver: (count, ctx) => count * countCard(ctx, 'cave_d'),
+  // With Exmoor the base caves are replaced, so count whichever cave is in play
+  beaver: (count, ctx) => count * (countCard(ctx, 'cave_d') + countCard(ctx, 'cave_exmoor')),
   blue_ground_beetle: (count, ctx) => count * ctx.slotCounts.bottom,
   blueberry_d: (count, ctx) => {
-    const birdKeys = DARTMOOR_CARDS.filter((c) => c.tags.includes('bird')).map((c) => c.key)
+    const birdKeys = ALL_DARTMOOR_CARDS.filter((c) => c.tags.includes('bird')).map((c) => c.key)
     const uniqueBirdSpecies = birdKeys.filter((k) => countCard(ctx, k) > 0).length
     return count * (2 * uniqueBirdSpecies)
   },
   bog_asphodel: (count, ctx) => count * ctx.totalMoors,
   common_lizard: (count, ctx) => {
-    const amphibianKeys = DARTMOOR_CARDS.filter((c) => c.tags.includes('amphibian')).map((c) => c.key)
+    const amphibianKeys = ALL_DARTMOOR_CARDS.filter((c) => c.tags.includes('amphibian')).map((c) => c.key)
     const uniqueAmphibianSpecies = amphibianKeys.filter((k) => countCard(ctx, k) > 0).length
     return uniqueAmphibianSpecies >= 3 ? count * 15 : count * 5
   },
   grass_snake: (count) => count * 5,
   greater_butterfly_orchid: (count, ctx) => {
-    const plantKeys = DARTMOOR_CARDS.filter((c) => c.tags.includes('plant')).map((c) => c.key)
+    const plantKeys = ALL_DARTMOOR_CARDS.filter((c) => c.tags.includes('plant')).map((c) => c.key)
     const uniquePlantSpecies = plantKeys.filter((k) => countCard(ctx, k) > 0).length
     return uniquePlantSpecies >= 5 ? count * 15 : count * 3
   },
@@ -230,7 +236,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   moor_frog: (count, ctx) => ctx.totalMoors >= 5 ? count * 8 : 0,
   otter: (count, ctx) => count * (3 * countTag(ctx, 'amphibian')),
   royal_fern: (count, ctx) => {
-    const plantKeys = DARTMOOR_CARDS.filter((c) => c.tags.includes('plant')).map((c) => c.key)
+    const plantKeys = ALL_DARTMOOR_CARDS.filter((c) => c.tags.includes('plant')).map((c) => c.key)
     const uniquePlantSpecies = plantKeys.filter((k) => countCard(ctx, k) > 0).length
     return count * (2 * uniquePlantSpecies)
   },
@@ -263,6 +269,69 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   // --- CAVE ---
   cave_d: (count) => count * 1,
   lonely_cave_d: (count) => count > 0 ? 5 : 0,
+
+  // ============================================================
+  // EXMOOR
+  // ============================================================
+
+  // Shrubs — ongoing effects only
+  holly: () => 0,
+  gorse: () => 0,
+
+  // Moors
+  // Coastal Heath doubles the points of hares placed on it (same model as
+  // Blanket Bog: score one hosted copy again on top of its normal value)
+  coastal_heath: (_count, ctx, metadata) => {
+    const hostKeys = metadata?.hostCardKeys ?? []
+    let bonus = 0
+    for (const hostKey of hostKeys) {
+      if (!hostKey || hostKey === 'coastal_heath') continue
+      bonus += scoreDartmoorCard(hostKey, 1, ctx, { ...ctx.cardMetadata[hostKey], contextValue: 1 })
+    }
+    return bonus
+  },
+  stone_circle: () => 0,
+  tarr_steps: () => 0,
+  waxcap_grassland: () => 0,
+
+  // Top slot
+  dartford_warbler: (count) => count * 1,
+  golden_ringed_dragonfly: (count, ctx) => dragonflyCardPoints('golden_ringed_dragonfly', count, ctx),
+  grey_wagtail: (count, ctx) => count * countExmoorSymbols(ctx),
+  harvest_mouse: (count, ctx) => count * countTag(ctx, 'bird'),
+  peregrine_falcon: (count, ctx) => count * countTag(ctx, 'mouse'),
+  pied_flycatcher: (count) => count * 4,
+
+  // Bottom slot
+  bank_vole: (count) => count * 3,
+  natterjack_toad: (count) => count * 1,
+  smooth_snake: (count, ctx) => count * ctx.totalTrees,
+  sundew: (count, ctx) => count * countTag(ctx, 'insect'),
+  tormentil: (count) => count * 5,
+  wood_rush: (count) => count * 3,
+
+  // Lateral slot
+  bilberry_bumblebee: (count, ctx) => count * (2 * countTag(ctx, 'shrub')),
+  // 15 pts per dormouse that shares a tree with a bat (contextValue)
+  dormouse: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 15,
+  exmoor_pony: () => 0, // scoring not published yet — counts as a pony for Horse
+  exmoor_pony_foal: (count) => count * 1,
+  horse: (count, ctx) => count * 10 * PONY_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0),
+  red_devon_cow: (count, ctx) => count * countTag(ctx, 'plant'),
+  whiskered_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
+
+  // Cave — all 5 Exmoor caves score 1 pt per card stored inside
+  cave_exmoor: (count) => count * 1,
+}
+
+// Rulebook clarification: Dartmoor Pony, Exmoor Pony and Exmoor Pony Foal are ponies
+const PONY_KEYS = ['dartmoor_pony', 'exmoor_pony', 'exmoor_pony_foal']
+
+/** Cards in the forest showing the Exmoor type symbol (cave contents excluded) */
+function countExmoorSymbols(ctx: ForestContext): number {
+  return EXMOOR_CARDS
+    .filter((c) => c.category !== 'cave')
+    .reduce((sum, c) => sum + countCard(ctx, c.key), 0)
 }
 
 // ============================================================
@@ -320,14 +389,15 @@ export function buildDartmoorForestContext(
   let totalTrees = 0
   let totalMoors = 0
 
-  for (const card of DARTMOOR_CARDS) {
+  for (const card of ALL_DARTMOOR_CARDS) {
     const count = cardCounts[card.key] || 0
     if (count === 0) continue
 
     totalCards += count
     slotCounts[card.category] += count
 
-    if (card.category === 'tree') {
+    // Shrubs share the tree slot but don't show the tree symbol
+    if (card.category === 'tree' && !card.tags.includes('shrub')) {
       totalTrees += count
       treeSpeciesPresent.add(card.key)
     }
@@ -391,7 +461,7 @@ export function computeDartmoorScoreBreakdown(
   for (const cardKey of activeCards) {
     const count = cardCounts[cardKey] || 0
 
-    const card = DARTMOOR_CARDS.find((c) => c.key === cardKey)
+    const card = ALL_DARTMOOR_CARDS.find((c) => c.key === cardKey)
     if (!card) continue
 
     // Skip comparison cards here — they are scored separately below with cross-player data

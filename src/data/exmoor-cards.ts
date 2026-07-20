@@ -1,38 +1,57 @@
 import type { CardDefinition } from '@/types/card'
 
-// Partial list from the EN rulebook (260127) — appendix/full card list still
-// unpublished; scoringType values are provisional. See rules/exmoor-notes.md.
+// Transcribed from FR card photos (E01–E48); exmoor_pony is unphotographed but
+// confirmed by the EN rulebook pony clarification. See rules/exmoor-notes.md.
 export const EXMOOR_CARDS: CardDefinition[] = [
   // ============================================================
-  // SHRUBS (8 total, 1 known) — category 'tree', like Dartmoor shrubs
+  // SHRUBS — category 'tree', score 0 (ongoing effects only)
   // ============================================================
   { key: 'holly', category: 'tree', tags: ['shrub'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  { key: 'gorse', category: 'tree', tags: ['shrub'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
 
   // ============================================================
-  // MOOR (12 total, 1 known)
+  // MOOR
   // ============================================================
+  { key: 'coastal_heath', category: 'moor', tags: ['moor'], expansion: 'dartmoor_exmoor', scoringType: 'custom', needsHostBirdContext: true },
+  { key: 'stone_circle', category: 'moor', tags: ['moor'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  { key: 'tarr_steps', category: 'moor', tags: ['moor'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'waxcap_grassland', category: 'moor', tags: ['moor'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
 
   // ============================================================
-  // TOP SLOT (2 of 19 top/bottom splits known)
+  // TOP SLOT
   // ============================================================
-  { key: 'grey_wagtail', category: 'top', tags: ['bird'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  { key: 'dartford_warbler', category: 'top', tags: ['bird'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'golden_ringed_dragonfly', category: 'top', tags: ['dragonfly', 'insect'], expansion: 'dartmoor_exmoor', scoringType: 'set' },
+  { key: 'grey_wagtail', category: 'top', tags: ['bird'], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
+  { key: 'harvest_mouse', category: 'top', tags: ['mouse', 'pawed'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
+  { key: 'peregrine_falcon', category: 'top', tags: ['bird'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
+  { key: 'pied_flycatcher', category: 'top', tags: ['bird'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
 
   // ============================================================
-  // BOTTOM SLOT (1 known)
+  // BOTTOM SLOT
   // ============================================================
+  { key: 'bank_vole', category: 'bottom', tags: ['mouse', 'pawed'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'natterjack_toad', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  { key: 'smooth_snake', category: 'bottom', tags: ['amphibian'], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
+  { key: 'sundew', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
+  { key: 'tormentil', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  { key: 'wood_rush', category: 'bottom', tags: ['plant'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
 
   // ============================================================
-  // LATERAL SLOT (3 of 11 left/right splits known)
+  // LATERAL SLOT
   // ============================================================
-  { key: 'dormouse', category: 'lateral', tags: ['mouse', 'pawed'], expansion: 'dartmoor_exmoor', scoringType: 'custom' },
+  { key: 'bilberry_bumblebee', category: 'lateral', tags: ['insect'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
+  { key: 'dormouse', category: 'lateral', tags: ['pawed'], expansion: 'dartmoor_exmoor', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
+  // Pony scoring not on any photographed card yet — provisional 0
   { key: 'exmoor_pony', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'exmoor_pony_foal', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  { key: 'horse', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
+  { key: 'red_devon_cow', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
+  { key: 'whiskered_bat', category: 'lateral', tags: ['bat'], expansion: 'dartmoor_exmoor', scoringType: 'set' },
 
   // ============================================================
-  // CAVES (5 asymmetrical, replace base caves; 1 known)
+  // CAVES — 5 asymmetrical caves replace the Dartmoor caves in setup;
+  // all score 1 point per card in the cave, so one wizard entry suffices
   // ============================================================
-  { key: 'cave_7', category: 'cave', tags: [], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
+  { key: 'cave_exmoor', category: 'cave', tags: [], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
 ]

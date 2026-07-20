@@ -52,4 +52,7 @@ export interface CardDefinition {
   /** If true, wizard shows a multi-select of plants placed under this card
    *  (e.g. Blanket Bog, which doubles the points of plants in its slots) */
   needsHostPlantContext?: boolean
+  /** If true, wizard shows a multi-select of birds placed on this card
+   *  (e.g. Coastal Heath, which doubles the points of birds in its slots) */
+  needsHostBirdContext?: boolean
 }

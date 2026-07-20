@@ -153,7 +153,12 @@ export const CARDS: CardDefinition[] = [
 /** Get cards filtered by enabled expansions and edition */
 export function getCards(expansions: Expansion[], edition: GameEdition = 'classic'): CardDefinition[] {
   if (edition === 'dartmoor') {
-    return expansions.includes('dartmoor_exmoor') ? [...DARTMOOR_CARDS, ...EXMOOR_CARDS] : DARTMOOR_CARDS
+    if (expansions.includes('dartmoor_exmoor')) {
+      // Exmoor's caves replace the Dartmoor caves in setup, so the base
+      // caves (incl. the 5-point Cave 4) are not usable with the expansion
+      return [...DARTMOOR_CARDS.filter((c) => c.category !== 'cave'), ...EXMOOR_CARDS]
+    }
+    return DARTMOOR_CARDS
   }
   const enabled = new Set(expansions)
   enabled.add('base') // always include base

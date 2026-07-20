@@ -771,5 +771,112 @@
   "lonely_cave_d": {
     "name": "Höhle 4",
     "scoring": "5 Punkte"
+  },
+
+  "holly": {
+    "name": "Stechpalme",
+    "scoring": "0 Punkte (nur permanenter Effekt)"
+  },
+  "gorse": {
+    "name": "Stechginster",
+    "scoring": "0 Punkte (nur permanenter Effekt)"
+  },
+  "coastal_heath": {
+    "name": "Küstenheide",
+    "scoring": "Verdoppelt die Punkte der daruntergelegten Vögel",
+    "context": "Welche Vögel liegen unter dieser Heide?"
+  },
+  "stone_circle": {
+    "name": "Steinkreis",
+    "scoring": "0 Punkte (nur permanenter Effekt)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 Punkte (nur permanenter Effekt)"
+  },
+  "waxcap_grassland": {
+    "name": "Saftlingswiese",
+    "scoring": "0 Punkte (nur permanenter Effekt)"
+  },
+  "dartford_warbler": {
+    "name": "Provencegrasmücke",
+    "scoring": "1 Punkt"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Zweigestreifte Quelljungfer",
+    "scoring": "Libellen: 0/5/10/15/30/50 für 1-6 Arten"
+  },
+  "grey_wagtail": {
+    "name": "Gebirgsstelze",
+    "scoring": "1 Punkt pro Exmoor-Karte in deinem Wald"
+  },
+  "harvest_mouse": {
+    "name": "Zwergmaus",
+    "scoring": "1 Punkt pro Vogel"
+  },
+  "peregrine_falcon": {
+    "name": "Wanderfalke",
+    "scoring": "1 Punkt pro Maus"
+  },
+  "pied_flycatcher": {
+    "name": "Trauerschnäpper",
+    "scoring": "4 Punkte"
+  },
+  "bank_vole": {
+    "name": "Rötelmaus",
+    "scoring": "3 Punkte"
+  },
+  "natterjack_toad": {
+    "name": "Kreuzkröte",
+    "scoring": "1 Punkt"
+  },
+  "smooth_snake": {
+    "name": "Schlingnatter",
+    "scoring": "1 Punkt pro Baum"
+  },
+  "sundew": {
+    "name": "Sonnentau",
+    "scoring": "1 Punkt pro Insekt"
+  },
+  "tormentil": {
+    "name": "Blutwurz",
+    "scoring": "5 Punkte"
+  },
+  "wood_rush": {
+    "name": "Wald-Hainsimse",
+    "scoring": "3 Punkte"
+  },
+  "bilberry_bumblebee": {
+    "name": "Berghummel",
+    "scoring": "2 Punkte pro Busch"
+  },
+  "dormouse": {
+    "name": "Siebenschläfer",
+    "scoring": "Je 15 Punkte, wenn eine Fledermaus am selben Baum ist",
+    "context": "Wie viele teilen sich einen Baum mit einer Fledermaus?"
+  },
+  "exmoor_pony": {
+    "name": "Exmoor-Pony",
+    "scoring": "Zählt als Pony (Punkte noch unbestätigt)"
+  },
+  "exmoor_pony_foal": {
+    "name": "Fohlen",
+    "scoring": "1 Punkt"
+  },
+  "horse": {
+    "name": "Pferd",
+    "scoring": "10 Punkte pro Pony"
+  },
+  "red_devon_cow": {
+    "name": "Red-Devon-Rind",
+    "scoring": "1 Punkt pro Pflanze"
+  },
+  "whiskered_bat": {
+    "name": "Bartfledermaus",
+    "scoring": "Fledermäuse: je 5 Punkte bei 3+ Arten"
+  },
+  "cave_exmoor": {
+    "name": "Höhle (Exmoor)",
+    "scoring": "1 Punkt pro Karte in der Höhle"
   }
 }

@@ -27,7 +27,7 @@ export function NewGamePage() {
   const deletePlayerMutation = useDeletePlayer()
   const startSession = useScoringStore((s) => s.startSession)
   const { setSession, setPlayer } = useLiveSessionStore()
-  const { edition, setEdition, language, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, includeExmoor } = useSettingsStore()
+  const { edition, setEdition, language, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, includeExmoor, toggleExmoor } = useSettingsStore()
 
   const [step, setStep] = useState<'setup' | 'mode' | 'players'>('setup')
   const [mode, setMode] = useState<'local' | 'live' | null>(null)
@@ -255,7 +255,6 @@ export function NewGamePage() {
           </Card>
         )}
 
-        {/* Exmoor teaser — not yet scorable, toggle stays disabled */}
         {edition === 'dartmoor' && (
           <Card className="mb-4">
             <CardHeader>
@@ -267,18 +266,21 @@ export function NewGamePage() {
                   <div className="flex items-center gap-2">
                     <img src={STAT_ICONS.exmoor} alt="" className="h-4 w-4" />
                     <p className="text-sm font-medium text-forest-700">{t('settings.exmoorExpansion')}</p>
-                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                      {t('settings.exmoorSoon')}
-                    </span>
                   </div>
                   <p className="text-xs text-forest-400">{t('settings.exmoorDesc')}</p>
                 </div>
                 <button
                   type="button"
-                  disabled
-                  className="relative inline-flex h-6 w-11 shrink-0 cursor-not-allowed items-center rounded-full bg-forest-200 opacity-60"
+                  onClick={toggleExmoor}
+                  className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ${
+                    includeExmoor ? 'bg-forest-500' : 'bg-forest-200'
+                  }`}
                 >
-                  <span className="inline-block h-4 w-4 translate-x-1 transform rounded-full bg-white" />
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      includeExmoor ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
                 </button>
               </div>
             </CardContent>

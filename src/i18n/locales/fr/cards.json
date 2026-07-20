@@ -767,5 +767,112 @@
   "lonely_cave_d": {
     "name": "Grotte 4",
     "scoring": "5 points"
+  },
+
+  "holly": {
+    "name": "Houx commun",
+    "scoring": "0 point (effet permanent uniquement)"
+  },
+  "gorse": {
+    "name": "Ajonc d'Europe",
+    "scoring": "0 point (effet permanent uniquement)"
+  },
+  "coastal_heath": {
+    "name": "Bruyère côtière d'altitude",
+    "scoring": "Double les points des oiseaux placés dessous",
+    "context": "Quels oiseaux sont sous cette Lande ?"
+  },
+  "stone_circle": {
+    "name": "Cercle de pierres",
+    "scoring": "0 point (effet permanent uniquement)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 point (effet permanent uniquement)"
+  },
+  "waxcap_grassland": {
+    "name": "Prairie d'hygrocybes",
+    "scoring": "0 point (effet permanent uniquement)"
+  },
+  "dartford_warbler": {
+    "name": "Fauvette pitchou",
+    "scoring": "1 point"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Cordulégastre annelé",
+    "scoring": "Libellules : 0/5/10/15/30/50 pour 1-6 espèces"
+  },
+  "grey_wagtail": {
+    "name": "Bergeronnette des ruisseaux",
+    "scoring": "1 point par carte Exmoor dans votre forêt"
+  },
+  "harvest_mouse": {
+    "name": "Rat des moissons",
+    "scoring": "1 point par oiseau"
+  },
+  "peregrine_falcon": {
+    "name": "Faucon pèlerin",
+    "scoring": "1 point par souris"
+  },
+  "pied_flycatcher": {
+    "name": "Gobemouche noir",
+    "scoring": "4 points"
+  },
+  "bank_vole": {
+    "name": "Campagnol roussâtre",
+    "scoring": "3 points"
+  },
+  "natterjack_toad": {
+    "name": "Crapaud calamite",
+    "scoring": "1 point"
+  },
+  "smooth_snake": {
+    "name": "Coronelle lisse",
+    "scoring": "1 point par arbre"
+  },
+  "sundew": {
+    "name": "Droséra",
+    "scoring": "1 point par insecte"
+  },
+  "tormentil": {
+    "name": "Potentille dressée",
+    "scoring": "5 points"
+  },
+  "wood_rush": {
+    "name": "Luzule des bois",
+    "scoring": "3 points"
+  },
+  "bilberry_bumblebee": {
+    "name": "Bourdon montagnard",
+    "scoring": "2 points par buisson"
+  },
+  "dormouse": {
+    "name": "Loir gris",
+    "scoring": "15 points chacun si une chauve-souris est sur le même arbre",
+    "context": "Combien partagent un arbre avec une chauve-souris ?"
+  },
+  "exmoor_pony": {
+    "name": "Poney Exmoor",
+    "scoring": "Compte comme un poney (points à confirmer)"
+  },
+  "exmoor_pony_foal": {
+    "name": "Poulain",
+    "scoring": "1 point"
+  },
+  "horse": {
+    "name": "Cheval",
+    "scoring": "10 points par Poney"
+  },
+  "red_devon_cow": {
+    "name": "Vache Devon rouge",
+    "scoring": "1 point par plante"
+  },
+  "whiskered_bat": {
+    "name": "Murin à moustaches",
+    "scoring": "Chauves-souris : 5 pts chacune si 3+ espèces"
+  },
+  "cave_exmoor": {
+    "name": "Grotte (Exmoor)",
+    "scoring": "1 point par carte dans la grotte"
   }
 }

@@ -126,6 +126,12 @@ const CARD_ICON_KEYS: Record<string, string> = {
 
   // Cave
   cave_d: 'cave', lonely_cave_d: 'cave',
+
+  // Exmoor
+  holly: 'shrub', gorse: 'shrub',
+  coastal_heath: 'moor', stone_circle: 'moor', tarr_steps: 'moor',
+  waxcap_grassland: 'moor',
+  cave_exmoor: 'cave',
 }
 
 /** Returns the SVG icon URL for a card, or undefined if not mapped */

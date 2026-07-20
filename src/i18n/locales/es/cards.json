@@ -771,5 +771,112 @@
   "lonely_cave_d": {
     "name": "Cueva 4",
     "scoring": "5 puntos"
+  },
+
+  "holly": {
+    "name": "Acebo",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "gorse": {
+    "name": "Tojo",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "coastal_heath": {
+    "name": "Brezal costero",
+    "scoring": "Duplica los puntos de las aves colocadas debajo",
+    "context": "¿Qué aves están bajo este brezal?"
+  },
+  "stone_circle": {
+    "name": "Círculo de piedras",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "waxcap_grassland": {
+    "name": "Pradera de hygrocybes",
+    "scoring": "0 puntos (solo efecto permanente)"
+  },
+  "dartford_warbler": {
+    "name": "Curruca rabilarga",
+    "scoring": "1 punto"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Cordulegáster anillado",
+    "scoring": "Libélulas: 0/5/10/15/30/50 por 1-6 especies"
+  },
+  "grey_wagtail": {
+    "name": "Lavandera cascadeña",
+    "scoring": "1 punto por carta de Exmoor en tu bosque"
+  },
+  "harvest_mouse": {
+    "name": "Ratón espiguero",
+    "scoring": "1 punto por ave"
+  },
+  "peregrine_falcon": {
+    "name": "Halcón peregrino",
+    "scoring": "1 punto por ratón"
+  },
+  "pied_flycatcher": {
+    "name": "Papamoscas cerrojillo",
+    "scoring": "4 puntos"
+  },
+  "bank_vole": {
+    "name": "Topillo rojo",
+    "scoring": "3 puntos"
+  },
+  "natterjack_toad": {
+    "name": "Sapo corredor",
+    "scoring": "1 punto"
+  },
+  "smooth_snake": {
+    "name": "Culebra lisa europea",
+    "scoring": "1 punto por árbol"
+  },
+  "sundew": {
+    "name": "Drosera",
+    "scoring": "1 punto por insecto"
+  },
+  "tormentil": {
+    "name": "Tormentila",
+    "scoring": "5 puntos"
+  },
+  "wood_rush": {
+    "name": "Luzula de los bosques",
+    "scoring": "3 puntos"
+  },
+  "bilberry_bumblebee": {
+    "name": "Abejorro de montaña",
+    "scoring": "2 puntos por arbusto"
+  },
+  "dormouse": {
+    "name": "Lirón gris",
+    "scoring": "15 puntos cada uno si hay un murciélago en el mismo árbol",
+    "context": "¿Cuántos comparten árbol con un murciélago?"
+  },
+  "exmoor_pony": {
+    "name": "Poni de Exmoor",
+    "scoring": "Cuenta como poni (puntos por confirmar)"
+  },
+  "exmoor_pony_foal": {
+    "name": "Potro",
+    "scoring": "1 punto"
+  },
+  "horse": {
+    "name": "Caballo",
+    "scoring": "10 puntos por poni"
+  },
+  "red_devon_cow": {
+    "name": "Vaca Red Devon",
+    "scoring": "1 punto por planta"
+  },
+  "whiskered_bat": {
+    "name": "Murciélago bigotudo",
+    "scoring": "Murciélagos: 5 pts cada uno con 3+ especies"
+  },
+  "cave_exmoor": {
+    "name": "Cueva (Exmoor)",
+    "scoring": "1 punto por carta en la cueva"
   }
 }

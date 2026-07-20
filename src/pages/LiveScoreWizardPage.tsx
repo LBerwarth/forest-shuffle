@@ -10,7 +10,7 @@ import { ScoreSummary } from '@/components/scoring/ScoreSummary'
 import { useScoringStore } from '@/store/scoring-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { useLiveSession } from '@/hooks/use-live-session'
-import { getCardsByCategory } from '@/data/cards'
+import { getCards, getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { AcornIcon } from '@/components/ui/AcornIcon'
@@ -21,7 +21,7 @@ import { getCategoryOrder } from '@/data/categories'
 import { submitPlayerScoring, updateLivePlayerStatus } from '@/lib/supabase-api'
 import type { CardTag, Expansion } from '@/types/card'
 
-const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland'] as const
+const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland', 'dartmoor_exmoor'] as const
 
 const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
   base: null,
@@ -120,6 +120,15 @@ export function LiveScoreWizardPage() {
       .filter((c) => (currentPlayer.cardCounts[c.key] || 0) > 0)
       .map((c) => c.key)
   }, [cardsByCategory, currentPlayer])
+
+  const availableHostBirdKeys = useMemo<readonly string[]>(() => {
+    if (!currentPlayer) return []
+    return getCards(expansions, edition)
+      .filter((c) => c.tags.includes('bird'))
+      .filter((c) => (currentPlayer.cardCounts[c.key] || 0) > 0)
+      .map((c) => c.key)
+  }, [expansions, edition, currentPlayer])
+
   const tc = useTranslation('cards').t
 
   const [cardSearch, setCardSearch] = useState('')
@@ -134,7 +143,9 @@ export function LiveScoreWizardPage() {
   const isCaveStep = stepCategories[currentStep]?.[0] === 'cave'
   const hasExploration = edition === 'classic' && expansions.includes('exploration')
   const isDartmoor = edition === 'dartmoor'
-  const activeSpecialCaveKeys = hasExploration ? SPECIAL_CAVE_KEYS : isDartmoor ? DARTMOOR_SPECIAL_CAVE_KEYS : []
+  // Exmoor replaces the base caves, so Cave 4 (lonely_cave_d) is not selectable
+  const hasExmoor = isDartmoor && expansions.includes('dartmoor_exmoor')
+  const activeSpecialCaveKeys = hasExploration ? SPECIAL_CAVE_KEYS : isDartmoor && !hasExmoor ? DARTMOOR_SPECIAL_CAVE_KEYS : []
   const hasSpecialCaves = activeSpecialCaveKeys.length > 0
 
   const stepCards = useMemo(() => {
@@ -523,13 +534,15 @@ export function LiveScoreWizardPage() {
                   ? availableHostKeys
                   : card.needsHostPlantContext
                     ? availableHostPlantKeys
-                    : undefined
+                    : card.needsHostBirdContext
+                      ? availableHostBirdKeys
+                      : undefined
               }
               availableHostCounts={
-                card.needsHostPlantContext ? currentPlayer.cardCounts : undefined
+                card.needsHostPlantContext || card.needsHostBirdContext ? currentPlayer.cardCounts : undefined
               }
               onHostsChange={
-                card.needsHostTreeContext || card.needsHostPlantContext
+                card.needsHostTreeContext || card.needsHostPlantContext || card.needsHostBirdContext
                   ? (next) =>
                       setCardMetadata(currentPlayer.playerId, card.key, { hostCardKeys: next })
                   : undefined

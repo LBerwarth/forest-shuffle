@@ -21,7 +21,7 @@ const LANGUAGES = [
 export function SettingsPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const { edition, setEdition, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, language, setLanguage } = useSettingsStore()
+  const { edition, setEdition, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, includeExmoor, toggleExmoor, language, setLanguage } = useSettingsStore()
   const endScoringSession = useScoringStore((s) => s.endSession)
   const scoringSessionActive = useScoringStore((s) => s.sessionActive)
   const { data: games = [] } = useGames()
@@ -201,7 +201,6 @@ export function SettingsPage() {
       </Card>
       )}
 
-      {/* Exmoor teaser — not yet scorable, toggle stays disabled */}
       {edition === 'dartmoor' && (
       <Card className="mb-4">
         <CardHeader>
@@ -216,18 +215,21 @@ export function SettingsPage() {
               <div className="flex items-center gap-2">
                 <img src={STAT_ICONS.exmoor} alt="" className="h-4 w-4" />
                 <p className="text-sm font-medium text-forest-700">{t('settings.exmoorExpansion')}</p>
-                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-                  {t('settings.exmoorSoon')}
-                </span>
               </div>
               <p className="text-xs text-forest-400">{t('settings.exmoorDesc')}</p>
             </div>
             <button
               type="button"
-              disabled
-              className="relative inline-flex h-6 w-11 shrink-0 cursor-not-allowed items-center rounded-full bg-forest-200 opacity-60"
+              onClick={toggleExmoor}
+              className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ${
+                includeExmoor ? 'bg-forest-500' : 'bg-forest-200'
+              }`}
             >
-              <span className="inline-block h-4 w-4 translate-x-1 transform rounded-full bg-white" />
+              <span
+                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  includeExmoor ? 'translate-x-6' : 'translate-x-1'
+                }`}
+              />
             </button>
           </div>
         </CardContent>

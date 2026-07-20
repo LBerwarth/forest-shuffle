@@ -2,6 +2,9 @@ import type { ForestContext } from '@/types/scoring'
 import type { GameEdition } from '@/types/card'
 import { CARDS } from '@/data/cards'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
+import { EXMOOR_CARDS } from '@/data/exmoor-cards'
+
+const ALL_DARTMOOR_CARDS = [...DARTMOOR_CARDS, ...EXMOOR_CARDS]
 
 export interface MultiplierStat {
   /** Key into STAT_ICONS from @/assets/icons */
@@ -26,13 +29,15 @@ const BUTTERFLY_KEYS = [
 
 const DARTMOOR_BAT_KEYS = [
   'alcathoe_bat', 'brandts_bat', 'common_noctule',
-  'daubentons_bat', 'serotine_bat',
+  'daubentons_bat', 'serotine_bat', 'whiskered_bat',
 ]
 
 const DRAGONFLY_KEYS = [
   'beautiful_demoiselle', 'emerald_damselfly', 'keeled_skimmer',
-  'small_red_damselfly', 'southern_damselfly',
+  'small_red_damselfly', 'southern_damselfly', 'golden_ringed_dragonfly',
 ]
+
+const PONY_KEYS = ['dartmoor_pony', 'exmoor_pony', 'exmoor_pony_foal']
 
 function uniqueByTag(cards: typeof CARDS, tag: string, ctx: ForestContext): number {
   return cards.filter((c) => c.tags.includes(tag as never)).filter((c) => countCard(ctx, c.key) > 0).length
@@ -138,23 +143,23 @@ const dartmoorStats: Record<string, StatDef> = {
   buzzard: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
   common_moorhen: (ctx) => [{ iconKey: 'dragonfly', value: ctx.tagCounts.dragonfly }],
   curlew: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
-  meadow_pipit: (ctx) => [{ iconKey: 'bird', value: uniqueByTag(DARTMOOR_CARDS, 'bird', ctx) }],
+  meadow_pipit: (ctx) => [{ iconKey: 'bird', value: uniqueByTag(ALL_DARTMOOR_CARDS, 'bird', ctx) }],
 
   // Bottom
   adder: (ctx) => [
     { iconKey: 'amphibian', value: ctx.tagCounts.amphibian },
     { iconKey: 'mouse', value: ctx.tagCounts.mouse },
   ],
-  beaver: (ctx) => [{ iconKey: 'cave', value: countCard(ctx, 'cave_d') }],
+  beaver: (ctx) => [{ iconKey: 'cave', value: countCard(ctx, 'cave_d') + countCard(ctx, 'cave_exmoor') }],
   blue_ground_beetle: (ctx) => [{ iconKey: 'insect', value: ctx.slotCounts.bottom }],
-  blueberry_d: (ctx) => [{ iconKey: 'bird', value: uniqueByTag(DARTMOOR_CARDS, 'bird', ctx) }],
+  blueberry_d: (ctx) => [{ iconKey: 'bird', value: uniqueByTag(ALL_DARTMOOR_CARDS, 'bird', ctx) }],
   bog_asphodel: (ctx) => [{ iconKey: 'moor', value: ctx.totalMoors }],
-  common_lizard: (ctx) => [{ iconKey: 'amphibian', value: uniqueByTag(DARTMOOR_CARDS, 'amphibian', ctx) }],
-  greater_butterfly_orchid: (ctx) => [{ iconKey: 'plant', value: uniqueByTag(DARTMOOR_CARDS, 'plant', ctx) }],
+  common_lizard: (ctx) => [{ iconKey: 'amphibian', value: uniqueByTag(ALL_DARTMOOR_CARDS, 'amphibian', ctx) }],
+  greater_butterfly_orchid: (ctx) => [{ iconKey: 'plant', value: uniqueByTag(ALL_DARTMOOR_CARDS, 'plant', ctx) }],
   heather: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
   moor_frog: (ctx) => [{ iconKey: 'moor', value: ctx.totalMoors }],
   otter: (ctx) => [{ iconKey: 'amphibian', value: ctx.tagCounts.amphibian }],
-  royal_fern: (ctx) => [{ iconKey: 'plant', value: uniqueByTag(DARTMOOR_CARDS, 'plant', ctx) }],
+  royal_fern: (ctx) => [{ iconKey: 'plant', value: uniqueByTag(ALL_DARTMOOR_CARDS, 'plant', ctx) }],
   water_soldiers: (ctx) => [{ iconKey: 'dragonfly', value: ctx.tagCounts.dragonfly }],
 
   // Lateral
@@ -166,6 +171,22 @@ const dartmoorStats: Record<string, StatDef> = {
   wood_mouse: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
   gnat_d: (ctx) => [{ iconKey: 'bat', value: ctx.tagCounts.bat }],
   lake_fly: (ctx) => [{ iconKey: 'bat', value: ctx.tagCounts.bat }],
+
+  // Exmoor
+  coastal_heath: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
+  grey_wagtail: (ctx) => [{
+    iconKey: 'exmoor',
+    value: EXMOOR_CARDS.filter((c) => c.category !== 'cave')
+      .reduce((sum, c) => sum + countCard(ctx, c.key), 0),
+  }],
+  harvest_mouse: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
+  peregrine_falcon: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
+  smooth_snake: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  sundew: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
+  bilberry_bumblebee: (ctx) => [{ iconKey: 'shrub', value: ctx.tagCounts.shrub }],
+  dormouse: (ctx) => [{ iconKey: 'bat', value: ctx.tagCounts.bat }],
+  horse: (ctx) => [{ iconKey: 'cloven_hoofed', value: PONY_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0) }],
+  red_devon_cow: (ctx) => [{ iconKey: 'plant', value: ctx.tagCounts.plant }],
 
   // Bat set cards
   ...Object.fromEntries(DARTMOOR_BAT_KEYS.map((k) => [k, (ctx: ForestContext) => [

@@ -160,6 +160,7 @@ export function CardCounter({
                   card.expansion === 'alpine' && 'bg-blue-100 text-blue-700',
                   card.expansion === 'woodland' && 'bg-amber-100 text-amber-700',
                   card.expansion === 'exploration' && 'bg-purple-100 text-purple-700',
+                  card.expansion === 'dartmoor_exmoor' && 'bg-teal-100 text-teal-700',
                 )}
               >
                 {t(`expansion.${card.expansion}`)}
@@ -313,7 +314,7 @@ export function CardCounter({
         </div>
       )}
 
-      {card.needsHostPlantContext && count > 0 && onHostsChange && (
+      {(card.needsHostPlantContext || card.needsHostBirdContext) && count > 0 && onHostsChange && (
         <div className="flex flex-col gap-1 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
           <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
           {availableHostKeys && availableHostKeys.length > 0 ? (
@@ -371,7 +372,9 @@ export function CardCounter({
               })}
             </div>
           ) : (
-            <span className="text-[10px] italic text-bark-400">{t('wizard.noHostPlantsAvailable')}</span>
+            <span className="text-[10px] italic text-bark-400">
+              {t(card.needsHostBirdContext ? 'wizard.noHostBirdsAvailable' : 'wizard.noHostPlantsAvailable')}
+            </span>
           )}
         </div>
       )}

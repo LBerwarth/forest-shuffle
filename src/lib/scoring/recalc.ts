@@ -16,11 +16,12 @@ export function recalcPlayer(
   edition: GameEdition = 'classic',
 ): ScoreBreakdown {
   if (edition === 'dartmoor') {
-    const activeCardKeys = getCards([], 'dartmoor').map((c) => c.key)
-    const allMoorCounts = allPlayers.map((p) => {
-      const moorCards = getCards([], 'dartmoor').filter((c) => c.category === 'moor')
-      return moorCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0)
-    })
+    const dartmoorCards = getCards(expansions, 'dartmoor')
+    const activeCardKeys = dartmoorCards.map((c) => c.key)
+    const moorCards = dartmoorCards.filter((c) => c.category === 'moor')
+    const allMoorCounts = allPlayers.map((p) =>
+      moorCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0),
+    )
     return computeDartmoorScoreBreakdown(
       player.cardCounts,
       player.cardMetadata,

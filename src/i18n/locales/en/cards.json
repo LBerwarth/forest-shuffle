@@ -771,5 +771,112 @@
   "lonely_cave_d": {
     "name": "Cave 4",
     "scoring": "5 points"
+  },
+
+  "holly": {
+    "name": "Holly",
+    "scoring": "0 points (permanent effect only)"
+  },
+  "gorse": {
+    "name": "Gorse",
+    "scoring": "0 points (permanent effect only)"
+  },
+  "coastal_heath": {
+    "name": "Coastal Heath",
+    "scoring": "Doubles points of birds placed below it",
+    "context": "Which birds are below this Coastal Heath?"
+  },
+  "stone_circle": {
+    "name": "Stone Circle",
+    "scoring": "0 points (permanent effect only)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 points (permanent effect only)"
+  },
+  "waxcap_grassland": {
+    "name": "Waxcap Grassland",
+    "scoring": "0 points (permanent effect only)"
+  },
+  "dartford_warbler": {
+    "name": "Dartford Warbler",
+    "scoring": "1 point"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Golden-ringed Dragonfly",
+    "scoring": "Dragonfly set: 0/5/10/15/30/50 for 1-6 species"
+  },
+  "grey_wagtail": {
+    "name": "Grey Wagtail",
+    "scoring": "1 point per Exmoor card in your forest"
+  },
+  "harvest_mouse": {
+    "name": "Harvest Mouse",
+    "scoring": "1 point per bird"
+  },
+  "peregrine_falcon": {
+    "name": "Peregrine Falcon",
+    "scoring": "1 point per mouse"
+  },
+  "pied_flycatcher": {
+    "name": "Pied Flycatcher",
+    "scoring": "4 points"
+  },
+  "bank_vole": {
+    "name": "Bank Vole",
+    "scoring": "3 points"
+  },
+  "natterjack_toad": {
+    "name": "Natterjack Toad",
+    "scoring": "1 point"
+  },
+  "smooth_snake": {
+    "name": "Smooth Snake",
+    "scoring": "1 point per tree"
+  },
+  "sundew": {
+    "name": "Sundew",
+    "scoring": "1 point per insect"
+  },
+  "tormentil": {
+    "name": "Tormentil",
+    "scoring": "5 points"
+  },
+  "wood_rush": {
+    "name": "Great Wood-rush",
+    "scoring": "3 points"
+  },
+  "bilberry_bumblebee": {
+    "name": "Bilberry Bumblebee",
+    "scoring": "2 points per shrub"
+  },
+  "dormouse": {
+    "name": "Edible Dormouse",
+    "scoring": "15 points each if a bat is on the same tree",
+    "context": "How many share a tree with a bat?"
+  },
+  "exmoor_pony": {
+    "name": "Exmoor Pony",
+    "scoring": "Counts as a pony (points not yet confirmed)"
+  },
+  "exmoor_pony_foal": {
+    "name": "Exmoor Pony Foal",
+    "scoring": "1 point"
+  },
+  "horse": {
+    "name": "Horse",
+    "scoring": "10 points per pony"
+  },
+  "red_devon_cow": {
+    "name": "Red Devon Cow",
+    "scoring": "1 point per plant"
+  },
+  "whiskered_bat": {
+    "name": "Whiskered Bat",
+    "scoring": "Bats: 5 pts each if 3+ bat species"
+  },
+  "cave_exmoor": {
+    "name": "Cave (Exmoor)",
+    "scoring": "1 point per card in the cave"
   }
 }
