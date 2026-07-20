@@ -851,17 +851,13 @@
     "scoring": "15 points chacun si une chauve-souris est sur le même arbre",
     "context": "Combien partagent un arbre avec une chauve-souris ?"
   },
-  "exmoor_pony": {
-    "name": "Poney Exmoor",
-    "scoring": "Compte comme un poney (points à confirmer)"
-  },
   "exmoor_pony_foal": {
     "name": "Poulain",
     "scoring": "1 point"
   },
   "horse": {
     "name": "Cheval",
-    "scoring": "10 points par Poney"
+    "scoring": "10 points par poney (Poney Dartmoor, Cheval, Poulain)"
   },
   "red_devon_cow": {
     "name": "Vache Devon rouge",

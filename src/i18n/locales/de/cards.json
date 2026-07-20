@@ -855,17 +855,13 @@
     "scoring": "Je 15 Punkte, wenn eine Fledermaus am selben Baum ist",
     "context": "Wie viele teilen sich einen Baum mit einer Fledermaus?"
   },
-  "exmoor_pony": {
-    "name": "Exmoor-Pony",
-    "scoring": "Zählt als Pony (Punkte noch unbestätigt)"
-  },
   "exmoor_pony_foal": {
     "name": "Fohlen",
     "scoring": "1 Punkt"
   },
   "horse": {
     "name": "Pferd",
-    "scoring": "10 Punkte pro Pony"
+    "scoring": "10 Punkte pro Pony (Dartmoor-Pony, Pferd, Fohlen)"
   },
   "red_devon_cow": {
     "name": "Red-Devon-Rind",

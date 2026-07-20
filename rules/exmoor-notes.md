@@ -35,8 +35,10 @@ Alternative for 2p: split into 3 equal piles, remove 1 unseen. For 3p: 5 piles, 
 - **Dragonflies**: Golden-Ringed Dragonfly is the 6th dragonfly; set table becomes
   0/5/10/15/30/50 for 1–6 species.
 - **Bats**: Whiskered Bat joins the bat set (5 pts each with 3+ species).
-- **Ponies**: Dartmoor Pony, Exmoor Pony, and Exmoor Pony Foal all count as ponies
-  (for the Horse's "10 pts per pony").
+- **Ponies**: there is no separate "Exmoor Pony" card — the EN rulebook's
+  "Exmoor Pony" / "Exmoor Pony Foal" are the FR **Cheval** / **Poulain**.
+  Ponies = Dartmoor Pony + Cheval + Poulain (the Cheval counts itself for
+  its own "10 pts per pony").
 
 ## Transcribed cards (from FR photos)
 
@@ -70,8 +72,6 @@ Alternative for 2p: split into 3 equal piles, remove 1 unseen. For 3p: 5 piles, 
 
 ## Open / TODO
 
-- **exmoor_pony** (FR "Poney") not photographed yet — in the app it counts as a pony
-  but scores a provisional 0. Fix once the card is seen.
 - Remaining unphotographed cards: ~6 shrubs, ~6 moors, several top/bottom and
   left/right splits (55-card set; ~25 unique cards transcribed).
 - Official EN/DE/ES card names (appendix or BGA) — locale names are best-effort.

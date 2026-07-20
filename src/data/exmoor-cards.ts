@@ -1,7 +1,6 @@
 import type { CardDefinition } from '@/types/card'
 
-// Transcribed from FR card photos (E01–E48); exmoor_pony is unphotographed but
-// confirmed by the EN rulebook pony clarification. See rules/exmoor-notes.md.
+// Transcribed from FR card photos (E01–E48). See rules/exmoor-notes.md.
 export const EXMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   // SHRUBS — category 'tree', score 0 (ongoing effects only)
@@ -42,9 +41,8 @@ export const EXMOOR_CARDS: CardDefinition[] = [
   // ============================================================
   { key: 'bilberry_bumblebee', category: 'lateral', tags: ['insect'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
   { key: 'dormouse', category: 'lateral', tags: ['pawed'], expansion: 'dartmoor_exmoor', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
-  // Pony scoring not on any photographed card yet — provisional 0
-  { key: 'exmoor_pony', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
   { key: 'exmoor_pony_foal', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'fixed' },
+  // FR "Cheval" — the rulebook's "Exmoor Pony"; counts as a pony itself
   { key: 'horse', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'per_card' },
   { key: 'red_devon_cow', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_exmoor', scoringType: 'per_tag' },
   { key: 'whiskered_bat', category: 'lateral', tags: ['bat'], expansion: 'dartmoor_exmoor', scoringType: 'set' },

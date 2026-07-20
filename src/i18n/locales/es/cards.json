@@ -855,17 +855,13 @@
     "scoring": "15 puntos cada uno si hay un murciélago en el mismo árbol",
     "context": "¿Cuántos comparten árbol con un murciélago?"
   },
-  "exmoor_pony": {
-    "name": "Poni de Exmoor",
-    "scoring": "Cuenta como poni (puntos por confirmar)"
-  },
   "exmoor_pony_foal": {
     "name": "Potro",
     "scoring": "1 punto"
   },
   "horse": {
     "name": "Caballo",
-    "scoring": "10 puntos por poni"
+    "scoring": "10 puntos por poni (Poni de Dartmoor, Caballo, Potro)"
   },
   "red_devon_cow": {
     "name": "Vaca Red Devon",

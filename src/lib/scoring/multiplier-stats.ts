@@ -37,7 +37,7 @@ const DRAGONFLY_KEYS = [
   'small_red_damselfly', 'southern_damselfly', 'golden_ringed_dragonfly',
 ]
 
-const PONY_KEYS = ['dartmoor_pony', 'exmoor_pony', 'exmoor_pony_foal']
+const PONY_KEYS = ['dartmoor_pony', 'horse', 'exmoor_pony_foal']
 
 function uniqueByTag(cards: typeof CARDS, tag: string, ctx: ForestContext): number {
   return cards.filter((c) => c.tags.includes(tag as never)).filter((c) => countCard(ctx, c.key) > 0).length

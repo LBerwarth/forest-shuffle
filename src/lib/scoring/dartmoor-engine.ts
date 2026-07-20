@@ -314,7 +314,6 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   bilberry_bumblebee: (count, ctx) => count * (2 * countTag(ctx, 'shrub')),
   // 15 pts per dormouse that shares a tree with a bat (contextValue)
   dormouse: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 15,
-  exmoor_pony: () => 0, // scoring not published yet — counts as a pony for Horse
   exmoor_pony_foal: (count) => count * 1,
   horse: (count, ctx) => count * 10 * PONY_KEYS.reduce((sum, k) => sum + countCard(ctx, k), 0),
   red_devon_cow: (count, ctx) => count * countTag(ctx, 'plant'),
@@ -324,8 +323,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   cave_exmoor: (count) => count * 1,
 }
 
-// Rulebook clarification: Dartmoor Pony, Exmoor Pony and Exmoor Pony Foal are ponies
-const PONY_KEYS = ['dartmoor_pony', 'exmoor_pony', 'exmoor_pony_foal']
+// Rulebook: Dartmoor Pony, the Horse (FR Cheval, "Exmoor Pony") and the Foal are ponies
+const PONY_KEYS = ['dartmoor_pony', 'horse', 'exmoor_pony_foal']
 
 /** Cards in the forest showing the Exmoor type symbol (cave contents excluded) */
 function countExmoorSymbols(ctx: ForestContext): number {

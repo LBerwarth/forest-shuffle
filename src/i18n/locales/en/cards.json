@@ -855,17 +855,13 @@
     "scoring": "15 points each if a bat is on the same tree",
     "context": "How many share a tree with a bat?"
   },
-  "exmoor_pony": {
-    "name": "Exmoor Pony",
-    "scoring": "Counts as a pony (points not yet confirmed)"
-  },
   "exmoor_pony_foal": {
-    "name": "Exmoor Pony Foal",
+    "name": "Foal",
     "scoring": "1 point"
   },
   "horse": {
     "name": "Horse",
-    "scoring": "10 points per pony"
+    "scoring": "10 points per pony (Dartmoor Pony, Horse, Foal)"
   },
   "red_devon_cow": {
     "name": "Red Devon Cow",
