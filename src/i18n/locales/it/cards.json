@@ -1,0 +1,881 @@
+{
+  "birch": {
+    "name": "Betulla",
+    "scoring": "1 punto per Betulla"
+  },
+  "beech": {
+    "name": "Faggio",
+    "scoring": "5 punti ciascuno se hai 4+ Faggi"
+  },
+  "douglas_fir": {
+    "name": "Douglasia",
+    "scoring": "5 punti per Douglasia"
+  },
+  "oak": {
+    "name": "Quercia",
+    "scoring": "10 punti ciascuna se hai 8+ specie di alberi"
+  },
+  "horse_chestnut": {
+    "name": "Ippocastano",
+    "scoring": "Set: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Tiglio",
+    "scoring": "1 pt ciascuno; 3 pt ciascuno se hai più Tigli (o pareggio)",
+    "scoringSolo": "1 pt ciascuno; 3 pt ciascuno se hai almeno 3 Tigli"
+  },
+  "sycamore": {
+    "name": "Acero di monte",
+    "scoring": "1 punto per albero nel tuo bosco"
+  },
+  "silver_fir": {
+    "name": "Abete bianco",
+    "scoring": "2 punti per carta attaccata agli Abeti bianchi",
+    "context": "Carte attaccate agli Abeti bianchi"
+  },
+  "european_larch": {
+    "name": "Larice",
+    "scoring": "3 punti per Larice"
+  },
+  "stone_pine": {
+    "name": "Pino cembro",
+    "scoring": "1 punto per carta Alpine (se stessa inclusa)",
+    "context": "Carte attaccate ai Pini cembri"
+  },
+  "palm_tree": {
+    "name": "Palma",
+    "scoring": "1 punto per uccello"
+  },
+  "turkey_oak": {
+    "name": "Cerro",
+    "scoring": "1 punto per animale con zoccoli"
+  },
+  "o_christmas_tree": {
+    "name": "O Albero di Natale",
+    "scoring": "2 punti per carta attaccata a questo albero",
+    "context": "Carte attaccate a questo albero"
+  },
+  "tree_sapling": {
+    "name": "Alberello",
+    "scoring": "0 punti (conta come albero)"
+  },
+  "common_hazel": {
+    "name": "Nocciolo comune",
+    "scoring": "0 punti (arbusto — solo effetto permanente)"
+  },
+  "elderberry": {
+    "name": "Sambuco nero",
+    "scoring": "0 punti (arbusto — solo effetto permanente)"
+  },
+  "blackthorn": {
+    "name": "Prugnolo",
+    "scoring": "0 punti (arbusto — solo effetto permanente)"
+  },
+  "bullfinch": {
+    "name": "Ciuffolotto",
+    "scoring": "2 punti per insetto nel tuo bosco"
+  },
+  "chaffinch": {
+    "name": "Fringuello",
+    "scoring": "5 punti se su un Faggio",
+    "context": "Quanti Fringuelli sono su un Faggio?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Picchio rosso maggiore",
+    "scoring": "10 punti se hai più alberi (o pareggio)",
+    "scoringSolo": "10 punti se hai almeno 10 alberi"
+  },
+  "goshawk": {
+    "name": "Astore",
+    "scoring": "3 punti per uccello (se stesso incluso)"
+  },
+  "eurasian_jay": {
+    "name": "Ghiandaia",
+    "scoring": "3 punti per Ghiandaia"
+  },
+  "tawny_owl": {
+    "name": "Allocco",
+    "scoring": "5 punti per Allocco"
+  },
+  "peacock_butterfly": {
+    "name": "Vanessa io",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Apatura iris",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Tabacco di Spagna",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Vanessa antiopa",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Vanessa multicolore",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Scoiattolo rosso",
+    "scoring": "5 punti se su una Quercia",
+    "context": "Quanti Scoiattoli rossi sono su una Quercia?"
+  },
+  "golden_eagle": {
+    "name": "Aquila reale",
+    "scoring": "1 punto per animale con zampe + 1 per anfibio"
+  },
+  "bearded_vulture": {
+    "name": "Gipeto",
+    "scoring": "1 punto per carta grotta"
+  },
+  "common_raven": {
+    "name": "Corvo imperiale",
+    "scoring": "5 punti per Corvo imperiale"
+  },
+  "phoebus_apollo": {
+    "name": "Apollo minore",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Barbagianni",
+    "scoring": "3 punti per pipistrello"
+  },
+  "brimstone": {
+    "name": "Cedronella",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Cardinale",
+    "scoring": "5 punti per Cardinale"
+  },
+  "cuckoo": {
+    "name": "Cuculo",
+    "scoring": "7 punti per Cuculo"
+  },
+  "eurasian_magpie": {
+    "name": "Gazza",
+    "scoring": "3 punti per Gazza"
+  },
+  "map_butterfly": {
+    "name": "Vanessa levana",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Vischio",
+    "scoring": "1 punto per pianta"
+  },
+  "nightingale": {
+    "name": "Usignolo",
+    "scoring": "5 punti se su un arbusto",
+    "context": "Quanti Usignoli sono su un arbusto?"
+  },
+  "robin": {
+    "name": "Pettirosso",
+    "scoring": "1 punto per insetto"
+  },
+  "whinchat": {
+    "name": "Stiaccino",
+    "scoring": "1 punto per pianta"
+  },
+  "common_toad": {
+    "name": "Rospo comune",
+    "scoring": "5 punti per Rospo comune che condivide un albero con un altro Rospo comune",
+    "context": "Quanti Rospi comuni condividono un albero con un altro?"
+  },
+  "fire_salamander": {
+    "name": "Salamandra pezzata",
+    "scoring": "Set: 5/15/25 per 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Raganella",
+    "scoring": "5 punti per moscerino per Raganella"
+  },
+  "stag_beetle": {
+    "name": "Cervo volante",
+    "scoring": "1 punto per animale con zampe"
+  },
+  "wood_ant": {
+    "name": "Formica rossa",
+    "scoring": "2 punti per carta in basso (conteggio automatico)"
+  },
+  "penny_bun": {
+    "name": "Porcino",
+    "scoring": "0 punti (conta come fungo)"
+  },
+  "chanterelle": {
+    "name": "Finferlo",
+    "scoring": "0 punti (conta come fungo)"
+  },
+  "fly_agaric": {
+    "name": "Amanita muscaria",
+    "scoring": "0 punti (conta come fungo)"
+  },
+  "parasol_mushroom": {
+    "name": "Mazza di tamburo",
+    "scoring": "0 punti (conta come fungo)"
+  },
+  "moss": {
+    "name": "Muschio",
+    "scoring": "10 punti ciascuno se hai 10+ alberi"
+  },
+  "wild_strawberries": {
+    "name": "Fragole di bosco",
+    "scoring": "10 punti ciascuno se hai 8+ specie di alberi"
+  },
+  "hedgehog": {
+    "name": "Riccio",
+    "scoring": "2 punti per farfalla"
+  },
+  "pond_turtle": {
+    "name": "Testuggine palustre",
+    "scoring": "5 punti per Testuggine palustre"
+  },
+  "blackberries": {
+    "name": "More di rovo",
+    "scoring": "2 punti per pianta (se stessa inclusa)"
+  },
+  "fireflies": {
+    "name": "Lucciole",
+    "scoring": "Set lucciole: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Talpa",
+    "scoring": "0 punti"
+  },
+  "tree_ferns": {
+    "name": "Felci arboree",
+    "scoring": "6 punti per anfibio"
+  },
+  "alpine_newt": {
+    "name": "Tritone alpino",
+    "scoring": "2 punti per insetto"
+  },
+  "blueberry": {
+    "name": "Mirtillo",
+    "scoring": "2 punti per tipo di uccello unico"
+  },
+  "gentian": {
+    "name": "Genziana",
+    "scoring": "3 punti per farfalla"
+  },
+  "edelweiss": {
+    "name": "Stella alpina",
+    "scoring": "3 punti per Stella alpina"
+  },
+  "black_trumpet": {
+    "name": "Trombetta dei morti",
+    "scoring": "0 punti (conta come fungo)"
+  },
+  "digitalis": {
+    "name": "Digitale",
+    "scoring": "Diversità piante: 0/1/3/6/10/15 per tipo di pianta unico"
+  },
+  "great_green_bush_cricket": {
+    "name": "Cavalletta verde",
+    "scoring": "1 punto per insetto (se stesso incluso)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Cinquefoglia di palude",
+    "scoring": "15/7/3 pt in base al numero di alberi (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Ortica",
+    "scoring": "2 punti per farfalla"
+  },
+  "water_vole": {
+    "name": "Arvicola acquatica",
+    "scoring": "0 punti (conta come anfibio)"
+  },
+  "wild_tulip": {
+    "name": "Tulipano selvatico",
+    "scoring": "3 punti per Tulipano selvatico"
+  },
+  "barbastelle": {
+    "name": "Barbastello",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "bechsteins_bat": {
+    "name": "Vespertilio di Bechstein",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "brown_long_eared_bat": {
+    "name": "Orecchione bruno",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Rinolofo maggiore",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "savis_pipistrelle": {
+    "name": "Pipistrello di Savi",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "common_pipistrelle": {
+    "name": "Pipistrello nano",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "roe_deer": {
+    "name": "Capriolo",
+    "scoring": "3 punti per carta con lo stesso simbolo d'albero (se stessa inclusa)",
+    "context": "Carte con lo stesso simbolo d'albero del tuo Capriolo"
+  },
+  "red_deer": {
+    "name": "Cervo nobile",
+    "scoring": "1 punto per albero e per pianta"
+  },
+  "chamois": {
+    "name": "Camoscio",
+    "scoring": "3 punti per carta con lo stesso simbolo d'albero (se stessa inclusa)",
+    "context": "Carte con lo stesso simbolo d'albero del tuo Camoscio"
+  },
+  "steinbock": {
+    "name": "Stambecco",
+    "scoring": "10 punti per Stambecco"
+  },
+  "lynx": {
+    "name": "Lince",
+    "scoring": "10 punti se almeno 1 Capriolo"
+  },
+  "wolf": {
+    "name": "Lupo",
+    "scoring": "5 punti per cervide"
+  },
+  "wild_boar": {
+    "name": "Cinghiale",
+    "scoring": "10 punti ciascuno se almeno 1 Cinghialetto; altrimenti 0"
+  },
+  "european_badger": {
+    "name": "Tasso",
+    "scoring": "2 punti per Tasso"
+  },
+  "european_hare": {
+    "name": "Lepre europea",
+    "scoring": "Punti pari al numero totale di lepri, per lepre"
+  },
+  "european_fat_dormouse": {
+    "name": "Ghiro",
+    "scoring": "15 punti se su un albero con un pipistrello (nel posto opposto)",
+    "context": "Quanti sono su un albero con un pipistrello?"
+  },
+  "squeaker": {
+    "name": "Moscardino",
+    "scoring": "1 punto per Moscardino"
+  },
+  "brown_bear": {
+    "name": "Orso bruno",
+    "scoring": "0 punti"
+  },
+  "fox": {
+    "name": "Volpe",
+    "scoring": "2 punti per lepre nel tuo bosco"
+  },
+  "violet_carpenter_bee": {
+    "name": "Ape legnaiola",
+    "scoring": "Conta come un albero in più della specie a cui è attaccata",
+    "context": "Attaccata a quale albero?"
+  },
+  "beech_marten": {
+    "name": "Faina",
+    "scoring": "5 punti per albero completamente occupato",
+    "context": "Quanti alberi completamente occupati nel tuo bosco?"
+  },
+  "fallow_deer": {
+    "name": "Daino",
+    "scoring": "3 punti per animale con zoccoli (se stesso incluso)"
+  },
+  "gnat": {
+    "name": "Moscerino",
+    "scoring": "1 punto per pipistrello"
+  },
+  "large_tortoiseshell": {
+    "name": "Vanessa multicolore",
+    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Procione",
+    "scoring": "0 punti"
+  },
+  "alpine_marmot": {
+    "name": "Marmotta alpina",
+    "scoring": "3 punti per tipo di pianta unico"
+  },
+  "mountain_hare": {
+    "name": "Lepre variabile",
+    "scoring": "Punti pari al numero totale di lepri (conta come lepre)"
+  },
+  "capercaillie": {
+    "name": "Gallo cedrone",
+    "scoring": "1 punto per pianta"
+  },
+  "bee_swarm": {
+    "name": "Sciame di api",
+    "scoring": "1 punto per pianta"
+  },
+  "crane_fly": {
+    "name": "Tipula",
+    "scoring": "1 punto per pipistrello"
+  },
+  "elk": {
+    "name": "Alce",
+    "scoring": "2 pt per alberello e per carta con i simboli d'albero dell'Alce (se stesso incluso)",
+    "context": "Carte con i simboli d'albero dell'Alce + alberelli"
+  },
+  "european_bison": {
+    "name": "Bisonte europeo",
+    "scoring": "2 pt per carta con uno dei suoi simboli d'albero (se stesso incluso)",
+    "context": "Carte con simbolo d'albero corrispondente per Bisonte (se stesso incluso)"
+  },
+  "european_polecat": {
+    "name": "Puzzola",
+    "scoring": "10 punti se da solo sul suo albero",
+    "context": "Quanti sono soli sul loro albero?"
+  },
+  "european_wildcat": {
+    "name": "Gatto selvatico",
+    "scoring": "1 punto per carta margine del bosco (se stessa inclusa)"
+  },
+  "genet": {
+    "name": "Genetta",
+    "scoring": "5 punti per Genetta"
+  },
+  "red_panda": {
+    "name": "Panda rosso",
+    "scoring": "2 punti per Panda rosso"
+  },
+  "sable": {
+    "name": "Zibellino",
+    "scoring": "3 punti per animale con zampe"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 punto per albero"
+  },
+  "white_stork": {
+    "name": "Cicogna bianca",
+    "scoring": "1 punto per insetto + 1 per anfibio"
+  },
+  "wild_boar_female": {
+    "name": "Cinghiale (femmina)",
+    "scoring": "10 punti ciascuna se almeno 1 Cinghialetto; altrimenti 0"
+  },
+  "cave": {
+    "name": "Grotta",
+    "scoring": "1 punto per carta nella grotta"
+  },
+  "collectors_cave": {
+    "name": "Grotta del collezionista",
+    "scoring": "Ogni carta grotta normale vale 2 invece di 1"
+  },
+  "bat_cave": {
+    "name": "Grotta dei pipistrelli",
+    "scoring": "Ogni pipistrello vale 3 punti in più"
+  },
+  "lonely_cave": {
+    "name": "Grotta solitaria",
+    "scoring": "5 punti se nessuna carta grotta normale; altrimenti 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Cinghialetto",
+    "scoring": "1 punto per Cinghialetto"
+  },
+  "honey_bee": {
+    "name": "Ape mellifera",
+    "scoring": "1 punto per pianta"
+  },
+
+  "ash": {
+    "name": "Frassino",
+    "scoring": "1 punto per carta con lo stesso simbolo d'albero + 1 per pianta (piante contate automaticamente)",
+    "context": "Carte con lo stesso simbolo d'albero colorato"
+  },
+  "black_alder": {
+    "name": "Ontano nero",
+    "scoring": "5 punti per Ontano nero"
+  },
+  "crab_apple": {
+    "name": "Melo selvatico",
+    "scoring": "8 punti per Melo selvatico completamente occupato",
+    "context": "Quanti Meli selvatici sono completamente occupati?"
+  },
+  "goat_willow": {
+    "name": "Salicone",
+    "scoring": "1 punto per brughiera nel tuo bosco"
+  },
+  "moor_birch": {
+    "name": "Betulla pubescente",
+    "scoring": "1 punto per Betulla pubescente"
+  },
+  "sessile_oak": {
+    "name": "Rovere",
+    "scoring": "1 punto per albero/arbusto nel tuo bosco"
+  },
+  "common_hazel_d": {
+    "name": "Nocciolo comune",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "elderberry_d": {
+    "name": "Sambuco nero",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+
+  "blanket_bog": {
+    "name": "Torbiera di copertura",
+    "scoring": "Raddoppia i punti delle piante poste sotto di essa",
+    "context": "Quali piante sono sotto questa Torbiera di copertura?"
+  },
+  "fountainhead": {
+    "name": "Sorgente",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "lowland_heath": {
+    "name": "Brughiera di pianura",
+    "scoring": "2 punti per anfibio nel tuo bosco"
+  },
+  "rhos_pasture": {
+    "name": "Pascolo umido",
+    "scoring": "2 punti per ungulato nel tuo bosco"
+  },
+  "rivulet": {
+    "name": "Ruscello",
+    "scoring": "2 punti per simbolo d'albero nel tuo bosco",
+    "context": "Quanti simboli d'albero ci sono nel tuo bosco?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "valley_mire": {
+    "name": "Palude di valle",
+    "scoring": "2 punti per insetto nel tuo bosco"
+  },
+  "warrens": {
+    "name": "Conigliera",
+    "scoring": "2 punti per animale con zampe nel tuo bosco"
+  },
+  "wet_woodland": {
+    "name": "Bosco umido",
+    "scoring": "2 punti per brughiera nel tuo bosco (se stessa inclusa)"
+  },
+  "universal_moor": {
+    "name": "Brughiera universale",
+    "scoring": "0 punti (conta come brughiera)"
+  },
+
+  "barn_owl_d": {
+    "name": "Barbagianni",
+    "scoring": "3 punti per pipistrello nel tuo bosco"
+  },
+  "beautiful_demoiselle": {
+    "name": "Calopterice vergine",
+    "scoring": "Set libellule: 0/5/10/15/30 per 1-5 specie"
+  },
+  "black_tailed_godwit": {
+    "name": "Pittima reale",
+    "scoring": "10 punti ciascuna se hai più brughiere (o pareggio)"
+  },
+  "buzzard": {
+    "name": "Poiana",
+    "scoring": "2 punti per topo nel tuo bosco"
+  },
+  "common_moorhen": {
+    "name": "Gallinella d'acqua",
+    "scoring": "2 punti per libellula nel tuo bosco"
+  },
+  "cuckoo_d": {
+    "name": "Cuculo",
+    "scoring": "7 punti per Cuculo"
+  },
+  "curlew": {
+    "name": "Chiurlo maggiore",
+    "scoring": "10 punti ciascuno se 5+ insetti; altrimenti 3 ciascuno"
+  },
+  "emerald_damselfly": {
+    "name": "Leste comune",
+    "scoring": "Set libellule: 0/5/10/15/30 per 1-5 specie"
+  },
+  "grey_heron": {
+    "name": "Airone cenerino",
+    "scoring": "8 punti per Airone cenerino"
+  },
+  "keeled_skimmer": {
+    "name": "Ortetro azzurro",
+    "scoring": "Set libellule: 0/5/10/15/30 per 1-5 specie"
+  },
+  "meadow_pipit": {
+    "name": "Pispola",
+    "scoring": "1/3/6/10 pt per 1/2/4/6+ specie di uccelli"
+  },
+  "small_red_damselfly": {
+    "name": "Ceriagrione delicato",
+    "scoring": "Set libellule: 0/5/10/15/30 per 1-5 specie"
+  },
+  "southern_damselfly": {
+    "name": "Agrion di Mercurio",
+    "scoring": "Set libellule: 0/5/10/15/30 per 1-5 specie"
+  },
+  "wheatear": {
+    "name": "Culbianco",
+    "scoring": "5 punti ciascuno se in una brughiera",
+    "context": "Quanti Culbianchi sono in una brughiera?"
+  },
+
+  "adder": {
+    "name": "Marasso",
+    "scoring": "1 punto per anfibio + 1 per topo nel tuo bosco"
+  },
+  "adders_tongue": {
+    "name": "Ofioglosso comune",
+    "scoring": "3 punti per Ofioglosso comune"
+  },
+  "beaver": {
+    "name": "Castoro",
+    "scoring": "Punti pari al numero di carte nella tua grotta"
+  },
+  "blue_ground_beetle": {
+    "name": "Carabo azzurro",
+    "scoring": "1 punto per carta in basso (se stessa inclusa)"
+  },
+  "blueberry_d": {
+    "name": "Mirtillo",
+    "scoring": "2 punti per specie di uccello diversa"
+  },
+  "bog_asphodel": {
+    "name": "Asfodelo di palude",
+    "scoring": "1 punto per brughiera nel tuo bosco"
+  },
+  "common_lizard": {
+    "name": "Lucertola vivipara",
+    "scoring": "15 punti ciascuna se 3+ specie di anfibi; altrimenti 5 ciascuna"
+  },
+  "grass_snake": {
+    "name": "Biscia dal collare",
+    "scoring": "5 punti per Biscia dal collare"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Platantera verdastra",
+    "scoring": "15 punti ciascuna se 5+ specie di piante; altrimenti 3 ciascuna"
+  },
+  "heather": {
+    "name": "Brugo",
+    "scoring": "1 punto per insetto nel tuo bosco"
+  },
+  "meadowsweet": {
+    "name": "Olmaria",
+    "scoring": "5 punti ciascuna se in una brughiera",
+    "context": "Quante Olmarie sono in una brughiera?"
+  },
+  "moor_frog": {
+    "name": "Rana di palude",
+    "scoring": "8 punti ciascuna se 5+ brughiere; altrimenti 0"
+  },
+  "otter": {
+    "name": "Lontra",
+    "scoring": "3 punti per anfibio nel tuo bosco"
+  },
+  "royal_fern": {
+    "name": "Osmunda regale",
+    "scoring": "2 punti per specie di pianta diversa"
+  },
+  "warty_newt": {
+    "name": "Tritone crestato",
+    "scoring": "Set: 5/15/25 per 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Aloe d'acqua",
+    "scoring": "2 punti per libellula nel tuo bosco"
+  },
+
+  "alcathoe_bat": {
+    "name": "Vespertilio di Alcathoe",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "brandts_bat": {
+    "name": "Vespertilio di Brandt",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "common_noctule": {
+    "name": "Nottola comune",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "daubentons_bat": {
+    "name": "Vespertilio di Daubenton",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "serotine_bat": {
+    "name": "Serotino comune",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "capercaillie_d": {
+    "name": "Gallo cedrone",
+    "scoring": "1 punto per pianta nel tuo bosco"
+  },
+  "common_pheasant": {
+    "name": "Fagiano comune",
+    "scoring": "1 punto per albero e arbusto nel tuo bosco"
+  },
+  "dartmoor_badger": {
+    "name": "Tasso del Dartmoor",
+    "scoring": "2 punti per animale con zampe (se stesso incluso)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Coniglio nero del Dartmoor",
+    "scoring": "Ogni coniglio vale punti pari al numero totale di conigli"
+  },
+  "dartmoor_pony": {
+    "name": "Pony del Dartmoor",
+    "scoring": "15 punti ciascuno se hai più brughiere (o pareggio); altrimenti 5 ciascuno"
+  },
+  "dartmoor_sheep": {
+    "name": "Pecora del Dartmoor",
+    "scoring": "2 punti per ungulato (se stesso incluso)"
+  },
+  "field_vole": {
+    "name": "Arvicola campestre",
+    "scoring": "1 punto per topo nel tuo bosco (se stesso incluso)"
+  },
+  "gnat_d": {
+    "name": "Moscerino",
+    "scoring": "1 punto per pipistrello nel tuo bosco"
+  },
+  "lake_fly": {
+    "name": "Chironomo",
+    "scoring": "1 punto per pipistrello nel tuo bosco"
+  },
+  "nuthatch": {
+    "name": "Picchio muratore",
+    "scoring": "10 punti ciascuno se su un albero completamente occupato",
+    "context": "Quanti Picchi muratori sono su alberi completamente occupati?"
+  },
+  "roe_deer_d": {
+    "name": "Capriolo",
+    "scoring": "3 punti per carta con simbolo d'albero corrispondente (se stessa inclusa)",
+    "context": "Carte con lo stesso simbolo d'albero del tuo Capriolo"
+  },
+  "shrew": {
+    "name": "Toporagno",
+    "scoring": "1 punto per Toporagno"
+  },
+  "treecreeper": {
+    "name": "Rampichino",
+    "scoring": "5 punti per Rampichino"
+  },
+  "wood_mouse": {
+    "name": "Topo selvatico",
+    "scoring": "1 punto per topo nel tuo bosco (se stesso incluso)"
+  },
+
+  "cave_d": {
+    "name": "Grotta",
+    "scoring": "1 punto per carta nella grotta"
+  },
+  "lonely_cave_d": {
+    "name": "Grotta 4",
+    "scoring": "5 punti"
+  },
+
+  "holly": {
+    "name": "Agrifoglio",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "gorse": {
+    "name": "Ginestrone",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "coastal_heath": {
+    "name": "Brughiera costiera",
+    "scoring": "Raddoppia i punti degli uccelli posti sotto di essa",
+    "context": "Quali uccelli sono sotto questa Brughiera costiera?"
+  },
+  "stone_circle": {
+    "name": "Cerchio di pietre",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "waxcap_grassland": {
+    "name": "Prateria a igrofori",
+    "scoring": "0 punti (solo effetto permanente)"
+  },
+  "dartford_warbler": {
+    "name": "Magnanina comune",
+    "scoring": "1 punto"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Guardaruscelli",
+    "scoring": "Set libellule: 0/5/10/15/30/50 per 1-6 specie"
+  },
+  "grey_wagtail": {
+    "name": "Ballerina gialla",
+    "scoring": "1 punto per carta Exmoor nel tuo bosco"
+  },
+  "harvest_mouse": {
+    "name": "Topolino delle risaie",
+    "scoring": "1 punto per uccello"
+  },
+  "peregrine_falcon": {
+    "name": "Falco pellegrino",
+    "scoring": "1 punto per topo"
+  },
+  "pied_flycatcher": {
+    "name": "Balia nera",
+    "scoring": "4 punti"
+  },
+  "bank_vole": {
+    "name": "Arvicola rossastra",
+    "scoring": "3 punti"
+  },
+  "natterjack_toad": {
+    "name": "Rospo calamita",
+    "scoring": "1 punto"
+  },
+  "smooth_snake": {
+    "name": "Colubro liscio",
+    "scoring": "1 punto per simbolo d'albero nel tuo bosco",
+    "context": "Quanti simboli d'albero ci sono nel tuo bosco?"
+  },
+  "sundew": {
+    "name": "Drosera",
+    "scoring": "1 punto per insetto"
+  },
+  "tormentil": {
+    "name": "Tormentilla",
+    "scoring": "5 punti"
+  },
+  "wood_rush": {
+    "name": "Luzula maggiore",
+    "scoring": "3 punti"
+  },
+  "bilberry_bumblebee": {
+    "name": "Bombo del mirtillo",
+    "scoring": "2 punti per arbusto"
+  },
+  "dormouse": {
+    "name": "Ghiro",
+    "scoring": "15 punti ciascuno se un pipistrello è sullo stesso albero",
+    "context": "Quanti condividono un albero con un pipistrello?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Puledro",
+    "scoring": "1 punto"
+  },
+  "horse": {
+    "name": "Cavallo",
+    "scoring": "10 punti per pony (Pony del Dartmoor, Cavallo, Puledro)"
+  },
+  "red_devon_cow": {
+    "name": "Vacca Red Devon",
+    "scoring": "1 punto per pianta"
+  },
+  "whiskered_bat": {
+    "name": "Vespertilio mustacchino",
+    "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
+  },
+  "cave_exmoor": {
+    "name": "Grotta (Exmoor)",
+    "scoring": "1 punto per carta nella grotta"
+  }
+}

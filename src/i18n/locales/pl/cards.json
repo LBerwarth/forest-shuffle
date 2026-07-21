@@ -1,0 +1,881 @@
+{
+  "birch": {
+    "name": "Brzoza",
+    "scoring": "1 punkt za Brzozę"
+  },
+  "beech": {
+    "name": "Buk",
+    "scoring": "Po 5 punktów, jeśli masz 4+ Buki"
+  },
+  "douglas_fir": {
+    "name": "Daglezja",
+    "scoring": "5 punktów za Daglezję"
+  },
+  "oak": {
+    "name": "Dąb",
+    "scoring": "Po 10 punktów, jeśli masz 8+ gatunków drzew"
+  },
+  "horse_chestnut": {
+    "name": "Kasztanowiec",
+    "scoring": "Kolekcja: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Lipa",
+    "scoring": "Po 1 pkt; po 3 pkt, jeśli masz najwięcej Lip (lub remis)",
+    "scoringSolo": "Po 1 pkt; po 3 pkt, jeśli masz co najmniej 3 Lipy"
+  },
+  "sycamore": {
+    "name": "Jawor",
+    "scoring": "1 punkt za drzewo w twoim lesie"
+  },
+  "silver_fir": {
+    "name": "Jodła pospolita",
+    "scoring": "2 punkty za kartę przy Jodłach pospolitych",
+    "context": "Karty przy Jodłach pospolitych"
+  },
+  "european_larch": {
+    "name": "Modrzew",
+    "scoring": "3 punkty za Modrzew"
+  },
+  "stone_pine": {
+    "name": "Limba",
+    "scoring": "1 punkt za kartę Alpine (wliczając siebie)",
+    "context": "Karty przy Limbach"
+  },
+  "palm_tree": {
+    "name": "Palma",
+    "scoring": "1 punkt za ptaka"
+  },
+  "turkey_oak": {
+    "name": "Dąb burgundzki",
+    "scoring": "1 punkt za zwierzę parzystokopytne"
+  },
+  "o_christmas_tree": {
+    "name": "Choinka",
+    "scoring": "2 punkty za kartę przy tym drzewie",
+    "context": "Karty przy Choinkach"
+  },
+  "tree_sapling": {
+    "name": "Sadzonka",
+    "scoring": "0 punktów (liczy się jako drzewo)"
+  },
+  "common_hazel": {
+    "name": "Leszczyna pospolita",
+    "scoring": "0 punktów (krzew — tylko stały efekt)"
+  },
+  "elderberry": {
+    "name": "Bez czarny",
+    "scoring": "0 punktów (krzew — tylko stały efekt)"
+  },
+  "blackthorn": {
+    "name": "Tarnina",
+    "scoring": "0 punktów (krzew — tylko stały efekt)"
+  },
+  "bullfinch": {
+    "name": "Gil",
+    "scoring": "2 punkty za owada w twoim lesie"
+  },
+  "chaffinch": {
+    "name": "Zięba",
+    "scoring": "5 punktów, jeśli na Buku",
+    "context": "Ile Zięb siedzi na Buku?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Dzięcioł duży",
+    "scoring": "10 punktów, jeśli masz najwięcej drzew (lub remis)",
+    "scoringSolo": "10 punktów, jeśli masz co najmniej 10 drzew"
+  },
+  "goshawk": {
+    "name": "Jastrząb",
+    "scoring": "3 punkty za ptaka (wliczając siebie)"
+  },
+  "eurasian_jay": {
+    "name": "Sójka",
+    "scoring": "3 punkty za Sójkę"
+  },
+  "tawny_owl": {
+    "name": "Puszczyk",
+    "scoring": "5 punktów za Puszczyka"
+  },
+  "peacock_butterfly": {
+    "name": "Rusałka pawik",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Mieniak tęczowiec",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Dostojka malinowiec",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Rusałka żałobnik",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Rusałka wierzbowiec",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Wiewiórka",
+    "scoring": "5 punktów, jeśli na Dębie",
+    "context": "Ile Wiewiórek siedzi na Dębie?"
+  },
+  "golden_eagle": {
+    "name": "Orzeł przedni",
+    "scoring": "1 punkt za zwierzę z łapami + 1 za płaza"
+  },
+  "bearded_vulture": {
+    "name": "Orłosęp",
+    "scoring": "1 punkt za kartę w jaskini"
+  },
+  "common_raven": {
+    "name": "Kruk",
+    "scoring": "5 punktów za Kruka"
+  },
+  "phoebus_apollo": {
+    "name": "Niepylak apollo alpejski",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Płomykówka",
+    "scoring": "3 punkty za nietoperza"
+  },
+  "brimstone": {
+    "name": "Latolistek cytrynek",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Kardynał",
+    "scoring": "5 punktów za Kardynała"
+  },
+  "cuckoo": {
+    "name": "Kukułka",
+    "scoring": "7 punktów za Kukułkę"
+  },
+  "eurasian_magpie": {
+    "name": "Sroka",
+    "scoring": "3 punkty za Srokę"
+  },
+  "map_butterfly": {
+    "name": "Rusałka kratkowiec",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Jemioła",
+    "scoring": "1 punkt za roślinę"
+  },
+  "nightingale": {
+    "name": "Słowik",
+    "scoring": "5 punktów, jeśli na krzewie",
+    "context": "Ile Słowików siedzi na krzewie?"
+  },
+  "robin": {
+    "name": "Rudzik",
+    "scoring": "1 punkt za owada"
+  },
+  "whinchat": {
+    "name": "Pokląskwa",
+    "scoring": "1 punkt za roślinę"
+  },
+  "common_toad": {
+    "name": "Ropucha szara",
+    "scoring": "5 punktów za Ropuchę dzielącą drzewo z inną Ropuchą",
+    "context": "Ile Ropuch dzieli drzewo z inną?"
+  },
+  "fire_salamander": {
+    "name": "Salamandra plamista",
+    "scoring": "Kolekcja: 5/15/25 za 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Rzekotka drzewna",
+    "scoring": "5 punktów za komara za każdą Rzekotkę"
+  },
+  "stag_beetle": {
+    "name": "Jelonek rogacz",
+    "scoring": "1 punkt za zwierzę z łapami"
+  },
+  "wood_ant": {
+    "name": "Mrówka rudnica",
+    "scoring": "2 punkty za kartę w dolnych miejscach (liczone automatycznie)"
+  },
+  "penny_bun": {
+    "name": "Borowik szlachetny",
+    "scoring": "0 punktów (liczy się jako grzyb)"
+  },
+  "chanterelle": {
+    "name": "Pieprznik jadalny",
+    "scoring": "0 punktów (liczy się jako grzyb)"
+  },
+  "fly_agaric": {
+    "name": "Muchomor czerwony",
+    "scoring": "0 punktów (liczy się jako grzyb)"
+  },
+  "parasol_mushroom": {
+    "name": "Czubajka kania",
+    "scoring": "0 punktów (liczy się jako grzyb)"
+  },
+  "moss": {
+    "name": "Mech",
+    "scoring": "Po 10 punktów, jeśli masz 10+ drzew"
+  },
+  "wild_strawberries": {
+    "name": "Poziomki",
+    "scoring": "Po 10 punktów, jeśli masz 8+ gatunków drzew"
+  },
+  "hedgehog": {
+    "name": "Jeż",
+    "scoring": "2 punkty za motyla"
+  },
+  "pond_turtle": {
+    "name": "Żółw błotny",
+    "scoring": "5 punktów za Żółwia błotnego"
+  },
+  "blackberries": {
+    "name": "Jeżyny",
+    "scoring": "2 punkty za roślinę (wliczając siebie)"
+  },
+  "fireflies": {
+    "name": "Świetliki",
+    "scoring": "Kolekcja: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Kret",
+    "scoring": "0 punktów"
+  },
+  "tree_ferns": {
+    "name": "Paprocie drzewiaste",
+    "scoring": "6 punktów za płaza"
+  },
+  "alpine_newt": {
+    "name": "Traszka górska",
+    "scoring": "2 punkty za owada"
+  },
+  "blueberry": {
+    "name": "Borówka czarna",
+    "scoring": "2 punkty za każdy gatunek ptaka"
+  },
+  "gentian": {
+    "name": "Goryczka",
+    "scoring": "3 punkty za motyla"
+  },
+  "edelweiss": {
+    "name": "Szarotka alpejska",
+    "scoring": "3 punkty za Szarotkę"
+  },
+  "black_trumpet": {
+    "name": "Lejkowiec dęty",
+    "scoring": "0 punktów (liczy się jako grzyb)"
+  },
+  "digitalis": {
+    "name": "Naparstnica",
+    "scoring": "Różnorodność roślin: 0/1/3/6/10/15 za każdy gatunek rośliny"
+  },
+  "great_green_bush_cricket": {
+    "name": "Pasikonik zielony",
+    "scoring": "1 punkt za owada (wliczając siebie)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Siedmiopalecznik błotny",
+    "scoring": "15/7/3 pkt zależnie od liczby drzew (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Pokrzywa zwyczajna",
+    "scoring": "2 punkty za motyla"
+  },
+  "water_vole": {
+    "name": "Karczownik ziemnowodny",
+    "scoring": "0 punktów (liczy się jako płaz)"
+  },
+  "wild_tulip": {
+    "name": "Tulipan dziki",
+    "scoring": "3 punkty za Tulipana dzikiego"
+  },
+  "barbastelle": {
+    "name": "Mopek",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "bechsteins_bat": {
+    "name": "Nocek Bechsteina",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "brown_long_eared_bat": {
+    "name": "Gacek brunatny",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Podkowiec duży",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "savis_pipistrelle": {
+    "name": "Karlik Saviego",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "common_pipistrelle": {
+    "name": "Karlik malutki",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "roe_deer": {
+    "name": "Sarna",
+    "scoring": "3 punkty za kartę z tym samym symbolem drzewa (wliczając siebie)",
+    "context": "Karty z tym samym symbolem drzewa co twoja Sarna"
+  },
+  "red_deer": {
+    "name": "Jeleń szlachetny",
+    "scoring": "1 punkt za drzewo i za roślinę"
+  },
+  "chamois": {
+    "name": "Kozica",
+    "scoring": "3 punkty za kartę z tym samym symbolem drzewa (wliczając siebie)",
+    "context": "Karty z tym samym symbolem drzewa co twoja Kozica"
+  },
+  "steinbock": {
+    "name": "Koziorożec alpejski",
+    "scoring": "10 punktów za Koziorożca"
+  },
+  "lynx": {
+    "name": "Ryś",
+    "scoring": "10 punktów, jeśli masz co najmniej 1 Sarnę"
+  },
+  "wolf": {
+    "name": "Wilk",
+    "scoring": "5 punktów za jeleniowatego"
+  },
+  "wild_boar": {
+    "name": "Dzik",
+    "scoring": "Po 10 punktów, jeśli masz co najmniej 1 Warchlaka; inaczej 0"
+  },
+  "european_badger": {
+    "name": "Borsuk",
+    "scoring": "2 punkty za Borsuka"
+  },
+  "european_hare": {
+    "name": "Zając szarak",
+    "scoring": "Punkty równe łącznej liczbie Zajęcy za każdego Zająca"
+  },
+  "european_fat_dormouse": {
+    "name": "Popielica",
+    "scoring": "15 punktów, jeśli przy drzewie z nietoperzem (miejsce naprzeciwko)",
+    "context": "Ile jest przy drzewie z nietoperzem?"
+  },
+  "squeaker": {
+    "name": "Orzesznica",
+    "scoring": "1 punkt za Orzesznicę"
+  },
+  "brown_bear": {
+    "name": "Niedźwiedź brunatny",
+    "scoring": "0 punktów"
+  },
+  "fox": {
+    "name": "Lis",
+    "scoring": "2 punkty za Zająca w twoim lesie"
+  },
+  "violet_carpenter_bee": {
+    "name": "Zadrzechnia fioletowa",
+    "scoring": "Liczy się jako dodatkowe drzewo gatunku, przy którym jest umieszczona",
+    "context": "Przy którym drzewie?"
+  },
+  "beech_marten": {
+    "name": "Kuna domowa",
+    "scoring": "5 punktów za w pełni zajęte drzewo",
+    "context": "Ile w pełni zajętych drzew jest w twoim lesie?"
+  },
+  "fallow_deer": {
+    "name": "Daniel",
+    "scoring": "3 punkty za zwierzę parzystokopytne (wliczając siebie)"
+  },
+  "gnat": {
+    "name": "Komar",
+    "scoring": "1 punkt za nietoperza"
+  },
+  "large_tortoiseshell": {
+    "name": "Rusałka wierzbowiec",
+    "scoring": "Motyle: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Szop pracz",
+    "scoring": "0 punktów"
+  },
+  "alpine_marmot": {
+    "name": "Świstak",
+    "scoring": "3 punkty za każdy gatunek rośliny"
+  },
+  "mountain_hare": {
+    "name": "Zając bielak",
+    "scoring": "Punkty równe łącznej liczbie Zajęcy (liczy się jako Zając)"
+  },
+  "capercaillie": {
+    "name": "Głuszec",
+    "scoring": "1 punkt za roślinę"
+  },
+  "bee_swarm": {
+    "name": "Rój pszczół",
+    "scoring": "1 punkt za roślinę"
+  },
+  "crane_fly": {
+    "name": "Komarnica",
+    "scoring": "1 punkt za nietoperza"
+  },
+  "elk": {
+    "name": "Łoś",
+    "scoring": "2 pkt za sadzonkę i za kartę z symbolami drzew Łosia (wliczając siebie)",
+    "context": "Karty z symbolami drzew Łosia + sadzonki"
+  },
+  "european_bison": {
+    "name": "Żubr",
+    "scoring": "2 pkt za kartę z jednym z jego symboli drzew (wliczając siebie)",
+    "context": "Karty z pasującym symbolem drzewa na Żubra (wliczając siebie)"
+  },
+  "european_polecat": {
+    "name": "Tchórz zwyczajny",
+    "scoring": "10 punktów, jeśli sam na swoim drzewie",
+    "context": "Ile jest samotnie na swoim drzewie?"
+  },
+  "european_wildcat": {
+    "name": "Żbik",
+    "scoring": "1 punkt za kartę skraju lasu (wliczając siebie)"
+  },
+  "genet": {
+    "name": "Żeneta",
+    "scoring": "5 punktów za Żenetę"
+  },
+  "red_panda": {
+    "name": "Pandka ruda",
+    "scoring": "2 punkty za Pandkę rudą"
+  },
+  "sable": {
+    "name": "Soból",
+    "scoring": "3 punkty za zwierzę z łapami"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 punkt za drzewo"
+  },
+  "white_stork": {
+    "name": "Bocian biały",
+    "scoring": "1 punkt za owada + 1 za płaza"
+  },
+  "wild_boar_female": {
+    "name": "Locha",
+    "scoring": "Po 10 punktów, jeśli masz co najmniej 1 Warchlaka; inaczej 0"
+  },
+  "cave": {
+    "name": "Jaskinia",
+    "scoring": "1 punkt za kartę w jaskini"
+  },
+  "collectors_cave": {
+    "name": "Jaskinia kolekcjonera",
+    "scoring": "Każda zwykła karta w jaskini daje 2 punkty zamiast 1"
+  },
+  "bat_cave": {
+    "name": "Jaskinia nietoperzy",
+    "scoring": "Każdy nietoperz daje dodatkowo 3 punkty"
+  },
+  "lonely_cave": {
+    "name": "Samotna jaskinia",
+    "scoring": "5 punktów, jeśli brak zwykłych kart w jaskini; inaczej 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Warchlak",
+    "scoring": "1 punkt za Warchlaka"
+  },
+  "honey_bee": {
+    "name": "Pszczoła miodna",
+    "scoring": "1 punkt za roślinę"
+  },
+
+  "ash": {
+    "name": "Jesion",
+    "scoring": "1 punkt za kartę z tym samym symbolem drzewa + 1 za roślinę (rośliny liczone automatycznie)",
+    "context": "Karty z tym samym kolorowym symbolem drzewa"
+  },
+  "black_alder": {
+    "name": "Olsza czarna",
+    "scoring": "5 punktów za Olszę czarną"
+  },
+  "crab_apple": {
+    "name": "Jabłoń dzika",
+    "scoring": "8 punktów za w pełni zajętą Jabłoń",
+    "context": "Ile Jabłoni jest w pełni zajętych?"
+  },
+  "goat_willow": {
+    "name": "Wierzba iwa",
+    "scoring": "1 punkt za wrzosowisko w twoim lesie"
+  },
+  "moor_birch": {
+    "name": "Brzoza omszona",
+    "scoring": "1 punkt za Brzozę omszoną"
+  },
+  "sessile_oak": {
+    "name": "Dąb bezszypułkowy",
+    "scoring": "1 punkt za drzewo/krzew w twoim lesie"
+  },
+  "common_hazel_d": {
+    "name": "Leszczyna",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "elderberry_d": {
+    "name": "Bez czarny",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+
+  "blanket_bog": {
+    "name": "Torfowisko okrywowe",
+    "scoring": "Podwaja punkty roślin umieszczonych pod nim",
+    "context": "Które rośliny są pod tym Torfowiskiem?"
+  },
+  "fountainhead": {
+    "name": "Źródło",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "lowland_heath": {
+    "name": "Wrzosowisko nizinne",
+    "scoring": "2 punkty za płaza w twoim lesie"
+  },
+  "rhos_pasture": {
+    "name": "Pastwisko rhos",
+    "scoring": "2 punkty za zwierzę kopytne w twoim lesie"
+  },
+  "rivulet": {
+    "name": "Strumyk",
+    "scoring": "2 punkty za symbol drzewa w twoim lesie",
+    "context": "Ile symboli drzew jest w twoim lesie?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "valley_mire": {
+    "name": "Torfowisko dolinowe",
+    "scoring": "2 punkty za owada w twoim lesie"
+  },
+  "warrens": {
+    "name": "Nory",
+    "scoring": "2 punkty za zwierzę z łapami w twoim lesie"
+  },
+  "wet_woodland": {
+    "name": "Las bagienny",
+    "scoring": "2 punkty za wrzosowisko w twoim lesie (wliczając siebie)"
+  },
+  "universal_moor": {
+    "name": "Wrzosowisko uniwersalne",
+    "scoring": "0 punktów (liczy się jako wrzosowisko)"
+  },
+
+  "barn_owl_d": {
+    "name": "Płomykówka",
+    "scoring": "3 punkty za nietoperza w twoim lesie"
+  },
+  "beautiful_demoiselle": {
+    "name": "Świtezianka dziewica",
+    "scoring": "Ważki: 0/5/10/15/30 za 1-5 gatunków"
+  },
+  "black_tailed_godwit": {
+    "name": "Rycyk",
+    "scoring": "Po 10 punktów, jeśli masz najwięcej wrzosowisk (lub remis)"
+  },
+  "buzzard": {
+    "name": "Myszołów",
+    "scoring": "2 punkty za mysz w twoim lesie"
+  },
+  "common_moorhen": {
+    "name": "Kokoszka",
+    "scoring": "2 punkty za ważkę w twoim lesie"
+  },
+  "cuckoo_d": {
+    "name": "Kukułka",
+    "scoring": "7 punktów za Kukułkę"
+  },
+  "curlew": {
+    "name": "Kulik wielki",
+    "scoring": "Po 10 punktów przy 5+ owadach; inaczej po 3"
+  },
+  "emerald_damselfly": {
+    "name": "Pałątka pospolita",
+    "scoring": "Ważki: 0/5/10/15/30 za 1-5 gatunków"
+  },
+  "grey_heron": {
+    "name": "Czapla siwa",
+    "scoring": "8 punktów za Czaplę siwą"
+  },
+  "keeled_skimmer": {
+    "name": "Lecicha mała",
+    "scoring": "Ważki: 0/5/10/15/30 za 1-5 gatunków"
+  },
+  "meadow_pipit": {
+    "name": "Świergotek łąkowy",
+    "scoring": "1/3/6/10 pkt za 1/2/4/6+ gatunków ptaków"
+  },
+  "small_red_damselfly": {
+    "name": "Łunica mała",
+    "scoring": "Ważki: 0/5/10/15/30 za 1-5 gatunków"
+  },
+  "southern_damselfly": {
+    "name": "Łątka ozdobna",
+    "scoring": "Ważki: 0/5/10/15/30 za 1-5 gatunków"
+  },
+  "wheatear": {
+    "name": "Białorzytka",
+    "scoring": "Po 5 punktów, jeśli na wrzosowisku",
+    "context": "Ile Białorzytek jest na wrzosowisku?"
+  },
+
+  "adder": {
+    "name": "Żmija zygzakowata",
+    "scoring": "1 punkt za płaza + 1 za mysz w twoim lesie"
+  },
+  "adders_tongue": {
+    "name": "Nasięźrzał pospolity",
+    "scoring": "3 punkty za Nasięźrzał"
+  },
+  "beaver": {
+    "name": "Bóbr",
+    "scoring": "Punkty równe liczbie kart w twojej jaskini"
+  },
+  "blue_ground_beetle": {
+    "name": "Biegacz splatany",
+    "scoring": "1 punkt za kartę na dole (wliczając siebie)"
+  },
+  "blueberry_d": {
+    "name": "Borówka czarna",
+    "scoring": "2 punkty za każdy gatunek ptaka"
+  },
+  "bog_asphodel": {
+    "name": "Lilia torfowa",
+    "scoring": "1 punkt za wrzosowisko w twoim lesie"
+  },
+  "common_lizard": {
+    "name": "Jaszczurka żyworodna",
+    "scoring": "Po 15 punktów przy 3+ gatunkach płazów; inaczej po 5"
+  },
+  "grass_snake": {
+    "name": "Zaskroniec",
+    "scoring": "5 punktów za Zaskrońca"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Podkolan zielonawy",
+    "scoring": "Po 15 punktów przy 5+ gatunkach roślin; inaczej po 3"
+  },
+  "heather": {
+    "name": "Wrzos",
+    "scoring": "1 punkt za owada w twoim lesie"
+  },
+  "meadowsweet": {
+    "name": "Wiązówka błotna",
+    "scoring": "Po 5 punktów, jeśli na wrzosowisku",
+    "context": "Ile Wiązówek jest na wrzosowisku?"
+  },
+  "moor_frog": {
+    "name": "Żaba moczarowa",
+    "scoring": "Po 8 punktów przy 5+ wrzosowiskach; inaczej 0"
+  },
+  "otter": {
+    "name": "Wydra",
+    "scoring": "3 punkty za płaza w twoim lesie"
+  },
+  "royal_fern": {
+    "name": "Długosz królewski",
+    "scoring": "2 punkty za każdy gatunek rośliny"
+  },
+  "warty_newt": {
+    "name": "Traszka grzebieniasta",
+    "scoring": "Kolekcja: 5/15/25 za 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Osoka aloesowata",
+    "scoring": "2 punkty za ważkę w twoim lesie"
+  },
+
+  "alcathoe_bat": {
+    "name": "Nocek Alkatoe",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "brandts_bat": {
+    "name": "Nocek Brandta",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "common_noctule": {
+    "name": "Borowiec wielki",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "daubentons_bat": {
+    "name": "Nocek rudy",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "serotine_bat": {
+    "name": "Mroczek późny",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "capercaillie_d": {
+    "name": "Głuszec",
+    "scoring": "1 punkt za roślinę w twoim lesie"
+  },
+  "common_pheasant": {
+    "name": "Bażant",
+    "scoring": "1 punkt za drzewo i krzew w twoim lesie"
+  },
+  "dartmoor_badger": {
+    "name": "Borsuk z Dartmoor",
+    "scoring": "2 punkty za zwierzę z łapami (wliczając siebie)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Czarny królik z Dartmoor",
+    "scoring": "Każdy królik daje punkty równe łącznej liczbie królików"
+  },
+  "dartmoor_pony": {
+    "name": "Kuc Dartmoor",
+    "scoring": "Po 15 punktów przy największej liczbie wrzosowisk (lub remis); inaczej po 5"
+  },
+  "dartmoor_sheep": {
+    "name": "Owca z Dartmoor",
+    "scoring": "2 punkty za zwierzę kopytne (wliczając siebie)"
+  },
+  "field_vole": {
+    "name": "Nornik bury",
+    "scoring": "1 punkt za mysz w twoim lesie (wliczając siebie)"
+  },
+  "gnat_d": {
+    "name": "Komar",
+    "scoring": "1 punkt za nietoperza w twoim lesie"
+  },
+  "lake_fly": {
+    "name": "Ochotka",
+    "scoring": "1 punkt za nietoperza w twoim lesie"
+  },
+  "nuthatch": {
+    "name": "Kowalik",
+    "scoring": "Po 10 punktów, jeśli przy w pełni zajętym drzewie",
+    "context": "Ile Kowalików jest przy w pełni zajętych drzewach?"
+  },
+  "roe_deer_d": {
+    "name": "Sarna",
+    "scoring": "3 punkty za kartę z tym samym symbolem drzewa (wliczając siebie)",
+    "context": "Karty z tym samym symbolem drzewa co twoja Sarna"
+  },
+  "shrew": {
+    "name": "Ryjówka",
+    "scoring": "1 punkt za Ryjówkę"
+  },
+  "treecreeper": {
+    "name": "Pełzacz leśny",
+    "scoring": "5 punktów za Pełzacza"
+  },
+  "wood_mouse": {
+    "name": "Mysz zaroślowa",
+    "scoring": "1 punkt za mysz w twoim lesie (wliczając siebie)"
+  },
+
+  "cave_d": {
+    "name": "Jaskinia",
+    "scoring": "1 punkt za kartę w jaskini"
+  },
+  "lonely_cave_d": {
+    "name": "Jaskinia 4",
+    "scoring": "5 punktów"
+  },
+
+  "holly": {
+    "name": "Ostrokrzew kolczasty",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "gorse": {
+    "name": "Kolcolist zachodni",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "coastal_heath": {
+    "name": "Wrzosowisko nadmorskie",
+    "scoring": "Podwaja punkty ptaków umieszczonych pod nim",
+    "context": "Które ptaki są pod tym Wrzosowiskiem?"
+  },
+  "stone_circle": {
+    "name": "Kamienny krąg",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "waxcap_grassland": {
+    "name": "Łąka wilgotnicowa",
+    "scoring": "0 punktów (tylko stały efekt)"
+  },
+  "dartford_warbler": {
+    "name": "Pokrzewka kasztanowata",
+    "scoring": "1 punkt"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Szklarnik leśny",
+    "scoring": "Ważki: 0/5/10/15/30/50 za 1-6 gatunków"
+  },
+  "grey_wagtail": {
+    "name": "Pliszka górska",
+    "scoring": "1 punkt za kartę Exmoor w twoim lesie"
+  },
+  "harvest_mouse": {
+    "name": "Badylarka",
+    "scoring": "1 punkt za ptaka"
+  },
+  "peregrine_falcon": {
+    "name": "Sokół wędrowny",
+    "scoring": "1 punkt za mysz"
+  },
+  "pied_flycatcher": {
+    "name": "Muchołówka żałobna",
+    "scoring": "4 punkty"
+  },
+  "bank_vole": {
+    "name": "Nornica ruda",
+    "scoring": "3 punkty"
+  },
+  "natterjack_toad": {
+    "name": "Ropucha paskówka",
+    "scoring": "1 punkt"
+  },
+  "smooth_snake": {
+    "name": "Gniewosz plamisty",
+    "scoring": "1 punkt za symbol drzewa w twoim lesie",
+    "context": "Ile symboli drzew jest w twoim lesie?"
+  },
+  "sundew": {
+    "name": "Rosiczka",
+    "scoring": "1 punkt za owada"
+  },
+  "tormentil": {
+    "name": "Pięciornik kurze ziele",
+    "scoring": "5 punktów"
+  },
+  "wood_rush": {
+    "name": "Kosmatka olbrzymia",
+    "scoring": "3 punkty"
+  },
+  "bilberry_bumblebee": {
+    "name": "Trzmiel górski",
+    "scoring": "2 punkty za krzew"
+  },
+  "dormouse": {
+    "name": "Popielica",
+    "scoring": "Po 15 punktów, jeśli nietoperz jest na tym samym drzewie",
+    "context": "Ile dzieli drzewo z nietoperzem?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Źrebak",
+    "scoring": "1 punkt"
+  },
+  "horse": {
+    "name": "Koń",
+    "scoring": "10 punktów za kucyka (Kuc Dartmoor, Koń, Źrebak)"
+  },
+  "red_devon_cow": {
+    "name": "Krowa Red Devon",
+    "scoring": "1 punkt za roślinę"
+  },
+  "whiskered_bat": {
+    "name": "Nocek wąsatek",
+    "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
+  },
+  "cave_exmoor": {
+    "name": "Jaskinia (Exmoor)",
+    "scoring": "1 punkt za kartę w jaskini"
+  }
+}
