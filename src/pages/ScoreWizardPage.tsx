@@ -526,6 +526,7 @@ export function ScoreWizardPage() {
                       : undefined
                   : undefined
               }
+              solo={players.length === 1}
             />
           ))}
         </div>

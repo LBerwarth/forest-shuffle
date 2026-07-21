@@ -36,7 +36,7 @@
   },
   "newGame": {
     "title": "Nueva Partida",
-    "selectPlayers": "Seleccionar jugadores (2-5)",
+    "selectPlayers": "Seleccionar jugadores (1-5)",
     "playerName": "Nombre del jugador",
     "add": "Añadir",
     "addNewPlayer": "Añadir nuevo jugador",
@@ -48,7 +48,9 @@
     "localModeDesc": "Puntuar a todos los jugadores desde este dispositivo",
     "liveMode": "Sesión en vivo",
     "liveModeDesc": "Cada jugador puntúa en su propio dispositivo",
-    "startScoring": "Empezar puntuación ({{count}} jugadores)"
+    "startScoring": "Empezar puntuación ({{count}} jugadores)",
+    "startScoring_one": "Empezar puntuación en solitario",
+    "soloHint": "Partida en solitario — el Tilo y el Pico picapinos usan las reglas solo (mín. 3 Tilos / mín. 10 árboles)."
   },
   "wizard": {
     "scoreEntry": "Entrada de puntos",
@@ -98,7 +100,8 @@
     "gameCount": "{{count}} partidas",
     "noGames": "Aún no hay partidas registradas.",
     "noGamesHint": "¡Juega tu primera partida para verla aquí!",
-    "deleteConfirm": "¿Eliminar esta partida?"
+    "deleteConfirm": "¿Eliminar esta partida?",
+    "soloBadge": "Solo"
   },
   "gameDetail": {
     "title": "Detalles de la partida",
@@ -159,6 +162,7 @@
     "editionDartmoor": "Dartmoor",
     "playerCount": "Nº jugadores",
     "playerCountAll": "Todos",
+    "playerCountSolo": "Solo",
     "time": "Periodo",
     "timeAll": "Todo",
     "timeYear": "Último año",

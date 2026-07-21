@@ -21,7 +21,8 @@
   },
   "linden": {
     "name": "Linden",
-    "scoring": "1pt each; 3pts each if you have the most Lindens (or tied)"
+    "scoring": "1pt each; 3pts each if you have the most Lindens (or tied)",
+    "scoringSolo": "1pt each; 3pts each if you have at least 3 Lindens"
   },
   "sycamore": {
     "name": "Sycamore",
@@ -81,7 +82,8 @@
   },
   "great_spotted_woodpecker": {
     "name": "Great Spotted Woodpecker",
-    "scoring": "10 points if you have the most trees (or tied)"
+    "scoring": "10 points if you have the most trees (or tied)",
+    "scoringSolo": "10 points if you have at least 10 trees"
   },
   "goshawk": {
     "name": "Goshawk",

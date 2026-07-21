@@ -21,7 +21,8 @@
   },
   "linden": {
     "name": "Tilleul",
-    "scoring": "1pt chacun ; 3pts chacun si vous avez le plus de Tilleuls (ou égalité)"
+    "scoring": "1pt chacun ; 3pts chacun si vous avez le plus de Tilleuls (ou égalité)",
+    "scoringSolo": "1pt chacun ; 3pts chacun si vous avez au moins 3 Tilleuls"
   },
   "sycamore": {
     "name": "Érable",
@@ -81,7 +82,8 @@
   },
   "great_spotted_woodpecker": {
     "name": "Pic épeiche",
-    "scoring": "10 points si vous avez le plus d'arbres (ou égalité)"
+    "scoring": "10 points si vous avez le plus d'arbres (ou égalité)",
+    "scoringSolo": "10 points si vous avez au moins 10 arbres"
   },
   "goshawk": {
     "name": "Autour des palombes",

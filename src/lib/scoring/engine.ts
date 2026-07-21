@@ -357,10 +357,15 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 // COMPARISON CARDS (cross-player)
 // ============================================================
 
+// Solo rules replace the cross-player comparison with fixed thresholds
 export function scoreLinden(
   playerLindenCount: number,
   allPlayerLindenCounts: number[],
+  solo = false,
 ): number {
+  if (solo) {
+    return playerLindenCount * (playerLindenCount >= 3 ? 3 : 1)
+  }
   const maxLindens = Math.max(...allPlayerLindenCounts)
   if (playerLindenCount >= maxLindens && playerLindenCount > 0) {
     return playerLindenCount * 3
@@ -372,7 +377,11 @@ export function scoreWoodpecker(
   woodpeckerCount: number,
   playerTreeCount: number,
   allPlayerTreeCounts: number[],
+  solo = false,
 ): number {
+  if (solo) {
+    return playerTreeCount >= 10 ? woodpeckerCount * 10 : 0
+  }
   const maxTrees = Math.max(...allPlayerTreeCounts)
   if (playerTreeCount === maxTrees && playerTreeCount > 0) {
     return woodpeckerCount * 10
@@ -481,6 +490,7 @@ export function computeScoreBreakdown(
   activeCards: string[],
   allPlayerLindenCounts?: number[],
   allPlayerTreeCounts?: number[],
+  solo = false,
 ): ScoreBreakdown {
   const context = buildForestContext(cardCounts, cardMetadata, fullyOccupiedTrees)
 
@@ -522,7 +532,7 @@ export function computeScoreBreakdown(
     const lindenCount = cardCounts['linden'] || 0
     const effectiveLindenCount = context.cardCounts['linden'] || 0
     if (effectiveLindenCount > 0) {
-      const lindenPoints = scoreLinden(effectiveLindenCount, allPlayerLindenCounts)
+      const lindenPoints = scoreLinden(effectiveLindenCount, allPlayerLindenCounts, solo)
       entries.push({ cardKey: 'linden', cardCategory: 'tree', count: lindenCount, points: lindenPoints })
       categoryTotals.tree += lindenPoints
     }
@@ -531,7 +541,7 @@ export function computeScoreBreakdown(
   if (allPlayerTreeCounts && allPlayerTreeCounts.length > 0) {
     const wpCount = cardCounts['great_spotted_woodpecker'] || 0
     if (wpCount > 0) {
-      const wpPoints = scoreWoodpecker(wpCount, context.totalTrees, allPlayerTreeCounts)
+      const wpPoints = scoreWoodpecker(wpCount, context.totalTrees, allPlayerTreeCounts, solo)
       entries.push({ cardKey: 'great_spotted_woodpecker', cardCategory: 'top', count: wpCount, points: wpPoints })
       categoryTotals.top += wpPoints
     }

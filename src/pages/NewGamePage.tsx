@@ -91,7 +91,7 @@ export function NewGamePage() {
   }
 
   function handleStart() {
-    if (selectedPlayerIds.length < 2) return
+    if (selectedPlayerIds.length < 1) return
     const players = selectedPlayerIds
       .map((id) => storedPlayers.find((p) => p.id === id))
       .filter(Boolean)
@@ -537,11 +537,14 @@ export function NewGamePage() {
       )}
 
       {/* Local mode start button */}
+      {selectedPlayerIds.length === 1 && (
+        <p className="mb-3 text-center text-xs text-forest-500">{t('newGame.soloHint')}</p>
+      )}
       <Button
         size="lg"
         className="w-full"
         onClick={handleStart}
-        disabled={selectedPlayerIds.length < 2}
+        disabled={selectedPlayerIds.length < 1}
       >
         {t('newGame.startScoring', { count: selectedPlayerIds.length })}
       </Button>

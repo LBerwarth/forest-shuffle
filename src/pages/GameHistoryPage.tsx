@@ -54,6 +54,11 @@ export function GameHistoryPage() {
                             <Users className="h-3 w-3" />
                             {game.player_count}
                           </span>
+                          {game.player_count === 1 && (
+                            <span className="rounded-full bg-forest-100 px-1.5 py-0.5 text-[10px] font-medium text-forest-600">
+                              {t('history.soloBadge')}
+                            </span>
+                          )}
                           {game.edition === 'dartmoor' && (
                             <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
                               Dartmoor

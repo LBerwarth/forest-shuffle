@@ -57,5 +57,6 @@ export function recalcPlayer(
     activeCardKeys,
     allLindenCounts,
     allTreeCounts,
+    allPlayers.length === 1,
   )
 }

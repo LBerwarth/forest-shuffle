@@ -36,7 +36,7 @@
   },
   "newGame": {
     "title": "Nouvelle Partie",
-    "selectPlayers": "S\u00e9lectionnez les joueurs (2-5)",
+    "selectPlayers": "S\u00e9lectionnez les joueurs (1-5)",
     "playerName": "Nom du joueur",
     "add": "Ajouter",
     "addNewPlayer": "Ajouter un joueur",
@@ -48,7 +48,9 @@
     "localModeDesc": "Compter les points de tous les joueurs depuis cet appareil",
     "liveMode": "Session live",
     "liveModeDesc": "Chaque joueur compte ses points sur son propre appareil",
-    "startScoring": "Commencer ({{count}} joueurs)"
+    "startScoring": "Commencer ({{count}} joueurs)",
+    "startScoring_one": "Commencer en solo",
+    "soloHint": "Partie solo — le Tilleul et le Pic épeiche utilisent les règles solo (3 Tilleuls min. / 10 arbres min.)."
   },
   "wizard": {
     "scoreEntry": "Saisie des scores",
@@ -98,7 +100,8 @@
     "gameCount": "{{count}} parties",
     "noGames": "Aucune partie enregistr\u00e9e.",
     "noGamesHint": "Jouez votre premi\u00e8re partie pour la voir ici\u00a0!",
-    "deleteConfirm": "Supprimer cette partie\u00a0?"
+    "deleteConfirm": "Supprimer cette partie\u00a0?",
+    "soloBadge": "Solo"
   },
   "gameDetail": {
     "title": "D\u00e9tails de la partie",
@@ -159,6 +162,7 @@
     "editionDartmoor": "Dartmoor",
     "playerCount": "Nb joueurs",
     "playerCountAll": "Tous",
+    "playerCountSolo": "Solo",
     "time": "P\u00e9riode",
     "timeAll": "Tout",
     "timeYear": "12 derniers mois",

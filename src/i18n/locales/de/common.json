@@ -36,7 +36,7 @@
   },
   "newGame": {
     "title": "Neues Spiel",
-    "selectPlayers": "Spieler auswählen (2-5)",
+    "selectPlayers": "Spieler auswählen (1-5)",
     "playerName": "Spielername",
     "add": "Hinzufügen",
     "addNewPlayer": "Neuen Spieler hinzufügen",
@@ -48,7 +48,9 @@
     "localModeDesc": "Alle Spieler von diesem Gerät aus werten",
     "liveMode": "Live-Session",
     "liveModeDesc": "Jeder Spieler wertet auf seinem eigenen Gerät",
-    "startScoring": "Wertung starten ({{count}} Spieler)"
+    "startScoring": "Wertung starten ({{count}} Spieler)",
+    "startScoring_one": "Solo-Wertung starten",
+    "soloHint": "Solospiel — Linde und Buntspecht nutzen die Solo-Wertung (mind. 3 Linden / mind. 10 Bäume)."
   },
   "wizard": {
     "scoreEntry": "Punkteingabe",
@@ -98,7 +100,8 @@
     "gameCount": "{{count}} Spiele",
     "noGames": "Noch keine Spiele aufgezeichnet.",
     "noGamesHint": "Spiele dein erstes Spiel, um es hier zu sehen!",
-    "deleteConfirm": "Dieses Spiel löschen?"
+    "deleteConfirm": "Dieses Spiel löschen?",
+    "soloBadge": "Solo"
   },
   "gameDetail": {
     "title": "Spieldetails",
@@ -159,6 +162,7 @@
     "editionDartmoor": "Dartmoor",
     "playerCount": "Spielerzahl",
     "playerCountAll": "Alle",
+    "playerCountSolo": "Solo",
     "time": "Zeitraum",
     "timeAll": "Alle Zeit",
     "timeYear": "Letztes Jahr",

@@ -27,6 +27,8 @@ interface CardCounterProps {
    *  card's individual contribution. The same value is shown on every card
    *  in the set. */
   setBonus?: number
+  /** Solo game: comparison cards show their solo threshold rule instead */
+  solo?: boolean
 }
 
 function TappableNumber({
@@ -116,6 +118,7 @@ export function CardCounter({
   onHostsChange,
   multiplierStats,
   setBonus,
+  solo,
 }: CardCounterProps) {
   const { t } = useTranslation()
   const tc = useTranslation('cards').t
@@ -168,7 +171,11 @@ export function CardCounter({
             )}
           </div>
           <div className="flex items-center gap-1.5 mt-0.5 flex-wrap">
-            <p className="text-xs text-forest-500">{tc(`${card.key}.scoring`)}</p>
+            <p className="text-xs text-forest-500">
+              {solo
+                ? tc(`${card.key}.scoringSolo`, { defaultValue: tc(`${card.key}.scoring`) })
+                : tc(`${card.key}.scoring`)}
+            </p>
             {multiplierStats && multiplierStats.length > 0 && (
               <div className="flex items-center gap-1 flex-wrap">
                 {multiplierStats.map((stat) => (
@@ -379,7 +386,7 @@ export function CardCounter({
         </div>
       )}
 
-      {card.scoringType === 'comparison' && count > 0 && (
+      {card.scoringType === 'comparison' && count > 0 && !solo && (
         <div className="flex items-center gap-2 rounded-lg bg-blue-50 px-3 py-2 ml-2 border-l-2 border-blue-300">
           <span className="text-xs text-blue-600">{t('wizard.comparisonNotice')}</span>
         </div>

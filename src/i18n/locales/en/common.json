@@ -36,7 +36,7 @@
   },
   "newGame": {
     "title": "New Game",
-    "selectPlayers": "Select players (2-5)",
+    "selectPlayers": "Select players (1-5)",
     "playerName": "Player name",
     "add": "Add",
     "addNewPlayer": "Add New Player",
@@ -48,7 +48,9 @@
     "localModeDesc": "Score all players from this device",
     "liveMode": "Live Session",
     "liveModeDesc": "Each player scores on their own device",
-    "startScoring": "Start Scoring ({{count}} players)"
+    "startScoring": "Start Scoring ({{count}} players)",
+    "startScoring_one": "Start Solo Scoring",
+    "soloHint": "Solo game — Linden and Woodpecker use solo scoring (3+ Lindens / 10+ trees)."
   },
   "wizard": {
     "scoreEntry": "Score Entry",
@@ -98,7 +100,8 @@
     "gameCount": "{{count}} games",
     "noGames": "No games recorded yet.",
     "noGamesHint": "Play your first game to see it here!",
-    "deleteConfirm": "Delete this game?"
+    "deleteConfirm": "Delete this game?",
+    "soloBadge": "Solo"
   },
   "gameDetail": {
     "title": "Game Details",
@@ -159,6 +162,7 @@
     "editionDartmoor": "Dartmoor",
     "playerCount": "# players",
     "playerCountAll": "All",
+    "playerCountSolo": "Solo",
     "time": "Time",
     "timeAll": "All time",
     "timeYear": "Past year",

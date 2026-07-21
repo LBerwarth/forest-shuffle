@@ -21,7 +21,8 @@
   },
   "linden": {
     "name": "Linde",
-    "scoring": "1 Pkt. je; 3 Pkt. je, wenn du die meisten Linden hast (oder Gleichstand)"
+    "scoring": "1 Pkt. je; 3 Pkt. je, wenn du die meisten Linden hast (oder Gleichstand)",
+    "scoringSolo": "1 Pkt. je; 3 Pkt. je, wenn du mind. 3 Linden hast"
   },
   "sycamore": {
     "name": "Bergahorn",
@@ -81,7 +82,8 @@
   },
   "great_spotted_woodpecker": {
     "name": "Buntspecht",
-    "scoring": "10 Punkte wenn du die meisten Bäume hast (oder Gleichstand)"
+    "scoring": "10 Punkte wenn du die meisten Bäume hast (oder Gleichstand)",
+    "scoringSolo": "10 Punkte wenn du mind. 10 Bäume hast"
   },
   "goshawk": {
     "name": "Habicht",

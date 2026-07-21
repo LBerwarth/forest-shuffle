@@ -21,7 +21,8 @@
   },
   "linden": {
     "name": "Tilo",
-    "scoring": "1 pto cada uno; 3 pts cada uno si tienes más Tilos (o empate)"
+    "scoring": "1 pto cada uno; 3 pts cada uno si tienes más Tilos (o empate)",
+    "scoringSolo": "1 pto cada uno; 3 pts cada uno si tienes al menos 3 Tilos"
   },
   "sycamore": {
     "name": "Arce",
@@ -81,7 +82,8 @@
   },
   "great_spotted_woodpecker": {
     "name": "Pico picapinos",
-    "scoring": "10 puntos si tienes más árboles (o empate)"
+    "scoring": "10 puntos si tienes más árboles (o empate)",
+    "scoringSolo": "10 puntos si tienes al menos 10 árboles"
   },
   "goshawk": {
     "name": "Azor",

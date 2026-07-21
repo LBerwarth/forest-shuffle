@@ -25,7 +25,7 @@ export const STRATEGY_TAGS: readonly CardTag[] = [
 export type EditionFilter = 'all' | 'classic' | 'dartmoor'
 export type TimeFilter = 'all' | 'year' | 'month' | 'week'
 export type PlayerMatchMode = 'union' | 'intersection'
-export type PlayerCountFilter = 'all' | 2 | 3 | 4 | 5 | 6
+export type PlayerCountFilter = 'all' | 1 | 2 | 3 | 4 | 5 | 6
 
 export function applyFilters(
   games: GameWithPlayers[],
