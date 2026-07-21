@@ -18,6 +18,9 @@
   "home": {
     "title": "Forest Shuffle",
     "subtitle": "Score Tracker",
+    "newAppTitle": "Welcome — this app is brand new!",
+    "newAppBody": "Translations aren't official yet, so some card names may be off. Spotted a wrong term, a scoring bug, or have any other feedback? I'd love to hear it.",
+    "newAppFeedback": "Give feedback",
     "scoreNewGame": "Score a New Game",
     "newGame": "New Game",
     "scoreGame": "Score a game",

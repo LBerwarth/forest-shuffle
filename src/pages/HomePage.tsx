@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi } from 'lucide-react'
+import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi, Sparkles, MessageSquare, X } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { AcornIcon } from '@/components/ui/AcornIcon'
@@ -10,11 +11,19 @@ import { NoAppNotice } from '@/components/NoAppNotice'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 
+const NEW_NOTICE_KEY = 'forest-shuffle-hide-new-notice'
+
 export function HomePage() {
   const { t, i18n } = useTranslation()
   const { data: games = [] } = useGames()
   const { data: players = [] } = usePlayers()
   const recentGame = games[0]
+
+  const [showNewNotice, setShowNewNotice] = useState(() => localStorage.getItem(NEW_NOTICE_KEY) !== '1')
+  function dismissNewNotice() {
+    localStorage.setItem(NEW_NOTICE_KEY, '1')
+    setShowNewNotice(false)
+  }
 
   const quickActions = [
     { to: '/new-game', icon: Calculator, label: t('home.newGame'), description: t('home.scoreGame'), color: 'bg-forest-500' },
@@ -73,6 +82,38 @@ export function HomePage() {
           {t('live.joinSession')}
         </Button>
       </Link>
+
+      {showNewNotice && (
+        <Card className="mb-3 ring-forest-200">
+          <CardContent className="py-3">
+            <div className="flex items-start gap-3">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-forest-500 text-white">
+                <Sparkles className="h-5 w-5" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-start justify-between gap-2">
+                  <p className="text-sm font-semibold text-forest-700">{t('home.newAppTitle')}</p>
+                  <button
+                    type="button"
+                    onClick={dismissNewNotice}
+                    aria-label={t('install.dismiss')}
+                    className="shrink-0 text-forest-300 hover:text-forest-500 transition-colors"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                </div>
+                <p className="mt-0.5 text-xs text-forest-500">{t('home.newAppBody')}</p>
+                <Link to="/settings?feedback=1">
+                  <Button size="sm" variant="secondary" className="mt-2">
+                    <MessageSquare className="h-3.5 w-3.5" />
+                    {t('home.newAppFeedback')}
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <NoAppNotice className="mb-6" />
 

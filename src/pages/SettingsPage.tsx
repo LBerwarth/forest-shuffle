@@ -1,4 +1,5 @@
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Mountain, Globe, Download, Trash2, MessageSquare } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
@@ -21,6 +22,15 @@ export function SettingsPage() {
   const scoringSessionActive = useScoringStore((s) => s.sessionActive)
   const { data: games = [] } = useGames()
   const { data: players = [] } = usePlayers()
+  const [searchParams] = useSearchParams()
+  const feedbackRef = useRef<HTMLDivElement>(null)
+
+  // Deep link from the home-page notice (/settings?feedback=1) scrolls to the form.
+  useEffect(() => {
+    if (searchParams.get('feedback') !== null) {
+      feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [searchParams])
 
   function handleExport() {
     const data = { players, games, exportedAt: new Date().toISOString() }
@@ -278,7 +288,7 @@ export function SettingsPage() {
       </Card>
 
       {/* Feedback */}
-      <Card className="relative z-20 mb-4">
+      <Card ref={feedbackRef} className="relative z-20 mb-4 scroll-mt-4">
         <CardHeader>
           <div className="flex items-center gap-2">
             <MessageSquare className="h-4 w-4 text-forest-500" />

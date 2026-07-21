@@ -17,7 +17,10 @@
   },
   "home": {
     "title": "Forest Shuffle",
-    "subtitle": "Doprovodná aplikace",
+    "subtitle": "Počítadlo bodů",
+    "newAppTitle": "Vítej — tahle aplikace je úplně nová!",
+    "newAppBody": "Překlady zatím nejsou oficiální, takže některé názvy karet mohou být špatně. Našel jsi špatný výraz, chybu v bodování nebo máš jinou zpětnou vazbu? Rád si ji poslechnu.",
+    "newAppFeedback": "Poslat zpětnou vazbu",
     "scoreNewGame": "Bodovat novou hru",
     "newGame": "Nová hra",
     "scoreGame": "Bodovat hru",

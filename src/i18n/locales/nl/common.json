@@ -17,7 +17,10 @@
   },
   "home": {
     "title": "Forest Shuffle",
-    "subtitle": "Companion-app",
+    "subtitle": "Puntenteller",
+    "newAppTitle": "Welkom — deze app is gloednieuw!",
+    "newAppBody": "De vertalingen zijn nog niet officieel, dus sommige kaartnamen kloppen misschien niet. Zie je een verkeerde term, een scorefout of heb je andere feedback? Ik hoor het graag.",
+    "newAppFeedback": "Feedback geven",
     "scoreNewGame": "Nieuwe partij scoren",
     "newGame": "Nieuwe partij",
     "scoreGame": "Punten tellen",

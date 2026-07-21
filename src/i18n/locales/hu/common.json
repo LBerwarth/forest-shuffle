@@ -17,7 +17,10 @@
   },
   "home": {
     "title": "Forest Shuffle",
-    "subtitle": "Kísérő app",
+    "subtitle": "Pontszámláló",
+    "newAppTitle": "Üdv — ez az app vadonatúj!",
+    "newAppBody": "A fordítások még nem hivatalosak, ezért néhány kártyanév hibás lehet. Rossz kifejezést, pontozási hibát vettél észre, vagy van más visszajelzésed? Szívesen meghallgatom.",
+    "newAppFeedback": "Visszajelzés küldése",
     "scoreNewGame": "Új játék pontozása",
     "newGame": "Új játék",
     "scoreGame": "Játék pontozása",

@@ -17,7 +17,10 @@
   },
   "home": {
     "title": "Forest Shuffle",
-    "subtitle": "App Compañera",
+    "subtitle": "Contador de puntos",
+    "newAppTitle": "¡Bienvenido — esta app es totalmente nueva!",
+    "newAppBody": "Las traducciones aún no son oficiales, así que algunos nombres de cartas pueden estar mal. ¿Has visto un término incorrecto, un fallo en la puntuación o tienes cualquier otro comentario? Me encantaría saberlo.",
+    "newAppFeedback": "Enviar comentarios",
     "scoreNewGame": "Puntuar nueva partida",
     "newGame": "Nueva Partida",
     "scoreGame": "Puntuar una partida",
