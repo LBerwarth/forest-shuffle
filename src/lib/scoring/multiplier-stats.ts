@@ -127,7 +127,7 @@ const classicStats: Record<string, StatDef> = {
 // Dartmoor edition multiplier stats
 const dartmoorStats: Record<string, StatDef> = {
   // Trees
-  sessile_oak: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  sessile_oak: (ctx) => [{ iconKey: 'tree', value: ctx.slotCounts.tree }],
   goat_willow: (ctx) => [{ iconKey: 'moor', value: ctx.totalMoors }],
   ash: (ctx) => [{ iconKey: 'plant', value: ctx.tagCounts.plant }],
 
@@ -164,7 +164,7 @@ const dartmoorStats: Record<string, StatDef> = {
 
   // Lateral
   capercaillie_d: (ctx) => [{ iconKey: 'plant', value: ctx.tagCounts.plant }],
-  common_pheasant: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  common_pheasant: (ctx) => [{ iconKey: 'tree', value: ctx.slotCounts.tree }],
   dartmoor_badger: (ctx) => [{ iconKey: 'pawed', value: ctx.tagCounts.pawed }],
   dartmoor_sheep: (ctx) => [{ iconKey: 'cloven_hoofed', value: ctx.tagCounts.hoofed }],
   field_vole: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],

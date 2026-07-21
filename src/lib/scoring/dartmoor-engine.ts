@@ -157,7 +157,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   crab_apple: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 8,
   goat_willow: (count, ctx) => count * ctx.totalMoors,
   moor_birch: (count) => count * 1,
-  sessile_oak: (count, ctx) => count * ctx.totalTrees,
+  // Scores trees AND shrubs — slotCounts.tree includes both
+  sessile_oak: (count, ctx) => count * ctx.slotCounts.tree,
 
   // Shrubs — 0 points
   common_hazel_d: () => 0,
@@ -252,7 +253,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   serotine_bat: (count, ctx) => dartmoorBatCardPoints(count, ctx),
 
   capercaillie_d: (count, ctx) => count * countTag(ctx, 'plant'),
-  common_pheasant: (count, ctx) => count * ctx.totalTrees,
+  // Scores trees AND shrubs — slotCounts.tree includes both
+  common_pheasant: (count, ctx) => count * ctx.slotCounts.tree,
   dartmoor_badger: (count, ctx) => count * (2 * countTag(ctx, 'pawed')),
   dartmoor_black_rabbit: (count) => count * count, // square scoring
   dartmoor_pony: () => 0, // comparison card — handled separately
