@@ -342,7 +342,7 @@
   },
   "wild_boar": {
     "name": "Wild Boar",
-    "scoring": "10 points each if at least 1 Wild Boar Piglet; otherwise 0"
+    "scoring": "10 points each if at least 1 Squeaker; otherwise 0"
   },
   "european_badger": {
     "name": "European Badger",
@@ -358,8 +358,8 @@
     "context": "How many are at a tree with a bat?"
   },
   "squeaker": {
-    "name": "Squeaker",
-    "scoring": "1 point per Squeaker"
+    "name": "Hazel Dormouse",
+    "scoring": "1 point per Hazel Dormouse"
   },
   "brown_bear": {
     "name": "Brown Bear",
@@ -371,7 +371,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Violet Carpenter Bee",
-    "scoring": "Counts as one extra of the tree species it is attached to",
+    "scoring": "Counts as an extra tree of the species it is attached to",
     "context": "Attached to which tree?"
   },
   "beech_marten": {
@@ -456,7 +456,7 @@
   },
   "wild_boar_female": {
     "name": "Wild Boar (Female)",
-    "scoring": "10 points each if at least 1 Wild Boar Piglet; otherwise 0"
+    "scoring": "10 points each if at least 1 Squeaker; otherwise 0"
   },
   "cave": {
     "name": "Cave",
@@ -475,8 +475,8 @@
     "scoring": "5 points if no regular cave cards; otherwise 0"
   },
   "wild_boar_piglet": {
-    "name": "Wild Boar Piglet",
-    "scoring": "1 point per Wild Boar Piglet"
+    "name": "Squeaker",
+    "scoring": "1 point per Squeaker"
   },
   "honey_bee": {
     "name": "Honey Bee",

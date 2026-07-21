@@ -92,7 +92,8 @@ export const CARDS: CardDefinition[] = [
   { key: 'stinging_nettle', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'water_vole', category: 'bottom', tags: ['amphibian'], expansion: 'woodland', scoringType: 'fixed' },
   { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'wild_boar_piglet', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'fixed' },
+  // Key kept for saved-game compat; this is the base-game card "Squeaker" (Frischling)
+  { key: 'wild_boar_piglet', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'honey_bee', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
 
   // ============================================================
@@ -110,13 +111,14 @@ export const CARDS: CardDefinition[] = [
   { key: 'european_badger', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'european_hare', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'european_fat_dormouse', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
+  // Key kept for saved-game compat; this is the base-game card "Hazel Dormouse" (Haselmaus)
   { key: 'squeaker', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'brown_bear', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'fox', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'violet_carpenter_bee', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'custom', needsHostTreeContext: true },
   { key: 'steinbock', category: 'lateral', tags: ['deer', 'alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'fixed' },
   { key: 'beech_marten', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom', needsContext: true },
-  { key: 'fallow_deer', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
+  { key: 'fallow_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'gnat', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'raccoon', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'alpine_marmot', category: 'lateral', tags: ['pawed', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
@@ -129,7 +131,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'bee_swarm', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'common_pipistrelle', category: 'lateral', tags: ['bat'], expansion: 'woodland', scoringType: 'set' },
   { key: 'crane_fly', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'elk', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
+  { key: 'elk', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
   { key: 'european_bison', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
   { key: 'european_polecat', category: 'lateral', tags: ['pawed'], expansion: 'woodland', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
   { key: 'european_wildcat', category: 'lateral', tags: ['pawed', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },

@@ -31,11 +31,23 @@ export function recalcPlayer(
     )
   }
 
-  const activeCardKeys = getCards(expansions).map((c) => c.key)
-  const allLindenCounts = allPlayers.map((p) => p.cardCounts['linden'] || 0)
+  const classicCards = getCards(expansions)
+  const activeCardKeys = classicCards.map((c) => c.key)
+  // A Violet Carpenter Bee counts as an extra tree of its host species
+  // (reference card #13), so it must feed the cross-player comparisons too
+  const beeHosts = (p: PlayerScoringData): string[] =>
+    (p.cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? []).filter(Boolean)
+  const allLindenCounts = allPlayers.map((p) =>
+    (p.cardCounts['linden'] || 0) + beeHosts(p).filter((k) => k === 'linden').length,
+  )
+  // Shrubs never count toward tree totals (same rule as buildForestContext)
+  const treeKeys = new Set(
+    classicCards.filter((c) => c.category === 'tree' && !c.tags.includes('shrub')).map((c) => c.key),
+  )
   const allTreeCounts = allPlayers.map((p) => {
-    const treeCards = getCards(expansions).filter((c) => c.category === 'tree')
-    return treeCards.reduce((sum, c) => sum + (p.cardCounts[c.key] || 0), 0)
+    let sum = 0
+    for (const key of treeKeys) sum += p.cardCounts[key] || 0
+    return sum + beeHosts(p).filter((k) => treeKeys.has(k)).length
   })
 
   return computeScoreBreakdown(

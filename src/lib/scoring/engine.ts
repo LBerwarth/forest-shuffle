@@ -421,11 +421,11 @@ export function buildForestContext(
     }
   }
 
-  // Apply Violet Carpenter Bee bonuses: each bee acts as +1 of its host tree
-  // species for the host's own scoring formula. The bee itself stays a 1-count
-  // insect lateral — totals, tags, slot counts, and species/tree counts above
-  // are computed from the original cardCounts and are not affected. Each bee
-  // can have its own host tree.
+  // Apply Violet Carpenter Bee bonuses: per reference card #13 each bee counts
+  // as one extra tree of its host species — for the host's own scoring formula
+  // AND for total tree count (Moss, Sycamore, Woodpecker, ...). The bee itself
+  // stays a 1-count insect lateral — tags, slot counts, and species counts are
+  // unaffected. Each bee can have its own host tree.
   let effectiveCardCounts = cardCounts
   const beeHostKeys = cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? []
   if (beeHostKeys.length > 0) {
@@ -433,6 +433,10 @@ export function buildForestContext(
     for (const hostKey of beeHostKeys) {
       if (!hostKey) continue
       bumped[hostKey] = (bumped[hostKey] || 0) + 1
+      const host = CARDS.find((c) => c.key === hostKey)
+      if (host && host.category === 'tree' && !host.tags.includes('shrub')) {
+        totalTrees += 1
+      }
     }
     effectiveCardCounts = bumped
   }
@@ -512,11 +516,13 @@ export function computeScoreBreakdown(
     categoryTotals[card.category] += points
   }
 
-  // Comparison cards (cross-player)
+  // Comparison cards (cross-player) — use effective counts so a bee hosted
+  // on a Linden counts as an extra Linden
   if (allPlayerLindenCounts && allPlayerLindenCounts.length > 0) {
     const lindenCount = cardCounts['linden'] || 0
-    if (lindenCount > 0) {
-      const lindenPoints = scoreLinden(lindenCount, allPlayerLindenCounts)
+    const effectiveLindenCount = context.cardCounts['linden'] || 0
+    if (effectiveLindenCount > 0) {
+      const lindenPoints = scoreLinden(effectiveLindenCount, allPlayerLindenCounts)
       entries.push({ cardKey: 'linden', cardCategory: 'tree', count: lindenCount, points: lindenPoints })
       categoryTotals.tree += lindenPoints
     }
