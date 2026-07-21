@@ -10,6 +10,9 @@ const LANGUAGES = [
   { code: 'it' as const, label: 'Italiano' },
   { code: 'pl' as const, label: 'Polski' },
   { code: 'pt' as const, label: 'Português' },
+  { code: 'cs' as const, label: 'Čeština' },
+  { code: 'hu' as const, label: 'Magyar' },
+  { code: 'uk' as const, label: 'Українська' },
 ]
 
 export function LanguagePicker() {

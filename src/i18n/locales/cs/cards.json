@@ -1,0 +1,881 @@
+{
+  "birch": {
+    "name": "Bříza",
+    "scoring": "1 bod za břízu"
+  },
+  "beech": {
+    "name": "Buk",
+    "scoring": "Po 5 bodech, pokud máš 4+ buky"
+  },
+  "douglas_fir": {
+    "name": "Douglaska tisolistá",
+    "scoring": "5 bodů za douglasku"
+  },
+  "oak": {
+    "name": "Dub",
+    "scoring": "Po 10 bodech, pokud máš 8+ druhů stromů"
+  },
+  "horse_chestnut": {
+    "name": "Jírovec maďal",
+    "scoring": "Sbírka: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Lípa",
+    "scoring": "Po 1 b.; po 3 b., pokud máš nejvíc lip (nebo shodně)",
+    "scoringSolo": "Po 1 b.; po 3 b., pokud máš alespoň 3 lípy"
+  },
+  "sycamore": {
+    "name": "Javor klen",
+    "scoring": "1 bod za strom ve tvém lese"
+  },
+  "silver_fir": {
+    "name": "Jedle bělokorá",
+    "scoring": "2 body za kartu připojenou k jedlím",
+    "context": "Karty připojené k jedlím"
+  },
+  "european_larch": {
+    "name": "Modřín opadavý",
+    "scoring": "3 body za modřín"
+  },
+  "stone_pine": {
+    "name": "Borovice limba",
+    "scoring": "1 bod za kartu Alpine (včetně sebe)",
+    "context": "Karty připojené k limbám"
+  },
+  "palm_tree": {
+    "name": "Palma",
+    "scoring": "1 bod za ptáka"
+  },
+  "turkey_oak": {
+    "name": "Dub cer",
+    "scoring": "1 bod za sudokopytníka"
+  },
+  "o_christmas_tree": {
+    "name": "Vánoční stromeček",
+    "scoring": "2 body za kartu připojenou k tomuto stromu",
+    "context": "Karty připojené k tomuto stromu"
+  },
+  "tree_sapling": {
+    "name": "Sazenice",
+    "scoring": "0 bodů (počítá se jako strom)"
+  },
+  "common_hazel": {
+    "name": "Líska obecná",
+    "scoring": "0 bodů (keř — jen trvalý efekt)"
+  },
+  "elderberry": {
+    "name": "Bez černý",
+    "scoring": "0 bodů (keř — jen trvalý efekt)"
+  },
+  "blackthorn": {
+    "name": "Trnka",
+    "scoring": "0 bodů (keř — jen trvalý efekt)"
+  },
+  "bullfinch": {
+    "name": "Hýl obecný",
+    "scoring": "2 body za hmyz ve tvém lese"
+  },
+  "chaffinch": {
+    "name": "Pěnkava obecná",
+    "scoring": "5 bodů, pokud je na buku",
+    "context": "Kolik pěnkav je na buku?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Strakapoud velký",
+    "scoring": "10 bodů, pokud máš nejvíc stromů (nebo shodně)",
+    "scoringSolo": "10 bodů, pokud máš alespoň 10 stromů"
+  },
+  "goshawk": {
+    "name": "Jestřáb lesní",
+    "scoring": "3 body za ptáka (včetně sebe)"
+  },
+  "eurasian_jay": {
+    "name": "Sojka obecná",
+    "scoring": "3 body za sojku"
+  },
+  "tawny_owl": {
+    "name": "Puštík obecný",
+    "scoring": "5 bodů za puštíka"
+  },
+  "peacock_butterfly": {
+    "name": "Babočka paví oko",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Batolec duhový",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Perleťovec stříbropásek",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Babočka osiková",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Babočka jilmová",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Veverka obecná",
+    "scoring": "5 bodů, pokud je na dubu",
+    "context": "Kolik veverek je na dubu?"
+  },
+  "golden_eagle": {
+    "name": "Orel skalní",
+    "scoring": "1 bod za zvíře s tlapami + 1 za obojživelníka"
+  },
+  "bearded_vulture": {
+    "name": "Orlosup bradatý",
+    "scoring": "1 bod za kartu v jeskyni"
+  },
+  "common_raven": {
+    "name": "Krkavec velký",
+    "scoring": "5 bodů za krkavce"
+  },
+  "phoebus_apollo": {
+    "name": "Jasoň červenooký",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Sova pálená",
+    "scoring": "3 body za netopýra"
+  },
+  "brimstone": {
+    "name": "Žluťásek řešetlákový",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Kardinál",
+    "scoring": "5 bodů za kardinála"
+  },
+  "cuckoo": {
+    "name": "Kukačka obecná",
+    "scoring": "7 bodů za kukačku"
+  },
+  "eurasian_magpie": {
+    "name": "Straka obecná",
+    "scoring": "3 body za straku"
+  },
+  "map_butterfly": {
+    "name": "Babočka síťkovaná",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Jmelí bílé",
+    "scoring": "1 bod za rostlinu"
+  },
+  "nightingale": {
+    "name": "Slavík obecný",
+    "scoring": "5 bodů, pokud je na keři",
+    "context": "Kolik slavíků je na keři?"
+  },
+  "robin": {
+    "name": "Červenka obecná",
+    "scoring": "1 bod za hmyz"
+  },
+  "whinchat": {
+    "name": "Bramborníček hnědý",
+    "scoring": "1 bod za rostlinu"
+  },
+  "common_toad": {
+    "name": "Ropucha obecná",
+    "scoring": "5 bodů za ropuchu sdílející strom s jinou ropuchou",
+    "context": "Kolik ropuch sdílí strom s jinou?"
+  },
+  "fire_salamander": {
+    "name": "Mlok skvrnitý",
+    "scoring": "Sbírka: 5/15/25 za 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Rosnička zelená",
+    "scoring": "5 bodů za komára za každou rosničku"
+  },
+  "stag_beetle": {
+    "name": "Roháč obecný",
+    "scoring": "1 bod za zvíře s tlapami"
+  },
+  "wood_ant": {
+    "name": "Mravenec lesní",
+    "scoring": "2 body za kartu ve spodních místech (počítáno automaticky)"
+  },
+  "penny_bun": {
+    "name": "Hřib smrkový",
+    "scoring": "0 bodů (počítá se jako houba)"
+  },
+  "chanterelle": {
+    "name": "Liška obecná",
+    "scoring": "0 bodů (počítá se jako houba)"
+  },
+  "fly_agaric": {
+    "name": "Muchomůrka červená",
+    "scoring": "0 bodů (počítá se jako houba)"
+  },
+  "parasol_mushroom": {
+    "name": "Bedla vysoká",
+    "scoring": "0 bodů (počítá se jako houba)"
+  },
+  "moss": {
+    "name": "Mech",
+    "scoring": "Po 10 bodech, pokud máš 10+ stromů"
+  },
+  "wild_strawberries": {
+    "name": "Lesní jahody",
+    "scoring": "Po 10 bodech, pokud máš 8+ druhů stromů"
+  },
+  "hedgehog": {
+    "name": "Ježek",
+    "scoring": "2 body za motýla"
+  },
+  "pond_turtle": {
+    "name": "Želva bahenní",
+    "scoring": "5 bodů za želvu bahenní"
+  },
+  "blackberries": {
+    "name": "Ostružiny",
+    "scoring": "2 body za rostlinu (včetně sebe)"
+  },
+  "fireflies": {
+    "name": "Světlušky",
+    "scoring": "Sbírka: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Krtek",
+    "scoring": "0 bodů"
+  },
+  "tree_ferns": {
+    "name": "Stromové kapradiny",
+    "scoring": "6 bodů za obojživelníka"
+  },
+  "alpine_newt": {
+    "name": "Čolek horský",
+    "scoring": "2 body za hmyz"
+  },
+  "blueberry": {
+    "name": "Borůvka",
+    "scoring": "2 body za druh ptáka"
+  },
+  "gentian": {
+    "name": "Hořec",
+    "scoring": "3 body za motýla"
+  },
+  "edelweiss": {
+    "name": "Protěž alpská",
+    "scoring": "3 body za protěž"
+  },
+  "black_trumpet": {
+    "name": "Stroček trubkovitý",
+    "scoring": "0 bodů (počítá se jako houba)"
+  },
+  "digitalis": {
+    "name": "Náprstník",
+    "scoring": "Rozmanitost rostlin: 0/1/3/6/10/15 za druh rostliny"
+  },
+  "great_green_bush_cricket": {
+    "name": "Kobylka zelená",
+    "scoring": "1 bod za hmyz (včetně sebe)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Zábělník bahenní",
+    "scoring": "15/7/3 b. podle počtu stromů (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Kopřiva dvoudomá",
+    "scoring": "2 body za motýla"
+  },
+  "water_vole": {
+    "name": "Hryzec vodní",
+    "scoring": "0 bodů (počítá se jako obojživelník)"
+  },
+  "wild_tulip": {
+    "name": "Tulipán lesní",
+    "scoring": "3 body za tulipán lesní"
+  },
+  "barbastelle": {
+    "name": "Netopýr černý",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "bechsteins_bat": {
+    "name": "Netopýr velkouchý",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "brown_long_eared_bat": {
+    "name": "Netopýr ušatý",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Vrápenec velký",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "savis_pipistrelle": {
+    "name": "Netopýr Saviův",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "common_pipistrelle": {
+    "name": "Netopýr hvízdavý",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "roe_deer": {
+    "name": "Srnec obecný",
+    "scoring": "3 body za kartu se stejným symbolem stromu (včetně sebe)",
+    "context": "Karty se stejným symbolem stromu jako tvůj srnec"
+  },
+  "red_deer": {
+    "name": "Jelen lesní",
+    "scoring": "1 bod za strom a za rostlinu"
+  },
+  "chamois": {
+    "name": "Kamzík horský",
+    "scoring": "3 body za kartu se stejným symbolem stromu (včetně sebe)",
+    "context": "Karty se stejným symbolem stromu jako tvůj kamzík"
+  },
+  "steinbock": {
+    "name": "Kozorožec horský",
+    "scoring": "10 bodů za kozorožce"
+  },
+  "lynx": {
+    "name": "Rys",
+    "scoring": "10 bodů, pokud máš alespoň 1 srnce"
+  },
+  "wolf": {
+    "name": "Vlk",
+    "scoring": "5 bodů za jelenovité"
+  },
+  "wild_boar": {
+    "name": "Prase divoké",
+    "scoring": "Po 10 bodech, máš-li alespoň 1 sele; jinak 0"
+  },
+  "european_badger": {
+    "name": "Jezevec lesní",
+    "scoring": "2 body za jezevce"
+  },
+  "european_hare": {
+    "name": "Zajíc polní",
+    "scoring": "Body podle celkového počtu zajíců za každého zajíce"
+  },
+  "european_fat_dormouse": {
+    "name": "Plch velký",
+    "scoring": "15 bodů, pokud je u stromu s netopýrem (na protilehlém místě)",
+    "context": "Kolik jich je u stromu s netopýrem?"
+  },
+  "squeaker": {
+    "name": "Plšík lískový",
+    "scoring": "1 bod za plšíka"
+  },
+  "brown_bear": {
+    "name": "Medvěd hnědý",
+    "scoring": "0 bodů"
+  },
+  "fox": {
+    "name": "Liška",
+    "scoring": "2 body za zajíce ve tvém lese"
+  },
+  "violet_carpenter_bee": {
+    "name": "Drvodělka fialová",
+    "scoring": "Počítá se jako další strom druhu, ke kterému je připojena",
+    "context": "Ke kterému stromu je připojena?"
+  },
+  "beech_marten": {
+    "name": "Kuna skalní",
+    "scoring": "5 bodů za plně obsazený strom",
+    "context": "Kolik plně obsazených stromů máš v lese?"
+  },
+  "fallow_deer": {
+    "name": "Daněk skvrnitý",
+    "scoring": "3 body za sudokopytníka (včetně sebe)"
+  },
+  "gnat": {
+    "name": "Komár",
+    "scoring": "1 bod za netopýra"
+  },
+  "large_tortoiseshell": {
+    "name": "Babočka jilmová",
+    "scoring": "Motýli: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Mýval severní",
+    "scoring": "0 bodů"
+  },
+  "alpine_marmot": {
+    "name": "Svišť horský",
+    "scoring": "3 body za druh rostliny"
+  },
+  "mountain_hare": {
+    "name": "Zajíc bělák",
+    "scoring": "Body podle celkového počtu zajíců (počítá se jako zajíc)"
+  },
+  "capercaillie": {
+    "name": "Tetřev hlušec",
+    "scoring": "1 bod za rostlinu"
+  },
+  "bee_swarm": {
+    "name": "Roj včel",
+    "scoring": "1 bod za rostlinu"
+  },
+  "crane_fly": {
+    "name": "Tiplice",
+    "scoring": "1 bod za netopýra"
+  },
+  "elk": {
+    "name": "Los evropský",
+    "scoring": "2 b. za sazenici a za kartu se symboly stromů losa (včetně sebe)",
+    "context": "Karty se symboly stromů losa + sazenice"
+  },
+  "european_bison": {
+    "name": "Zubr evropský",
+    "scoring": "2 b. za kartu s jedním z jeho symbolů stromů (včetně sebe)",
+    "context": "Odpovídající karty se symbolem stromu na zubra (včetně sebe)"
+  },
+  "european_polecat": {
+    "name": "Tchoř tmavý",
+    "scoring": "10 bodů, pokud je sám na svém stromě",
+    "context": "Kolik jich je samotných na svém stromě?"
+  },
+  "european_wildcat": {
+    "name": "Kočka divoká",
+    "scoring": "1 bod za kartu okraje lesa (včetně sebe)"
+  },
+  "genet": {
+    "name": "Ženetka tečkovaná",
+    "scoring": "5 bodů za ženetku"
+  },
+  "red_panda": {
+    "name": "Panda červená",
+    "scoring": "2 body za pandu červenou"
+  },
+  "sable": {
+    "name": "Sobol",
+    "scoring": "3 body za zvíře s tlapami"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 bod za strom"
+  },
+  "white_stork": {
+    "name": "Čáp bílý",
+    "scoring": "1 bod za hmyz + 1 za obojživelníka"
+  },
+  "wild_boar_female": {
+    "name": "Bachyně",
+    "scoring": "Po 10 bodech, máš-li alespoň 1 sele; jinak 0"
+  },
+  "cave": {
+    "name": "Jeskyně",
+    "scoring": "1 bod za kartu v jeskyni"
+  },
+  "collectors_cave": {
+    "name": "Sběratelská jeskyně",
+    "scoring": "Každá běžná karta v jeskyni dává 2 body místo 1"
+  },
+  "bat_cave": {
+    "name": "Netopýří jeskyně",
+    "scoring": "Každý netopýr dává navíc 3 body"
+  },
+  "lonely_cave": {
+    "name": "Osamělá jeskyně",
+    "scoring": "5 bodů, pokud nejsou žádné běžné karty v jeskyni; jinak 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Sele",
+    "scoring": "1 bod za sele"
+  },
+  "honey_bee": {
+    "name": "Včela medonosná",
+    "scoring": "1 bod za rostlinu"
+  },
+
+  "ash": {
+    "name": "Jasan ztepilý",
+    "scoring": "1 bod za kartu se stejným symbolem stromu + 1 za rostlinu (rostliny počítány automaticky)",
+    "context": "Karty se stejným barevným symbolem stromu"
+  },
+  "black_alder": {
+    "name": "Olše lepkavá",
+    "scoring": "5 bodů za olši lepkavou"
+  },
+  "crab_apple": {
+    "name": "Jabloň lesní",
+    "scoring": "8 bodů za plně obsazenou jabloň",
+    "context": "Kolik jabloní je plně obsazeno?"
+  },
+  "goat_willow": {
+    "name": "Vrba jíva",
+    "scoring": "1 bod za vřesoviště ve tvém lese"
+  },
+  "moor_birch": {
+    "name": "Bříza pýřitá",
+    "scoring": "1 bod za břízu pýřitou"
+  },
+  "sessile_oak": {
+    "name": "Dub zimní",
+    "scoring": "1 bod za strom/keř ve tvém lese"
+  },
+  "common_hazel_d": {
+    "name": "Líska",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "elderberry_d": {
+    "name": "Bez černý",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+
+  "blanket_bog": {
+    "name": "Pokryvné rašeliniště",
+    "scoring": "Zdvojnásobuje body rostlin umístěných pod ním",
+    "context": "Které rostliny jsou pod tímto pokryvným rašeliništěm?"
+  },
+  "fountainhead": {
+    "name": "Pramen",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "lowland_heath": {
+    "name": "Nížinné vřesoviště",
+    "scoring": "2 body za obojživelníka ve tvém lese"
+  },
+  "rhos_pasture": {
+    "name": "Rhos pastvina",
+    "scoring": "2 body za kopytníka ve tvém lese"
+  },
+  "rivulet": {
+    "name": "Potůček",
+    "scoring": "2 body za symbol stromu ve tvém lese",
+    "context": "Kolik symbolů stromů je ve tvém lese?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "valley_mire": {
+    "name": "Údolní rašeliniště",
+    "scoring": "2 body za hmyz ve tvém lese"
+  },
+  "warrens": {
+    "name": "Králičí nory",
+    "scoring": "2 body za zvíře s tlapami ve tvém lese"
+  },
+  "wet_woodland": {
+    "name": "Mokřadní les",
+    "scoring": "2 body za vřesoviště ve tvém lese (včetně sebe)"
+  },
+  "universal_moor": {
+    "name": "Univerzální vřesoviště",
+    "scoring": "0 bodů (počítá se jako vřesoviště)"
+  },
+
+  "barn_owl_d": {
+    "name": "Sova pálená",
+    "scoring": "3 body za netopýra ve tvém lese"
+  },
+  "beautiful_demoiselle": {
+    "name": "Motýlice lesklá",
+    "scoring": "Vážky: 0/5/10/15/30 za 1-5 druhů"
+  },
+  "black_tailed_godwit": {
+    "name": "Břehouš černoocasý",
+    "scoring": "Po 10 bodech, pokud máš nejvíc vřesovišť (nebo shodně)"
+  },
+  "buzzard": {
+    "name": "Káně lesní",
+    "scoring": "2 body za myš ve tvém lese"
+  },
+  "common_moorhen": {
+    "name": "Slípka zelenonohá",
+    "scoring": "2 body za vážku ve tvém lese"
+  },
+  "cuckoo_d": {
+    "name": "Kukačka obecná",
+    "scoring": "7 bodů za kukačku"
+  },
+  "curlew": {
+    "name": "Koliha velká",
+    "scoring": "Po 10 bodech při 5+ hmyzu; jinak po 3"
+  },
+  "emerald_damselfly": {
+    "name": "Šídlatka páskovaná",
+    "scoring": "Vážky: 0/5/10/15/30 za 1-5 druhů"
+  },
+  "grey_heron": {
+    "name": "Volavka popelavá",
+    "scoring": "8 bodů za volavku popelavou"
+  },
+  "keeled_skimmer": {
+    "name": "Vážka pobřežní",
+    "scoring": "Vážky: 0/5/10/15/30 za 1-5 druhů"
+  },
+  "meadow_pipit": {
+    "name": "Linduška luční",
+    "scoring": "1/3/6/10 b. za 1/2/4/6+ druhů ptáků"
+  },
+  "small_red_damselfly": {
+    "name": "Šidélko rudé",
+    "scoring": "Vážky: 0/5/10/15/30 za 1-5 druhů"
+  },
+  "southern_damselfly": {
+    "name": "Šidélko ozdobné",
+    "scoring": "Vážky: 0/5/10/15/30 za 1-5 druhů"
+  },
+  "wheatear": {
+    "name": "Bělořit šedý",
+    "scoring": "Po 5 bodech, pokud je na vřesovišti",
+    "context": "Kolik bělořitů je na vřesovišti?"
+  },
+
+  "adder": {
+    "name": "Zmije obecná",
+    "scoring": "1 bod za obojživelníka + 1 za myš ve tvém lese"
+  },
+  "adders_tongue": {
+    "name": "Hadí jazyk obecný",
+    "scoring": "3 body za hadí jazyk"
+  },
+  "beaver": {
+    "name": "Bobr evropský",
+    "scoring": "Body podle počtu karet v jeskyni"
+  },
+  "blue_ground_beetle": {
+    "name": "Střevlík spletitý",
+    "scoring": "1 bod za kartu ve spodním místě (včetně sebe)"
+  },
+  "blueberry_d": {
+    "name": "Borůvka",
+    "scoring": "2 body za druh ptáka"
+  },
+  "bog_asphodel": {
+    "name": "Kohátka kostilomná",
+    "scoring": "1 bod za vřesoviště ve tvém lese"
+  },
+  "common_lizard": {
+    "name": "Ještěrka živorodá",
+    "scoring": "Po 15 bodech při 3+ druzích obojživelníků; jinak po 5"
+  },
+  "grass_snake": {
+    "name": "Užovka obojková",
+    "scoring": "5 bodů za užovku obojkovou"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Vemeník zelenavý",
+    "scoring": "Po 15 bodech při 5+ druzích rostlin; jinak po 3"
+  },
+  "heather": {
+    "name": "Vřes obecný",
+    "scoring": "1 bod za hmyz ve tvém lese"
+  },
+  "meadowsweet": {
+    "name": "Tužebník jilmový",
+    "scoring": "Po 5 bodech, pokud je na vřesovišti",
+    "context": "Kolik tužebníků je na vřesovišti?"
+  },
+  "moor_frog": {
+    "name": "Skokan ostronosý",
+    "scoring": "Po 8 bodech při 5+ vřesovištích; jinak 0"
+  },
+  "otter": {
+    "name": "Vydra říční",
+    "scoring": "3 body za obojživelníka ve tvém lese"
+  },
+  "royal_fern": {
+    "name": "Podezřeň královská",
+    "scoring": "2 body za druh rostliny"
+  },
+  "warty_newt": {
+    "name": "Čolek velký",
+    "scoring": "Sbírka: 5/15/25 za 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Řezan pilolistý",
+    "scoring": "2 body za vážku ve tvém lese"
+  },
+
+  "alcathoe_bat": {
+    "name": "Netopýr alkathoe",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "brandts_bat": {
+    "name": "Netopýr Brandtův",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "common_noctule": {
+    "name": "Netopýr rezavý",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "daubentons_bat": {
+    "name": "Netopýr vodní",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "serotine_bat": {
+    "name": "Netopýr pozdní",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "capercaillie_d": {
+    "name": "Tetřev hlušec",
+    "scoring": "1 bod za rostlinu ve tvém lese"
+  },
+  "common_pheasant": {
+    "name": "Bažant obecný",
+    "scoring": "1 bod za strom a keř ve tvém lese"
+  },
+  "dartmoor_badger": {
+    "name": "Jezevec z Dartmooru",
+    "scoring": "2 body za zvíře s tlapami (včetně sebe)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Černý králík z Dartmooru",
+    "scoring": "Každý králík dává body podle celkového počtu králíků"
+  },
+  "dartmoor_pony": {
+    "name": "Dartmoorský pony",
+    "scoring": "Po 15 bodech, pokud máš nejvíc vřesovišť (nebo shodně); jinak po 5"
+  },
+  "dartmoor_sheep": {
+    "name": "Dartmoorská ovce",
+    "scoring": "2 body za kopytníka (včetně sebe)"
+  },
+  "field_vole": {
+    "name": "Hraboš mokřadní",
+    "scoring": "1 bod za myš ve tvém lese (včetně sebe)"
+  },
+  "gnat_d": {
+    "name": "Komár",
+    "scoring": "1 bod za netopýra ve tvém lese"
+  },
+  "lake_fly": {
+    "name": "Pakomár",
+    "scoring": "1 bod za netopýra ve tvém lese"
+  },
+  "nuthatch": {
+    "name": "Brhlík lesní",
+    "scoring": "Po 10 bodech, pokud je u plně obsazeného stromu",
+    "context": "Kolik brhlíků je u plně obsazených stromů?"
+  },
+  "roe_deer_d": {
+    "name": "Srnec obecný",
+    "scoring": "3 body za kartu s odpovídajícím symbolem stromu (včetně sebe)",
+    "context": "Karty se stejným symbolem stromu jako tvůj srnec"
+  },
+  "shrew": {
+    "name": "Rejsek",
+    "scoring": "1 bod za rejska"
+  },
+  "treecreeper": {
+    "name": "Šoupálek lesní",
+    "scoring": "5 bodů za šoupálka"
+  },
+  "wood_mouse": {
+    "name": "Myšice lesní",
+    "scoring": "1 bod za myš ve tvém lese (včetně sebe)"
+  },
+
+  "cave_d": {
+    "name": "Jeskyně",
+    "scoring": "1 bod za kartu v jeskyni"
+  },
+  "lonely_cave_d": {
+    "name": "Jeskyně 4",
+    "scoring": "5 bodů"
+  },
+
+  "holly": {
+    "name": "Cesmína ostrolistá",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "gorse": {
+    "name": "Hlodáš evropský",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "coastal_heath": {
+    "name": "Pobřežní vřesoviště",
+    "scoring": "Zdvojnásobuje body ptáků umístěných pod ním",
+    "context": "Kteří ptáci jsou pod tímto pobřežním vřesovištěm?"
+  },
+  "stone_circle": {
+    "name": "Kamenný kruh",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "waxcap_grassland": {
+    "name": "Louka s voskovkami",
+    "scoring": "0 bodů (jen trvalý efekt)"
+  },
+  "dartford_warbler": {
+    "name": "Pěnice bělohrdlá",
+    "scoring": "1 bod"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Páskovec kroužkovaný",
+    "scoring": "Vážky: 0/5/10/15/30/50 za 1-6 druhů"
+  },
+  "grey_wagtail": {
+    "name": "Konipas horský",
+    "scoring": "1 bod za kartu Exmoor ve tvém lese"
+  },
+  "harvest_mouse": {
+    "name": "Myška drobná",
+    "scoring": "1 bod za ptáka"
+  },
+  "peregrine_falcon": {
+    "name": "Sokol stěhovavý",
+    "scoring": "1 bod za myš"
+  },
+  "pied_flycatcher": {
+    "name": "Lejsek černohlavý",
+    "scoring": "4 body"
+  },
+  "bank_vole": {
+    "name": "Norník rudý",
+    "scoring": "3 body"
+  },
+  "natterjack_toad": {
+    "name": "Ropucha krátkonohá",
+    "scoring": "1 bod"
+  },
+  "smooth_snake": {
+    "name": "Užovka hladká",
+    "scoring": "1 bod za symbol stromu ve tvém lese",
+    "context": "Kolik symbolů stromů je ve tvém lese?"
+  },
+  "sundew": {
+    "name": "Rosnatka okrouhlolistá",
+    "scoring": "1 bod za hmyz"
+  },
+  "tormentil": {
+    "name": "Mochna nátržník",
+    "scoring": "5 bodů"
+  },
+  "wood_rush": {
+    "name": "Bika lesní",
+    "scoring": "3 body"
+  },
+  "bilberry_bumblebee": {
+    "name": "Čmelák horský",
+    "scoring": "2 body za keř"
+  },
+  "dormouse": {
+    "name": "Plch velký",
+    "scoring": "Po 15 bodech, pokud je netopýr na stejném stromě",
+    "context": "Kolik jich sdílí strom s netopýrem?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Hříbě",
+    "scoring": "1 bod"
+  },
+  "horse": {
+    "name": "Kůň",
+    "scoring": "10 bodů za pony (dartmoorský pony, kůň, hříbě)"
+  },
+  "red_devon_cow": {
+    "name": "Kráva Red Devon",
+    "scoring": "1 bod za rostlinu"
+  },
+  "whiskered_bat": {
+    "name": "Netopýr vousatý",
+    "scoring": "Netopýři: po 5 b. při 3+ druzích"
+  },
+  "cave_exmoor": {
+    "name": "Jeskyně (Exmoor)",
+    "scoring": "1 bod za kartu v jeskyni"
+  }
+}
