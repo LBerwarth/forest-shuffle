@@ -23,6 +23,12 @@ import huCommon from './locales/hu/common.json'
 import huCards from './locales/hu/cards.json'
 import ukCommon from './locales/uk/common.json'
 import ukCards from './locales/uk/cards.json'
+import ruCommon from './locales/ru/common.json'
+import ruCards from './locales/ru/cards.json'
+import trCommon from './locales/tr/common.json'
+import trCards from './locales/tr/cards.json'
+import caCommon from './locales/ca/common.json'
+import caCards from './locales/ca/cards.json'
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -37,6 +43,9 @@ i18n.use(initReactI18next).init({
     cs: { common: csCommon, cards: csCards },
     hu: { common: huCommon, cards: huCards },
     uk: { common: ukCommon, cards: ukCards },
+    ru: { common: ruCommon, cards: ruCards },
+    tr: { common: trCommon, cards: trCards },
+    ca: { common: caCommon, cards: caCards },
   },
   lng: 'en',
   fallbackLng: 'en',

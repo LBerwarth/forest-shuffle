@@ -1,0 +1,881 @@
+{
+  "birch": {
+    "name": "Huş",
+    "scoring": "Huş başına 1 puan"
+  },
+  "beech": {
+    "name": "Kayın",
+    "scoring": "4+ Kayın varsa her biri için 5 puan"
+  },
+  "douglas_fir": {
+    "name": "Douglas göknarı",
+    "scoring": "Douglas göknarı başına 5 puan"
+  },
+  "oak": {
+    "name": "Meşe",
+    "scoring": "8+ ağaç türü varsa her biri için 10 puan"
+  },
+  "horse_chestnut": {
+    "name": "At kestanesi",
+    "scoring": "Set puanı: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Ihlamur",
+    "scoring": "her biri için 1 puan; en fazla Ihlamur sende ise (veya beraberlik) her biri için 3 puan",
+    "scoringSolo": "her biri için 1 puan; en az 3 Ihlamur varsa her biri için 3 puan"
+  },
+  "sycamore": {
+    "name": "Çınar yapraklı akçaağaç",
+    "scoring": "ormanındaki her ağaç için 1 puan"
+  },
+  "silver_fir": {
+    "name": "Göknar",
+    "scoring": "Göknarlara bağlı her kart için 2 puan",
+    "context": "Göknarlara bağlı kartlar"
+  },
+  "european_larch": {
+    "name": "Avrupa melezi",
+    "scoring": "Avrupa melezi başına 3 puan"
+  },
+  "stone_pine": {
+    "name": "Arolla çamı",
+    "scoring": "her Alpine kartı için 1 puan (kendisi dahil)",
+    "context": "Arolla çamlarına bağlı kartlar"
+  },
+  "palm_tree": {
+    "name": "Palmiye",
+    "scoring": "kuş başına 1 puan"
+  },
+  "turkey_oak": {
+    "name": "Saçlı meşe",
+    "scoring": "çift tırnaklı hayvan başına 1 puan"
+  },
+  "o_christmas_tree": {
+    "name": "Ey Çam Ağacı",
+    "scoring": "bu ağaca bağlı her kart için 2 puan",
+    "context": "Bu ağaca bağlı kartlar"
+  },
+  "tree_sapling": {
+    "name": "Ağaç fidanı",
+    "scoring": "0 puan (ağaç sayılır)"
+  },
+  "common_hazel": {
+    "name": "Fındık",
+    "scoring": "0 puan (çalı — yalnızca kalıcı etki)"
+  },
+  "elderberry": {
+    "name": "Kara mürver",
+    "scoring": "0 puan (çalı — yalnızca kalıcı etki)"
+  },
+  "blackthorn": {
+    "name": "Çakal eriği",
+    "scoring": "0 puan (çalı — yalnızca kalıcı etki)"
+  },
+  "bullfinch": {
+    "name": "Şakrak kuşu",
+    "scoring": "ormanındaki her böcek için 2 puan"
+  },
+  "chaffinch": {
+    "name": "İspinoz",
+    "scoring": "Kayın üzerindeyse 5 puan",
+    "context": "Kaç İspinoz bir Kayın üzerinde?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Orman alaca ağaçkakanı",
+    "scoring": "en fazla ağaç sende ise (veya beraberlik) 10 puan",
+    "scoringSolo": "en az 10 ağaç varsa 10 puan"
+  },
+  "goshawk": {
+    "name": "Çakır",
+    "scoring": "her kuş için 3 puan (kendisi dahil)"
+  },
+  "eurasian_jay": {
+    "name": "Alakarga",
+    "scoring": "Alakarga başına 3 puan"
+  },
+  "tawny_owl": {
+    "name": "Alaca baykuş",
+    "scoring": "Alaca baykuş başına 5 puan"
+  },
+  "peacock_butterfly": {
+    "name": "Tavus kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Mor imparator",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Gümüşi inci kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Yaslı kelebek",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Büyük kaplumbağa kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Kızıl sincap",
+    "scoring": "Meşe üzerindeyse 5 puan",
+    "context": "Kaç Kızıl sincap bir Meşe üzerinde?"
+  },
+  "golden_eagle": {
+    "name": "Kaya kartalı",
+    "scoring": "her pençeli hayvan için 1 puan + her amfibi için 1 puan"
+  },
+  "bearded_vulture": {
+    "name": "Sakallı akbaba",
+    "scoring": "her mağara kartı için 1 puan"
+  },
+  "common_raven": {
+    "name": "Kuzgun",
+    "scoring": "Kuzgun başına 5 puan"
+  },
+  "phoebus_apollo": {
+    "name": "Apollo kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Peçeli baykuş",
+    "scoring": "yarasa başına 3 puan"
+  },
+  "brimstone": {
+    "name": "Limon kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Kardinal",
+    "scoring": "Kardinal başına 5 puan"
+  },
+  "cuckoo": {
+    "name": "Guguk kuşu",
+    "scoring": "Guguk kuşu başına 7 puan"
+  },
+  "eurasian_magpie": {
+    "name": "Saksağan",
+    "scoring": "Saksağan başına 3 puan"
+  },
+  "map_butterfly": {
+    "name": "Harita kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Ökse otu",
+    "scoring": "bitki başına 1 puan"
+  },
+  "nightingale": {
+    "name": "Bülbül",
+    "scoring": "çalı üzerindeyse 5 puan",
+    "context": "Kaç Bülbül bir çalı üzerinde?"
+  },
+  "robin": {
+    "name": "Kızılgerdan",
+    "scoring": "böcek başına 1 puan"
+  },
+  "whinchat": {
+    "name": "Çayır taşkuşu",
+    "scoring": "bitki başına 1 puan"
+  },
+  "common_toad": {
+    "name": "Siğilli kurbağa",
+    "scoring": "başka bir Siğilli kurbağa ile aynı ağacı paylaşan her Siğilli kurbağa için 5 puan",
+    "context": "Kaç Siğilli kurbağa başka biriyle aynı ağacı paylaşıyor?"
+  },
+  "fire_salamander": {
+    "name": "Ateş semenderi",
+    "scoring": "Set puanı: 1/2/3 için 5/15/25"
+  },
+  "tree_frog": {
+    "name": "Ağaç kurbağası",
+    "scoring": "her Ağaç kurbağası için her Tatarcık başına 5 puan"
+  },
+  "stag_beetle": {
+    "name": "Geyik böceği",
+    "scoring": "pençeli hayvan başına 1 puan"
+  },
+  "wood_ant": {
+    "name": "Orman karıncası",
+    "scoring": "alt yuvalardaki her kart için 2 puan (otomatik sayılır)"
+  },
+  "penny_bun": {
+    "name": "Çörek mantarı",
+    "scoring": "0 puan (mantar sayılır)"
+  },
+  "chanterelle": {
+    "name": "Horoz mantarı",
+    "scoring": "0 puan (mantar sayılır)"
+  },
+  "fly_agaric": {
+    "name": "Sinek mantarı",
+    "scoring": "0 puan (mantar sayılır)"
+  },
+  "parasol_mushroom": {
+    "name": "Şemsiye mantarı",
+    "scoring": "0 puan (mantar sayılır)"
+  },
+  "moss": {
+    "name": "Yosun",
+    "scoring": "10+ ağaç varsa her biri için 10 puan"
+  },
+  "wild_strawberries": {
+    "name": "Yaban çileği",
+    "scoring": "8+ ağaç türü varsa her biri için 10 puan"
+  },
+  "hedgehog": {
+    "name": "Kirpi",
+    "scoring": "kelebek başına 2 puan"
+  },
+  "pond_turtle": {
+    "name": "Benekli su kaplumbağası",
+    "scoring": "Benekli su kaplumbağası başına 5 puan"
+  },
+  "blackberries": {
+    "name": "Böğürtlen",
+    "scoring": "her bitki için 2 puan (kendisi dahil)"
+  },
+  "fireflies": {
+    "name": "Ateş böcekleri",
+    "scoring": "Ateş böceği seti: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Köstebek",
+    "scoring": "0 puan"
+  },
+  "tree_ferns": {
+    "name": "Ağaç eğreltileri",
+    "scoring": "amfibi başına 6 puan"
+  },
+  "alpine_newt": {
+    "name": "Alp semenderi",
+    "scoring": "böcek başına 2 puan"
+  },
+  "blueberry": {
+    "name": "Yaban mersini",
+    "scoring": "her benzersiz kuş türü için 2 puan"
+  },
+  "gentian": {
+    "name": "Centiyane",
+    "scoring": "kelebek başına 3 puan"
+  },
+  "edelweiss": {
+    "name": "Edelvays",
+    "scoring": "Edelvays başına 3 puan"
+  },
+  "black_trumpet": {
+    "name": "Kara borazan mantarı",
+    "scoring": "0 puan (mantar sayılır)"
+  },
+  "digitalis": {
+    "name": "Yüksükotu",
+    "scoring": "Bitki çeşitliliği seti: benzersiz bitki türü başına 0/1/3/6/10/15"
+  },
+  "great_green_bush_cricket": {
+    "name": "Büyük yeşil çekirge",
+    "scoring": "her böcek için 1 puan (kendisi dahil)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Bataklık beşparmakotu",
+    "scoring": "ağaç sayısına göre 15/7/3 puan (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Isırgan otu",
+    "scoring": "kelebek başına 2 puan"
+  },
+  "water_vole": {
+    "name": "Su faresi",
+    "scoring": "0 puan (amfibi sayılır)"
+  },
+  "wild_tulip": {
+    "name": "Yaban lalesi",
+    "scoring": "Yaban lalesi başına 3 puan"
+  },
+  "barbastelle": {
+    "name": "Barbastel yarasası",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "bechsteins_bat": {
+    "name": "Bechstein yarasası",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "brown_long_eared_bat": {
+    "name": "Kahverengi uzunkulaklı yarasa",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Büyük nalburunlu yarasa",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "savis_pipistrelle": {
+    "name": "Savi cüce yarasası",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "common_pipistrelle": {
+    "name": "Cüce yarasa",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "roe_deer": {
+    "name": "Karaca",
+    "scoring": "aynı ağaç sembolüne sahip her kart için 3 puan (kendisi dahil)",
+    "context": "Karacanla aynı ağaç sembolüne sahip kartlar"
+  },
+  "red_deer": {
+    "name": "Kızıl geyik",
+    "scoring": "her ağaç ve her bitki için 1 puan"
+  },
+  "chamois": {
+    "name": "Çengel boynuzlu dağ keçisi",
+    "scoring": "aynı ağaç sembolüne sahip her kart için 3 puan (kendisi dahil)",
+    "context": "Çengel boynuzlu dağ keçinle aynı ağaç sembolüne sahip kartlar"
+  },
+  "steinbock": {
+    "name": "Alp dağ keçisi",
+    "scoring": "Alp dağ keçisi başına 10 puan"
+  },
+  "lynx": {
+    "name": "Vaşak",
+    "scoring": "en az 1 Karaca varsa 10 puan"
+  },
+  "wolf": {
+    "name": "Kurt",
+    "scoring": "geyikgiller başına 5 puan"
+  },
+  "wild_boar": {
+    "name": "Yaban domuzu",
+    "scoring": "en az 1 Domuz yavrusu varsa her biri için 10 puan; aksi halde 0"
+  },
+  "european_badger": {
+    "name": "Porsuk",
+    "scoring": "Porsuk başına 2 puan"
+  },
+  "european_hare": {
+    "name": "Yaban tavşanı",
+    "scoring": "her Yaban tavşanı için toplam tavşan sayısı kadar puan"
+  },
+  "european_fat_dormouse": {
+    "name": "Yediuyur",
+    "scoring": "yarasa bulunan bir ağaçtaysa (karşı yuvada) 15 puan",
+    "context": "Kaçı yarasa bulunan bir ağaçta?"
+  },
+  "squeaker": {
+    "name": "Fındık faresi",
+    "scoring": "Fındık faresi başına 1 puan"
+  },
+  "brown_bear": {
+    "name": "Boz ayı",
+    "scoring": "0 puan"
+  },
+  "fox": {
+    "name": "Tilki",
+    "scoring": "ormanındaki her tavşan için 2 puan"
+  },
+  "violet_carpenter_bee": {
+    "name": "Mor marangoz arısı",
+    "scoring": "bağlı olduğu türden fazladan bir ağaç sayılır",
+    "context": "Hangi ağaca bağlı?"
+  },
+  "beech_marten": {
+    "name": "Kaya sansarı",
+    "scoring": "tamamen dolu her ağaç için 5 puan",
+    "context": "Ormanında kaç tamamen dolu ağaç var?"
+  },
+  "fallow_deer": {
+    "name": "Alageyik",
+    "scoring": "her çift tırnaklı hayvan için 3 puan (kendisi dahil)"
+  },
+  "gnat": {
+    "name": "Tatarcık",
+    "scoring": "yarasa başına 1 puan"
+  },
+  "large_tortoiseshell": {
+    "name": "Büyük kaplumbağa kelebeği",
+    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Rakun",
+    "scoring": "0 puan"
+  },
+  "alpine_marmot": {
+    "name": "Alp dağ sıçanı",
+    "scoring": "her benzersiz bitki türü için 3 puan"
+  },
+  "mountain_hare": {
+    "name": "Kar tavşanı",
+    "scoring": "toplam tavşan sayısı kadar puan (tavşan sayılır)"
+  },
+  "capercaillie": {
+    "name": "Büyük orman tavuğu",
+    "scoring": "bitki başına 1 puan"
+  },
+  "bee_swarm": {
+    "name": "Arı sürüsü",
+    "scoring": "bitki başına 1 puan"
+  },
+  "crane_fly": {
+    "name": "Tipula sineği",
+    "scoring": "yarasa başına 1 puan"
+  },
+  "elk": {
+    "name": "Mus (sığın)",
+    "scoring": "her ağaç fidanı ve Mus'un ağaç sembollerini gösteren her kart için 2 puan (kendisi dahil)",
+    "context": "Mus'un ağaç sembollerini gösteren kartlar + fidanlar"
+  },
+  "european_bison": {
+    "name": "Avrupa bizonu",
+    "scoring": "ağaç sembollerinden birini gösteren her kart için 2 puan (kendisi dahil)",
+    "context": "Bizon başına eşleşen ağaç sembollü kartlar (kendisi dahil)"
+  },
+  "european_polecat": {
+    "name": "Avrupa kokarcası",
+    "scoring": "ağacında yalnızsa 10 puan",
+    "context": "Kaçı ağacında yalnız?"
+  },
+  "european_wildcat": {
+    "name": "Yaban kedisi",
+    "scoring": "her Woodland kartı için 1 puan (kendisi dahil)"
+  },
+  "genet": {
+    "name": "Genet",
+    "scoring": "Genet başına 5 puan"
+  },
+  "red_panda": {
+    "name": "Kızıl panda",
+    "scoring": "Kızıl panda başına 2 puan"
+  },
+  "sable": {
+    "name": "Samur",
+    "scoring": "pençeli hayvan başına 3 puan"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "ağaç başına 1 puan"
+  },
+  "white_stork": {
+    "name": "Ak leylek",
+    "scoring": "her böcek için 1 puan + her amfibi için 1 puan"
+  },
+  "wild_boar_female": {
+    "name": "Yaban domuzu (dişi)",
+    "scoring": "en az 1 Domuz yavrusu varsa her biri için 10 puan; aksi halde 0"
+  },
+  "cave": {
+    "name": "Mağara",
+    "scoring": "mağaradaki her kart için 1 puan"
+  },
+  "collectors_cave": {
+    "name": "Koleksiyoncu mağarası",
+    "scoring": "Her normal mağara kartı 1 yerine 2 puan verir"
+  },
+  "bat_cave": {
+    "name": "Yarasa mağarası",
+    "scoring": "Her yarasa ek 3 puan verir"
+  },
+  "lonely_cave": {
+    "name": "Yalnız mağara",
+    "scoring": "hiç normal mağara kartı yoksa 5 puan; aksi halde 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Domuz yavrusu",
+    "scoring": "Domuz yavrusu başına 1 puan"
+  },
+  "honey_bee": {
+    "name": "Bal arısı",
+    "scoring": "bitki başına 1 puan"
+  },
+
+  "ash": {
+    "name": "Dişbudak",
+    "scoring": "aynı ağaç sembolüne sahip her kart için 1 puan + her bitki için 1 puan (bitkiler otomatik sayılır)",
+    "context": "Aynı renkli ağaç sembolüne sahip kartlar"
+  },
+  "black_alder": {
+    "name": "Kara kızılağaç",
+    "scoring": "Kara kızılağaç başına 5 puan"
+  },
+  "crab_apple": {
+    "name": "Yaban elması",
+    "scoring": "tamamen dolu her Yaban elması için 8 puan",
+    "context": "Kaç Yaban elması tamamen dolu?"
+  },
+  "goat_willow": {
+    "name": "Keçi söğüdü",
+    "scoring": "ormanındaki her fundalık için 1 puan"
+  },
+  "moor_birch": {
+    "name": "Tüylü huş",
+    "scoring": "Tüylü huş başına 1 puan"
+  },
+  "sessile_oak": {
+    "name": "Sapsız meşe",
+    "scoring": "ormanındaki her ağaç/çalı için 1 puan"
+  },
+  "common_hazel_d": {
+    "name": "Fındık",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "elderberry_d": {
+    "name": "Kara mürver",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+
+  "blanket_bog": {
+    "name": "Örtü bataklığı",
+    "scoring": "Altına yerleştirilen bitkilerin puanını ikiye katlar",
+    "context": "Bu Örtü bataklığının altında hangi bitkiler var?"
+  },
+  "fountainhead": {
+    "name": "Su kaynağı",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "lowland_heath": {
+    "name": "Ova fundalığı",
+    "scoring": "ormanındaki her amfibi için 2 puan"
+  },
+  "rhos_pasture": {
+    "name": "Rhos çayırı",
+    "scoring": "ormanındaki her toynaklı hayvan için 2 puan"
+  },
+  "rivulet": {
+    "name": "Dere",
+    "scoring": "ormanındaki her ağaç sembolü için 2 puan",
+    "context": "Ormanında kaç ağaç sembolü var?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "valley_mire": {
+    "name": "Vadi bataklığı",
+    "scoring": "ormanındaki her böcek için 2 puan"
+  },
+  "warrens": {
+    "name": "Tavşan inleri",
+    "scoring": "ormanındaki her pençeli hayvan için 2 puan"
+  },
+  "wet_woodland": {
+    "name": "Sulak orman",
+    "scoring": "ormanındaki her fundalık için 2 puan (kendisi dahil)"
+  },
+  "universal_moor": {
+    "name": "Evrensel fundalık",
+    "scoring": "0 puan (fundalık sayılır)"
+  },
+
+  "barn_owl_d": {
+    "name": "Peçeli baykuş",
+    "scoring": "ormanındaki her yarasa için 3 puan"
+  },
+  "beautiful_demoiselle": {
+    "name": "Güzel kızböceği",
+    "scoring": "Yusufçuk seti: 1-5 tür için 0/5/10/15/30"
+  },
+  "black_tailed_godwit": {
+    "name": "Kara kuyruklu su çulluğu",
+    "scoring": "en fazla fundalık sende ise (veya beraberlik) her biri için 10 puan"
+  },
+  "buzzard": {
+    "name": "Şahin",
+    "scoring": "ormanındaki her fare için 2 puan"
+  },
+  "common_moorhen": {
+    "name": "Su tavuğu",
+    "scoring": "ormanındaki her yusufçuk için 2 puan"
+  },
+  "cuckoo_d": {
+    "name": "Guguk kuşu",
+    "scoring": "Guguk kuşu başına 7 puan"
+  },
+  "curlew": {
+    "name": "Kervan çulluğu",
+    "scoring": "5+ böcek varsa her biri için 10 puan; aksi halde her biri için 3 puan"
+  },
+  "emerald_damselfly": {
+    "name": "Zümrüt kızböceği",
+    "scoring": "Yusufçuk seti: 1-5 tür için 0/5/10/15/30"
+  },
+  "grey_heron": {
+    "name": "Gri balıkçıl",
+    "scoring": "Gri balıkçıl başına 8 puan"
+  },
+  "keeled_skimmer": {
+    "name": "Küçük mavi yusufçuk",
+    "scoring": "Yusufçuk seti: 1-5 tür için 0/5/10/15/30"
+  },
+  "meadow_pipit": {
+    "name": "Çayır incirkuşu",
+    "scoring": "1/2/4/6+ kuş türü için 1/3/6/10 puan"
+  },
+  "small_red_damselfly": {
+    "name": "Küçük kırmızı kızböceği",
+    "scoring": "Yusufçuk seti: 1-5 tür için 0/5/10/15/30"
+  },
+  "southern_damselfly": {
+    "name": "Güney kızböceği",
+    "scoring": "Yusufçuk seti: 1-5 tür için 0/5/10/15/30"
+  },
+  "wheatear": {
+    "name": "Kuyrukkakan",
+    "scoring": "bir fundalıktaysa her biri için 5 puan",
+    "context": "Kaç Kuyrukkakan bir fundalıkta?"
+  },
+
+  "adder": {
+    "name": "Engerek",
+    "scoring": "ormanındaki her amfibi için 1 puan + her fare için 1 puan"
+  },
+  "adders_tongue": {
+    "name": "Yılan dili eğreltisi",
+    "scoring": "Yılan dili eğreltisi başına 3 puan"
+  },
+  "beaver": {
+    "name": "Kunduz",
+    "scoring": "mağarandaki kart sayısı kadar puan"
+  },
+  "blue_ground_beetle": {
+    "name": "Mavi yer böceği",
+    "scoring": "her alt yuva kartı için 1 puan (kendisi dahil)"
+  },
+  "blueberry_d": {
+    "name": "Yaban mersini",
+    "scoring": "her benzersiz kuş türü için 2 puan"
+  },
+  "bog_asphodel": {
+    "name": "Bataklık zambağı",
+    "scoring": "ormanındaki her fundalık için 1 puan"
+  },
+  "common_lizard": {
+    "name": "Canlıdoğuran kertenkele",
+    "scoring": "3+ amfibi türü varsa her biri için 15 puan; aksi halde her biri için 5 puan"
+  },
+  "grass_snake": {
+    "name": "Küpeli yılan",
+    "scoring": "Küpeli yılan başına 5 puan"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Büyük kelebek salebi",
+    "scoring": "5+ bitki türü varsa her biri için 15 puan; aksi halde her biri için 3 puan"
+  },
+  "heather": {
+    "name": "Süpürgeotu",
+    "scoring": "ormanındaki her böcek için 1 puan"
+  },
+  "meadowsweet": {
+    "name": "Çayır güzeli",
+    "scoring": "bir fundalıktaysa her biri için 5 puan",
+    "context": "Kaç Çayır güzeli bir fundalıkta?"
+  },
+  "moor_frog": {
+    "name": "Bataklık kurbağası",
+    "scoring": "5+ fundalık varsa her biri için 8 puan; aksi halde 0"
+  },
+  "otter": {
+    "name": "Su samuru",
+    "scoring": "ormanındaki her amfibi için 3 puan"
+  },
+  "royal_fern": {
+    "name": "Kral eğreltisi",
+    "scoring": "her benzersiz bitki türü için 2 puan"
+  },
+  "warty_newt": {
+    "name": "Tepeli semender",
+    "scoring": "Set puanı: 1/2/3 için 5/15/25"
+  },
+  "water_soldiers": {
+    "name": "Su askeri",
+    "scoring": "ormanındaki her yusufçuk için 2 puan"
+  },
+
+  "alcathoe_bat": {
+    "name": "Alcathoe yarasası",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "brandts_bat": {
+    "name": "Brandt yarasası",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "common_noctule": {
+    "name": "Akşamcı yarasa",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "daubentons_bat": {
+    "name": "Su yarasası",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "serotine_bat": {
+    "name": "Geniş kanatlı yarasa",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "capercaillie_d": {
+    "name": "Büyük orman tavuğu",
+    "scoring": "ormanındaki her bitki için 1 puan"
+  },
+  "common_pheasant": {
+    "name": "Sülün",
+    "scoring": "ormanındaki her ağaç ve çalı için 1 puan"
+  },
+  "dartmoor_badger": {
+    "name": "Dartmoor porsuğu",
+    "scoring": "her pençeli hayvan için 2 puan (kendisi dahil)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Dartmoor kara tavşanı",
+    "scoring": "Her tavşan, toplam tavşan sayısı kadar puan verir"
+  },
+  "dartmoor_pony": {
+    "name": "Dartmoor midillisi",
+    "scoring": "en fazla fundalık sende ise (veya beraberlik) her biri için 15 puan; aksi halde her biri için 5 puan"
+  },
+  "dartmoor_sheep": {
+    "name": "Dartmoor koyunu",
+    "scoring": "her toynaklı hayvan için 2 puan (kendisi dahil)"
+  },
+  "field_vole": {
+    "name": "Tarla faresi",
+    "scoring": "ormanındaki her fare için 1 puan (kendisi dahil)"
+  },
+  "gnat_d": {
+    "name": "Tatarcık",
+    "scoring": "ormanındaki her yarasa için 1 puan"
+  },
+  "lake_fly": {
+    "name": "Göl sineği",
+    "scoring": "ormanındaki her yarasa için 1 puan"
+  },
+  "nuthatch": {
+    "name": "Sıvacı kuşu",
+    "scoring": "tamamen dolu bir ağaçtaysa her biri için 10 puan",
+    "context": "Kaç Sıvacı kuşu tamamen dolu ağaçlarda?"
+  },
+  "roe_deer_d": {
+    "name": "Karaca",
+    "scoring": "eşleşen ağaç sembolüne sahip her kart için 3 puan (kendisi dahil)",
+    "context": "Karacanla aynı ağaç sembolüne sahip kartlar"
+  },
+  "shrew": {
+    "name": "Sivri fare",
+    "scoring": "Sivri fare başına 1 puan"
+  },
+  "treecreeper": {
+    "name": "Tırmaşık kuşu",
+    "scoring": "Tırmaşık kuşu başına 5 puan"
+  },
+  "wood_mouse": {
+    "name": "Orman faresi",
+    "scoring": "ormanındaki her fare için 1 puan (kendisi dahil)"
+  },
+
+  "cave_d": {
+    "name": "Mağara",
+    "scoring": "mağaradaki her kart için 1 puan"
+  },
+  "lonely_cave_d": {
+    "name": "Mağara 4",
+    "scoring": "5 puan"
+  },
+
+  "holly": {
+    "name": "Çobanpüskülü",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "gorse": {
+    "name": "Dikenli katırtırnağı",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "coastal_heath": {
+    "name": "Kıyı fundalığı",
+    "scoring": "Altına yerleştirilen kuşların puanını ikiye katlar",
+    "context": "Bu Kıyı fundalığının altında hangi kuşlar var?"
+  },
+  "stone_circle": {
+    "name": "Taş çember",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "waxcap_grassland": {
+    "name": "Mum mantarı çayırı",
+    "scoring": "0 puan (yalnızca kalıcı etki)"
+  },
+  "dartford_warbler": {
+    "name": "Kızıl ötleğen",
+    "scoring": "1 puan"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Altın halkalı yusufçuk",
+    "scoring": "Yusufçuk seti: 1-6 tür için 0/5/10/15/30/50"
+  },
+  "grey_wagtail": {
+    "name": "Dağ kuyruksallayanı",
+    "scoring": "ormanındaki her Exmoor kartı için 1 puan"
+  },
+  "harvest_mouse": {
+    "name": "Hasat faresi",
+    "scoring": "kuş başına 1 puan"
+  },
+  "peregrine_falcon": {
+    "name": "Gökdoğan",
+    "scoring": "fare başına 1 puan"
+  },
+  "pied_flycatcher": {
+    "name": "Alaca sinekkapan",
+    "scoring": "4 puan"
+  },
+  "bank_vole": {
+    "name": "Kızıl orman faresi",
+    "scoring": "3 puan"
+  },
+  "natterjack_toad": {
+    "name": "Koşucu kara kurbağası",
+    "scoring": "1 puan"
+  },
+  "smooth_snake": {
+    "name": "Avusturya yılanı",
+    "scoring": "ormanındaki her ağaç sembolü için 1 puan",
+    "context": "Ormanında kaç ağaç sembolü var?"
+  },
+  "sundew": {
+    "name": "Güneşgülü",
+    "scoring": "böcek başına 1 puan"
+  },
+  "tormentil": {
+    "name": "Parmakotu",
+    "scoring": "5 puan"
+  },
+  "wood_rush": {
+    "name": "Büyük orman kofası",
+    "scoring": "3 puan"
+  },
+  "bilberry_bumblebee": {
+    "name": "Dağ yaban arısı",
+    "scoring": "çalı başına 2 puan"
+  },
+  "dormouse": {
+    "name": "Yediuyur",
+    "scoring": "aynı ağaçta bir yarasa varsa her biri için 15 puan",
+    "context": "Kaçı bir yarasa ile aynı ağacı paylaşıyor?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Tay",
+    "scoring": "1 puan"
+  },
+  "horse": {
+    "name": "At",
+    "scoring": "her midilli için 10 puan (Dartmoor midillisi, At, Tay)"
+  },
+  "red_devon_cow": {
+    "name": "Kızıl Devon ineği",
+    "scoring": "bitki başına 1 puan"
+  },
+  "whiskered_bat": {
+    "name": "Bıyıklı yarasa",
+    "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
+  },
+  "cave_exmoor": {
+    "name": "Mağara (Exmoor)",
+    "scoring": "mağaradaki her kart için 1 puan"
+  }
+}

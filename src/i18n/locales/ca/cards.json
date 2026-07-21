@@ -1,0 +1,881 @@
+{
+  "birch": {
+    "name": "Bedoll",
+    "scoring": "1 punt per Bedoll"
+  },
+  "beech": {
+    "name": "Faig",
+    "scoring": "5 punts cadascun si tens 4+ Faigs"
+  },
+  "douglas_fir": {
+    "name": "Avet de Douglas",
+    "scoring": "5 punts per Avet de Douglas"
+  },
+  "oak": {
+    "name": "Roure",
+    "scoring": "10 punts cadascun si tens 8+ espècies d'arbre"
+  },
+  "horse_chestnut": {
+    "name": "Castanyer d'Índies",
+    "scoring": "Col·lecció: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Til·ler",
+    "scoring": "1 pt cadascun; 3 pts cadascun si tens més Til·lers (o empat)",
+    "scoringSolo": "1 pt cadascun; 3 pts cadascun si tens almenys 3 Til·lers"
+  },
+  "sycamore": {
+    "name": "Erable blanc",
+    "scoring": "1 punt per arbre del teu bosc"
+  },
+  "silver_fir": {
+    "name": "Avet",
+    "scoring": "2 punts per carta unida als Avets",
+    "context": "Cartes unides als Avets"
+  },
+  "european_larch": {
+    "name": "Làrix europeu",
+    "scoring": "3 punts per Làrix europeu"
+  },
+  "stone_pine": {
+    "name": "Pi cembro",
+    "scoring": "1 punt per carta Alpine (ell mateix inclòs)",
+    "context": "Cartes unides als Pins cembro"
+  },
+  "palm_tree": {
+    "name": "Palmera",
+    "scoring": "1 punt per ocell"
+  },
+  "turkey_oak": {
+    "name": "Roure turc",
+    "scoring": "1 punt per animal peülla partida"
+  },
+  "o_christmas_tree": {
+    "name": "Oh, arbre de Nadal",
+    "scoring": "2 punts per carta unida a aquest arbre",
+    "context": "Cartes unides als arbres de Nadal"
+  },
+  "tree_sapling": {
+    "name": "Plançó d'arbre",
+    "scoring": "0 punts (compta com a arbre)"
+  },
+  "common_hazel": {
+    "name": "Avellaner comú",
+    "scoring": "0 punts (arbust — només efecte permanent)"
+  },
+  "elderberry": {
+    "name": "Saüc negre",
+    "scoring": "0 punts (arbust — només efecte permanent)"
+  },
+  "blackthorn": {
+    "name": "Aranyoner",
+    "scoring": "0 punts (arbust — només efecte permanent)"
+  },
+  "bullfinch": {
+    "name": "Pinsà borroner",
+    "scoring": "2 punts per insecte del teu bosc"
+  },
+  "chaffinch": {
+    "name": "Pinsà comú",
+    "scoring": "5 punts si està en un Faig",
+    "context": "Quants Pinsans comuns hi ha en un Faig?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Picot garser gros",
+    "scoring": "10 punts si tens més arbres (o empat)",
+    "scoringSolo": "10 punts si tens almenys 10 arbres"
+  },
+  "goshawk": {
+    "name": "Astor",
+    "scoring": "3 punts per ocell (ell mateix inclòs)"
+  },
+  "eurasian_jay": {
+    "name": "Gaig",
+    "scoring": "3 punts per Gaig"
+  },
+  "tawny_owl": {
+    "name": "Gamarús",
+    "scoring": "5 punts per Gamarús"
+  },
+  "peacock_butterfly": {
+    "name": "Papallona paó de dia",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Tornassolada",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Nacrada",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Antíop",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Papallona de l'om",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Esquirol roig",
+    "scoring": "5 punts si està en un Roure",
+    "context": "Quants Esquirols roigs hi ha en un Roure?"
+  },
+  "golden_eagle": {
+    "name": "Àguila daurada",
+    "scoring": "1 punt per animal amb potes + 1 per amfibi"
+  },
+  "bearded_vulture": {
+    "name": "Trencalòs",
+    "scoring": "1 punt per carta de cova"
+  },
+  "common_raven": {
+    "name": "Corb",
+    "scoring": "5 punts per Corb"
+  },
+  "phoebus_apollo": {
+    "name": "Apol·lo",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Òliba",
+    "scoring": "3 punts per ratpenat"
+  },
+  "brimstone": {
+    "name": "Llimonera",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Cardenal",
+    "scoring": "5 punts per Cardenal"
+  },
+  "cuckoo": {
+    "name": "Cucut",
+    "scoring": "7 punts per Cucut"
+  },
+  "eurasian_magpie": {
+    "name": "Garsa",
+    "scoring": "3 punts per Garsa"
+  },
+  "map_butterfly": {
+    "name": "Papallona mapa",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Vesc",
+    "scoring": "1 punt per planta"
+  },
+  "nightingale": {
+    "name": "Rossinyol",
+    "scoring": "5 punts si està en un arbust",
+    "context": "Quants Rossinyols hi ha en un arbust?"
+  },
+  "robin": {
+    "name": "Pit-roig",
+    "scoring": "1 punt per insecte"
+  },
+  "whinchat": {
+    "name": "Bitxac rogenc",
+    "scoring": "1 punt per planta"
+  },
+  "common_toad": {
+    "name": "Gripau comú",
+    "scoring": "5 punts per Gripau comú que comparteix arbre amb un altre Gripau comú",
+    "context": "Quants Gripaus comuns comparteixen arbre amb un altre?"
+  },
+  "fire_salamander": {
+    "name": "Salamandra comuna",
+    "scoring": "Col·lecció: 5/15/25 per 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Reineta",
+    "scoring": "5 punts per mosquit per Reineta"
+  },
+  "stag_beetle": {
+    "name": "Escarabat cérvol",
+    "scoring": "1 punt per animal amb potes"
+  },
+  "wood_ant": {
+    "name": "Formiga roja",
+    "scoring": "2 punts per carta en ranures inferiors (compte automàtic)"
+  },
+  "penny_bun": {
+    "name": "Cep",
+    "scoring": "0 punts (compta com a bolet)"
+  },
+  "chanterelle": {
+    "name": "Rossinyol de bosc",
+    "scoring": "0 punts (compta com a bolet)"
+  },
+  "fly_agaric": {
+    "name": "Reig bord",
+    "scoring": "0 punts (compta com a bolet)"
+  },
+  "parasol_mushroom": {
+    "name": "Apagallums",
+    "scoring": "0 punts (compta com a bolet)"
+  },
+  "moss": {
+    "name": "Molsa",
+    "scoring": "10 punts cadascuna si tens 10+ arbres"
+  },
+  "wild_strawberries": {
+    "name": "Maduixes silvestres",
+    "scoring": "10 punts cadascuna si tens 8+ espècies d'arbre"
+  },
+  "hedgehog": {
+    "name": "Eriçó",
+    "scoring": "2 punts per papallona"
+  },
+  "pond_turtle": {
+    "name": "Tortuga d'estany",
+    "scoring": "5 punts per Tortuga d'estany"
+  },
+  "blackberries": {
+    "name": "Móres",
+    "scoring": "2 punts per planta (ella mateixa inclosa)"
+  },
+  "fireflies": {
+    "name": "Cuques de llum",
+    "scoring": "Col·lecció: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Talp",
+    "scoring": "0 punts"
+  },
+  "tree_ferns": {
+    "name": "Falgueres arborescents",
+    "scoring": "6 punts per amfibi"
+  },
+  "alpine_newt": {
+    "name": "Tritó alpí",
+    "scoring": "2 punts per insecte"
+  },
+  "blueberry": {
+    "name": "Nabiu",
+    "scoring": "2 punts per tipus d'ocell únic"
+  },
+  "gentian": {
+    "name": "Genciana",
+    "scoring": "3 punts per papallona"
+  },
+  "edelweiss": {
+    "name": "Flor de neu",
+    "scoring": "3 punts per Flor de neu"
+  },
+  "black_trumpet": {
+    "name": "Trompeta de la mort",
+    "scoring": "0 punts (compta com a bolet)"
+  },
+  "digitalis": {
+    "name": "Digital",
+    "scoring": "Diversitat de plantes: 0/1/3/6/10/15 per tipus únic"
+  },
+  "great_green_bush_cricket": {
+    "name": "Saltamartí verd gros",
+    "scoring": "1 punt per insecte (ell mateix inclòs)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Cinc-en-rama d'aigua",
+    "scoring": "15/7/3 pts segons nombre d'arbres (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Ortiga",
+    "scoring": "2 punts per papallona"
+  },
+  "water_vole": {
+    "name": "Rata d'aigua",
+    "scoring": "0 punts (compta com a amfibi)"
+  },
+  "wild_tulip": {
+    "name": "Tulipa silvestre",
+    "scoring": "3 punts per Tulipa silvestre"
+  },
+  "barbastelle": {
+    "name": "Barbastel",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "bechsteins_bat": {
+    "name": "Ratpenat de Bechstein",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "brown_long_eared_bat": {
+    "name": "Ratpenat orellut daurat",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Ratpenat de ferradura gros",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "savis_pipistrelle": {
+    "name": "Ratpenat de Savi",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "common_pipistrelle": {
+    "name": "Pipistrel·la comuna",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "roe_deer": {
+    "name": "Cabirol",
+    "scoring": "3 punts per carta amb el mateix símbol d'arbre (ell mateix inclòs)",
+    "context": "Cartes amb el mateix símbol d'arbre que el teu Cabirol"
+  },
+  "red_deer": {
+    "name": "Cérvol",
+    "scoring": "1 punt per arbre i per planta"
+  },
+  "chamois": {
+    "name": "Isard",
+    "scoring": "3 punts per carta amb el mateix símbol d'arbre (ell mateix inclòs)",
+    "context": "Cartes amb el mateix símbol d'arbre que el teu Isard"
+  },
+  "steinbock": {
+    "name": "Cabra salvatge alpina",
+    "scoring": "10 punts per Cabra salvatge alpina"
+  },
+  "lynx": {
+    "name": "Linx",
+    "scoring": "10 punts si almenys 1 Cabirol"
+  },
+  "wolf": {
+    "name": "Llop",
+    "scoring": "5 punts per cérvid"
+  },
+  "wild_boar": {
+    "name": "Senglar",
+    "scoring": "10 punts cadascun si almenys 1 Godall; si no, 0"
+  },
+  "european_badger": {
+    "name": "Teixó",
+    "scoring": "2 punts per Teixó"
+  },
+  "european_hare": {
+    "name": "Llebre europea",
+    "scoring": "Punts igual al total de Llebres per Llebre"
+  },
+  "european_fat_dormouse": {
+    "name": "Liró gris",
+    "scoring": "15 punts si en un arbre amb un ratpenat (ranura oposada)",
+    "context": "Quants n'hi ha en un arbre amb un ratpenat?"
+  },
+  "squeaker": {
+    "name": "Rata dormidora",
+    "scoring": "1 punt per Rata dormidora"
+  },
+  "brown_bear": {
+    "name": "Ós bru",
+    "scoring": "0 punts"
+  },
+  "fox": {
+    "name": "Guineu",
+    "scoring": "2 punts per Llebre del teu bosc"
+  },
+  "violet_carpenter_bee": {
+    "name": "Abella fustera",
+    "scoring": "Compta com un arbre addicional de l'espècie a què està unida",
+    "context": "Unida a quin arbre?"
+  },
+  "beech_marten": {
+    "name": "Fagina",
+    "scoring": "5 punts per arbre completament ocupat",
+    "context": "Quants arbres completament ocupats hi ha al teu bosc?"
+  },
+  "fallow_deer": {
+    "name": "Daina",
+    "scoring": "3 punts per animal peülla partida (ell mateix inclòs)"
+  },
+  "gnat": {
+    "name": "Mosquit",
+    "scoring": "1 punt per ratpenat"
+  },
+  "large_tortoiseshell": {
+    "name": "Papallona de l'om",
+    "scoring": "Papallones: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Ós rentador",
+    "scoring": "0 punts"
+  },
+  "alpine_marmot": {
+    "name": "Marmota alpina",
+    "scoring": "3 punts per tipus de planta únic"
+  },
+  "mountain_hare": {
+    "name": "Llebre de muntanya",
+    "scoring": "Punts igual al total de Llebres (compta com a Llebre)"
+  },
+  "capercaillie": {
+    "name": "Gall fer",
+    "scoring": "1 punt per planta"
+  },
+  "bee_swarm": {
+    "name": "Eixam d'abelles",
+    "scoring": "1 punt per planta"
+  },
+  "crane_fly": {
+    "name": "Típula",
+    "scoring": "1 punt per ratpenat"
+  },
+  "elk": {
+    "name": "Ant",
+    "scoring": "2 pts per plançó i per carta amb els símbols d'arbre de l'Ant (ell mateix inclòs)",
+    "context": "Cartes amb els símbols d'arbre de l'Ant + plançons"
+  },
+  "european_bison": {
+    "name": "Bisó europeu",
+    "scoring": "2 pts per carta amb un dels seus símbols d'arbre (ell mateix inclòs)",
+    "context": "Cartes amb símbol d'arbre coincident per Bisó (ell mateix inclòs)"
+  },
+  "european_polecat": {
+    "name": "Turó",
+    "scoring": "10 punts si està sol al seu arbre",
+    "context": "Quants n'hi ha sols al seu arbre?"
+  },
+  "european_wildcat": {
+    "name": "Gat salvatge",
+    "scoring": "1 punt per carta de vora de bosc (ell mateix inclòs)"
+  },
+  "genet": {
+    "name": "Geneta",
+    "scoring": "5 punts per Geneta"
+  },
+  "red_panda": {
+    "name": "Panda roig",
+    "scoring": "2 punts per Panda roig"
+  },
+  "sable": {
+    "name": "Marta zibelina",
+    "scoring": "3 punts per animal amb potes"
+  },
+  "troll": {
+    "name": "Trol",
+    "scoring": "1 punt per arbre"
+  },
+  "white_stork": {
+    "name": "Cigonya blanca",
+    "scoring": "1 punt per insecte + 1 per amfibi"
+  },
+  "wild_boar_female": {
+    "name": "Senglar (femella)",
+    "scoring": "10 punts cadascuna si almenys 1 Godall; si no, 0"
+  },
+  "cave": {
+    "name": "Cova",
+    "scoring": "1 punt per carta a la cova"
+  },
+  "collectors_cave": {
+    "name": "Cova del col·leccionista",
+    "scoring": "Cada carta de cova normal puntua 2 en lloc d'1"
+  },
+  "bat_cave": {
+    "name": "Cova dels ratpenats",
+    "scoring": "Cada ratpenat puntua 3 punts addicionals"
+  },
+  "lonely_cave": {
+    "name": "Cova solitària",
+    "scoring": "5 punts si no hi ha cartes de cova normals; si no, 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Godall",
+    "scoring": "1 punt per Godall"
+  },
+  "honey_bee": {
+    "name": "Abella de la mel",
+    "scoring": "1 punt per planta"
+  },
+
+  "ash": {
+    "name": "Freixe comú",
+    "scoring": "1 punt per carta amb el mateix símbol d'arbre + 1 per planta (plantes comptades automàticament)",
+    "context": "Cartes amb el mateix símbol d'arbre de color"
+  },
+  "black_alder": {
+    "name": "Vern",
+    "scoring": "5 punts per Vern"
+  },
+  "crab_apple": {
+    "name": "Pomera borda",
+    "scoring": "8 punts per Pomera borda completament ocupada",
+    "context": "Quantes Pomeres bordes estan completament ocupades?"
+  },
+  "goat_willow": {
+    "name": "Gatell",
+    "scoring": "1 punt per landa del teu bosc"
+  },
+  "moor_birch": {
+    "name": "Bedoll pubescent",
+    "scoring": "1 punt per Bedoll pubescent"
+  },
+  "sessile_oak": {
+    "name": "Roure de fulla petita",
+    "scoring": "1 punt per arbre/arbust del teu bosc"
+  },
+  "common_hazel_d": {
+    "name": "Avellaner comú",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "elderberry_d": {
+    "name": "Saüc negre",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+
+  "blanket_bog": {
+    "name": "Torbera de manta",
+    "scoring": "Duplica els punts de les plantes col·locades a sota",
+    "context": "Quines plantes hi ha sota aquesta Torbera de manta?"
+  },
+  "fountainhead": {
+    "name": "Deu d'aigua",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "lowland_heath": {
+    "name": "Bruguerar de plana",
+    "scoring": "2 punts per amfibi del teu bosc"
+  },
+  "rhos_pasture": {
+    "name": "Prat de rhos",
+    "scoring": "2 punts per animal amb peülla del teu bosc"
+  },
+  "rivulet": {
+    "name": "Rierol",
+    "scoring": "2 punts per símbol d'arbre del teu bosc",
+    "context": "Quants símbols d'arbre hi ha al teu bosc?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "valley_mire": {
+    "name": "Aiguamoll de vall",
+    "scoring": "2 punts per insecte del teu bosc"
+  },
+  "warrens": {
+    "name": "Llorigueres",
+    "scoring": "2 punts per animal amb potes del teu bosc"
+  },
+  "wet_woodland": {
+    "name": "Bosc humit",
+    "scoring": "2 punts per landa del teu bosc (ella mateixa inclosa)"
+  },
+  "universal_moor": {
+    "name": "Landa universal",
+    "scoring": "0 punts (compta com a landa)"
+  },
+
+  "barn_owl_d": {
+    "name": "Òliba",
+    "scoring": "3 punts per ratpenat del teu bosc"
+  },
+  "beautiful_demoiselle": {
+    "name": "Caloptèrix verge",
+    "scoring": "Libèl·lules: 0/5/10/15/30 per 1-5 espècies"
+  },
+  "black_tailed_godwit": {
+    "name": "Tètol cuanegre",
+    "scoring": "10 punts cadascun si tens més landes (o empat)"
+  },
+  "buzzard": {
+    "name": "Aligot comú",
+    "scoring": "2 punts per ratolí del teu bosc"
+  },
+  "common_moorhen": {
+    "name": "Polla d'aigua",
+    "scoring": "2 punts per libèl·lula del teu bosc"
+  },
+  "cuckoo_d": {
+    "name": "Cucut",
+    "scoring": "7 punts per Cucut"
+  },
+  "curlew": {
+    "name": "Becut",
+    "scoring": "10 punts cadascun si 5+ insectes; si no, 3 cadascun"
+  },
+  "emerald_damselfly": {
+    "name": "Damisel·la maragda",
+    "scoring": "Libèl·lules: 0/5/10/15/30 per 1-5 espècies"
+  },
+  "grey_heron": {
+    "name": "Bernat pescaire",
+    "scoring": "8 punts per Bernat pescaire"
+  },
+  "keeled_skimmer": {
+    "name": "Libèl·lula blava",
+    "scoring": "Libèl·lules: 0/5/10/15/30 per 1-5 espècies"
+  },
+  "meadow_pipit": {
+    "name": "Titella",
+    "scoring": "1/3/6/10 pts per 1/2/4/6+ espècies d'ocell"
+  },
+  "small_red_damselfly": {
+    "name": "Damisel·la roja petita",
+    "scoring": "Libèl·lules: 0/5/10/15/30 per 1-5 espècies"
+  },
+  "southern_damselfly": {
+    "name": "Agrió de Mercuri",
+    "scoring": "Libèl·lules: 0/5/10/15/30 per 1-5 espècies"
+  },
+  "wheatear": {
+    "name": "Còlit gris",
+    "scoring": "5 punts cadascun si en una landa",
+    "context": "Quants Còlits grisos hi ha en una landa?"
+  },
+
+  "adder": {
+    "name": "Escurçó",
+    "scoring": "1 punt per amfibi + 1 per ratolí del teu bosc"
+  },
+  "adders_tongue": {
+    "name": "Llengua de serp",
+    "scoring": "3 punts per Llengua de serp"
+  },
+  "beaver": {
+    "name": "Castor",
+    "scoring": "Punts igual al nombre de cartes a la teva cova"
+  },
+  "blue_ground_beetle": {
+    "name": "Escarabat blau de terra",
+    "scoring": "1 punt per carta de ranura inferior (ell mateix inclòs)"
+  },
+  "blueberry_d": {
+    "name": "Nabiu",
+    "scoring": "2 punts per espècie d'ocell única"
+  },
+  "bog_asphodel": {
+    "name": "Asfòdel de torbera",
+    "scoring": "1 punt per landa del teu bosc"
+  },
+  "common_lizard": {
+    "name": "Sargantana vivípara",
+    "scoring": "15 punts cadascuna si 3+ espècies d'amfibi; si no, 5 cadascuna"
+  },
+  "grass_snake": {
+    "name": "Serp de collaret",
+    "scoring": "5 punts per Serp de collaret"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Orquídia papallona",
+    "scoring": "15 punts cadascuna si 5+ espècies de planta; si no, 3 cadascuna"
+  },
+  "heather": {
+    "name": "Bruguerola",
+    "scoring": "1 punt per insecte del teu bosc"
+  },
+  "meadowsweet": {
+    "name": "Reina dels prats",
+    "scoring": "5 punts cadascuna si en una landa",
+    "context": "Quantes Reines dels prats hi ha en una landa?"
+  },
+  "moor_frog": {
+    "name": "Granota de landa",
+    "scoring": "8 punts cadascuna si 5+ landes; si no, 0"
+  },
+  "otter": {
+    "name": "Llúdria",
+    "scoring": "3 punts per amfibi del teu bosc"
+  },
+  "royal_fern": {
+    "name": "Falguera reial",
+    "scoring": "2 punts per espècie de planta única"
+  },
+  "warty_newt": {
+    "name": "Tritó crestat",
+    "scoring": "Col·lecció: 5/15/25 per 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Soldat d'aigua",
+    "scoring": "2 punts per libèl·lula del teu bosc"
+  },
+
+  "alcathoe_bat": {
+    "name": "Ratpenat d'Alcathoe",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "brandts_bat": {
+    "name": "Ratpenat de Brandt",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "common_noctule": {
+    "name": "Nòctul comú",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "daubentons_bat": {
+    "name": "Ratpenat de Daubenton",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "serotine_bat": {
+    "name": "Ratpenat dels graners",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "capercaillie_d": {
+    "name": "Gall fer",
+    "scoring": "1 punt per planta del teu bosc"
+  },
+  "common_pheasant": {
+    "name": "Faisà comú",
+    "scoring": "1 punt per arbre i arbust del teu bosc"
+  },
+  "dartmoor_badger": {
+    "name": "Teixó de Dartmoor",
+    "scoring": "2 punts per animal amb potes (ell mateix inclòs)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Conill negre de Dartmoor",
+    "scoring": "Cada conill puntua igual al total de conills"
+  },
+  "dartmoor_pony": {
+    "name": "Poni de Dartmoor",
+    "scoring": "15 punts cadascun si més landes (o empat); si no, 5 cadascun"
+  },
+  "dartmoor_sheep": {
+    "name": "Ovella de Dartmoor",
+    "scoring": "2 punts per animal amb peülla (ell mateix inclòs)"
+  },
+  "field_vole": {
+    "name": "Talpó agrest",
+    "scoring": "1 punt per ratolí del teu bosc (ell mateix inclòs)"
+  },
+  "gnat_d": {
+    "name": "Mosquit",
+    "scoring": "1 punt per ratpenat del teu bosc"
+  },
+  "lake_fly": {
+    "name": "Quironòmid",
+    "scoring": "1 punt per ratpenat del teu bosc"
+  },
+  "nuthatch": {
+    "name": "Pica-soques blau",
+    "scoring": "10 punts cadascun si en un arbre completament ocupat",
+    "context": "Quants Pica-soques blaus hi ha en arbres completament ocupats?"
+  },
+  "roe_deer_d": {
+    "name": "Cabirol",
+    "scoring": "3 punts per carta amb el mateix símbol d'arbre (ell mateix inclòs)",
+    "context": "Cartes amb el mateix símbol d'arbre que el teu Cabirol"
+  },
+  "shrew": {
+    "name": "Musaranya de Miller",
+    "scoring": "1 punt per Musaranya de Miller"
+  },
+  "treecreeper": {
+    "name": "Raspinell comú",
+    "scoring": "5 punts per Raspinell comú"
+  },
+  "wood_mouse": {
+    "name": "Ratolí de bosc",
+    "scoring": "1 punt per ratolí del teu bosc (ell mateix inclòs)"
+  },
+
+  "cave_d": {
+    "name": "Cova",
+    "scoring": "1 punt per carta a la cova"
+  },
+  "lonely_cave_d": {
+    "name": "Cova 4",
+    "scoring": "5 punts"
+  },
+
+  "holly": {
+    "name": "Grèvol",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "gorse": {
+    "name": "Argelaga",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "coastal_heath": {
+    "name": "Bruguerar costaner",
+    "scoring": "Duplica els punts dels ocells col·locats a sota",
+    "context": "Quins ocells hi ha sota aquest Bruguerar costaner?"
+  },
+  "stone_circle": {
+    "name": "Cercle de pedres",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "waxcap_grassland": {
+    "name": "Prat d'higrocibes",
+    "scoring": "0 punts (només efecte permanent)"
+  },
+  "dartford_warbler": {
+    "name": "Tallareta cuallarga",
+    "scoring": "1 punt"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Cordulegàster anellat",
+    "scoring": "Libèl·lules: 0/5/10/15/30/50 per 1-6 espècies"
+  },
+  "grey_wagtail": {
+    "name": "Cuereta torrentera",
+    "scoring": "1 punt per carta Exmoor del teu bosc"
+  },
+  "harvest_mouse": {
+    "name": "Ratolí espigoler",
+    "scoring": "1 punt per ocell"
+  },
+  "peregrine_falcon": {
+    "name": "Falcó pelegrí",
+    "scoring": "1 punt per ratolí"
+  },
+  "pied_flycatcher": {
+    "name": "Mastegatatxes",
+    "scoring": "4 punts"
+  },
+  "bank_vole": {
+    "name": "Talpó roig",
+    "scoring": "3 punts"
+  },
+  "natterjack_toad": {
+    "name": "Gripau corredor",
+    "scoring": "1 punt"
+  },
+  "smooth_snake": {
+    "name": "Serp llisa",
+    "scoring": "1 punt per símbol d'arbre del teu bosc",
+    "context": "Quants símbols d'arbre hi ha al teu bosc?"
+  },
+  "sundew": {
+    "name": "Drosera",
+    "scoring": "1 punt per insecte"
+  },
+  "tormentil": {
+    "name": "Tormentil·la",
+    "scoring": "5 punts"
+  },
+  "wood_rush": {
+    "name": "Lúzula de bosc",
+    "scoring": "3 punts"
+  },
+  "bilberry_bumblebee": {
+    "name": "Borinot del nabiu",
+    "scoring": "2 punts per arbust"
+  },
+  "dormouse": {
+    "name": "Liró gris",
+    "scoring": "15 punts cadascun si hi ha un ratpenat al mateix arbre",
+    "context": "Quants comparteixen arbre amb un ratpenat?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Poltre",
+    "scoring": "1 punt"
+  },
+  "horse": {
+    "name": "Cavall",
+    "scoring": "10 punts per poni (Poni de Dartmoor, Cavall, Poltre)"
+  },
+  "red_devon_cow": {
+    "name": "Vaca Red Devon",
+    "scoring": "1 punt per planta"
+  },
+  "whiskered_bat": {
+    "name": "Ratpenat de bigotis",
+    "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
+  },
+  "cave_exmoor": {
+    "name": "Cova (Exmoor)",
+    "scoring": "1 punt per carta a la cova"
+  }
+}
