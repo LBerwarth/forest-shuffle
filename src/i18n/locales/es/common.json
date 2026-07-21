@@ -269,7 +269,7 @@
     "dartmoorEdition": "Dartmoor",
     "editionDesc": "Elige qué juego Forest Shuffle puntuar",
     "editionChangeConfirm": "Cambiar la edición reiniciará tu sesión de puntuación actual. ¿Estás seguro?",
-    "appName": "Forest Shuffle Companion",
+    "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
     "appDesc": "Calculadora de puntos y seguimiento de partidas para el juego de mesa Forest Shuffle."
   },

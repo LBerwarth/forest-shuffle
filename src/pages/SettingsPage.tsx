@@ -278,7 +278,7 @@ export function SettingsPage() {
       </Card>
 
       {/* Feedback */}
-      <Card className="mb-4">
+      <Card className="relative z-20 mb-4">
         <CardHeader>
           <div className="flex items-center gap-2">
             <MessageSquare className="h-4 w-4 text-forest-500" />

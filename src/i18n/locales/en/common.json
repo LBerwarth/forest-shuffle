@@ -17,7 +17,7 @@
   },
   "home": {
     "title": "Forest Shuffle",
-    "subtitle": "Companion App",
+    "subtitle": "Score Tracker",
     "scoreNewGame": "Score a New Game",
     "newGame": "New Game",
     "scoreGame": "Score a game",
@@ -269,7 +269,7 @@
     "dartmoorEdition": "Dartmoor",
     "editionDesc": "Choose which Forest Shuffle game to score",
     "editionChangeConfirm": "Changing the edition will reset your current scoring session. Are you sure?",
-    "appName": "Forest Shuffle Companion",
+    "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
     "appDesc": "Score calculator & game tracker for the Forest Shuffle board game."
   },

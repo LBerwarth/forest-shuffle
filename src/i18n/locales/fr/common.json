@@ -269,7 +269,7 @@
     "dartmoorEdition": "Dartmoor",
     "editionDesc": "Choisissez quel jeu Forest Shuffle scorer",
     "editionChangeConfirm": "Changer l'\u00e9dition r\u00e9initialisera votre session de score en cours. \u00cates-vous s\u00fbr\u00a0?",
-    "appName": "Forest Shuffle Companion",
+    "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
     "appDesc": "Calculateur de scores et suivi de parties pour le jeu Forest Shuffle."
   },

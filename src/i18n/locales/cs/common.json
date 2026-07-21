@@ -272,7 +272,7 @@
     "dartmoorEdition": "Dartmoor",
     "editionDesc": "Vyber, kterou hru Forest Shuffle bodovat",
     "editionChangeConfirm": "Změna verze resetuje tvé aktuální bodování. Určitě?",
-    "appName": "Forest Shuffle Companion",
+    "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
     "appDesc": "Kalkulačka bodů a evidence her pro deskovou hru Forest Shuffle."
   },
