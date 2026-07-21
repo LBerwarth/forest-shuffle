@@ -1,6 +1,6 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Send, Check, X, Search } from 'lucide-react'
+import { Send, Check, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useSettingsStore } from '@/store/settings-store'
 import { submitFeedback, type FeedbackItem } from '@/lib/supabase-api'
@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils'
 
 const FEEDBACK_EMAIL = 'lena.berw@gmail.com'
 
-// Every card key across all editions, deduped — the report can be about any of them.
+// Every card key across all editions, deduped — a report can be about any of them.
 const ALL_CARD_KEYS = Array.from(
   new Set([...CARDS, ...DARTMOOR_CARDS, ...EXMOOR_CARDS].map((c) => c.key)),
 )
@@ -24,22 +24,40 @@ export function FeedbackForm() {
 
   const [items, setItems] = useState<FeedbackItem[]>([])
   const [query, setQuery] = useState('')
+  const [open, setOpen] = useState(false)
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
+  const pickerRef = useRef<HTMLDivElement>(null)
 
   const cardName = (key: string) => tc(`${key}.name`, { defaultValue: key })
 
-  const matches = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    if (!q) return []
-    const chosen = new Set(items.map((i) => i.cardKey))
-    return ALL_CARD_KEYS.filter((k) => !chosen.has(k) && cardName(k).toLowerCase().includes(q)).slice(0, 8)
+  // Full card list sorted by localized name; the dropdown shows it as soon as
+  // the picker is focused, before any typing.
+  const sortedKeys = useMemo(
+    () => [...ALL_CARD_KEYS].sort((a, b) => cardName(a).localeCompare(cardName(b))),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, items, language])
+    [language],
+  )
+
+  const chosen = new Set(items.map((i) => i.cardKey))
+  const q = query.trim().toLowerCase()
+  const options = sortedKeys.filter(
+    (k) => !chosen.has(k) && (!q || cardName(k).toLowerCase().includes(q)),
+  )
+
+  useEffect(() => {
+    if (!open) return
+    function onDocMouseDown(e: MouseEvent) {
+      if (pickerRef.current && !pickerRef.current.contains(e.target as Node)) setOpen(false)
+    }
+    document.addEventListener('mousedown', onDocMouseDown)
+    return () => document.removeEventListener('mousedown', onDocMouseDown)
+  }, [open])
 
   function addCard(key: string) {
     setItems((prev) => [...prev, { cardKey: key, type: 'translation', proposition: '' }])
     setQuery('')
+    // Keep the dropdown open so several cards can be added in a row.
   }
 
   function updateItem(index: number, patch: Partial<FeedbackItem>) {
@@ -54,13 +72,13 @@ export function FeedbackForm() {
 
   function buildMailto(): string {
     const lines: string[] = []
-    for (const it of items) {
-      const type = t(`feedback.type_${it.type}`)
-      lines.push(`• ${cardName(it.cardKey)} [${type}]${it.proposition.trim() ? `: ${it.proposition.trim()}` : ''}`)
-    }
-    if (message.trim()) {
+    if (message.trim()) lines.push(message.trim())
+    if (items.length) {
       if (lines.length) lines.push('')
-      lines.push(message.trim())
+      for (const it of items) {
+        const type = t(`feedback.type_${it.type}`)
+        lines.push(`• ${cardName(it.cardKey)} [${type}]${it.proposition.trim() ? `: ${it.proposition.trim()}` : ''}`)
+      }
     }
     lines.push('', `— ${t('settings.language')}: ${language} · ${t('settings.appName')} ${appVersion}`)
     return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(t('feedback.emailSubject'))}&body=${encodeURIComponent(lines.join('\n'))}`
@@ -92,34 +110,51 @@ export function FeedbackForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-3">
-      {/* Card picker */}
-      <div className="relative">
-        <div className="flex items-center gap-2 rounded-lg border border-forest-200 bg-forest-50 px-3">
-          <Search className="h-4 w-4 shrink-0 text-forest-300" />
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={t('feedback.addCard')}
-            className="w-full bg-transparent py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:outline-none"
-          />
-        </div>
-        {query.trim() && (
+      {/* Primary: free-text feedback — works on its own, no card needed */}
+      <textarea
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        placeholder={t('feedback.messagePlaceholder')}
+        rows={3}
+        className="w-full resize-y rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
+      />
+
+      {/* Optional: attach one or more specific cards */}
+      <div ref={pickerRef} className="relative">
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="flex w-full items-center justify-between gap-2 rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-left text-sm text-forest-400 transition-colors hover:border-forest-300"
+        >
+          <span>{t('feedback.addCard')}</span>
+          <ChevronDown className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-180')} />
+        </button>
+        {open && (
           <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-lg border border-forest-200 bg-white shadow-card">
-            {matches.length > 0 ? (
-              matches.map((key) => (
-                <button
-                  key={key}
-                  type="button"
-                  onClick={() => addCard(key)}
-                  className="block w-full px-3 py-2 text-left text-sm text-forest-700 hover:bg-forest-50"
-                >
-                  {cardName(key)}
-                </button>
-              ))
-            ) : (
-              <p className="px-3 py-2 text-sm text-forest-300">{t('feedback.noMatches')}</p>
-            )}
+            <input
+              type="text"
+              autoFocus
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={t('wizard.searchCards')}
+              className="w-full border-b border-forest-100 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:outline-none"
+            />
+            <div className="max-h-56 overflow-y-auto">
+              {options.length > 0 ? (
+                options.map((key) => (
+                  <button
+                    key={key}
+                    type="button"
+                    onClick={() => addCard(key)}
+                    className="block w-full px-3 py-2 text-left text-sm text-forest-700 hover:bg-forest-50"
+                  >
+                    {cardName(key)}
+                  </button>
+                ))
+              ) : (
+                <p className="px-3 py-2 text-sm text-forest-300">{t('feedback.noMatches')}</p>
+              )}
+            </div>
           </div>
         )}
       </div>
@@ -164,15 +199,6 @@ export function FeedbackForm() {
           />
         </div>
       ))}
-
-      {/* Optional extra note */}
-      <textarea
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder={t('feedback.messagePlaceholder')}
-        rows={2}
-        className="w-full resize-y rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
-      />
 
       <Button type="submit" size="sm" disabled={!canSend || status === 'sending'}>
         <Send className="h-3.5 w-3.5" />
