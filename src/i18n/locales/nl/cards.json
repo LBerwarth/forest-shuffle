@@ -1,0 +1,881 @@
+{
+  "birch": {
+    "name": "Berk",
+    "scoring": "1 punt per Berk"
+  },
+  "beech": {
+    "name": "Beuk",
+    "scoring": "5 punten per stuk bij 4+ Beuken"
+  },
+  "douglas_fir": {
+    "name": "Douglasspar",
+    "scoring": "5 punten per Douglasspar"
+  },
+  "oak": {
+    "name": "Eik",
+    "scoring": "10 punten per stuk bij 8+ boomsoorten"
+  },
+  "horse_chestnut": {
+    "name": "Witte paardenkastanje",
+    "scoring": "Set-score: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Linde",
+    "scoring": "1 pt per stuk; 3 ptn per stuk bij de meeste Linden (of gelijkspel)",
+    "scoringSolo": "1 pt per stuk; 3 ptn per stuk bij minstens 3 Linden"
+  },
+  "sycamore": {
+    "name": "Gewone esdoorn",
+    "scoring": "1 punt per boom in je bos"
+  },
+  "silver_fir": {
+    "name": "Zilverspar",
+    "scoring": "2 punten per kaart aangelegd aan Zilversparren",
+    "context": "Kaarten aangelegd aan Zilversparren"
+  },
+  "european_larch": {
+    "name": "Europese lariks",
+    "scoring": "3 punten per Europese lariks"
+  },
+  "stone_pine": {
+    "name": "Arve",
+    "scoring": "1 punt per Alpine-kaart (inclusief zichzelf)",
+    "context": "Kaarten aangelegd aan Arven"
+  },
+  "palm_tree": {
+    "name": "Palmboom",
+    "scoring": "1 punt per vogel"
+  },
+  "turkey_oak": {
+    "name": "Moseik",
+    "scoring": "1 punt per evenhoevige"
+  },
+  "o_christmas_tree": {
+    "name": "O Dennenboom",
+    "scoring": "2 punten per kaart aangelegd aan deze boom",
+    "context": "Kaarten aangelegd aan O Dennenbomen"
+  },
+  "tree_sapling": {
+    "name": "Jonge boom",
+    "scoring": "0 punten (telt als boom)"
+  },
+  "common_hazel": {
+    "name": "Hazelaar",
+    "scoring": "0 punten (struik — alleen permanent effect)"
+  },
+  "elderberry": {
+    "name": "Gewone vlier",
+    "scoring": "0 punten (struik — alleen permanent effect)"
+  },
+  "blackthorn": {
+    "name": "Sleedoorn",
+    "scoring": "0 punten (struik — alleen permanent effect)"
+  },
+  "bullfinch": {
+    "name": "Goudvink",
+    "scoring": "2 punten per insect in je bos"
+  },
+  "chaffinch": {
+    "name": "Vink",
+    "scoring": "5 punten als op een Beuk",
+    "context": "Hoeveel Vinken zitten op een Beuk?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Grote bonte specht",
+    "scoring": "10 punten als je de meeste bomen hebt (of gelijkspel)",
+    "scoringSolo": "10 punten bij minstens 10 bomen"
+  },
+  "goshawk": {
+    "name": "Havik",
+    "scoring": "3 punten per vogel (inclusief zichzelf)"
+  },
+  "eurasian_jay": {
+    "name": "Gaai",
+    "scoring": "3 punten per Gaai"
+  },
+  "tawny_owl": {
+    "name": "Bosuil",
+    "scoring": "5 punten per Bosuil"
+  },
+  "peacock_butterfly": {
+    "name": "Dagpauwoog",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Grote weerschijnvlinder",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Keizersmantel",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Rouwmantel",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Grote vos",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Rode eekhoorn",
+    "scoring": "5 punten als op een Eik",
+    "context": "Hoeveel Rode eekhoorns zitten op een Eik?"
+  },
+  "golden_eagle": {
+    "name": "Steenarend",
+    "scoring": "1 punt per dier met poten + 1 per amfibie"
+  },
+  "bearded_vulture": {
+    "name": "Lammergier",
+    "scoring": "1 punt per grotkaart"
+  },
+  "common_raven": {
+    "name": "Raaf",
+    "scoring": "5 punten per Raaf"
+  },
+  "phoebus_apollo": {
+    "name": "Apollovlinder",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Kerkuil",
+    "scoring": "3 punten per vleermuis"
+  },
+  "brimstone": {
+    "name": "Citroenvlinder",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Rode kardinaal",
+    "scoring": "5 punten per Rode kardinaal"
+  },
+  "cuckoo": {
+    "name": "Koekoek",
+    "scoring": "7 punten per Koekoek"
+  },
+  "eurasian_magpie": {
+    "name": "Ekster",
+    "scoring": "3 punten per Ekster"
+  },
+  "map_butterfly": {
+    "name": "Landkaartje",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Maretak",
+    "scoring": "1 punt per plant"
+  },
+  "nightingale": {
+    "name": "Nachtegaal",
+    "scoring": "5 punten als op een struik",
+    "context": "Hoeveel Nachtegalen zitten op een struik?"
+  },
+  "robin": {
+    "name": "Roodborst",
+    "scoring": "1 punt per insect"
+  },
+  "whinchat": {
+    "name": "Paapje",
+    "scoring": "1 punt per plant"
+  },
+  "common_toad": {
+    "name": "Gewone pad",
+    "scoring": "5 punten per Gewone pad die een boom deelt met een andere",
+    "context": "Hoeveel Gewone padden delen een boom met een andere?"
+  },
+  "fire_salamander": {
+    "name": "Vuursalamander",
+    "scoring": "Set-score: 5/15/25 voor 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Boomkikker",
+    "scoring": "5 punten per mug per Boomkikker"
+  },
+  "stag_beetle": {
+    "name": "Vliegend hert",
+    "scoring": "1 punt per dier met poten"
+  },
+  "wood_ant": {
+    "name": "Rode bosmier",
+    "scoring": "2 punten per kaart in onderste plekken (automatisch geteld)"
+  },
+  "penny_bun": {
+    "name": "Eekhoorntjesbrood",
+    "scoring": "0 punten (telt als paddenstoel)"
+  },
+  "chanterelle": {
+    "name": "Hanenkam",
+    "scoring": "0 punten (telt als paddenstoel)"
+  },
+  "fly_agaric": {
+    "name": "Vliegenzwam",
+    "scoring": "0 punten (telt als paddenstoel)"
+  },
+  "parasol_mushroom": {
+    "name": "Grote parasolzwam",
+    "scoring": "0 punten (telt als paddenstoel)"
+  },
+  "moss": {
+    "name": "Mos",
+    "scoring": "10 punten per stuk bij 10+ bomen"
+  },
+  "wild_strawberries": {
+    "name": "Bosaardbeien",
+    "scoring": "10 punten per stuk bij 8+ boomsoorten"
+  },
+  "hedgehog": {
+    "name": "Egel",
+    "scoring": "2 punten per vlinder"
+  },
+  "pond_turtle": {
+    "name": "Europese moerasschildpad",
+    "scoring": "5 punten per Europese moerasschildpad"
+  },
+  "blackberries": {
+    "name": "Bramen",
+    "scoring": "2 punten per plant (inclusief zichzelf)"
+  },
+  "fireflies": {
+    "name": "Glimwormen",
+    "scoring": "Glimwormset: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Mol",
+    "scoring": "0 punten"
+  },
+  "tree_ferns": {
+    "name": "Boomvarens",
+    "scoring": "6 punten per amfibie"
+  },
+  "alpine_newt": {
+    "name": "Alpenwatersalamander",
+    "scoring": "2 punten per insect"
+  },
+  "blueberry": {
+    "name": "Bosbes",
+    "scoring": "2 punten per unieke vogelsoort"
+  },
+  "gentian": {
+    "name": "Gentiaan",
+    "scoring": "3 punten per vlinder"
+  },
+  "edelweiss": {
+    "name": "Edelweiss",
+    "scoring": "3 punten per Edelweiss"
+  },
+  "black_trumpet": {
+    "name": "Hoorn des overvloeds",
+    "scoring": "0 punten (telt als paddenstoel)"
+  },
+  "digitalis": {
+    "name": "Vingerhoedskruid",
+    "scoring": "Plantendiversiteit: 0/1/3/6/10/15 per unieke plantensoort"
+  },
+  "great_green_bush_cricket": {
+    "name": "Grote groene sabelsprinkhaan",
+    "scoring": "1 punt per insect (inclusief zichzelf)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Wateraardbei",
+    "scoring": "15/7/3 ptn afhankelijk van aantal bomen (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Grote brandnetel",
+    "scoring": "2 punten per vlinder"
+  },
+  "water_vole": {
+    "name": "Woelrat",
+    "scoring": "0 punten (telt als amfibie)"
+  },
+  "wild_tulip": {
+    "name": "Wilde tulp",
+    "scoring": "3 punten per Wilde tulp"
+  },
+  "barbastelle": {
+    "name": "Mopsvleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "bechsteins_bat": {
+    "name": "Bechsteins vleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "brown_long_eared_bat": {
+    "name": "Gewone grootoorvleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Grote hoefijzerneus",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "savis_pipistrelle": {
+    "name": "Savi's dwergvleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "common_pipistrelle": {
+    "name": "Gewone dwergvleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "roe_deer": {
+    "name": "Ree",
+    "scoring": "3 punten per kaart met hetzelfde boomsymbool (inclusief zichzelf)",
+    "context": "Kaarten met hetzelfde boomsymbool als je Ree"
+  },
+  "red_deer": {
+    "name": "Edelhert",
+    "scoring": "1 punt per boom en per plant"
+  },
+  "chamois": {
+    "name": "Gems",
+    "scoring": "3 punten per kaart met hetzelfde boomsymbool (inclusief zichzelf)",
+    "context": "Kaarten met hetzelfde boomsymbool als je Gems"
+  },
+  "steinbock": {
+    "name": "Alpensteenbok",
+    "scoring": "10 punten per Alpensteenbok"
+  },
+  "lynx": {
+    "name": "Lynx",
+    "scoring": "10 punten bij minstens 1 Ree"
+  },
+  "wolf": {
+    "name": "Wolf",
+    "scoring": "5 punten per hert"
+  },
+  "wild_boar": {
+    "name": "Wild zwijn",
+    "scoring": "10 punten per stuk bij minstens 1 Frisling; anders 0"
+  },
+  "european_badger": {
+    "name": "Das",
+    "scoring": "2 punten per Das"
+  },
+  "european_hare": {
+    "name": "Haas",
+    "scoring": "Punten gelijk aan totaal aantal Hazen per Haas"
+  },
+  "european_fat_dormouse": {
+    "name": "Relmuis",
+    "scoring": "15 punten als aan een boom met een vleermuis (tegenoverliggende plek)",
+    "context": "Hoeveel zitten aan een boom met een vleermuis?"
+  },
+  "squeaker": {
+    "name": "Hazelmuis",
+    "scoring": "1 punt per Hazelmuis"
+  },
+  "brown_bear": {
+    "name": "Bruine beer",
+    "scoring": "0 punten"
+  },
+  "fox": {
+    "name": "Vos",
+    "scoring": "2 punten per Haas in je bos"
+  },
+  "violet_carpenter_bee": {
+    "name": "Blauwzwarte houtbij",
+    "scoring": "Telt als een extra boom van de soort waaraan ze vastzit",
+    "context": "Aan welke boom vastgemaakt?"
+  },
+  "beech_marten": {
+    "name": "Steenmarter",
+    "scoring": "5 punten per volledig bezette boom",
+    "context": "Hoeveel volledig bezette bomen in je bos?"
+  },
+  "fallow_deer": {
+    "name": "Damhert",
+    "scoring": "3 punten per evenhoevige (inclusief zichzelf)"
+  },
+  "gnat": {
+    "name": "Mug",
+    "scoring": "1 punt per vleermuis"
+  },
+  "large_tortoiseshell": {
+    "name": "Grote vos",
+    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
+  },
+  "raccoon": {
+    "name": "Wasbeer",
+    "scoring": "0 punten"
+  },
+  "alpine_marmot": {
+    "name": "Alpenmarmot",
+    "scoring": "3 punten per unieke plantensoort"
+  },
+  "mountain_hare": {
+    "name": "Sneeuwhaas",
+    "scoring": "Punten gelijk aan totaal aantal Hazen (telt als Haas)"
+  },
+  "capercaillie": {
+    "name": "Auerhoen",
+    "scoring": "1 punt per plant"
+  },
+  "bee_swarm": {
+    "name": "Bijenzwerm",
+    "scoring": "1 punt per plant"
+  },
+  "crane_fly": {
+    "name": "Langpootmug",
+    "scoring": "1 punt per vleermuis"
+  },
+  "elk": {
+    "name": "Eland",
+    "scoring": "2 ptn per jonge boom en per kaart met de boomsymbolen van de Eland (incl. zichzelf)",
+    "context": "Kaarten met de boomsymbolen van de Eland + jonge bomen"
+  },
+  "european_bison": {
+    "name": "Wisent",
+    "scoring": "2 ptn per kaart met een van zijn boomsymbolen (incl. zichzelf)",
+    "context": "Passende boomsymbool-kaarten per Wisent (incl. zichzelf)"
+  },
+  "european_polecat": {
+    "name": "Bunzing",
+    "scoring": "10 punten als alleen op zijn boom",
+    "context": "Hoeveel zijn er alleen op hun boom?"
+  },
+  "european_wildcat": {
+    "name": "Europese wilde kat",
+    "scoring": "1 punt per bosrand-kaart (inclusief zichzelf)"
+  },
+  "genet": {
+    "name": "Genetkat",
+    "scoring": "5 punten per Genetkat"
+  },
+  "red_panda": {
+    "name": "Rode panda",
+    "scoring": "2 punten per Rode panda"
+  },
+  "sable": {
+    "name": "Sabelmarter",
+    "scoring": "3 punten per dier met poten"
+  },
+  "troll": {
+    "name": "Trol",
+    "scoring": "1 punt per boom"
+  },
+  "white_stork": {
+    "name": "Ooievaar",
+    "scoring": "1 punt per insect + 1 per amfibie"
+  },
+  "wild_boar_female": {
+    "name": "Wild zwijn (zeug)",
+    "scoring": "10 punten per stuk bij minstens 1 Frisling; anders 0"
+  },
+  "cave": {
+    "name": "Grot",
+    "scoring": "1 punt per kaart in de grot"
+  },
+  "collectors_cave": {
+    "name": "Verzamelaarsgrot",
+    "scoring": "Elke gewone grotkaart scoort 2 in plaats van 1"
+  },
+  "bat_cave": {
+    "name": "Vleermuisgrot",
+    "scoring": "Elke vleermuis scoort 3 extra punten"
+  },
+  "lonely_cave": {
+    "name": "Eenzame grot",
+    "scoring": "5 punten als er geen gewone grotkaarten zijn; anders 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Frisling",
+    "scoring": "1 punt per Frisling"
+  },
+  "honey_bee": {
+    "name": "Honingbij",
+    "scoring": "1 punt per plant"
+  },
+
+  "ash": {
+    "name": "Es",
+    "scoring": "1 punt per kaart met hetzelfde boomsymbool + 1 per plant (planten automatisch geteld)",
+    "context": "Kaarten met hetzelfde gekleurde boomsymbool"
+  },
+  "black_alder": {
+    "name": "Zwarte els",
+    "scoring": "5 punten per Zwarte els"
+  },
+  "crab_apple": {
+    "name": "Wilde appel",
+    "scoring": "8 punten per volledig bezette Wilde appel",
+    "context": "Hoeveel Wilde appels zijn volledig bezet?"
+  },
+  "goat_willow": {
+    "name": "Boswilg",
+    "scoring": "1 punt per veen in je bos"
+  },
+  "moor_birch": {
+    "name": "Zachte berk",
+    "scoring": "1 punt per Zachte berk"
+  },
+  "sessile_oak": {
+    "name": "Wintereik",
+    "scoring": "1 punt per boom/struik in je bos"
+  },
+  "common_hazel_d": {
+    "name": "Hazelaar",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "elderberry_d": {
+    "name": "Gewone vlier",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+
+  "blanket_bog": {
+    "name": "Hoogveen",
+    "scoring": "Verdubbelt de punten van planten die eronder liggen",
+    "context": "Welke planten liggen onder dit Hoogveen?"
+  },
+  "fountainhead": {
+    "name": "Bron",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "lowland_heath": {
+    "name": "Laaglandheide",
+    "scoring": "2 punten per amfibie in je bos"
+  },
+  "rhos_pasture": {
+    "name": "Veenweide",
+    "scoring": "2 punten per hoefdier in je bos"
+  },
+  "rivulet": {
+    "name": "Beekje",
+    "scoring": "2 punten per boomsymbool in je bos",
+    "context": "Hoeveel boomsymbolen zijn er in je bos?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "valley_mire": {
+    "name": "Dalveen",
+    "scoring": "2 punten per insect in je bos"
+  },
+  "warrens": {
+    "name": "Konijnenholen",
+    "scoring": "2 punten per dier met poten in je bos"
+  },
+  "wet_woodland": {
+    "name": "Nat bos",
+    "scoring": "2 punten per veen in je bos (incl. zichzelf)"
+  },
+  "universal_moor": {
+    "name": "Universeel veen",
+    "scoring": "0 punten (telt als veen)"
+  },
+
+  "barn_owl_d": {
+    "name": "Kerkuil",
+    "scoring": "3 punten per vleermuis in je bos"
+  },
+  "beautiful_demoiselle": {
+    "name": "Bosbeekjuffer",
+    "scoring": "Libellenset: 0/5/10/15/30 voor 1-5 soorten"
+  },
+  "black_tailed_godwit": {
+    "name": "Grutto",
+    "scoring": "10 punten per stuk als je de meeste venen hebt (of gelijkspel)"
+  },
+  "buzzard": {
+    "name": "Buizerd",
+    "scoring": "2 punten per muis in je bos"
+  },
+  "common_moorhen": {
+    "name": "Waterhoen",
+    "scoring": "2 punten per libel in je bos"
+  },
+  "cuckoo_d": {
+    "name": "Koekoek",
+    "scoring": "7 punten per Koekoek"
+  },
+  "curlew": {
+    "name": "Wulp",
+    "scoring": "10 punten per stuk bij 5+ insecten; anders 3 per stuk"
+  },
+  "emerald_damselfly": {
+    "name": "Houtpantserjuffer",
+    "scoring": "Libellenset: 0/5/10/15/30 voor 1-5 soorten"
+  },
+  "grey_heron": {
+    "name": "Blauwe reiger",
+    "scoring": "8 punten per Blauwe reiger"
+  },
+  "keeled_skimmer": {
+    "name": "Beekoeverlibel",
+    "scoring": "Libellenset: 0/5/10/15/30 voor 1-5 soorten"
+  },
+  "meadow_pipit": {
+    "name": "Graspieper",
+    "scoring": "1/3/6/10 ptn voor 1/2/4/6+ vogelsoorten"
+  },
+  "small_red_damselfly": {
+    "name": "Koraaljuffer",
+    "scoring": "Libellenset: 0/5/10/15/30 voor 1-5 soorten"
+  },
+  "southern_damselfly": {
+    "name": "Mercuurwaterjuffer",
+    "scoring": "Libellenset: 0/5/10/15/30 voor 1-5 soorten"
+  },
+  "wheatear": {
+    "name": "Tapuit",
+    "scoring": "5 punten per stuk als in een veen",
+    "context": "Hoeveel Tapuiten zitten in een veen?"
+  },
+
+  "adder": {
+    "name": "Adder",
+    "scoring": "1 punt per amfibie + 1 per muis in je bos"
+  },
+  "adders_tongue": {
+    "name": "Addertong",
+    "scoring": "3 punten per Addertong"
+  },
+  "beaver": {
+    "name": "Bever",
+    "scoring": "Punten gelijk aan aantal kaarten in je grot"
+  },
+  "blue_ground_beetle": {
+    "name": "Blauwe schallebijter",
+    "scoring": "1 punt per kaart op onderste plek (incl. zichzelf)"
+  },
+  "blueberry_d": {
+    "name": "Bosbes",
+    "scoring": "2 punten per unieke vogelsoort"
+  },
+  "bog_asphodel": {
+    "name": "Beenbreek",
+    "scoring": "1 punt per veen in je bos"
+  },
+  "common_lizard": {
+    "name": "Levendbarende hagedis",
+    "scoring": "15 punten per stuk bij 3+ amfibiesoorten; anders 5 per stuk"
+  },
+  "grass_snake": {
+    "name": "Ringslang",
+    "scoring": "5 punten per Ringslang"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Bergnachtorchis",
+    "scoring": "15 punten per stuk bij 5+ plantensoorten; anders 3 per stuk"
+  },
+  "heather": {
+    "name": "Struikhei",
+    "scoring": "1 punt per insect in je bos"
+  },
+  "meadowsweet": {
+    "name": "Moerasspirea",
+    "scoring": "5 punten per stuk als in een veen",
+    "context": "Hoeveel Moerasspirea's liggen in een veen?"
+  },
+  "moor_frog": {
+    "name": "Heikikker",
+    "scoring": "8 punten per stuk bij 5+ venen; anders 0"
+  },
+  "otter": {
+    "name": "Otter",
+    "scoring": "3 punten per amfibie in je bos"
+  },
+  "royal_fern": {
+    "name": "Koningsvaren",
+    "scoring": "2 punten per unieke plantensoort"
+  },
+  "warty_newt": {
+    "name": "Kamsalamander",
+    "scoring": "Set-score: 5/15/25 voor 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Krabbenscheer",
+    "scoring": "2 punten per libel in je bos"
+  },
+
+  "alcathoe_bat": {
+    "name": "Nimfvleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "brandts_bat": {
+    "name": "Brandts vleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "common_noctule": {
+    "name": "Rosse vleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "daubentons_bat": {
+    "name": "Watervleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "serotine_bat": {
+    "name": "Laatvlieger",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "capercaillie_d": {
+    "name": "Auerhoen",
+    "scoring": "1 punt per plant in je bos"
+  },
+  "common_pheasant": {
+    "name": "Fazant",
+    "scoring": "1 punt per boom en struik in je bos"
+  },
+  "dartmoor_badger": {
+    "name": "Dartmoor-das",
+    "scoring": "2 punten per dier met poten (incl. zichzelf)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Zwart Dartmoor-konijn",
+    "scoring": "Elk konijn scoort punten gelijk aan totaal aantal konijnen"
+  },
+  "dartmoor_pony": {
+    "name": "Dartmoorpony",
+    "scoring": "15 punten per stuk bij de meeste venen (of gelijkspel); anders 5 per stuk"
+  },
+  "dartmoor_sheep": {
+    "name": "Dartmoor-schaap",
+    "scoring": "2 punten per hoefdier (incl. zichzelf)"
+  },
+  "field_vole": {
+    "name": "Aardmuis",
+    "scoring": "1 punt per muis in je bos (incl. zichzelf)"
+  },
+  "gnat_d": {
+    "name": "Mug",
+    "scoring": "1 punt per vleermuis in je bos"
+  },
+  "lake_fly": {
+    "name": "Dansmug",
+    "scoring": "1 punt per vleermuis in je bos"
+  },
+  "nuthatch": {
+    "name": "Boomklever",
+    "scoring": "10 punten per stuk bij een volledig bezette boom",
+    "context": "Hoeveel Boomklevers zitten bij volledig bezette bomen?"
+  },
+  "roe_deer_d": {
+    "name": "Ree",
+    "scoring": "3 punten per kaart met overeenkomend boomsymbool (incl. zichzelf)",
+    "context": "Kaarten met hetzelfde boomsymbool als je Ree"
+  },
+  "shrew": {
+    "name": "Spitsmuis",
+    "scoring": "1 punt per Spitsmuis"
+  },
+  "treecreeper": {
+    "name": "Boomkruiper",
+    "scoring": "5 punten per Boomkruiper"
+  },
+  "wood_mouse": {
+    "name": "Bosmuis",
+    "scoring": "1 punt per muis in je bos (incl. zichzelf)"
+  },
+
+  "cave_d": {
+    "name": "Grot",
+    "scoring": "1 punt per kaart in de grot"
+  },
+  "lonely_cave_d": {
+    "name": "Grot 4",
+    "scoring": "5 punten"
+  },
+
+  "holly": {
+    "name": "Hulst",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "gorse": {
+    "name": "Gaspeldoorn",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "coastal_heath": {
+    "name": "Kustheide",
+    "scoring": "Verdubbelt de punten van vogels die eronder liggen",
+    "context": "Welke vogels liggen onder deze Kustheide?"
+  },
+  "stone_circle": {
+    "name": "Steencirkel",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "waxcap_grassland": {
+    "name": "Wasplatengrasland",
+    "scoring": "0 punten (alleen permanent effect)"
+  },
+  "dartford_warbler": {
+    "name": "Provençaalse grasmus",
+    "scoring": "1 punt"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Gewone bronlibel",
+    "scoring": "Libellenset: 0/5/10/15/30/50 voor 1-6 soorten"
+  },
+  "grey_wagtail": {
+    "name": "Grote gele kwikstaart",
+    "scoring": "1 punt per Exmoor-kaart in je bos"
+  },
+  "harvest_mouse": {
+    "name": "Dwergmuis",
+    "scoring": "1 punt per vogel"
+  },
+  "peregrine_falcon": {
+    "name": "Slechtvalk",
+    "scoring": "1 punt per muis"
+  },
+  "pied_flycatcher": {
+    "name": "Bonte vliegenvanger",
+    "scoring": "4 punten"
+  },
+  "bank_vole": {
+    "name": "Rosse woelmuis",
+    "scoring": "3 punten"
+  },
+  "natterjack_toad": {
+    "name": "Rugstreeppad",
+    "scoring": "1 punt"
+  },
+  "smooth_snake": {
+    "name": "Gladde slang",
+    "scoring": "1 punt per boomsymbool in je bos",
+    "context": "Hoeveel boomsymbolen zijn er in je bos?"
+  },
+  "sundew": {
+    "name": "Zonnedauw",
+    "scoring": "1 punt per insect"
+  },
+  "tormentil": {
+    "name": "Tormentil",
+    "scoring": "5 punten"
+  },
+  "wood_rush": {
+    "name": "Grote veldbies",
+    "scoring": "3 punten"
+  },
+  "bilberry_bumblebee": {
+    "name": "Bosbeshommel",
+    "scoring": "2 punten per struik"
+  },
+  "dormouse": {
+    "name": "Relmuis",
+    "scoring": "15 punten per stuk als er een vleermuis op dezelfde boom zit",
+    "context": "Hoeveel delen een boom met een vleermuis?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Veulen",
+    "scoring": "1 punt"
+  },
+  "horse": {
+    "name": "Paard",
+    "scoring": "10 punten per pony (Dartmoorpony, Paard, Veulen)"
+  },
+  "red_devon_cow": {
+    "name": "Rode Devon-koe",
+    "scoring": "1 punt per plant"
+  },
+  "whiskered_bat": {
+    "name": "Baardvleermuis",
+    "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
+  },
+  "cave_exmoor": {
+    "name": "Grot (Exmoor)",
+    "scoring": "1 punt per kaart in de grot"
+  }
+}

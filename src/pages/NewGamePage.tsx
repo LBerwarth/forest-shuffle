@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Globe, Calculator, Trash2 } from 'lucide-react'
+import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Calculator, Trash2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { NoAppNotice } from '@/components/NoAppNotice'
@@ -12,7 +12,6 @@ import { useSettingsStore } from '@/store/settings-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { createLiveSession, joinLiveSession } from '@/lib/supabase-api'
 import { readLastJoinedPlayer, writeLastJoinedPlayer } from '@/lib/last-joined-player'
-import { LanguagePicker } from '@/components/LanguagePicker'
 import { PLAYER_COLORS } from '@/types/player'
 import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
@@ -286,19 +285,6 @@ export function NewGamePage() {
             </CardContent>
           </Card>
         )}
-
-        {/* Language */}
-        <Card className="mb-6">
-          <CardHeader>
-            <div className="flex items-center gap-2">
-              <Globe className="h-4 w-4 text-forest-500" />
-              <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.language')}</h2>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <LanguagePicker />
-          </CardContent>
-        </Card>
 
         {/* Continue to mode selection */}
         <Button

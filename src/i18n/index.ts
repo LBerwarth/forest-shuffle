@@ -9,6 +9,8 @@ import deCommon from './locales/de/common.json'
 import deCards from './locales/de/cards.json'
 import esCommon from './locales/es/common.json'
 import esCards from './locales/es/cards.json'
+import nlCommon from './locales/nl/common.json'
+import nlCards from './locales/nl/cards.json'
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -16,6 +18,7 @@ i18n.use(initReactI18next).init({
     fr: { common: frCommon, cards: frCards },
     de: { common: deCommon, cards: deCards },
     es: { common: esCommon, cards: esCards },
+    nl: { common: nlCommon, cards: nlCards },
   },
   lng: 'en',
   fallbackLng: 'en',

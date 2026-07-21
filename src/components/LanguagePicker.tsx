@@ -6,20 +6,21 @@ const LANGUAGES = [
   { code: 'fr' as const, label: 'Français' },
   { code: 'de' as const, label: 'Deutsch' },
   { code: 'es' as const, label: 'Español' },
+  { code: 'nl' as const, label: 'Nederlands' },
 ]
 
 export function LanguagePicker() {
   const { language, setLanguage } = useSettingsStore()
 
   return (
-    <div className="grid grid-cols-2 gap-2">
+    <div className="flex flex-wrap gap-2">
       {LANGUAGES.map(({ code, label }) => (
         <button
           key={code}
           type="button"
           onClick={() => setLanguage(code)}
           className={cn(
-            'rounded-lg px-3 py-2 text-sm font-medium transition-all',
+            'rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition-all',
             language === code
               ? 'bg-forest-500 text-white'
               : 'bg-forest-100 text-forest-600 hover:bg-forest-200',

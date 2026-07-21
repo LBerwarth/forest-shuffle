@@ -9,13 +9,13 @@ interface SettingsState {
   includeWoodland: boolean
   includeExploration: boolean
   includeExmoor: boolean
-  language: 'en' | 'fr' | 'de' | 'es'
+  language: 'en' | 'fr' | 'de' | 'es' | 'nl'
   setEdition: (edition: GameEdition) => void
   toggleAlpine: () => void
   toggleWoodland: () => void
   toggleExploration: () => void
   toggleExmoor: () => void
-  setLanguage: (lang: 'en' | 'fr' | 'de' | 'es') => void
+  setLanguage: (lang: 'en' | 'fr' | 'de' | 'es' | 'nl') => void
 }
 
 export const useSettingsStore = create<SettingsState>()(
