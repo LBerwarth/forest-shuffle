@@ -273,6 +273,21 @@
     "version": "v0.1.0",
     "appDesc": "Score calculator & game tracker for the Forest Shuffle board game."
   },
+  "feedback": {
+    "title": "Feedback",
+    "desc": "Spotted a wrong translation or a scoring rule that's off? Pick the cards and tell me what's wrong.",
+    "addCard": "Add a card…",
+    "noMatches": "No cards found",
+    "type_translation": "Translation",
+    "type_rule": "Rule / scoring",
+    "propositionPlaceholder": "What should it be? (correct name or rule)",
+    "messagePlaceholder": "Anything else? (optional)",
+    "remove": "Remove",
+    "send": "Send feedback",
+    "sending": "Sending…",
+    "sent": "Thanks! Your feedback has been sent.",
+    "emailSubject": "Forest Shuffle feedback"
+  },
   "scoring": {
     "alpine": "Alpine",
     "pts": "pts",

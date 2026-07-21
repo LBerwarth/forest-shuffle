@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Mountain, Globe, Download, Trash2 } from 'lucide-react'
+import { ArrowLeft, Mountain, Globe, Download, Trash2, MessageSquare } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { useSettingsStore } from '@/store/settings-store'
@@ -11,6 +11,7 @@ import { deleteAllDeviceData } from '@/lib/supabase-api'
 import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
 import { LanguagePicker } from '@/components/LanguagePicker'
+import { FeedbackForm } from '@/components/FeedbackForm'
 
 export function SettingsPage() {
   const { t } = useTranslation()
@@ -273,6 +274,20 @@ export function SettingsPage() {
               </Button>
             </div>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Feedback */}
+      <Card className="mb-4">
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <MessageSquare className="h-4 w-4 text-forest-500" />
+            <h2 className="font-heading text-base font-semibold text-forest-700">{t('feedback.title')}</h2>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <p className="text-xs text-forest-400 mb-3">{t('feedback.desc')}</p>
+          <FeedbackForm />
         </CardContent>
       </Card>
 

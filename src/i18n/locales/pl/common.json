@@ -275,6 +275,21 @@
     "version": "v0.1.0",
     "appDesc": "Kalkulator punktów i rejestr gier do gry planszowej Forest Shuffle."
   },
+  "feedback": {
+    "title": "Opinia",
+    "desc": "Zauważyłeś błędne tłumaczenie albo nieprawidłową zasadę punktacji? Wybierz karty i napisz, co jest nie tak.",
+    "addCard": "Dodaj kartę…",
+    "noMatches": "Nie znaleziono kart",
+    "type_translation": "Tłumaczenie",
+    "type_rule": "Zasada / punktacja",
+    "propositionPlaceholder": "Jak powinno być? (poprawna nazwa lub zasada)",
+    "messagePlaceholder": "Coś jeszcze? (opcjonalnie)",
+    "remove": "Usuń",
+    "send": "Wyślij opinię",
+    "sending": "Wysyłanie…",
+    "sent": "Dzięki! Twoja opinia została wysłana.",
+    "emailSubject": "Opinia o Forest Shuffle"
+  },
   "scoring": {
     "alpine": "Alpine",
     "pts": "pkt",

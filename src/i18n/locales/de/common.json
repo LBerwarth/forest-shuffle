@@ -273,6 +273,21 @@
     "version": "v0.1.0",
     "appDesc": "Punkterechner & Spielverfolgung für das Brettspiel Forest Shuffle."
   },
+  "feedback": {
+    "title": "Feedback",
+    "desc": "Falsche Übersetzung oder eine Wertungsregel, die nicht stimmt? Wähl die Karten aus und sag mir, was falsch ist.",
+    "addCard": "Karte hinzufügen…",
+    "noMatches": "Keine Karten gefunden",
+    "type_translation": "Übersetzung",
+    "type_rule": "Regel / Wertung",
+    "propositionPlaceholder": "Wie sollte es lauten? (richtiger Name oder Regel)",
+    "messagePlaceholder": "Noch etwas? (optional)",
+    "remove": "Entfernen",
+    "send": "Feedback senden",
+    "sending": "Senden…",
+    "sent": "Danke! Dein Feedback wurde gesendet.",
+    "emailSubject": "Forest Shuffle Feedback"
+  },
   "scoring": {
     "alpine": "Alpin",
     "pts": "Pkt.",

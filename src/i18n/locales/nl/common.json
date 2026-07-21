@@ -273,6 +273,21 @@
     "version": "v0.1.0",
     "appDesc": "Puntenteller & partijtracker voor het bordspel Forest Shuffle."
   },
+  "feedback": {
+    "title": "Feedback",
+    "desc": "Een verkeerde vertaling of een scoreregel die niet klopt gezien? Kies de kaarten en vertel me wat er mis is.",
+    "addCard": "Kaart toevoegen…",
+    "noMatches": "Geen kaarten gevonden",
+    "type_translation": "Vertaling",
+    "type_rule": "Regel / score",
+    "propositionPlaceholder": "Wat moet het zijn? (juiste naam of regel)",
+    "messagePlaceholder": "Nog iets? (optioneel)",
+    "remove": "Verwijderen",
+    "send": "Feedback versturen",
+    "sending": "Versturen…",
+    "sent": "Bedankt! Je feedback is verstuurd.",
+    "emailSubject": "Forest Shuffle feedback"
+  },
   "scoring": {
     "alpine": "Alpine",
     "pts": "ptn",

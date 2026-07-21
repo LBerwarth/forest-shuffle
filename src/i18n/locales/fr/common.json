@@ -273,6 +273,21 @@
     "version": "v0.1.0",
     "appDesc": "Calculateur de scores et suivi de parties pour le jeu Forest Shuffle."
   },
+  "feedback": {
+    "title": "Retour",
+    "desc": "Tu as repéré une mauvaise traduction ou une règle de score erronée ? Choisis les cartes et dis-moi ce qui ne va pas.",
+    "addCard": "Ajouter une carte…",
+    "noMatches": "Aucune carte trouvée",
+    "type_translation": "Traduction",
+    "type_rule": "Règle / score",
+    "propositionPlaceholder": "Qu'est-ce que ça devrait être ? (nom ou règle correct)",
+    "messagePlaceholder": "Autre chose ? (facultatif)",
+    "remove": "Retirer",
+    "send": "Envoyer le retour",
+    "sending": "Envoi…",
+    "sent": "Merci ! Ton retour a été envoyé.",
+    "emailSubject": "Retour Forest Shuffle"
+  },
   "scoring": {
     "alpine": "Alpine",
     "pts": "pts",

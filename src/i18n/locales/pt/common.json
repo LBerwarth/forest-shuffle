@@ -273,6 +273,21 @@
     "version": "v0.1.0",
     "appDesc": "Calculadora de pontos e histórico de partidas para o jogo de tabuleiro Forest Shuffle."
   },
+  "feedback": {
+    "title": "Feedback",
+    "desc": "Encontrou uma tradução errada ou uma regra de pontuação incorreta? Escolha as cartas e diga o que está errado.",
+    "addCard": "Adicionar uma carta…",
+    "noMatches": "Nenhuma carta encontrada",
+    "type_translation": "Tradução",
+    "type_rule": "Regra / pontuação",
+    "propositionPlaceholder": "Como deveria ser? (nome ou regra corretos)",
+    "messagePlaceholder": "Mais alguma coisa? (opcional)",
+    "remove": "Remover",
+    "send": "Enviar feedback",
+    "sending": "Enviando…",
+    "sent": "Obrigado! Seu feedback foi enviado.",
+    "emailSubject": "Feedback do Forest Shuffle"
+  },
   "scoring": {
     "alpine": "Alpine",
     "pts": "pts",

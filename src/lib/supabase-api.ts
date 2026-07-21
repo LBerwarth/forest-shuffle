@@ -264,6 +264,38 @@ export async function saveGame(game: GameWithPlayers): Promise<GameWithPlayers> 
   return createGame(game)
 }
 
+// ─── Feedback ─────────────────────────────────────────────────────────────
+
+export interface FeedbackItem {
+  cardKey: string
+  type: 'translation' | 'rule'
+  proposition: string
+}
+
+export interface FeedbackInput {
+  language: string
+  appVersion: string
+  message?: string
+  items: FeedbackItem[]
+}
+
+/**
+ * Store user feedback. Write-only (RLS grants insert, not select), so no
+ * .select() chain. Silently no-ops when Supabase isn't configured so the
+ * caller's email fallback still runs.
+ */
+export async function submitFeedback(input: FeedbackInput): Promise<void> {
+  if (!supabase) return
+  const { error } = await supabase.from('feedback').insert({
+    device_id: getDeviceId(),
+    language: input.language,
+    app_version: input.appVersion,
+    message: input.message || null,
+    items: input.items,
+  })
+  if (error) throw error
+}
+
 // ─── Live Sessions ──────────────────────────────────────────────────────────
 
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
