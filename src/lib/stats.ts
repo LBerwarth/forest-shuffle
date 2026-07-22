@@ -25,7 +25,8 @@ export const STRATEGY_TAGS: readonly CardTag[] = [
 export type EditionFilter = 'all' | 'classic' | 'dartmoor'
 export type TimeFilter = 'all' | 'year' | 'month' | 'week'
 export type PlayerMatchMode = 'union' | 'intersection'
-export type PlayerCountFilter = 'all' | 1 | 2 | 3 | 4 | 5 | 6
+// 'group' = any multiplayer game (2+ players); 1 = solo.
+export type PlayerCountFilter = 'all' | 'group' | 1 | 2 | 3 | 4 | 5 | 6
 
 export function applyFilters(
   games: GameWithPlayers[],
@@ -42,7 +43,12 @@ export function applyFilters(
     const gameEdition = g.edition ?? 'classic'
     if (edition !== 'all' && gameEdition !== edition) return false
     if (cutoff !== null && new Date(g.played_at).getTime() < cutoff) return false
-    if (playerCount !== 'all' && g.player_count !== playerCount) return false
+    const count = g.player_count ?? g.players.length
+    if (playerCount === 'group') {
+      if (count < 2) return false
+    } else if (playerCount !== 'all' && count !== playerCount) {
+      return false
+    }
     if (selectedSet.size > 0) {
       const inGame = new Set(g.players.map((p) => p.player_id))
       if (matchMode === 'intersection') {

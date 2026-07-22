@@ -1,9 +1,12 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Trophy, Target, TrendingUp } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
+import { cn } from '@/lib/utils'
+
+type ScopeFilter = 'group' | 'solo' | 'all'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { CATEGORY_ORDER } from '@/data/categories'
@@ -29,7 +32,9 @@ export function PlayerDetailPage() {
   const { data: games = [] } = useGames()
   const player = allPlayers.find((p) => p.id === id)
 
-  const playerGames = useMemo(() => {
+  const [scope, setScope] = useState<ScopeFilter>('group')
+
+  const allPlayerGames = useMemo(() => {
     return games
       .filter((g) => g.players.some((p) => p.player_id === id))
       .map((g) => ({
@@ -38,6 +43,14 @@ export function PlayerDetailPage() {
       }))
       .sort((a, b) => new Date(a.played_at).getTime() - new Date(b.played_at).getTime())
   }, [games, id])
+
+  const playerGames = useMemo(() => {
+    if (scope === 'all') return allPlayerGames
+    return allPlayerGames.filter((g) => {
+      const count = g.player_count ?? g.players.length
+      return scope === 'solo' ? count < 2 : count >= 2
+    })
+  }, [allPlayerGames, scope])
 
   const stats = useMemo(() => {
     if (playerGames.length === 0) return null
@@ -100,6 +113,32 @@ export function PlayerDetailPage() {
           <h1 className="font-heading text-xl font-bold text-forest-800">{player.name}</h1>
         </div>
       </div>
+
+      {allPlayerGames.length > 0 && (
+        <div className="mb-4 flex items-center gap-2">
+          {(['group', 'solo', 'all'] as const).map((s) => (
+            <button
+              key={s}
+              type="button"
+              onClick={() => setScope(s)}
+              className={cn(
+                'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
+                scope === s
+                  ? 'bg-forest-500 text-white'
+                  : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
+              )}
+            >
+              {t(
+                s === 'group'
+                  ? 'leaderboard.playerCountGroup'
+                  : s === 'solo'
+                    ? 'leaderboard.playerCountSolo'
+                    : 'leaderboard.playerCountAll',
+              )}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Stats cards */}
       {stats && (

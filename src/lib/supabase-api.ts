@@ -453,7 +453,7 @@ export interface GlobalGamePlayerRow {
 }
 
 export async function fetchGlobalGamePlayers(
-  playerCount?: number,
+  playerCount?: number | 'group',
 ): Promise<GlobalGamePlayerRow[]> {
   if (!supabase) throw new Error('Supabase not configured')
   let query = supabase
@@ -467,7 +467,9 @@ export async function fetchGlobalGamePlayers(
     `)
     .order('total_score', { ascending: false })
     .limit(500)
-  if (playerCount !== undefined) {
+  if (playerCount === 'group') {
+    query = query.gte('games.player_count', 2)
+  } else if (playerCount !== undefined) {
     query = query.eq('games.player_count', playerCount)
   }
   const { data, error } = await query

@@ -13,7 +13,7 @@ interface StatsFiltersProps {
 
 const EDITION_OPTIONS: EditionFilter[] = ['all', 'classic', 'dartmoor']
 const TIME_OPTIONS: TimeFilter[] = ['all', 'year', 'month', 'week']
-const PLAYER_COUNT_OPTIONS: PlayerCountFilter[] = ['all', 1, 2, 3, 4, 5, 6]
+const PLAYER_COUNT_OPTIONS: PlayerCountFilter[] = ['group', 1, 'all', 2, 3, 4, 5, 6]
 
 export function StatsFilters({
   edition,
@@ -44,9 +44,11 @@ export function StatsFilters({
   const countLabel = (c: PlayerCountFilter) =>
     c === 'all'
       ? t('leaderboard.playerCountAll')
-      : c === 1
-        ? t('leaderboard.playerCountSolo')
-        : String(c)
+      : c === 'group'
+        ? t('leaderboard.playerCountGroup')
+        : c === 1
+          ? t('leaderboard.playerCountSolo')
+          : String(c)
 
   return (
     <div className="space-y-2 mb-4">

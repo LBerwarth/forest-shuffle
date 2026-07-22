@@ -38,7 +38,8 @@ export function LeaderboardPage() {
   const [time, setTime] = useState<TimeFilter>('all')
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>([])
   const [matchMode, setMatchMode] = useState<PlayerMatchMode>('union')
-  const [playerCount, setPlayerCount] = useState<PlayerCountFilter>('all')
+  // Default to group games so guaranteed solo wins don't pollute competitive stats.
+  const [playerCount, setPlayerCount] = useState<PlayerCountFilter>('group')
 
   const allPlayersEver = useMemo(
     () => aggregatePlayers(games, localPlayers),
