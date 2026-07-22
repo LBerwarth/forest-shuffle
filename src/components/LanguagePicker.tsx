@@ -16,6 +16,10 @@ const LANGUAGES = [
   { code: 'ru' as const, label: 'Русский' },
   { code: 'tr' as const, label: 'Türkçe' },
   { code: 'ca' as const, label: 'Català' },
+  { code: 'da' as const, label: 'Dansk' },
+  { code: 'sv' as const, label: 'Svenska' },
+  { code: 'no' as const, label: 'Norsk' },
+  { code: 'fi' as const, label: 'Suomi' },
 ]
 
 export function LanguagePicker() {

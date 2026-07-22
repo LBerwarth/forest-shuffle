@@ -389,10 +389,6 @@
     "name": "Mücke",
     "scoring": "1 Punkt pro Fledermaus"
   },
-  "large_tortoiseshell": {
-    "name": "Großer Fuchs",
-    "scoring": "Schmetterlinge: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Waschbär",
     "scoring": "0 Punkte"

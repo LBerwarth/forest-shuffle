@@ -1,0 +1,877 @@
+{
+  "birch": {
+    "name": "Bjørk",
+    "scoring": "1 poeng per Bjørk"
+  },
+  "beech": {
+    "name": "Bøk",
+    "scoring": "5 poeng hver hvis du har 4+ Bøk"
+  },
+  "douglas_fir": {
+    "name": "Douglasgran",
+    "scoring": "5 poeng per Douglasgran"
+  },
+  "oak": {
+    "name": "Eik",
+    "scoring": "10 poeng hver hvis du har 8+ trearter"
+  },
+  "horse_chestnut": {
+    "name": "Hestekastanje",
+    "scoring": "Settpoeng: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Lind",
+    "scoring": "1p hver; 3p hver hvis du har flest Lind (eller likt)",
+    "scoringSolo": "1p hver; 3p hver hvis du har minst 3 Lind"
+  },
+  "sycamore": {
+    "name": "Platanlønn",
+    "scoring": "1 poeng per tre i skogen din"
+  },
+  "silver_fir": {
+    "name": "Edelgran",
+    "scoring": "2 poeng per kort festet til Edelgran",
+    "context": "Kort festet til Edelgran"
+  },
+  "european_larch": {
+    "name": "Europalerk",
+    "scoring": "3 poeng per Europalerk"
+  },
+  "stone_pine": {
+    "name": "Sembrafuru",
+    "scoring": "1 poeng per Alpine-kort (inkludert seg selv)",
+    "context": "Kort festet til Sembrafuru"
+  },
+  "palm_tree": {
+    "name": "Palme",
+    "scoring": "1 poeng per fugl"
+  },
+  "turkey_oak": {
+    "name": "Frynseik",
+    "scoring": "1 poeng per klovdyr"
+  },
+  "o_christmas_tree": {
+    "name": "O juletre",
+    "scoring": "2 poeng per kort festet til dette treet",
+    "context": "Kort festet til O juletre"
+  },
+  "tree_sapling": {
+    "name": "Ungtre",
+    "scoring": "0 poeng (teller som et tre)"
+  },
+  "common_hazel": {
+    "name": "Hassel",
+    "scoring": "0 poeng (busk — kun permanent effekt)"
+  },
+  "elderberry": {
+    "name": "Svarthyll",
+    "scoring": "0 poeng (busk — kun permanent effekt)"
+  },
+  "blackthorn": {
+    "name": "Slåpetorn",
+    "scoring": "0 poeng (busk — kun permanent effekt)"
+  },
+  "bullfinch": {
+    "name": "Dompap",
+    "scoring": "2 poeng per insekt i skogen din"
+  },
+  "chaffinch": {
+    "name": "Bokfink",
+    "scoring": "5 poeng hvis på en Bøk",
+    "context": "Hvor mange Bokfink er på en Bøk?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Flaggspett",
+    "scoring": "10 poeng hvis du har flest trær (eller likt)",
+    "scoringSolo": "10 poeng hvis du har minst 10 trær"
+  },
+  "goshawk": {
+    "name": "Hønsehauk",
+    "scoring": "3 poeng per fugl (inkludert seg selv)"
+  },
+  "eurasian_jay": {
+    "name": "Nøtteskrike",
+    "scoring": "3 poeng per Nøtteskrike"
+  },
+  "tawny_owl": {
+    "name": "Kattugle",
+    "scoring": "5 poeng per Kattugle"
+  },
+  "peacock_butterfly": {
+    "name": "Dagpåfugløye",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Iris",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Keiserkåpe",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Sørgekåpe",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Kirsebærsommerfugl",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Ekorn",
+    "scoring": "5 poeng hvis på en Eik",
+    "context": "Hvor mange Ekorn er på en Eik?"
+  },
+  "golden_eagle": {
+    "name": "Kongeørn",
+    "scoring": "1 poeng per labbedyr + 1 per amfibium"
+  },
+  "bearded_vulture": {
+    "name": "Lammegribb",
+    "scoring": "1 poeng per hulekort"
+  },
+  "common_raven": {
+    "name": "Ravn",
+    "scoring": "5 poeng per Ravn"
+  },
+  "phoebus_apollo": {
+    "name": "Fjellapollo",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Tårnugle",
+    "scoring": "3 poeng per flaggermus"
+  },
+  "brimstone": {
+    "name": "Sitronsommerfugl",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Kardinal",
+    "scoring": "5 poeng per Kardinal"
+  },
+  "cuckoo": {
+    "name": "Gjøk",
+    "scoring": "7 poeng per Gjøk"
+  },
+  "eurasian_magpie": {
+    "name": "Skjære",
+    "scoring": "3 poeng per Skjære"
+  },
+  "map_butterfly": {
+    "name": "Kartsommerfugl",
+    "scoring": "Sommerfuglsett: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Misteltein",
+    "scoring": "1 poeng per plante"
+  },
+  "nightingale": {
+    "name": "Nattergal",
+    "scoring": "5 poeng hvis på en busk",
+    "context": "Hvor mange Nattergaler er på en busk?"
+  },
+  "robin": {
+    "name": "Rødstrupe",
+    "scoring": "1 poeng per insekt"
+  },
+  "whinchat": {
+    "name": "Buskskvett",
+    "scoring": "1 poeng per plante"
+  },
+  "common_toad": {
+    "name": "Nordpadde",
+    "scoring": "5 poeng per Nordpadde som deler et tre med en annen Nordpadde",
+    "context": "Hvor mange Nordpadder deler et tre med en annen?"
+  },
+  "fire_salamander": {
+    "name": "Ildsalamander",
+    "scoring": "Settpoeng: 5/15/25 for 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Løvfrosk",
+    "scoring": "5 poeng per knott per Løvfrosk"
+  },
+  "stag_beetle": {
+    "name": "Eikehjort",
+    "scoring": "1 poeng per labbedyr"
+  },
+  "wood_ant": {
+    "name": "Skogmaur",
+    "scoring": "2 poeng per kort i nederste plasser (telles automatisk)"
+  },
+  "penny_bun": {
+    "name": "Steinsopp",
+    "scoring": "0 poeng (teller som sopp)"
+  },
+  "chanterelle": {
+    "name": "Kantarell",
+    "scoring": "0 poeng (teller som sopp)"
+  },
+  "fly_agaric": {
+    "name": "Rød fluesopp",
+    "scoring": "0 poeng (teller som sopp)"
+  },
+  "parasol_mushroom": {
+    "name": "Parasollsopp",
+    "scoring": "0 poeng (teller som sopp)"
+  },
+  "moss": {
+    "name": "Mose",
+    "scoring": "10 poeng hver hvis du har 10+ trær"
+  },
+  "wild_strawberries": {
+    "name": "Markjordbær",
+    "scoring": "10 poeng hver hvis du har 8+ trearter"
+  },
+  "hedgehog": {
+    "name": "Pinnsvin",
+    "scoring": "2 poeng per sommerfugl"
+  },
+  "pond_turtle": {
+    "name": "Sumpskilpadde",
+    "scoring": "5 poeng per Sumpskilpadde"
+  },
+  "blackberries": {
+    "name": "Bjørnebær",
+    "scoring": "2 poeng per plante (inkludert seg selv)"
+  },
+  "fireflies": {
+    "name": "Ildfluer",
+    "scoring": "Ildfluesett: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Muldvarp",
+    "scoring": "0 poeng"
+  },
+  "tree_ferns": {
+    "name": "Trebregner",
+    "scoring": "6 poeng per amfibium"
+  },
+  "alpine_newt": {
+    "name": "Bergsalamander",
+    "scoring": "2 poeng per insekt"
+  },
+  "blueberry": {
+    "name": "Blåbær",
+    "scoring": "2 poeng per unik fugletype"
+  },
+  "gentian": {
+    "name": "Ensian",
+    "scoring": "3 poeng per sommerfugl"
+  },
+  "edelweiss": {
+    "name": "Edelweiss",
+    "scoring": "3 poeng per Edelweiss"
+  },
+  "black_trumpet": {
+    "name": "Svart trompetsopp",
+    "scoring": "0 poeng (teller som sopp)"
+  },
+  "digitalis": {
+    "name": "Revebjelle",
+    "scoring": "Plantemangfoldssett: 0/1/3/6/10/15 per unik plantetype"
+  },
+  "great_green_bush_cricket": {
+    "name": "Stor grønn gresshoppe",
+    "scoring": "1 poeng per insekt (inkludert seg selv)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Myrhatt",
+    "scoring": "15/7/3 p basert på antall trær (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Brennesle",
+    "scoring": "2 poeng per sommerfugl"
+  },
+  "water_vole": {
+    "name": "Vånd",
+    "scoring": "0 poeng (teller som amfibium)"
+  },
+  "wild_tulip": {
+    "name": "Villtulipan",
+    "scoring": "3 poeng per Villtulipan"
+  },
+  "barbastelle": {
+    "name": "Bredøre",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "bechsteins_bat": {
+    "name": "Bechsteins flaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "brown_long_eared_bat": {
+    "name": "Brunlangøre",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Stor hesteskonese",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "savis_pipistrelle": {
+    "name": "Savis flaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "common_pipistrelle": {
+    "name": "Dvergflaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "roe_deer": {
+    "name": "Rådyr",
+    "scoring": "3 poeng per kort med samme tresymbol (inkludert seg selv)",
+    "context": "Kort med samme tresymbol som ditt Rådyr"
+  },
+  "red_deer": {
+    "name": "Hjort",
+    "scoring": "1 poeng per tre og per plante"
+  },
+  "chamois": {
+    "name": "Gemse",
+    "scoring": "3 poeng per kort med samme tresymbol (inkludert seg selv)",
+    "context": "Kort med samme tresymbol som din Gemse"
+  },
+  "steinbock": {
+    "name": "Steinbukk",
+    "scoring": "10 poeng per Steinbukk"
+  },
+  "lynx": {
+    "name": "Gaupe",
+    "scoring": "10 poeng hvis minst 1 Rådyr"
+  },
+  "wolf": {
+    "name": "Ulv",
+    "scoring": "5 poeng per hjortedyr"
+  },
+  "wild_boar": {
+    "name": "Villsvin",
+    "scoring": "10 poeng hver hvis minst 1 Grisunge; ellers 0"
+  },
+  "european_badger": {
+    "name": "Grevling",
+    "scoring": "2 poeng per Grevling"
+  },
+  "european_hare": {
+    "name": "Sørhare",
+    "scoring": "Poeng lik totalt antall harer per hare"
+  },
+  "european_fat_dormouse": {
+    "name": "Sjusover",
+    "scoring": "15 poeng hvis ved et tre med en flaggermus (i motsatt plass)",
+    "context": "Hvor mange er ved et tre med en flaggermus?"
+  },
+  "squeaker": {
+    "name": "Hasselmus",
+    "scoring": "1 poeng per Hasselmus"
+  },
+  "brown_bear": {
+    "name": "Brunbjørn",
+    "scoring": "0 poeng"
+  },
+  "fox": {
+    "name": "Rev",
+    "scoring": "2 poeng per hare i skogen din"
+  },
+  "violet_carpenter_bee": {
+    "name": "Blå tømmerbie",
+    "scoring": "Teller som et ekstra tre av arten den er festet til",
+    "context": "Festet til hvilket tre?"
+  },
+  "beech_marten": {
+    "name": "Steinmår",
+    "scoring": "5 poeng per fullt besatt tre",
+    "context": "Hvor mange fullt besatte trær i skogen din?"
+  },
+  "fallow_deer": {
+    "name": "Dåhjort",
+    "scoring": "3 poeng per klovdyr (inkludert seg selv)"
+  },
+  "gnat": {
+    "name": "Knott",
+    "scoring": "1 poeng per flaggermus"
+  },
+  "raccoon": {
+    "name": "Vaskebjørn",
+    "scoring": "0 poeng"
+  },
+  "alpine_marmot": {
+    "name": "Murmeldyr",
+    "scoring": "3 poeng per unik plantetype"
+  },
+  "mountain_hare": {
+    "name": "Fjellhare",
+    "scoring": "Poeng lik totalt antall harer (teller som hare)"
+  },
+  "capercaillie": {
+    "name": "Storfugl",
+    "scoring": "1 poeng per plante"
+  },
+  "bee_swarm": {
+    "name": "Bisverm",
+    "scoring": "1 poeng per plante"
+  },
+  "crane_fly": {
+    "name": "Stankelbein",
+    "scoring": "1 poeng per flaggermus"
+  },
+  "elk": {
+    "name": "Elg",
+    "scoring": "2 p per ungtre og per kort som viser Elgens tresymboler (inkl. seg selv)",
+    "context": "Kort som viser Elgens tresymboler + ungtrær"
+  },
+  "european_bison": {
+    "name": "Visent",
+    "scoring": "2 p per kort som viser ett av dens tresymboler (inkl. seg selv)",
+    "context": "Kort med samme tresymbol per Visent (inkl. seg selv)"
+  },
+  "european_polecat": {
+    "name": "Ilder",
+    "scoring": "10 poeng hvis alene på treet sitt",
+    "context": "Hvor mange er alene på treet sitt?"
+  },
+  "european_wildcat": {
+    "name": "Villkatt",
+    "scoring": "1 poeng per Woodland-kort (inkludert seg selv)"
+  },
+  "genet": {
+    "name": "Genette",
+    "scoring": "5 poeng per Genette"
+  },
+  "red_panda": {
+    "name": "Rød panda",
+    "scoring": "2 poeng per Rød panda"
+  },
+  "sable": {
+    "name": "Sobel",
+    "scoring": "3 poeng per labbedyr"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 poeng per tre"
+  },
+  "white_stork": {
+    "name": "Stork",
+    "scoring": "1 poeng per insekt + 1 per amfibium"
+  },
+  "wild_boar_female": {
+    "name": "Villsvin (hunn)",
+    "scoring": "10 poeng hver hvis minst 1 Grisunge; ellers 0"
+  },
+  "cave": {
+    "name": "Hule",
+    "scoring": "1 poeng per kort i hulen"
+  },
+  "collectors_cave": {
+    "name": "Samlerhule",
+    "scoring": "Hvert vanlig hulekort gir 2 i stedet for 1"
+  },
+  "bat_cave": {
+    "name": "Flaggermushule",
+    "scoring": "Hver flaggermus gir 3 ekstra poeng"
+  },
+  "lonely_cave": {
+    "name": "Ensom hule",
+    "scoring": "5 poeng hvis ingen vanlige hulekort; ellers 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Grisunge",
+    "scoring": "1 poeng per Grisunge"
+  },
+  "honey_bee": {
+    "name": "Honningbie",
+    "scoring": "1 poeng per plante"
+  },
+
+  "ash": {
+    "name": "Ask",
+    "scoring": "1 poeng per kort med samme tresymbol + 1 per plante (planter telles automatisk)",
+    "context": "Kort med samme fargede tresymbol"
+  },
+  "black_alder": {
+    "name": "Svartor",
+    "scoring": "5 poeng per Svartor"
+  },
+  "crab_apple": {
+    "name": "Villeple",
+    "scoring": "8 poeng per fullt besatt Villeple",
+    "context": "Hvor mange Villeple er fullt besatt?"
+  },
+  "goat_willow": {
+    "name": "Selje",
+    "scoring": "1 poeng per myr i skogen din"
+  },
+  "moor_birch": {
+    "name": "Dunbjørk",
+    "scoring": "1 poeng per Dunbjørk"
+  },
+  "sessile_oak": {
+    "name": "Vintereik",
+    "scoring": "1 poeng per tre/busk i skogen din"
+  },
+  "common_hazel_d": {
+    "name": "Hassel",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "elderberry_d": {
+    "name": "Svarthyll",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+
+  "blanket_bog": {
+    "name": "Teppemyr",
+    "scoring": "Dobler poengene til planter plassert under den",
+    "context": "Hvilke planter er under denne Teppemyren?"
+  },
+  "fountainhead": {
+    "name": "Kilde",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "lowland_heath": {
+    "name": "Lavlandshei",
+    "scoring": "2 poeng per amfibium i skogen din"
+  },
+  "rhos_pasture": {
+    "name": "Rhos-beite",
+    "scoring": "2 poeng per hovdyr i skogen din"
+  },
+  "rivulet": {
+    "name": "Bekk",
+    "scoring": "2 poeng per tresymbol i skogen din",
+    "context": "Hvor mange tresymboler er i skogen din?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "valley_mire": {
+    "name": "Dalmyr",
+    "scoring": "2 poeng per insekt i skogen din"
+  },
+  "warrens": {
+    "name": "Kaninkoloni",
+    "scoring": "2 poeng per labbedyr i skogen din"
+  },
+  "wet_woodland": {
+    "name": "Sumpskog",
+    "scoring": "2 poeng per myr i skogen din (inkl. seg selv)"
+  },
+  "universal_moor": {
+    "name": "Universalmyr",
+    "scoring": "0 poeng (teller som en myr)"
+  },
+
+  "barn_owl_d": {
+    "name": "Tårnugle",
+    "scoring": "3 poeng per flaggermus i skogen din"
+  },
+  "beautiful_demoiselle": {
+    "name": "Blåvingevannymfe",
+    "scoring": "Øyenstikkersett: 0/5/10/15/30 for 1-5 arter"
+  },
+  "black_tailed_godwit": {
+    "name": "Svarthalespove",
+    "scoring": "10 poeng hver hvis du har flest myrer (eller likt)"
+  },
+  "buzzard": {
+    "name": "Musvåk",
+    "scoring": "2 poeng per mus i skogen din"
+  },
+  "common_moorhen": {
+    "name": "Sivhøne",
+    "scoring": "2 poeng per øyenstikker i skogen din"
+  },
+  "cuckoo_d": {
+    "name": "Gjøk",
+    "scoring": "7 poeng per Gjøk"
+  },
+  "curlew": {
+    "name": "Storspove",
+    "scoring": "10 poeng hver hvis 5+ insekter; ellers 3 hver"
+  },
+  "emerald_damselfly": {
+    "name": "Vanlig metallvannymfe",
+    "scoring": "Øyenstikkersett: 0/5/10/15/30 for 1-5 arter"
+  },
+  "grey_heron": {
+    "name": "Gråhegre",
+    "scoring": "8 poeng per Gråhegre"
+  },
+  "keeled_skimmer": {
+    "name": "Kjøllibelle",
+    "scoring": "Øyenstikkersett: 0/5/10/15/30 for 1-5 arter"
+  },
+  "meadow_pipit": {
+    "name": "Heipiplerke",
+    "scoring": "1/3/6/10 p for 1/2/4/6+ fuglearter"
+  },
+  "small_red_damselfly": {
+    "name": "Liten rødvannymfe",
+    "scoring": "Øyenstikkersett: 0/5/10/15/30 for 1-5 arter"
+  },
+  "southern_damselfly": {
+    "name": "Sørlig vannymfe",
+    "scoring": "Øyenstikkersett: 0/5/10/15/30 for 1-5 arter"
+  },
+  "wheatear": {
+    "name": "Steinskvett",
+    "scoring": "5 poeng hver hvis i en myr",
+    "context": "Hvor mange Steinskvett er i en myr?"
+  },
+
+  "adder": {
+    "name": "Hoggorm",
+    "scoring": "1 poeng per amfibium + 1 per mus i skogen din"
+  },
+  "adders_tongue": {
+    "name": "Ormetunge",
+    "scoring": "3 poeng per Ormetunge"
+  },
+  "beaver": {
+    "name": "Bever",
+    "scoring": "Poeng lik antall kort i hulen din"
+  },
+  "blue_ground_beetle": {
+    "name": "Blå løpebille",
+    "scoring": "1 poeng per kort i nederste plass (inkl. seg selv)"
+  },
+  "blueberry_d": {
+    "name": "Blåbær",
+    "scoring": "2 poeng per unik fugleart"
+  },
+  "bog_asphodel": {
+    "name": "Rome",
+    "scoring": "1 poeng per myr i skogen din"
+  },
+  "common_lizard": {
+    "name": "Firfisle",
+    "scoring": "15 poeng hver hvis 3+ amfibiearter; ellers 5 hver"
+  },
+  "grass_snake": {
+    "name": "Buorm",
+    "scoring": "5 poeng per Buorm"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Grønnkurle",
+    "scoring": "15 poeng hver hvis 5+ plantearter; ellers 3 hver"
+  },
+  "heather": {
+    "name": "Røsslyng",
+    "scoring": "1 poeng per insekt i skogen din"
+  },
+  "meadowsweet": {
+    "name": "Mjødurt",
+    "scoring": "5 poeng hver hvis i en myr",
+    "context": "Hvor mange Mjødurt er i en myr?"
+  },
+  "moor_frog": {
+    "name": "Spissnutefrosk",
+    "scoring": "8 poeng hver hvis 5+ myrer; ellers 0"
+  },
+  "otter": {
+    "name": "Oter",
+    "scoring": "3 poeng per amfibium i skogen din"
+  },
+  "royal_fern": {
+    "name": "Kongsbregne",
+    "scoring": "2 poeng per unik planteart"
+  },
+  "warty_newt": {
+    "name": "Storsalamander",
+    "scoring": "Settpoeng: 5/15/25 for 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Vassaloe",
+    "scoring": "2 poeng per øyenstikker i skogen din"
+  },
+
+  "alcathoe_bat": {
+    "name": "Alcathoes flaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "brandts_bat": {
+    "name": "Brandts flaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "common_noctule": {
+    "name": "Storflaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "daubentons_bat": {
+    "name": "Vannflaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "serotine_bat": {
+    "name": "Sørflaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "capercaillie_d": {
+    "name": "Storfugl",
+    "scoring": "1 poeng per plante i skogen din"
+  },
+  "common_pheasant": {
+    "name": "Fasan",
+    "scoring": "1 poeng per tre og busk i skogen din"
+  },
+  "dartmoor_badger": {
+    "name": "Dartmoor-grevling",
+    "scoring": "2 poeng per labbedyr (inkl. seg selv)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Svart Dartmoor-kanin",
+    "scoring": "Hver kanin gir poeng lik totalt antall kaniner"
+  },
+  "dartmoor_pony": {
+    "name": "Dartmoor-ponni",
+    "scoring": "15 poeng hver hvis flest myrer (eller likt); ellers 5 hver"
+  },
+  "dartmoor_sheep": {
+    "name": "Dartmoor-sau",
+    "scoring": "2 poeng per hovdyr (inkl. seg selv)"
+  },
+  "field_vole": {
+    "name": "Markmus",
+    "scoring": "1 poeng per mus i skogen din (inkl. seg selv)"
+  },
+  "gnat_d": {
+    "name": "Knott",
+    "scoring": "1 poeng per flaggermus i skogen din"
+  },
+  "lake_fly": {
+    "name": "Fjærmygg",
+    "scoring": "1 poeng per flaggermus i skogen din"
+  },
+  "nuthatch": {
+    "name": "Spettmeis",
+    "scoring": "10 poeng hver hvis ved et fullt besatt tre",
+    "context": "Hvor mange Spettmeis er ved fullt besatte trær?"
+  },
+  "roe_deer_d": {
+    "name": "Rådyr",
+    "scoring": "3 poeng per kort med samme tresymbol (inkl. seg selv)",
+    "context": "Kort med samme tresymbol som ditt Rådyr"
+  },
+  "shrew": {
+    "name": "Spissmus",
+    "scoring": "1 poeng per Spissmus"
+  },
+  "treecreeper": {
+    "name": "Trekryper",
+    "scoring": "5 poeng per Trekryper"
+  },
+  "wood_mouse": {
+    "name": "Skogmus",
+    "scoring": "1 poeng per mus i skogen din (inkl. seg selv)"
+  },
+
+  "cave_d": {
+    "name": "Hule",
+    "scoring": "1 poeng per kort i hulen"
+  },
+  "lonely_cave_d": {
+    "name": "Hule 4",
+    "scoring": "5 poeng"
+  },
+
+  "holly": {
+    "name": "Kristtorn",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "gorse": {
+    "name": "Gulltorn",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "coastal_heath": {
+    "name": "Kysthei",
+    "scoring": "Dobler poengene til fugler plassert under den",
+    "context": "Hvilke fugler er under denne Kystheien?"
+  },
+  "stone_circle": {
+    "name": "Steinsirkel",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "waxcap_grassland": {
+    "name": "Vokssoppeng",
+    "scoring": "0 poeng (kun permanent effekt)"
+  },
+  "dartford_warbler": {
+    "name": "Provencesanger",
+    "scoring": "1 poeng"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Bekkeøyenstikker",
+    "scoring": "Øyenstikkersett: 0/5/10/15/30/50 for 1-6 arter"
+  },
+  "grey_wagtail": {
+    "name": "Vintererle",
+    "scoring": "1 poeng per Exmoor-kort i skogen din"
+  },
+  "harvest_mouse": {
+    "name": "Dvergmus",
+    "scoring": "1 poeng per fugl"
+  },
+  "peregrine_falcon": {
+    "name": "Vandrefalk",
+    "scoring": "1 poeng per mus"
+  },
+  "pied_flycatcher": {
+    "name": "Svarthvit fluesnapper",
+    "scoring": "4 poeng"
+  },
+  "bank_vole": {
+    "name": "Klatremus",
+    "scoring": "3 poeng"
+  },
+  "natterjack_toad": {
+    "name": "Strandpadde",
+    "scoring": "1 poeng"
+  },
+  "smooth_snake": {
+    "name": "Slettsnok",
+    "scoring": "1 poeng per tresymbol i skogen din",
+    "context": "Hvor mange tresymboler er i skogen din?"
+  },
+  "sundew": {
+    "name": "Soldogg",
+    "scoring": "1 poeng per insekt"
+  },
+  "tormentil": {
+    "name": "Tepperot",
+    "scoring": "5 poeng"
+  },
+  "wood_rush": {
+    "name": "Storfrytle",
+    "scoring": "3 poeng"
+  },
+  "bilberry_bumblebee": {
+    "name": "Blåbærhumle",
+    "scoring": "2 poeng per busk"
+  },
+  "dormouse": {
+    "name": "Sjusover",
+    "scoring": "15 poeng hver hvis en flaggermus er på samme tre",
+    "context": "Hvor mange deler et tre med en flaggermus?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Føll",
+    "scoring": "1 poeng"
+  },
+  "horse": {
+    "name": "Hest",
+    "scoring": "10 poeng per ponni (Dartmoor-ponni, Hest, Føll)"
+  },
+  "red_devon_cow": {
+    "name": "Red Devon-ku",
+    "scoring": "1 poeng per plante"
+  },
+  "whiskered_bat": {
+    "name": "Skjeggflaggermus",
+    "scoring": "Flaggermus: 5 p hver hvis 3+ flaggermusarter"
+  },
+  "cave_exmoor": {
+    "name": "Hule (Exmoor)",
+    "scoring": "1 poeng per kort i hulen"
+  }
+}

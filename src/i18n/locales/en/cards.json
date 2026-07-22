@@ -389,10 +389,6 @@
     "name": "Gnat",
     "scoring": "1 point per bat"
   },
-  "large_tortoiseshell": {
-    "name": "Large Tortoiseshell",
-    "scoring": "Butterfly set: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Raccoon",
     "scoring": "0 points"

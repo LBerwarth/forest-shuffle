@@ -389,10 +389,6 @@
     "name": "Mosquito",
     "scoring": "1 punto por murciélago"
   },
-  "large_tortoiseshell": {
-    "name": "Olmera",
-    "scoring": "Mariposas: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Mapache",
     "scoring": "0 puntos"

@@ -389,10 +389,6 @@
     "name": "Mosquito",
     "scoring": "1 ponto por morcego"
   },
-  "large_tortoiseshell": {
-    "name": "Borboleta-dos-olmos",
-    "scoring": "Borboletas: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Guaxinim",
     "scoring": "0 pontos"

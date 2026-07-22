@@ -389,10 +389,6 @@
     "name": "Mug",
     "scoring": "1 punt per vleermuis"
   },
-  "large_tortoiseshell": {
-    "name": "Grote vos",
-    "scoring": "Vlinderset: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Wasbeer",
     "scoring": "0 punten"

@@ -1,0 +1,877 @@
+{
+  "birch": {
+    "name": "Björk",
+    "scoring": "1 poäng per Björk"
+  },
+  "beech": {
+    "name": "Bok",
+    "scoring": "5 poäng styck om du har 4+ Bokar"
+  },
+  "douglas_fir": {
+    "name": "Douglasgran",
+    "scoring": "5 poäng per Douglasgran"
+  },
+  "oak": {
+    "name": "Ek",
+    "scoring": "10 poäng styck om du har 8+ trädarter"
+  },
+  "horse_chestnut": {
+    "name": "Hästkastanj",
+    "scoring": "Setpoäng: 1/4/9/16/25/36/49"
+  },
+  "linden": {
+    "name": "Lind",
+    "scoring": "1 p styck; 3 p styck om du har flest Lindar (eller lika)",
+    "scoringSolo": "1 p styck; 3 p styck om du har minst 3 Lindar"
+  },
+  "sycamore": {
+    "name": "Tysklönn",
+    "scoring": "1 poäng per träd i din skog"
+  },
+  "silver_fir": {
+    "name": "Silvergran",
+    "scoring": "2 poäng per kort fäst vid Silvergranar",
+    "context": "Kort fästa vid Silvergranar"
+  },
+  "european_larch": {
+    "name": "Europeisk lärk",
+    "scoring": "3 poäng per Europeisk lärk"
+  },
+  "stone_pine": {
+    "name": "Cembratall",
+    "scoring": "1 poäng per Alpine-kort (inkl. sig själv)",
+    "context": "Kort fästa vid Cembratallar"
+  },
+  "palm_tree": {
+    "name": "Palm",
+    "scoring": "1 poäng per fågel"
+  },
+  "turkey_oak": {
+    "name": "Turkisk ek",
+    "scoring": "1 poäng per klövdjur"
+  },
+  "o_christmas_tree": {
+    "name": "O julgran",
+    "scoring": "2 poäng per kort fäst vid detta träd",
+    "context": "Kort fästa vid O julgranar"
+  },
+  "tree_sapling": {
+    "name": "Trädplanta",
+    "scoring": "0 poäng (räknas som ett träd)"
+  },
+  "common_hazel": {
+    "name": "Hassel",
+    "scoring": "0 poäng (buske — endast permanent effekt)"
+  },
+  "elderberry": {
+    "name": "Fläder",
+    "scoring": "0 poäng (buske — endast permanent effekt)"
+  },
+  "blackthorn": {
+    "name": "Slån",
+    "scoring": "0 poäng (buske — endast permanent effekt)"
+  },
+  "bullfinch": {
+    "name": "Domherre",
+    "scoring": "2 poäng per insekt i din skog"
+  },
+  "chaffinch": {
+    "name": "Bofink",
+    "scoring": "5 poäng om på en Bok",
+    "context": "Hur många Bofinkar sitter på en Bok?"
+  },
+  "great_spotted_woodpecker": {
+    "name": "Större hackspett",
+    "scoring": "10 poäng om du har flest träd (eller lika)",
+    "scoringSolo": "10 poäng om du har minst 10 träd"
+  },
+  "goshawk": {
+    "name": "Duvhök",
+    "scoring": "3 poäng per fågel (inkl. sig själv)"
+  },
+  "eurasian_jay": {
+    "name": "Nötskrika",
+    "scoring": "3 poäng per Nötskrika"
+  },
+  "tawny_owl": {
+    "name": "Kattuggla",
+    "scoring": "5 poäng per Kattuggla"
+  },
+  "peacock_butterfly": {
+    "name": "Påfågelöga",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "purple_emperor": {
+    "name": "Sälgskimmerfjäril",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "silver_washed_fritillary": {
+    "name": "Silverstreckad pärlemorfjäril",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "camberwell_beauty": {
+    "name": "Sorgmantel",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "large_tortoiseshell": {
+    "name": "Körsbärsfuks",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "red_squirrel": {
+    "name": "Ekorre",
+    "scoring": "5 poäng om på en Ek",
+    "context": "Hur många Ekorrar sitter på en Ek?"
+  },
+  "golden_eagle": {
+    "name": "Kungsörn",
+    "scoring": "1 poäng per tassdjur + 1 per groddjur"
+  },
+  "bearded_vulture": {
+    "name": "Lammgam",
+    "scoring": "1 poäng per grottkort"
+  },
+  "common_raven": {
+    "name": "Korp",
+    "scoring": "5 poäng per Korp"
+  },
+  "phoebus_apollo": {
+    "name": "Fjällapollo",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "barn_owl": {
+    "name": "Tornuggla",
+    "scoring": "3 poäng per fladdermus"
+  },
+  "brimstone": {
+    "name": "Citronfjäril",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "cardinal": {
+    "name": "Kardinal",
+    "scoring": "5 poäng per Kardinal"
+  },
+  "cuckoo": {
+    "name": "Gök",
+    "scoring": "7 poäng per Gök"
+  },
+  "eurasian_magpie": {
+    "name": "Skata",
+    "scoring": "3 poäng per Skata"
+  },
+  "map_butterfly": {
+    "name": "Kartfjäril",
+    "scoring": "Fjärilsset: 0/3/6/12/20/35/55/80"
+  },
+  "mistletoe": {
+    "name": "Mistel",
+    "scoring": "1 poäng per växt"
+  },
+  "nightingale": {
+    "name": "Näktergal",
+    "scoring": "5 poäng om på en buske",
+    "context": "Hur många Näktergalar sitter på en buske?"
+  },
+  "robin": {
+    "name": "Rödhake",
+    "scoring": "1 poäng per insekt"
+  },
+  "whinchat": {
+    "name": "Buskskvätta",
+    "scoring": "1 poäng per växt"
+  },
+  "common_toad": {
+    "name": "Vanlig padda",
+    "scoring": "5 poäng per Vanlig padda som delar träd med en annan Vanlig padda",
+    "context": "Hur många Vanliga paddor delar träd med en annan?"
+  },
+  "fire_salamander": {
+    "name": "Fläckig salamander",
+    "scoring": "Setpoäng: 5/15/25 för 1/2/3"
+  },
+  "tree_frog": {
+    "name": "Lövgroda",
+    "scoring": "5 poäng per mygga per Lövgroda"
+  },
+  "stag_beetle": {
+    "name": "Ekoxe",
+    "scoring": "1 poäng per tassdjur"
+  },
+  "wood_ant": {
+    "name": "Röd skogsmyra",
+    "scoring": "2 poäng per kort i nedre platser (räknas automatiskt)"
+  },
+  "penny_bun": {
+    "name": "Karljohanssvamp",
+    "scoring": "0 poäng (räknas som svamp)"
+  },
+  "chanterelle": {
+    "name": "Kantarell",
+    "scoring": "0 poäng (räknas som svamp)"
+  },
+  "fly_agaric": {
+    "name": "Röd flugsvamp",
+    "scoring": "0 poäng (räknas som svamp)"
+  },
+  "parasol_mushroom": {
+    "name": "Stolt fjällskivling",
+    "scoring": "0 poäng (räknas som svamp)"
+  },
+  "moss": {
+    "name": "Mossa",
+    "scoring": "10 poäng styck om du har 10+ träd"
+  },
+  "wild_strawberries": {
+    "name": "Smultron",
+    "scoring": "10 poäng styck om du har 8+ trädarter"
+  },
+  "hedgehog": {
+    "name": "Igelkott",
+    "scoring": "2 poäng per fjäril"
+  },
+  "pond_turtle": {
+    "name": "Europeisk sumpsköldpadda",
+    "scoring": "5 poäng per Europeisk sumpsköldpadda"
+  },
+  "blackberries": {
+    "name": "Björnbär",
+    "scoring": "2 poäng per växt (inkl. sig själv)"
+  },
+  "fireflies": {
+    "name": "Lysmaskar",
+    "scoring": "Lysmaskset: 0/10/15/20"
+  },
+  "mole": {
+    "name": "Mullvad",
+    "scoring": "0 poäng"
+  },
+  "tree_ferns": {
+    "name": "Trädormbunkar",
+    "scoring": "6 poäng per groddjur"
+  },
+  "alpine_newt": {
+    "name": "Alpvattensalamander",
+    "scoring": "2 poäng per insekt"
+  },
+  "blueberry": {
+    "name": "Blåbär",
+    "scoring": "2 poäng per unik fågeltyp"
+  },
+  "gentian": {
+    "name": "Gentiana",
+    "scoring": "3 poäng per fjäril"
+  },
+  "edelweiss": {
+    "name": "Edelweiss",
+    "scoring": "3 poäng per Edelweiss"
+  },
+  "black_trumpet": {
+    "name": "Svart trumpetsvamp",
+    "scoring": "0 poäng (räknas som svamp)"
+  },
+  "digitalis": {
+    "name": "Fingerborgsblomma",
+    "scoring": "Växtmångfaldsset: 0/1/3/6/10/15 per unik växttyp"
+  },
+  "great_green_bush_cricket": {
+    "name": "Grön vårtbitare",
+    "scoring": "1 poäng per insekt (inkl. sig själv)"
+  },
+  "marsh_cinquefoil": {
+    "name": "Kråkklöver",
+    "scoring": "15/7/3 p baserat på antal träd (0-5/6-10/11+)"
+  },
+  "stinging_nettle": {
+    "name": "Brännässla",
+    "scoring": "2 poäng per fjäril"
+  },
+  "water_vole": {
+    "name": "Vattensork",
+    "scoring": "0 poäng (räknas som groddjur)"
+  },
+  "wild_tulip": {
+    "name": "Vildtulpan",
+    "scoring": "3 poäng per Vildtulpan"
+  },
+  "barbastelle": {
+    "name": "Barbastell",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "bechsteins_bat": {
+    "name": "Bechsteins fladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "brown_long_eared_bat": {
+    "name": "Brunlångöra",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "greater_horseshoe_bat": {
+    "name": "Större hästskonäsa",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "savis_pipistrelle": {
+    "name": "Alpfladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "common_pipistrelle": {
+    "name": "Dvärgfladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "roe_deer": {
+    "name": "Rådjur",
+    "scoring": "3 poäng per kort med samma trädsymbol (inkl. sig själv)",
+    "context": "Kort med samma trädsymbol som ditt Rådjur"
+  },
+  "red_deer": {
+    "name": "Kronhjort",
+    "scoring": "1 poäng per träd och per växt"
+  },
+  "chamois": {
+    "name": "Gems",
+    "scoring": "3 poäng per kort med samma trädsymbol (inkl. sig själv)",
+    "context": "Kort med samma trädsymbol som din Gems"
+  },
+  "steinbock": {
+    "name": "Stenbock",
+    "scoring": "10 poäng per Stenbock"
+  },
+  "lynx": {
+    "name": "Lodjur",
+    "scoring": "10 poäng om minst 1 Rådjur"
+  },
+  "wolf": {
+    "name": "Varg",
+    "scoring": "5 poäng per hjortdjur"
+  },
+  "wild_boar": {
+    "name": "Vildsvin",
+    "scoring": "10 poäng styck om minst 1 Kulting; annars 0"
+  },
+  "european_badger": {
+    "name": "Grävling",
+    "scoring": "2 poäng per Grävling"
+  },
+  "european_hare": {
+    "name": "Fälthare",
+    "scoring": "Poäng lika med totala antalet harar per hare"
+  },
+  "european_fat_dormouse": {
+    "name": "Sjusovare",
+    "scoring": "15 poäng om vid ett träd med en fladdermus (i motsatt plats)",
+    "context": "Hur många är vid ett träd med en fladdermus?"
+  },
+  "squeaker": {
+    "name": "Hasselmus",
+    "scoring": "1 poäng per Hasselmus"
+  },
+  "brown_bear": {
+    "name": "Brunbjörn",
+    "scoring": "0 poäng"
+  },
+  "fox": {
+    "name": "Räv",
+    "scoring": "2 poäng per hare i din skog"
+  },
+  "violet_carpenter_bee": {
+    "name": "Blåbi",
+    "scoring": "Räknas som ett extra träd av arten den är fäst vid",
+    "context": "Fäst vid vilket träd?"
+  },
+  "beech_marten": {
+    "name": "Stenmård",
+    "scoring": "5 poäng per fullt upptaget träd",
+    "context": "Hur många fullt upptagna träd i din skog?"
+  },
+  "fallow_deer": {
+    "name": "Dovhjort",
+    "scoring": "3 poäng per klövdjur (inkl. sig själv)"
+  },
+  "gnat": {
+    "name": "Mygga",
+    "scoring": "1 poäng per fladdermus"
+  },
+  "raccoon": {
+    "name": "Tvättbjörn",
+    "scoring": "0 poäng"
+  },
+  "alpine_marmot": {
+    "name": "Alpmurmeldjur",
+    "scoring": "3 poäng per unik växttyp"
+  },
+  "mountain_hare": {
+    "name": "Skogshare",
+    "scoring": "Poäng lika med totala antalet harar (räknas som hare)"
+  },
+  "capercaillie": {
+    "name": "Tjäder",
+    "scoring": "1 poäng per växt"
+  },
+  "bee_swarm": {
+    "name": "Bisvärm",
+    "scoring": "1 poäng per växt"
+  },
+  "crane_fly": {
+    "name": "Harkrank",
+    "scoring": "1 poäng per fladdermus"
+  },
+  "elk": {
+    "name": "Älg",
+    "scoring": "2 p per trädplanta och per kort som visar Älgens trädsymboler (inkl. sig själv)",
+    "context": "Kort som visar Älgens trädsymboler + plantor"
+  },
+  "european_bison": {
+    "name": "Visent",
+    "scoring": "2 p per kort som visar en av dess trädsymboler (inkl. sig själv)",
+    "context": "Kort med matchande trädsymbol per Visent (inkl. sig själv)"
+  },
+  "european_polecat": {
+    "name": "Iller",
+    "scoring": "10 poäng om ensam på sitt träd",
+    "context": "Hur många är ensamma på sitt träd?"
+  },
+  "european_wildcat": {
+    "name": "Vildkatt",
+    "scoring": "1 poäng per Woodland-kort (inkl. sig själv)"
+  },
+  "genet": {
+    "name": "Genett",
+    "scoring": "5 poäng per Genett"
+  },
+  "red_panda": {
+    "name": "Röd panda",
+    "scoring": "2 poäng per Röd panda"
+  },
+  "sable": {
+    "name": "Sobel",
+    "scoring": "3 poäng per tassdjur"
+  },
+  "troll": {
+    "name": "Troll",
+    "scoring": "1 poäng per träd"
+  },
+  "white_stork": {
+    "name": "Vit stork",
+    "scoring": "1 poäng per insekt + 1 per groddjur"
+  },
+  "wild_boar_female": {
+    "name": "Vildsvin (hona)",
+    "scoring": "10 poäng styck om minst 1 Kulting; annars 0"
+  },
+  "cave": {
+    "name": "Grotta",
+    "scoring": "1 poäng per kort i grottan"
+  },
+  "collectors_cave": {
+    "name": "Samlargrotta",
+    "scoring": "Varje vanligt grottkort ger 2 istället för 1"
+  },
+  "bat_cave": {
+    "name": "Fladdermusgrotta",
+    "scoring": "Varje fladdermus ger ytterligare 3 poäng"
+  },
+  "lonely_cave": {
+    "name": "Ensam grotta",
+    "scoring": "5 poäng om inga vanliga grottkort; annars 0"
+  },
+  "wild_boar_piglet": {
+    "name": "Kulting",
+    "scoring": "1 poäng per Kulting"
+  },
+  "honey_bee": {
+    "name": "Honungsbi",
+    "scoring": "1 poäng per växt"
+  },
+
+  "ash": {
+    "name": "Ask",
+    "scoring": "1 poäng per kort med samma trädsymbol + 1 per växt (växter räknas automatiskt)",
+    "context": "Kort med samma färgade trädsymbol"
+  },
+  "black_alder": {
+    "name": "Klibbal",
+    "scoring": "5 poäng per Klibbal"
+  },
+  "crab_apple": {
+    "name": "Vildapel",
+    "scoring": "8 poäng per fullt upptagen Vildapel",
+    "context": "Hur många Vildaplar är fullt upptagna?"
+  },
+  "goat_willow": {
+    "name": "Sälg",
+    "scoring": "1 poäng per myr i din skog"
+  },
+  "moor_birch": {
+    "name": "Glasbjörk",
+    "scoring": "1 poäng per Glasbjörk"
+  },
+  "sessile_oak": {
+    "name": "Bergek",
+    "scoring": "1 poäng per träd/buske i din skog"
+  },
+  "common_hazel_d": {
+    "name": "Hassel",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "elderberry_d": {
+    "name": "Fläder",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+
+  "blanket_bog": {
+    "name": "Täckmyr",
+    "scoring": "Fördubblar poängen för växter placerade under den",
+    "context": "Vilka växter är under denna Täckmyr?"
+  },
+  "fountainhead": {
+    "name": "Källa",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "lowland_heath": {
+    "name": "Låglandshed",
+    "scoring": "2 poäng per groddjur i din skog"
+  },
+  "rhos_pasture": {
+    "name": "Rhos-betesmark",
+    "scoring": "2 poäng per hovdjur i din skog"
+  },
+  "rivulet": {
+    "name": "Bäck",
+    "scoring": "2 poäng per trädsymbol i din skog",
+    "context": "Hur många trädsymboler finns i din skog?"
+  },
+  "tor": {
+    "name": "Tor",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "valley_mire": {
+    "name": "Dalmyr",
+    "scoring": "2 poäng per insekt i din skog"
+  },
+  "warrens": {
+    "name": "Kaningryt",
+    "scoring": "2 poäng per tassdjur i din skog"
+  },
+  "wet_woodland": {
+    "name": "Sumpskog",
+    "scoring": "2 poäng per myr i din skog (inkl. sig själv)"
+  },
+  "universal_moor": {
+    "name": "Universalmyr",
+    "scoring": "0 poäng (räknas som en myr)"
+  },
+
+  "barn_owl_d": {
+    "name": "Tornuggla",
+    "scoring": "3 poäng per fladdermus i din skog"
+  },
+  "beautiful_demoiselle": {
+    "name": "Blåbandad jungfruslända",
+    "scoring": "Trollsländeset: 0/5/10/15/30 för 1-5 arter"
+  },
+  "black_tailed_godwit": {
+    "name": "Rödspov",
+    "scoring": "10 poäng styck om du har flest myrar (eller lika)"
+  },
+  "buzzard": {
+    "name": "Ormvråk",
+    "scoring": "2 poäng per mus i din skog"
+  },
+  "common_moorhen": {
+    "name": "Rörhöna",
+    "scoring": "2 poäng per trollslända i din skog"
+  },
+  "cuckoo_d": {
+    "name": "Gök",
+    "scoring": "7 poäng per Gök"
+  },
+  "curlew": {
+    "name": "Storspov",
+    "scoring": "10 poäng styck om 5+ insekter; annars 3 styck"
+  },
+  "emerald_damselfly": {
+    "name": "Allmän smaragdflickslända",
+    "scoring": "Trollsländeset: 0/5/10/15/30 för 1-5 arter"
+  },
+  "grey_heron": {
+    "name": "Gråhäger",
+    "scoring": "8 poäng per Gråhäger"
+  },
+  "keeled_skimmer": {
+    "name": "Sydlig ängstrollslända",
+    "scoring": "Trollsländeset: 0/5/10/15/30 för 1-5 arter"
+  },
+  "meadow_pipit": {
+    "name": "Ängspiplärka",
+    "scoring": "1/3/6/10 p för 1/2/4/6+ fågelarter"
+  },
+  "small_red_damselfly": {
+    "name": "Liten rödflickslända",
+    "scoring": "Trollsländeset: 0/5/10/15/30 för 1-5 arter"
+  },
+  "southern_damselfly": {
+    "name": "Sydlig flickslända",
+    "scoring": "Trollsländeset: 0/5/10/15/30 för 1-5 arter"
+  },
+  "wheatear": {
+    "name": "Stenskvätta",
+    "scoring": "5 poäng styck om i en myr",
+    "context": "Hur många Stenskvättor är i en myr?"
+  },
+
+  "adder": {
+    "name": "Huggorm",
+    "scoring": "1 poäng per groddjur + 1 per mus i din skog"
+  },
+  "adders_tongue": {
+    "name": "Ormtunga",
+    "scoring": "3 poäng per Ormtunga"
+  },
+  "beaver": {
+    "name": "Bäver",
+    "scoring": "Poäng lika med antalet kort i din grotta"
+  },
+  "blue_ground_beetle": {
+    "name": "Blå jordlöpare",
+    "scoring": "1 poäng per kort i nedre plats (inkl. sig själv)"
+  },
+  "blueberry_d": {
+    "name": "Blåbär",
+    "scoring": "2 poäng per unik fågelart"
+  },
+  "bog_asphodel": {
+    "name": "Myrlilja",
+    "scoring": "1 poäng per myr i din skog"
+  },
+  "common_lizard": {
+    "name": "Skogsödla",
+    "scoring": "15 poäng styck om 3+ groddjursarter; annars 5 styck"
+  },
+  "grass_snake": {
+    "name": "Snok",
+    "scoring": "5 poäng per Snok"
+  },
+  "greater_butterfly_orchid": {
+    "name": "Grönvit nattviol",
+    "scoring": "15 poäng styck om 5+ växtarter; annars 3 styck"
+  },
+  "heather": {
+    "name": "Ljung",
+    "scoring": "1 poäng per insekt i din skog"
+  },
+  "meadowsweet": {
+    "name": "Älggräs",
+    "scoring": "5 poäng styck om i en myr",
+    "context": "Hur många Älggräs är i en myr?"
+  },
+  "moor_frog": {
+    "name": "Åkergroda",
+    "scoring": "8 poäng styck om 5+ myrar; annars 0"
+  },
+  "otter": {
+    "name": "Utter",
+    "scoring": "3 poäng per groddjur i din skog"
+  },
+  "royal_fern": {
+    "name": "Safsa",
+    "scoring": "2 poäng per unik växtart"
+  },
+  "warty_newt": {
+    "name": "Större vattensalamander",
+    "scoring": "Setpoäng: 5/15/25 för 1/2/3"
+  },
+  "water_soldiers": {
+    "name": "Vattenaloe",
+    "scoring": "2 poäng per trollslända i din skog"
+  },
+
+  "alcathoe_bat": {
+    "name": "Nymffladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "brandts_bat": {
+    "name": "Brandts fladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "common_noctule": {
+    "name": "Stor fladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "daubentons_bat": {
+    "name": "Vattenfladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "serotine_bat": {
+    "name": "Sydfladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "capercaillie_d": {
+    "name": "Tjäder",
+    "scoring": "1 poäng per växt i din skog"
+  },
+  "common_pheasant": {
+    "name": "Fasan",
+    "scoring": "1 poäng per träd och buske i din skog"
+  },
+  "dartmoor_badger": {
+    "name": "Dartmoor-grävling",
+    "scoring": "2 poäng per tassdjur (inkl. sig själv)"
+  },
+  "dartmoor_black_rabbit": {
+    "name": "Dartmoor svartkanin",
+    "scoring": "Varje kanin ger poäng lika med totala antalet kaniner"
+  },
+  "dartmoor_pony": {
+    "name": "Dartmoorponny",
+    "scoring": "15 poäng styck om flest myrar (eller lika); annars 5 styck"
+  },
+  "dartmoor_sheep": {
+    "name": "Dartmoorfår",
+    "scoring": "2 poäng per hovdjur (inkl. sig själv)"
+  },
+  "field_vole": {
+    "name": "Åkersork",
+    "scoring": "1 poäng per mus i din skog (inkl. sig själv)"
+  },
+  "gnat_d": {
+    "name": "Mygga",
+    "scoring": "1 poäng per fladdermus i din skog"
+  },
+  "lake_fly": {
+    "name": "Fjädermygga",
+    "scoring": "1 poäng per fladdermus i din skog"
+  },
+  "nuthatch": {
+    "name": "Nötväcka",
+    "scoring": "10 poäng styck om vid ett fullt upptaget träd",
+    "context": "Hur många Nötväckor är vid fullt upptagna träd?"
+  },
+  "roe_deer_d": {
+    "name": "Rådjur",
+    "scoring": "3 poäng per kort med matchande trädsymbol (inkl. sig själv)",
+    "context": "Kort med samma trädsymbol som ditt Rådjur"
+  },
+  "shrew": {
+    "name": "Näbbmus",
+    "scoring": "1 poäng per Näbbmus"
+  },
+  "treecreeper": {
+    "name": "Trädkrypare",
+    "scoring": "5 poäng per Trädkrypare"
+  },
+  "wood_mouse": {
+    "name": "Skogsmus",
+    "scoring": "1 poäng per mus i din skog (inkl. sig själv)"
+  },
+
+  "cave_d": {
+    "name": "Grotta",
+    "scoring": "1 poäng per kort i grottan"
+  },
+  "lonely_cave_d": {
+    "name": "Grotta 4",
+    "scoring": "5 poäng"
+  },
+
+  "holly": {
+    "name": "Järnek",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "gorse": {
+    "name": "Ärttörne",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "coastal_heath": {
+    "name": "Kusthed",
+    "scoring": "Fördubblar poängen för fåglar placerade under den",
+    "context": "Vilka fåglar är under denna Kusthed?"
+  },
+  "stone_circle": {
+    "name": "Stencirkel",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "tarr_steps": {
+    "name": "Tarr Steps",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "waxcap_grassland": {
+    "name": "Vaxskivlingsäng",
+    "scoring": "0 poäng (endast permanent effekt)"
+  },
+  "dartford_warbler": {
+    "name": "Provencesångare",
+    "scoring": "1 poäng"
+  },
+  "golden_ringed_dragonfly": {
+    "name": "Sköldtrollslända",
+    "scoring": "Trollsländeset: 0/5/10/15/30/50 för 1-6 arter"
+  },
+  "grey_wagtail": {
+    "name": "Forsärla",
+    "scoring": "1 poäng per Exmoor-kort i din skog"
+  },
+  "harvest_mouse": {
+    "name": "Dvärgmus",
+    "scoring": "1 poäng per fågel"
+  },
+  "peregrine_falcon": {
+    "name": "Pilgrimsfalk",
+    "scoring": "1 poäng per mus"
+  },
+  "pied_flycatcher": {
+    "name": "Svartvit flugsnappare",
+    "scoring": "4 poäng"
+  },
+  "bank_vole": {
+    "name": "Skogssork",
+    "scoring": "3 poäng"
+  },
+  "natterjack_toad": {
+    "name": "Strandpadda",
+    "scoring": "1 poäng"
+  },
+  "smooth_snake": {
+    "name": "Hasselsnok",
+    "scoring": "1 poäng per trädsymbol i din skog",
+    "context": "Hur många trädsymboler finns i din skog?"
+  },
+  "sundew": {
+    "name": "Sileshår",
+    "scoring": "1 poäng per insekt"
+  },
+  "tormentil": {
+    "name": "Blodrot",
+    "scoring": "5 poäng"
+  },
+  "wood_rush": {
+    "name": "Storfryle",
+    "scoring": "3 poäng"
+  },
+  "bilberry_bumblebee": {
+    "name": "Blåbärshumla",
+    "scoring": "2 poäng per buske"
+  },
+  "dormouse": {
+    "name": "Sjusovare",
+    "scoring": "15 poäng styck om en fladdermus är på samma träd",
+    "context": "Hur många delar träd med en fladdermus?"
+  },
+  "exmoor_pony_foal": {
+    "name": "Föl",
+    "scoring": "1 poäng"
+  },
+  "horse": {
+    "name": "Häst",
+    "scoring": "10 poäng per ponny (Dartmoorponny, Häst, Föl)"
+  },
+  "red_devon_cow": {
+    "name": "Röd Devon-ko",
+    "scoring": "1 poäng per växt"
+  },
+  "whiskered_bat": {
+    "name": "Mustaschfladdermus",
+    "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
+  },
+  "cave_exmoor": {
+    "name": "Grotta (Exmoor)",
+    "scoring": "1 poäng per kort i grottan"
+  }
+}

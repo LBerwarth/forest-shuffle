@@ -389,10 +389,6 @@
     "name": "Tatarcık",
     "scoring": "yarasa başına 1 puan"
   },
-  "large_tortoiseshell": {
-    "name": "Büyük kaplumbağa kelebeği",
-    "scoring": "Kelebek seti: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Rakun",
     "scoring": "0 puan"

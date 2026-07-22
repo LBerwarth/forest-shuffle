@@ -389,10 +389,6 @@
     "name": "Moscerino",
     "scoring": "1 punto per pipistrello"
   },
-  "large_tortoiseshell": {
-    "name": "Vanessa multicolore",
-    "scoring": "Set farfalle: 0/3/6/12/20/35/55/80"
-  },
   "raccoon": {
     "name": "Procione",
     "scoring": "0 punti"

@@ -29,6 +29,14 @@ import trCommon from './locales/tr/common.json'
 import trCards from './locales/tr/cards.json'
 import caCommon from './locales/ca/common.json'
 import caCards from './locales/ca/cards.json'
+import daCommon from './locales/da/common.json'
+import daCards from './locales/da/cards.json'
+import svCommon from './locales/sv/common.json'
+import svCards from './locales/sv/cards.json'
+import noCommon from './locales/no/common.json'
+import noCards from './locales/no/cards.json'
+import fiCommon from './locales/fi/common.json'
+import fiCards from './locales/fi/cards.json'
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -46,6 +54,10 @@ i18n.use(initReactI18next).init({
     ru: { common: ruCommon, cards: ruCards },
     tr: { common: trCommon, cards: trCards },
     ca: { common: caCommon, cards: caCards },
+    da: { common: daCommon, cards: daCards },
+    sv: { common: svCommon, cards: svCards },
+    no: { common: noCommon, cards: noCards },
+    fi: { common: fiCommon, cards: fiCards },
   },
   lng: 'en',
   fallbackLng: 'en',

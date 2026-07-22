@@ -1,0 +1,768 @@
+FOREST SHUFFLE SCORER — PLAY STORE LISTING TEXTS
+=================================================
+App-Name: max 30 Zeichen (überall gleich: "Forest Shuffle Scorer", 21 Zeichen)
+Kurze Beschreibung: max 80 Zeichen (alle geprüft)
+Vollständige Beschreibung: max 4000 Zeichen (alle ~1400-1700)
+
+Play-Console-Sprachen → Text-Block:
+  en-US → EN | de-DE → DE | fr-FR → FR
+  es-ES, es-419, es-US → ES (gleicher Text)
+  nl-NL → NL | pl-PL → PL | pt-PT (+pt-BR) → PT | it-IT → IT
+  uk → UK | cs-CZ → CS | hu-HU → HU | ru-RU → RU | tr-TR → TR | ca → CA
+  da-DK → DA | sv-SE → SV | no-NO → NO | fi-FI → FI
+
+
+=================================================
+EN (en-US)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Score calculator & stats tracker for the Forest Shuffle board game.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer is the fastest way to count your points at the end of a Forest Shuffle game — no more mental math over stacked tree symbols.
+
+GUIDED SCORING
+Walk through your forest category by category: trees, top, bottom and lateral cards. Pick what you played and the app calculates everything automatically — including comparison cards, fully occupied trees and cave bonuses.
+
+ALL EXPANSIONS
+• Base game, Alpine, Woodland and Exploration
+• Dartmoor edition fully supported — Exmoor expansion coming soon
+• Solo mode with adjusted scoring rules
+
+SCORE TOGETHER
+• Score all players from one device (1–5 players)
+• Or start a Live Session: everyone counts on their own phone and the results are merged automatically — friends without the app can join from any browser
+
+TRACK YOUR GAMES
+• Full game history with score breakdowns
+• Player profiles with win rates and strategy profiles
+• Leaderboards, records and card analytics: see which cards and tags actually win you games
+• Hall of Fame with global records from players worldwide
+
+MORE
+• Available in 18 languages
+• Works offline at the game table
+• Free, no ads, no account — export your data anytime
+• Built-in feedback form for card translations and rules
+
+KEYWORDS
+Forest Shuffle score calculator, scoring app, companion app, points counter, Alpine expansion, Woodland Edge expansion, Exploration expansion, Dartmoor edition, Exmoor expansion, board game score tracker, card game scorer
+
+Forest Shuffle Scorer is an unofficial, fan-made companion app. It is not affiliated with or endorsed by Lookout GmbH. Forest Shuffle is a trademark of its respective owner.
+
+
+=================================================
+DE (de-DE)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Punkterechner & Statistik für das Brettspiel Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer ist der schnellste Weg, am Ende einer Partie Forest Shuffle die Punkte zu zählen — Schluss mit Kopfrechnen über gestapelten Baumsymbolen.
+
+GEFÜHRTE WERTUNG
+Geh deinen Wald Kategorie für Kategorie durch: Bäume, obere, untere und seitliche Karten. Wähle aus, was du gespielt hast — die App berechnet alles automatisch, inklusive Vergleichskarten, voll besetzter Bäume und Höhlen-Boni.
+
+ALLE ERWEITERUNGEN
+• Grundspiel, Alpin, Waldrand und Exploration
+• Dartmoor-Edition vollständig unterstützt — Exmoor-Erweiterung folgt bald
+• Solo-Modus mit angepassten Wertungsregeln
+
+GEMEINSAM WERTEN
+• Alle Spieler auf einem Gerät werten (1–5 Spieler)
+• Oder eine Live-Session starten: Jeder zählt auf dem eigenen Handy, die Ergebnisse werden automatisch zusammengeführt — wer die App nicht hat, macht einfach im Browser mit
+
+DEINE SPIELE IM BLICK
+• Komplette Spielhistorie mit Punkteaufschlüsselung
+• Spielerprofile mit Siegquoten und Strategieprofilen
+• Bestenlisten, Rekorde und Kartenstatistiken: Sieh, welche Karten und Symbole wirklich Partien gewinnen
+• Hall of Fame mit weltweiten Rekorden
+
+AUSSERDEM
+• In 18 Sprachen verfügbar
+• Funktioniert offline am Spieltisch
+• Kostenlos, ohne Werbung, ohne Konto — Datenexport jederzeit möglich
+• Feedback-Formular für Kartenübersetzungen und Regeln direkt in der App
+
+KEYWORDS
+Forest Shuffle Punktezähler, Punkterechner, Companion App, Wertungshilfe, Erweiterung Alpin (Alpine), Erweiterung Waldrand (Woodland Edge), Erweiterung Exploration, Dartmoor Edition, Exmoor Erweiterung, Brettspiel Punkte zählen, Kartenspiel Wertung
+
+Forest Shuffle Scorer ist eine inoffizielle Fan-App und steht in keiner Verbindung zur Lookout GmbH. Forest Shuffle ist eine Marke des jeweiligen Rechteinhabers.
+
+
+=================================================
+FR (fr-FR)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Calcul des scores et statistiques pour le jeu Forêt Mixte (Forest Shuffle).
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer est le moyen le plus rapide de compter vos points à la fin d'une partie de Forêt Mixte (Forest Shuffle) — fini le calcul mental sur des symboles d'arbres empilés.
+
+COMPTAGE GUIDÉ
+Parcourez votre forêt catégorie par catégorie : arbres, cartes du haut, du bas et latérales. Sélectionnez vos cartes, l'application calcule tout automatiquement — y compris les cartes de comparaison, les arbres entièrement occupés et les bonus de grottes.
+
+TOUTES LES EXTENSIONS
+• Jeu de base, Alpine, Lisière et Exploration
+• Édition Dartmoor entièrement prise en charge — extension Exmoor bientôt disponible
+• Mode solo avec règles de comptage adaptées
+
+COMPTEZ ENSEMBLE
+• Comptez tous les joueurs depuis un seul appareil (1 à 5 joueurs)
+• Ou lancez une session live : chacun compte sur son propre téléphone et les résultats sont fusionnés automatiquement — les amis sans l'application participent depuis n'importe quel navigateur
+
+SUIVEZ VOS PARTIES
+• Historique complet avec détail des scores
+• Profils de joueurs, taux de victoire et profils de stratégie
+• Classements, records et statistiques de cartes : découvrez quelles cartes font vraiment gagner
+• Hall of Fame avec les records mondiaux des joueurs
+
+ET AUSSI
+• Disponible en 18 langues
+• Fonctionne hors ligne à la table de jeu
+• Gratuit, sans publicité, sans compte — exportez vos données à tout moment
+• Formulaire de retour intégré pour les traductions de cartes et les règles
+
+MOTS-CLÉS
+Forêt Mixte compteur de points, Forest Shuffle score, application compagnon, extension Alpine, extension Lisière (Woodland Edge), extension Exploration, édition Dartmoor, extension Exmoor, calcul des points jeu de société, compteur jeu de cartes
+
+Forest Shuffle Scorer est une application non officielle créée par des fans. Elle n'est ni affiliée à Lookout GmbH ni approuvée par elle. Forêt Mixte / Forest Shuffle est une marque de son propriétaire respectif.
+
+
+=================================================
+ES (es-ES, es-419, es-US — gleicher Text)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Calculadora de puntos y estadísticas para el juego Bosque Mixto.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer es la forma más rápida de contar los puntos al final de una partida de Bosque Mixto (Forest Shuffle): se acabó el cálculo mental sobre símbolos de árboles apilados.
+
+PUNTUACIÓN GUIADA
+Recorre tu bosque categoría por categoría: árboles, cartas superiores, inferiores y laterales. Selecciona tus cartas y la app lo calcula todo automáticamente, incluidas las cartas de comparación, los árboles completamente ocupados y los bonus de cuevas.
+
+TODAS LAS EXPANSIONES
+• Juego base, Alpina, Lindero y Exploración
+• Edición Dartmoor totalmente compatible — expansión Exmoor próximamente
+• Modo en solitario con reglas de puntuación adaptadas
+
+PUNTUAD JUNTOS
+• Puntúa a todos los jugadores desde un solo dispositivo (1–5 jugadores)
+• O inicia una sesión en vivo: cada uno cuenta en su propio móvil y los resultados se combinan automáticamente; los amigos sin la app pueden unirse desde cualquier navegador
+
+SIGUE TUS PARTIDAS
+• Historial completo con desglose de puntuaciones
+• Perfiles de jugador, porcentajes de victoria y perfiles de estrategia
+• Clasificaciones, récords y estadísticas de cartas: descubre qué cartas y símbolos ganan partidas de verdad
+• Salón de la Fama con récords globales de jugadores de todo el mundo
+
+ADEMÁS
+• Disponible en 18 idiomas
+• Funciona sin conexión en la mesa de juego
+• Gratis, sin anuncios y sin cuenta; exporta tus datos cuando quieras
+• Formulario de comentarios integrado para traducciones de cartas y reglas
+
+PALABRAS CLAVE
+Bosque Mixto contador de puntos, Forest Shuffle puntuación, app compañera, expansión Alpina (Alpine), expansión Lindero (Woodland Edge), expansión Exploración (Exploration), edición Dartmoor, expansión Exmoor, contador de puntos juego de mesa, marcador juego de cartas
+
+Forest Shuffle Scorer es una aplicación no oficial creada por fans. No está afiliada a Lookout GmbH ni cuenta con su respaldo. Bosque Mixto / Forest Shuffle es una marca de su respectivo propietario.
+
+
+=================================================
+NL (nl-NL)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Puntenteller en statistieken voor het bordspel Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer is de snelste manier om je punten te tellen aan het einde van een potje Forest Shuffle — nooit meer hoofdrekenen boven gestapelde boomsymbolen.
+
+BEGELEID SCOREN
+Loop je bos categorie voor categorie door: bomen, boven-, onder- en zijkaarten. Kies je kaarten en de app berekent alles automatisch — inclusief vergelijkingskaarten, volledig bezette bomen en grotbonussen.
+
+ALLE UITBREIDINGEN
+• Basisspel, Alpine, Woodland en Exploration
+• Dartmoor-editie volledig ondersteund — Exmoor-uitbreiding komt binnenkort
+• Solomodus met aangepaste scoreregels
+
+SAMEN SCOREN
+• Scoor alle spelers vanaf één toestel (1–5 spelers)
+• Of start een live-sessie: iedereen telt op de eigen telefoon en de resultaten worden automatisch samengevoegd — vrienden zonder de app doen mee via de browser
+
+VOLG JE POTJES
+• Volledige spelgeschiedenis met puntenoverzicht
+• Spelersprofielen met winstpercentages en strategieprofielen
+• Ranglijsten, records en kaartstatistieken: zie welke kaarten en symbolen écht potjes winnen
+• Hall of Fame met wereldwijde records
+
+VERDER
+• Beschikbaar in 18 talen
+• Werkt offline aan de speltafel
+• Gratis, zonder reclame, zonder account — exporteer je gegevens wanneer je wilt
+• Ingebouwd feedbackformulier voor kaartvertalingen en regels
+
+TREFWOORDEN
+Forest Shuffle puntenteller, scoretracker, companion app, Alpine uitbreiding, Woodland Edge uitbreiding, Exploration uitbreiding, Dartmoor editie, Exmoor uitbreiding, bordspel punten tellen, kaartspel score
+
+Forest Shuffle Scorer is een onofficiële fan-app en is niet verbonden aan of goedgekeurd door Lookout GmbH. Forest Shuffle is een merk van de respectieve eigenaar.
+
+
+=================================================
+PL (pl-PL)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Kalkulator punktów i statystyki do gry planszowej Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer to najszybszy sposób na policzenie punktów na koniec partii Forest Shuffle — koniec z liczeniem w pamięci nad stosami symboli drzew.
+
+PUNKTOWANIE KROK PO KROKU
+Przejdź przez swój las kategoria po kategorii: drzewa, karty górne, dolne i boczne. Wybierz zagrane karty, a aplikacja policzy wszystko automatycznie — łącznie z kartami porównawczymi, w pełni zajętymi drzewami i bonusami za jaskinie.
+
+WSZYSTKIE DODATKI
+• Podstawa, Alpine, Woodland i Exploration
+• Pełne wsparcie edycji Dartmoor — dodatek Exmoor już wkrótce
+• Tryb solo z dostosowanymi zasadami punktacji
+
+PUNKTUJCIE RAZEM
+• Policz wszystkich graczy na jednym urządzeniu (1–5 graczy)
+• Albo rozpocznij sesję na żywo: każdy liczy na własnym telefonie, a wyniki łączą się automatycznie — znajomi bez aplikacji dołączą przez przeglądarkę
+
+ŚLEDŹ SWOJE PARTIE
+• Pełna historia gier ze szczegółowym podziałem punktów
+• Profile graczy, procent zwycięstw i profile strategii
+• Rankingi, rekordy i statystyki kart: zobacz, które karty i symbole naprawdę wygrywają partie
+• Hall of Fame ze światowymi rekordami graczy
+
+PONADTO
+• Dostępna w 18 językach
+• Działa offline przy stole
+• Za darmo, bez reklam, bez konta — eksport danych w każdej chwili
+• Wbudowany formularz opinii o tłumaczeniach kart i zasadach
+
+SŁOWA KLUCZOWE
+Forest Shuffle licznik punktów, kalkulator punktacji, aplikacja towarzysząca, dodatek Alpine, dodatek Woodland Edge, dodatek Exploration, edycja Dartmoor, dodatek Exmoor, liczenie punktów gra planszowa, punktacja gra karciana
+
+Forest Shuffle Scorer to nieoficjalna aplikacja stworzona przez fanów. Nie jest powiązana z Lookout GmbH ani przez nią wspierana. Forest Shuffle jest znakiem towarowym odpowiedniego właściciela.
+
+
+=================================================
+PT (pt-PT — kann auch für pt-BR verwendet werden)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Calculadora de pontos e estatísticas para o jogo Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer é a forma mais rápida de contar os pontos no final de uma partida de Forest Shuffle — chega de contas de cabeça sobre símbolos de árvores empilhados.
+
+PONTUAÇÃO GUIADA
+Percorra a sua floresta categoria a categoria: árvores, cartas superiores, inferiores e laterais. Selecione as suas cartas e a app calcula tudo automaticamente — incluindo cartas de comparação, árvores totalmente ocupadas e bónus de grutas.
+
+TODAS AS EXPANSÕES
+• Jogo base, Alpine, Woodland e Exploration
+• Edição Dartmoor totalmente suportada — expansão Exmoor em breve
+• Modo a solo com regras de pontuação ajustadas
+
+PONTUEM JUNTOS
+• Pontue todos os jogadores num único dispositivo (1–5 jogadores)
+• Ou inicie uma sessão ao vivo: cada um conta no próprio telemóvel e os resultados são combinados automaticamente — amigos sem a app participam por qualquer navegador
+
+ACOMPANHE OS SEUS JOGOS
+• Histórico completo com detalhe das pontuações
+• Perfis de jogador, taxas de vitória e perfis de estratégia
+• Classificações, recordes e estatísticas de cartas: veja que cartas e símbolos ganham mesmo os jogos
+• Hall of Fame com recordes globais de jogadores de todo o mundo
+
+E AINDA
+• Disponível em 18 idiomas
+• Funciona offline na mesa de jogo
+• Grátis, sem anúncios, sem conta — exporte os seus dados quando quiser
+• Formulário de feedback integrado para traduções de cartas e regras
+
+PALAVRAS-CHAVE
+Forest Shuffle contador de pontos, calculadora de pontuação, app de apoio, expansão Alpine, expansão Woodland Edge, expansão Exploration, edição Dartmoor, expansão Exmoor, contagem de pontos jogo de tabuleiro, pontuação jogo de cartas
+
+Forest Shuffle Scorer é uma aplicação não oficial criada por fãs. Não é afiliada nem apoiada pela Lookout GmbH. Forest Shuffle é uma marca do respetivo proprietário.
+
+
+=================================================
+IT (it-IT)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Calcolo dei punti e statistiche per il gioco da tavolo Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer è il modo più veloce per contare i punti alla fine di una partita a Forest Shuffle — basta calcoli a mente sopra simboli di alberi impilati.
+
+CONTEGGIO GUIDATO
+Attraversa la tua foresta categoria per categoria: alberi, carte superiori, inferiori e laterali. Seleziona le carte giocate e l'app calcola tutto automaticamente — comprese le carte di confronto, gli alberi completamente occupati e i bonus delle caverne.
+
+TUTTE LE ESPANSIONI
+• Gioco base, Alpine, Woodland ed Exploration
+• Edizione Dartmoor pienamente supportata — espansione Exmoor in arrivo
+• Modalità in solitario con regole di punteggio adattate
+
+CONTATE INSIEME
+• Conta i punti di tutti i giocatori da un solo dispositivo (1–5 giocatori)
+• Oppure avvia una sessione live: ognuno conta sul proprio telefono e i risultati si uniscono automaticamente — gli amici senza l'app partecipano da qualsiasi browser
+
+TIENI TRACCIA DELLE PARTITE
+• Cronologia completa con dettaglio dei punteggi
+• Profili giocatore, percentuali di vittoria e profili di strategia
+• Classifiche, record e statistiche delle carte: scopri quali carte e simboli fanno vincere davvero
+• Hall of Fame con i record globali dei giocatori di tutto il mondo
+
+E INOLTRE
+• Disponibile in 18 lingue
+• Funziona offline al tavolo da gioco
+• Gratuita, senza pubblicità, senza account — esporta i tuoi dati quando vuoi
+• Modulo di feedback integrato per traduzioni delle carte e regole
+
+PAROLE CHIAVE
+Forest Shuffle conta punti, calcolo punteggio, app companion, espansione Alpine, espansione Woodland Edge, espansione Exploration, edizione Dartmoor, espansione Exmoor, conteggio punti gioco da tavolo, segnapunti gioco di carte
+
+Forest Shuffle Scorer è un'app non ufficiale creata da fan. Non è affiliata a Lookout GmbH né da essa approvata. Forest Shuffle è un marchio del rispettivo proprietario.
+
+
+=================================================
+UK (uk)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Підрахунок балів і статистика для настільної гри Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer — найшвидший спосіб підрахувати бали наприкінці партії у Forest Shuffle. Більше жодної усної математики над стосами символів дерев.
+
+ПОКРОКОВИЙ ПІДРАХУНОК
+Пройдіть свій ліс категорія за категорією: дерева, верхні, нижні та бічні картки. Оберіть зіграні картки — застосунок порахує все автоматично, включно з картками порівняння, повністю заповненими деревами та бонусами печер.
+
+УСІ ДОПОВНЕННЯ
+• Базова гра, Alpine, Woodland та Exploration
+• Повна підтримка видання Dartmoor — доповнення Exmoor незабаром
+• Соло-режим з адаптованими правилами підрахунку
+
+РАХУЙТЕ РАЗОМ
+• Рахуйте всіх гравців з одного пристрою (1–5 гравців)
+• Або почніть живу сесію: кожен рахує на своєму телефоні, а результати об'єднуються автоматично — друзі без застосунку можуть долучитися через браузер
+
+ВІДСТЕЖУЙТЕ СВОЇ ПАРТІЇ
+• Повна історія ігор з деталізацією балів
+• Профілі гравців, відсоток перемог і профілі стратегій
+• Рейтинги, рекорди та статистика карток: дізнайтеся, які картки й символи справді виграють партії
+• Зала слави зі світовими рекордами гравців
+
+А ТАКОЖ
+• Доступно 18 мовами
+• Працює офлайн за ігровим столом
+• Безкоштовно, без реклами, без облікового запису — експортуйте свої дані будь-коли
+• Вбудована форма відгуків щодо перекладів карток і правил
+
+КЛЮЧОВІ СЛОВА
+Forest Shuffle підрахунок балів, калькулятор очок, застосунок-компаньйон, доповнення Alpine, доповнення Woodland Edge, доповнення Exploration, видання Dartmoor, доповнення Exmoor, підрахунок балів настільна гра, рахунок карткова гра
+
+Forest Shuffle Scorer — неофіційний фанатський застосунок. Він не пов'язаний з Lookout GmbH і не схвалений нею. Forest Shuffle є торговельною маркою відповідного власника.
+
+
+=================================================
+CS (cs-CZ)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Počítání bodů a statistiky pro deskovou hru Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer je nejrychlejší způsob, jak spočítat body na konci partie Forest Shuffle — konec počítání z hlavy nad naskládanými symboly stromů.
+
+PRŮVODCE POČÍTÁNÍM
+Projděte svůj les kategorii po kategorii: stromy, horní, dolní a boční karty. Vyberte zahrané karty a aplikace vše spočítá automaticky — včetně porovnávacích karet, plně obsazených stromů a bonusů za jeskyně.
+
+VŠECHNA ROZŠÍŘENÍ
+• Základní hra, Alpine, Woodland a Exploration
+• Plná podpora edice Dartmoor — rozšíření Exmoor již brzy
+• Sólo režim s upravenými pravidly bodování
+
+POČÍTEJTE SPOLEČNĚ
+• Spočítejte všechny hráče na jednom zařízení (1–5 hráčů)
+• Nebo spusťte živou relaci: každý počítá na svém telefonu a výsledky se automaticky sloučí — přátelé bez aplikace se připojí z libovolného prohlížeče
+
+SLEDUJTE SVÉ PARTIE
+• Kompletní historie her s rozpisem bodů
+• Profily hráčů, úspěšnost výher a strategické profily
+• Žebříčky, rekordy a statistiky karet: zjistěte, které karty a symboly opravdu vyhrávají
+• Síň slávy se světovými rekordy hráčů
+
+A NAVÍC
+• K dispozici v 18 jazycích
+• Funguje offline u herního stolu
+• Zdarma, bez reklam, bez účtu — export dat kdykoli
+• Vestavěný formulář zpětné vazby k překladům karet a pravidlům
+
+KLÍČOVÁ SLOVA
+Forest Shuffle počítadlo bodů, kalkulačka bodů, doprovodná aplikace, rozšíření Alpine, rozšíření Woodland Edge, rozšíření Exploration, edice Dartmoor, rozšíření Exmoor, počítání bodů desková hra, skóre karetní hra
+
+Forest Shuffle Scorer je neoficiální fanouškovská aplikace. Není spojena s Lookout GmbH ani jí schválena. Forest Shuffle je ochrannou známkou příslušného vlastníka.
+
+
+=================================================
+HU (hu-HU)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Pontszámoló és statisztikák a Forest Shuffle társasjátékhoz.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer — a leggyorsabb módja annak, hogy összeszámold a pontokat egy Forest Shuffle-parti végén. Nincs több fejszámolás egymásra pakolt fa-szimbólumok fölött.
+
+VEZETETT PONTOZÁS
+Haladj végig az erdődön kategóriáról kategóriára: fák, felső, alsó és oldalsó lapok. Válaszd ki a kijátszott lapokat, és az alkalmazás mindent automatikusan kiszámol — beleértve az összehasonlító lapokat, a teljesen betelt fákat és a barlangbónuszokat is.
+
+MINDEN KIEGÉSZÍTŐ
+• Alapjáték, Alpine, Woodland és Exploration
+• Teljes Dartmoor-támogatás — az Exmoor kiegészítő hamarosan érkezik
+• Szóló mód igazított pontozási szabályokkal
+
+PONTOZZATOK EGYÜTT
+• Pontozd az összes játékost egyetlen eszközről (1–5 játékos)
+• Vagy indíts élő munkamenetet: mindenki a saját telefonján számol, az eredmények automatikusan összeolvadnak — az alkalmazás nélküli barátok böngészőből csatlakozhatnak
+
+KÖVESD A PARTIJAIDAT
+• Teljes játéktörténet részletes pontbontással
+• Játékosprofilok győzelmi aránnyal és stratégiaprofillal
+• Ranglisták, rekordok és lapstatisztikák: nézd meg, mely lapok és szimbólumok nyernek igazán
+• Hall of Fame a játékosok világrekordjaival
+
+TOVÁBBÁ
+• 18 nyelven elérhető
+• Offline is működik a játékasztalnál
+• Ingyenes, reklám- és fiókmentes — az adataidat bármikor exportálhatod
+• Beépített visszajelzési űrlap a lapfordításokhoz és szabályokhoz
+
+KULCSSZAVAK
+Forest Shuffle pontszámláló, pontkalkulátor, kísérőalkalmazás, Alpine kiegészítő, Woodland Edge kiegészítő, Exploration kiegészítő, Dartmoor kiadás, Exmoor kiegészítő, társasjáték pontszámolás, kártyajáték pontozás
+
+A Forest Shuffle Scorer nem hivatalos, rajongói alkalmazás. Nem áll kapcsolatban a Lookout GmbH-val, és az nem támogatja. A Forest Shuffle a mindenkori tulajdonos védjegye.
+
+
+=================================================
+RU (ru-RU)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Подсчёт очков и статистика для настольной игры Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer — самый быстрый способ подсчитать очки в конце партии Forest Shuffle. Больше никакого устного счёта над стопками символов деревьев.
+
+ПОШАГОВЫЙ ПОДСЧЁТ
+Пройдите свой лес категория за категорией: деревья, верхние, нижние и боковые карты. Выберите сыгранные карты — приложение посчитает всё автоматически, включая карты сравнения, полностью заполненные деревья и бонусы пещер.
+
+ВСЕ ДОПОЛНЕНИЯ
+• Базовая игра, Alpine, Woodland и Exploration
+• Полная поддержка издания Dartmoor — дополнение Exmoor скоро
+• Соло-режим с адаптированными правилами подсчёта
+
+СЧИТАЙТЕ ВМЕСТЕ
+• Считайте всех игроков с одного устройства (1–5 игроков)
+• Или начните живую сессию: каждый считает на своём телефоне, результаты объединяются автоматически — друзья без приложения подключаются через браузер
+
+ОТСЛЕЖИВАЙТЕ СВОИ ПАРТИИ
+• Полная история игр с разбивкой очков
+• Профили игроков, процент побед и профили стратегий
+• Рейтинги, рекорды и статистика карт: узнайте, какие карты и символы действительно выигрывают партии
+• Зал славы с мировыми рекордами игроков
+
+А ТАКЖЕ
+• Доступно на 18 языках
+• Работает офлайн за игровым столом
+• Бесплатно, без рекламы, без аккаунта — экспорт данных в любой момент
+• Встроенная форма обратной связи по переводам карт и правилам
+
+КЛЮЧЕВЫЕ СЛОВА
+Forest Shuffle подсчёт очков, калькулятор очков, приложение-компаньон, дополнение Alpine, дополнение Woodland Edge, дополнение Exploration, издание Dartmoor, дополнение Exmoor, подсчёт очков настольная игра, счёт карточная игра
+
+Forest Shuffle Scorer — неофициальное фанатское приложение. Оно не связано с Lookout GmbH и не одобрено ею. Forest Shuffle — товарный знак соответствующего владельца.
+
+
+=================================================
+TR (tr-TR)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Forest Shuffle kutu oyunu için puan hesaplayıcı ve istatistikler.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer, bir Forest Shuffle oyununun sonunda puanları saymanın en hızlı yolu — üst üste dizilmiş ağaç sembolleri üzerinde zihinden hesap yapmak yok artık.
+
+ADIM ADIM PUANLAMA
+Ormanınızı kategori kategori gezin: ağaçlar, üst, alt ve yan kartlar. Oynadığınız kartları seçin, uygulama her şeyi otomatik hesaplasın — karşılaştırma kartları, tamamen dolu ağaçlar ve mağara bonusları dahil.
+
+TÜM GENİŞLEMELER
+• Temel oyun, Alpine, Woodland ve Exploration
+• Dartmoor sürümü tam destekli — Exmoor genişlemesi çok yakında
+• Uyarlanmış puanlama kurallarıyla solo mod
+
+BİRLİKTE PUANLAYIN
+• Tüm oyuncuları tek cihazdan puanlayın (1–5 oyuncu)
+• Ya da canlı oturum başlatın: herkes kendi telefonunda sayar, sonuçlar otomatik birleşir — uygulaması olmayan arkadaşlar tarayıcıdan katılabilir
+
+OYUNLARINIZI TAKİP EDİN
+• Puan dökümüyle eksiksiz oyun geçmişi
+• Kazanma oranları ve strateji profilleriyle oyuncu profilleri
+• Sıralamalar, rekorlar ve kart istatistikleri: hangi kartların ve sembollerin gerçekten kazandırdığını görün
+• Dünya çapındaki oyuncu rekorlarıyla Şöhret Salonu
+
+AYRICA
+• 18 dilde kullanılabilir
+• Oyun masasında çevrimdışı çalışır
+• Ücretsiz, reklamsız, hesap gerektirmez — verilerinizi istediğiniz zaman dışa aktarın
+• Kart çevirileri ve kurallar için yerleşik geri bildirim formu
+
+ANAHTAR KELİMELER
+Forest Shuffle puan sayacı, puan hesaplayıcı, yardımcı uygulama, Alpine genişlemesi, Woodland Edge genişlemesi, Exploration genişlemesi, Dartmoor sürümü, Exmoor genişlemesi, kutu oyunu puan sayma, kart oyunu skor
+
+Forest Shuffle Scorer resmi olmayan, hayranlar tarafından yapılmış bir yardımcı uygulamadır. Lookout GmbH ile bağlantılı değildir ve onun tarafından onaylanmamıştır. Forest Shuffle, ilgili sahibinin ticari markasıdır.
+
+
+=================================================
+CA (ca)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Calculadora de punts i estadístiques per al joc de taula Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer és la manera més ràpida de comptar els punts al final d'una partida de Forest Shuffle — s'ha acabat el càlcul mental sobre símbols d'arbres apilats.
+
+PUNTUACIÓ GUIADA
+Recorre el teu bosc categoria per categoria: arbres, cartes superiors, inferiors i laterals. Selecciona les cartes jugades i l'aplicació ho calcula tot automàticament — incloses les cartes de comparació, els arbres completament ocupats i els bonus de coves.
+
+TOTES LES EXPANSIONS
+• Joc base, Alpine, Woodland i Exploration
+• Edició Dartmoor totalment compatible — expansió Exmoor properament
+• Mode en solitari amb regles de puntuació adaptades
+
+PUNTUEU PLEGATS
+• Puntua tots els jugadors des d'un sol dispositiu (1–5 jugadors)
+• O inicia una sessió en directe: cadascú compta al seu propi mòbil i els resultats es combinen automàticament — els amics sense l'aplicació s'hi poden afegir des de qualsevol navegador
+
+SEGUEIX LES TEVES PARTIDES
+• Historial complet amb desglossament de puntuacions
+• Perfils de jugador, percentatges de victòria i perfils d'estratègia
+• Classificacions, rècords i estadístiques de cartes: descobreix quines cartes i símbols guanyen partides de debò
+• Saló de la Fama amb rècords globals de jugadors d'arreu del món
+
+A MÉS
+• Disponible en 18 idiomes
+• Funciona sense connexió a la taula de joc
+• Gratuïta, sense anuncis i sense compte — exporta les teves dades quan vulguis
+• Formulari de comentaris integrat per a traduccions de cartes i regles
+
+PARAULES CLAU
+Forest Shuffle comptador de punts, calculadora de puntuació, aplicació companya, expansió Alpine, expansió Woodland Edge, expansió Exploration, edició Dartmoor, expansió Exmoor, recompte de punts joc de taula, marcador joc de cartes
+
+Forest Shuffle Scorer és una aplicació no oficial creada per aficionats. No està afiliada a Lookout GmbH ni compta amb el seu suport. Forest Shuffle és una marca del seu propietari respectiu.
+
+
+=================================================
+DA (da-DK)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Pointberegner og statistik til brætspillet Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer er den hurtigste måde at tælle point på, når en omgang Forest Shuffle slutter — slut med hovedregning over stablede træsymboler.
+
+GUIDET POINTTÆLLING
+Gå din skov igennem kategori for kategori: træer, øverste, nederste og sidekort. Vælg de kort, du har spillet, og appen beregner alt automatisk — inklusive sammenligningskort, fuldt besatte træer og hulebonusser.
+
+ALLE UDVIDELSER
+• Grundspil, Alpine, Woodland og Exploration
+• Fuld understøttelse af Dartmoor-udgaven — Exmoor-udvidelsen kommer snart
+• Solotilstand med tilpassede pointregler
+
+TÆL SAMMEN
+• Tæl point for alle spillere fra én enhed (1–5 spillere)
+• Eller start en live-session: alle tæller på deres egen telefon, og resultaterne samles automatisk — venner uden appen kan deltage fra enhver browser
+
+FØLG DINE SPIL
+• Komplet spilhistorik med pointfordeling
+• Spillerprofiler med sejrsprocenter og strategiprofiler
+• Ranglister, rekorder og kortstatistik: se hvilke kort og symboler der virkelig vinder spil
+• Hall of Fame med globale rekorder fra spillere verden over
+
+DESUDEN
+• Fås på 18 sprog
+• Virker offline ved spillebordet
+• Gratis, ingen reklamer, ingen konto — eksportér dine data når som helst
+• Indbygget feedbackformular til kortoversættelser og regler
+
+NØGLEORD
+Forest Shuffle pointtæller, pointberegner, companion app, Alpine udvidelse, Woodland Edge udvidelse, Exploration udvidelse, Dartmoor udgave, Exmoor udvidelse, brætspil point, kortspil score
+
+Forest Shuffle Scorer er en uofficiel fan-app. Den er ikke tilknyttet eller godkendt af Lookout GmbH. Forest Shuffle er et varemærke tilhørende den respektive ejer.
+
+
+=================================================
+SV (sv-SE)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Poängräknare och statistik för brädspelet Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer är det snabbaste sättet att räkna poängen i slutet av en omgång Forest Shuffle — slut på huvudräkning över staplade trädsymboler.
+
+GUIDAD POÄNGRÄKNING
+Gå igenom din skog kategori för kategori: träd, övre, nedre och sidokort. Välj dina kort så räknar appen ut allt automatiskt — inklusive jämförelsekort, fullsatta träd och grottbonusar.
+
+ALLA EXPANSIONER
+• Grundspel, Alpine, Woodland och Exploration
+• Dartmoor-utgåvan stöds fullt ut — Exmoor-expansionen kommer snart
+• Sololäge med anpassade poängregler
+
+RÄKNA TILLSAMMANS
+• Räkna alla spelare från en enhet (1–5 spelare)
+• Eller starta en live-session: alla räknar på sin egen telefon och resultaten slås ihop automatiskt — vänner utan appen kan delta via valfri webbläsare
+
+FÖLJ DINA PARTIER
+• Komplett spelhistorik med poängfördelning
+• Spelarprofiler med vinstprocent och strategiprofiler
+• Topplistor, rekord och kortstatistik: se vilka kort och symboler som faktiskt vinner partier
+• Hall of Fame med globala rekord från spelare världen över
+
+DESSUTOM
+• Finns på 18 språk
+• Fungerar offline vid spelbordet
+• Gratis, inga annonser, inget konto — exportera dina data när du vill
+• Inbyggt feedbackformulär för kortöversättningar och regler
+
+NYCKELORD
+Forest Shuffle poängräknare, poängkalkylator, companion app, Alpine expansion, Woodland Edge expansion, Exploration expansion, Dartmoor utgåva, Exmoor expansion, brädspel poäng, kortspel poängräkning
+
+Forest Shuffle Scorer är en inofficiell fan-app. Den är inte ansluten till eller godkänd av Lookout GmbH. Forest Shuffle är ett varumärke som tillhör respektive ägare.
+
+
+=================================================
+NO (no-NO)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Poengkalkulator og statistikk for brettspillet Forest Shuffle.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer er den raskeste måten å telle poeng på når en runde Forest Shuffle er over — slutt på hoderegning over stablede tresymboler.
+
+VEILEDET POENGTELLING
+Gå gjennom skogen din kategori for kategori: trær, øvre, nedre og sidekort. Velg kortene du har spilt, og appen beregner alt automatisk — inkludert sammenligningskort, fullt besatte trær og hulebonuser.
+
+ALLE UTVIDELSER
+• Grunnspill, Alpine, Woodland og Exploration
+• Full støtte for Dartmoor-utgaven — Exmoor-utvidelsen kommer snart
+• Solomodus med tilpassede poengregler
+
+TELL SAMMEN
+• Tell poeng for alle spillere fra én enhet (1–5 spillere)
+• Eller start en live-økt: alle teller på sin egen telefon, og resultatene slås sammen automatisk — venner uten appen kan bli med fra hvilken som helst nettleser
+
+FØLG SPILLENE DINE
+• Komplett spillhistorikk med poengfordeling
+• Spillerprofiler med seiersprosent og strategiprofiler
+• Topplister, rekorder og kortstatistikk: se hvilke kort og symboler som faktisk vinner spill
+• Hall of Fame med globale rekorder fra spillere verden over
+
+DESSUTEN
+• Tilgjengelig på 18 språk
+• Fungerer offline ved spillbordet
+• Gratis, ingen reklame, ingen konto — eksporter dataene dine når som helst
+• Innebygd tilbakemeldingsskjema for kortoversettelser og regler
+
+NØKKELORD
+Forest Shuffle poengteller, poengkalkulator, companion app, Alpine utvidelse, Woodland Edge utvidelse, Exploration utvidelse, Dartmoor utgave, Exmoor utvidelse, brettspill poeng, kortspill poengsum
+
+Forest Shuffle Scorer er en uoffisiell fan-app. Den er ikke tilknyttet eller godkjent av Lookout GmbH. Forest Shuffle er et varemerke som tilhører sin respektive eier.
+
+
+=================================================
+FI (fi-FI)
+=================================================
+App-Name:
+Forest Shuffle Scorer
+
+Kurze Beschreibung:
+Pistelaskuri ja tilastot Forest Shuffle -lautapeliin.
+
+Vollständige Beschreibung:
+Forest Shuffle Scorer on nopein tapa laskea pisteet Forest Shuffle -pelin päätteeksi — ei enää päässälaskua pinottujen puusymbolien äärellä.
+
+OHJATTU PISTELASKU
+Käy metsäsi läpi kategoria kerrallaan: puut sekä ylä-, ala- ja sivukortit. Valitse pelaamasi kortit, ja sovellus laskee kaiken automaattisesti — myös vertailukortit, täyteen miehitetyt puut ja luolabonukset.
+
+KAIKKI LAAJENNUKSET
+• Peruspeli, Alpine, Woodland ja Exploration
+• Täysi tuki Dartmoor-versiolle — Exmoor-laajennus tulossa pian
+• Yksinpelitila mukautetuilla pistesäännöillä
+
+LASKEKAA YHDESSÄ
+• Laske kaikkien pelaajien pisteet yhdeltä laitteelta (1–5 pelaajaa)
+• Tai aloita live-istunto: jokainen laskee omalla puhelimellaan ja tulokset yhdistetään automaattisesti — kaverit ilman sovellusta voivat liittyä selaimella
+
+SEURAA PELEJÄSI
+• Täydellinen pelihistoria piste-erittelyineen
+• Pelaajaprofiilit voittoprosentteineen ja strategiaprofiileineen
+• Tulostaulukot, ennätykset ja korttitilastot: näe, mitkä kortit ja symbolit todella voittavat pelejä
+• Hall of Fame ja pelaajien maailmanlaajuiset ennätykset
+
+LISÄKSI
+• Saatavilla 18 kielellä
+• Toimii offline-tilassa pelipöydässä
+• Ilmainen, ei mainoksia, ei tiliä — vie tietosi milloin tahansa
+• Sisäänrakennettu palautelomake korttikäännöksille ja säännöille
+
+AVAINSANAT
+Forest Shuffle pistelaskuri, pistelaskin, companion-sovellus, Alpine-laajennus, Woodland Edge -laajennus, Exploration-laajennus, Dartmoor-versio, Exmoor-laajennus, lautapelin pisteet, korttipelin pistelasku
+
+Forest Shuffle Scorer on epävirallinen fanien tekemä sovellus. Se ei liity Lookout GmbH:hon eikä ole sen hyväksymä. Forest Shuffle on omistajansa tavaramerkki.
