@@ -26,7 +26,7 @@ export function GameInsights({ rankedPlayers }: GameInsightsProps) {
           player_name: p.playerName,
           total_score: p.breakdown!.total,
           rank: p.rank,
-          is_winner: p.rank === 1,
+          is_winner: rankedPlayers.length >= 2 && p.rank === 1,
           score_breakdown: p.breakdown!,
         })),
     }

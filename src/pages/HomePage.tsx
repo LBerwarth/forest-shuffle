@@ -151,12 +151,22 @@ export function HomePage() {
                 </p>
               </div>
               <div className="flex flex-col items-end gap-1">
-                <Badge tone="forest">
-                  <Trophy className="h-3 w-3" />
-                  {recentGame.players.find((p) => p.is_winner)?.player_name ?? '—'}
-                </Badge>
+                {recentGame.player_count < 2 ? (
+                  <Badge tone="forest">
+                    {t('home.soloGame', {
+                      name: recentGame.players[0]?.player_name ?? '—',
+                    })}
+                  </Badge>
+                ) : (
+                  <Badge tone="forest">
+                    <Trophy className="h-3 w-3" />
+                    {recentGame.players.find((p) => p.is_winner)?.player_name ?? '—'}
+                  </Badge>
+                )}
                 <p className="text-xs text-forest-400 flex items-center gap-0.5">
-                  {recentGame.players.find((p) => p.is_winner)?.total_score ?? 0}
+                  {recentGame.player_count < 2
+                    ? (recentGame.players[0]?.total_score ?? 0)
+                    : (recentGame.players.find((p) => p.is_winner)?.total_score ?? 0)}
                   <AcornIcon className="h-3 w-3" />
                 </p>
               </div>

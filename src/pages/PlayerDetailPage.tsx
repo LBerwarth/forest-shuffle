@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Trophy, Target, TrendingUp } from 'lucide-react'
+import { ArrowLeft, Calendar, Trophy, Target, TrendingUp } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { cn } from '@/lib/utils'
@@ -55,29 +55,36 @@ export function PlayerDetailPage() {
   const stats = useMemo(() => {
     if (playerGames.length === 0) return null
     const scores = playerGames.map((g) => g.playerData.total_score)
-    const wins = playerGames.filter((g) => g.playerData.is_winner).length
+    // Wins only exist in group games — solo has no winner.
+    const groupGames = playerGames.filter(
+      (g) => (g.player_count ?? g.players.length) >= 2,
+    )
+    const wins = groupGames.filter((g) => g.playerData.is_winner).length
     return {
       gamesPlayed: playerGames.length,
       wins,
-      winRate: Math.round((wins / playerGames.length) * 100),
+      winRate:
+        groupGames.length > 0 ? Math.round((wins / groupGames.length) * 100) : 0,
       avgScore: Math.round(scores.reduce((a, b) => a + b, 0) / scores.length),
       bestScore: Math.max(...scores),
     }
   }, [playerGames])
 
   const radarData = useMemo(() => {
-    if (playerGames.length === 0) return []
     const totals: Record<string, number> = {}
+    let gamesWithBreakdown = 0
     for (const g of playerGames) {
       const bd = g.playerData.score_breakdown
       if (!bd) continue
+      gamesWithBreakdown++
       for (const [cat, pts] of Object.entries(bd.categoryTotals)) {
         totals[cat] = (totals[cat] || 0) + pts
       }
     }
+    if (gamesWithBreakdown === 0) return []
     return CATEGORY_ORDER.map((cat) => ({
       category: t(`category.${cat}`),
-      value: Math.round((totals[cat] || 0) / playerGames.length),
+      value: Math.round((totals[cat] || 0) / gamesWithBreakdown),
     }))
   }, [playerGames, t])
 
@@ -143,13 +150,23 @@ export function PlayerDetailPage() {
       {/* Stats cards */}
       {stats && (
         <div className="grid grid-cols-3 gap-2 mb-6">
-          <Card>
-            <CardContent className="py-3 text-center">
-              <Trophy className="h-4 w-4 text-yellow-500 mx-auto mb-1" />
-              <p className="text-lg font-bold text-forest-600">{stats.wins}</p>
-              <p className="text-[10px] text-forest-400">{t('playerDetail.wins', { rate: stats.winRate })}</p>
-            </CardContent>
-          </Card>
+          {scope === 'solo' ? (
+            <Card>
+              <CardContent className="py-3 text-center">
+                <Calendar className="h-4 w-4 text-forest-500 mx-auto mb-1" />
+                <p className="text-lg font-bold text-forest-600">{stats.gamesPlayed}</p>
+                <p className="text-[10px] text-forest-400">{t('leaderboard.totalGames')}</p>
+              </CardContent>
+            </Card>
+          ) : (
+            <Card>
+              <CardContent className="py-3 text-center">
+                <Trophy className="h-4 w-4 text-yellow-500 mx-auto mb-1" />
+                <p className="text-lg font-bold text-forest-600">{stats.wins}</p>
+                <p className="text-[10px] text-forest-400">{t('playerDetail.wins', { rate: stats.winRate })}</p>
+              </CardContent>
+            </Card>
+          )}
           <Card>
             <CardContent className="py-3 text-center">
               <Target className="h-4 w-4 text-forest-500 mx-auto mb-1" />
@@ -238,7 +255,9 @@ export function PlayerDetailPage() {
                     <p className="text-xs text-forest-400">{new Date(g.played_at).toLocaleDateString(i18n.language)}</p>
                     <p className="text-sm text-forest-600">
                       {g.playerData.is_winner && '🏆 '}
-                      {t('playerDetail.rank', { rank: g.playerData.rank, count: g.player_count })}
+                      {g.player_count < 2
+                        ? t('leaderboard.playerCountSolo')
+                        : t('playerDetail.rank', { rank: g.playerData.rank, count: g.player_count })}
                     </p>
                   </div>
                   <span className="flex items-center gap-0.5 text-sm font-bold text-forest-600 tabular-nums">

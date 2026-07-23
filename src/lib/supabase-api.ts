@@ -443,43 +443,57 @@ export async function updateLivePlayerStatus(
 
 // ─── Global Hall of Fame (cross-device) ────────────────────────────────────
 
-export interface GlobalGamePlayerRow {
-  player_name: string
-  total_score: number
-  is_winner: boolean
-  score_breakdown: ScoreBreakdown | null
-  played_at: string
-  player_count: number
+export interface HallOfFameData {
+  totalGames: number
+  totalPlayers: number
+  topGame: { playerName: string; totalScore: number; playedAt: string } | null
+  topCard: {
+    playerName: string
+    cardKey: string
+    points: number
+    playedAt: string
+  } | null
 }
 
-export async function fetchGlobalGamePlayers(
+export async function fetchHallOfFame(
   playerCount?: number | 'group',
-): Promise<GlobalGamePlayerRow[]> {
+  edition?: 'classic' | 'dartmoor',
+): Promise<HallOfFameData> {
   if (!supabase) throw new Error('Supabase not configured')
-  let query = supabase
-    .from('game_players')
-    .select(`
-      player_name,
-      total_score,
-      is_winner,
-      score_breakdown,
-      games!inner ( played_at, player_count )
-    `)
-    .order('total_score', { ascending: false })
-    .limit(500)
-  if (playerCount === 'group') {
-    query = query.gte('games.player_count', 2)
-  } else if (playerCount !== undefined) {
-    query = query.eq('games.player_count', playerCount)
-  }
-  const { data, error } = await query
+  const { data, error } = await supabase.rpc('hall_of_fame', {
+    p_player_count: typeof playerCount === 'number' ? playerCount : null,
+    p_group: playerCount === 'group',
+    p_edition: edition ?? null,
+  })
   if (error) throw error
-  return (data ?? []).map((row: any) => ({
-    player_name: row.player_name,
-    total_score: row.total_score,
-    is_winner: row.is_winner,
-    score_breakdown: row.score_breakdown as ScoreBreakdown | null,
-    played_at: row.games?.played_at ?? '',
-    player_count: row.games?.player_count ?? 0,
-  }))
+  const raw = data as {
+    total_games: number
+    total_players: number
+    top_game: { player_name: string; total_score: number; played_at: string } | null
+    top_card: {
+      player_name: string
+      card_key: string
+      points: number
+      played_at: string
+    } | null
+  }
+  return {
+    totalGames: raw?.total_games ?? 0,
+    totalPlayers: raw?.total_players ?? 0,
+    topGame: raw?.top_game
+      ? {
+          playerName: raw.top_game.player_name,
+          totalScore: raw.top_game.total_score,
+          playedAt: raw.top_game.played_at,
+        }
+      : null,
+    topCard: raw?.top_card
+      ? {
+          playerName: raw.top_card.player_name,
+          cardKey: raw.top_card.card_key,
+          points: raw.top_card.points,
+          playedAt: raw.top_card.played_at,
+        }
+      : null,
+  }
 }

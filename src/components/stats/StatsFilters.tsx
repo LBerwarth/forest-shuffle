@@ -13,7 +13,8 @@ interface StatsFiltersProps {
 
 const EDITION_OPTIONS: EditionFilter[] = ['all', 'classic', 'dartmoor']
 const TIME_OPTIONS: TimeFilter[] = ['all', 'year', 'month', 'week']
-const PLAYER_COUNT_OPTIONS: PlayerCountFilter[] = ['group', 1, 'all', 2, 3, 4, 5, 6]
+// "Alle" first, mirroring the edition and time rows.
+const PLAYER_COUNT_OPTIONS: PlayerCountFilter[] = ['all', 'group', 1, 2, 3, 4, 5, 6]
 
 export function StatsFilters({
   edition,

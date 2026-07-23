@@ -78,6 +78,15 @@ export function LeaderboardPage() {
 
   const atAGlance = useMemo(() => computeAtAGlance(filteredGames), [filteredGames])
 
+  // The group default hides solo-only collections — detect that case so the
+  // empty state can point to the solo view instead of "no games match".
+  const soloGamesExist = useMemo(
+    () =>
+      playerCount === 'group' &&
+      applyFilters(games, edition, time, selectedPlayerIds, matchMode, 1).length > 0,
+    [games, edition, time, selectedPlayerIds, matchMode, playerCount],
+  )
+
   const hasAnyGames = games.length > 0
   const filtersActive = edition !== 'all' || time !== 'all' || selectedPlayerIds.length > 0 || playerCount !== 'all'
 
@@ -118,26 +127,40 @@ export function LeaderboardPage() {
           {filteredGames.length === 0 ? (
             <div className="text-center py-12">
               <Trophy className="h-12 w-12 text-forest-200 mx-auto mb-3" />
-              <p className="text-sm text-forest-400 mb-3">{t('leaderboard.noDataFiltered')}</p>
-              {filtersActive && (
+              <p className="text-sm text-forest-400 mb-3">
+                {soloGamesExist
+                  ? t('leaderboard.onlySoloGames')
+                  : t('leaderboard.noDataFiltered')}
+              </p>
+              {soloGamesExist ? (
                 <button
                   type="button"
-                  onClick={() => {
-                    setEdition('all')
-                    setTime('all')
-                    setSelectedPlayerIds([])
-                    setPlayerCount('all')
-                  }}
+                  onClick={() => setPlayerCount(1)}
                   className="rounded-full bg-forest-100 px-4 py-1.5 text-xs font-medium text-forest-600 hover:bg-forest-200"
                 >
-                  {t('leaderboard.clearFilters')}
+                  {t('leaderboard.showSoloGames')}
                 </button>
+              ) : (
+                filtersActive && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setEdition('all')
+                      setTime('all')
+                      setSelectedPlayerIds([])
+                      setPlayerCount('all')
+                    }}
+                    className="rounded-full bg-forest-100 px-4 py-1.5 text-xs font-medium text-forest-600 hover:bg-forest-200"
+                  >
+                    {t('leaderboard.clearFilters')}
+                  </button>
+                )
               )}
             </div>
           ) : (
             <>
               <AtAGlance metrics={atAGlance} />
-              <LeaderboardList players={aggregatedPlayers} />
+              <LeaderboardList players={aggregatedPlayers} solo={playerCount === 1} />
               <PlayerStrategies players={playerStrategies} />
               <CardAnalytics cards={cardAggregates} />
               <TagInsights tags={tagAggregates} />
@@ -145,11 +168,12 @@ export function LeaderboardPage() {
               <Records aggregatedPlayers={aggregatedPlayers} />
             </>
           )}
-
-          {/* Hall of Fame is global — always render regardless of local data */}
-          <HallOfFame playerCount={playerCount} />
         </>
       )}
+
+      {/* Global records render even before the first own game — most
+          motivating exactly then. */}
+      <HallOfFame playerCount={playerCount} edition={edition} />
     </div>
   )
 }

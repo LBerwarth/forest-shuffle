@@ -1,9 +1,25 @@
 import { useTranslation } from 'react-i18next'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
-import type { AggregatedPlayer } from '@/lib/stats'
+import { MIN_GAMES_FOR_RATES, type AggregatedPlayer } from '@/lib/stats'
 
 interface RecordsProps {
   aggregatedPlayers: AggregatedPlayer[]
+}
+
+// All record holders on a tie, not an arbitrary sort[0].
+function recordHolders(
+  players: AggregatedPlayer[],
+  value: (p: AggregatedPlayer) => number,
+): { names: string; value: number } | null {
+  let best = -Infinity
+  for (const p of players) best = Math.max(best, value(p))
+  if (best === -Infinity) return null
+  const holders = players.filter((p) => value(p) === best).map((p) => p.name)
+  const names =
+    holders.length > 3
+      ? `${holders.slice(0, 3).join(' & ')} …`
+      : holders.join(' & ')
+  return { names, value: best }
 }
 
 export function Records({ aggregatedPlayers }: RecordsProps) {
@@ -11,12 +27,13 @@ export function Records({ aggregatedPlayers }: RecordsProps) {
 
   if (aggregatedPlayers.length === 0) return null
 
-  const mostWins = [...aggregatedPlayers].sort((a, b) => b.wins - a.wins)[0]
-  const highestScore = [...aggregatedPlayers].sort((a, b) => b.bestScore - a.bestScore)[0]
-  const highestAvg = [...aggregatedPlayers].sort((a, b) => b.avgScore - a.avgScore)[0]
-  const longestStreak = [...aggregatedPlayers].sort(
-    (a, b) => b.longestStreak - a.longestStreak,
-  )[0]
+  const mostWins = recordHolders(aggregatedPlayers, (p) => p.wins)
+  const highestScore = recordHolders(aggregatedPlayers, (p) => p.bestScore)
+  const highestAvg = recordHolders(
+    aggregatedPlayers.filter((p) => p.gamesPlayed >= MIN_GAMES_FOR_RATES),
+    (p) => p.avgScore,
+  )
+  const longestStreak = recordHolders(aggregatedPlayers, (p) => p.longestStreak)
 
   return (
     <Card className="mb-4">
@@ -27,25 +44,28 @@ export function Records({ aggregatedPlayers }: RecordsProps) {
       </CardHeader>
       <CardContent>
         <div className="space-y-2">
-          {mostWins && mostWins.wins > 0 && (
-            <Row label={t('leaderboard.mostWins')} value={`${mostWins.name} (${mostWins.wins})`} />
+          {mostWins && mostWins.value > 0 && (
+            <Row
+              label={t('leaderboard.mostWins')}
+              value={`${mostWins.names} (${mostWins.value})`}
+            />
           )}
           {highestScore && (
             <Row
               label={t('leaderboard.highestScore')}
-              value={`${highestScore.name} (${highestScore.bestScore})`}
+              value={`${highestScore.names} (${highestScore.value})`}
             />
           )}
           {highestAvg && (
             <Row
               label={t('leaderboard.highestAverage')}
-              value={`${highestAvg.name} (${highestAvg.avgScore})`}
+              value={`${highestAvg.names} (${highestAvg.value})`}
             />
           )}
-          {longestStreak && longestStreak.longestStreak > 0 && (
+          {longestStreak && longestStreak.value > 0 && (
             <Row
               label={t('leaderboard.longestStreak')}
-              value={`${longestStreak.name} (${longestStreak.longestStreak})`}
+              value={`${longestStreak.names} (${longestStreak.value})`}
             />
           )}
         </div>

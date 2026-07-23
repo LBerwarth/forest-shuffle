@@ -1,4 +1,4 @@
-import type { GameWithPlayers } from '@/types/game'
+import type { Game, GameWithPlayers } from '@/types/game'
 import type { Player } from '@/types/player'
 import type { CardCategory, CardTag } from '@/types/card'
 import { CARDS } from '@/data/cards'
@@ -88,12 +88,22 @@ function computeCutoff(time: TimeFilter, now: Date): number | null {
   return d.getTime()
 }
 
+export function isGroupGame(g: Game): boolean {
+  return g.player_count >= 2
+}
+
+// Rate metrics (win %, average) qualify only from this many games,
+// so one lucky game can't top the quota rankings.
+export const MIN_GAMES_FOR_RATES = 3
+
 export interface AggregatedPlayer {
   playerId: string
   name: string
   color: string
   isLocal: boolean
   gamesPlayed: number
+  // Wins, win rate and streaks only exist for group games — solo has no winner.
+  groupGamesPlayed: number
   wins: number
   winRate: number
   avgScore: number
@@ -111,6 +121,7 @@ export function aggregatePlayers(
     {
       name: string
       games: GameWithPlayers[]
+      groupGames: number
       scores: number[]
       wins: number
     }
@@ -121,12 +132,15 @@ export function aggregatePlayers(
       if (!p.player_id) continue // deleted player — kept in history, excluded from stats
       let entry = map.get(p.player_id)
       if (!entry) {
-        entry = { name: p.player_name, games: [], scores: [], wins: 0 }
+        entry = { name: p.player_name, games: [], groupGames: 0, scores: [], wins: 0 }
         map.set(p.player_id, entry)
       }
       entry.games.push(g)
       entry.scores.push(p.total_score)
-      if (p.is_winner) entry.wins++
+      if (isGroupGame(g)) {
+        entry.groupGames++
+        if (p.is_winner) entry.wins++
+      }
       entry.name = p.player_name
     }
   }
@@ -141,8 +155,10 @@ export function aggregatePlayers(
       color: local?.color ?? '#9ca3af',
       isLocal: !!local,
       gamesPlayed: entry.games.length,
+      groupGamesPlayed: entry.groupGames,
       wins: entry.wins,
-      winRate: Math.round((entry.wins / entry.games.length) * 100),
+      winRate:
+        entry.groupGames > 0 ? Math.round((entry.wins / entry.groupGames) * 100) : 0,
       avgScore: Math.round(sum / entry.scores.length),
       bestScore: Math.max(...entry.scores),
       longestStreak: computeWinStreak(entry.games, playerId),
@@ -161,6 +177,7 @@ export function computeWinStreak(
   let max = 0
   let current = 0
   for (const g of sorted) {
+    if (!isGroupGame(g)) continue // solo games neither extend nor break a streak
     const data = g.players.find((p) => p.player_id === playerId)
     if (!data) continue
     if (data.is_winner) {
@@ -251,7 +268,7 @@ export function aggregateCardStats(games: GameWithPlayers[]): CardAggregate[] {
       totalPoints: entry.totalPoints,
       avgPointsPerAppearance:
         entry.appearances > 0
-          ? Math.round(entry.totalPoints / entry.appearances)
+          ? Math.round((entry.totalPoints / entry.appearances) * 10) / 10
           : 0,
       maxPointsSingle: entry.maxPointsSingle,
       maxBy: entry.maxBy,
@@ -289,7 +306,7 @@ export function aggregatePlayerStrategies(
     {
       name: string
       gameIds: Set<string>
-      tags: Map<CardTag, { cards: number; points: number }>
+      tags: Map<CardTag, { cards: number; points: number; games: number }>
     }
   >()
 
@@ -304,17 +321,22 @@ export function aggregatePlayerStrategies(
       entry.gameIds.add(g.id)
       entry.name = p.player_name
       const breakdownEntries = p.score_breakdown?.entries ?? []
+      const playedThisGame = new Set<CardTag>()
       for (const e of breakdownEntries) {
         if (e.count <= 0) continue
         const tags = CARD_TAGS_BY_KEY.get(e.cardKey)
         if (!tags) continue
         for (const tag of tags) {
           if (!STRATEGY_TAGS.includes(tag)) continue
-          const acc = entry.tags.get(tag) ?? { cards: 0, points: 0 }
+          const acc = entry.tags.get(tag) ?? { cards: 0, points: 0, games: 0 }
           acc.cards += e.count
           acc.points += e.points
           entry.tags.set(tag, acc)
+          playedThisGame.add(tag)
         }
+      }
+      for (const tag of playedThisGame) {
+        entry.tags.get(tag)!.games++
       }
     }
   }
@@ -329,7 +351,9 @@ export function aggregatePlayerStrategies(
         tag,
         cards: acc.cards,
         totalPoints: acc.points,
-        avgPointsPerGame: gamesPlayed > 0 ? Math.round(acc.points / gamesPlayed) : 0,
+        // Same denominator as aggregateTagStats: games where the tag was played.
+        avgPointsPerGame:
+          acc.games > 0 ? Math.round((acc.points / acc.games) * 10) / 10 : 0,
       })
     }
     strategies.sort((a, b) => b.totalPoints - a.totalPoints)
@@ -394,9 +418,9 @@ export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
           { totalCards: 0, totalPoints: 0, playerGames: 0, byPlayer: new Map() }
         overall.totalCards += acc.cards
         overall.totalPoints += acc.points
-        // Only count this player-game toward the avg-denominator if the tag
-        // actually scored — holding a 0-point card shouldn't dilute the avg.
-        if (acc.points > 0) overall.playerGames += 1
+        // Denominator = player-games where the tag was played at all, so
+        // 0-point busts count against the average instead of being hidden.
+        overall.playerGames += 1
         const pe = overall.byPlayer.get(p.player_name) ?? { cards: 0, points: 0 }
         pe.cards += acc.cards
         pe.points += acc.points
@@ -423,83 +447,6 @@ export function aggregateTagStats(games: GameWithPlayers[]): TagAggregate[] {
   }
   result.sort((a, b) => b.avgPointsPerPlayerGame - a.avgPointsPerPlayerGame)
   return result
-}
-
-export interface HallOfFameRecord {
-  playerName: string
-  value: number
-  detail?: string
-  playedAt: string
-}
-
-export interface HallOfFame {
-  topGameScore: HallOfFameRecord | null
-  topCardScore: (HallOfFameRecord & { cardKey: string }) | null
-  mostWins: { playerName: string; wins: number } | null
-  totalGames: number
-  totalPlayers: number
-}
-
-export function aggregateHallOfFame(
-  rows: ReadonlyArray<{
-    player_name: string
-    total_score: number
-    is_winner: boolean
-    score_breakdown: { entries?: { cardKey: string; points: number }[] } | null
-    played_at: string
-  }>,
-): HallOfFame {
-  if (rows.length === 0) {
-    return {
-      topGameScore: null,
-      topCardScore: null,
-      mostWins: null,
-      totalGames: 0,
-      totalPlayers: 0,
-    }
-  }
-  const top = rows[0]!
-  const topGameScore: HallOfFameRecord = {
-    playerName: top.player_name,
-    value: top.total_score,
-    playedAt: top.played_at,
-  }
-
-  let topCardScore: (HallOfFameRecord & { cardKey: string }) | null = null
-  const winsByName = new Map<string, number>()
-  const seenGames = new Set<string>()
-  let totalGames = 0
-  for (const row of rows) {
-    if (row.is_winner) {
-      winsByName.set(row.player_name, (winsByName.get(row.player_name) ?? 0) + 1)
-    }
-    const key = `${row.player_name}|${row.played_at}|${row.total_score}`
-    if (!seenGames.has(key)) {
-      seenGames.add(key)
-      totalGames++
-    }
-    const entries = row.score_breakdown?.entries ?? []
-    for (const e of entries) {
-      if (e.cardKey.startsWith('_')) continue
-      if (!topCardScore || e.points > topCardScore.value) {
-        topCardScore = {
-          playerName: row.player_name,
-          value: e.points,
-          cardKey: e.cardKey,
-          playedAt: row.played_at,
-        }
-      }
-    }
-  }
-
-  let mostWins: { playerName: string; wins: number } | null = null
-  for (const [name, wins] of winsByName) {
-    if (!mostWins || wins > mostWins.wins) mostWins = { playerName: name, wins }
-  }
-
-  const totalPlayers = new Set(rows.map((r) => r.player_name)).size
-
-  return { topGameScore, topCardScore, mostWins, totalGames, totalPlayers }
 }
 
 export interface TagSynergyAggregate {

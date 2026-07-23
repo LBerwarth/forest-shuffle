@@ -57,7 +57,8 @@ export function GameResultPage() {
       player_name: p.playerName,
       total_score: p.breakdown?.total ?? 0,
       rank: p.rank,
-      is_winner: p.rank === 1,
+      // Solo games have no winner — rank 1 is guaranteed, not earned.
+      is_winner: players.length >= 2 && p.rank === 1,
       score_breakdown: p.breakdown!,
     }))
 
