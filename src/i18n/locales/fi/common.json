@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "kaikkien aikojen",
     "minGamesShort": "alkaen {{count}} pelistä",
     "onlySoloGames": "Sinulla on toistaiseksi vain soolopelejä — vaihda soolonäkymään.",
-    "showSoloGames": "Näytä soolo"
+    "showSoloGames": "Näytä soolo",
+    "showMorePlayers": "Näytä lisää (+{{count}})"
   },
   "tag": {
     "pawed": "Tassueläimet",

@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "genom tiderna",
     "minGamesShort": "från {{count}} partier",
     "onlySoloGames": "Du har hittills bara solopartier — byt till solovyn.",
-    "showSoloGames": "Visa solo"
+    "showSoloGames": "Visa solo",
+    "showMorePlayers": "Visa fler (+{{count}})"
   },
   "tag": {
     "pawed": "Tassdjur",

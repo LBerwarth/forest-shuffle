@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "all-time",
     "minGamesShort": "from {{count}} games",
     "onlySoloGames": "You only have solo games so far — switch to the solo view.",
-    "showSoloGames": "Show solo games"
+    "showSoloGames": "Show solo games",
+    "showMorePlayers": "Show more (+{{count}})"
   },
   "tag": {
     "pawed": "Pawed",

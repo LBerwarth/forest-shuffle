@@ -17,6 +17,7 @@ export function LeaderboardList({ players, solo = false }: LeaderboardListProps)
   const { t } = useTranslation()
   const navigate = useNavigate()
   const [sortBy, setSortBy] = useState<SortField>('wins')
+  const [showAll, setShowAll] = useState(false)
 
   // Win metrics don't exist in solo view — fall back to average.
   const effectiveSort: SortField =
@@ -35,6 +36,13 @@ export function LeaderboardList({ players, solo = false }: LeaderboardListProps)
     if (qa !== qb) return qa ? -1 : 1
     return b[effectiveSort] - a[effectiveSort]
   })
+
+  // Occasional players (< 3 games) are collapsed behind a show-more button —
+  // unless everyone is below the threshold, then hiding all would be absurd.
+  const regulars = sorted.filter((p) => p.gamesPlayed >= MIN_GAMES_FOR_RATES)
+  const hiddenCount = sorted.length - regulars.length
+  const collapsed = !showAll && hiddenCount > 0 && regulars.length > 0
+  const displayed = collapsed ? regulars : sorted
 
   const sortOptions: { field: SortField; key: string }[] = [
     ...(solo
@@ -75,7 +83,7 @@ export function LeaderboardList({ players, solo = false }: LeaderboardListProps)
         </div>
 
         <div className="space-y-1.5">
-          {sorted.map((entry, idx) => {
+          {displayed.map((entry, idx) => {
             const qualified = qualifies(entry)
             const Inner = (
               <div
@@ -142,6 +150,15 @@ export function LeaderboardList({ players, solo = false }: LeaderboardListProps)
             return <div key={entry.playerId}>{Inner}</div>
           })}
         </div>
+        {collapsed && (
+          <button
+            type="button"
+            onClick={() => setShowAll(true)}
+            className="mt-2 w-full rounded-full bg-forest-100 px-4 py-1.5 text-xs font-medium text-forest-600 hover:bg-forest-200"
+          >
+            {t('leaderboard.showMorePlayers', { count: hiddenCount })}
+          </button>
+        )}
       </CardContent>
     </Card>
   )

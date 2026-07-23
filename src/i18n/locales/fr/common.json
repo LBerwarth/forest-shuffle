@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "depuis toujours",
     "minGamesShort": "à partir de {{count}} parties",
     "onlySoloGames": "Vous n'avez que des parties solo pour l'instant — passez à la vue solo.",
-    "showSoloGames": "Afficher le solo"
+    "showSoloGames": "Afficher le solo",
+    "showMorePlayers": "Afficher plus (+{{count}})"
   },
   "tag": {
     "pawed": "Pattes",

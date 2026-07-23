@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "gjennom tidene",
     "minGamesShort": "fra {{count}} partier",
     "onlySoloGames": "Du har så langt bare solopartier — bytt til solovisningen.",
-    "showSoloGames": "Vis solo"
+    "showSoloGames": "Vis solo",
+    "showMorePlayers": "Vis flere (+{{count}})"
   },
   "tag": {
     "pawed": "Labbedyr",

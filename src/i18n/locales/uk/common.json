@@ -219,7 +219,8 @@
     "hallOfFameAllTime": "за весь час",
     "minGamesShort": "від {{count}} партій",
     "onlySoloGames": "Поки що у вас лише сольні партії — перейдіть до сольного перегляду.",
-    "showSoloGames": "Показати соло"
+    "showSoloGames": "Показати соло",
+    "showMorePlayers": "Показати більше (+{{count}})"
   },
   "tag": {
     "pawed": "Лапи",

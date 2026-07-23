@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "aller tijden",
     "minGamesShort": "vanaf {{count}} partijen",
     "onlySoloGames": "Je hebt tot nu toe alleen solopartijen — schakel over naar de soloweergave.",
-    "showSoloGames": "Solo tonen"
+    "showSoloGames": "Solo tonen",
+    "showMorePlayers": "Meer tonen (+{{count}})"
   },
   "tag": {
     "pawed": "Poten",

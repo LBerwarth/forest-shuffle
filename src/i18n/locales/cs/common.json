@@ -220,7 +220,8 @@
     "hallOfFameAllTime": "všech dob",
     "minGamesShort": "od {{count}} partií",
     "onlySoloGames": "Zatím máš jen sólové partie — přepni na sólové zobrazení.",
-    "showSoloGames": "Zobrazit sólo"
+    "showSoloGames": "Zobrazit sólo",
+    "showMorePlayers": "Zobrazit další (+{{count}})"
   },
   "tag": {
     "pawed": "Tlapky",

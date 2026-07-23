@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "minden idők",
     "minGamesShort": "{{count}} játszmától",
     "onlySoloGames": "Eddig csak szóló játszmáid vannak — válts a szóló nézetre.",
-    "showSoloGames": "Szóló megjelenítése"
+    "showSoloGames": "Szóló megjelenítése",
+    "showMorePlayers": "Továbbiak megjelenítése (+{{count}})"
   },
   "tag": {
     "pawed": "Mancsosok",

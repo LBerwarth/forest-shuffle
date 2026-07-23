@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "di sempre",
     "minGamesShort": "da {{count}} partite",
     "onlySoloGames": "Per ora hai solo partite in solitario — passa alla vista in solitario.",
-    "showSoloGames": "Mostra solitario"
+    "showSoloGames": "Mostra solitario",
+    "showMorePlayers": "Mostra altri (+{{count}})"
   },
   "tag": {
     "pawed": "Zampe",

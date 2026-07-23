@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "de tots els temps",
     "minGamesShort": "a partir de {{count}} partides",
     "onlySoloGames": "De moment només tens partides en solitari — canvia a la vista en solitari.",
-    "showSoloGames": "Mostra el solitari"
+    "showSoloGames": "Mostra el solitari",
+    "showMorePlayers": "Mostra'n més (+{{count}})"
   },
   "tag": {
     "pawed": "Potes",

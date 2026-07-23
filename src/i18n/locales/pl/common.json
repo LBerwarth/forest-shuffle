@@ -219,7 +219,8 @@
     "hallOfFameAllTime": "wszech czasów",
     "minGamesShort": "od {{count}} partii",
     "onlySoloGames": "Masz na razie tylko partie solo — przełącz na widok solo.",
-    "showSoloGames": "Pokaż solo"
+    "showSoloGames": "Pokaż solo",
+    "showMorePlayers": "Pokaż więcej (+{{count}})"
   },
   "tag": {
     "pawed": "Łapy",

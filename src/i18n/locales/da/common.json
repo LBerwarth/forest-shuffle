@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "nogensinde",
     "minGamesShort": "fra {{count}} partier",
     "onlySoloGames": "Du har indtil videre kun solopartier — skift til solovisningen.",
-    "showSoloGames": "Vis solo"
+    "showSoloGames": "Vis solo",
+    "showMorePlayers": "Vis flere (+{{count}})"
   },
   "tag": {
     "pawed": "Poter",

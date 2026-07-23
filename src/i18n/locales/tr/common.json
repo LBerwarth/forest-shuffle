@@ -217,7 +217,8 @@
     "hallOfFameAllTime": "tüm zamanlar",
     "minGamesShort": "{{count}} oyundan itibaren",
     "onlySoloGames": "Şimdilik yalnızca solo oyunların var — solo görünüme geç.",
-    "showSoloGames": "Soloyu göster"
+    "showSoloGames": "Soloyu göster",
+    "showMorePlayers": "Daha fazla göster (+{{count}})"
   },
   "tag": {
     "pawed": "Pençeliler",
