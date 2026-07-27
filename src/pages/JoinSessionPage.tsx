@@ -9,6 +9,7 @@ import { useLiveSessionStore } from '@/store/live-session-store'
 import { useSettingsStore } from '@/store/settings-store'
 import { fetchLiveSessionByCode, joinLiveSession } from '@/lib/supabase-api'
 import { readLastJoinedPlayer, writeLastJoinedPlayer } from '@/lib/last-joined-player'
+import { noAutofill } from '@/lib/no-autofill'
 import { PLAYER_COLORS } from '@/types/player'
 import { cn } from '@/lib/utils'
 
@@ -104,6 +105,8 @@ export function JoinSessionPage() {
         <p className="text-sm font-medium text-forest-600 mb-2">{t('live.enterCode')}</p>
         <input
           type="text"
+          name="session-code"
+          {...noAutofill}
           maxLength={4}
           value={code}
           onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z2-9]/g, ''))}
@@ -147,9 +150,11 @@ export function JoinSessionPage() {
       {showNewPlayer ? (
         <Card className="mb-6">
           <CardContent className="py-3">
-            <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} className="flex items-center gap-2">
+            <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} autoComplete="off" className="flex items-center gap-2">
               <input
                 type="text"
+                name="player-name"
+                {...noAutofill}
                 placeholder={t('newGame.playerName')}
                 value={newPlayerName}
                 onChange={(e) => setNewPlayerName(e.target.value)}

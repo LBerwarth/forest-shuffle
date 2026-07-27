@@ -15,6 +15,7 @@ import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestCo
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { cn } from '@/lib/utils'
+import { noAutofill } from '@/lib/no-autofill'
 import { getCardIconUrl } from '@/data/cardIcons'
 import { STAT_ICONS } from '@/assets/icons'
 import { getCategoryOrder } from '@/data/categories'
@@ -364,6 +365,8 @@ export function LiveScoreWizardPage() {
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-forest-400" />
             <input
               type="text"
+              name="card-search"
+              {...noAutofill}
               value={cardSearch}
               onChange={(e) => setCardSearch(e.target.value)}
               placeholder={t('wizard.searchCards')}

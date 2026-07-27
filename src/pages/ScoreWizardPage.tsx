@@ -12,6 +12,7 @@ import { getCards, getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { cn } from '@/lib/utils'
+import { noAutofill } from '@/lib/no-autofill'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { getCardIconUrl } from '@/data/cardIcons'
 import { STAT_ICONS } from '@/assets/icons'
@@ -328,6 +329,8 @@ export function ScoreWizardPage() {
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-forest-400" />
             <input
               type="text"
+              name="card-search"
+              {...noAutofill}
               value={cardSearch}
               onChange={(e) => setCardSearch(e.target.value)}
               placeholder={t('wizard.searchCards')}

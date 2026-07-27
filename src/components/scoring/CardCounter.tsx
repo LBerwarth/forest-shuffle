@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import { Minus, Plus } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { noAutofill } from '@/lib/no-autofill'
 import { getCardIconUrl } from '@/data/cardIcons'
 import { STAT_ICONS } from '@/assets/icons'
 import { AcornIcon } from '@/components/ui/AcornIcon'
@@ -71,6 +72,8 @@ function TappableNumber({
       <input
         ref={inputRef}
         type="text"
+        name="card-count"
+        {...noAutofill}
         inputMode="numeric"
         pattern="[0-9]*"
         value={draft}

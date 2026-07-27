@@ -15,6 +15,7 @@ import { readLastJoinedPlayer, writeLastJoinedPlayer } from '@/lib/last-joined-p
 import { PLAYER_COLORS } from '@/types/player'
 import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
+import { noAutofill } from '@/lib/no-autofill'
 import type { Expansion } from '@/types/card'
 
 export function NewGamePage() {
@@ -388,9 +389,11 @@ export function NewGamePage() {
         {showNewPlayer ? (
           <Card className="mb-6">
             <CardContent className="py-3">
-              <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} className="flex items-center gap-2">
+              <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} autoComplete="off" className="flex items-center gap-2">
                 <input
                   type="text"
+                  name="player-name"
+                  {...noAutofill}
                   placeholder={t('newGame.playerName')}
                   value={newPlayerName}
                   onChange={(e) => setNewPlayerName(e.target.value)}
@@ -493,9 +496,11 @@ export function NewGamePage() {
       {showNewPlayer ? (
         <Card className="mb-6">
           <CardContent className="py-3">
-            <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} className="flex items-center gap-2">
+            <form onSubmit={(e) => { e.preventDefault(); handleAddPlayer() }} autoComplete="off" className="flex items-center gap-2">
               <input
                 type="text"
+                name="player-name"
+                {...noAutofill}
                 placeholder={t('newGame.playerName')}
                 value={newPlayerName}
                 onChange={(e) => setNewPlayerName(e.target.value)}

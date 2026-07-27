@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/Card'
 import { usePlayers, useCreatePlayer, useDeletePlayer } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { PLAYER_COLORS } from '@/types/player'
+import { noAutofill } from '@/lib/no-autofill'
 
 export function PlayersPage() {
   const { t } = useTranslation()
@@ -107,9 +108,11 @@ export function PlayersPage() {
       {showForm ? (
         <Card>
           <CardContent className="py-3">
-            <form onSubmit={(e) => { e.preventDefault(); handleAdd() }} className="flex items-center gap-2">
+            <form onSubmit={(e) => { e.preventDefault(); handleAdd() }} autoComplete="off" className="flex items-center gap-2">
               <input
                 type="text"
+                name="player-name"
+                {...noAutofill}
                 placeholder={t('players.playerName')}
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}

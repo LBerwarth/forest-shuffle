@@ -8,6 +8,7 @@ import { CARDS } from '@/data/cards'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
 import { EXMOOR_CARDS } from '@/data/exmoor-cards'
 import { cn } from '@/lib/utils'
+import { noAutofill } from '@/lib/no-autofill'
 
 const FEEDBACK_EMAIL = 'lena.berw@gmail.com'
 
@@ -109,9 +110,11 @@ export function FeedbackForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-3">
+    <form onSubmit={handleSubmit} autoComplete="off" className="space-y-3">
       {/* Primary: free-text feedback — works on its own, no card needed */}
       <textarea
+        name="feedback-message"
+        {...noAutofill}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder={t('feedback.messagePlaceholder')}
@@ -133,6 +136,8 @@ export function FeedbackForm() {
           <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-lg border border-forest-200 bg-white shadow-card">
             <input
               type="text"
+              name="card-search"
+              {...noAutofill}
               autoFocus
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -192,6 +197,8 @@ export function FeedbackForm() {
           </div>
           <input
             type="text"
+            name="feedback-proposition"
+            {...noAutofill}
             value={it.proposition}
             onChange={(e) => updateItem(i, { proposition: e.target.value })}
             placeholder={t('feedback.propositionPlaceholder')}
