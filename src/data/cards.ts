@@ -116,7 +116,8 @@ export const CARDS: CardDefinition[] = [
   { key: 'brown_bear', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'fixed' },
   { key: 'fox', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'violet_carpenter_bee', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'custom', needsHostTreeContext: true },
-  { key: 'steinbock', category: 'lateral', tags: ['deer', 'alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'fixed' },
+  // Horns, not antlers: no deer symbol on the card, so the Wolf must not score it
+  { key: 'steinbock', category: 'lateral', tags: ['alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'fixed' },
   { key: 'beech_marten', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'custom', needsContext: true },
   { key: 'fallow_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'gnat', category: 'lateral', tags: ['insect'], expansion: 'base', scoringType: 'per_tag' },
@@ -126,7 +127,8 @@ export const CARDS: CardDefinition[] = [
   { key: 'capercaillie', category: 'lateral', tags: ['bird', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
   // Alpine lateral
   { key: 'savis_pipistrelle', category: 'lateral', tags: ['bat', 'alpine'], expansion: 'alpine', scoringType: 'set' },
-  { key: 'chamois', category: 'lateral', tags: ['deer', 'alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'custom', needsContext: true },
+  // Horns, not antlers: no deer symbol on the card, so the Wolf must not score it
+  { key: 'chamois', category: 'lateral', tags: ['alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'custom', needsContext: true },
   // Woodland lateral
   { key: 'bee_swarm', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'common_pipistrelle', category: 'lateral', tags: ['bat'], expansion: 'woodland', scoringType: 'set' },
