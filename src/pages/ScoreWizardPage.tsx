@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Check, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
+import { MissingContextDialog } from '@/components/scoring/MissingContextDialog'
 import { SetSeriesBreakdown } from '@/components/scoring/SetSeriesBreakdown'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
 import { ScoreSummary } from '@/components/scoring/ScoreSummary'
@@ -11,13 +12,14 @@ import { useScoringStore } from '@/store/scoring-store'
 import { getCards, getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
+import { findMissingContextCards } from '@/lib/scoring/missing-context'
 import { cn } from '@/lib/utils'
 import { noAutofill } from '@/lib/no-autofill'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { getCardIconUrl } from '@/data/cardIcons'
 import { STAT_ICONS } from '@/assets/icons'
 import { getCategoryOrder } from '@/data/categories'
-import type { CardTag, Expansion } from '@/types/card'
+import type { CardDefinition, CardTag, Expansion } from '@/types/card'
 
 const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland', 'dartmoor_exmoor'] as const
 
@@ -102,6 +104,7 @@ export function ScoreWizardPage() {
   const [cardSearch, setCardSearch] = useState('')
   const [tagFilter, setTagFilter] = useState<CardTag | null>(null)
   const [expansionFilter, setExpansionFilter] = useState<Expansion | null>(null)
+  const [missingContextCards, setMissingContextCards] = useState<CardDefinition[] | null>(null)
 
   useEffect(() => {
     setTagFilter(null)
@@ -241,18 +244,39 @@ export function ScoreWizardPage() {
   const isFirstStep = currentStep === 0
   const isLastPlayer = currentPlayerIndex === players.length - 1
 
+  function finishPlayer() {
+    if (isLastPlayer) {
+      navigate(`/score/${gameId}/results`)
+    } else {
+      setCurrentPlayer(currentPlayerIndex + 1)
+      setCurrentStep(0)
+    }
+  }
+
   function handleNext() {
     setCardSearch('')
     if (isLastStep) {
-      if (isLastPlayer) {
-        navigate(`/score/${gameId}/results`)
-      } else {
-        setCurrentPlayer(currentPlayerIndex + 1)
-        setCurrentStep(0)
+      if (!currentPlayer) return
+      const missing = findMissingContextCards(
+        getCards(expansions, edition),
+        currentPlayer.cardCounts,
+        currentPlayer.cardMetadata,
+      )
+      if (missing.length > 0) {
+        setMissingContextCards(missing)
+        return
       }
+      finishPlayer()
     } else {
       setCurrentStep(currentStep + 1)
     }
+  }
+
+  function handleReviewMissing(card: CardDefinition) {
+    setMissingContextCards(null)
+    const step = stepCategories.findIndex((cats) => cats.includes(card.category))
+    if (step >= 0) setCurrentStep(step)
+    setCardSearch(tc(`${card.key}.name`))
   }
 
   function handlePrev() {
@@ -269,6 +293,16 @@ export function ScoreWizardPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-forest-50">
+      {missingContextCards && (
+        <MissingContextDialog
+          cards={missingContextCards}
+          onReview={handleReviewMissing}
+          onContinue={() => {
+            setMissingContextCards(null)
+            finishPlayer()
+          }}
+        />
+      )}
       {/* Header */}
       <div className="sticky top-0 z-40 border-b border-forest-200 bg-white/95 backdrop-blur-sm">
         <div className="mx-auto max-w-lg px-4 py-3">

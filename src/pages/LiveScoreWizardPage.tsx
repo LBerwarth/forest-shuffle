@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight, Check, Loader2, Pencil, Search, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { CardCounter } from '@/components/scoring/CardCounter'
+import { MissingContextDialog } from '@/components/scoring/MissingContextDialog'
 import { SetSeriesBreakdown } from '@/components/scoring/SetSeriesBreakdown'
 import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardStepper'
 import { ScoreSummary } from '@/components/scoring/ScoreSummary'
@@ -13,6 +14,7 @@ import { useLiveSession } from '@/hooks/use-live-session'
 import { getCards, getCardsByCategory } from '@/data/cards'
 import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
+import { findMissingContextCards } from '@/lib/scoring/missing-context'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { cn } from '@/lib/utils'
 import { noAutofill } from '@/lib/no-autofill'
@@ -20,7 +22,7 @@ import { getCardIconUrl } from '@/data/cardIcons'
 import { STAT_ICONS } from '@/assets/icons'
 import { getCategoryOrder } from '@/data/categories'
 import { submitPlayerScoring, updateLivePlayerStatus } from '@/lib/supabase-api'
-import type { CardTag, Expansion } from '@/types/card'
+import type { CardDefinition, CardTag, Expansion } from '@/types/card'
 
 const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland', 'dartmoor_exmoor'] as const
 
@@ -135,6 +137,7 @@ export function LiveScoreWizardPage() {
   const [cardSearch, setCardSearch] = useState('')
   const [tagFilter, setTagFilter] = useState<CardTag | null>(null)
   const [expansionFilter, setExpansionFilter] = useState<Expansion | null>(null)
+  const [missingContextCards, setMissingContextCards] = useState<CardDefinition[] | null>(null)
 
   useEffect(() => {
     setTagFilter(null)
@@ -315,10 +318,27 @@ export function LiveScoreWizardPage() {
   function handleNext() {
     setCardSearch('')
     if (isLastStep) {
+      if (!currentPlayer) return
+      const missing = findMissingContextCards(
+        getCards(expansions, edition),
+        currentPlayer.cardCounts,
+        currentPlayer.cardMetadata,
+      )
+      if (missing.length > 0) {
+        setMissingContextCards(missing)
+        return
+      }
       handleSubmit()
     } else {
       setCurrentStep(currentStep + 1)
     }
+  }
+
+  function handleReviewMissing(card: CardDefinition) {
+    setMissingContextCards(null)
+    const step = stepCategories.findIndex((cats) => cats.includes(card.category))
+    if (step >= 0) setCurrentStep(step)
+    setCardSearch(tc(`${card.key}.name`))
   }
 
   function handlePrev() {
@@ -330,6 +350,16 @@ export function LiveScoreWizardPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-forest-50">
+      {missingContextCards && (
+        <MissingContextDialog
+          cards={missingContextCards}
+          onReview={handleReviewMissing}
+          onContinue={() => {
+            setMissingContextCards(null)
+            handleSubmit()
+          }}
+        />
+      )}
       {/* Header */}
       <div className="sticky top-0 z-40 border-b border-forest-200 bg-white/95 backdrop-blur-sm">
         <div className="mx-auto max-w-lg px-4 py-3">
