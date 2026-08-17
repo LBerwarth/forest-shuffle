@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Mountain, Globe, Download, Trash2, MessageSquare } from 'lucide-react'
+import { ArrowLeft, Mountain, Globe, Download, Trash2, MessageSquare, Star } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { useSettingsStore } from '@/store/settings-store'
@@ -13,6 +13,7 @@ import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
 import { LanguagePicker } from '@/components/LanguagePicker'
 import { FeedbackForm } from '@/components/FeedbackForm'
+import { isPlayStoreApp, openPlayStoreListing } from '@/lib/play-store'
 
 export function SettingsPage() {
   const { t } = useTranslation()
@@ -286,6 +287,26 @@ export function SettingsPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Rate — only reachable from the Play Store build */}
+      {isPlayStoreApp() && (
+        <Card className="mb-4">
+          <CardContent className="py-4">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <Star className="h-4 w-4 shrink-0 text-amber-500" />
+                <div>
+                  <p className="text-sm font-medium text-forest-700">{t('settings.rateApp')}</p>
+                  <p className="text-xs text-forest-400">{t('settings.rateDesc')}</p>
+                </div>
+              </div>
+              <Button size="sm" variant="secondary" onClick={openPlayStoreListing}>
+                {t('settings.rate')}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Feedback */}
       <Card ref={feedbackRef} className="relative z-20 mb-4 scroll-mt-4">

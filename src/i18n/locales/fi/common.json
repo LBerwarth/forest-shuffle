@@ -284,7 +284,10 @@
     "editionChangeConfirm": "Version vaihtaminen nollaa nykyisen pisteytysistunnon. Oletko varma?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Pistelaskuri ja pelikirjanpito Forest Shuffle -lautapelille."
+    "appDesc": "Pistelaskuri ja pelikirjanpito Forest Shuffle -lautapelille.",
+    "rateApp": "Arvioi sovellus",
+    "rateDesc": "Jätä arvostelu Play Kaupassa",
+    "rate": "Arvioi"
   },
   "feedback": {
     "title": "Palaute",
@@ -300,6 +303,13 @@
     "sending": "Lähetetään…",
     "sent": "Kiitos! Palautteesi on lähetetty.",
     "emailSubject": "Forest Shuffle -palaute"
+  },
+  "review": {
+    "title": "Pidätkö sovelluksesta?",
+    "desc": "Arvostelu Play Kaupassa auttaa muita Forest Shuffle -pelaajia löytämään sen.",
+    "rate": "Arvioi Play Kaupassa",
+    "later": "Myöhemmin",
+    "feedback": "Lähetä palautetta"
   },
   "scoring": {
     "alpine": "Alpine",

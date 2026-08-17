@@ -284,7 +284,10 @@
     "editionChangeConfirm": "Het wijzigen van de editie reset je huidige puntentelling. Weet je het zeker?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Puntenteller & partijtracker voor het bordspel Forest Shuffle."
+    "appDesc": "Puntenteller & partijtracker voor het bordspel Forest Shuffle.",
+    "rateApp": "App beoordelen",
+    "rateDesc": "Geef een beoordeling in de Play Store",
+    "rate": "Beoordelen"
   },
   "feedback": {
     "title": "Feedback",
@@ -300,6 +303,13 @@
     "sending": "Versturen…",
     "sent": "Bedankt! Je feedback is verstuurd.",
     "emailSubject": "Forest Shuffle feedback"
+  },
+  "review": {
+    "title": "Bevalt de app?",
+    "desc": "Een beoordeling in de Play Store helpt andere Forest Shuffle-spelers om hem te vinden.",
+    "rate": "Beoordeel in de Play Store",
+    "later": "Later",
+    "feedback": "Feedback sturen"
   },
   "scoring": {
     "alpine": "Alpine",

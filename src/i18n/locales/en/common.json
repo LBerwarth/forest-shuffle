@@ -284,7 +284,10 @@
     "editionChangeConfirm": "Changing the edition will reset your current scoring session. Are you sure?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Score calculator & game tracker for the Forest Shuffle board game."
+    "appDesc": "Score calculator & game tracker for the Forest Shuffle board game.",
+    "rateApp": "Rate the app",
+    "rateDesc": "Leave a rating on the Play Store",
+    "rate": "Rate"
   },
   "feedback": {
     "title": "Feedback",
@@ -300,6 +303,13 @@
     "sending": "Sending…",
     "sent": "Thanks! Your feedback has been sent.",
     "emailSubject": "Forest Shuffle feedback"
+  },
+  "review": {
+    "title": "Enjoying the app?",
+    "desc": "A rating on the Play Store helps other Forest Shuffle players find it.",
+    "rate": "Rate on Play Store",
+    "later": "Later",
+    "feedback": "Send feedback"
   },
   "scoring": {
     "alpine": "Alpine",

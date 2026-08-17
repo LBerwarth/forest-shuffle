@@ -284,7 +284,10 @@
     "editionChangeConfirm": "Mudar de edição vai reiniciar a sessão de pontuação atual. Quer continuar?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Calculadora de pontos e histórico de partidas para o jogo de tabuleiro Forest Shuffle."
+    "appDesc": "Calculadora de pontos e histórico de partidas para o jogo de tabuleiro Forest Shuffle.",
+    "rateApp": "Avaliar a aplicação",
+    "rateDesc": "Deixe uma avaliação na Play Store",
+    "rate": "Avaliar"
   },
   "feedback": {
     "title": "Feedback",
@@ -300,6 +303,13 @@
     "sending": "Enviando…",
     "sent": "Obrigado! Seu feedback foi enviado.",
     "emailSubject": "Feedback do Forest Shuffle"
+  },
+  "review": {
+    "title": "Gosta da aplicação?",
+    "desc": "Uma avaliação na Play Store ajuda outros jogadores de Forest Shuffle a encontrá-la.",
+    "rate": "Avaliar na Play Store",
+    "later": "Mais tarde",
+    "feedback": "Enviar feedback"
   },
   "scoring": {
     "alpine": "Alpine",

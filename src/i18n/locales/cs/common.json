@@ -287,7 +287,10 @@
     "editionChangeConfirm": "Změna verze resetuje tvé aktuální bodování. Určitě?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Kalkulačka bodů a evidence her pro deskovou hru Forest Shuffle."
+    "appDesc": "Kalkulačka bodů a evidence her pro deskovou hru Forest Shuffle.",
+    "rateApp": "Ohodnotit aplikaci",
+    "rateDesc": "Zanechte hodnocení na Google Play",
+    "rate": "Ohodnotit"
   },
   "feedback": {
     "title": "Zpětná vazba",
@@ -303,6 +306,13 @@
     "sending": "Odesílání…",
     "sent": "Díky! Tvá zpětná vazba byla odeslána.",
     "emailSubject": "Forest Shuffle – zpětná vazba"
+  },
+  "review": {
+    "title": "Líbí se ti aplikace?",
+    "desc": "Hodnocení na Google Play pomůže ostatním hráčům Forest Shuffle ji najít.",
+    "rate": "Ohodnotit na Google Play",
+    "later": "Později",
+    "feedback": "Poslat zpětnou vazbu"
   },
   "scoring": {
     "alpine": "Alpine",

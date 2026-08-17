@@ -286,7 +286,10 @@
     "editionChangeConfirm": "Смена издания сбросит текущую сессию подсчёта. Ты уверен?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Калькулятор очков и трекер игр для настольной игры Forest Shuffle."
+    "appDesc": "Калькулятор очков и трекер игр для настольной игры Forest Shuffle.",
+    "rateApp": "Оценить приложение",
+    "rateDesc": "Оставьте оценку в Google Play",
+    "rate": "Оценить"
   },
   "feedback": {
     "title": "Обратная связь",
@@ -302,6 +305,13 @@
     "sending": "Отправка…",
     "sent": "Спасибо! Твой отзыв отправлен.",
     "emailSubject": "Отзыв о Forest Shuffle"
+  },
+  "review": {
+    "title": "Нравится приложение?",
+    "desc": "Оценка в Google Play поможет другим игрокам Forest Shuffle найти его.",
+    "rate": "Оценить в Google Play",
+    "later": "Позже",
+    "feedback": "Отправить отзыв"
   },
   "scoring": {
     "alpine": "Alpine",

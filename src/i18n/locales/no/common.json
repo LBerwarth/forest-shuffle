@@ -284,7 +284,10 @@
     "editionChangeConfirm": "Å endre utgave nullstiller den pågående registreringsøkten. Er du sikker?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Poengkalkulator og spillsporing for brettspillet Forest Shuffle."
+    "appDesc": "Poengkalkulator og spillsporing for brettspillet Forest Shuffle.",
+    "rateApp": "Vurder appen",
+    "rateDesc": "Gi en vurdering i Play Store",
+    "rate": "Vurder"
   },
   "feedback": {
     "title": "Tilbakemelding",
@@ -300,6 +303,13 @@
     "sending": "Sender…",
     "sent": "Takk! Tilbakemeldingen din er sendt.",
     "emailSubject": "Forest Shuffle-tilbakemelding"
+  },
+  "review": {
+    "title": "Liker du appen?",
+    "desc": "En vurdering i Play Store hjelper andre Forest Shuffle-spillere å finne den.",
+    "rate": "Vurder i Play Store",
+    "later": "Senere",
+    "feedback": "Send tilbakemelding"
   },
   "scoring": {
     "alpine": "Alpine",

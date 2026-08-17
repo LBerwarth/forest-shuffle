@@ -284,7 +284,10 @@
     "editionChangeConfirm": "Das Ändern der Version setzt deine aktuelle Wertung zurück. Bist du sicher?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Punkterechner & Spielverfolgung für das Brettspiel Forest Shuffle."
+    "appDesc": "Punkterechner & Spielverfolgung für das Brettspiel Forest Shuffle.",
+    "rateApp": "App bewerten",
+    "rateDesc": "Bewertung im Play Store abgeben",
+    "rate": "Bewerten"
   },
   "feedback": {
     "title": "Feedback",
@@ -300,6 +303,13 @@
     "sending": "Senden…",
     "sent": "Danke! Dein Feedback wurde gesendet.",
     "emailSubject": "Forest Shuffle Feedback"
+  },
+  "review": {
+    "title": "Gefällt dir die App?",
+    "desc": "Eine Bewertung im Play Store hilft anderen Forest-Shuffle-Spielern, sie zu finden.",
+    "rate": "Im Play Store bewerten",
+    "later": "Später",
+    "feedback": "Feedback senden"
   },
   "scoring": {
     "alpine": "Alpin",

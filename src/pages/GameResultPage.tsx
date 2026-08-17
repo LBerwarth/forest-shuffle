@@ -5,6 +5,7 @@ import { Home, RotateCcw, Settings, Loader2, ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ResultsDisplay } from '@/components/scoring/ResultsDisplay'
 import { GameInsights } from '@/components/scoring/GameInsights'
+import { ReviewPrompt } from '@/components/ReviewPrompt'
 import { useScoringStore } from '@/store/scoring-store'
 import { useSaveGame } from '@/hooks/use-games'
 import { recalcPlayer } from '@/lib/scoring/recalc'
@@ -126,6 +127,8 @@ export function GameResultPage() {
           {t('result.home')}
         </Button>
       </div>
+
+      <ReviewPrompt gameId={gameId} />
     </div>
   )
 }

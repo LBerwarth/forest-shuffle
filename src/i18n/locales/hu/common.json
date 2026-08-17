@@ -284,7 +284,10 @@
     "editionChangeConfirm": "A kiadás módosítása visszaállítja a jelenlegi pontozási munkamenetet. Biztos vagy benne?",
     "appName": "Forest Shuffle Scorer",
     "version": "v0.1.0",
-    "appDesc": "Pontszámláló és játékkövető a Forest Shuffle társasjátékhoz."
+    "appDesc": "Pontszámláló és játékkövető a Forest Shuffle társasjátékhoz.",
+    "rateApp": "Alkalmazás értékelése",
+    "rateDesc": "Írj értékelést a Play Áruházban",
+    "rate": "Értékelés"
   },
   "feedback": {
     "title": "Visszajelzés",
@@ -300,6 +303,13 @@
     "sending": "Küldés…",
     "sent": "Köszönjük! A visszajelzésed elküldtük.",
     "emailSubject": "Forest Shuffle visszajelzés"
+  },
+  "review": {
+    "title": "Tetszik az alkalmazás?",
+    "desc": "Egy értékelés a Play Áruházban segít más Forest Shuffle-játékosoknak megtalálni.",
+    "rate": "Értékelés a Play Áruházban",
+    "later": "Később",
+    "feedback": "Visszajelzés küldése"
   },
   "scoring": {
     "alpine": "Alpesi",
