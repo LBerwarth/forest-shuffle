@@ -1,0 +1,25 @@
+RELEASE NOTES 1.0.11 (versionCode 24) — Play Console "Versionshinweise", max 500 Zeichen
+
+<en-US>
+• New: Smoky Mountains edition — full scoring support
+• New: Exmoor expansion for the Dartmoor edition
+• Fixed: app icon no longer shows a white border
+</en-US>
+
+<de-DE>
+• Neu: Smoky-Mountains-Edition — vollständige Wertung
+• Neu: Exmoor-Erweiterung für die Dartmoor-Edition
+• Behoben: App-Icon zeigt keinen weißen Rand mehr
+</de-DE>
+
+<fr-FR>
+• Nouveau : édition Smoky Mountains — comptage complet
+• Nouveau : extension Exmoor pour l'édition Dartmoor
+• Corrigé : l'icône de l'app n'affiche plus de bord blanc
+</fr-FR>
+
+<es-ES>
+• Nuevo: edición Smoky Mountains — puntuación completa
+• Nuevo: expansión Exmoor para la edición Dartmoor
+• Corregido: el icono de la app ya no muestra un borde blanco
+</es-ES>
