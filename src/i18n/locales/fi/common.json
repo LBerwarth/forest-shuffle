@@ -317,6 +317,8 @@
     "total": "Yhteensä"
   },
   "install": {
+    "playMessage": "Lataa ilmainen Android-sovellus Google Playsta!",
+    "playAction": "Lataa",
     "message": "Asenna tämä sovellus puhelimeesi parempaa käyttökokemusta varten!",
     "action": "Asenna",
     "dismiss": "Hylkää"

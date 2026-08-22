@@ -3,7 +3,7 @@
 ## App title (max 30 chars)
 
 ```
-Forest Shuffle Companion
+Forest Shuffle Scorer
 ```
 
 Length: 24/30.
@@ -27,7 +27,7 @@ Length: 70/80.
 ## Full description (max 4000 chars)
 
 ```
-Forest Shuffle Companion is a free, ad-free score calculator and game tracker for the Forest Shuffle board game by Kosmos, including the Dartmoor expansion.
+Forest Shuffle Scorer is a free, ad-free score calculator and game tracker for the Forest Shuffle board game by Kosmos, including the Dartmoor expansion.
 
 After every game, run the in-app wizard step by step — Trees, Top, Bottom, Lateral, Cave, Moor — and the app does all the scoring math for you. Every card's points, set bonuses, multipliers, and special rules are handled automatically.
 

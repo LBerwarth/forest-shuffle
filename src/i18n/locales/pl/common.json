@@ -319,6 +319,8 @@
     "total": "Razem"
   },
   "install": {
+    "playMessage": "Pobierz darmową aplikację na Androida w Google Play!",
+    "playAction": "Pobierz",
     "message": "Zainstaluj tę aplikację na telefonie, aby korzystać z niej wygodniej!",
     "action": "Zainstaluj",
     "dismiss": "Zamknij"

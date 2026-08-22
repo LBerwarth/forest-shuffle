@@ -15,7 +15,7 @@
 2. Click "Create a design" → search **"Google Play feature graphic"** — they have ready-made 1024×500 templates
 3. Pick a green / forest themed template
 4. Replace placeholder text:
-   - **Big title (left half):** `Forest Shuffle Companion`
+   - **Big title (left half):** `Forest Shuffle Scorer`
    - **Subtitle (under title):** `Score calculator & stats — Classic + Dartmoor`
 5. Drop the app icon on the right half (download `pwa-512x512.png` from your repo's `public/` folder)
 6. Background gradient: dark green → lighter green (matches your in-app `#4a7c59` theme)
@@ -28,7 +28,7 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │  ╭───────────────────╮                                           │
 │  │                    │   Forest Shuffle                         │
-│  │   [tree icon]     │   Companion                              │
+│  │   [tree icon]     │   Scorer                                 │
 │  │   (the app icon)  │                                          │
 │  │                    │   Score calculator & stats               │
 │  ╰───────────────────╯                                           │

@@ -22,7 +22,7 @@ export function PrivacyPage() {
           <p className="text-xs text-forest-400">Last updated: {LAST_UPDATED}</p>
 
           <p>
-            Forest Shuffle Companion (&quot;the App&quot;) is an unofficial fan-made score
+            Forest Shuffle Scorer (&quot;the App&quot;) is an unofficial fan-made score
             calculator and game tracker for the Forest Shuffle board game. This Privacy
             Policy explains what data the App handles, how it is stored, and your choices.
           </p>
@@ -30,7 +30,7 @@ export function PrivacyPage() {
           <h2 className="font-heading text-base font-semibold text-forest-800">Who we are</h2>
           <p>
             The App is developed and operated as an independent project. Forest Shuffle
-            Companion is not affiliated with, endorsed by, or sponsored by the publisher of
+            Scorer is not affiliated with, endorsed by, or sponsored by the publisher of
             the Forest Shuffle game.
           </p>
 

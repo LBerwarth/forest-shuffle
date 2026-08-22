@@ -317,6 +317,8 @@
     "total": "I alt"
   },
   "install": {
+    "playMessage": "Hent den gratis Android-app på Google Play!",
+    "playAction": "Hent app",
     "message": "Installer denne app på din telefon for en bedre oplevelse!",
     "action": "Installer",
     "dismiss": "Afvis"

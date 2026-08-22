@@ -317,6 +317,8 @@
     "total": "Toplam"
   },
   "install": {
+    "playMessage": "Ücretsiz Android uygulamasını Google Play'den indirin!",
+    "playAction": "İndir",
     "message": "Daha iyi bir deneyim için bu uygulamayı telefonuna yükle!",
     "action": "Yükle",
     "dismiss": "Kapat"

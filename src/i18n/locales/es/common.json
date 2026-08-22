@@ -317,6 +317,8 @@
     "total": "Total"
   },
   "install": {
+    "playMessage": "¡Descarga la app gratuita de Android en Google Play!",
+    "playAction": "Descargar",
     "message": "¡Instala esta aplicación en tu teléfono para una mejor experiencia!",
     "action": "Instalar",
     "dismiss": "Cerrar"

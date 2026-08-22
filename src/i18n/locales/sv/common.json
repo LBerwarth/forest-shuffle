@@ -317,6 +317,8 @@
     "total": "Totalt"
   },
   "install": {
+    "playMessage": "Hämta den kostnadsfria Android-appen på Google Play!",
+    "playAction": "Hämta app",
     "message": "Installera appen på din telefon för en bättre upplevelse!",
     "action": "Installera",
     "dismiss": "Avfärda"

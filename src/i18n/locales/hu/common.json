@@ -317,6 +317,8 @@
     "total": "Összesen"
   },
   "install": {
+    "playMessage": "Töltsd le az ingyenes Android-alkalmazást a Google Play-ről!",
+    "playAction": "Letöltés",
     "message": "Telepítsd az appot a telefonodra a jobb élményért!",
     "action": "Telepítés",
     "dismiss": "Bezárás"

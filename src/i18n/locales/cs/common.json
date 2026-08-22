@@ -320,6 +320,8 @@
     "total": "Celkem"
   },
   "install": {
+    "playMessage": "Stáhněte si zdarma aplikaci pro Android na Google Play!",
+    "playAction": "Stáhnout",
     "message": "Nainstaluj si tuto aplikaci do telefonu pro lepší zážitek!",
     "action": "Instalovat",
     "dismiss": "Zavřít"

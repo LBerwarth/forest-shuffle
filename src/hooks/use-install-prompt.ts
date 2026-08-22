@@ -5,9 +5,14 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>
 }
 
+const PLAY_APP_ID = 'app.forestshuffle.companion'
+
+export const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${PLAY_APP_ID}`
+
 export function useInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
   const [isInstalled, setIsInstalled] = useState(false)
+  const [playAppInstalled, setPlayAppInstalled] = useState(false)
 
   useEffect(() => {
     // Check if already installed (standalone mode)
@@ -15,6 +20,16 @@ export function useInstallPrompt() {
       setIsInstalled(true)
       return
     }
+
+    const nav = navigator as Navigator & {
+      getInstalledRelatedApps?: () => Promise<Array<{ id?: string }>>
+    }
+    nav
+      .getInstalledRelatedApps?.()
+      .then((apps) => {
+        if (apps.some((app) => app.id === PLAY_APP_ID)) setPlayAppInstalled(true)
+      })
+      .catch(() => {})
 
     function handleBeforeInstall(e: Event) {
       e.preventDefault()
@@ -43,8 +58,13 @@ export function useInstallPrompt() {
     return outcome === 'accepted'
   }
 
+  const isAndroidBrowser = /android/i.test(navigator.userAgent)
+
   return {
     canInstall: !!deferredPrompt && !isInstalled,
+    // prefer_related_applications suppresses beforeinstallprompt on Android,
+    // so Android browsers get a Play Store link instead
+    showPlayStore: isAndroidBrowser && !isInstalled && !playAppInstalled,
     isInstalled,
     install,
   }

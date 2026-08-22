@@ -12,7 +12,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'favicon.svg', 'apple-touch-icon-180x180.png'],
       manifest: {
-        name: 'Forest Shuffle Companion',
+        name: 'Forest Shuffle Scorer',
         short_name: 'Forest Shuffle',
         description: 'Score calculator & game tracker for Forest Shuffle',
         theme_color: '#4a7c59',
