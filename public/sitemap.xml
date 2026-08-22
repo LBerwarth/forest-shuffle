@@ -1,7 +1,417 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://forest-shuffle-app.vercel.app/</loc>
     <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/fr</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/de</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/es</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/nl</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/it</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/pl</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/pt</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/cs</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/hu</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/uk</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/ru</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/tr</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/ca</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/da</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/sv</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/no</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
+  </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/fi</loc>
+    <lastmod>2026-08-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forest-shuffle-app.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://forest-shuffle-app.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://forest-shuffle-app.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://forest-shuffle-app.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://forest-shuffle-app.vercel.app/nl"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://forest-shuffle-app.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://forest-shuffle-app.vercel.app/pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://forest-shuffle-app.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://forest-shuffle-app.vercel.app/cs"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://forest-shuffle-app.vercel.app/hu"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://forest-shuffle-app.vercel.app/uk"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://forest-shuffle-app.vercel.app/ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://forest-shuffle-app.vercel.app/tr"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://forest-shuffle-app.vercel.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://forest-shuffle-app.vercel.app/da"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://forest-shuffle-app.vercel.app/sv"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
   </url>
 </urlset>

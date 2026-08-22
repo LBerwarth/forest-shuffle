@@ -319,6 +319,10 @@
     "pts": "b.",
     "total": "Celkem"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Kalkulačka bodů",
+    "description": "Bezplatná kalkulačka bodů pro deskovou hru Forest Shuffle — všechna rozšíření: Alpine, Woodland Edge, Dartmoor, Exmoor. Funguje offline, bez reklam."
+  },
   "install": {
     "playMessage": "Stáhněte si zdarma aplikaci pro Android na Google Play!",
     "playAction": "Stáhnout",

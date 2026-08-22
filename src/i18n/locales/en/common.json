@@ -316,6 +316,10 @@
     "pts": "pts",
     "total": "Total"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Score Calculator & Tracker",
+    "description": "Free score calculator & game tracker for the Forest Shuffle board game — all expansions included: Alpine, Woodland Edge, Dartmoor, Exmoor. Works offline, no ads."
+  },
   "install": {
     "playMessage": "Get the free Android app on Google Play!",
     "playAction": "Get app",

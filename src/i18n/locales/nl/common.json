@@ -316,6 +316,10 @@
     "pts": "ptn",
     "total": "Totaal"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Puntenteller",
+    "description": "Gratis puntenteller & game-tracker voor het bordspel Forest Shuffle — alle uitbreidingen inbegrepen: Alpine, Woodland Edge, Dartmoor, Exmoor. Werkt offline, zonder advertenties."
+  },
   "install": {
     "playMessage": "Download de gratis Android-app in Google Play!",
     "playAction": "Downloaden",

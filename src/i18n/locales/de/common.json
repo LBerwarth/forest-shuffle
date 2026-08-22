@@ -316,6 +316,10 @@
     "pts": "Pkt.",
     "total": "Gesamt"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Punkterechner & Tracker",
+    "description": "Kostenloser Punkterechner & Spiel-Tracker für das Brettspiel Forest Shuffle — alle Erweiterungen enthalten: Alpin, Waldrand, Dartmoor, Exmoor. Funktioniert offline, ohne Werbung."
+  },
   "install": {
     "playMessage": "Hol dir die kostenlose Android-App bei Google Play!",
     "playAction": "App holen",

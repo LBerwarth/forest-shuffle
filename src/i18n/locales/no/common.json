@@ -316,6 +316,10 @@
     "pts": "p",
     "total": "Totalt"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Poengkalkulator",
+    "description": "Gratis poengkalkulator for brettspillet Forest Shuffle — alle utvidelser inkludert: Alpine, Woodland Edge, Dartmoor, Exmoor. Fungerer offline, uten reklamer."
+  },
   "install": {
     "playMessage": "Last ned den gratis Android-appen på Google Play!",
     "playAction": "Last ned",

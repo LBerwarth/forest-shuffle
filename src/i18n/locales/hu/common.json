@@ -316,6 +316,10 @@
     "pts": "pont",
     "total": "Összesen"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Pontszámláló",
+    "description": "Ingyenes pontszámláló a Forest Shuffle társasjátékhoz — minden kiegészítővel: Alpine, Woodland Edge, Dartmoor, Exmoor. Offline is működik, reklámok nélkül."
+  },
   "install": {
     "playMessage": "Töltsd le az ingyenes Android-alkalmazást a Google Play-ről!",
     "playAction": "Letöltés",

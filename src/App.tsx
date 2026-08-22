@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { AppShell } from '@/components/layout/AppShell'
+import { LangRoute, SEO_LANGS } from '@/components/LangRoute'
 import { HomePage } from '@/pages/HomePage'
 import { NewGamePage } from '@/pages/NewGamePage'
 import { ScoreWizardPage } from '@/pages/ScoreWizardPage'
@@ -26,30 +27,44 @@ const queryClient = new QueryClient({
   },
 })
 
+const appRoutes = (
+  <>
+    <Route element={<AppShell />}>
+      <Route index element={<HomePage />} />
+      <Route path="new-game" element={<NewGamePage />} />
+      <Route path="join" element={<JoinSessionPage />} />
+      <Route path="history" element={<GameHistoryPage />} />
+      <Route path="history/:id" element={<GameDetailPage />} />
+      <Route path="players" element={<PlayersPage />} />
+      <Route path="players/:id" element={<PlayerDetailPage />} />
+      <Route path="leaderboard" element={<LeaderboardPage />} />
+      <Route path="settings" element={<SettingsPage />} />
+      <Route path="privacy" element={<PrivacyPage />} />
+    </Route>
+    {/* Wizard routes without bottom nav */}
+    <Route path="score/:gameId" element={<ScoreWizardPage />} />
+    <Route path="score/:gameId/results" element={<GameResultPage />} />
+    {/* Live session routes without bottom nav */}
+    <Route path="live/:sessionId" element={<LiveLobbyPage />} />
+    <Route path="live/:sessionId/score" element={<LiveScoreWizardPage />} />
+    <Route path="live/:sessionId/results" element={<LiveResultPage />} />
+  </>
+)
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route element={<AppShell />}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/new-game" element={<NewGamePage />} />
-            <Route path="/join" element={<JoinSessionPage />} />
-            <Route path="/history" element={<GameHistoryPage />} />
-            <Route path="/history/:id" element={<GameDetailPage />} />
-            <Route path="/players" element={<PlayersPage />} />
-            <Route path="/players/:id" element={<PlayerDetailPage />} />
-            <Route path="/leaderboard" element={<LeaderboardPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/" element={<LangRoute />}>
+            {appRoutes}
           </Route>
-          {/* Wizard routes without bottom nav */}
-          <Route path="/score/:gameId" element={<ScoreWizardPage />} />
-          <Route path="/score/:gameId/results" element={<GameResultPage />} />
-          {/* Live session routes without bottom nav */}
-          <Route path="/live/:sessionId" element={<LiveLobbyPage />} />
-          <Route path="/live/:sessionId/score" element={<LiveScoreWizardPage />} />
-          <Route path="/live/:sessionId/results" element={<LiveResultPage />} />
+          {/* Language-prefixed copies of every route so Google can index each locale */}
+          {SEO_LANGS.map((lang) => (
+            <Route key={lang} path={`/${lang}`} element={<LangRoute lang={lang} />}>
+              {appRoutes}
+            </Route>
+          ))}
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

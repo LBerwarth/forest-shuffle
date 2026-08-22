@@ -316,6 +316,10 @@
     "pts": "pts",
     "total": "Total"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Calculadora de pontos",
+    "description": "Calculadora de pontos gratuita para o jogo de tabuleiro Forest Shuffle — todas as expansões incluídas: Alpine, Woodland Edge, Dartmoor, Exmoor. Funciona offline, sem anúncios."
+  },
   "install": {
     "playMessage": "Baixe o app Android gratuito no Google Play!",
     "playAction": "Baixar",

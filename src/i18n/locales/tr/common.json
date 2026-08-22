@@ -316,6 +316,10 @@
     "pts": "puan",
     "total": "Toplam"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Puan Hesaplayıcı",
+    "description": "Forest Shuffle kutu oyunu için ücretsiz puan hesaplayıcı — tüm genişletmeler dahil: Alpine, Woodland Edge, Dartmoor, Exmoor. Çevrimdışı çalışır, reklamsız."
+  },
   "install": {
     "playMessage": "Ücretsiz Android uygulamasını Google Play'den indirin!",
     "playAction": "İndir",

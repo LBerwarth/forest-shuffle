@@ -316,6 +316,10 @@
     "pts": "pts",
     "total": "Total"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Calculateur de points pour Forêt Mixte",
+    "description": "Calculateur de points gratuit pour le jeu Forêt Mixte (Forest Shuffle) — toutes les extensions incluses : Alpine, Woodland Edge, Dartmoor, Exmoor. Fonctionne hors ligne, sans publicité."
+  },
   "install": {
     "playMessage": "Téléchargez l'application Android gratuite sur Google Play !",
     "playAction": "Télécharger",

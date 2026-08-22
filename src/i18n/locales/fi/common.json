@@ -316,6 +316,10 @@
     "pts": "p",
     "total": "Yhteensä"
   },
+  "seo": {
+    "title": "Forest Shuffle Scorer — Pistelaskuri",
+    "description": "Ilmainen pistelaskuri Forest Shuffle -lautapeliin — kaikki laajennukset mukana: Alpine, Woodland Edge, Dartmoor, Exmoor. Toimii offline-tilassa, ilman mainoksia."
+  },
   "install": {
     "playMessage": "Lataa ilmainen Android-sovellus Google Playsta!",
     "playAction": "Lataa",
