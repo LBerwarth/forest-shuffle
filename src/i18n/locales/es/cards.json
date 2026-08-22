@@ -873,5 +873,286 @@
   "cave_exmoor": {
     "name": "Cueva (Exmoor)",
     "scoring": "1 punto por carta en la cueva"
+  },
+  "basswood": {
+    "name": "Tilo americano",
+    "scoring": "2 puntos por símbolo de Tilo en el árbol y sus cartas",
+    "context": "Total de símbolos de Tilo en tus Tilos (árboles + cartas colocadas, incluso bajo un río)"
+  },
+  "black_gum": {
+    "name": "Tupelo negro",
+    "scoring": "1 punto por río"
+  },
+  "buckeye": {
+    "name": "Castaño de Ohio",
+    "scoring": "1 punto por símbolo de Castaño en tu bosque (incluyendo los Castaños)",
+    "context": "Símbolos de Castaño en tu bosque (incluyendo los Castaños)"
+  },
+  "fraser_fir": {
+    "name": "Abeto de Fraser",
+    "scoring": "1 punto por árbol en tu bosque (incluyéndose)"
+  },
+  "hemlock": {
+    "name": "Tsuga de Canadá",
+    "scoring": "5 puntos por Tsuga"
+  },
+  "hickory": {
+    "name": "Nogal americano",
+    "scoring": "2 puntos por carta colocada en él (el río y las cartas debajo cuentan)",
+    "context": "Total de cartas colocadas en tus Nogales"
+  },
+  "silver_maple": {
+    "name": "Arce plateado",
+    "scoring": "5 puntos cada uno a partir de 3 Arces plateados"
+  },
+  "yellow_birch": {
+    "name": "Abedul amarillo",
+    "scoring": "1 punto por Abedul amarillo"
+  },
+  "creek": {
+    "name": "Arroyo",
+    "scoring": "1 punto por pez en tu bosque"
+  },
+  "river_bend": {
+    "name": "Meandro",
+    "scoring": "Sin puntos (efecto de robo al jugar peces)"
+  },
+  "waterfall": {
+    "name": "Cascada",
+    "scoring": "Sin puntos (solo caben peces debajo)"
+  },
+  "universal_river": {
+    "name": "Río universal",
+    "scoring": "Sin puntos, pero cuenta como río"
+  },
+  "bald_eagle": {
+    "name": "Águila calva",
+    "scoring": "30 puntos cada una con 5+ peces, si no 10"
+  },
+  "caddisfly": {
+    "name": "Frigánea",
+    "scoring": "2 puntos por Frigánea"
+  },
+  "flying_squirrel": {
+    "name": "Ardilla voladora",
+    "scoring": "Serie de ardillas: 5/10/20/40 puntos por 1-4 ardillas diferentes"
+  },
+  "great_blue_heron": {
+    "name": "Garza azulada",
+    "scoring": "2 puntos por pez en tu bosque"
+  },
+  "long_eared_owl": {
+    "name": "Búho chico",
+    "scoring": "2 puntos por ratón en tu bosque"
+  },
+  "peregrine_falcon_s": {
+    "name": "Halcón peregrino",
+    "scoring": "1 punto por ave en tu bosque (incluyéndose)"
+  },
+  "rockcap_fern": {
+    "name": "Polipodio de Virginia",
+    "scoring": "1 punto por planta en tu bosque (incluyéndose)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Colibrí gorjirrubí",
+    "scoring": "1 punto por planta y por árbol en tu bosque"
+  },
+  "scarlet_tanager": {
+    "name": "Tangara escarlata",
+    "scoring": "2 puntos por Tangara escarlata"
+  },
+  "thermometer_cricket": {
+    "name": "Grillo termómetro",
+    "scoring": "1 punto por insecto en tu bosque (incluyéndose)"
+  },
+  "tufted_titmouse": {
+    "name": "Carbonero copetudo",
+    "scoring": "Sin puntos (efecto de robo al jugar plantas)"
+  },
+  "virginia_opossum": {
+    "name": "Zarigüeya de Virginia",
+    "scoring": "2 puntos por símbolo de árbol diferente en su árbol",
+    "context": "Total de símbolos de árbol diferentes en los árboles de tus Zarigüeyas (sumados)"
+  },
+  "water_starwort": {
+    "name": "Estrella de agua",
+    "scoring": "1 punto por río y por pez en tu bosque"
+  },
+  "wood_thrush": {
+    "name": "Zorzal del bosque",
+    "scoring": "Sin puntos (efecto de robo al jugar aves)"
+  },
+  "blue_mistflower": {
+    "name": "Flor de niebla",
+    "scoring": "2 puntos por Flor de niebla"
+  },
+  "brook_trout": {
+    "name": "Trucha de arroyo",
+    "scoring": "3 puntos por río sin pez debajo",
+    "context": "Ríos sin pez debajo"
+  },
+  "brown_water_scorpion": {
+    "name": "Escorpión de agua pardo",
+    "scoring": "2 puntos por Escorpión de agua"
+  },
+  "common_box_turtle": {
+    "name": "Tortuga de caja común",
+    "scoring": "5 puntos por Tortuga de caja"
+  },
+  "eastern_chipmunk": {
+    "name": "Ardilla listada",
+    "scoring": "Serie de ardillas: 5/10/20/40 puntos por 1-4 ardillas diferentes"
+  },
+  "eastern_hellbender": {
+    "name": "Salamandra gigante americana",
+    "scoring": "2 puntos por río"
+  },
+  "greenside_darter": {
+    "name": "Perca dardo verde",
+    "scoring": "3 puntos por insecto en tu bosque"
+  },
+  "imitator_salamander": {
+    "name": "Salamandra imitadora",
+    "scoring": "10 puntos cada una con 3+ especies de anfibios diferentes, si no 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Espiga de agua de hoja grande",
+    "scoring": "2 puntos por Espiga de agua"
+  },
+  "skipper_caterpillar": {
+    "name": "Oruga de hespéride",
+    "scoring": "10 puntos cada una con 3+ especies de insectos diferentes, si no 0"
+  },
+  "smallmouth_bass": {
+    "name": "Lobina de boca pequeña",
+    "scoring": "3 puntos por especie de pez diferente (incluyendo la suya)"
+  },
+  "solomons_seal": {
+    "name": "Sello de Salomón",
+    "scoring": "6 puntos por anfibio en tu bosque"
+  },
+  "wintergreen": {
+    "name": "Gaulteria",
+    "scoring": "3 puntos por ardilla en tu bosque"
+  },
+  "wood_frog": {
+    "name": "Rana de bosque",
+    "scoring": "1 punto por árbol en tu bosque"
+  },
+  "yellow_bullhead": {
+    "name": "Bagre amarillo",
+    "scoring": "Sin puntos (efecto de robo al jugar ríos)"
+  },
+  "yellow_perch": {
+    "name": "Perca amarilla",
+    "scoring": "2 puntos por Perca amarilla"
+  },
+  "beaver_s": {
+    "name": "Castor",
+    "scoring": "1 punto por carta en tu cueva"
+  },
+  "black_bear": {
+    "name": "Oso negro",
+    "scoring": "30 puntos cada uno con 2 peces en su árbol, si no 10",
+    "context": "Osos negros con 2 peces en su árbol"
+  },
+  "bobcat": {
+    "name": "Lince rojo",
+    "scoring": "30 puntos cada uno con 5+ aves, si no 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Reinita de flancos castaños",
+    "scoring": "5 puntos por Reinita"
+  },
+  "coyote": {
+    "name": "Coyote",
+    "scoring": "30 puntos cada uno con 6+ plantígrados (incluyendo los Coyotes), si no 10"
+  },
+  "elk_s": {
+    "name": "Uapití",
+    "scoring": "30 puntos cada uno con 5+ tipos de árbol diferentes, si no 10"
+  },
+  "gray_fox": {
+    "name": "Zorro gris",
+    "scoring": "1 punto por plantígrado (incluyéndose)"
+  },
+  "gray_squirrel": {
+    "name": "Ardilla gris",
+    "scoring": "Serie de ardillas: 5/10/20/40 puntos por 1-4 ardillas diferentes"
+  },
+  "long_tailed_weasel": {
+    "name": "Comadreja de cola larga",
+    "scoring": "10 puntos cada una con 3+ ratones, si no 0"
+  },
+  "masked_shrew": {
+    "name": "Musaraña enmascarada",
+    "scoring": "3 puntos por Musaraña enmascarada"
+  },
+  "mink": {
+    "name": "Visón",
+    "scoring": "5 puntos por Visón"
+  },
+  "pileated_woodpecker": {
+    "name": "Picamaderos norteamericano",
+    "scoring": "1 punto por ave en tu bosque (incluyéndose)"
+  },
+  "raccoon_s": {
+    "name": "Mapache",
+    "scoring": "Sin puntos (efecto de cueva)"
+  },
+  "red_squirrel_s": {
+    "name": "Ardilla roja",
+    "scoring": "Serie de ardillas: 5/10/20/40 puntos por 1-4 ardillas diferentes"
+  },
+  "river_otter": {
+    "name": "Nutria de río",
+    "scoring": "2 puntos por pez, insecto y anfibio en tu bosque"
+  },
+  "rock_vole": {
+    "name": "Topillo de las rocas",
+    "scoring": "1 punto por ratón y por insecto (incluyéndose)"
+  },
+  "short_tailed_shrew": {
+    "name": "Musaraña de cola corta",
+    "scoring": "5 puntos por Musaraña de cola corta"
+  },
+  "spotted_skunk": {
+    "name": "Mofeta moteada",
+    "scoring": "10 puntos cada una si está sola en su árbol (un río no cuenta), si no 0",
+    "context": "Mofetas solas en su árbol"
+  },
+  "synchronous_firefly": {
+    "name": "Luciérnaga sincrónica",
+    "scoring": "3 puntos por Luciérnaga por cada Luciérnaga (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Pavo salvaje",
+    "scoring": "2 puntos por símbolo de árbol que coincida con el suyo (incluyendo el suyo)",
+    "context": "Total de símbolos de árbol coincidentes de todos tus Pavos"
+  },
+  "virgins_bower": {
+    "name": "Clemátide de Virginia",
+    "scoring": "2 puntos por ave en tu bosque"
+  },
+  "weevil_wasp": {
+    "name": "Avispa cerceris",
+    "scoring": "10 puntos cada una en un árbol con otro insecto, si no 0",
+    "context": "Avispas en un árbol con al menos otro insecto"
+  },
+  "white_footed_mouse": {
+    "name": "Ratón de patas blancas",
+    "scoring": "1 punto por ratón en tu bosque (incluyéndose)"
+  },
+  "white_tailed_deer": {
+    "name": "Ciervo de cola blanca",
+    "scoring": "2 puntos por árbol en tu bosque"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Chupasavia norteño",
+    "scoring": "2 puntos por Chupasavia"
+  },
+  "cave_s": {
+    "name": "Cueva",
+    "scoring": "1 punto por carta en tu cueva"
   }
 }

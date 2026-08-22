@@ -873,5 +873,286 @@
   "cave_exmoor": {
     "name": "Höhle (Exmoor)",
     "scoring": "1 Punkt pro Karte in der Höhle"
+  },
+  "basswood": {
+    "name": "Amerikanische Linde",
+    "scoring": "2 Punkte pro Linden-Symbol am Baum und seinen Karten",
+    "context": "Linden-Symbole an deinen Linden insgesamt (Bäume + angelegte Karten, auch unter einem Fluss)"
+  },
+  "black_gum": {
+    "name": "Tupelobaum",
+    "scoring": "1 Punkt pro Fluss"
+  },
+  "buckeye": {
+    "name": "Ohio-Rosskastanie",
+    "scoring": "1 Punkt pro Rosskastanien-Symbol in deinem Wald (Rosskastanien eingeschlossen)",
+    "context": "Rosskastanien-Symbole in deinem Wald (Rosskastanien eingeschlossen)"
+  },
+  "fraser_fir": {
+    "name": "Fraser-Tanne",
+    "scoring": "1 Punkt pro Baum in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "hemlock": {
+    "name": "Hemlocktanne",
+    "scoring": "5 Punkte pro Hemlocktanne"
+  },
+  "hickory": {
+    "name": "Hickory",
+    "scoring": "2 Punkte pro angelegter Karte (Fluss und Karten darunter zählen)",
+    "context": "Karten an deinen Hickorys insgesamt"
+  },
+  "silver_maple": {
+    "name": "Silber-Ahorn",
+    "scoring": "5 Punkte pro Stück ab 3 Silber-Ahornen"
+  },
+  "yellow_birch": {
+    "name": "Gelb-Birke",
+    "scoring": "1 Punkt pro Gelb-Birke"
+  },
+  "creek": {
+    "name": "Bach",
+    "scoring": "1 Punkt pro Fisch in deinem Wald"
+  },
+  "river_bend": {
+    "name": "Flussbiegung",
+    "scoring": "Keine Punkte (Zieheffekt beim Spielen von Fischen)"
+  },
+  "waterfall": {
+    "name": "Wasserfall",
+    "scoring": "Keine Punkte (nur Fische passen darunter)"
+  },
+  "universal_river": {
+    "name": "Universeller Fluss",
+    "scoring": "Keine Punkte, zählt aber als Fluss"
+  },
+  "bald_eagle": {
+    "name": "Weißkopfseeadler",
+    "scoring": "30 Punkte pro Stück mit 5+ Fischen, sonst 10"
+  },
+  "caddisfly": {
+    "name": "Köcherfliege",
+    "scoring": "2 Punkte pro Köcherfliege"
+  },
+  "flying_squirrel": {
+    "name": "Gleithörnchen",
+    "scoring": "Hörnchen-Serie: 5/10/20/40 Punkte für 1-4 verschiedene Hörnchen"
+  },
+  "great_blue_heron": {
+    "name": "Kanadareiher",
+    "scoring": "2 Punkte pro Fisch in deinem Wald"
+  },
+  "long_eared_owl": {
+    "name": "Waldohreule",
+    "scoring": "2 Punkte pro Maus in deinem Wald"
+  },
+  "peregrine_falcon_s": {
+    "name": "Wanderfalke",
+    "scoring": "1 Punkt pro Vogel in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "rockcap_fern": {
+    "name": "Tüpfelfarn",
+    "scoring": "1 Punkt pro Pflanze in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Rubinkehlkolibri",
+    "scoring": "1 Punkt pro Pflanze und pro Baum in deinem Wald"
+  },
+  "scarlet_tanager": {
+    "name": "Scharlachtangare",
+    "scoring": "2 Punkte pro Scharlachtangare"
+  },
+  "thermometer_cricket": {
+    "name": "Thermometer-Grille",
+    "scoring": "1 Punkt pro Insekt in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "tufted_titmouse": {
+    "name": "Indianermeise",
+    "scoring": "Keine Punkte (Zieheffekt beim Spielen von Pflanzen)"
+  },
+  "virginia_opossum": {
+    "name": "Virginia-Opossum",
+    "scoring": "2 Punkte pro unterschiedlichem Baumsymbol an seinem Baum",
+    "context": "Unterschiedliche Baumsymbole an den Bäumen deiner Opossums (aufsummiert)"
+  },
+  "water_starwort": {
+    "name": "Wasserstern",
+    "scoring": "1 Punkt pro Fluss und pro Fisch in deinem Wald"
+  },
+  "wood_thrush": {
+    "name": "Walddrossel",
+    "scoring": "Keine Punkte (Zieheffekt beim Spielen von Vögeln)"
+  },
+  "blue_mistflower": {
+    "name": "Blaue Nebelblume",
+    "scoring": "2 Punkte pro Blauer Nebelblume"
+  },
+  "brook_trout": {
+    "name": "Bachsaibling",
+    "scoring": "3 Punkte pro Fluss ohne Fisch darunter",
+    "context": "Flüsse ohne Fisch darunter"
+  },
+  "brown_water_scorpion": {
+    "name": "Brauner Wasserskorpion",
+    "scoring": "2 Punkte pro Braunem Wasserskorpion"
+  },
+  "common_box_turtle": {
+    "name": "Dosenschildkröte",
+    "scoring": "5 Punkte pro Dosenschildkröte"
+  },
+  "eastern_chipmunk": {
+    "name": "Streifenhörnchen",
+    "scoring": "Hörnchen-Serie: 5/10/20/40 Punkte für 1-4 verschiedene Hörnchen"
+  },
+  "eastern_hellbender": {
+    "name": "Schlammteufel",
+    "scoring": "2 Punkte pro Fluss"
+  },
+  "greenside_darter": {
+    "name": "Grüner Springbarsch",
+    "scoring": "3 Punkte pro Insekt in deinem Wald"
+  },
+  "imitator_salamander": {
+    "name": "Imitator-Salamander",
+    "scoring": "10 Punkte pro Stück mit 3+ verschiedenen Amphibienarten, sonst 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Großblättriges Laichkraut",
+    "scoring": "2 Punkte pro Laichkraut"
+  },
+  "skipper_caterpillar": {
+    "name": "Dickkopffalter-Raupe",
+    "scoring": "10 Punkte pro Stück mit 3+ verschiedenen Insektenarten, sonst 0"
+  },
+  "smallmouth_bass": {
+    "name": "Schwarzbarsch",
+    "scoring": "3 Punkte pro unterschiedlicher Fischart (die eigene eingeschlossen)"
+  },
+  "solomons_seal": {
+    "name": "Salomonssiegel",
+    "scoring": "6 Punkte pro Amphibie in deinem Wald"
+  },
+  "wintergreen": {
+    "name": "Scheinbeere",
+    "scoring": "3 Punkte pro Hörnchen in deinem Wald"
+  },
+  "wood_frog": {
+    "name": "Waldfrosch",
+    "scoring": "1 Punkt pro Baum in deinem Wald"
+  },
+  "yellow_bullhead": {
+    "name": "Gelber Katzenwels",
+    "scoring": "Keine Punkte (Zieheffekt beim Spielen von Flüssen)"
+  },
+  "yellow_perch": {
+    "name": "Amerikanischer Flussbarsch",
+    "scoring": "2 Punkte pro Amerikanischem Flussbarsch"
+  },
+  "beaver_s": {
+    "name": "Biber",
+    "scoring": "1 Punkt pro Karte in deiner Höhle"
+  },
+  "black_bear": {
+    "name": "Schwarzbär",
+    "scoring": "30 Punkte pro Stück mit 2 Fischen an seinem Baum, sonst 10",
+    "context": "Schwarzbären mit 2 Fischen an ihrem Baum"
+  },
+  "bobcat": {
+    "name": "Rotluchs",
+    "scoring": "30 Punkte pro Stück mit 5+ Vögeln, sonst 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Gelbscheitel-Waldsänger",
+    "scoring": "5 Punkte pro Waldsänger"
+  },
+  "coyote": {
+    "name": "Kojote",
+    "scoring": "30 Punkte pro Stück mit 6+ Sohlengängern (Kojoten eingeschlossen), sonst 10"
+  },
+  "elk_s": {
+    "name": "Wapiti",
+    "scoring": "30 Punkte pro Stück mit 5+ verschiedenen Baumarten, sonst 10"
+  },
+  "gray_fox": {
+    "name": "Graufuchs",
+    "scoring": "1 Punkt pro Sohlengänger (sich selbst eingeschlossen)"
+  },
+  "gray_squirrel": {
+    "name": "Grauhörnchen",
+    "scoring": "Hörnchen-Serie: 5/10/20/40 Punkte für 1-4 verschiedene Hörnchen"
+  },
+  "long_tailed_weasel": {
+    "name": "Langschwanzwiesel",
+    "scoring": "10 Punkte pro Stück mit 3+ Mäusen, sonst 0"
+  },
+  "masked_shrew": {
+    "name": "Maskenspitzmaus",
+    "scoring": "3 Punkte pro Maskenspitzmaus"
+  },
+  "mink": {
+    "name": "Mink",
+    "scoring": "5 Punkte pro Mink"
+  },
+  "pileated_woodpecker": {
+    "name": "Helmspecht",
+    "scoring": "1 Punkt pro Vogel in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "raccoon_s": {
+    "name": "Waschbär",
+    "scoring": "Keine Punkte (Höhleneffekt)"
+  },
+  "red_squirrel_s": {
+    "name": "Rothörnchen",
+    "scoring": "Hörnchen-Serie: 5/10/20/40 Punkte für 1-4 verschiedene Hörnchen"
+  },
+  "river_otter": {
+    "name": "Flussotter",
+    "scoring": "2 Punkte pro Fisch, Insekt und Amphibie in deinem Wald"
+  },
+  "rock_vole": {
+    "name": "Felsenwühlmaus",
+    "scoring": "1 Punkt pro Maus und pro Insekt (sich selbst eingeschlossen)"
+  },
+  "short_tailed_shrew": {
+    "name": "Kurzschwanzspitzmaus",
+    "scoring": "5 Punkte pro Kurzschwanzspitzmaus"
+  },
+  "spotted_skunk": {
+    "name": "Fleckenskunk",
+    "scoring": "10 Punkte pro Stück, wenn allein an seinem Baum (ein Fluss zählt nicht), sonst 0",
+    "context": "Skunks, die allein an ihrem Baum sind"
+  },
+  "synchronous_firefly": {
+    "name": "Synchron-Glühwürmchen",
+    "scoring": "3 Punkte pro Glühwürmchen für jedes Glühwürmchen (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Truthahn",
+    "scoring": "2 Punkte pro Baumsymbol, das seinem eigenen entspricht (das eigene eingeschlossen)",
+    "context": "Passende Baumsymbole über alle deine Truthähne insgesamt"
+  },
+  "virgins_bower": {
+    "name": "Virginia-Waldrebe",
+    "scoring": "2 Punkte pro Vogel in deinem Wald"
+  },
+  "weevil_wasp": {
+    "name": "Knotenwespe",
+    "scoring": "10 Punkte pro Stück an einem Baum mit einem weiteren Insekt, sonst 0",
+    "context": "Knotenwespen an einem Baum mit mindestens einem weiteren Insekt"
+  },
+  "white_footed_mouse": {
+    "name": "Weißfußmaus",
+    "scoring": "1 Punkt pro Maus in deinem Wald (sich selbst eingeschlossen)"
+  },
+  "white_tailed_deer": {
+    "name": "Weißwedelhirsch",
+    "scoring": "2 Punkte pro Baum in deinem Wald"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Gelbbauch-Saftlecker",
+    "scoring": "2 Punkte pro Gelbbauch-Saftlecker"
+  },
+  "cave_s": {
+    "name": "Höhle",
+    "scoring": "1 Punkt pro Karte in deiner Höhle"
   }
 }

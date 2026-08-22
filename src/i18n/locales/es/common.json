@@ -9,6 +9,7 @@
   "category": {
     "tree": "Árboles",
     "tree_dartmoor": "Árboles & Arbustos",
+    "river_smoky": "Ríos",
     "top": "Arriba",
     "bottom": "Abajo",
     "lateral": "Lateral",
@@ -83,6 +84,7 @@
     "set": "Set",
     "series": "Serie {{index}}",
     "dragonflySet": "Set de libélulas",
+    "squirrelSet": "Serie de ardillas",
     "butterflySet": "Set de mariposas"
   },
   "result": {
@@ -168,6 +170,7 @@
     "editionAll": "Todas",
     "editionClassic": "Clásica",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Nº jugadores",
     "playerCountAll": "Todos",
     "playerCountSolo": "Solo",
@@ -280,6 +283,7 @@
     "edition": "Edición del juego",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Elige qué juego Forest Shuffle puntuar",
     "editionChangeConfirm": "Cambiar la edición reiniciará tu sesión de puntuación actual. ¿Estás seguro?",
     "appName": "Forest Shuffle Scorer",

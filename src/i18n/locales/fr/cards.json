@@ -873,5 +873,286 @@
   "cave_exmoor": {
     "name": "Grotte (Exmoor)",
     "scoring": "1 point par carte dans la grotte"
+  },
+  "basswood": {
+    "name": "Tilleul d'Amérique",
+    "scoring": "2 points par symbole Tilleul sur l'arbre et ses cartes attachées",
+    "context": "Total des symboles Tilleul sur vos Tilleuls (arbres + cartes attachées, y compris sous une rivière)"
+  },
+  "black_gum": {
+    "name": "Tupélo noir",
+    "scoring": "1 point par rivière"
+  },
+  "buckeye": {
+    "name": "Pavier de l'Ohio",
+    "scoring": "1 point par symbole Pavier dans votre forêt (y compris les Paviers)",
+    "context": "Symboles Pavier dans votre forêt (y compris les Paviers)"
+  },
+  "fraser_fir": {
+    "name": "Sapin de Fraser",
+    "scoring": "1 point par arbre dans votre forêt (lui-même inclus)"
+  },
+  "hemlock": {
+    "name": "Pruche du Canada",
+    "scoring": "5 points par Pruche"
+  },
+  "hickory": {
+    "name": "Caryer",
+    "scoring": "2 points par carte attachée (la rivière et les cartes en dessous comptent)",
+    "context": "Total des cartes attachées à vos Caryers"
+  },
+  "silver_maple": {
+    "name": "Érable argenté",
+    "scoring": "5 points chacun à partir de 3 Érables argentés"
+  },
+  "yellow_birch": {
+    "name": "Bouleau jaune",
+    "scoring": "1 point par Bouleau jaune"
+  },
+  "creek": {
+    "name": "Ruisseau",
+    "scoring": "1 point par poisson dans votre forêt"
+  },
+  "river_bend": {
+    "name": "Méandre",
+    "scoring": "Aucun point (effet de pioche en jouant des poissons)"
+  },
+  "waterfall": {
+    "name": "Cascade",
+    "scoring": "Aucun point (seuls des poissons peuvent être placés dessous)"
+  },
+  "universal_river": {
+    "name": "Rivière universelle",
+    "scoring": "Aucun point, mais compte comme une rivière"
+  },
+  "bald_eagle": {
+    "name": "Pygargue à tête blanche",
+    "scoring": "30 points chacun avec 5+ poissons, sinon 10"
+  },
+  "caddisfly": {
+    "name": "Phrygane",
+    "scoring": "2 points par Phrygane"
+  },
+  "flying_squirrel": {
+    "name": "Écureuil volant",
+    "scoring": "Série d'écureuils : 5/10/20/40 points pour 1 à 4 écureuils différents"
+  },
+  "great_blue_heron": {
+    "name": "Grand Héron",
+    "scoring": "2 points par poisson dans votre forêt"
+  },
+  "long_eared_owl": {
+    "name": "Hibou moyen-duc",
+    "scoring": "2 points par souris dans votre forêt"
+  },
+  "peregrine_falcon_s": {
+    "name": "Faucon pèlerin",
+    "scoring": "1 point par oiseau dans votre forêt (lui-même inclus)"
+  },
+  "rockcap_fern": {
+    "name": "Polypode de Virginie",
+    "scoring": "1 point par plante dans votre forêt (lui-même inclus)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Colibri à gorge rubis",
+    "scoring": "1 point par plante et par arbre dans votre forêt"
+  },
+  "scarlet_tanager": {
+    "name": "Piranga écarlate",
+    "scoring": "2 points par Piranga écarlate"
+  },
+  "thermometer_cricket": {
+    "name": "Grillon thermomètre",
+    "scoring": "1 point par insecte dans votre forêt (lui-même inclus)"
+  },
+  "tufted_titmouse": {
+    "name": "Mésange bicolore",
+    "scoring": "Aucun point (effet de pioche en jouant des plantes)"
+  },
+  "virginia_opossum": {
+    "name": "Opossum de Virginie",
+    "scoring": "2 points par symbole d'arbre différent sur son arbre",
+    "context": "Total des symboles d'arbre différents sur les arbres de vos Opossums (additionnés)"
+  },
+  "water_starwort": {
+    "name": "Callitriche",
+    "scoring": "1 point par rivière et par poisson dans votre forêt"
+  },
+  "wood_thrush": {
+    "name": "Grive des bois",
+    "scoring": "Aucun point (effet de pioche en jouant des oiseaux)"
+  },
+  "blue_mistflower": {
+    "name": "Eupatoire bleue",
+    "scoring": "2 points par Eupatoire bleue"
+  },
+  "brook_trout": {
+    "name": "Omble de fontaine",
+    "scoring": "3 points par rivière sans poisson en dessous",
+    "context": "Rivières sans poisson en dessous"
+  },
+  "brown_water_scorpion": {
+    "name": "Nèpe brune",
+    "scoring": "2 points par Nèpe brune"
+  },
+  "common_box_turtle": {
+    "name": "Tortue-boîte commune",
+    "scoring": "5 points par Tortue-boîte"
+  },
+  "eastern_chipmunk": {
+    "name": "Tamia rayé",
+    "scoring": "Série d'écureuils : 5/10/20/40 points pour 1 à 4 écureuils différents"
+  },
+  "eastern_hellbender": {
+    "name": "Ménopome",
+    "scoring": "2 points par rivière"
+  },
+  "greenside_darter": {
+    "name": "Dard vert",
+    "scoring": "3 points par insecte dans votre forêt"
+  },
+  "imitator_salamander": {
+    "name": "Salamandre imitatrice",
+    "scoring": "10 points chacune avec 3+ espèces d'amphibiens différentes, sinon 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Potamot à grandes feuilles",
+    "scoring": "2 points par Potamot"
+  },
+  "skipper_caterpillar": {
+    "name": "Chenille d'hespérie",
+    "scoring": "10 points chacune avec 3+ espèces d'insectes différentes, sinon 0"
+  },
+  "smallmouth_bass": {
+    "name": "Achigan à petite bouche",
+    "scoring": "3 points par espèce de poisson différente (la sienne incluse)"
+  },
+  "solomons_seal": {
+    "name": "Sceau-de-Salomon",
+    "scoring": "6 points par amphibien dans votre forêt"
+  },
+  "wintergreen": {
+    "name": "Gaulthérie couchée",
+    "scoring": "3 points par écureuil dans votre forêt"
+  },
+  "wood_frog": {
+    "name": "Grenouille des bois",
+    "scoring": "1 point par arbre dans votre forêt"
+  },
+  "yellow_bullhead": {
+    "name": "Barbotte jaune",
+    "scoring": "Aucun point (effet de pioche en jouant des rivières)"
+  },
+  "yellow_perch": {
+    "name": "Perchaude",
+    "scoring": "2 points par Perchaude"
+  },
+  "beaver_s": {
+    "name": "Castor",
+    "scoring": "1 point par carte dans votre grotte"
+  },
+  "black_bear": {
+    "name": "Ours noir",
+    "scoring": "30 points chacun avec 2 poissons sur son arbre, sinon 10",
+    "context": "Ours noirs avec 2 poissons sur leur arbre"
+  },
+  "bobcat": {
+    "name": "Lynx roux",
+    "scoring": "30 points chacun avec 5+ oiseaux, sinon 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Paruline à flancs marron",
+    "scoring": "5 points par Paruline"
+  },
+  "coyote": {
+    "name": "Coyote",
+    "scoring": "30 points chacun avec 6+ plantigrades/digitigrades (Coyotes inclus), sinon 10"
+  },
+  "elk_s": {
+    "name": "Wapiti",
+    "scoring": "30 points chacun avec 5+ types d'arbres différents, sinon 10"
+  },
+  "gray_fox": {
+    "name": "Renard gris",
+    "scoring": "1 point par plantigrade/digitigrade (lui-même inclus)"
+  },
+  "gray_squirrel": {
+    "name": "Écureuil gris",
+    "scoring": "Série d'écureuils : 5/10/20/40 points pour 1 à 4 écureuils différents"
+  },
+  "long_tailed_weasel": {
+    "name": "Belette à longue queue",
+    "scoring": "10 points chacune avec 3+ souris, sinon 0"
+  },
+  "masked_shrew": {
+    "name": "Musaraigne cendrée",
+    "scoring": "3 points par Musaraigne cendrée"
+  },
+  "mink": {
+    "name": "Vison",
+    "scoring": "5 points par Vison"
+  },
+  "pileated_woodpecker": {
+    "name": "Grand Pic",
+    "scoring": "1 point par oiseau dans votre forêt (lui-même inclus)"
+  },
+  "raccoon_s": {
+    "name": "Raton laveur",
+    "scoring": "Aucun point (effet de grotte)"
+  },
+  "red_squirrel_s": {
+    "name": "Écureuil roux",
+    "scoring": "Série d'écureuils : 5/10/20/40 points pour 1 à 4 écureuils différents"
+  },
+  "river_otter": {
+    "name": "Loutre de rivière",
+    "scoring": "2 points par poisson, insecte et amphibien dans votre forêt"
+  },
+  "rock_vole": {
+    "name": "Campagnol des rochers",
+    "scoring": "1 point par souris et par insecte (lui-même inclus)"
+  },
+  "short_tailed_shrew": {
+    "name": "Musaraigne à queue courte",
+    "scoring": "5 points par Musaraigne à queue courte"
+  },
+  "spotted_skunk": {
+    "name": "Moufette tachetée",
+    "scoring": "10 points chacune si seule sur son arbre (une rivière ne compte pas), sinon 0",
+    "context": "Moufettes seules sur leur arbre"
+  },
+  "synchronous_firefly": {
+    "name": "Luciole synchrone",
+    "scoring": "3 points par Luciole pour chaque Luciole (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Dindon sauvage",
+    "scoring": "2 points par symbole d'arbre correspondant au sien (le sien inclus)",
+    "context": "Total des symboles d'arbre correspondants pour tous vos Dindons"
+  },
+  "virgins_bower": {
+    "name": "Clématite de Virginie",
+    "scoring": "2 points par oiseau dans votre forêt"
+  },
+  "weevil_wasp": {
+    "name": "Cerceris",
+    "scoring": "10 points chacune sur un arbre avec un autre insecte, sinon 0",
+    "context": "Cerceris sur un arbre avec au moins un autre insecte"
+  },
+  "white_footed_mouse": {
+    "name": "Souris à pattes blanches",
+    "scoring": "1 point par souris dans votre forêt (elle-même incluse)"
+  },
+  "white_tailed_deer": {
+    "name": "Cerf de Virginie",
+    "scoring": "2 points par arbre dans votre forêt"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Pic maculé",
+    "scoring": "2 points par Pic maculé"
+  },
+  "cave_s": {
+    "name": "Grotte",
+    "scoring": "1 point par carte dans votre grotte"
   }
 }
