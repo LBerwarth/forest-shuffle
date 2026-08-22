@@ -3,7 +3,7 @@ import { fetchHallOfFame } from '@/lib/supabase-api'
 
 export function useHallOfFame(
   playerCount?: number | 'group',
-  edition?: 'classic' | 'dartmoor',
+  edition?: 'classic' | 'dartmoor' | 'smoky',
 ) {
   return useQuery({
     queryKey: ['hall-of-fame', playerCount ?? 'all', edition ?? 'all'],

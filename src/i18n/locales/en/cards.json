@@ -873,5 +873,286 @@
   "cave_exmoor": {
     "name": "Cave (Exmoor)",
     "scoring": "1 point per card in the cave"
+  },
+  "basswood": {
+    "name": "Basswood",
+    "scoring": "2 points per Basswood symbol on the tree and its attached cards",
+    "context": "Total Basswood symbols on your Basswoods (trees + attached cards, incl. below a river)"
+  },
+  "black_gum": {
+    "name": "Black Gum",
+    "scoring": "1 point per river"
+  },
+  "buckeye": {
+    "name": "Buckeye",
+    "scoring": "1 point per Buckeye symbol in your forest (incl. the Buckeyes)",
+    "context": "Buckeye symbols in your forest (incl. the Buckeye trees)"
+  },
+  "fraser_fir": {
+    "name": "Fraser Fir",
+    "scoring": "1 point per tree in your forest (incl. itself)"
+  },
+  "hemlock": {
+    "name": "Hemlock",
+    "scoring": "5 points per Hemlock"
+  },
+  "hickory": {
+    "name": "Hickory",
+    "scoring": "2 points per card attached to it (river and cards below it count)",
+    "context": "Total cards attached to your Hickories"
+  },
+  "silver_maple": {
+    "name": "Silver Maple",
+    "scoring": "5 points each if you have 3+ Silver Maples"
+  },
+  "yellow_birch": {
+    "name": "Yellow Birch",
+    "scoring": "1 point per Yellow Birch"
+  },
+  "creek": {
+    "name": "Creek",
+    "scoring": "1 point per fish"
+  },
+  "river_bend": {
+    "name": "River Bend",
+    "scoring": "No points (draw effect when playing fish)"
+  },
+  "waterfall": {
+    "name": "Waterfall",
+    "scoring": "No points (only fish fit below it)"
+  },
+  "universal_river": {
+    "name": "Universal River",
+    "scoring": "No points, but counts as a river"
+  },
+  "bald_eagle": {
+    "name": "Bald Eagle",
+    "scoring": "30 points each with 5+ fish, otherwise 10"
+  },
+  "caddisfly": {
+    "name": "Caddisfly",
+    "scoring": "2 points per Caddisfly"
+  },
+  "flying_squirrel": {
+    "name": "Flying Squirrel",
+    "scoring": "Squirrel set: 5/10/20/40 points for 1-4 different squirrels"
+  },
+  "great_blue_heron": {
+    "name": "Great Blue Heron",
+    "scoring": "2 points per fish"
+  },
+  "long_eared_owl": {
+    "name": "Long-Eared Owl",
+    "scoring": "2 points per mouse"
+  },
+  "peregrine_falcon_s": {
+    "name": "Peregrine Falcon",
+    "scoring": "1 point per bird (incl. itself)"
+  },
+  "rockcap_fern": {
+    "name": "Rockcap Fern",
+    "scoring": "1 point per plant (incl. itself)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Ruby-Throated Hummingbird",
+    "scoring": "1 point per plant and per tree"
+  },
+  "scarlet_tanager": {
+    "name": "Scarlet Tanager",
+    "scoring": "2 points per Scarlet Tanager"
+  },
+  "thermometer_cricket": {
+    "name": "Thermometer Cricket",
+    "scoring": "1 point per insect (incl. itself)"
+  },
+  "tufted_titmouse": {
+    "name": "Tufted Titmouse",
+    "scoring": "No points (draw effect when playing plants)"
+  },
+  "virginia_opossum": {
+    "name": "Virginia Opossum",
+    "scoring": "2 points per different tree symbol at its tree",
+    "context": "Total different tree symbols at your Opossums' trees (summed over all Opossums)"
+  },
+  "water_starwort": {
+    "name": "Water-Starwort",
+    "scoring": "1 point per river and per fish"
+  },
+  "wood_thrush": {
+    "name": "Wood Thrush",
+    "scoring": "No points (draw effect when playing birds)"
+  },
+  "blue_mistflower": {
+    "name": "Blue Mistflower",
+    "scoring": "2 points per Blue Mistflower"
+  },
+  "brook_trout": {
+    "name": "Brook Trout",
+    "scoring": "3 points per river without a fish below it",
+    "context": "Rivers without a fish below them"
+  },
+  "brown_water_scorpion": {
+    "name": "Brown Water Scorpion",
+    "scoring": "2 points per Brown Water Scorpion"
+  },
+  "common_box_turtle": {
+    "name": "Common Box Turtle",
+    "scoring": "5 points per Common Box Turtle"
+  },
+  "eastern_chipmunk": {
+    "name": "Eastern Chipmunk",
+    "scoring": "Squirrel set: 5/10/20/40 points for 1-4 different squirrels"
+  },
+  "eastern_hellbender": {
+    "name": "Eastern Hellbender",
+    "scoring": "2 points per river"
+  },
+  "greenside_darter": {
+    "name": "Greenside Darter",
+    "scoring": "3 points per insect"
+  },
+  "imitator_salamander": {
+    "name": "Imitator Salamander",
+    "scoring": "10 points each with 3+ different amphibian species, otherwise 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Largeleaf Pondweed",
+    "scoring": "2 points per Largeleaf Pondweed"
+  },
+  "skipper_caterpillar": {
+    "name": "Skipper Caterpillar",
+    "scoring": "10 points each with 3+ different insect species, otherwise 0"
+  },
+  "smallmouth_bass": {
+    "name": "Smallmouth Bass",
+    "scoring": "3 points per different fish species (incl. its own)"
+  },
+  "solomons_seal": {
+    "name": "Solomons Seal",
+    "scoring": "6 points per amphibian"
+  },
+  "wintergreen": {
+    "name": "Wintergreen",
+    "scoring": "3 points per squirrel"
+  },
+  "wood_frog": {
+    "name": "Wood Frog",
+    "scoring": "1 point per tree"
+  },
+  "yellow_bullhead": {
+    "name": "Yellow Bullhead",
+    "scoring": "No points (draw effect when playing rivers)"
+  },
+  "yellow_perch": {
+    "name": "Yellow Perch",
+    "scoring": "2 points per Yellow Perch"
+  },
+  "beaver_s": {
+    "name": "Beaver",
+    "scoring": "1 point per card in your cave"
+  },
+  "black_bear": {
+    "name": "Black Bear",
+    "scoring": "30 points each with 2 fish at its tree, otherwise 10",
+    "context": "Black Bears with 2 fish at their tree"
+  },
+  "bobcat": {
+    "name": "Bobcat",
+    "scoring": "30 points each with 5+ birds, otherwise 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Chestnut-Sided Warbler",
+    "scoring": "5 points per Warbler"
+  },
+  "coyote": {
+    "name": "Coyote",
+    "scoring": "30 points each with 6+ pawed animals (incl. Coyotes), otherwise 10"
+  },
+  "elk_s": {
+    "name": "Elk",
+    "scoring": "30 points each with 5+ different tree types, otherwise 10"
+  },
+  "gray_fox": {
+    "name": "Gray Fox",
+    "scoring": "1 point per pawed animal (incl. itself)"
+  },
+  "gray_squirrel": {
+    "name": "Gray Squirrel",
+    "scoring": "Squirrel set: 5/10/20/40 points for 1-4 different squirrels"
+  },
+  "long_tailed_weasel": {
+    "name": "Long-Tailed Weasel",
+    "scoring": "10 points each with 3+ mice, otherwise 0"
+  },
+  "masked_shrew": {
+    "name": "Masked Shrew",
+    "scoring": "3 points per Masked Shrew"
+  },
+  "mink": {
+    "name": "Mink",
+    "scoring": "5 points per Mink"
+  },
+  "pileated_woodpecker": {
+    "name": "Pileated Woodpecker",
+    "scoring": "1 point per bird (incl. itself)"
+  },
+  "raccoon_s": {
+    "name": "Raccoon",
+    "scoring": "No points (cave effect)"
+  },
+  "red_squirrel_s": {
+    "name": "Red Squirrel",
+    "scoring": "Squirrel set: 5/10/20/40 points for 1-4 different squirrels"
+  },
+  "river_otter": {
+    "name": "River Otter",
+    "scoring": "2 points per fish, insect, and amphibian"
+  },
+  "rock_vole": {
+    "name": "Rock Vole",
+    "scoring": "1 point per mouse and per insect (incl. itself)"
+  },
+  "short_tailed_shrew": {
+    "name": "Short-Tailed Shrew",
+    "scoring": "5 points per Short-Tailed Shrew"
+  },
+  "spotted_skunk": {
+    "name": "Spotted Skunk",
+    "scoring": "10 points each if alone at its tree (a river doesn't count), otherwise 0",
+    "context": "Skunks that are alone at their tree"
+  },
+  "synchronous_firefly": {
+    "name": "Synchronous Firefly",
+    "scoring": "3 points per Firefly for each Firefly (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Turkey",
+    "scoring": "2 points per tree symbol matching the Turkey's own symbol (incl. its own)",
+    "context": "Total matching tree symbols across your Turkeys"
+  },
+  "virgins_bower": {
+    "name": "Virgin's Bower",
+    "scoring": "2 points per bird"
+  },
+  "weevil_wasp": {
+    "name": "Weevil Wasp",
+    "scoring": "10 points each at a tree with another insect, otherwise 0",
+    "context": "Weevil Wasps at a tree with at least one other insect"
+  },
+  "white_footed_mouse": {
+    "name": "White-Footed Mouse",
+    "scoring": "1 point per mouse (incl. itself)"
+  },
+  "white_tailed_deer": {
+    "name": "White-Tailed Deer",
+    "scoring": "2 points per tree"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Yellow-Bellied Sapsucker",
+    "scoring": "2 points per Sapsucker"
+  },
+  "cave_s": {
+    "name": "Cave",
+    "scoring": "1 point per card in your cave"
   }
 }

@@ -102,6 +102,7 @@ export function NewGamePage() {
   }
 
   function getExpansions(): Expansion[] {
+    if (edition === 'smoky') return ['smoky_base']
     if (edition === 'dartmoor') return includeExmoor ? ['dartmoor_base', 'dartmoor_exmoor'] : ['dartmoor_base']
     const exp: Expansion[] = ['base']
     if (includeAlpine) exp.push('alpine')
@@ -173,6 +174,18 @@ export function NewGamePage() {
                 )}
               >
                 {t('settings.dartmoorEdition')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setEdition('smoky')}
+                className={cn(
+                  'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                  edition === 'smoky'
+                    ? 'bg-forest-500 text-white'
+                    : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+                )}
+              >
+                {t('settings.smokyEdition')}
               </button>
             </div>
           </CardContent>

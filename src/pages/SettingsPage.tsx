@@ -123,6 +123,24 @@ export function SettingsPage() {
             >
               {t('settings.dartmoorEdition')}
             </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (edition !== 'smoky') {
+                  if (scoringSessionActive && !confirm(t('settings.editionChangeConfirm'))) return
+                  setEdition('smoky')
+                  if (scoringSessionActive) endScoringSession()
+                }
+              }}
+              className={cn(
+                'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
+                edition === 'smoky'
+                  ? 'bg-forest-500 text-white'
+                  : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+              )}
+            >
+              {t('settings.smokyEdition')}
+            </button>
           </div>
         </CardContent>
       </Card>

@@ -64,6 +64,11 @@ export function GameHistoryPage() {
                               Dartmoor
                             </span>
                           )}
+                          {game.edition === 'smoky' && (
+                            <span className="rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-medium text-sky-700">
+                              Smoky Mountains
+                            </span>
+                          )}
                         </div>
 
                         {/* Player scores */}

@@ -1,0 +1,1281 @@
+===== PAGE 1 =====
+AppendixAppendix
+Smoky mountains
+Forest shuffle
+1
+In this appendix, you will find a detailed description of the effects, bonuses, and points of all cards in 
+alphabetical order. After the name, in parentheses, each card states where it is placed (tree, shrub, 
+moor, left/right, top, bottom) , how many copies of it there are, and how much it costs to play. If no 
+effects or bonuses are listed below the name, then that card has none.
+Bald Eagle  (top, 4×, cost: 3; must be placed in a river or on a tree with a river) 
+Effect: After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost , without 
+using the effect and bonus of that card. It may (but does not have to) be one of the cards that you 
+have just placed there as payment (if it is a 
+  card) . If there is no such card in the clearing, add 
+cards from the deck to the clearing until you either find 1 card with the 
+  or have drawn 5 cards. If 
+there is still no such card in the clearing, you get nothing from this effect. You may not play a card 
+from your hand instead.
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: Each Bald Eagle scores either 10 points or 30 points. To score 30 points per Bald Eagle, you 
+must have at least 5 
+  cards in your forest.
+Example:  You have 2 Bald Eagles and 5 fish; consequently, each Bald Eagle scores 30 points, for a total of  
+60 points. If you had only 4 fish, each Bald Eagle would score 10 points, for a total of 20 points.
+Basswood  (tree, 6×, cost: 1) 
+Points: The Basswood scores 2 points for 
+each 
+  tree symbol on itself and any cards 
+attached to it. Cards below a universal river 
+attached to the Basswood also count (if they 
+have the 
+  symbol) .
+Example:  You have 2 Basswoods, one with and 
+one without a universal river. The Basswood 
+without a universal river has 4 cards showing 
+the 
+  symbol attached to it, and the Basswood 
+with a river has 5 cards showing the 
+  symbol 
+attached to it. Consequently, your Basswoods 
+score 5×2=10 and 6×2=12 points, respectively, for 
+a total of 22 points.
+Chestnut-
+Sided Warbler
+Elk
+different5
+if at least
+- or -
+S101
+Chestnut-
+Sided Warbler
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+S103
+Peregrine Falcon
+Brown Water Scorpion
+S122
+Great Blue Heron
+Imitator Salamander
+if at least 
+3 different 
+S126
+Basswood
+at this tree
+S001
+ 10 
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+Virginia Opossum
+per different tree symbol 
+at this tree
+Brook Trout
+per river 
+without 
+S167
+Virginia Opossum
+per different tree symbol 
+at this tree
+Brook Trout
+per river 
+without 
+S167
+Tilia americana
+attached to this tree
+S001
+Masked 
+Shrew
+Red Squirrel 
+different 
+squirrels
+S086
+Rock Vole
+Elk
+different5
+if at least
+- or -
+S110
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Basswood
+at this tree
+S001
+ 12 
+
+===== PAGE 2 =====
+2
+Beaver  (left/right, 3×, cost: 1; must be placed at a tree with a river) 
+Effect:  After you pay the cost, place all 
+  cards from the clearing into your cave , including cards 
+which you have just placed there as payment (if they are trees) . You may not leave any trees in the 
+clearing. If there are none, you cannot place any into your cave. You cannot put cards from your hand 
+into your cave instead.
+Points: The Beaver scores a number of points equal to the number of cards in your cave , regardless 
+of how those cards got there. If you have more than one Beaver, these points are multiplied 
+accordingly.
+Example: You have 2 Beavers and 5 cards in your cave; consequently, each Beaver scores 5 points, for a total 
+of 10 points. Note that your cave card will score an additional 5 points on its own.
+Black Bear  (left/right, 4×, cost: 3) 
+Effect: Place any card from your hand  (regardless of type) face down  in your forest, on its own, as 
+a universal river; you cannot add that river to a tree. You may not play a card from the clearing 
+instead.
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: Each Black Bear scores either 10 points 
+or 30 points. To score 30 points per Black Bear, 
+there must be 2 
+  cards at the same tree as 
+the Black Bear. (Consequently, make sure there 
+is a river below that tree to even be able to score  
+30 points in the first place. Remember, you may not 
+retroactively add a river to a tree via an effect like 
+the Black Bear’s.)
+Example:  You have one tree with a Black Bear and 
+2 fish and another tree with a Black Bear and 1 fish. 
+Consequently, the Black Bear at the first tree scores 
+30 points and the Black Bear at the second tree 
+scores 10 points, for a total of 40 points. 
+Wood Thrush
+whenever you play 
+a card with
+Yellow Perch
+S121
+Virginia Opossum
+per different tree symbol 
+at this tree
+Brook Trout
+per river 
+without 
+S167
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Tilia americana
+attached to this tree
+S001
+Turkey
+Black Bear
+if this 
+tree has
+- or -
+S091
+Basswood
+at this tree
+S001
+ 30 
+Peregrine Falcon
+Brook Trout
+per river 
+without 
+S135
+Virginia Opossum
+per different tree symbol 
+at this tree
+Brook Trout
+per river 
+without 
+S167
+Flying Squirrel
+different 
+squirrels
+Eastern Hellbender
+put 1 of them
+in your cave
+S141
+Tilia americana
+attached to this tree
+S001
+Black Bear
+if this 
+tree has
+- or -
+Red Squirrel 
+different 
+squirrels
+S102
+Basswood
+at this tree
+S001
+ 10 
+Black Gum  (tree, 6×, cost: 1) 
+Points: The Black Gum scores 1 point for each (named and universal) river in your forest. If you have 
+more than one Black Gum, these points are multiplied accordingly. 
+Example: You have 2 Black Gums and 3 rivers; consequently, each Black Gum scores 3 points, for a total of  
+6 points.
+Blue Mistflower  (bottom, 3×, cost: 0) 
+Effect: Take 1 card from the clearing  (not deck)  into your hand.
+Points: Each Blue Mistflower in your forest scores 2 points.
+Example:  You have 2 Blue Mistflowers worth a total of 2×2=4 points.
+===== PAGE 3 =====
+3
+Bobcat  (left/right, 4×, cost: 3) 
+Effect:  Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Bonus: After you pay the cost, take 1 card from the clearing  (not deck) into your hand, which may (but 
+does not have to) be one of the cards that you have just placed there as payment.
+Points: Each Bobcat scores either 10 points or 30 points. To score 30 points per Bobcat, you must 
+have at least 5 
+  cards in your forest.
+Example: You have 2 Bobcats and 5 birds; consequently, each Bobcat scores 30 Points, for a total of 60 points. 
+If you had only 4 birds, each Bobcat would score 10 points, for a total of 20 points.
+Brook Trout  (bottom, 4×, cost: 2; must be placed in a river) 
+Bonus: Place any card from your hand  (regardless of type) face down  in your forest, on its own, as 
+a universal river; you cannot add that river to a tree. You may not play a card from the clearing 
+instead. 
+Points: The Brook Trout scores 3 points for each river in your forest with no  
+  card below it. If you 
+have more than one Brook Trout, these points are multiplied accordingly. 
+Example: You have 2 Brook Trouts and 5 rivers, 3 of which have no fish. Consequently, each Brook Trout scores 
+3×3=9 points, for a total of 18 points. 
+Brown Water Scorpion (bottom, 3×, cost: 0; must be placed in a river) 
+Effect: Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: Each Brown Water Scorpion in your forest scores 2 points.
+Example:  You have 2 Brown Water Scorpions worth a total of 2×2=4 points.
+Buckeye  (tree, 9×, cost: 1) 
+Points:  The Buckeye scores 1 point for each 
+  tree symbol in your forest, including its own. If you 
+have more than one Buckeye, these points are multiplied accordingly. 
+Example:  You have 2 Buckeye trees and 5 other cards with a 
+  symbol; consequently, each Buckeye scores 
+2+5=7 points, for a total of 14 points.
+Caddisfly  (top, 4×, cost: 0; must be placed in a river or on a tree with a river) 
+Effect: Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: Each Caddisfly in your forest scores 2 points.
+Example: You have 2 Caddisflies worth a total of 2×2=4 points.
+===== PAGE 4 =====
+4
+Chestnut-Sided Warbler  (left/right, 4×, cost: 1) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: Each Chestnut-Sided Warbler in your forest scores 5 points.
+Example:  You have 2 Chestnut-Sided Warblers worth a total of 2×5=10 points.
+Common Box Turtle  (bottom, 3×, cost: 0)
+Points: Each Common Box Turtle in your forest scores 5 points.
+Example:  You have 2 Common Box Turtles worth a total of 2×5=10 points.
+Coyote  (left/right, 4×, cost: 3) 
+Effect:  Draw 1 card from the deck  (not clearing)  into your hand.
+Bonus: After you pay the cost, take 1 card from the clearing  (not deck) into your hand, which may (but 
+does not have to) be one of the cards that you have just placed there as payment.
+Points: Each Coyote scores either 10 points or 30 points. To score 30 points per Coyote, you must 
+have at least 6 
+  cards in your forest, including any Coyotes.
+Example: You have 2 Coyotes and 4 other pawed animals; consequently, each Coyote scores 30 Points, for 
+a total of 60 points. If you had only 3 other pawed animals, each Coyote would score 10 points, for a total of  
+20 points.
+Creek  (river, 3×, cost: 2) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: The Creek scores 1 point for each 
+  card in your forest. If you have more than one Creek, 
+these points are multiplied accordingly. 
+Example: You have 2 Creeks and 3 fish; consequently, each Creek scores 3 points, for a total of 6 points.
+Eastern Chipmunk  (bottom, 4×, cost: 0) 
+Points: Squirrels of different species  form a set : You score 5, 10, 20, or 40 points for having 1, 2, 3, 
+or 4 different squirrels in your forest, respectively. Each of the four species is located on a different 
+half of the card (top, bottom, left, or right) and can only be part of one set.
+Example: You have a total of 5 squirrels 
+forming 2 sets: The first set comprises 
+three squirrels (Eastern Chipmunk, 
+Flying Squirrel, Gray Squirrel) worth  
+20 points total; the second set comprises 
+two squirrels (Eastern Chipmunk, Flying 
+Squirrel) worth 10 points total. As a 
+result, your squirrels score 30 points.
+Wood Thrush
+whenever you play a card with
+Eastern Chipmunk
+different 
+squirrels
+S134
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Wood Thrush
+whenever you play a card with
+Eastern Chipmunk
+different 
+squirrels
+S134
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+
+===== PAGE 5 =====
+5
+Eastern Hellbender  (bottom, 3×, cost: 1; must be placed in a river) 
+Effect: Draw two cards from the deck . Then put one  of them into your cave and add the other one 
+to your hand . You cannot take cards from the clearing with this, and you cannot put both cards into 
+your cave or add both cards to your hand. You can still fully use this effect even if you already have 
+9 cards in hand; that is, draw 2 cards, put one in the cave, and keep one.
+Points: The Eastern Hellbender scores 2 points for each (named and universal)  river in your forest. If 
+you have more than one Eastern Hellbender, these points are multiplied accordingly. 
+Example: You have 2 Eastern Hellbenders and 3 rivers; consequently, each Eastern Hellbender scores  
+3×2=6 points, for a total of 12 points.
+Elk (left/right, 5×, cost: 3) 
+Effect:  After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost , without 
+using the effect and bonus of that card. It may (but does not have to) be one of the cards that you 
+have just placed there as payment (if it is a 
+  card) . If there is no such card in the clearing, add 
+cards from the deck to the clearing until you either find 1 card with the 
+  or have drawn 3 cards. If 
+there is still no such card in the clearing, you get nothing from this effect. You may not play a card 
+from your hand instead.
+Points:  Each Elk scores either 10 points or 30 points. To score 30 points per Elk, you must have at 
+least 5 different 
+  types in your forest.
+Example: You have 2 Elks and 5 different tree types; consequently, each Elk scores 30 points, for a total of  
+60 points. If you had only 4 different tree types, each Elk would score 10 points, for a total of 20 points.
+Flying Squirrel  (top, 4×, cost: 0) 
+Points:  Squirrels of different species  form a set : You score 5, 10, 20, or 40 points for having 1, 2, 3, 
+or 4 different squirrels in your forest, respectively. Each of the four species is located on a different 
+half of the card (top, bottom, left, or right) and can only be part of one set.
+Example: You have a total of 5 squirrels 
+forming 2 sets: The first set comprises 
+three squirrels (Flying Squirrel, Eastern 
+Chipmunk, Gray Squirrel) worth  
+20 points total; the second set 
+comprises two squirrels (Flying Squirrel, 
+Eastern Chipmunk) worth 10 points 
+total. As a result, your squirrels score  
+30 points.
+Wood Thrush
+whenever you play a card with
+Eastern Chipmunk
+different 
+squirrels
+S134
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Wood Thrush
+whenever you play a card with
+Eastern Chipmunk
+different 
+squirrels
+S134
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Fraser Fir  (tree, 6×, cost: 2) 
+Bonus: Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: The Fraser Fir scores 1 point for each 
+  card in your forest, including itself. If you have 
+more than one Fraser Fir, these points are multiplied accordingly. 
+Example: You have 2 Fraser Firs and 3 other trees; consequently, each Fraser Fir scores 2+3=5 points, for a 
+total of 10 points.
+===== PAGE 6 =====
+6
+Gray Fox  (left/right, 3×, cost: 2) 
+Effect: Draw a number of cards from the deck  (not clearing)  equal to the number of 
+  cards in your 
+forest. (Remember you may have at most 10 cards in hand.)
+Points: The Gray Fox scores 1 point for each 
+  card in your forest, including itself. If you have more 
+than one Gray Fox, these points are multiplied accordingly. 
+Example: You have 2 Gray Foxes and 3 other pawed animals; consequently, each Gray Fox scores 2+3=5 points, 
+for a total of 10 points.
+Gray Squirrel  (right, 4×, cost 0) 
+Points: Squirrels of different species  form a set : You score 5, 10, 20, or 40 points for having 1, 2, 3, 
+or 4 different squirrels in your forest, respectively. Each of the four species is located on a different 
+half of the card (top, bottom, left, or right) and can only be part of one set.
+Example: You have a total of 5 squirrels 
+forming 2 sets: The first set comprises 
+three squirrels (Gray Squirrel, Red 
+Squirrel, Flying Squirrel) worth 20 points 
+total; the second set comprises two 
+squirrels (Gray Squirrel, Red Squirrel) 
+worth 10 points total. As a result, your 
+squirrels score 30 points. 
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Black Bear
+if this 
+tree has
+- or -
+Red Squirrel 
+different 
+squirrels
+S102
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Black Bear
+if this 
+tree has
+- or -
+Red Squirrel 
+different 
+squirrels
+S102
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Great Blue Heron  (top, 4×, cost: 1; must be placed in a river or on a tree with a river) 
+Bonus: Play any card from your hand  (regardless of type) face down  in your forest, on its own, as 
+a universal river; you cannot add that river to a tree. You may not play a card from the clearing 
+instead.
+Points: The Great Blue Heron scores 2 points for each 
+  card in your forest. If you have more than 
+one Great Blue Heron, these points are multiplied accordingly. 
+Example: You have 2 Great Blue Herons and 3 fish; consequently, each Great Blue Heron scores 3×2=6 points, 
+for a total of 12 points.
+Greenside Darter  (bottom, 4×, cost: 0; must be placed in a river) 
+Points: The Greenside Darter scores 3 points for each 
+  card in your forest. If you have more than 
+one Greenside Darter, these points are multiplied accordingly. 
+Example: You have 2 Greenside Darters and 3 insects; consequently, each Greenside Darter scores  
+3×3=9 points, for a total of 18 points.
+Hemlock  (tree, 6×, cost: 2) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: Each Hemlock in your forest scores 5 points.
+Example: You have 3 Hemlocks worth a total of 3×5=15 points.
+===== PAGE 7 =====
+7
+Hickory  (tree, 6×, cost: 2) 
+Effect: Draw 1 card from the deck  (not clearing)  into your hand.
+Bonus: After you pay the cost, take 1 card 
+from the clearing  (not deck)  into your hand, 
+which may (but does not have to) be one of 
+the cards that you have just placed there as 
+payment.
+Points: The Hickory scores 2 points for each 
+card attached to it, including a universal river 
+(if it has one) and any cards below that river.
+Example: You have 2 Hickories, one without 
+and one with a universal river. The Hickory 
+without a universal river has 5 cards in its card 
+slots (including two Thermometer Crickets), 
+and the Hickory with a river has 6 cards in its 
+card slots (including the river). Consequently, 
+your Hickories score 5×2=10 and 6×2=12 points, 
+respectively, for a total of 22 points.
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Wood Frog
+S143
+Virgin’s 
+Bower
+Rock Vole
+S090
+Black Bear
+if this 
+tree has
+- or -
+Red Squirrel 
+different 
+squirrels
+S102
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Blue Mistﬂ  ower
+from the 
+clearing
+S130
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Blue Mistﬂ  ower
+from the 
+clearing
+S130
+Hickory
+from the 
+clearing
+per card attached to this tree
+S030
+ 10 
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Virginia Opossum
+per different tree symbol 
+at this tree
+Brook Trout
+per river 
+without 
+S167
+Peregrine Falcon
+Brook Trout
+per river 
+without 
+S135
+Tilia americana
+attached to this tree
+S001
+Coyote
+- or -
+from the 
+clearing
+if at least
+Weevil Wasp
+if at least 1 other 
+insect also occupies 
+this tree 
+from the 
+clearing
+S069
+Mink
+Masked 
+Shrew
+S098
+Rockcap Fern
+from the 
+clearing
+Six-Spotted Tiger Beetle
+put 1 of them
+in your cave
+S146
+Hickory
+from the 
+clearing
+per card attached to this tree
+S030
+ 14 
+Imitator Salamander  (bottom, 3×, cost: 1) 
+Points: The Imitator Salamander scores 10 points if you have at least 3 different 
+  species in your 
+forest, including its own species. If you have less than 3 different 
+  species in your forest, your 
+Imitator Salamanders score no points . 
+Example: You have 3 different Amphibians: 2 Imitator Salamanders, 1 Wood Frog, and 1 Common Box Turtle; 
+consequently, each Imitator Salamander scores 10 points, for a total of 20 points.
+Largeleaf Pondweed  (bottom, 3×, cost: 0; must be placed in a river) 
+Effect: Add 1 
+  card from the clearing  to your forest at no cost , without using the effect and bonus 
+of that card. If there is no such card in the clearing, add cards from the deck to the clearing until 
+you either find 1 card with the 
+  or have drawn 5 cards. If there is still no such card in the clearing, 
+you get nothing from this effect. You may not play a card from your hand instead.
+Points: Each Largeleaf Pondweed in your forest scores 2 points.
+Example: You have 2 Largeleaf Pondweeds worth a total of 2×2=4 points.
+Long-Eared Owl  (top, 5×, cost: 2) 
+Effect: Draw a number of cards from the deck  (not clearing)  equal to the number of 
+  cards in your 
+forest. (Remember you may have at most 10 cards in hand.)
+Points: The Long-Eared Owl scores 2 points for each 
+  card in your forest. If you have more than 
+one Long-Eared Owl, these points are multiplied accordingly. 
+Example: You have 2 Long-Eared Owls and 3 mice; consequently, each Long-Eared Owl scores 3×2=6 points, 
+for a total of 12 points.
+===== PAGE 8 =====
+8
+Long-Tailed Weasel  (left/right, 4×, cost: 1) 
+Effect: After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost, without 
+using the effect and bonus of that card. It may (but does not have to) be the card that you have just 
+placed there as payment (if it is a 
+  card) . If there is no such card in the clearing, add cards from 
+the deck to the clearing until you either find 1 card with the 
+  or have drawn 3 cards. If there is 
+still no such card in the clearing, you get nothing from this effect. You may not play a card from your 
+hand instead.
+Points: The Long-Tailed Weasel scores 10 points if you have at least 3 
+  cards in your forest. If you 
+have less than 3 
+  cards in your forest, your Long-Tailed Weasels score no points .
+Example: You have 2 Long-Tailed Weasels and 3 mice; consequently, each Long-Tailed Weasel scores 10 points, 
+for a total of 20 points. 
+Masked Shrew  (left/right, 4×, cost: 0) 
+Effect: Draw 1 card from the deck  (not clearing)  into your hand.
+Points: Each Masked Shrew in your forest scores 3 points.
+Example:  You have 2 Masked Shrews worth a total of 2×3=6 points.
+Mink  (left/right, 4×, cost: 1; must be placed at a tree with a river) 
+Effect:  After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost , without 
+using the effect and bonus of that card. It may (but does not have to) be the card that you have just 
+placed there as payment (if it is a 
+  card). If there is no such card in the clearing, add cards from 
+the deck to the clearing until you either find 1 card with the 
+  or have drawn 5 cards. If there is 
+still no such card in the clearing, you get nothing from this effect. You may not play a card from your 
+hand instead.
+Points: Each Mink in your forest scores 5 points.
+Example:  You have 2 Minks worth a total of 2×5=10 points.
+Peregrine Falcon  (top, 4×, cost: 1) 
+Effect: After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost , without 
+using the effect and bonus of that card. It may (but does not have to) be the card that you have just 
+placed there as payment (if it is a 
+  card). If there is no such card in the clearing, add cards from 
+the deck to the clearing until you either find 1 card with the 
+  or have drawn 3 cards. If there is 
+still no such card in the clearing, you get nothing from this effect. You may not play a card from your 
+hand instead.
+Points: The Peregrine Falcon scores 1 point for each 
+  card in your forest, including itself. If you 
+have more than one Peregrine Falcon, these points are multiplied accordingly. 
+Example: You have 2 Peregrine Falcons and 3 other birds; consequently, each Peregrine Falcon scores  
+2+3=5 points, for a total of 10 points.
+===== PAGE 9 =====
+9
+Pileated Woodpecker  (left/right, 4×, cost: 1) 
+Effect: Draw two cards from the deck . Then put one  of them into your cave and add the other one 
+to your hand . You cannot take cards from the clearing with this, and you cannot put both cards into 
+your cave or add both cards to your hand. You can still fully use this effect even if you already have 
+9 cards in hand; that is, draw 2 cards, put one in the cave, and keep one.
+Points: The Pileated Woodpecker scores 1 point for each 
+  card in your forest, including itself. If 
+you have more than one Pileated Woodpecker, these points are multiplied accordingly. 
+Example: You have 2 Pileated Woodpeckers and 3 other birds; consequently, each Pileated Woopecker scores 
+2+3=5 points, for a total of 10 points.
+Raccoon  (left/right, 3×, cost: 0) 
+Effect: After you pay for the Raccoon, put any number of your remaining cards in hand under 
+your cave card and draw an equal number of cards from the deck. You may opt not to place any 
+cards under the cave. You may not put cards from the clearing into your cave with this or draw the 
+replacement cards from the clearing.
+Points: The Raccoon scores no points.
+Red Squirrel  (left, 4×, cost: 0) 
+Points: Squirrels of different species  form a set : You score 5, 10, 20, or 40 points for having 1, 2, 3, 
+or 4 different squirrels in your forest, respectively. Each of the four species is located on a different 
+half of the card (top, bottom, left, or right) and can only be part of one set.
+Example: You have a total of 5 squirrels 
+forming 2 sets: The first set comprises 
+three squirrels (Red Squirrel, Gray 
+Squirrel, Flying Squirrel) worth 20 points 
+total; the second set comprises two 
+squirrels (Red Squirrel, Gray Squirrel) 
+worth 10 points total. As a result, your 
+squirrels score 30 points.
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Black Bear
+if this 
+tree has
+- or -
+Red Squirrel 
+different 
+squirrels
+S102
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Black Bear
+if this 
+tree has
+- or -
+Red Squirrel 
+different 
+squirrels
+S102
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Gray Squirrel
+different 
+squirrels
+Bobcat
+from the 
+clearing
+if at least
+- or -
+S076
+River Bend  (river, 3×, cost: 2) 
+Permanent effect: From now on, whenever you play a 
+  card, after paying its cost but before 
+using its effect and bonus, draw 1 card from the deck  (not clearing) . If you have more than one River 
+Bend, draw that many cards. (Remember you may have at most 10 cards in hand.)
+Points: The River Bend scores no points.
+River Otter  (left/right, 3×, cost: 2; must be placed at a tree with a river) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: The River Otter scores 2 points for each 
+ , 
+ , and 
+  card in your forest. If you have 
+more than one River Otter, these points are multiplied accordingly.
+Example: You have 2 River Otters and 3 fish, 2 insects, and 2 amphibians; consequently, each River Otter scores 
+(3+2+2)×2=14 points, for a total of 28 points.
+===== PAGE 10 =====
+10
+Rock Vole  (left/right, 5×, cost: 1) 
+Effect: After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost, without 
+using the effect and bonus of that card. It may (but does not have to) be the card that you have just 
+placed there as payment (if it is a 
+  card) . If there is no such card in the clearing, add cards from 
+the deck to the clearing until you either find 1 card with the 
+  or have drawn 3 cards. If there is 
+still no such card in the clearing, you get nothing from this effect. You may not play a card from your 
+hand instead.
+Points: The Rock Vole scores 1 point for each 
+  and 
+  card in your forest, including itself. If you 
+have more than one Rock Vole, these points are multiplied accordingly. 
+Example:  You have 2 Rock Voles, 3 other mice, and 3 insects; consequently, each Rock Vole scores  
+2+3+3=8 points, for a total of 16 points. 
+Rockcap Fern  (top, 3×, cost: 1) 
+Bonus: After you pay the cost, take 1 card from the clearing  (not deck)  into your hand, which may (but 
+does not have to) be the card that you have just placed there as payment.
+Points: The Rockcap Fern scores 1 point for each 
+  card in your forest, including itself. If you have 
+more than one Rockcap Fern, these points are multiplied accordingly. 
+Example: You have 2 Rockcap Ferns and 3 other plants; consequently, each Rockcap Fern scores 2+3=5 points, 
+for a total of 10 points.
+Ruby-Throated Hummingbird  (top, 4×, cost: 0) 
+Points: The Ruby-Throated Hummingbird scores 1 point for each 
+  and 
+  card in your forest. If 
+you have more than one Ruby-Throated Hummingbird, these points are multiplied accordingly.
+Example: You have 2 Ruby-Throated Hummingbirds, 3 plants, and 5 trees; consequently, each Ruby-Throated 
+Hummingbird scores 3+5=8 points, for a total of 16 points.
+Scarlet Tanager  (top, 4×, cost: 0) 
+Effect: Take 1 card from the clearing  (not deck)  into your hand.
+Points: Each Scarlet Tanager in your forest scores 2 points.
+Example: You have 2 Scarlet Tanagers worth a total of 2×2=4 points.
+Short-Tailed Shrew  (left/right, 4×, cost: 1) 
+Effect: Draw two cards from the deck . Then put one  of them into your cave and add the other one 
+to your hand . You cannot take cards from the clearing with this, and you cannot put both cards into 
+your cave or add both cards to your hand. You can still fully use this effect even if you already have 
+9 cards in hand; that is, draw 2 cards, put one in the cave, and keep one.
+Bonus: Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: Each Short-Tailed Shrew in your forest scores 5 points.
+Example: You have 2 Short-Tailed Shrews worth a total of 2×5=10 points.
+===== PAGE 11 =====
+11
+Silver Maple  (tree, 9×, cost: 1) 
+Effect: Draw 1 card from the deck  (not clearing)  into your hand.
+Points:  The Silver Maple scores 5 points if your forest contains at least 3 Silver Maples. If there are 
+less than 3 Silver Maples in your forest, your Silver Maples score no points .
+The following table shows the possible point totals for Silver Maples:
+# Silver Maples in your forest 1 2 3 4 5 6 7 8 9
+total points 0 0 15 20 25 30 35 40 45
+Six-Spotted Tiger Beetle  (bottom, 3×, cost: 1) 
+Effect: Draw two cards from the deck . Then put one  of them into your cave and add the other one 
+to your hand . You cannot take cards from the clearing with this, and you cannot put both cards into 
+your cave or add both cards to your hand. You can still fully use this effect even if you already have 
+9 cards in hand; that is, draw 2 cards, put one in the cave, and keep one.
+Bonus: Play a 
+  card from your hand  in your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: Each Six-Spotted Tiger Beetle in your forest scores 5 points.
+Example: You have 2 Six-Spotted Tiger Beetles worth a total of 2×5=10 points.
+Skipper Caterpillar  (bottom, 4×, cost: 1) 
+Points: The Skipper Caterpillar scores 10 points if your forest contains at least 3 different insect 
+species, including its own species. If there are less than 3 different insect species in your forest, 
+your Skipper Caterpillars score no points .
+Example:  You have 2 Skipper Caterpillars and a total of 3 different insect species. Consequently, each Skipper 
+Caterpillar scores 10 points, for a total of 20 points. 
+Smallmouth Bass  (bottom, 5×, cost: 1; must be placed in a river) 
+Points: The Smallmouth Bass scores 3 points for each different  
+  species in your forest, including 
+its own species. If you have more than one Smallmouth Bass, these points are multiplied accordingly. 
+Example: You have 2 Smallmouth Bass and 3 other fish species; consequently, each Smallmouth Bass scores 
+4×3=12 points, for a total of 24 points.
+Solomons Seal  (bottom, 3×, cost: 1) 
+Points: The Solomons Seal scores 6 points for each 
+  card in your forest. If you have more than 
+one Solomons Seal, these points are multiplied accordingly. 
+Example: You have 2 Solomons Seals and 2 amphibians; consequently, each Solomons Seal scores  
+2×6=12 points, for a total of 24 points.
+===== PAGE 12 =====
+12
+Spotted Skunk  (left/right, 3×, cost: 2) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: The Spotted Skunk scores 10 points if 
+it is the only species at this tree. If there is at 
+least one other card at the top, bottom, left, or 
+right of this tree, except a river, the Spotted 
+Skunk scores no points .
+Example: You have 2 Spotted Skunks on trees with 
+a river; one of those trees also has a White-Footed 
+Mouse attached to it. Consequently, only 1 Spotted 
+Skunk scores points, for a total of 10 points.
+Tilia americana
+attached to this tree
+S001
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+Black Bear
+if this 
+tree has
+- or -
+S081
+put any number of 
+cards from hand 
+in your cave; draw 
+an equal number 
+of cards from the 
+deck
+Raccoon 
+Spotted 
+Skunk
+if alone on a
+S080
+Hickory
+from the 
+clearing
+per card attached to this tree
+S030
+ 0 
+Tilia americana
+attached to this tree
+S001
+Spotted 
+Skunk
+if alone on a
+Pileated 
+Woodpecker
+put 1 of them
+in your cave
+S066
+Hickory
+from the 
+clearing
+per card attached to this tree
+S030
+ 10 
+Synchronous Firefly  (left/right, 4×, cost: 0) 
+Points: The Synchronous Firefly scores 3 points per Synchronous Firefly in your forest. The following 
+table shows the possible point totals for Synchronous Fireflies: 
+# Synchronous Fireflies in your forest 1 2 3 4
+total points 3 12 27 48
+Thermometer Cricket  (top, 7×, cost: 0) 
+Permanent effect: If you play another Thermometer Cricket on a later turn, you can place it in the 
+same card slot as this one. Any number of Thermometer Crickets may share the same card slot . 
+(Even if you play a Thermometer Cricket via the 
+  effect, you may place it in a spot containing 
+one or more Thermometer Crickets.) The first Thermometer Cricket, however, must always be placed 
+according to the normal rules, i.e., a card slot must be available for it. If the slot at the top is already 
+occupied by a different species (e.g., a bird) , no Thermometer Cricket may be placed there.
+Points: The Thermometer Cricket scores 1 point for each 
+  card in your forest, including itself. If 
+you have more than one Thermometer Cricket, these points are multiplied accordingly. 
+Example: You have 2 Thermometer Crickets and 3 other insects; consequently, each Thermometer Cricket 
+scores 2+3=5 points, for a total of 10 points.
+Tufted Titmouse  (top, 3×, cost: 2) 
+Permanent effect: From now on, whenever you play a 
+  card, after paying its cost but before 
+using its effect and bonus, draw 1 card from the deck  (not clearing) . If you have more than one Tufted 
+Titmouse, draw that many cards.  (Remember you may have at most 10 cards in hand.)
+Points: The Tufted Titmouse scores no points.
+===== PAGE 13 =====
+13
+Turkey (left/right, 4×, cost: 1) 
+Effect: Draw 1 card from the deck  (not clearing)  into your hand.
+Points: The Turkey scores 2 points for each tree symbol in your forest matching 
+and including its own (
+ /
+ /
+ /
+ ). Note that each Turkey has a different 
+tree symbol.
+Example: You have the depicted Turkey and 4 other cards with the 
+  symbol; consequently, 
+that Turkey scores 5×2=10 points.
+Turkey
+Gray Fox
+S067
+Turkey
+Gray Fox
+S067
+Virgin’s Bower  (left/right, 4×, cost: 2) 
+Bonus: Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: The Virgin’s Bower scores 2 points for each 
+  card in your forest. If you have more than 
+one Virgins’s Bower, these points are multiplied accordingly. 
+Example:  You have 2 Virgin’s Bowers and 3 birds; consequently, each Virgin’s Bower scores 3×2=6 points, for 
+a total of 12 points.
+Virginia Opossum  (top, 5×, cost: 1) 
+Effect: Draw 1 card from the deck  (not clearing)  into your hand.
+Points: The Virginia Opossum scores 2 points 
+for each different tree type symbol on its tree 
+and any cards attached to it, including itself. 
+Cards below a universal river attached to that 
+tree also count (if they have a different symbol).
+Example: You have 2 Virginia Opossums, one at 
+a tree with and one at a tree without a universal 
+river. There are 4 cards on the tree without the 
+universal river, including the Virginia Opossum, 
+and 5 cards on the tree with the universal river, 
+including the Virginia Opossum. On both trees, 
+each card shows a different tree symbol, so 
+there are 5 different tree symbols on the first 
+tree and 6 different tree symbols on the second 
+tree. Consequently, your Virginia Opossums 
+score 5×2=10 and 6×2=12 points, respectively, for 
+a total of 22 points. 
+Masked 
+Shrew
+Red Squirrel 
+different 
+squirrels
+S086
+Gray Squirrel
+different 
+squirrels
+Weevil Wasp
+if at least 1 other 
+insect also occupies 
+this tree 
+from the 
+clearing
+S104
+Virginia Opossum
+per different tree symbol 
+at this tree
+Yellow Bullhead
+whenever you play 
+a card with
+S129
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Blue Mistﬂ  ower
+from the 
+clearing
+S130
+Yellow Birch
+S041
+ 10 
+Water-Starwort
+cannot be played 
+on trees 
+Six-Spotted Tiger Beetle
+put 1 of them
+in your cave
+S144
+Virginia Opossum
+per different tree symbol 
+at this tree
+Brook Trout
+per river 
+without 
+S167
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Wood Frog
+S143
+Tilia americana
+attached to this tree
+S001
+Yellow-Bellied 
+Sapsucker
+River Otter
+S106
+Synchronous 
+Fireﬂ  y
+per 
+Fireﬂ  y
+Turkey
+S107
+Virginia Opossum
+per different tree symbol 
+at this tree
+Smallmouth Bass
+per different
+S142
+Buckeye
+S049
+ 12 
+Water-Starwort  (top, 4×, cost: 1; must be placed in a river) 
+Effect:  You may not  place the Water-Starwort on a tree, not even if there is a universal river below it.
+Points: The Water-Starwort scores 1 point for each (named and universal)  river and 
+  card in your 
+forest. If you have more than one Water-Starwort, these points are multiplied accordingly. 
+Example: You have 2 Water-Starworts, 5 rivers, and 3 fish; consequently, each Water-Starwort scores  
+5+3=8 points, for a total of 16 points.
+===== PAGE 14 =====
+14
+Waterfall  (river, 3×, cost: 2) 
+Permanent effect: Up to 4 fish can be placed below the Waterfall but no other species .
+Bonus: After you pay the cost, add 1 
+  card from the clearing  to your forest at no cost , without 
+using the effect and bonus of that card. It may (but does not have to) be one of the cards that you 
+have just placed there as payment (if it is a 
+  card) . If there is no such card in the clearing, add 
+cards from the deck to the clearing until you either find 1 card with the 
+  or have drawn 5 cards. If 
+there is still no such card in the clearing, you get nothing from this effect. You may not play a card 
+from hand instead.
+Points: The Waterfall scores no points.
+Weevil Wasp  (left/right, 5×, cost: 1) 
+Bonus: After you pay the cost, take 1 card from the clearing  (not deck)  into your hand, which may (but 
+does not have to) be the card that you have just placed there as payment.
+Points: The Weevil Wasp scores 10 points if it 
+is attached to a tree with at least one other 
+ card; this could also be another Weevil 
+Wasp. Weevil Wasps at trees without another 
+ card score no points . 
+Example: You have 3 Weevil Wasps, but only 2 of 
+them are at a tree with at least one other insect; 
+consequently, these 2 Weevil Wasps score  
+10 points each, for a total of 20 points. The third 
+Weevil Wasp scores nothing.
+Yellow-Bellied 
+Sapsucker
+River Otter
+S106
+Bald Eagle
+if at least
+- or -
+Skipper Caterpillar
+if at least 
+3 different
+S120
+Gray Squirrel
+different 
+squirrels
+Weevil Wasp
+if at least 1 other 
+insect also occupies 
+this tree 
+from the 
+clearing
+S104
+Hickory
+from the 
+clearing
+per card attached to this tree
+S030
+ 0 
+Weevil Wasp
+if at least 1 other 
+insect also occupies 
+this tree 
+from the 
+clearing
+Mink
+S070
+Elk
+different5
+if at least
+- or -
+Weevil Wasp
+if at least 1 other 
+insect also occupies 
+this tree 
+from the 
+clearing
+S089
+Hickory
+from the 
+clearing
+per card attached to this tree
+S030
+ 20 
+White-Footed Mouse  (left/right, 4×, cost: 1) 
+Effect: For each 
+  card in your forest, put 1 card from the clearing into your cave , one after the 
+other. If there are not enough cards in the clearing, you only place as many cards under your cave 
+as there are cards in the clearing. You may not put cards from the deck or from your hand into your 
+cave instead. 
+Points: The White-Footed Mouse scores 1 point for each 
+  card in your forest, including itself. If 
+you have more than one White-Footed Mouse, these points are multiplied accordingly. 
+Example:  You have 2 White-Footed Mice and 3 other mice; consequently, each White-Footed Mouse scores  
+2+3=5 points, for a total of 10 points.
+White-Tailed Deer  (left/right, 4×, cost: 2) 
+Bonus: Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points:  The White-Tailed Deer scores 2 point for each 
+  card in your forest. If you have more than 
+one White-Tailed Deer, these points are multiplied accordingly. 
+Example: You have 2 White-Tailed Deers and 3 trees; consequently, each White-Tailed Deer scores  
+3×2=6 points, for a total of 12 points.
+===== PAGE 15 =====
+15
+Wintergreen  (bottom, 3×, cost: 1) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: The Wintergreen scores 3 points for each 
+  card in your forest. If you have more than one 
+Wintergreen, these points are multiplied accordingly. 
+Example: You have 2 Wintergreens and 3 squirrels; consequently, each Wintergreen scores 3×3=9 points, for 
+a total of 18 points.
+Wood Frog  (bottom, 3×, cost: 1) 
+Bonus: Take another turn after you complete this one, again choosing between actions A (Drawing) 
+and B (Playing) .
+Points: The Wood Frog scores 1 point for each 
+  card in your forest. If you have more than one 
+Wood Frog, these points are multiplied accordingly. 
+Example: You have 2 Wood Frogs and 3 trees; consequently, each Wood Frog scores 3 points, for a total of  
+6 points.
+Wood Thrush  (top, 3×, cost: 2) 
+Permanent effect:  From now on, whenever you play a 
+  card, after paying its cost but before 
+using its effect and bonus, draw 1 card from the deck  (not clearing) . If you have more than one Wood 
+Thrush, draw that many cards. (Remember you may have at most 10 cards in hand.)
+Points: The Wood Thrush scores no points.
+Yellow-Bellied Sapsucker  (left/right, 4×, cost: 0) 
+Effect:  Play a 
+  card from your hand  into your forest at no cost , without using the effect and bonus 
+of that card. You may not play a card from the clearing with this.
+Points: Each Yellow-Bellied Sapsucker in your forest scores 2 points.
+Example:  You have 2 Yellow-Bellied Sapsuckers worth a total of 2×2=4 points.
+Yellow Birch  (tree, 8×, cost: 0) 
+Effect: Draw 1 card from the deck  (not clearing)  into your hand.
+Points:  Each Yellow Birch in your forest scores 1 point.
+Example: You have 2 Yellow Birches worth a total of 2 points.
+Yellow Bullhead  (bottom, 3×, cost: 1; must be placed in a river) 
+Permanent effect:  From now on, whenever you play a (named or universal) river, draw 1 card from 
+the deck  (not clearing) ; if you play a named river, draw the card after you pay the cost but before you 
+carry out its bonus. If you have more than one Yellow Bullhead, draw that many cards. (Remember 
+you may have at most 10 cards in hand.)
+Points:  The Yellow Bullhead scores no points.
+===== PAGE 16 =====
+16
+Yellow Perch  (bottom, 4×, cost: 0; must be placed in a river) 
+Effect:  Add 1 
+  card from the clearing  to your forest at no cost , without using the effect and bonus 
+of that card. If there is no such card in the clearing, add cards from the deck to the clearing until 
+you either find 1 card with the 
+  or have drawn 5 cards. If there is still no such card in the clearing, 
+you get nothing from this effect. You may not play a card from your hand instead.
+Points:  Each Yellow Perch in your forest scores 2 points.
+Example:  You have 2 Yellow Perches worth a total of 2×2=4 points.
+No part of the rules of the game may be reproduced or used, in any form, to train artificial intelligence technologies or systems.

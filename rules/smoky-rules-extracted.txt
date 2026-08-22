@@ -1,0 +1,1050 @@
+===== PAGE 1 =====
+ A card game by Kosch for 2-5 players, ages 10 and up
+Playing time: 60 minutes
+Forest Shuffle
+Smoky Mountains
+Forest Shuffle:  
+Smoky Mountains is a 
+stand-alone game in the 
+Forest Shuffle series. 
+It cannot be combined 
+with Forest Shuffle, its 
+expansions, or any of its 
+spin-offs.
+scan here for the 
+digital appendix
+2 5 60’10+
+===== PAGE 2 =====
+2
+Object of the Game Object of the Game 
+In the Great Smoky Mountains of the eastern United States, rivers and streams carve their way through 
+lush forests, offering a diverse home to animals and plants alike. Bald eagles soar majestically overhead, 
+gray squirrels dart from branch to branch, and black bears roam the riverbanks, while brook trout drift 
+peacefully along the flow of the current.
+Create a forest according to your own vision—will you focus on densely planted tree lines or varied river 
+landscapes? Skillfully place animals and plants on trees and along rivers to earn the most points. Whether 
+a mighty predator, a humble gatherer, or a water dweller, every creature has its own unique preferences.
+ComponentsComponents  
+180 cards:
+56 trees
+58 cards split  
+top and bottom
+49 cards split  
+left and right
+3 winter cards
+back
+5 caves
+9 terrains (rivers)
+1 game board (the “clearing”)
+1 scorepad
+Tilia americana
+attached to this tree
+S001
+Basswood
+at this tree
+S001
+Cave
+per card in your cave
+Cave
+per card in your cave
+S175
+Winter is coming
+If this is the 3rd winter card, the game ends immediately. Otherwise, place 
+this card next to the clearing and draw a new card from the deck.
+S180
+whenever you 
+play a card with
+River Bend
+S064
+Long-Tailed 
+Weasel
+if at least
+Chestnut-
+Sided Warbler
+S071
+Bald Eagle
+if at least
+- or -
+Skipper Caterpillar
+if at least 
+3 different
+S120
+
+===== PAGE 3 =====
+3
+SetupSetup 
+If you already know Forest Shuffle, you can skip reading most of this rulebook. Text marked with the 
+NEW  symbol indicates that a rule is new with regard to the original Forest Shuffle game.
+1  Place the clearing  (i.e., the game board) in the center of the play area, within reach of all players.  
+2  NEW  Set the 3 winter cards  
+and the caves  aside. Shuffle 
+the remaining cards and re -
+turn a certain number of them 
+to the game box, unseen , 
+based on the player count:
+3  Divide the remaining cards into three  face-down piles  of similar size.
+4  Shuffle two winter cards into one  of the piles and put the 
+third  winter card on top of that pile.
+5  Place the other two piles on top of the one containing the 
+winter cards to form a single draw pile, also called the deck , 
+and place it next to the clearing.
+6  Everyone: draw 6 cards into your hand and place 1 cave  in front of you, face up.
+7  The player who most recently went for a walk in a forest goes first.
+ 
+GAME FLOWGAME FLOW
+Beginning with the start player, everyone takes turns in clockwise order. On your turn, you must 
+carry out exactly one  of two possible actions:
+A) Draw Two Cards A) Draw Two Cards 
+For each card, you may choose to take it from the deck or the clearing. 
+OR
+B) Play a Card and Check the Clearing B) Play a Card and Check the Clearing 
+Pay the card’s cost, place it in your forest, and perform its effect and bonus,  
+if any. Then check if the clearing needs to be emptied.
+with 2 players   45 cards
+with 3 players   30 cards
+with 4 players   15 cards
+with 5 players   none—you play with all cards
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+1
+5
+Neogale 
+frenata
+if at least
+Setophaga 
+pensylvanica
+S071
+Neogale 
+frenata
+if at least
+Setophaga 
+pensylvanica
+S071
+Neogale 
+frenata
+if at least
+Setophaga 
+pensylvanica
+S071
+Neogale 
+frenata
+if at least
+Setophaga 
+pensylvanica
+S071
+Winter is coming
+If this is the 3
+rd winter card, the game ends immediately. Otherwise, place this card next to the clearing and draw a new card from the deck.
+S180
+3
+4
+2
+===== PAGE 4 =====
+4
+A) Draw Two Cards  A) Draw Two Cards  
+When taking this action, draw two cards, one at a time , and add them to your hand. For each card 
+you draw with this action, you have the choice of either taking a face-down  card from the top of the 
+deck  or a face-up  card from the clearing  (which is empty at the start of the game).
+Important:  Your maximum hand size is 10 cards . If you have 9 cards in your hand, you may only 
+draw one card. If you are already at hand limit, you cannot choose this action. 
+Winter Cards 
+The lower third of the deck contains 3 winter cards . When you draw the first 
+or second winter card, place it face up next to the clearing and immediately 
+draw a replacement card from the deck. When the third winter card is drawn, 
+the game ends immediately .
+B) Play a Card and Check the Clearing B) Play a Card and Check the Clearing 
+There are three types of cards:
+Each tree  card features exactly one type  of tree, providing slots for animals and 
+plants on its four sides. 
+NEW  Terrains  are placed into your forest horizontally and only provide 
+slots for animals and plants on the top and on the bottom. Terrains have a 
+habitat symbol —in this game, it is the river habitat  
+ . Furthermore, all 
+card backs show a universal river . They are like terrains and also provide 
+slots for animals and plants on the top and on the bottom. 
+NEW  Important: Universal rivers can only be played when playing a tree card (see page 5) or 
+when effects and bonuses  allow it  (see page 12) .
+All other cards show animals and plants  and are split in two : either 
+horizontally or vertically.
+Winter is coming
+If this is the 3rd winter card, the game ends immediately. Otherwise, place 
+this card next to the clearing and draw a new card from the deck.
+S180
+Basswood
+at this tree
+S001
+whenever you 
+play a card with
+River Bend
+S064
+Long-Tailed 
+Weasel
+if at least
+Chestnut-
+Sided Warbler
+S071
+Bald Eagle
+if at least
+- or -
+Skipper Caterpillar
+if at least 
+3 different
+S120
+
+===== PAGE 5 =====
+5
+All cards are laid out as follows:
+Playing a Card Playing a Card 
+To play a card from your hand, you must first pay its cost  by placing that many (other)  cards from 
+your  hand face up into the clearing . When playing a split card, choose  one half to play and pay 
+only its cost. 
+Normally, it does not matter which cards you discard as payment. Some species, however, provide a 
+bonus if you pay with specific cards (see “Bonuses” on page 8) . 
+Then, place the card face up in front of yourself. The collection of your played cards is called your 
+forest . 
+Note:  Split cards must always be added to tree or terrain.
+Trees and Rivers
+NEW  When you play a tree (i.e., a card with the 
+  symbol) as an action, 
+you can choose: 
+• either to play the tree on its own  
+- or -   
+• additionally, to play another card  from your hand face down below that 
+tree as a universal river ; a symbol in the top-left corner of each tree 
+reminds you of this rule (see illustration on the right) .  
+If you play the tree without a river, you cannot add a river to it later. 
+Tilia americana
+attached to this tree
+S001
+Basswood
+at this tree
+S001
+Basswood
+at this tree
+S001
+name
+type symbol
+illustration
+card color with tree symbol
+cost
+point value (on some cards)
+bonus (on some cards )
+water requirement (on some cards)
+effect (on some cards)
+number of cards  
+featuring this species
+Peregrine Falcon
+Brook Trout
+per river 
+without 
+S135
+
+===== PAGE 6 =====
+6
+Example: 
+1  You play a Basswood. 
+2  To pay for it, you place one card from your 
+hand face up in the clearing.
+3  You decide to add a universal river to that 
+tree, so you play an additional card from your 
+hand face down below the tree. 
+4  Because you played a tree, you now also 
+place the top card of the deck face up in the 
+clearing.
+Whenever you play a tree  (with or without a river) , you also place the top card from the deck 
+face up in the clearing; a symbol on the game board 
+  reminds you of this rule during 
+the game. Note:  If you draw a winter card, proceed as described on page 4. 
+Trees, rivers, and trees with a river all feature different ways of adding split cards to them.
+Trees without a river 
+provide card slots on each 
+of their four sides: top, 
+bottom, left, and right.
+NEW  Rivers also provide 
+four card slots: two on top 
+and two on the bottom. You 
+cannot place any cards on 
+the left and right.
+NEW  Trees with a river 
+provide five card slots: 
+one each on the left and 
+right and on top, and two 
+below.
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Tilia americana
+attached to this tree
+S001
+Basswood
+at this tree
+S001
+Basswood
+at this tree
+S001
+Mink
+Masked 
+Shrew
+S098
+Bald Eagle
+if at least
+- or -
+Skipper Caterpillar
+if at least 
+3 different
+S120
+Beaver
+put all trees from 
+the clearing in your 
+cave 
+per card in 
+your cave
+Long-Tailed 
+Weasel
+if at least
+S078
+Wood Thrush
+whenever you play a card with
+Yellow Perch
+S121
+Buckeye
+S053
+1
+3
+2
+4
+Hemlock
+S010
+top
+bottom
+left
+right
+whenever you 
+play a card with
+River Bend
+S064
+top
+top
+bottom
+bottom
+ bottom
+Hemlock
+S010
+top
+bottom
+left
+right
+Tilia americana
+attached to this tree
+S001
+
+===== PAGE 7 =====
+7
+Animals and Plants
+The split cards feature various inhabitants of the forest: animals or plants.
+When playing a split card, you must place it in an empty slot  (i.e., a slot without 
+card)  on the corresponding side  of a tree or river in your forest. To play an 
+inhabitant on top of a tree or river, slide the unused bottom half of the card 
+under that tree or river. The same rule applies to inhabitants on the right, left, 
+or bottom halves of cards.
+Note:  Only the inhabitant that is still visible after the card has been placed 
+counts as being in your forest. The hidden half is not relevant for the remainder 
+of the game or for scoring.
+Example:  You have just added a Flying Squirrel to your forest by 
+sliding the bottom half of the card under a Yellow Birch.
+Important: Split cards can only be played if one of your suitable cards (tree or river) has an 
+empty card slot available on the corresponding side. 
+NEW  Some split cards show a water requirement  below their cost:
+Trees without a river only 
+accept cards without  
+water requirement .
+Stand-alone rivers only accept 
+cards with  water requirement .
+Trees with a river accept any cards  (with or without water 
+requirement)  at the top and to the left and right. Below 
+the river, however, you may place only cards with  water 
+requirement .
+Flying Squirrel
+different 
+squirrels
+Eastern Hellbender
+put 1 of them
+in your cave
+S141
+Yellow Birch
+S040
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+whenever you play 
+a card with
+Tufted Titmouse
+Wintergreen
+S124
+Flying Squirrel
+different 
+squirrels
+Eastern Hellbender
+put 1 of them
+in your cave
+S141
+Great Blue Heron
+Imitator Salamander
+if at least 
+3 different 
+S126
+Creek
+S058
+Great Blue Heron
+Imitator Salamander
+if at least 
+3 different 
+S126
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+whenever you play 
+a card with
+Tufted Titmouse
+Wintergreen
+S124
+Tilia americana
+attached to this tree
+S001
+Great Blue Heron
+Imitator Salamander
+if at least 
+3 different 
+S126
+Gray Squirrel
+different 
+squirrels
+Beaver
+put all trees from 
+the clearing in your 
+cave 
+per card in 
+your cave
+S094
+Chestnut-
+Sided Warbler
+Elk
+different5
+if at least
+- or -
+S101
+Yellow Birch
+S040
+Gray Squirrel
+different 
+squirrels
+Beaver
+put all trees from 
+the clearing in your 
+cave 
+per card in 
+your cave
+S094
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+Great Blue Heron
+Imitator Salamander
+if at least 
+3 different 
+S126
+Flying Squirrel
+different 
+squirrels
+Eastern Hellbender
+put 1 of them
+in your cave
+S141
+Gray Squirrel
+different 
+squirrels
+Beaver
+put all trees from 
+the clearing in your 
+cave 
+per card in 
+your cave
+S094
+Chestnut-
+Sided Warbler
+Elk
+different5
+if at least
+- or -
+S101
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+Yellow Birch
+S040
+Gray Squirrel
+different 
+squirrels
+Beaver
+put all trees from 
+the clearing in your 
+cave 
+per card in 
+your cave
+S094
+Long-Eared Owl 
+Brook Trout
+per river 
+without 
+S118
+
+===== PAGE 8 =====
+8
+Effect and Bonus
+After you paid for the card (and, if you played a tree, placed a card in the clear -
+ing), you first resolve its effect  (if available) and then its bonus  (if available) . 
+Card effects and bonuses are explained with symbols and/or short descrip -
+tions. You can find an overview of all used symbols on the last page of this 
+rulebook. If you would like a more detailed explanation, consult the digital 
+appendix  (see QR code) .
+Effects
+There are two types of effects:
+• Most cards provide an instant effect  that you use once . Some of them let 
+you put cards in your cave.
+• Other cards provide a permanent effect  that you can use for the rest 
+of the game from now on. They have an effect when certain cards are 
+played in your forest. Each time you play such a card in your forest, you 
+use the effect immediately.
+Example: You have just played a Wood Thrush. From now on, 
+whenever you play a bird after this one, you draw the top card 
+from the deck.
+Bonuses  
+Some species have a colored arrow featuring the 
+  symbol, providing a bonus  if you pay for 
+the card with matching cards . To activate the bonus, all cards  that you discard as payment 
+must have the same card color (i.e., the same tree symbol) as the card being played. When pay -
+ing with split cards, it does not matter which half of the card shows the required tree symbol.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Example:  You are about to play this Brook Trout.
+1  To activate the bonus, you pay with a White-Footed Mouse and a Yellow Birch. Both cards have the same 
+color as the Brook Trout (therefore, both show a Birch symbol).
+2  If you paid with a Silver Maple instead of a Yellow Birch, you would not activate the bonus.
+Appendix
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Brook Trout
+per river 
+without 
+S171
+Creek
+S057
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Brook Trout
+per river 
+without 
+S171
+Yellow Birch
+S040
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+Red Squirrel 
+different 
+squirrels
+S072
+Silver Maple  
+if at least 3 Silver Maples
+S035
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+Red Squirrel 
+different 
+squirrels
+S072
+Yellow Birch
+S040
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+Red Squirrel 
+different 
+squirrels
+S072
+Silver Maple  
+if at least 3 Silver Maples
+S035
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+Red Squirrel 
+different 
+squirrels
+S072
+1 2
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Brook Trout
+per river 
+without 
+S171
+Wood Thrush
+whenever you play 
+a card with
+Yellow Perch
+S121
+Silver Maple  
+if at least 3 Silver Maples
+S031
+===== PAGE 9 =====
+9
+Checking the ClearingChecking the Clearing
+At the end of your turn, if there are 10 or more cards in the clearing, the clearing will be emptied. 
+Remove all cards from the clearing and return them to the game box.
+Then your turn ends , and the next player clockwise takes their turn unless an effect or bonus grants 
+you another turn 
+ .
+Special case:Special case: 
+NEW  In the rare case that you cannot take either action (A or B) , reveal your hand. Select up to  
+2 cards from your hand and put them in your cave, then draw an equal number of cards from 
+the deck. This ends your turn. 
+End of GameEnd of Game
+When the 3 rd winter card is revealed, the game ends immediately  and you proceed to scoring. You 
+may not finish your turn.
+Scoring: Total the points 
+  of all visible cards in your forest and add 1 point for each card in your 
+cave. Use the scorepad to determine your total. 
+If you are unsure how a specific card scores, consult the digital appendix (see QR code on page 8) . 
+The player with the highest score wins. In case of a tie, enjoy a shared victory. 
+Manufactured by:
+© 2026 Lookout GmbH
+All rights reserved.
+Elsheimer Straße 23
+55270 Schwabenheim
+Germany  
+www.lookout-games.de 
+For rules questions and suggestions,  
+please contact us at:  
+rules@lookout-games.de
+For missing pieces or damaged parts,  
+please contact your point of purchase.
+For all other concerns, please find help at: 
+https://lookout-spiele.de/en/contact.php
+No part of the rules of the game may be 
+reproduced or used, in any form, to train 
+artificial intelligence technologies or systems.
+asmodee® and all distinctive elements are 
+owned by asmodee entities and protected by 
+intellectual property laws.
+CreditsCredits
+Designer:  Kosch 
+Illustrations: Toni Llobet, Judit Piella
+Graphic design: Klemens Franz 
+Layout: Andrea Kattnig
+R&D: Maren Holderbaum
+We would like to express our gratitude to all 
+of our amazing playtesters who have played 
+this game with us, both at the table and on 
+boardgamearena.com. Special shout-out:  Colin Pfister, Fabian Vollrath, Isa Katte and Mike Wilson. Kosch 
+says:  I would like to thank my family for their support and time. Special thanks go to Lilly—my little dog—for 
+her loyalty and love. Sören, you are a wonderful friend, biologist, and bon vivant who has always made 
+testing and playing fun for me. And, of course, thanks to all the tireless playtesters who polished this game. 
+Last but not least, a big, enthusiastic thank you to all the fans out there! You are the best! 
+Distributed and imported in the UK by:
+Esdevium Games Ltd t/a asmodee
+Hogmoor House, Templars Way,
+Bordon, Hampshire, GU35 9GQ,  
+United Kingdom, www.asmodee.co.uk
+Distributed by / Distribué par:
+asmodee
+4001 Rue F.-X.-Tessier, Local 100
+Vaudreuil-Dorion, (Québec) J7V 5V5
+Canada
+www.asmodee.ca
+Distributed in the United States by:
+asmodee
+1995 County Road B2 West, Roseville
+MN 55113, U.S.A. 
+www.asmodeena.com/en
+===== PAGE 10 =====
+10
+Left/Right 
+• Coyote 30 
+•	 Black	Bear 30	
+• White-Tailed Deer 8 
+•	 Rock	Vole 5	
+• River Otter 18 
+• Weevil Wasp 10 
+Scoring example: This display of cards scores a total of 258 
+ .
+Top 
+• Great Blue Heron 6 
+• Bald Eagle 10 
+• Water-Starwort 8 
+• Thermometer Cricket 8 
+  (4 each)
+Squirrels:   Red Squirrel
+Gray Squirrel 
+Flying Squirrel
+Eastern Chipmunk 
+40 
+  
+Bottom 
+• Eastern Hellbender 20 
+  (10 each)
+• Brown Water Scorpion 2 
+• Greenside Darter 12 
+• Yellow Perch 2 
+• Smallmouth Bass 9 
+Gray Squirrel
+different 
+squirrels
+Beaver
+put all trees from 
+the clearing in your 
+cave 
+per card in 
+your cave
+S094
+Elk
+different5
+if at least
+- or -
+Coyote
+- or -
+from the 
+clearing
+if at least
+S083
+Buckeye
+S049
+Ruby-Throated Hummingbird
+Eastern Hellbender
+put 1 of them
+in your cave
+S125
+Great Blue Heron
+Imitator Salamander
+if at least 
+3 different 
+S126
+whenever you 
+play a card with
+River Bend
+S064
+Bald Eagle
+if at least
+- or -
+Skipper Caterpillar
+if at least 
+3 different
+S120
+Peregrine Falcon
+Brown Water Scorpion
+S122
+Water-Starwort
+cannot be played 
+on trees 
+Six-Spotted Tiger Beetle
+put 1 of them
+in your cave
+S144
+Creek
+S059
+Flying Squirrel
+different 
+squirrels
+Yellow Perch
+S153
+Flying Squirrel
+different 
+squirrels
+Greenside Darter
+S128
+Tilia americana
+attached to this tree
+S001
+White-Tailed 
+Deer
+Virgin’s 
+Bower
+S074
+White-Footed 
+Mouse
+put 1 card from the 
+clearing in your 
+cave, once per 
+Black Bear
+if this 
+tree has
+- or -
+S081
+Hickory
+from the 
+clearing
+per card attached to this tree
+S025
+===== PAGE 11 =====
+11
+Trees 
+• Buckeye 20 
+  (10 each)
+• Hickory 10 
+• Black Gum 5 
+Rivers  
+• River Bend 0 
+  
+• Creek 3 
+Cave 2 
+Wood Thrush
+whenever you play 
+a card with
+Eastern Chipmunk
+different 
+squirrels
+S134
+Rock Vole
+Elk
+different5
+if at least
+- or -
+S110
+River Otter
+Red Squirrel 
+different 
+squirrels
+S097
+Flying Squirrel
+different 
+squirrels
+Solomons Seal
+S164
+Buckeye
+S048
+whenever you play a card with
+Baeolophus bicolor
+Gaultheria procumbens
+S124
+Tilia americana
+attached to this tree
+S003
+Cave
+per card in your cave
+Cave
+per card in your cave
+S175
+Flying Squirrel
+different 
+squirrels
+Eastern Hellbender
+put 1 of them
+in your cave
+S141
+Tilia americana
+attached to this tree
+S001
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Yellow Perch
+S169
+Thermometer Cricket
+any number of Thermometer 
+Crickets may share this spot 
+Smallmouth Bass
+per different
+S168
+Rockcap Fern
+from the 
+clearing
+Smallmouth Bass
+per different
+S155
+Tilia americana
+attached to this tree
+S001
+Weevil Wasp
+if at least 1 other 
+insect also occupies 
+this tree 
+from the 
+clearing
+Mink
+S070
+Yellow-Bellied 
+Sapsucker
+River Otter
+S106
+Black Gum
+S013
+Sign up & enjoy 
+exclusive benefits
+Welcome to the extraordinary 
+World of Players
+Welcome to the extraordinary 
+World of Players
+www.myasmodee.com
+===== PAGE 12 =====
+12
+OverviewOverview
+* Note:  If you draw a winter card, proceed as described on page 4.
+Draw 1 card from the top of the deck.*
+Take 1 card from the clearing into your hand.
+Draw two cards from the top of the deck.* Put 
+one of them in your cave and add the other one 
+to your hand.
+Draw as many cards from the top of the deck* 
+as there are cards in your forest showing the 
+indicated type symbol  (e. g. 
+ ). (Observe the 
+hand size limit.)  
+Take another full turn after this one, choosing 
+between actions A and B again, as normal.
+Play a card with the indicated type symbol  
+(e.g. 
+ ) from your hand into your forest, without 
+paying its cost. You may not use its effect and 
+bonus. Ignore this effect if you do not have a card 
+with that symbol in hand.
+NEW  Play  a 
+  card from the clearing into your 
+forest at no cost, without using its effect and 
+bonus. If there is no such card in the clearing, 
+add cards from the deck to the clearing until you 
+either find one or until you have added 3 cards 
+total, whichever happens first. If then there is 
+still no such card in the clearing, you do not play 
+a card from this effect.
+NEW  Play  any card from your hand as a universal 
+river face down  into your forest. You may not 
+place it below a tree. 
+Amphibian
+Tree
+Insect
+Mouse
+Hoofed animal
+Plant
+Pawed animal
+Bird
+Fish
+Squirrel
+River
+Water requirement 
+(see page 7)
+Optional river 
+(see page 5)
+Effects and Bonuses
+Type Symbols
+Special Symbols
+Tree Symbols
+Habitat Symbol
+Basswood
+ Black Gum
+Hemlock
+ Fir
+Hickory
+ Birch
+Maple
+ Buckeye
+from the 
+clearing
+put 1 of them 
+in your cave

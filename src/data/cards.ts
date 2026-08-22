@@ -1,6 +1,7 @@
 import type { CardDefinition, Expansion, GameEdition } from '@/types/card'
 import { DARTMOOR_CARDS } from './dartmoor-cards'
 import { EXMOOR_CARDS } from './exmoor-cards'
+import { SMOKY_CARDS } from './smoky-cards'
 
 export const CARDS: CardDefinition[] = [
   // ============================================================
@@ -156,6 +157,9 @@ export const CARDS: CardDefinition[] = [
 
 /** Get cards filtered by enabled expansions and edition */
 export function getCards(expansions: Expansion[], edition: GameEdition = 'classic'): CardDefinition[] {
+  if (edition === 'smoky') {
+    return SMOKY_CARDS
+  }
   if (edition === 'dartmoor') {
     if (expansions.includes('dartmoor_exmoor')) {
       // Exmoor's caves replace the Dartmoor caves in setup, so the base
@@ -182,11 +186,12 @@ export function getCardsByCategory(expansions: Expansion[], edition: GameEdition
   }
 }
 
-/** Get a single card by key (searches classic, Dartmoor, and Exmoor) */
+/** Get a single card by key (searches classic, Dartmoor, Exmoor, and Smoky Mountains) */
 export function getCard(key: string): CardDefinition | undefined {
   return (
     CARDS.find((c) => c.key === key) ??
     DARTMOOR_CARDS.find((c) => c.key === key) ??
-    EXMOOR_CARDS.find((c) => c.key === key)
+    EXMOOR_CARDS.find((c) => c.key === key) ??
+    SMOKY_CARDS.find((c) => c.key === key)
   )
 }

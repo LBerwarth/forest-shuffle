@@ -31,10 +31,12 @@ export const CATEGORY_ORDER: CardCategory[] = [
 
 export function getCategoryLabel(cat: CardCategory, edition: GameEdition): string {
   if (edition === 'dartmoor' && cat === 'tree') return 'tree_dartmoor'
+  if (edition === 'smoky' && cat === 'moor') return 'river_smoky'
   return cat
 }
 
 export function getCategoryOrder(edition: GameEdition): CardCategory[] {
   if (edition === 'dartmoor') return ['tree', 'moor', 'top', 'bottom', 'lateral', 'cave']
+  if (edition === 'smoky') return ['tree', 'moor', 'top', 'bottom', 'lateral', 'cave']
   return CATEGORY_ORDER
 }

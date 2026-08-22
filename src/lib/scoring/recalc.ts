@@ -1,6 +1,6 @@
 import type { CardMetadata, ScoreBreakdown } from '@/types/scoring'
 import type { Expansion, GameEdition } from '@/types/card'
-import { computeScoreBreakdown, computeDartmoorScoreBreakdown } from '@/lib/scoring'
+import { computeScoreBreakdown, computeDartmoorScoreBreakdown, computeSmokyScoreBreakdown } from '@/lib/scoring'
 import { getCards } from '@/data/cards'
 
 export interface PlayerScoringData {
@@ -15,6 +15,16 @@ export function recalcPlayer(
   expansions: Expansion[],
   edition: GameEdition = 'classic',
 ): ScoreBreakdown {
+  if (edition === 'smoky') {
+    const smokyCards = getCards(expansions, 'smoky')
+    return computeSmokyScoreBreakdown(
+      player.cardCounts,
+      player.cardMetadata,
+      player.fullyOccupiedTrees,
+      smokyCards.map((c) => c.key),
+    )
+  }
+
   if (edition === 'dartmoor') {
     const dartmoorCards = getCards(expansions, 'dartmoor')
     const activeCardKeys = dartmoorCards.map((c) => c.key)

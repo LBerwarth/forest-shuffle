@@ -1,6 +1,6 @@
-export type GameEdition = 'classic' | 'dartmoor'
+export type GameEdition = 'classic' | 'dartmoor' | 'smoky'
 
-export type Expansion = 'base' | 'alpine' | 'woodland' | 'exploration' | 'dartmoor_base' | 'dartmoor_exmoor'
+export type Expansion = 'base' | 'alpine' | 'woodland' | 'exploration' | 'dartmoor_base' | 'dartmoor_exmoor' | 'smoky_base'
 
 export type CardCategory = 'tree' | 'top' | 'bottom' | 'lateral' | 'moor' | 'cave'
 
@@ -24,6 +24,8 @@ export type CardTag =
   | 'shrub'
   | 'tree'
   | 'moor'
+  | 'fish'
+  | 'squirrel'
 
 export type ScoringType =
   | 'fixed'

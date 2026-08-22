@@ -457,7 +457,7 @@ export interface HallOfFameData {
 
 export async function fetchHallOfFame(
   playerCount?: number | 'group',
-  edition?: 'classic' | 'dartmoor',
+  edition?: 'classic' | 'dartmoor' | 'smoky',
 ): Promise<HallOfFameData> {
   if (!supabase) throw new Error('Supabase not configured')
   const { data, error } = await supabase.rpc('hall_of_fame', {

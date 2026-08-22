@@ -11,7 +11,7 @@ interface StatsFiltersProps {
   onPlayerCountChange: (count: PlayerCountFilter) => void
 }
 
-const EDITION_OPTIONS: EditionFilter[] = ['all', 'classic', 'dartmoor']
+const EDITION_OPTIONS: EditionFilter[] = ['all', 'classic', 'dartmoor', 'smoky']
 const TIME_OPTIONS: TimeFilter[] = ['all', 'year', 'month', 'week']
 // "Alle" first, mirroring the edition and time rows.
 const PLAYER_COUNT_OPTIONS: PlayerCountFilter[] = ['all', 'group', 1, 2, 3, 4, 5, 6]
@@ -31,7 +31,9 @@ export function StatsFilters({
       ? t('leaderboard.editionAll')
       : e === 'classic'
         ? t('leaderboard.editionClassic')
-        : t('leaderboard.editionDartmoor')
+        : e === 'dartmoor'
+          ? t('leaderboard.editionDartmoor')
+          : t('leaderboard.editionSmoky')
 
   const timeLabel = (tm: TimeFilter) =>
     tm === 'all'

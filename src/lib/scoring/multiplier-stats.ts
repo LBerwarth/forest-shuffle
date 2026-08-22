@@ -198,12 +198,39 @@ const dartmoorStats: Record<string, StatDef> = {
   ]])),
 }
 
+// Smoky Mountains — only iconKeys that exist in STAT_ICONS
+const smokyStats: Record<string, StatDef> = {
+  black_gum: (ctx) => [{ iconKey: 'moor', value: ctx.totalMoors }],
+  eastern_hellbender: (ctx) => [{ iconKey: 'moor', value: ctx.totalMoors }],
+  fraser_fir: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  wood_frog: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  white_tailed_deer: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  elk_s: (ctx) => [{ iconKey: 'tree', value: ctx.treeSpeciesCount }],
+  long_eared_owl: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
+  white_footed_mouse: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
+  long_tailed_weasel: (ctx) => [{ iconKey: 'mouse', value: ctx.tagCounts.mouse }],
+  rock_vole: (ctx) => [
+    { iconKey: 'mouse', value: ctx.tagCounts.mouse },
+    { iconKey: 'insect', value: ctx.tagCounts.insect },
+  ],
+  greenside_darter: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
+  thermometer_cricket: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
+  solomons_seal: (ctx) => [{ iconKey: 'amphibian', value: ctx.tagCounts.amphibian }],
+  rockcap_fern: (ctx) => [{ iconKey: 'plant', value: ctx.tagCounts.plant }],
+  peregrine_falcon_s: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
+  pileated_woodpecker: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
+  virgins_bower: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
+  bobcat: (ctx) => [{ iconKey: 'bird', value: ctx.tagCounts.bird }],
+  gray_fox: (ctx) => [{ iconKey: 'pawed', value: ctx.tagCounts.pawed }],
+  coyote: (ctx) => [{ iconKey: 'pawed', value: ctx.tagCounts.pawed }],
+}
+
 export function getMultiplierStats(
   cardKey: string,
   ctx: ForestContext,
   edition: GameEdition,
 ): MultiplierStat[] {
-  const map = edition === 'dartmoor' ? dartmoorStats : classicStats
+  const map = edition === 'dartmoor' ? dartmoorStats : edition === 'smoky' ? smokyStats : classicStats
   const fn = map[cardKey]
   if (!fn) return []
   return fn(ctx)
@@ -218,7 +245,7 @@ const EMPTY_CTX: ForestContext = {
     bird: 0, butterfly: 0, insect: 0, amphibian: 0, pawed: 0, deer: 0,
     bat: 0, plant: 0, mushroom: 0, alpine: 0, cloven_hoofed: 0,
     woodland_edge: 0, dragonfly: 0, mouse: 0, rabbit: 0, hoofed: 0,
-    shrub: 0, tree: 0, moor: 0,
+    shrub: 0, tree: 0, moor: 0, fish: 0, squirrel: 0,
   },
   cardCounts: {},
   slotCounts: { tree: 0, top: 0, bottom: 0, lateral: 0, moor: 0, cave: 0 },
@@ -232,7 +259,7 @@ export function getMultiplierIconKeys(
   cardKey: string,
   edition: GameEdition,
 ): string[] {
-  const map = edition === 'dartmoor' ? dartmoorStats : classicStats
+  const map = edition === 'dartmoor' ? dartmoorStats : edition === 'smoky' ? smokyStats : classicStats
   const fn = map[cardKey]
   if (!fn) return []
   try {

@@ -17,4 +17,12 @@ export {
   getDragonflySeriesBreakdown,
 } from './dartmoor-engine'
 
+export {
+  computeSmokyScoreBreakdown,
+  buildSmokyForestContext,
+  scoreSmokyCard,
+  scoreSquirrelSet,
+  getSquirrelSeriesBreakdown,
+} from './smoky-engine'
+
 export type { SetSeries } from './engine'

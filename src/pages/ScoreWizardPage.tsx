@@ -10,7 +10,7 @@ import { WizardStepper, getWizardSteps } from '@/components/scoring/WizardSteppe
 import { ScoreSummary } from '@/components/scoring/ScoreSummary'
 import { useScoringStore } from '@/store/scoring-store'
 import { getCards, getCardsByCategory } from '@/data/cards'
-import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown } from '@/lib/scoring'
+import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreSmokyCard, buildSmokyForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown, getSquirrelSeriesBreakdown } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { findMissingContextCards } from '@/lib/scoring/missing-context'
 import { cn } from '@/lib/utils'
@@ -30,6 +30,7 @@ const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
   exploration: null,
   dartmoor_base: null,
   dartmoor_exmoor: 'exmoor',
+  smoky_base: null,
 }
 
 const TAG_ORDER: readonly CardTag[] = [
@@ -200,6 +201,15 @@ export function ScoreWizardPage() {
       // Fallback: compute inline
       const count = currentPlayer.cardCounts[cardKey] || 0
       if (count === 0) return 0
+      if (edition === 'smoky') {
+        const ctx = buildSmokyForestContext(
+          currentPlayer.cardCounts,
+          currentPlayer.cardMetadata,
+          currentPlayer.fullyOccupiedTrees,
+        )
+        const metadata = currentPlayer.cardMetadata[cardKey]
+        return scoreSmokyCard(cardKey, count, ctx, metadata)
+      }
       if (edition === 'dartmoor') {
         const ctx = buildDartmoorForestContext(
           currentPlayer.cardCounts,
@@ -222,6 +232,13 @@ export function ScoreWizardPage() {
 
   const forestContext = useMemo(() => {
     if (!currentPlayer) return null
+    if (edition === 'smoky') {
+      return buildSmokyForestContext(
+        currentPlayer.cardCounts,
+        currentPlayer.cardMetadata,
+        currentPlayer.fullyOccupiedTrees,
+      )
+    }
     if (edition === 'dartmoor') {
       return buildDartmoorForestContext(
         currentPlayer.cardCounts,
@@ -503,7 +520,13 @@ export function ScoreWizardPage() {
           })()}
 
           {stepCategories[currentStep]?.[0] === 'top' && forestContext && (
-            edition === 'dartmoor' ? (
+            edition === 'smoky' ? (
+              <SetSeriesBreakdown
+                series={getSquirrelSeriesBreakdown(forestContext)}
+                iconUrl={STAT_ICONS.pawed}
+                titleKey="wizard.squirrelSet"
+              />
+            ) : edition === 'dartmoor' ? (
               <SetSeriesBreakdown
                 series={getDragonflySeriesBreakdown(forestContext)}
                 iconUrl={STAT_ICONS.dragonfly}

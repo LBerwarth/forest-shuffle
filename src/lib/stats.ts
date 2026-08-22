@@ -22,7 +22,7 @@ export const STRATEGY_TAGS: readonly CardTag[] = [
   'deer',
 ] as const
 
-export type EditionFilter = 'all' | 'classic' | 'dartmoor'
+export type EditionFilter = 'all' | 'classic' | 'dartmoor' | 'smoky'
 export type TimeFilter = 'all' | 'year' | 'month' | 'week'
 export type PlayerMatchMode = 'union' | 'intersection'
 // 'group' = any multiplayer game (2+ players); 1 = solo.
