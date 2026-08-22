@@ -19,6 +19,14 @@ export default defineConfig({
         background_color: '#f0f5f0',
         display: 'standalone',
         orientation: 'portrait',
+        related_applications: [
+          {
+            platform: 'play',
+            url: 'https://play.google.com/store/apps/details?id=app.forestshuffle.companion',
+            id: 'app.forestshuffle.companion',
+          },
+        ],
+        prefer_related_applications: true,
         icons: [
           { src: '/pwa-64x64.png', sizes: '64x64', type: 'image/png' },
           { src: '/pwa-192x192.png', sizes: '192x192', type: 'image/png' },
