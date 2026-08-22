@@ -29,7 +29,7 @@ Walk through your forest category by category: trees, top, bottom and lateral ca
 
 ALL EXPANSIONS
 • Base game, Alpine, Woodland and Exploration
-• Dartmoor edition fully supported — Exmoor expansion coming soon
+• Dartmoor and Smoky Mountains editions fully supported — Exmoor expansion coming soon
 • Solo mode with adjusted scoring rules
 
 SCORE TOGETHER
@@ -49,7 +49,7 @@ MORE
 • Built-in feedback form for card translations and rules
 
 KEYWORDS
-Forest Shuffle score calculator, scoring app, companion app, points counter, Alpine expansion, Woodland Edge expansion, Exploration expansion, Dartmoor edition, Exmoor expansion, board game score tracker, card game scorer
+Forest Shuffle score calculator, scoring app, companion app, points counter, Alpine expansion, Woodland Edge expansion, Exploration expansion, Dartmoor edition, Smoky Mountains edition, Exmoor expansion, board game score tracker, card game scorer
 
 Forest Shuffle Scorer is an unofficial, fan-made companion app. It is not affiliated with or endorsed by Lookout GmbH. Forest Shuffle is a trademark of its respective owner.
 
@@ -71,7 +71,7 @@ Geh deinen Wald Kategorie für Kategorie durch: Bäume, obere, untere und seitli
 
 ALLE ERWEITERUNGEN
 • Grundspiel, Alpin, Waldrand und Exploration
-• Dartmoor-Edition vollständig unterstützt — Exmoor-Erweiterung folgt bald
+• Dartmoor- und Smoky-Mountains-Edition vollständig unterstützt — Exmoor-Erweiterung folgt bald
 • Solo-Modus mit angepassten Wertungsregeln
 
 GEMEINSAM WERTEN
@@ -91,7 +91,7 @@ AUSSERDEM
 • Feedback-Formular für Kartenübersetzungen und Regeln direkt in der App
 
 KEYWORDS
-Forest Shuffle Punktezähler, Punkterechner, Companion App, Wertungshilfe, Erweiterung Alpin (Alpine), Erweiterung Waldrand (Woodland Edge), Erweiterung Exploration, Dartmoor Edition, Exmoor Erweiterung, Brettspiel Punkte zählen, Kartenspiel Wertung
+Forest Shuffle Punktezähler, Punkterechner, Companion App, Wertungshilfe, Erweiterung Alpin (Alpine), Erweiterung Waldrand (Woodland Edge), Erweiterung Exploration, Dartmoor Edition, Smoky Mountains Edition, Exmoor Erweiterung, Brettspiel Punkte zählen, Kartenspiel Wertung
 
 Forest Shuffle Scorer ist eine inoffizielle Fan-App und steht in keiner Verbindung zur Lookout GmbH. Forest Shuffle ist eine Marke des jeweiligen Rechteinhabers.
 
@@ -113,7 +113,7 @@ Parcourez votre forêt catégorie par catégorie : arbres, cartes du haut, du ba
 
 TOUTES LES EXTENSIONS
 • Jeu de base, Alpine, Lisière et Exploration
-• Édition Dartmoor entièrement prise en charge — extension Exmoor bientôt disponible
+• Éditions Dartmoor et Smoky Mountains entièrement prises en charge — extension Exmoor bientôt disponible
 • Mode solo avec règles de comptage adaptées
 
 COMPTEZ ENSEMBLE
@@ -133,7 +133,7 @@ ET AUSSI
 • Formulaire de retour intégré pour les traductions de cartes et les règles
 
 MOTS-CLÉS
-Forêt Mixte compteur de points, Forest Shuffle score, application compagnon, extension Alpine, extension Lisière (Woodland Edge), extension Exploration, édition Dartmoor, extension Exmoor, calcul des points jeu de société, compteur jeu de cartes
+Forêt Mixte compteur de points, Forest Shuffle score, application compagnon, extension Alpine, extension Lisière (Woodland Edge), extension Exploration, édition Dartmoor, édition Smoky Mountains, extension Exmoor, calcul des points jeu de société, compteur jeu de cartes
 
 Forest Shuffle Scorer est une application non officielle créée par des fans. Elle n'est ni affiliée à Lookout GmbH ni approuvée par elle. Forêt Mixte / Forest Shuffle est une marque de son propriétaire respectif.
 
@@ -155,7 +155,7 @@ Recorre tu bosque categoría por categoría: árboles, cartas superiores, inferi
 
 TODAS LAS EXPANSIONES
 • Juego base, Alpina, Lindero y Exploración
-• Edición Dartmoor totalmente compatible — expansión Exmoor próximamente
+• Ediciones Dartmoor y Smoky Mountains totalmente compatibles — expansión Exmoor próximamente
 • Modo en solitario con reglas de puntuación adaptadas
 
 PUNTUAD JUNTOS
@@ -175,7 +175,7 @@ ADEMÁS
 • Formulario de comentarios integrado para traducciones de cartas y reglas
 
 PALABRAS CLAVE
-Bosque Mixto contador de puntos, Forest Shuffle puntuación, app compañera, expansión Alpina (Alpine), expansión Lindero (Woodland Edge), expansión Exploración (Exploration), edición Dartmoor, expansión Exmoor, contador de puntos juego de mesa, marcador juego de cartas
+Bosque Mixto contador de puntos, Forest Shuffle puntuación, app compañera, expansión Alpina (Alpine), expansión Lindero (Woodland Edge), expansión Exploración (Exploration), edición Dartmoor, edición Smoky Mountains, expansión Exmoor, contador de puntos juego de mesa, marcador juego de cartas
 
 Forest Shuffle Scorer es una aplicación no oficial creada por fans. No está afiliada a Lookout GmbH ni cuenta con su respaldo. Bosque Mixto / Forest Shuffle es una marca de su respectivo propietario.
 
