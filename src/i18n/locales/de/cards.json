@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Wildschwein (Bache)",
-    "scoring": "10 Punkte pro Stück wenn mind. 1 Frischling; sonst 0"
+    "scoring": "10 Punkte pro Frischling in deinem Wald"
   },
   "cave": {
     "name": "Höhle",
@@ -472,15 +472,23 @@
     "name": "Einsame Höhle",
     "scoring": "5 Punkte wenn keine normalen Höhlenkarten; sonst 0"
   },
+  "smugglers_cave": {
+    "name": "Schmugglerhöhle",
+    "scoring": "0 Punkte (Spieleffekt; versteckte Karten zählen über die Höhle)"
+  },
+  "supply_cave": {
+    "name": "Vorratshöhle",
+    "scoring": "0 Punkte (Spieleffekt; versteckte Karten zählen über die Höhle)"
+  },
   "wild_boar_piglet": {
     "name": "Frischling",
-    "scoring": "1 Punkt pro Frischling"
+    "scoring": "1 Punkt pro Frischling",
+    "context": "Wie viele Frischlinge zeigen das Woodland-Symbol?"
   },
   "honey_bee": {
     "name": "Honigbiene",
     "scoring": "1 Punkt pro Pflanze"
   },
-
   "ash": {
     "name": "Esche",
     "scoring": "1 Punkt pro Karte mit dem gleichen Baumsymbol + 1 pro Pflanze (Pflanzen automatisch gezählt)",
@@ -515,7 +523,6 @@
     "name": "Holunder",
     "scoring": "0 Punkte (nur Dauereffekt)"
   },
-
   "blanket_bog": {
     "name": "Deckenmoor",
     "scoring": "Verdoppelt Punkte der Pflanzen darunter",
@@ -558,7 +565,6 @@
     "name": "Universelles Moor",
     "scoring": "0 Punkte (zählt als Moor)"
   },
-
   "barn_owl_d": {
     "name": "Schleiereule",
     "scoring": "3 Punkte pro Fledermaus in deinem Wald"
@@ -616,7 +622,6 @@
     "scoring": "5 Punkte je wenn auf einem Moor",
     "context": "Wie viele Steinschmätzer sind auf einem Moor?"
   },
-
   "adder": {
     "name": "Kreuzotter",
     "scoring": "1 Punkt pro Amphibie + 1 pro Maus in deinem Wald"
@@ -682,7 +687,6 @@
     "name": "Krebsschere",
     "scoring": "2 Punkte pro Libelle in deinem Wald"
   },
-
   "alcathoe_bat": {
     "name": "Nymphenfledermaus",
     "scoring": "Fledermäuse: 5 Pkt. je bei 3+ Arten"
@@ -761,7 +765,6 @@
     "name": "Waldmaus",
     "scoring": "1 Punkt pro Maus in deinem Wald (sich selbst eingeschlossen)"
   },
-
   "cave_d": {
     "name": "Höhle",
     "scoring": "1 Punkt pro Karte in der Höhle"
@@ -770,7 +773,6 @@
     "name": "Höhle 4",
     "scoring": "5 Punkte"
   },
-
   "holly": {
     "name": "Stechpalme",
     "scoring": "0 Punkte (nur permanenter Effekt)"

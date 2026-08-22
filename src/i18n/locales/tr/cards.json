@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Yaban domuzu (dişi)",
-    "scoring": "en az 1 Domuz yavrusu varsa her biri için 10 puan; aksi halde 0"
+    "scoring": "Ormanınızdaki her Domuz yavrusu için 10 puan"
   },
   "cave": {
     "name": "Mağara",
@@ -472,15 +472,23 @@
     "name": "Yalnız mağara",
     "scoring": "hiç normal mağara kartı yoksa 5 puan; aksi halde 0"
   },
+  "smugglers_cave": {
+    "name": "Kaçakçı Mağarası",
+    "scoring": "0 puan (oyun içi etki; gizlenen kartlar Mağara üzerinden sayılır)"
+  },
+  "supply_cave": {
+    "name": "Erzak Mağarası",
+    "scoring": "0 puan (oyun içi etki; gizlenen kartlar Mağara üzerinden sayılır)"
+  },
   "wild_boar_piglet": {
     "name": "Domuz yavrusu",
-    "scoring": "Domuz yavrusu başına 1 puan"
+    "scoring": "Domuz yavrusu başına 1 puan",
+    "context": "Kaç Domuz yavrusunda Woodland sembolü var?"
   },
   "honey_bee": {
     "name": "Bal arısı",
     "scoring": "bitki başına 1 puan"
   },
-
   "ash": {
     "name": "Dişbudak",
     "scoring": "aynı ağaç sembolüne sahip her kart için 1 puan + her bitki için 1 puan (bitkiler otomatik sayılır)",
@@ -515,7 +523,6 @@
     "name": "Kara mürver",
     "scoring": "0 puan (yalnızca kalıcı etki)"
   },
-
   "blanket_bog": {
     "name": "Örtü bataklığı",
     "scoring": "Altına yerleştirilen bitkilerin puanını ikiye katlar",
@@ -558,7 +565,6 @@
     "name": "Evrensel fundalık",
     "scoring": "0 puan (fundalık sayılır)"
   },
-
   "barn_owl_d": {
     "name": "Peçeli baykuş",
     "scoring": "ormanındaki her yarasa için 3 puan"
@@ -616,7 +622,6 @@
     "scoring": "bir fundalıktaysa her biri için 5 puan",
     "context": "Kaç Kuyrukkakan bir fundalıkta?"
   },
-
   "adder": {
     "name": "Engerek",
     "scoring": "ormanındaki her amfibi için 1 puan + her fare için 1 puan"
@@ -682,7 +687,6 @@
     "name": "Su askeri",
     "scoring": "ormanındaki her yusufçuk için 2 puan"
   },
-
   "alcathoe_bat": {
     "name": "Alcathoe yarasası",
     "scoring": "Yarasalar: 3+ yarasa türü varsa her biri için 5 puan"
@@ -761,7 +765,6 @@
     "name": "Orman faresi",
     "scoring": "ormanındaki her fare için 1 puan (kendisi dahil)"
   },
-
   "cave_d": {
     "name": "Mağara",
     "scoring": "mağaradaki her kart için 1 puan"
@@ -770,7 +773,6 @@
     "name": "Mağara 4",
     "scoring": "5 puan"
   },
-
   "holly": {
     "name": "Çobanpüskülü",
     "scoring": "0 puan (yalnızca kalıcı etki)"

@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Villisika (naaras)",
-    "scoring": "10 pistettä kustakin, jos vähintään 1 porsas; muuten 0"
+    "scoring": "10 pistettä jokaisesta porsaasta metsässäsi"
   },
   "cave": {
     "name": "Luola",
@@ -472,15 +472,23 @@
     "name": "Yksinäinen luola",
     "scoring": "5 pistettä, jos ei tavallisia luolakortteja; muuten 0"
   },
+  "smugglers_cave": {
+    "name": "Salakuljettajien luola",
+    "scoring": "0 pistettä (pelinaikainen vaikutus; piilotetut kortit lasketaan Luolan kautta)"
+  },
+  "supply_cave": {
+    "name": "Varastoluola",
+    "scoring": "0 pistettä (pelinaikainen vaikutus; piilotetut kortit lasketaan Luolan kautta)"
+  },
   "wild_boar_piglet": {
     "name": "Porsas",
-    "scoring": "1 piste / porsas"
+    "scoring": "1 piste / porsas",
+    "context": "Kuinka monessa porsaassa on Woodland-symboli?"
   },
   "honey_bee": {
     "name": "Tarhamehiläinen",
     "scoring": "1 piste / kasvi"
   },
-
   "ash": {
     "name": "Saarni",
     "scoring": "1 piste / kortti, jossa sama puusymboli + 1 / kasvi (kasvit lasketaan automaattisesti)",
@@ -515,7 +523,6 @@
     "name": "Mustaselja",
     "scoring": "0 pistettä (vain pysyvä vaikutus)"
   },
-
   "blanket_bog": {
     "name": "Peittosuo",
     "scoring": "Kaksinkertaistaa sen alle asetettujen kasvien pisteet",
@@ -558,7 +565,6 @@
     "name": "Yleisnummi",
     "scoring": "0 pistettä (lasketaan nummeksi)"
   },
-
   "barn_owl_d": {
     "name": "Tornipöllö",
     "scoring": "3 pistettä / lepakko metsässäsi"
@@ -616,7 +622,6 @@
     "scoring": "5 pistettä kustakin, jos nummella",
     "context": "Kuinka moni kivitasku on nummella?"
   },
-
   "adder": {
     "name": "Kyy",
     "scoring": "1 piste / sammakkoeläin + 1 / hiiri metsässäsi"
@@ -682,7 +687,6 @@
     "name": "Sahalehti",
     "scoring": "2 pistettä / sudenkorento metsässäsi"
   },
-
   "alcathoe_bat": {
     "name": "Alcathoensiippa",
     "scoring": "Lepakot: 5 p / kpl, jos 3+ lepakkolajia"
@@ -761,7 +765,6 @@
     "name": "Metsähiiri",
     "scoring": "1 piste / hiiri metsässäsi (ml. tämä)"
   },
-
   "cave_d": {
     "name": "Luola",
     "scoring": "1 piste / kortti luolassa"
@@ -770,7 +773,6 @@
     "name": "Luola 4",
     "scoring": "5 pistettä"
   },
-
   "holly": {
     "name": "Orjanlaakeri",
     "scoring": "0 pistettä (vain pysyvä vaikutus)"

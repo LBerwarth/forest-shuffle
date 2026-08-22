@@ -335,7 +335,8 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   sable: (count, ctx) => count * (3 * countTag(ctx, 'pawed')),
   troll: (count, ctx) => count * ctx.totalTrees,
   white_stork: (count, ctx) => count * (countTag(ctx, 'insect') + countTag(ctx, 'amphibian')),
-  wild_boar_female: (count, ctx) => countCard(ctx, 'wild_boar_piglet') >= 1 ? count * 10 : 0,
+  // Unlike the base Wild Boar (10 if at least one), the Sow scores 10 PER Squeaker
+  wild_boar_female: (count, ctx) => count * (10 * countCard(ctx, 'wild_boar_piglet')),
 
   // --- CAVE ---
   cave: (count, ctx) => {
@@ -351,6 +352,9 @@ const scoringFunctions: Record<string, ScoringFunction> = {
     const regularCaveCount = countCard(ctx, 'cave')
     return regularCaveCount === 0 ? 5 : 0
   },
+  // In-game effects only; hidden cards score via the 'cave' entry
+  smugglers_cave: () => 0,
+  supply_cave: () => 0,
 }
 
 // ============================================================
@@ -430,6 +434,14 @@ export function buildForestContext(
       tagCounts[tag] += count
     }
   }
+
+  // Woodland Edge Squeaker copies carry the woodland-edge symbol (context
+  // question on the Squeaker card) — the Wildcat must count them
+  const edgePiglets = Math.min(
+    cardMetadata['wild_boar_piglet']?.contextValue ?? 0,
+    cardCounts['wild_boar_piglet'] || 0,
+  )
+  tagCounts.woodland_edge += edgePiglets
 
   // Apply Violet Carpenter Bee bonuses: per reference card #13 each bee counts
   // as one extra tree of its host species — for the host's own scoring formula

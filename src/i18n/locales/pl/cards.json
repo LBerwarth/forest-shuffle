@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Locha",
-    "scoring": "Po 10 punktów, jeśli masz co najmniej 1 Warchlaka; inaczej 0"
+    "scoring": "10 punktów za każdego Warchlaka w twoim lesie"
   },
   "cave": {
     "name": "Jaskinia",
@@ -472,15 +472,23 @@
     "name": "Samotna jaskinia",
     "scoring": "5 punktów, jeśli brak zwykłych kart w jaskini; inaczej 0"
   },
+  "smugglers_cave": {
+    "name": "Jaskinia przemytników",
+    "scoring": "0 punktów (efekt w trakcie gry; ukryte karty liczą się przez Jaskinię)"
+  },
+  "supply_cave": {
+    "name": "Jaskinia zapasów",
+    "scoring": "0 punktów (efekt w trakcie gry; ukryte karty liczą się przez Jaskinię)"
+  },
   "wild_boar_piglet": {
     "name": "Warchlak",
-    "scoring": "1 punkt za Warchlaka"
+    "scoring": "1 punkt za Warchlaka",
+    "context": "Ile Warchlaków ma symbol Woodland Edge?"
   },
   "honey_bee": {
     "name": "Pszczoła miodna",
     "scoring": "1 punkt za roślinę"
   },
-
   "ash": {
     "name": "Jesion",
     "scoring": "1 punkt za kartę z tym samym symbolem drzewa + 1 za roślinę (rośliny liczone automatycznie)",
@@ -515,7 +523,6 @@
     "name": "Bez czarny",
     "scoring": "0 punktów (tylko stały efekt)"
   },
-
   "blanket_bog": {
     "name": "Torfowisko okrywowe",
     "scoring": "Podwaja punkty roślin umieszczonych pod nim",
@@ -558,7 +565,6 @@
     "name": "Wrzosowisko uniwersalne",
     "scoring": "0 punktów (liczy się jako wrzosowisko)"
   },
-
   "barn_owl_d": {
     "name": "Płomykówka",
     "scoring": "3 punkty za nietoperza w twoim lesie"
@@ -616,7 +622,6 @@
     "scoring": "Po 5 punktów, jeśli na wrzosowisku",
     "context": "Ile Białorzytek jest na wrzosowisku?"
   },
-
   "adder": {
     "name": "Żmija zygzakowata",
     "scoring": "1 punkt za płaza + 1 za mysz w twoim lesie"
@@ -682,7 +687,6 @@
     "name": "Osoka aloesowata",
     "scoring": "2 punkty za ważkę w twoim lesie"
   },
-
   "alcathoe_bat": {
     "name": "Nocek Alkatoe",
     "scoring": "Nietoperze: po 5 pkt przy 3+ gatunkach"
@@ -761,7 +765,6 @@
     "name": "Mysz zaroślowa",
     "scoring": "1 punkt za mysz w twoim lesie (wliczając siebie)"
   },
-
   "cave_d": {
     "name": "Jaskinia",
     "scoring": "1 punkt za kartę w jaskini"
@@ -770,7 +773,6 @@
     "name": "Jaskinia 4",
     "scoring": "5 punktów"
   },
-
   "holly": {
     "name": "Ostrokrzew kolczasty",
     "scoring": "0 punktów (tylko stały efekt)"

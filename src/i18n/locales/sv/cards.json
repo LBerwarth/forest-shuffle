@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Vildsvin (hona)",
-    "scoring": "10 poäng styck om minst 1 Kulting; annars 0"
+    "scoring": "10 poäng per Kulting i din skog"
   },
   "cave": {
     "name": "Grotta",
@@ -472,15 +472,23 @@
     "name": "Ensam grotta",
     "scoring": "5 poäng om inga vanliga grottkort; annars 0"
   },
+  "smugglers_cave": {
+    "name": "Smugglargrottan",
+    "scoring": "0 poäng (effekt under spelet; gömda kort räknas via Grottan)"
+  },
+  "supply_cave": {
+    "name": "Förrådsgrottan",
+    "scoring": "0 poäng (effekt under spelet; gömda kort räknas via Grottan)"
+  },
   "wild_boar_piglet": {
     "name": "Kulting",
-    "scoring": "1 poäng per Kulting"
+    "scoring": "1 poäng per Kulting",
+    "context": "Hur många Kultingar har Woodland-symbolen?"
   },
   "honey_bee": {
     "name": "Honungsbi",
     "scoring": "1 poäng per växt"
   },
-
   "ash": {
     "name": "Ask",
     "scoring": "1 poäng per kort med samma trädsymbol + 1 per växt (växter räknas automatiskt)",
@@ -515,7 +523,6 @@
     "name": "Fläder",
     "scoring": "0 poäng (endast permanent effekt)"
   },
-
   "blanket_bog": {
     "name": "Täckmyr",
     "scoring": "Fördubblar poängen för växter placerade under den",
@@ -558,7 +565,6 @@
     "name": "Universalmyr",
     "scoring": "0 poäng (räknas som en myr)"
   },
-
   "barn_owl_d": {
     "name": "Tornuggla",
     "scoring": "3 poäng per fladdermus i din skog"
@@ -616,7 +622,6 @@
     "scoring": "5 poäng styck om i en myr",
     "context": "Hur många Stenskvättor är i en myr?"
   },
-
   "adder": {
     "name": "Huggorm",
     "scoring": "1 poäng per groddjur + 1 per mus i din skog"
@@ -682,7 +687,6 @@
     "name": "Vattenaloe",
     "scoring": "2 poäng per trollslända i din skog"
   },
-
   "alcathoe_bat": {
     "name": "Nymffladdermus",
     "scoring": "Fladdermöss: 5 p styck om 3+ fladdermusarter"
@@ -761,7 +765,6 @@
     "name": "Skogsmus",
     "scoring": "1 poäng per mus i din skog (inkl. sig själv)"
   },
-
   "cave_d": {
     "name": "Grotta",
     "scoring": "1 poäng per kort i grottan"
@@ -770,7 +773,6 @@
     "name": "Grotta 4",
     "scoring": "5 poäng"
   },
-
   "holly": {
     "name": "Järnek",
     "scoring": "0 poäng (endast permanent effekt)"

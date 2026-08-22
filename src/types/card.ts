@@ -49,6 +49,8 @@ export interface CardDefinition {
   needsContext?: boolean
   /** If true, context value is capped at the card count (e.g. "how many of these are on X?") */
   contextCappedByCount?: boolean
+  /** Context question only applies when this expansion is enabled (e.g. Squeaker's woodland-edge-symbol count) */
+  contextOnlyWithExpansion?: Expansion
   /** If true, wizard shows a tree-species picker (e.g. Violet Carpenter Bee) */
   needsHostTreeContext?: boolean
   /** If true, wizard shows a multi-select of plants placed under this card

@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Bachyně",
-    "scoring": "Po 10 bodech, máš-li alespoň 1 sele; jinak 0"
+    "scoring": "10 bodů za každé Sele v tvém lese"
   },
   "cave": {
     "name": "Jeskyně",
@@ -472,15 +472,23 @@
     "name": "Osamělá jeskyně",
     "scoring": "5 bodů, pokud nejsou žádné běžné karty v jeskyni; jinak 0"
   },
+  "smugglers_cave": {
+    "name": "Pašerácká jeskyně",
+    "scoring": "0 bodů (efekt během hry; skryté karty se počítají přes Jeskyni)"
+  },
+  "supply_cave": {
+    "name": "Zásobovací jeskyně",
+    "scoring": "0 bodů (efekt během hry; skryté karty se počítají přes Jeskyni)"
+  },
   "wild_boar_piglet": {
     "name": "Sele",
-    "scoring": "1 bod za sele"
+    "scoring": "1 bod za sele",
+    "context": "Kolik Selat má symbol Woodland Edge?"
   },
   "honey_bee": {
     "name": "Včela medonosná",
     "scoring": "1 bod za rostlinu"
   },
-
   "ash": {
     "name": "Jasan ztepilý",
     "scoring": "1 bod za kartu se stejným symbolem stromu + 1 za rostlinu (rostliny počítány automaticky)",
@@ -515,7 +523,6 @@
     "name": "Bez černý",
     "scoring": "0 bodů (jen trvalý efekt)"
   },
-
   "blanket_bog": {
     "name": "Pokryvné rašeliniště",
     "scoring": "Zdvojnásobuje body rostlin umístěných pod ním",
@@ -558,7 +565,6 @@
     "name": "Univerzální vřesoviště",
     "scoring": "0 bodů (počítá se jako vřesoviště)"
   },
-
   "barn_owl_d": {
     "name": "Sova pálená",
     "scoring": "3 body za netopýra ve tvém lese"
@@ -616,7 +622,6 @@
     "scoring": "Po 5 bodech, pokud je na vřesovišti",
     "context": "Kolik bělořitů je na vřesovišti?"
   },
-
   "adder": {
     "name": "Zmije obecná",
     "scoring": "1 bod za obojživelníka + 1 za myš ve tvém lese"
@@ -682,7 +687,6 @@
     "name": "Řezan pilolistý",
     "scoring": "2 body za vážku ve tvém lese"
   },
-
   "alcathoe_bat": {
     "name": "Netopýr alkathoe",
     "scoring": "Netopýři: po 5 b. při 3+ druzích"
@@ -761,7 +765,6 @@
     "name": "Myšice lesní",
     "scoring": "1 bod za myš ve tvém lese (včetně sebe)"
   },
-
   "cave_d": {
     "name": "Jeskyně",
     "scoring": "1 bod za kartu v jeskyni"
@@ -770,7 +773,6 @@
     "name": "Jeskyně 4",
     "scoring": "5 bodů"
   },
-
   "holly": {
     "name": "Cesmína ostrolistá",
     "scoring": "0 bodů (jen trvalý efekt)"

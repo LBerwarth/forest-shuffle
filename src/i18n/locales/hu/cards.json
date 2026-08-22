@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Vaddisznó (koca)",
-    "scoring": "10 pont darabonként, ha van legalább 1 malac; egyébként 0"
+    "scoring": "10 pont minden malac után az erdődben"
   },
   "cave": {
     "name": "Barlang",
@@ -472,15 +472,23 @@
     "name": "Magányos barlang",
     "scoring": "5 pont, ha nincs normál barlangkártya; egyébként 0"
   },
+  "smugglers_cave": {
+    "name": "Csempészbarlang",
+    "scoring": "0 pont (játék közbeni hatás; a rejtett kártyák a Barlangnál számítanak)"
+  },
+  "supply_cave": {
+    "name": "Készletbarlang",
+    "scoring": "0 pont (játék közbeni hatás; a rejtett kártyák a Barlangnál számítanak)"
+  },
   "wild_boar_piglet": {
     "name": "Malac",
-    "scoring": "1 pont darabonként"
+    "scoring": "1 pont darabonként",
+    "context": "Hány malacon látható a Woodland szimbólum?"
   },
   "honey_bee": {
     "name": "Házi méh",
     "scoring": "1 pont növényenként"
   },
-
   "ash": {
     "name": "Magas kőris",
     "scoring": "1 pont az azonos faszimbólumú kártyánként + 1 növényenként (a növények automatikusan)",
@@ -515,7 +523,6 @@
     "name": "Fekete bodza",
     "scoring": "0 pont (csak tartós hatás)"
   },
-
   "blanket_bog": {
     "name": "Takaróláp",
     "scoring": "Megduplázza az alá helyezett növények pontjait",
@@ -558,7 +565,6 @@
     "name": "Univerzális láp",
     "scoring": "0 pont (lápnak számít)"
   },
-
   "barn_owl_d": {
     "name": "Gyöngybagoly",
     "scoring": "3 pont denevérenként az erdődben"
@@ -616,7 +622,6 @@
     "scoring": "5 pont darabonként, ha lápon van",
     "context": "Hány hantmadár van lápon?"
   },
-
   "adder": {
     "name": "Keresztes vipera",
     "scoring": "1 pont kétéltűnként + 1 egerenként az erdődben"
@@ -682,7 +687,6 @@
     "name": "Kolokán",
     "scoring": "2 pont szitakötőnként az erdődben"
   },
-
   "alcathoe_bat": {
     "name": "Nimfadenevér",
     "scoring": "Denevérek: 5 pont darabonként, ha 3+ denevérfaj"
@@ -761,7 +765,6 @@
     "name": "Erdei egér",
     "scoring": "1 pont egerenként az erdődben (önmagával együtt)"
   },
-
   "cave_d": {
     "name": "Barlang",
     "scoring": "1 pont a barlangban lévő kártyánként"
@@ -770,7 +773,6 @@
     "name": "4-es barlang",
     "scoring": "5 pont"
   },
-
   "holly": {
     "name": "Magyal",
     "scoring": "0 pont (csak tartós hatás)"

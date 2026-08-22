@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Javali (fêmea)",
-    "scoring": "10 pontos cada se tiver pelo menos 1 Leitão; senão 0"
+    "scoring": "10 pontos por cada Leitão na sua floresta"
   },
   "cave": {
     "name": "Gruta",
@@ -472,15 +472,23 @@
     "name": "Gruta solitária",
     "scoring": "5 pontos se não houver cartas de gruta normais; senão 0"
   },
+  "smugglers_cave": {
+    "name": "Gruta dos contrabandistas",
+    "scoring": "0 pontos (efeito durante o jogo; as cartas escondidas pontuam pela Gruta)"
+  },
+  "supply_cave": {
+    "name": "Gruta de suprimentos",
+    "scoring": "0 pontos (efeito durante o jogo; as cartas escondidas pontuam pela Gruta)"
+  },
   "wild_boar_piglet": {
     "name": "Leitão",
-    "scoring": "1 ponto por Leitão"
+    "scoring": "1 ponto por Leitão",
+    "context": "Quantos Leitões mostram o símbolo Woodland?"
   },
   "honey_bee": {
     "name": "Abelha-do-mel",
     "scoring": "1 ponto por planta"
   },
-
   "ash": {
     "name": "Freixo",
     "scoring": "1 ponto por carta com o mesmo símbolo de árvore + 1 por planta (plantas contadas automaticamente)",
@@ -515,7 +523,6 @@
     "name": "Sabugueiro",
     "scoring": "0 pontos (apenas efeito permanente)"
   },
-
   "blanket_bog": {
     "name": "Turfeira",
     "scoring": "Duplica os pontos das plantas colocadas por baixo",
@@ -558,7 +565,6 @@
     "name": "Charneca universal",
     "scoring": "0 pontos (conta como charneca)"
   },
-
   "barn_owl_d": {
     "name": "Coruja-das-torres",
     "scoring": "3 pontos por morcego na sua floresta"
@@ -616,7 +622,6 @@
     "scoring": "5 pontos cada se estiver numa charneca",
     "context": "Quantos Chascos-cinzentos estão numa charneca?"
   },
-
   "adder": {
     "name": "Víbora",
     "scoring": "1 ponto por anfíbio + 1 por rato na sua floresta"
@@ -682,7 +687,6 @@
     "name": "Soldado-de-água",
     "scoring": "2 pontos por libélula na sua floresta"
   },
-
   "alcathoe_bat": {
     "name": "Morcego-de-Alcathoe",
     "scoring": "Morcegos: 5 pts cada se 3+ espécies"
@@ -761,7 +765,6 @@
     "name": "Rato-do-campo",
     "scoring": "1 ponto por rato na sua floresta (incl. ele mesmo)"
   },
-
   "cave_d": {
     "name": "Gruta",
     "scoring": "1 ponto por carta na gruta"
@@ -770,7 +773,6 @@
     "name": "Gruta 4",
     "scoring": "5 pontos"
   },
-
   "holly": {
     "name": "Azevinho",
     "scoring": "0 pontos (apenas efeito permanente)"

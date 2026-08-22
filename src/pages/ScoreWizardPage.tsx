@@ -21,13 +21,13 @@ import { STAT_ICONS } from '@/assets/icons'
 import { getCategoryOrder } from '@/data/categories'
 import type { CardDefinition, CardTag, Expansion } from '@/types/card'
 
-const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland', 'dartmoor_exmoor'] as const
+const EXPANSION_ORDER: readonly Expansion[] = ['alpine', 'woodland', 'exploration', 'dartmoor_exmoor'] as const
 
 const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
   base: null,
   alpine: 'alpine',
   woodland: 'woodland_edge',
-  exploration: null,
+  exploration: 'cave',
   dartmoor_base: null,
   dartmoor_exmoor: 'exmoor',
   smoky_base: null,
@@ -40,7 +40,7 @@ const TAG_ORDER: readonly CardTag[] = [
   'amphibian', 'plant', 'mushroom',
 ] as const
 
-const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave'] as const
+const SPECIAL_CAVE_KEYS = ['collectors_cave', 'bat_cave', 'lonely_cave', 'smugglers_cave', 'supply_cave'] as const
 const DARTMOOR_SPECIAL_CAVE_KEYS = ['lonely_cave_d'] as const
 
 export function ScoreWizardPage() {
@@ -552,7 +552,8 @@ export function ScoreWizardPage() {
               }
               contextValue={currentPlayer.cardMetadata[card.key]?.contextValue}
               onContextChange={
-                card.needsContext
+                card.needsContext &&
+                (!card.contextOnlyWithExpansion || expansions.includes(card.contextOnlyWithExpansion))
                   ? (value) =>
                       setCardMetadata(currentPlayer.playerId, card.key, { contextValue: value })
                   : undefined

@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Vildsvin (hun)",
-    "scoring": "10 point pr. stk., hvis du har mindst 1 grisling; ellers 0"
+    "scoring": "10 point pr. grisling i din skov"
   },
   "cave": {
     "name": "Hule",
@@ -472,15 +472,23 @@
     "name": "Ensom hule",
     "scoring": "5 point, hvis ingen almindelige hulekort; ellers 0"
   },
+  "smugglers_cave": {
+    "name": "Smuglergrotten",
+    "scoring": "0 point (effekt under spillet; skjulte kort tælles via Grotten)"
+  },
+  "supply_cave": {
+    "name": "Forsyningsgrotten",
+    "scoring": "0 point (effekt under spillet; skjulte kort tælles via Grotten)"
+  },
   "wild_boar_piglet": {
     "name": "Grisling",
-    "scoring": "1 point pr. grisling"
+    "scoring": "1 point pr. grisling",
+    "context": "Hvor mange grislinger har Woodland Edge-symbolet?"
   },
   "honey_bee": {
     "name": "Honningbi",
     "scoring": "1 point pr. plante"
   },
-
   "ash": {
     "name": "Ask",
     "scoring": "1 point pr. kort med samme træsymbol + 1 pr. plante (planter tælles automatisk)",
@@ -515,7 +523,6 @@
     "name": "Hyld",
     "scoring": "0 point (kun permanent effekt)"
   },
-
   "blanket_bog": {
     "name": "Tæppemose",
     "scoring": "Fordobler point for planter placeret under den",
@@ -558,7 +565,6 @@
     "name": "Universel mose",
     "scoring": "0 point (tæller som mose)"
   },
-
   "barn_owl_d": {
     "name": "Slørugle",
     "scoring": "3 point pr. flagermus i din skov"
@@ -616,7 +622,6 @@
     "scoring": "5 point pr. stk., hvis den er i en mose",
     "context": "Hvor mange stenpikkere er i en mose?"
   },
-
   "adder": {
     "name": "Hugorm",
     "scoring": "1 point pr. padde + 1 pr. mus i din skov"
@@ -682,7 +687,6 @@
     "name": "Krebseklo",
     "scoring": "2 point pr. guldsmed i din skov"
   },
-
   "alcathoe_bat": {
     "name": "Nymfeflagermus",
     "scoring": "Flagermus: 5 point pr. stk. ved 3+ flagermusarter"
@@ -761,7 +765,6 @@
     "name": "Skovmus",
     "scoring": "1 point pr. mus i din skov (inkl. sig selv)"
   },
-
   "cave_d": {
     "name": "Hule",
     "scoring": "1 point pr. kort i hulen"
@@ -770,7 +773,6 @@
     "name": "Hule 4",
     "scoring": "5 point"
   },
-
   "holly": {
     "name": "Kristtorn",
     "scoring": "0 point (kun permanent effekt)"

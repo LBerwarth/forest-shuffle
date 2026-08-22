@@ -72,6 +72,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
 
   // Cave
   cave: 'cave', collectors_cave: 'cave', bat_cave: 'bat', lonely_cave: 'cave',
+  smugglers_cave: 'cave', supply_cave: 'cave',
 
   // ============================================================
   // DARTMOOR EDITION

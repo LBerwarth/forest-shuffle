@@ -22,6 +22,10 @@ export function findMissingContextCards(
     if (count === 0) return false
     const meta = cardMetadata[card.key]
     if (card.needsContext) {
+      // Context only matters when its expansion is in play (cards is already expansion-filtered)
+      if (card.contextOnlyWithExpansion && !cards.some((c) => c.expansion === card.contextOnlyWithExpansion)) {
+        return false
+      }
       // undefined = never touched; an explicit 0 counts as answered
       return meta?.contextValue === undefined
     }

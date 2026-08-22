@@ -6,8 +6,16 @@ import { AcornIcon } from '@/components/ui/AcornIcon'
 import { CATEGORY_ICON_URLS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 import { getCardIconUrl } from '@/data/cardIcons'
 import type { ScoreBreakdown } from '@/types/scoring'
-import type { GameEdition } from '@/types/card'
+import type { GameEdition, CardCategory } from '@/types/card'
 import { cn } from '@/lib/utils'
+
+function categoryCardCount(breakdown: ScoreBreakdown | null, cat: CardCategory): number {
+  return breakdown?.entries.filter((e) => e.cardCategory === cat).reduce((s, e) => s + e.count, 0) ?? 0
+}
+
+function totalCardCount(breakdown: ScoreBreakdown | null): number {
+  return breakdown?.entries.reduce((s, e) => s + e.count, 0) ?? 0
+}
 
 const COMPARISON_CARD_KEYS = ['linden', 'great_spotted_woodpecker', 'black_tailed_godwit', 'dartmoor_pony']
 
@@ -148,26 +156,42 @@ export function ResultsDisplay({ rankedPlayers, edition }: ResultsDisplayProps) 
                     <td className="py-1.5 pr-2 text-forest-600">
                       <img src={CATEGORY_ICON_URLS[cat]} alt="" className="inline-block h-4 w-4 rounded-sm mr-1" />{t(`category.${getCategoryLabel(cat, edition)}`)}
                     </td>
-                    {rankedPlayers.map((p) => (
-                      <td
-                        key={p.playerId}
-                        className="text-right py-1.5 px-1 tabular-nums text-forest-700"
-                      >
-                        {p.breakdown?.categoryTotals[cat] ?? 0}
-                      </td>
-                    ))}
+                    {rankedPlayers.map((p) => {
+                      const cardCount = categoryCardCount(p.breakdown, cat)
+                      return (
+                        <td
+                          key={p.playerId}
+                          className="text-right py-1.5 px-1 tabular-nums text-forest-700"
+                        >
+                          {p.breakdown?.categoryTotals[cat] ?? 0}
+                          {cardCount > 0 && (
+                            <span className="block text-[10px] leading-tight text-forest-400">
+                              {cardCount} {cardCount === 1 ? t('wizard.card') : t('wizard.cards')}
+                            </span>
+                          )}
+                        </td>
+                      )
+                    })}
                   </tr>
                 ))}
                 <tr className="font-bold">
                   <td className="py-2 pr-2 text-forest-700">{t('result.total')}</td>
-                  {rankedPlayers.map((p) => (
-                    <td
-                      key={p.playerId}
-                      className="text-right py-2 px-1 tabular-nums text-forest-700"
-                    >
-                      {p.breakdown?.total ?? 0}
-                    </td>
-                  ))}
+                  {rankedPlayers.map((p) => {
+                    const cardCount = totalCardCount(p.breakdown)
+                    return (
+                      <td
+                        key={p.playerId}
+                        className="text-right py-2 px-1 tabular-nums text-forest-700"
+                      >
+                        {p.breakdown?.total ?? 0}
+                        {cardCount > 0 && (
+                          <span className="block text-[10px] font-normal leading-tight text-forest-400">
+                            {cardCount} {cardCount === 1 ? t('wizard.card') : t('wizard.cards')}
+                          </span>
+                        )}
+                      </td>
+                    )
+                  })}
                 </tr>
               </tbody>
             </table>

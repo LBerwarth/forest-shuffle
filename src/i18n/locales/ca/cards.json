@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Senglar (femella)",
-    "scoring": "10 punts cadascuna si almenys 1 Godall; si no, 0"
+    "scoring": "10 punts per cada Godall al teu bosc"
   },
   "cave": {
     "name": "Cova",
@@ -472,15 +472,23 @@
     "name": "Cova solitària",
     "scoring": "5 punts si no hi ha cartes de cova normals; si no, 0"
   },
+  "smugglers_cave": {
+    "name": "Cova dels contrabandistes",
+    "scoring": "0 punts (efecte durant la partida; les cartes ocultes puntuen amb la Cova)"
+  },
+  "supply_cave": {
+    "name": "Cova de provisions",
+    "scoring": "0 punts (efecte durant la partida; les cartes ocultes puntuen amb la Cova)"
+  },
   "wild_boar_piglet": {
     "name": "Godall",
-    "scoring": "1 punt per Godall"
+    "scoring": "1 punt per Godall",
+    "context": "Quants Godalls mostren el símbol de Woodland Edge?"
   },
   "honey_bee": {
     "name": "Abella de la mel",
     "scoring": "1 punt per planta"
   },
-
   "ash": {
     "name": "Freixe comú",
     "scoring": "1 punt per carta amb el mateix símbol d'arbre + 1 per planta (plantes comptades automàticament)",
@@ -515,7 +523,6 @@
     "name": "Saüc negre",
     "scoring": "0 punts (només efecte permanent)"
   },
-
   "blanket_bog": {
     "name": "Torbera de manta",
     "scoring": "Duplica els punts de les plantes col·locades a sota",
@@ -558,7 +565,6 @@
     "name": "Landa universal",
     "scoring": "0 punts (compta com a landa)"
   },
-
   "barn_owl_d": {
     "name": "Òliba",
     "scoring": "3 punts per ratpenat del teu bosc"
@@ -616,7 +622,6 @@
     "scoring": "5 punts cadascun si en una landa",
     "context": "Quants Còlits grisos hi ha en una landa?"
   },
-
   "adder": {
     "name": "Escurçó",
     "scoring": "1 punt per amfibi + 1 per ratolí del teu bosc"
@@ -682,7 +687,6 @@
     "name": "Soldat d'aigua",
     "scoring": "2 punts per libèl·lula del teu bosc"
   },
-
   "alcathoe_bat": {
     "name": "Ratpenat d'Alcathoe",
     "scoring": "Ratpenats: 5 pts cadascun si 3+ espècies"
@@ -761,7 +765,6 @@
     "name": "Ratolí de bosc",
     "scoring": "1 punt per ratolí del teu bosc (ell mateix inclòs)"
   },
-
   "cave_d": {
     "name": "Cova",
     "scoring": "1 punt per carta a la cova"
@@ -770,7 +773,6 @@
     "name": "Cova 4",
     "scoring": "5 punts"
   },
-
   "holly": {
     "name": "Grèvol",
     "scoring": "0 punts (només efecte permanent)"

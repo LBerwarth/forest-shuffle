@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Jabalina",
-    "scoring": "10 puntos cada una si al menos 1 Jabato; sino 0"
+    "scoring": "10 puntos por cada Jabato en tu bosque"
   },
   "cave": {
     "name": "Cueva",
@@ -472,15 +472,23 @@
     "name": "Cueva solitaria",
     "scoring": "5 puntos si no hay cartas de cueva normales; sino 0"
   },
+  "smugglers_cave": {
+    "name": "Cueva de los contrabandistas",
+    "scoring": "0 puntos (efecto durante la partida; las cartas ocultas puntúan con la Cueva)"
+  },
+  "supply_cave": {
+    "name": "Cueva de suministros",
+    "scoring": "0 puntos (efecto durante la partida; las cartas ocultas puntúan con la Cueva)"
+  },
   "wild_boar_piglet": {
     "name": "Jabato",
-    "scoring": "1 punto por Jabato"
+    "scoring": "1 punto por Jabato",
+    "context": "¿Cuántos Jabatos muestran el símbolo de Woodland?"
   },
   "honey_bee": {
     "name": "Abeja melífera",
     "scoring": "1 punto por planta"
   },
-
   "ash": {
     "name": "Fresno común",
     "scoring": "1 punto por carta con el mismo símbolo de árbol + 1 por planta (plantas contadas automáticamente)",
@@ -515,7 +523,6 @@
     "name": "Saúco negro",
     "scoring": "0 puntos (solo efecto permanente)"
   },
-
   "blanket_bog": {
     "name": "Turbera",
     "scoring": "Duplica los puntos de las plantas colocadas debajo",
@@ -558,7 +565,6 @@
     "name": "Páramo universal",
     "scoring": "0 puntos (cuenta como un páramo)"
   },
-
   "barn_owl_d": {
     "name": "Lechuza común",
     "scoring": "3 puntos por murciélago en tu bosque"
@@ -616,7 +622,6 @@
     "scoring": "5 puntos cada uno si en un páramo",
     "context": "¿Cuántas Collalbas están en un páramo?"
   },
-
   "adder": {
     "name": "Víbora",
     "scoring": "1 punto por anfibio + 1 por ratón en tu bosque"
@@ -682,7 +687,6 @@
     "name": "Soldado de agua",
     "scoring": "2 puntos por libélula en tu bosque"
   },
-
   "alcathoe_bat": {
     "name": "Murciélago de Alcathoe",
     "scoring": "Murciélagos: 5 pts cada uno si 3+ especies"
@@ -761,7 +765,6 @@
     "name": "Ratón de campo",
     "scoring": "1 punto por ratón en tu bosque (incluyéndose)"
   },
-
   "cave_d": {
     "name": "Cueva",
     "scoring": "1 punto por carta en la cueva"
@@ -770,7 +773,6 @@
     "name": "Cueva 4",
     "scoring": "5 puntos"
   },
-
   "holly": {
     "name": "Acebo",
     "scoring": "0 puntos (solo efecto permanente)"

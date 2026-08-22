@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Laie",
-    "scoring": "10 points chacune si au moins 1 Marcassin\u00a0; sinon 0"
+    "scoring": "10 points par Marcassin dans votre forêt"
   },
   "cave": {
     "name": "Grotte",
@@ -466,21 +466,29 @@
   },
   "bat_cave": {
     "name": "Grotte des chauves-souris",
-    "scoring": "Chaque chauve-souris rapporte 3 points suppl\u00e9mentaires"
+    "scoring": "Chaque chauve-souris rapporte 3 points supplémentaires"
   },
   "lonely_cave": {
     "name": "Grotte abandonnée",
     "scoring": "5 points si aucune carte grotte standard\u00a0; sinon 0"
   },
+  "smugglers_cave": {
+    "name": "Grotte des contrebandiers",
+    "scoring": "0 point (effet en cours de partie\u00a0; les cartes cachées comptent via la Grotte)"
+  },
+  "supply_cave": {
+    "name": "Grotte aux provisions",
+    "scoring": "0 point (effet en cours de partie\u00a0; les cartes cachées comptent via la Grotte)"
+  },
   "wild_boar_piglet": {
     "name": "Marcassin",
-    "scoring": "1 point par Marcassin"
+    "scoring": "1 point par Marcassin",
+    "context": "Combien de Marcassins portent le symbole Lisière de forêt\u00a0?"
   },
   "honey_bee": {
     "name": "Abeille mellifère",
     "scoring": "1 point par plante"
   },
-
   "ash": {
     "name": "Frêne commun",
     "scoring": "1 point par carte avec le même symbole d'arbre + 1 par plante (plantes comptées automatiquement)",
@@ -515,7 +523,6 @@
     "name": "Sureau noir",
     "scoring": "0 points (effet permanent uniquement)"
   },
-
   "blanket_bog": {
     "name": "Tourbière",
     "scoring": "Double les points des plantes placées en dessous",
@@ -558,7 +565,6 @@
     "name": "Lande universelle",
     "scoring": "0 point (compte comme une lande)"
   },
-
   "barn_owl_d": {
     "name": "Effraie des clochers",
     "scoring": "3 points par chauve-souris dans votre forêt"
@@ -616,7 +622,6 @@
     "scoring": "5 points chacun si sur une Lande",
     "context": "Combien de Traquets motteux sont sur une Lande\u00a0?"
   },
-
   "adder": {
     "name": "Vipère péliade",
     "scoring": "1 point par amphibien + 1 par souris dans votre forêt"
@@ -682,7 +687,6 @@
     "name": "Faux aloès",
     "scoring": "2 points par libellule dans votre forêt"
   },
-
   "alcathoe_bat": {
     "name": "Murin d'Alcathoe",
     "scoring": "Chauves-souris\u00a0: 5 pts chacune si 3+ espèces"
@@ -761,7 +765,6 @@
     "name": "Mulot sylvestre",
     "scoring": "1 point par souris dans votre forêt (lui-même inclus)"
   },
-
   "cave_d": {
     "name": "Grotte",
     "scoring": "1 point par carte dans la grotte"
@@ -770,7 +773,6 @@
     "name": "Grotte 4",
     "scoring": "5 points"
   },
-
   "holly": {
     "name": "Houx commun",
     "scoring": "0 point (effet permanent uniquement)"
@@ -831,7 +833,7 @@
   "smooth_snake": {
     "name": "Coronelle lisse",
     "scoring": "1 point par icône d'arbre dans votre forêt",
-    "context": "Combien d'icônes d'arbre dans votre forêt ?"
+    "context": "Combien d'icônes d'arbre dans votre forêt\u00a0?"
   },
   "sundew": {
     "name": "Droséra",

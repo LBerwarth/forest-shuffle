@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Wild Boar (Female)",
-    "scoring": "10 points each if at least 1 Squeaker; otherwise 0"
+    "scoring": "10 points per Squeaker in your forest"
   },
   "cave": {
     "name": "Cave",
@@ -472,15 +472,23 @@
     "name": "Lonely Cave",
     "scoring": "5 points if no regular cave cards; otherwise 0"
   },
+  "smugglers_cave": {
+    "name": "Smugglers' Cave",
+    "scoring": "0 points (in-game effect; hidden cards score via the Cave)"
+  },
+  "supply_cave": {
+    "name": "Supply Cave",
+    "scoring": "0 points (in-game effect; hidden cards score via the Cave)"
+  },
   "wild_boar_piglet": {
     "name": "Squeaker",
-    "scoring": "1 point per Squeaker"
+    "scoring": "1 point per Squeaker",
+    "context": "How many Squeakers show the Woodland Edge symbol?"
   },
   "honey_bee": {
     "name": "Honey Bee",
     "scoring": "1 point per plant"
   },
-
   "ash": {
     "name": "Ash",
     "scoring": "1 point per card with the same tree symbol + 1 per plant (plants counted automatically)",
@@ -515,7 +523,6 @@
     "name": "Elderberry",
     "scoring": "0 points (permanent effect only)"
   },
-
   "blanket_bog": {
     "name": "Blanket Bog",
     "scoring": "Doubles points of plants placed below it",
@@ -558,7 +565,6 @@
     "name": "Universal Moor",
     "scoring": "0 points (counts as a moor)"
   },
-
   "barn_owl_d": {
     "name": "Barn Owl",
     "scoring": "3 points per bat in your forest"
@@ -616,7 +622,6 @@
     "scoring": "5 points each if in a moor",
     "context": "How many Wheatears are in a moor?"
   },
-
   "adder": {
     "name": "Adder",
     "scoring": "1 point per amphibian + 1 per mouse in your forest"
@@ -682,7 +687,6 @@
     "name": "Water Soldiers",
     "scoring": "2 points per dragonfly in your forest"
   },
-
   "alcathoe_bat": {
     "name": "Alcathoe Bat",
     "scoring": "Bats: 5 pts each if 3+ bat species"
@@ -761,7 +765,6 @@
     "name": "Wood Mouse",
     "scoring": "1 point per mouse in your forest (incl. itself)"
   },
-
   "cave_d": {
     "name": "Cave",
     "scoring": "1 point per card in the cave"
@@ -770,7 +773,6 @@
     "name": "Cave 4",
     "scoring": "5 points"
   },
-
   "holly": {
     "name": "Holly",
     "scoring": "0 points (permanent effect only)"

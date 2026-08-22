@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Wild zwijn (zeug)",
-    "scoring": "10 punten per stuk bij minstens 1 Frisling; anders 0"
+    "scoring": "10 punten per Frisling in je bos"
   },
   "cave": {
     "name": "Grot",
@@ -472,15 +472,23 @@
     "name": "Eenzame grot",
     "scoring": "5 punten als er geen gewone grotkaarten zijn; anders 0"
   },
+  "smugglers_cave": {
+    "name": "Smokkelaarsgrot",
+    "scoring": "0 punten (effect tijdens het spel; verborgen kaarten tellen via de Grot)"
+  },
+  "supply_cave": {
+    "name": "Voorraadgrot",
+    "scoring": "0 punten (effect tijdens het spel; verborgen kaarten tellen via de Grot)"
+  },
   "wild_boar_piglet": {
     "name": "Frisling",
-    "scoring": "1 punt per Frisling"
+    "scoring": "1 punt per Frisling",
+    "context": "Hoeveel Frislingen tonen het Woodland-symbool?"
   },
   "honey_bee": {
     "name": "Honingbij",
     "scoring": "1 punt per plant"
   },
-
   "ash": {
     "name": "Es",
     "scoring": "1 punt per kaart met hetzelfde boomsymbool + 1 per plant (planten automatisch geteld)",
@@ -515,7 +523,6 @@
     "name": "Gewone vlier",
     "scoring": "0 punten (alleen permanent effect)"
   },
-
   "blanket_bog": {
     "name": "Hoogveen",
     "scoring": "Verdubbelt de punten van planten die eronder liggen",
@@ -558,7 +565,6 @@
     "name": "Universeel veen",
     "scoring": "0 punten (telt als veen)"
   },
-
   "barn_owl_d": {
     "name": "Kerkuil",
     "scoring": "3 punten per vleermuis in je bos"
@@ -616,7 +622,6 @@
     "scoring": "5 punten per stuk als in een veen",
     "context": "Hoeveel Tapuiten zitten in een veen?"
   },
-
   "adder": {
     "name": "Adder",
     "scoring": "1 punt per amfibie + 1 per muis in je bos"
@@ -682,7 +687,6 @@
     "name": "Krabbenscheer",
     "scoring": "2 punten per libel in je bos"
   },
-
   "alcathoe_bat": {
     "name": "Nimfvleermuis",
     "scoring": "Vleermuizen: 5 ptn per stuk bij 3+ soorten"
@@ -761,7 +765,6 @@
     "name": "Bosmuis",
     "scoring": "1 punt per muis in je bos (incl. zichzelf)"
   },
-
   "cave_d": {
     "name": "Grot",
     "scoring": "1 punt per kaart in de grot"
@@ -770,7 +773,6 @@
     "name": "Grot 4",
     "scoring": "5 punten"
   },
-
   "holly": {
     "name": "Hulst",
     "scoring": "0 punten (alleen permanent effect)"

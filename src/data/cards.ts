@@ -18,10 +18,10 @@ export const CARDS: CardDefinition[] = [
   // Alpine trees
   { key: 'european_larch', category: 'tree', tags: ['tree', 'alpine'], expansion: 'alpine', scoringType: 'fixed' },
   { key: 'stone_pine', category: 'tree', tags: ['tree', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
-  // Woodland trees
-  { key: 'palm_tree', category: 'tree', tags: ['tree', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'turkey_oak', category: 'tree', tags: ['tree', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'o_christmas_tree', category: 'tree', tags: ['tree', 'woodland_edge'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
+  // Exploration trees (promo compilation P004/P014/P015) — no woodland-edge symbol
+  { key: 'palm_tree', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'turkey_oak', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'o_christmas_tree', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'custom', needsContext: true },
   { key: 'tree_sapling', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'fixed' },
   // Woodland shrubs (count as trees for card slots, but NOT for tree counts)
   { key: 'common_hazel', category: 'tree', tags: ['woodland_edge', 'shrub'], expansion: 'woodland', scoringType: 'fixed' },
@@ -48,17 +48,18 @@ export const CARDS: CardDefinition[] = [
   { key: 'bearded_vulture', category: 'top', tags: ['bird', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
   { key: 'common_raven', category: 'top', tags: ['bird', 'alpine'], expansion: 'alpine', scoringType: 'fixed' },
   { key: 'phoebus_apollo', category: 'top', tags: ['butterfly', 'insect', 'alpine'], expansion: 'alpine', scoringType: 'set' },
-  // Woodland top
-  { key: 'barn_owl', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'brimstone', category: 'top', tags: ['butterfly', 'insect'], expansion: 'woodland', scoringType: 'set' },
-  { key: 'cardinal', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'cuckoo', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'eurasian_magpie', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'map_butterfly', category: 'top', tags: ['butterfly', 'insect'], expansion: 'woodland', scoringType: 'set' },
-  { key: 'mistletoe', category: 'top', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'nightingale', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'conditional', needsContext: true, contextCappedByCount: true },
-  { key: 'robin', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'whinchat', category: 'top', tags: ['bird'], expansion: 'woodland', scoringType: 'per_tag' },
+  // Woodland top (all Woodland Edge cards carry the woodland-edge symbol)
+  { key: 'barn_owl', category: 'top', tags: ['bird', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'eurasian_magpie', category: 'top', tags: ['bird', 'woodland_edge'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'map_butterfly', category: 'top', tags: ['butterfly', 'insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'set' },
+  { key: 'nightingale', category: 'top', tags: ['bird', 'woodland_edge'], expansion: 'woodland', scoringType: 'conditional', needsContext: true, contextCappedByCount: true },
+  // Exploration top (promo compilation)
+  { key: 'brimstone', category: 'top', tags: ['butterfly', 'insect'], expansion: 'exploration', scoringType: 'set' },
+  { key: 'cardinal', category: 'top', tags: ['bird'], expansion: 'exploration', scoringType: 'fixed' },
+  { key: 'cuckoo', category: 'top', tags: ['bird'], expansion: 'exploration', scoringType: 'fixed' },
+  { key: 'mistletoe', category: 'top', tags: ['plant'], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'robin', category: 'top', tags: ['bird'], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'whinchat', category: 'top', tags: ['bird'], expansion: 'exploration', scoringType: 'per_tag' },
 
   // ============================================================
   // BOTTOM SLOT
@@ -85,17 +86,20 @@ export const CARDS: CardDefinition[] = [
   { key: 'blueberry', category: 'bottom', tags: ['plant', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
   { key: 'gentian', category: 'bottom', tags: ['plant', 'alpine'], expansion: 'alpine', scoringType: 'per_tag' },
   { key: 'edelweiss', category: 'bottom', tags: ['plant', 'alpine'], expansion: 'alpine', scoringType: 'fixed' },
-  // Woodland bottom
-  { key: 'black_trumpet', category: 'bottom', tags: ['mushroom'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'digitalis', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'custom' },
-  { key: 'great_green_bush_cricket', category: 'bottom', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'marsh_cinquefoil', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'custom' },
-  { key: 'stinging_nettle', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'water_vole', category: 'bottom', tags: ['amphibian'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'woodland', scoringType: 'fixed' },
-  // Key kept for saved-game compat; this is the base-game card "Squeaker" (Frischling)
-  { key: 'wild_boar_piglet', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'fixed' },
-  { key: 'honey_bee', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
+  // Woodland bottom (all Woodland Edge cards carry the woodland-edge symbol)
+  { key: 'black_trumpet', category: 'bottom', tags: ['mushroom', 'woodland_edge'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'digitalis', category: 'bottom', tags: ['plant', 'woodland_edge'], expansion: 'woodland', scoringType: 'custom' },
+  { key: 'great_green_bush_cricket', category: 'bottom', tags: ['insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'stinging_nettle', category: 'bottom', tags: ['plant', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'water_vole', category: 'bottom', tags: ['amphibian', 'woodland_edge'], expansion: 'woodland', scoringType: 'fixed' },
+  // Exploration bottom (promo compilation)
+  { key: 'marsh_cinquefoil', category: 'bottom', tags: ['plant'], expansion: 'exploration', scoringType: 'custom' },
+  { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'exploration', scoringType: 'fixed' },
+  // Key kept for saved-game compat; this is the base-game card "Squeaker" (Frischling).
+  // Woodland Edge adds Squeaker copies that carry the woodland-edge symbol — the
+  // context question asks how many, so the Wildcat can count them.
+  { key: 'wild_boar_piglet', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'base', scoringType: 'fixed', needsContext: true, contextCappedByCount: true, contextOnlyWithExpansion: 'woodland' },
+  { key: 'honey_bee', category: 'lateral', tags: ['insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
 
   // ============================================================
   // LATERAL SLOT
@@ -130,20 +134,21 @@ export const CARDS: CardDefinition[] = [
   { key: 'savis_pipistrelle', category: 'lateral', tags: ['bat', 'alpine'], expansion: 'alpine', scoringType: 'set' },
   // Horns, not antlers: no deer symbol on the card, so the Wolf must not score it
   { key: 'chamois', category: 'lateral', tags: ['alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'custom', needsContext: true },
-  // Woodland lateral
-  { key: 'bee_swarm', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'common_pipistrelle', category: 'lateral', tags: ['bat'], expansion: 'woodland', scoringType: 'set' },
-  { key: 'crane_fly', category: 'lateral', tags: ['insect'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'elk', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
-  { key: 'european_bison', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
-  { key: 'european_polecat', category: 'lateral', tags: ['pawed'], expansion: 'woodland', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
+  // Woodland lateral (all Woodland Edge cards carry the woodland-edge symbol)
+  { key: 'bee_swarm', category: 'lateral', tags: ['insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'common_pipistrelle', category: 'lateral', tags: ['bat', 'woodland_edge'], expansion: 'woodland', scoringType: 'set' },
+  { key: 'crane_fly', category: 'lateral', tags: ['insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
+  { key: 'european_bison', category: 'lateral', tags: ['cloven_hoofed', 'woodland_edge'], expansion: 'woodland', scoringType: 'custom', needsContext: true },
+  { key: 'european_polecat', category: 'lateral', tags: ['pawed', 'woodland_edge'], expansion: 'woodland', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
   { key: 'european_wildcat', category: 'lateral', tags: ['pawed', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'genet', category: 'lateral', tags: ['pawed'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'red_panda', category: 'lateral', tags: ['pawed'], expansion: 'woodland', scoringType: 'fixed' },
-  { key: 'sable', category: 'lateral', tags: ['pawed'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'troll', category: 'lateral', tags: [], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'white_stork', category: 'lateral', tags: ['bird'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'wild_boar_female', category: 'lateral', tags: ['cloven_hoofed'], expansion: 'woodland', scoringType: 'per_card' },
+  { key: 'wild_boar_female', category: 'lateral', tags: ['cloven_hoofed', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_card' },
+  // Exploration lateral (promo compilation)
+  { key: 'elk', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'exploration', scoringType: 'custom', needsContext: true },
+  { key: 'genet', category: 'lateral', tags: ['pawed'], expansion: 'exploration', scoringType: 'fixed' },
+  { key: 'red_panda', category: 'lateral', tags: ['pawed'], expansion: 'exploration', scoringType: 'fixed' },
+  { key: 'sable', category: 'lateral', tags: ['pawed'], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'troll', category: 'lateral', tags: [], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'white_stork', category: 'lateral', tags: ['bird'], expansion: 'exploration', scoringType: 'per_tag' },
 
   // ============================================================
   // CAVE
@@ -153,6 +158,8 @@ export const CARDS: CardDefinition[] = [
   { key: 'collectors_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
   { key: 'bat_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
   { key: 'lonely_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
+  { key: 'smugglers_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
+  { key: 'supply_cave', category: 'cave', tags: [], expansion: 'exploration', scoringType: 'custom' },
 ]
 
 /** Get cards filtered by enabled expansions and edition */

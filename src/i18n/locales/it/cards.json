@@ -454,7 +454,7 @@
   },
   "wild_boar_female": {
     "name": "Cinghiale (femmina)",
-    "scoring": "10 punti ciascuna se almeno 1 Cinghialetto; altrimenti 0"
+    "scoring": "10 punti per ogni Cinghialetto nella tua foresta"
   },
   "cave": {
     "name": "Grotta",
@@ -472,15 +472,23 @@
     "name": "Grotta solitaria",
     "scoring": "5 punti se nessuna carta grotta normale; altrimenti 0"
   },
+  "smugglers_cave": {
+    "name": "Grotta dei contrabbandieri",
+    "scoring": "0 punti (effetto in partita; le carte nascoste contano con la Grotta)"
+  },
+  "supply_cave": {
+    "name": "Grotta delle provviste",
+    "scoring": "0 punti (effetto in partita; le carte nascoste contano con la Grotta)"
+  },
   "wild_boar_piglet": {
     "name": "Cinghialetto",
-    "scoring": "1 punto per Cinghialetto"
+    "scoring": "1 punto per Cinghialetto",
+    "context": "Quanti Cinghialetti mostrano il simbolo Woodland?"
   },
   "honey_bee": {
     "name": "Ape mellifera",
     "scoring": "1 punto per pianta"
   },
-
   "ash": {
     "name": "Frassino",
     "scoring": "1 punto per carta con lo stesso simbolo d'albero + 1 per pianta (piante contate automaticamente)",
@@ -515,7 +523,6 @@
     "name": "Sambuco nero",
     "scoring": "0 punti (solo effetto permanente)"
   },
-
   "blanket_bog": {
     "name": "Torbiera di copertura",
     "scoring": "Raddoppia i punti delle piante poste sotto di essa",
@@ -558,7 +565,6 @@
     "name": "Brughiera universale",
     "scoring": "0 punti (conta come brughiera)"
   },
-
   "barn_owl_d": {
     "name": "Barbagianni",
     "scoring": "3 punti per pipistrello nel tuo bosco"
@@ -616,7 +622,6 @@
     "scoring": "5 punti ciascuno se in una brughiera",
     "context": "Quanti Culbianchi sono in una brughiera?"
   },
-
   "adder": {
     "name": "Marasso",
     "scoring": "1 punto per anfibio + 1 per topo nel tuo bosco"
@@ -682,7 +687,6 @@
     "name": "Aloe d'acqua",
     "scoring": "2 punti per libellula nel tuo bosco"
   },
-
   "alcathoe_bat": {
     "name": "Vespertilio di Alcathoe",
     "scoring": "Pipistrelli: 5 pt ciascuno se 3+ specie di pipistrelli"
@@ -761,7 +765,6 @@
     "name": "Topo selvatico",
     "scoring": "1 punto per topo nel tuo bosco (se stesso incluso)"
   },
-
   "cave_d": {
     "name": "Grotta",
     "scoring": "1 punto per carta nella grotta"
@@ -770,7 +773,6 @@
     "name": "Grotta 4",
     "scoring": "5 punti"
   },
-
   "holly": {
     "name": "Agrifoglio",
     "scoring": "0 punti (solo effetto permanente)"
