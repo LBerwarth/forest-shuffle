@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Töltsd le az ingyenes Android-alkalmazást a Google Play-ről!",
     "playAction": "Letöltés",
+    "iosMessage": "Telepítsd az appot: koppints erre: <icon/>, majd „Hozzáadás a Főképernyőhöz”.",
     "message": "Telepítsd az appot a telefonodra a jobb élményért!",
     "action": "Telepítés",
     "dismiss": "Bezárás"

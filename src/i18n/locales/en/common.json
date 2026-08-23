@@ -327,6 +327,7 @@
   "install": {
     "playMessage": "Get the free Android app on Google Play!",
     "playAction": "Get app",
+    "iosMessage": "Install this app: tap <icon/> then “Add to Home Screen”.",
     "message": "Install this app on your phone for a better experience!",
     "action": "Install",
     "dismiss": "Dismiss"

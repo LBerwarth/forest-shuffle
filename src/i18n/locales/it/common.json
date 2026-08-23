@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Scarica l'app Android gratuita su Google Play!",
     "playAction": "Scarica",
+    "iosMessage": "Installa l'app: tocca <icon/> e poi “Aggiungi alla schermata Home”.",
     "message": "Installa questa app sul telefono per un'esperienza migliore!",
     "action": "Installa",
     "dismiss": "Ignora"

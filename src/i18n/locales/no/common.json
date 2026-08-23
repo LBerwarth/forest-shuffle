@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Last ned den gratis Android-appen på Google Play!",
     "playAction": "Last ned",
+    "iosMessage": "Installer appen: trykk på <icon/> og deretter «Legg til på Hjem-skjerm».",
     "message": "Installer denne appen på telefonen din for en bedre opplevelse!",
     "action": "Installer",
     "dismiss": "Avvis"

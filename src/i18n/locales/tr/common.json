@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Ücretsiz Android uygulamasını Google Play'den indirin!",
     "playAction": "İndir",
+    "iosMessage": "Uygulamayı yükle: <icon/> simgesine, sonra “Ana Ekrana Ekle”ye dokun.",
     "message": "Daha iyi bir deneyim için bu uygulamayı telefonuna yükle!",
     "action": "Yükle",
     "dismiss": "Kapat"

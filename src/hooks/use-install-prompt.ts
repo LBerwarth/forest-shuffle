@@ -16,7 +16,10 @@ export function useInstallPrompt() {
 
   useEffect(() => {
     // Check if already installed (standalone mode)
-    if (window.matchMedia('(display-mode: standalone)').matches) {
+    if (
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (navigator as Navigator & { standalone?: boolean }).standalone === true
+    ) {
       setIsInstalled(true)
       return
     }
@@ -59,12 +62,18 @@ export function useInstallPrompt() {
   }
 
   const isAndroidBrowser = /android/i.test(navigator.userAgent)
+  // iPadOS 13+ reports as Macintosh; touch support tells it apart
+  const isIosBrowser =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1)
 
   return {
     canInstall: !!deferredPrompt && !isInstalled,
     // prefer_related_applications suppresses beforeinstallprompt on Android,
     // so Android browsers get a Play Store link instead
     showPlayStore: isAndroidBrowser && !isInstalled && !playAppInstalled,
+    // iOS has no install prompt at all — show manual Add-to-Home-Screen hint
+    showIos: isIosBrowser && !isInstalled,
     isInstalled,
     install,
   }

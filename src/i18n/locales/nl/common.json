@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Download de gratis Android-app in Google Play!",
     "playAction": "Downloaden",
+    "iosMessage": "Installeer de app: tik op <icon/> en dan op “Zet op beginscherm”.",
     "message": "Installeer deze app op je telefoon voor een betere ervaring!",
     "action": "Installeren",
     "dismiss": "Sluiten"

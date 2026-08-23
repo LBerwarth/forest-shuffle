@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Baixe o app Android gratuito no Google Play!",
     "playAction": "Baixar",
+    "iosMessage": "Instale a app: toque em <icon/> e depois em “Adicionar ao ecrã principal”.",
     "message": "Instale esta app no seu telefone para uma melhor experiência!",
     "action": "Instalar",
     "dismiss": "Fechar"

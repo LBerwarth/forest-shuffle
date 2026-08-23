@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Lataa ilmainen Android-sovellus Google Playsta!",
     "playAction": "Lataa",
+    "iosMessage": "Asenna sovellus: napauta <icon/> ja valitse ”Lisää Koti-valikkoon”.",
     "message": "Asenna tämä sovellus puhelimeesi parempaa käyttökokemusta varten!",
     "action": "Asenna",
     "dismiss": "Hylkää"

@@ -323,6 +323,7 @@
   "install": {
     "playMessage": "Hämta den kostnadsfria Android-appen på Google Play!",
     "playAction": "Hämta app",
+    "iosMessage": "Installera appen: tryck på <icon/> och sedan ”Lägg till på hemskärmen”.",
     "message": "Installera appen på din telefon för en bättre upplevelse!",
     "action": "Installera",
     "dismiss": "Avfärda"
