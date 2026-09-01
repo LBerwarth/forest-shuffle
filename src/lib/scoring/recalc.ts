@@ -49,7 +49,9 @@ export function recalcPlayer(
   // A Violet Carpenter Bee counts as an extra tree of its host species
   // (reference card #13), so it must feed the cross-player comparisons too
   const beeHosts = (p: PlayerScoringData): string[] =>
-    (p.cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? []).filter(Boolean)
+    (p.cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? [])
+      .slice(0, p.cardCounts['violet_carpenter_bee'] || 0)
+      .filter(Boolean)
   const allLindenCounts = allPlayers.map((p) =>
     (p.cardCounts['linden'] || 0) + beeHosts(p).filter((k) => k === 'linden').length,
   )

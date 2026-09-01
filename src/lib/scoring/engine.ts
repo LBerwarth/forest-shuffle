@@ -449,7 +449,10 @@ export function buildForestContext(
   // stays a 1-count insect lateral — tags, slot counts, and species counts are
   // unaffected. Each bee can have its own host tree.
   let effectiveCardCounts = cardCounts
-  const beeHostKeys = cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? []
+  // Cap by bee count: host picks outlive a removed bee in saved metadata
+  const beeHostKeys = (cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? [])
+    .slice(0, cardCounts['violet_carpenter_bee'] || 0)
+    .filter(Boolean)
   if (beeHostKeys.length > 0) {
     const bumped = { ...cardCounts }
     for (const hostKey of beeHostKeys) {

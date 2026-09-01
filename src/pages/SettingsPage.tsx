@@ -344,7 +344,7 @@ export function SettingsPage() {
       <Card>
         <CardContent className="py-4 text-center">
           <p className="text-sm font-medium text-forest-600">{t('settings.appName')}</p>
-          <p className="text-xs text-forest-400 mt-1">{t('settings.version')}</p>
+          <p className="text-xs text-forest-400 mt-1">{`v${__APP_VERSION__}`}</p>
           <p className="text-xs text-forest-300 mt-2">
             {t('settings.appDesc')}
           </p>

@@ -21,7 +21,7 @@ export function FeedbackForm() {
   const { t } = useTranslation()
   const tc = useTranslation('cards').t
   const language = useSettingsStore((s) => s.language)
-  const appVersion = t('settings.version')
+  const appVersion = `v${__APP_VERSION__}`
 
   const [items, setItems] = useState<FeedbackItem[]>([])
   const [query, setQuery] = useState('')
