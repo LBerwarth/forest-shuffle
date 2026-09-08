@@ -304,7 +304,9 @@
     "send": "Odeslat zpětnou vazbu",
     "sending": "Odesílání…",
     "sent": "Díky! Tvá zpětná vazba byla odeslána.",
-    "emailSubject": "Forest Shuffle – zpětná vazba"
+    "emailSubject": "Forest Shuffle – zpětná vazba",
+    "emailLabel": "Tvůj e-mail (nepovinné, pro odpověď)",
+    "emailPlaceholder": "ty@priklad.cz"
   },
   "review": {
     "title": "Líbí se ti aplikace?",

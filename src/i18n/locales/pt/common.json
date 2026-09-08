@@ -301,7 +301,9 @@
     "send": "Enviar feedback",
     "sending": "Enviando…",
     "sent": "Obrigado! Seu feedback foi enviado.",
-    "emailSubject": "Feedback do Forest Shuffle"
+    "emailSubject": "Feedback do Forest Shuffle",
+    "emailLabel": "Seu e-mail (opcional, para eu poder responder)",
+    "emailPlaceholder": "voce@exemplo.com"
   },
   "review": {
     "title": "Gosta da aplicação?",

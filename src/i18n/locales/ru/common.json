@@ -303,7 +303,9 @@
     "send": "Отправить отзыв",
     "sending": "Отправка…",
     "sent": "Спасибо! Твой отзыв отправлен.",
-    "emailSubject": "Отзыв о Forest Shuffle"
+    "emailSubject": "Отзыв о Forest Shuffle",
+    "emailLabel": "Твой e-mail (необязательно, для ответа)",
+    "emailPlaceholder": "you@example.com"
   },
   "review": {
     "title": "Нравится приложение?",

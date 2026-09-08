@@ -276,6 +276,7 @@ export interface FeedbackInput {
   language: string
   appVersion: string
   message?: string
+  email?: string
   items: FeedbackItem[]
 }
 
@@ -291,6 +292,7 @@ export async function submitFeedback(input: FeedbackInput): Promise<void> {
     language: input.language,
     app_version: input.appVersion,
     message: input.message || null,
+    email: input.email || null,
     items: input.items,
   })
   if (error) throw error

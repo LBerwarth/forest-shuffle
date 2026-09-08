@@ -305,7 +305,9 @@
     "send": "Enviar comentarios",
     "sending": "Enviando…",
     "sent": "¡Gracias! Tus comentarios se han enviado.",
-    "emailSubject": "Comentarios de Forest Shuffle"
+    "emailSubject": "Comentarios de Forest Shuffle",
+    "emailLabel": "Tu correo (opcional, para poder responderte)",
+    "emailPlaceholder": "tu@ejemplo.com"
   },
   "review": {
     "title": "¿Te gusta la app?",

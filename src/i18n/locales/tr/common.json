@@ -301,7 +301,9 @@
     "send": "Geri bildirim gönder",
     "sending": "Gönderiliyor…",
     "sent": "Teşekkürler! Geri bildirimin gönderildi.",
-    "emailSubject": "Forest Shuffle geri bildirimi"
+    "emailSubject": "Forest Shuffle geri bildirimi",
+    "emailLabel": "E-postan (isteğe bağlı, cevap verebilmem için)",
+    "emailPlaceholder": "sen@ornek.com"
   },
   "review": {
     "title": "Uygulamayı beğendin mi?",

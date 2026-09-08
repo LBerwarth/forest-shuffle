@@ -305,7 +305,9 @@
     "send": "Envoyer le retour",
     "sending": "Envoi…",
     "sent": "Merci ! Ton retour a été envoyé.",
-    "emailSubject": "Retour Forest Shuffle"
+    "emailSubject": "Retour Forest Shuffle",
+    "emailLabel": "Ton e-mail (facultatif, pour la réponse)",
+    "emailPlaceholder": "toi@exemple.fr"
   },
   "review": {
     "title": "L'appli te plaît ?",

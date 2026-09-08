@@ -301,7 +301,9 @@
     "send": "Feedback versturen",
     "sending": "Versturen…",
     "sent": "Bedankt! Je feedback is verstuurd.",
-    "emailSubject": "Forest Shuffle feedback"
+    "emailSubject": "Forest Shuffle feedback",
+    "emailLabel": "Je e-mail (optioneel, zodat ik kan antwoorden)",
+    "emailPlaceholder": "jij@voorbeeld.nl"
   },
   "review": {
     "title": "Bevalt de app?",

@@ -27,6 +27,7 @@ export function FeedbackForm() {
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const [message, setMessage] = useState('')
+  const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const pickerRef = useRef<HTMLDivElement>(null)
 
@@ -92,7 +93,13 @@ export function FeedbackForm() {
     // Store first; keep going to the email even if the DB write fails so the
     // feedback is never lost.
     try {
-      await submitFeedback({ language, appVersion, message: message.trim() || undefined, items })
+      await submitFeedback({
+        language,
+        appVersion,
+        message: message.trim() || undefined,
+        email: email.trim() || undefined,
+        items,
+      })
     } catch (err) {
       console.error('Failed to store feedback:', err)
     }
@@ -206,6 +213,22 @@ export function FeedbackForm() {
           />
         </div>
       ))}
+
+      {/* Optional reply address — the only field where autofill is welcome */}
+      <label className="block space-y-1">
+        <span className="text-xs text-forest-400">{t('feedback.emailLabel')}</span>
+        <input
+          type="email"
+          name="email"
+          autoComplete="email"
+          inputMode="email"
+          maxLength={200}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder={t('feedback.emailPlaceholder')}
+          className="w-full rounded-lg border border-forest-200 bg-forest-50 px-3 py-2 text-sm text-forest-700 placeholder:text-forest-300 focus:border-forest-400 focus:outline-none"
+        />
+      </label>
 
       <Button type="submit" size="sm" disabled={!canSend || status === 'sending'}>
         <Send className="h-3.5 w-3.5" />

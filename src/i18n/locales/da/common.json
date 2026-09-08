@@ -301,7 +301,9 @@
     "send": "Send feedback",
     "sending": "Sender…",
     "sent": "Tak! Din feedback er blevet sendt.",
-    "emailSubject": "Forest Shuffle feedback"
+    "emailSubject": "Forest Shuffle feedback",
+    "emailLabel": "Din e-mail (valgfrit, så jeg kan svare)",
+    "emailPlaceholder": "dig@eksempel.dk"
   },
   "review": {
     "title": "Kan du lide appen?",

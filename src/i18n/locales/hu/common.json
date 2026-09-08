@@ -301,7 +301,9 @@
     "send": "Visszajelzés küldése",
     "sending": "Küldés…",
     "sent": "Köszönjük! A visszajelzésed elküldtük.",
-    "emailSubject": "Forest Shuffle visszajelzés"
+    "emailSubject": "Forest Shuffle visszajelzés",
+    "emailLabel": "Az e-mail-címed (nem kötelező, hogy válaszolhassak)",
+    "emailPlaceholder": "te@pelda.hu"
   },
   "review": {
     "title": "Tetszik az alkalmazás?",

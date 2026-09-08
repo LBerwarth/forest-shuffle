@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 
-const LAST_UPDATED = '2026-04-29'
+const LAST_UPDATED = '2026-09-08'
 const CONTACT_EMAIL = 'lena.berw@gmail.com'
 
 export function PrivacyPage() {
@@ -106,11 +106,17 @@ export function PrivacyPage() {
               participants who share a session code.
             </li>
             <li>Remember your preferences between visits.</li>
+            <li>
+              Reply to feedback you send through the App, if you chose to include your
+              e-mail address. The address is optional and is used for no other purpose.
+            </li>
           </ul>
           <p>
             The App does not sell your data. It does not use the data for advertising,
-            profiling, or marketing. There are no analytics, tracking pixels, or
-            advertising SDKs in the App.
+            profiling, or marketing. The App counts page views with Vercel Web Analytics,
+            which is cookie-free, does not store IP addresses, and does not track you
+            across websites (see below). There are no tracking pixels or advertising SDKs
+            in the App.
           </p>
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Sharing</h2>
@@ -145,6 +151,30 @@ export function PrivacyPage() {
               Google&apos;s privacy policy
             </a>
             . No identifiers from the App are sent with these requests.
+          </p>
+          <p>
+            The App is hosted on Vercel and uses{' '}
+            <a
+              href="https://vercel.com/docs/analytics/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-forest-600 underline"
+            >
+              Vercel Web Analytics
+            </a>{' '}
+            to measure aggregate usage (page views, country, device type). It sets no
+            cookies and stores no IP addresses; visitors are counted with a hash that is
+            discarded after 24 hours. Your device ID and game data are never sent to it.
+            See{' '}
+            <a
+              href="https://vercel.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-forest-600 underline"
+            >
+              Vercel&apos;s privacy policy
+            </a>
+            .
           </p>
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Children</h2>

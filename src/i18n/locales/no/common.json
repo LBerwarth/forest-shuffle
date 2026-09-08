@@ -301,7 +301,9 @@
     "send": "Send tilbakemelding",
     "sending": "Sender…",
     "sent": "Takk! Tilbakemeldingen din er sendt.",
-    "emailSubject": "Forest Shuffle-tilbakemelding"
+    "emailSubject": "Forest Shuffle-tilbakemelding",
+    "emailLabel": "Din e-post (valgfritt, så jeg kan svare)",
+    "emailPlaceholder": "deg@eksempel.no"
   },
   "review": {
     "title": "Liker du appen?",

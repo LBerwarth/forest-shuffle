@@ -301,7 +301,9 @@
     "send": "Lähetä palaute",
     "sending": "Lähetetään…",
     "sent": "Kiitos! Palautteesi on lähetetty.",
-    "emailSubject": "Forest Shuffle -palaute"
+    "emailSubject": "Forest Shuffle -palaute",
+    "emailLabel": "Sähköpostisi (valinnainen, jotta voin vastata)",
+    "emailPlaceholder": "sina@esimerkki.fi"
   },
   "review": {
     "title": "Pidätkö sovelluksesta?",

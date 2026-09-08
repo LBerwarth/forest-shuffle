@@ -303,7 +303,9 @@
     "send": "Надіслати відгук",
     "sending": "Надсилання…",
     "sent": "Дякуємо! Твій відгук надіслано.",
-    "emailSubject": "Відгук про Forest Shuffle"
+    "emailSubject": "Відгук про Forest Shuffle",
+    "emailLabel": "Твій e-mail (необов'язково, для відповіді)",
+    "emailPlaceholder": "you@example.com"
   },
   "review": {
     "title": "Подобається застосунок?",

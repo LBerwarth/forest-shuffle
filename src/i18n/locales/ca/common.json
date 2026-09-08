@@ -301,7 +301,9 @@
     "send": "Envia el comentari",
     "sending": "Enviant…",
     "sent": "Gràcies! El teu comentari s'ha enviat.",
-    "emailSubject": "Comentari de Forest Shuffle"
+    "emailSubject": "Comentari de Forest Shuffle",
+    "emailLabel": "El teu correu (opcional, per poder respondre't)",
+    "emailPlaceholder": "tu@exemple.cat"
   },
   "review": {
     "title": "T'agrada l'aplicació?",

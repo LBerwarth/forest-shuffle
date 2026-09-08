@@ -303,7 +303,9 @@
     "send": "Wyślij opinię",
     "sending": "Wysyłanie…",
     "sent": "Dzięki! Twoja opinia została wysłana.",
-    "emailSubject": "Opinia o Forest Shuffle"
+    "emailSubject": "Opinia o Forest Shuffle",
+    "emailLabel": "Twój e-mail (opcjonalnie, do odpowiedzi)",
+    "emailPlaceholder": "ty@przyklad.pl"
   },
   "review": {
     "title": "Podoba Ci się aplikacja?",
