@@ -6,6 +6,8 @@ import { recalcPlayer } from '@/lib/scoring/recalc'
 
 export interface PlayerScoring {
   playerId: string
+  /** Profile to save under; undefined = same as playerId, null = profile deleted */
+  profileId?: string | null
   playerName: string
   cardCounts: Record<string, number>
   cardMetadata: Record<string, CardMetadata>
@@ -22,9 +24,12 @@ interface ScoringState {
   players: PlayerScoring[]
   currentPlayerIndex: number
   currentStep: number
+  /** Original date when editing a saved game; null for a new game */
+  playedAt: string | null
 
   // Actions
   startSession: (playerNames: { id: string; name: string }[], expansions: Expansion[], edition?: GameEdition, sessionId?: string) => void
+  resumeSession: (session: { players: PlayerScoring[]; expansions: Expansion[]; edition: GameEdition; playedAt: string }) => void
   endSession: () => void
   setCurrentPlayer: (index: number) => void
   setCurrentStep: (step: number) => void
@@ -45,6 +50,7 @@ export const useScoringStore = create<ScoringState>()(
       players: [],
       currentPlayerIndex: 0,
       currentStep: 0,
+      playedAt: null,
 
       startSession: (playerNames, expansions, edition = 'classic', sessionId) => {
         const players: PlayerScoring[] = playerNames.map(({ id, name }) => ({
@@ -55,11 +61,19 @@ export const useScoringStore = create<ScoringState>()(
           fullyOccupiedTrees: 0,
           breakdown: null,
         }))
-        set({ sessionActive: true, sessionId: sessionId ?? null, players, expansions, edition, currentPlayerIndex: 0, currentStep: 0 })
+        set({ sessionActive: true, sessionId: sessionId ?? null, players, expansions, edition, currentPlayerIndex: 0, currentStep: 0, playedAt: null })
+      },
+
+      resumeSession: ({ players, expansions, edition, playedAt }) => {
+        const scored = players.map((p) => ({
+          ...p,
+          breakdown: recalcPlayer(p, players, expansions, edition),
+        }))
+        set({ sessionActive: true, sessionId: null, players: scored, expansions, edition, currentPlayerIndex: 0, currentStep: 0, playedAt })
       },
 
       endSession: () => {
-        set({ sessionActive: false, sessionId: null, players: [], currentPlayerIndex: 0, currentStep: 0 })
+        set({ sessionActive: false, sessionId: null, players: [], currentPlayerIndex: 0, currentStep: 0, playedAt: null })
       },
 
       setCurrentPlayer: (index) => set({ currentPlayerIndex: index }),

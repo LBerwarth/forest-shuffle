@@ -1,5 +1,6 @@
 import type { CardDefinition } from '@/types/card'
 import type { CardMetadata } from '@/types/scoring'
+import { hasMissingPerCopyContext } from './context'
 
 /** Cards with count > 0 whose context question was never answered */
 export function findMissingContextCards(
@@ -26,6 +27,7 @@ export function findMissingContextCards(
       if (card.contextOnlyWithExpansion && !cards.some((c) => c.expansion === card.contextOnlyWithExpansion)) {
         return false
       }
+      if (card.contextPerCopy) return hasMissingPerCopyContext(count, meta)
       // undefined = never touched; an explicit 0 counts as answered
       return meta?.contextValue === undefined
     }

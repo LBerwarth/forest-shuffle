@@ -108,7 +108,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'bechsteins_bat', category: 'lateral', tags: ['bat'], expansion: 'base', scoringType: 'set' },
   { key: 'brown_long_eared_bat', category: 'lateral', tags: ['bat'], expansion: 'base', scoringType: 'set' },
   { key: 'greater_horseshoe_bat', category: 'lateral', tags: ['bat'], expansion: 'base', scoringType: 'set' },
-  { key: 'roe_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'custom', needsContext: true },
+  { key: 'roe_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'custom', needsContext: true, contextPerCopy: true },
   { key: 'red_deer', category: 'lateral', tags: ['deer', 'cloven_hoofed'], expansion: 'base', scoringType: 'per_tag' },
   { key: 'lynx', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'threshold' },
   { key: 'wolf', category: 'lateral', tags: ['pawed'], expansion: 'base', scoringType: 'per_tag' },
@@ -133,7 +133,7 @@ export const CARDS: CardDefinition[] = [
   // Alpine lateral
   { key: 'savis_pipistrelle', category: 'lateral', tags: ['bat', 'alpine'], expansion: 'alpine', scoringType: 'set' },
   // Horns, not antlers: no deer symbol on the card, so the Wolf must not score it
-  { key: 'chamois', category: 'lateral', tags: ['alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'custom', needsContext: true },
+  { key: 'chamois', category: 'lateral', tags: ['alpine', 'cloven_hoofed'], expansion: 'alpine', scoringType: 'custom', needsContext: true, contextPerCopy: true },
   // Woodland lateral (all Woodland Edge cards carry the woodland-edge symbol)
   { key: 'bee_swarm', category: 'lateral', tags: ['insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'common_pipistrelle', category: 'lateral', tags: ['bat', 'woodland_edge'], expansion: 'woodland', scoringType: 'set' },

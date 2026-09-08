@@ -1,4 +1,4 @@
-import type { CardCategory, CardTag } from './card'
+import type { CardCategory, CardTag, Expansion } from './card'
 
 /** Derived counts from a player's tableau used for scoring */
 export interface ForestContext {
@@ -29,6 +29,8 @@ export interface CardMetadata {
   count: number
   /** Answer to context question if applicable (e.g., "on beech?" true/false) */
   contextValue?: number
+  /** Per-copy context answers (one entry per card copy) for contextPerCopy cards */
+  contextValues?: number[]
   /** Per-instance host tree keys (one entry per card copy). Empty string = not set. */
   hostCardKeys?: string[]
 }
@@ -40,10 +42,19 @@ export interface ScoreEntry {
   points: number
 }
 
+/** Raw wizard answers, stored with the breakdown so a saved game can be re-opened for editing */
+export interface ScoringInput {
+  cardCounts: Record<string, number>
+  cardMetadata: Record<string, CardMetadata>
+  fullyOccupiedTrees: number
+  expansions: Expansion[]
+}
+
 export interface ScoreBreakdown {
   entries: ScoreEntry[]
   categoryTotals: Record<CardCategory, number>
   total: number
+  input?: ScoringInput
 }
 
 /** Function signature for a card's scoring logic */

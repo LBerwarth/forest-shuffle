@@ -15,7 +15,7 @@ export function GameResultPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const { gameId } = useParams<{ gameId: string }>()
-  const { players, expansions, edition, endSession } = useScoringStore()
+  const { players, expansions, edition, playedAt, endSession } = useScoringStore()
   const saveGameMutation = useSaveGame()
   const savedRef = useRef(false)
 
@@ -54,18 +54,26 @@ export function GameResultPage() {
     const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
       id: crypto.randomUUID(),
       game_id: gameId,
-      player_id: p.playerId,
+      player_id: p.profileId === undefined ? p.playerId : p.profileId,
       player_name: p.playerName,
       total_score: p.breakdown?.total ?? 0,
       rank: p.rank,
       // Solo games have no winner — rank 1 is guaranteed, not earned.
       is_winner: players.length >= 2 && p.rank === 1,
-      score_breakdown: p.breakdown!,
+      score_breakdown: {
+        ...p.breakdown!,
+        input: {
+          cardCounts: p.cardCounts,
+          cardMetadata: p.cardMetadata,
+          fullyOccupiedTrees: p.fullyOccupiedTrees,
+          expansions,
+        },
+      },
     }))
 
     const game: GameWithPlayers = {
       id: gameId,
-      played_at: new Date().toISOString(),
+      played_at: playedAt ?? new Date().toISOString(),
       player_count: players.length,
       edition: edition !== 'classic' ? edition : undefined,
       players: gamePlayers,
@@ -77,7 +85,7 @@ export function GameResultPage() {
       // to retry instead of seeing "Saving..." forever.
       console.error('Failed to save game:', err)
     })
-  }, [gameId, winner, rankedPlayers, players.length, edition, saveGameMutation])
+  }, [gameId, winner, rankedPlayers, players.length, edition, expansions, playedAt, saveGameMutation])
 
   function handleNewGame() {
     // Navigate first so the result page unmounts before endSession() clears

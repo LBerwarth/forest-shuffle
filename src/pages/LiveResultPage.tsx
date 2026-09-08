@@ -71,17 +71,30 @@ export function LiveResultPage() {
     savedRef.current = true
 
     const gameId = getOrCreateLocalGameId(sessionId)
-    const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => ({
-      id: crypto.randomUUID(),
-      game_id: gameId,
-      player_id: p.playerId,
-      player_name: p.playerName,
-      total_score: p.breakdown?.total ?? 0,
-      rank: p.rank,
-      // Solo games have no winner — rank 1 is guaranteed, not earned.
-      is_winner: rankedPlayers.length >= 2 && p.rank === 1,
-      score_breakdown: p.breakdown!,
-    }))
+    const gamePlayers: GamePlayer[] = rankedPlayers.map((p) => {
+      const live = livePlayers.find((lp) => lp.player_id === p.playerId)
+      return {
+        id: crypto.randomUUID(),
+        game_id: gameId,
+        player_id: p.playerId,
+        player_name: p.playerName,
+        total_score: p.breakdown?.total ?? 0,
+        rank: p.rank,
+        // Solo games have no winner — rank 1 is guaranteed, not earned.
+        is_winner: rankedPlayers.length >= 2 && p.rank === 1,
+        score_breakdown: {
+          ...p.breakdown!,
+          input: live
+            ? {
+                cardCounts: live.card_counts,
+                cardMetadata: live.card_metadata,
+                fullyOccupiedTrees: live.fully_occupied_trees,
+                expansions: session.expansions,
+              }
+            : undefined,
+        },
+      }
+    })
 
     const game: GameWithPlayers = {
       id: gameId,
@@ -101,7 +114,7 @@ export function LiveResultPage() {
       // refresh or use Edit Scores → finish again to retry.
       console.error('Failed to save live game:', err)
     })
-  }, [sessionId, session, rankedPlayers, isHost, saveGameMutation])
+  }, [sessionId, session, rankedPlayers, livePlayers, isHost, saveGameMutation])
 
   async function handleEditScores() {
     if (myPlayerId && sessionId) {

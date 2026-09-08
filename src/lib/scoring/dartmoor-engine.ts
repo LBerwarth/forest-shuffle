@@ -1,3 +1,4 @@
+import { sumPerCopyContext } from './context'
 import type { ForestContext, ScoringFunction, CardMetadata, ScoreBreakdown, ScoreEntry } from '@/types/scoring'
 import type { CardCategory, CardTag } from '@/types/card'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
@@ -263,7 +264,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   gnat_d: (count, ctx) => count * countTag(ctx, 'bat'),
   lake_fly: (count, ctx) => count * countTag(ctx, 'bat'),
   nuthatch: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 10,
-  roe_deer_d: (_count, _ctx, metadata) => (metadata?.contextValue ?? 0) * 3,
+  roe_deer_d: (count, _ctx, metadata) => sumPerCopyContext(count, metadata) * 3,
   shrew: (count) => count * 1,
   treecreeper: (count) => count * 5,
   wood_mouse: (count, ctx) => count * countTag(ctx, 'mouse'),

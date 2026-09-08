@@ -16,6 +16,9 @@ interface CardCounterProps {
   onCountChange: (count: number) => void
   contextValue?: number
   onContextChange?: (value: number) => void
+  /** Per-copy answers for contextPerCopy cards (one entry per card copy) */
+  contextValues?: readonly number[]
+  onContextValuesChange?: (next: number[]) => void
   hostCardKeys?: readonly string[]
   availableHostKeys?: readonly string[]
   /** Maps a host card key to how many copies the player owns, used to cap how
@@ -108,6 +111,45 @@ function TappableNumber({
   )
 }
 
+function ContextStepper({
+  value,
+  onChange,
+  max,
+}: {
+  value: number
+  onChange: (v: number) => void
+  max?: number
+}) {
+  const atMax = max !== undefined && value >= max
+  return (
+    <div className="flex items-center gap-1.5">
+      <button
+        type="button"
+        onClick={() => onChange(value - 1)}
+        disabled={value <= 0}
+        className={cn(
+          'flex h-7 w-7 items-center justify-center rounded-md text-sm transition-colors',
+          value <= 0 ? 'bg-bark-100 text-bark-300' : 'bg-bark-100 text-bark-600 hover:bg-bark-200',
+        )}
+      >
+        <Minus className="h-3 w-3" />
+      </button>
+      <TappableNumber value={value} onChange={onChange} max={max} className="text-sm text-bark-800" />
+      <button
+        type="button"
+        onClick={() => onChange(value + 1)}
+        disabled={atMax}
+        className={cn(
+          'flex h-7 w-7 items-center justify-center rounded-md transition-colors',
+          atMax ? 'bg-bark-100 text-bark-300' : 'bg-bark-200 text-bark-700 hover:bg-bark-300',
+        )}
+      >
+        <Plus className="h-3 w-3" />
+      </button>
+    </div>
+  )
+}
+
 export function CardCounter({
   card,
   count,
@@ -115,6 +157,8 @@ export function CardCounter({
   onCountChange,
   contextValue,
   onContextChange,
+  contextValues,
+  onContextValuesChange,
   hostCardKeys,
   availableHostKeys,
   availableHostCounts,
@@ -248,37 +292,36 @@ export function CardCounter({
         </div>
       </div>
 
-      {card.needsContext && count > 0 && onContextChange && (
+      {card.needsContext && !card.contextPerCopy && count > 0 && onContextChange && (
         <div className="flex items-center justify-between rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
           <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
-          <div className="flex items-center gap-1.5">
-            <button
-              type="button"
-              onClick={() => onContextChange((contextValue ?? 0) - 1)}
-              disabled={(contextValue ?? 0) <= 0}
-              className={cn(
-                'flex h-7 w-7 items-center justify-center rounded-md text-sm transition-colors',
-                (contextValue ?? 0) <= 0
-                  ? 'bg-bark-100 text-bark-300'
-                  : 'bg-bark-100 text-bark-600 hover:bg-bark-200',
-              )}
-            >
-              <Minus className="h-3 w-3" />
-            </button>
-            <TappableNumber
-              value={contextValue ?? 0}
-              onChange={onContextChange}
-              max={card.contextCappedByCount ? count : undefined}
-              className="text-sm text-bark-800"
-            />
-            <button
-              type="button"
-              onClick={() => onContextChange((contextValue ?? 0) + 1)}
-              disabled={card.contextCappedByCount && (contextValue ?? 0) >= count}
-              className="flex h-7 w-7 items-center justify-center rounded-md bg-bark-200 text-bark-700 hover:bg-bark-300 transition-colors"
-            >
-              <Plus className="h-3 w-3" />
-            </button>
+          <ContextStepper
+            value={contextValue ?? 0}
+            onChange={onContextChange}
+            max={card.contextCappedByCount ? count : undefined}
+          />
+        </div>
+      )}
+
+      {card.contextPerCopy && count > 0 && onContextValuesChange && (
+        <div className="flex flex-col gap-1 rounded-lg bg-bark-50 px-3 py-2 ml-2 border-l-2 border-bark-300">
+          <span className="text-xs text-bark-600">{tc(`${card.key}.context`)}</span>
+          <div className="flex flex-col gap-1.5">
+            {Array.from({ length: count }).map((_, i) => (
+              <div key={i} className="flex items-center justify-between gap-2">
+                <span className="text-[11px] text-bark-500 tabular-nums">
+                  {count > 1 ? `#${i + 1}` : ''}
+                </span>
+                <ContextStepper
+                  value={contextValues?.[i] ?? 0}
+                  onChange={(v) => {
+                    const next = Array.from({ length: count }, (_, idx) => contextValues?.[idx] ?? 0)
+                    next[i] = v
+                    onContextValuesChange(next)
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       )}

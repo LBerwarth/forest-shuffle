@@ -49,6 +49,8 @@ export interface CardDefinition {
   needsContext?: boolean
   /** If true, context value is capped at the card count (e.g. "how many of these are on X?") */
   contextCappedByCount?: boolean
+  /** If true, the context question is answered once per copy (e.g. Roe Deer: each copy has its own tree symbol) */
+  contextPerCopy?: boolean
   /** Context question only applies when this expansion is enabled (e.g. Squeaker's woodland-edge-symbol count) */
   contextOnlyWithExpansion?: Expansion
   /** If true, wizard shows a tree-species picker (e.g. Violet Carpenter Bee) */

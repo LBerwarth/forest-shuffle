@@ -551,8 +551,14 @@ export function ScoreWizardPage() {
                 setCardCount(currentPlayer.playerId, card.key, count)
               }
               contextValue={currentPlayer.cardMetadata[card.key]?.contextValue}
+              contextValues={currentPlayer.cardMetadata[card.key]?.contextValues}
+              onContextValuesChange={
+                card.contextPerCopy
+                  ? (next) => setCardMetadata(currentPlayer.playerId, card.key, { contextValues: next })
+                  : undefined
+              }
               onContextChange={
-                card.needsContext &&
+                card.needsContext && !card.contextPerCopy &&
                 (!card.contextOnlyWithExpansion || expansions.includes(card.contextOnlyWithExpansion))
                   ? (value) =>
                       setCardMetadata(currentPlayer.playerId, card.key, { contextValue: value })

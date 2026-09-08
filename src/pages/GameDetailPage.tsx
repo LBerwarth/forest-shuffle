@@ -1,8 +1,11 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Calendar, Users } from 'lucide-react'
+import { ArrowLeft, Calendar, Users, Pencil } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
+import { Button } from '@/components/ui/Button'
 import { useGame } from '@/hooks/use-games'
+import { useScoringStore } from '@/store/scoring-store'
+import { sessionFromGame } from '@/lib/scoring/rehydrate'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { CATEGORY_ICON_URLS, getCategoryOrder, getCategoryLabel } from '@/data/categories'
 
@@ -11,6 +14,14 @@ export function GameDetailPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const { data: game, isLoading } = useGame(id)
+  const { sessionActive, resumeSession } = useScoringStore()
+
+  function handleEdit() {
+    if (!game) return
+    if (sessionActive && !confirm(t('wizard.cancelConfirm'))) return
+    resumeSession(sessionFromGame(game))
+    navigate(`/score/${game.id}`)
+  }
 
   if (isLoading) {
     return (
@@ -81,6 +92,11 @@ export function GameDetailPage() {
           </Card>
         ))}
       </div>
+
+      <Button variant="secondary" className="w-full mb-6" onClick={handleEdit}>
+        <Pencil className="h-4 w-4" />
+        {t('result.editScores')}
+      </Button>
 
       {/* Breakdown table */}
       <Card>

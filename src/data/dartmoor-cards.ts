@@ -85,7 +85,7 @@ export const DARTMOOR_CARDS: CardDefinition[] = [
   { key: 'gnat_d', category: 'lateral', tags: ['insect'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'lake_fly', category: 'lateral', tags: ['insect'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
   { key: 'nuthatch', category: 'lateral', tags: ['bird'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true, contextCappedByCount: true },
-  { key: 'roe_deer_d', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true },
+  { key: 'roe_deer_d', category: 'lateral', tags: ['hoofed'], expansion: 'dartmoor_base', scoringType: 'custom', needsContext: true, contextPerCopy: true },
   { key: 'shrew', category: 'lateral', tags: ['mouse', 'pawed'], expansion: 'dartmoor_base', scoringType: 'fixed' },
   { key: 'treecreeper', category: 'lateral', tags: ['bird'], expansion: 'dartmoor_base', scoringType: 'fixed' },
   { key: 'wood_mouse', category: 'lateral', tags: ['mouse', 'pawed'], expansion: 'dartmoor_base', scoringType: 'per_tag' },
