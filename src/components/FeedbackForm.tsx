@@ -90,8 +90,6 @@ export function FeedbackForm() {
     e.preventDefault()
     if (!canSend || status === 'sending') return
     setStatus('sending')
-    // Store first; keep going to the email even if the DB write fails so the
-    // feedback is never lost.
     try {
       await submitFeedback({
         language,
@@ -101,9 +99,10 @@ export function FeedbackForm() {
         items,
       })
     } catch (err) {
+      // DB unreachable: hand the message to the user's mail client instead.
       console.error('Failed to store feedback:', err)
+      window.location.href = buildMailto()
     }
-    window.location.href = buildMailto()
     setStatus('sent')
   }
 

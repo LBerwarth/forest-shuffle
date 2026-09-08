@@ -282,11 +282,11 @@ export interface FeedbackInput {
 
 /**
  * Store user feedback. Write-only (RLS grants insert, not select), so no
- * .select() chain. Silently no-ops when Supabase isn't configured so the
- * caller's email fallback still runs.
+ * .select() chain. Throws when Supabase isn't configured so the caller can
+ * fall back to e-mail.
  */
 export async function submitFeedback(input: FeedbackInput): Promise<void> {
-  if (!supabase) return
+  if (!supabase) throw new Error('Supabase not configured')
   const { error } = await supabase.from('feedback').insert({
     device_id: getDeviceId(),
     language: input.language,
