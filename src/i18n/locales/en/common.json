@@ -234,7 +234,7 @@
     "topCategoryBest": "Best card · {{category}}",
     "cardMetaMostPlayed": "Most played card",
     "cardMetaBestAverage": "Best average card",
-    "cardMetaPlays": "{{count}} plays",
+    "cardMetaPlays": "{{count}} player-games",
     "minGamesShort": "from {{count}} games",
     "onlySoloGames": "You only have solo games so far — switch to the solo view.",
     "showSoloGames": "Show solo games",

@@ -234,7 +234,7 @@
     "topCategoryBest": "Beste Karte · {{category}}",
     "cardMetaMostPlayed": "Häufigste Karte",
     "cardMetaBestAverage": "Beste Durchschnittskarte",
-    "cardMetaPlays": "{{count}} Auslagen",
+    "cardMetaPlays": "{{count}} Spieler-Partien",
     "minGamesShort": "ab {{count}} Spielen",
     "onlySoloGames": "Du hast bisher nur Solo-Partien — wechsle zur Solo-Ansicht.",
     "showSoloGames": "Solo anzeigen",

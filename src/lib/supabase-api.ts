@@ -462,7 +462,7 @@ export interface HallOfFameData {
     points: number
   })[]
   cardMeta: {
-    mostPlayed: { cardKey: string; plays: number } | null
+    mostPlayed: { cardKey: string; appearances: number } | null
     bestAverage: { cardKey: string; avgPoints: number; appearances: number } | null
   }
 }
@@ -525,7 +525,7 @@ export async function fetchHallOfFame({
       | (RawHofRecord & { card_category: CardCategory; card_key: string; points: number })[]
       | null
     card_meta: {
-      most_played: { card_key: string; plays: number } | null
+      most_played: { card_key: string; appearances: number; plays: number } | null
       best_average: { card_key: string; avg_points: number; appearances: number } | null
     } | null
   } | null
@@ -575,7 +575,7 @@ export async function fetchHallOfFame({
       mostPlayed: raw?.card_meta?.most_played
         ? {
             cardKey: raw.card_meta.most_played.card_key,
-            plays: raw.card_meta.most_played.plays,
+            appearances: raw.card_meta.most_played.appearances,
           }
         : null,
       bestAverage: raw?.card_meta?.best_average

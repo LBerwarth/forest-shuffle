@@ -233,7 +233,7 @@
     "topCategoryBest": "Лучшая карта · {{category}}",
     "cardMetaMostPlayed": "Самая частая карта",
     "cardMetaBestAverage": "Лучшая средняя карта",
-    "cardMetaPlays": "{{count}} выкладок",
+    "cardMetaPlays": "{{count}} партий игроков",
     "minGamesShort": "от {{count}} партий",
     "onlySoloGames": "Пока у вас только сольные партии — переключитесь на сольный вид.",
     "showSoloGames": "Показать соло",

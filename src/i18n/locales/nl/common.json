@@ -231,7 +231,7 @@
     "topCategoryBest": "Beste kaart · {{category}}",
     "cardMetaMostPlayed": "Meest gespeelde kaart",
     "cardMetaBestAverage": "Beste gemiddelde kaart",
-    "cardMetaPlays": "{{count}} keer gespeeld",
+    "cardMetaPlays": "{{count}} speler-partijen",
     "minGamesShort": "vanaf {{count}} partijen",
     "onlySoloGames": "Je hebt tot nu toe alleen solopartijen — schakel over naar de soloweergave.",
     "showSoloGames": "Solo tonen",

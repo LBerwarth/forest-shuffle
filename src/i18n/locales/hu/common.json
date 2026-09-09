@@ -231,7 +231,7 @@
     "topCategoryBest": "Legjobb kártya · {{category}}",
     "cardMetaMostPlayed": "Legtöbbet játszott kártya",
     "cardMetaBestAverage": "Legjobb átlagú kártya",
-    "cardMetaPlays": "{{count}} kijátszás",
+    "cardMetaPlays": "{{count}} játékos-parti",
     "minGamesShort": "{{count}} játszmától",
     "onlySoloGames": "Eddig csak szóló játszmáid vannak — válts a szóló nézetre.",
     "showSoloGames": "Szóló megjelenítése",

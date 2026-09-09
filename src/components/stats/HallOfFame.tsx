@@ -253,7 +253,9 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
                   detail={tc(`${data.cardMeta.mostPlayed.cardKey}.name`)}
                   value={
                     <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
-                      {t('leaderboard.cardMetaPlays', { count: data.cardMeta.mostPlayed.plays })}
+                      {t('leaderboard.cardMetaPlays', {
+                        count: data.cardMeta.mostPlayed.appearances,
+                      })}
                     </span>
                   }
                 />

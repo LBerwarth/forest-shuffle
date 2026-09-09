@@ -234,7 +234,7 @@
     "topCategoryBest": "Nejlepší karta · {{category}}",
     "cardMetaMostPlayed": "Nejhranější karta",
     "cardMetaBestAverage": "Nejlepší průměr karty",
-    "cardMetaPlays": "{{count}} zahrání",
+    "cardMetaPlays": "{{count}} her hráčů",
     "minGamesShort": "od {{count}} partií",
     "onlySoloGames": "Zatím máš jen sólové partie — přepni na sólové zobrazení.",
     "showSoloGames": "Zobrazit sólo",

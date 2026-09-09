@@ -231,7 +231,7 @@
     "topCategoryBest": "En iyi kart · {{category}}",
     "cardMetaMostPlayed": "En çok oynanan kart",
     "cardMetaBestAverage": "En iyi ortalamalı kart",
-    "cardMetaPlays": "{{count}} oynanış",
+    "cardMetaPlays": "{{count}} oyuncu-oyunu",
     "minGamesShort": "{{count}} oyundan itibaren",
     "onlySoloGames": "Şimdilik yalnızca solo oyunların var — solo görünüme geç.",
     "showSoloGames": "Soloyu göster",

@@ -231,7 +231,7 @@
     "topCategoryBest": "Bedste kort · {{category}}",
     "cardMetaMostPlayed": "Mest spillede kort",
     "cardMetaBestAverage": "Bedste gennemsnitskort",
-    "cardMetaPlays": "{{count}} spil",
+    "cardMetaPlays": "{{count}} spiller-spil",
     "minGamesShort": "fra {{count}} partier",
     "onlySoloGames": "Du har indtil videre kun solopartier — skift til solovisningen.",
     "showSoloGames": "Vis solo",

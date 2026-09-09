@@ -231,7 +231,7 @@
     "topCategoryBest": "Millor carta · {{category}}",
     "cardMetaMostPlayed": "Carta més jugada",
     "cardMetaBestAverage": "Millor mitjana per carta",
-    "cardMetaPlays": "{{count}} jugades",
+    "cardMetaPlays": "{{count}} partides-jugador",
     "minGamesShort": "a partir de {{count}} partides",
     "onlySoloGames": "De moment només tens partides en solitari — canvia a la vista en solitari.",
     "showSoloGames": "Mostra el solitari",

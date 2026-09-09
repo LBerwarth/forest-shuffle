@@ -233,7 +233,7 @@
     "topCategoryBest": "Найкраща карта · {{category}}",
     "cardMetaMostPlayed": "Найчастіша карта",
     "cardMetaBestAverage": "Найкраща середня карта",
-    "cardMetaPlays": "{{count}} викладань",
+    "cardMetaPlays": "{{count}} партій гравців",
     "minGamesShort": "від {{count}} партій",
     "onlySoloGames": "Поки що у вас лише сольні партії — перейдіть до сольного перегляду.",
     "showSoloGames": "Показати соло",

@@ -231,7 +231,7 @@
     "topCategoryBest": "Paras kortti · {{category}}",
     "cardMetaMostPlayed": "Pelatuin kortti",
     "cardMetaBestAverage": "Paras keskiarvokortti",
-    "cardMetaPlays": "{{count}} pelikertaa",
+    "cardMetaPlays": "{{count}} pelaajapeliä",
     "minGamesShort": "alkaen {{count}} pelistä",
     "onlySoloGames": "Sinulla on toistaiseksi vain soolopelejä — vaihda soolonäkymään.",
     "showSoloGames": "Näytä soolo",
