@@ -371,7 +371,7 @@
     "emailLabel": "Dirección de e-mail",
     "emailPlaceholder": "tu@ejemplo.com",
     "sendCode": "Enviar código",
-    "codeSent": "Hemos enviado un código a {{email}}. Puede tardar un minuto en llegar.",
+    "codeSent": "Hemos enviado un código a {{email}}. Puede tardar un minuto — si no lo ves, revisa la carpeta de spam.",
     "codeLabel": "Código del e-mail",
     "confirm": "Confirmar",
     "changeEmail": "Cambiar e-mail",

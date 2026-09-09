@@ -367,7 +367,7 @@
     "emailLabel": "E-mailadresse",
     "emailPlaceholder": "dig@eksempel.dk",
     "sendCode": "Send kode",
-    "codeSent": "Vi har sendt en kode til {{email}}. Det kan tage et minut.",
+    "codeSent": "Vi har sendt en kode til {{email}}. Det kan tage et minut — kan du ikke se den, så tjek din spammappe.",
     "codeLabel": "Kode fra e-mailen",
     "confirm": "Bekræft",
     "changeEmail": "Skift e-mail",

@@ -367,7 +367,7 @@
     "emailLabel": "E-postadress",
     "emailPlaceholder": "du@exempel.se",
     "sendCode": "Skicka kod",
-    "codeSent": "Vi har skickat en kod till {{email}}. Det kan ta en minut.",
+    "codeSent": "Vi har skickat en kod till {{email}}. Det kan ta en minut — om du inte ser det, kolla skräpposten.",
     "codeLabel": "Kod från e-postmeddelandet",
     "confirm": "Bekräfta",
     "changeEmail": "Byt e-post",

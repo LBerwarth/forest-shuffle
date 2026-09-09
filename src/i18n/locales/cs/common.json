@@ -370,7 +370,7 @@
     "emailLabel": "E-mailová adresa",
     "emailPlaceholder": "ty@priklad.cz",
     "sendCode": "Poslat kód",
-    "codeSent": "Poslali jsme kód na {{email}}. Může to trvat minutu.",
+    "codeSent": "Poslali jsme kód na {{email}}. Může to trvat minutu — pokud nic nevidíš, zkontroluj složku spam.",
     "codeLabel": "Kód z e-mailu",
     "confirm": "Potvrdit",
     "changeEmail": "Změnit e-mail",

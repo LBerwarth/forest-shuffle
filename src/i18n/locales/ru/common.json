@@ -369,7 +369,7 @@
     "emailLabel": "Адрес e-mail",
     "emailPlaceholder": "ty@example.com",
     "sendCode": "Отправить код",
-    "codeSent": "Мы отправили код на {{email}}. Он может прийти в течение минуты.",
+    "codeSent": "Мы отправили код на {{email}}. Он может прийти в течение минуты — если письма нет, проверь папку «Спам».",
     "codeLabel": "Код из письма",
     "confirm": "Подтвердить",
     "changeEmail": "Изменить e-mail",

@@ -367,7 +367,7 @@
     "emailLabel": "Indirizzo e-mail",
     "emailPlaceholder": "tu@esempio.it",
     "sendCode": "Invia codice",
-    "codeSent": "Abbiamo inviato un codice a {{email}}. Può volerci un minuto.",
+    "codeSent": "Abbiamo inviato un codice a {{email}}. Può volerci un minuto — se non lo vedi, controlla la cartella spam.",
     "codeLabel": "Codice ricevuto via e-mail",
     "confirm": "Conferma",
     "changeEmail": "Cambia e-mail",

@@ -367,7 +367,7 @@
     "emailLabel": "E-postadresse",
     "emailPlaceholder": "deg@eksempel.no",
     "sendCode": "Send kode",
-    "codeSent": "Vi har sendt en kode til {{email}}. Det kan ta et minutt.",
+    "codeSent": "Vi har sendt en kode til {{email}}. Det kan ta et minutt — ser du den ikke, sjekk søppelposten.",
     "codeLabel": "Kode fra e-posten",
     "confirm": "Bekreft",
     "changeEmail": "Endre e-post",

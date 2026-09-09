@@ -367,7 +367,7 @@
     "emailLabel": "E-posta adresi",
     "emailPlaceholder": "sen@ornek.com",
     "sendCode": "Kod gönder",
-    "codeSent": "{{email}} adresine bir kod gönderdik. Gelmesi bir dakika sürebilir.",
+    "codeSent": "{{email}} adresine bir kod gönderdik. Gelmesi bir dakika sürebilir — görmüyorsan spam klasörüne bak.",
     "codeLabel": "E-postadaki kod",
     "confirm": "Onayla",
     "changeEmail": "E-postayı değiştir",

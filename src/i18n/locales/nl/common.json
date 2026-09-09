@@ -367,7 +367,7 @@
     "emailLabel": "E-mailadres",
     "emailPlaceholder": "jij@voorbeeld.nl",
     "sendCode": "Code versturen",
-    "codeSent": "We hebben een code gestuurd naar {{email}}. Het kan een minuut duren.",
+    "codeSent": "We hebben een code gestuurd naar {{email}}. Het kan een minuut duren — zie je niets, kijk dan in je spammap.",
     "codeLabel": "Code uit de e-mail",
     "confirm": "Bevestigen",
     "changeEmail": "E-mailadres wijzigen",

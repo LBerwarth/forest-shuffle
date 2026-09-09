@@ -367,7 +367,7 @@
     "emailLabel": "Endereço de e-mail",
     "emailPlaceholder": "voce@exemplo.pt",
     "sendCode": "Enviar código",
-    "codeSent": "Enviámos um código para {{email}}. Pode demorar um minuto a chegar.",
+    "codeSent": "Enviámos um código para {{email}}. Pode demorar um minuto — se não o vir, verifique a pasta de spam.",
     "codeLabel": "Código do e-mail",
     "confirm": "Confirmar",
     "changeEmail": "Alterar e-mail",

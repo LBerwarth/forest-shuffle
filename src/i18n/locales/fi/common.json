@@ -367,7 +367,7 @@
     "emailLabel": "Sähköpostiosoite",
     "emailPlaceholder": "sina@esimerkki.fi",
     "sendCode": "Lähetä koodi",
-    "codeSent": "Lähetimme koodin osoitteeseen {{email}}. Saapuminen voi kestää minuutin.",
+    "codeSent": "Lähetimme koodin osoitteeseen {{email}}. Saapuminen voi kestää minuutin — jos et näe sitä, tarkista roskapostikansio.",
     "codeLabel": "Sähköpostin koodi",
     "confirm": "Vahvista",
     "changeEmail": "Vaihda sähköposti",

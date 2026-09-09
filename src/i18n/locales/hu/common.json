@@ -367,7 +367,7 @@
     "emailLabel": "E-mail-cím",
     "emailPlaceholder": "te@pelda.hu",
     "sendCode": "Kód küldése",
-    "codeSent": "Kódot küldtünk a következő címre: {{email}}. Egy percig is tarthat, míg megérkezik.",
+    "codeSent": "Kódot küldtünk a következő címre: {{email}}. Egy percig is tarthat — ha nem látod, nézd meg a spam mappát.",
     "codeLabel": "Az e-mailben kapott kód",
     "confirm": "Megerősítés",
     "changeEmail": "E-mail módosítása",

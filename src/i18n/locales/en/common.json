@@ -371,7 +371,7 @@
     "emailLabel": "E-mail address",
     "emailPlaceholder": "you@example.com",
     "sendCode": "Send code",
-    "codeSent": "We sent a code to {{email}}. It can take a minute to arrive.",
+    "codeSent": "We sent a code to {{email}}. It can take a minute to arrive — if you don't see it, check your spam folder.",
     "codeLabel": "Code from the e-mail",
     "confirm": "Confirm",
     "changeEmail": "Change e-mail",

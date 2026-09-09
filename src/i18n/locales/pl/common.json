@@ -369,7 +369,7 @@
     "emailLabel": "Adres e-mail",
     "emailPlaceholder": "ty@przyklad.pl",
     "sendCode": "Wyślij kod",
-    "codeSent": "Wysłaliśmy kod na {{email}}. Może dojść po minucie.",
+    "codeSent": "Wysłaliśmy kod na {{email}}. Może dojść po minucie — jeśli go nie widzisz, sprawdź folder spam.",
     "codeLabel": "Kod z e-maila",
     "confirm": "Potwierdź",
     "changeEmail": "Zmień e-mail",

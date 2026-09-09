@@ -367,7 +367,7 @@
     "emailLabel": "Adreça de correu",
     "emailPlaceholder": "tu@exemple.cat",
     "sendCode": "Enviar codi",
-    "codeSent": "Hem enviat un codi a {{email}}. Pot tardar un minut a arribar.",
+    "codeSent": "Hem enviat un codi a {{email}}. Pot tardar un minut — si no el veus, mira la carpeta de correu brossa.",
     "codeLabel": "Codi del correu",
     "confirm": "Confirmar",
     "changeEmail": "Canviar el correu",
