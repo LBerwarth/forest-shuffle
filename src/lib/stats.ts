@@ -88,6 +88,12 @@ function computeCutoff(time: TimeFilter, now: Date): number | null {
   return d.getTime()
 }
 
+/** Window start for a time filter, so server-side aggregates match applyFilters. */
+export function timeFilterCutoff(time: TimeFilter, now: Date = new Date()): Date | null {
+  const ms = computeCutoff(time, now)
+  return ms === null ? null : new Date(ms)
+}
+
 export function isGroupGame(g: Game): boolean {
   return g.player_count >= 2
 }

@@ -4,7 +4,7 @@ import type { Player } from '@/types/player'
 import type { GameWithPlayers } from '@/types/game'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { LiveSession, LiveSessionPlayer, LiveSessionStatus } from '@/types/live-session'
-import type { Expansion, GameEdition } from '@/types/card'
+import type { CardCategory, Expansion, GameEdition } from '@/types/card'
 
 /** Rows owned by this account, plus unclaimed legacy rows keyed by this device. */
 async function ownerFilter(): Promise<string> {
@@ -439,57 +439,152 @@ export async function updateLivePlayerStatus(
 
 // ─── Global Hall of Fame (cross-device) ────────────────────────────────────
 
-export interface HallOfFameData {
-  totalGames: number
-  totalPlayers: number
-  topGame: { playerName: string; totalScore: number; playedAt: string } | null
-  topCard: {
-    playerName: string
-    cardKey: string
-    points: number
-    playedAt: string
-  } | null
+export interface HofRecord {
+  names: string[]
+  holders: number
+  playedAt: string
+  isMine: boolean
 }
 
-export async function fetchHallOfFame(
-  playerCount?: number | 'group',
-  edition?: 'classic' | 'dartmoor' | 'smoky',
-): Promise<HallOfFameData> {
+export interface HallOfFameData {
+  since: string | null
+  totalGames: number
+  totalPlayers: number
+  me: { bestScore: number; rank: number; total: number; betterThanPct: number } | null
+  topGame: (HofRecord & { totalScore: number }) | null
+  topTable: { totalScore: number; players: number; playedAt: string; isMine: boolean } | null
+  topCard: (HofRecord & { cardKey: string; points: number }) | null
+  topMargin: (HofRecord & { margin: number }) | null
+  topForest: (HofRecord & { cards: number }) | null
+  categoryBests: (HofRecord & {
+    cardCategory: CardCategory
+    cardKey: string
+    points: number
+  })[]
+  cardMeta: {
+    mostPlayed: { cardKey: string; plays: number } | null
+    bestAverage: { cardKey: string; avgPoints: number; appearances: number } | null
+  }
+}
+
+interface RawHofRecord {
+  names: string[] | null
+  holders: number
+  played_at: string
+  is_mine: boolean
+}
+
+function mapRecord(raw: RawHofRecord): HofRecord {
+  return {
+    names: raw.names ?? [],
+    holders: raw.holders ?? 0,
+    playedAt: raw.played_at,
+    isMine: raw.is_mine ?? false,
+  }
+}
+
+export interface HallOfFameParams {
+  playerCount?: number | 'group'
+  edition?: GameEdition
+  since?: Date | null
+  myScore?: number | null
+}
+
+export async function fetchHallOfFame({
+  playerCount,
+  edition,
+  since,
+  myScore,
+}: HallOfFameParams): Promise<HallOfFameData> {
   if (!supabase) throw new Error('Supabase not configured')
   const { data, error } = await supabase.rpc('hall_of_fame', {
     p_player_count: typeof playerCount === 'number' ? playerCount : null,
     p_group: playerCount === 'group',
     p_edition: edition ?? null,
+    p_since: since ? since.toISOString() : null,
+    p_my_score: myScore ?? null,
+    p_device_id: getDeviceId(),
   })
   if (error) throw error
   const raw = data as {
+    since: string | null
     total_games: number
     total_players: number
-    top_game: { player_name: string; total_score: number; played_at: string } | null
-    top_card: {
-      player_name: string
-      card_key: string
-      points: number
+    me: { best_score: number; rank: number; total: number; better_than_pct: number } | null
+    top_game: (RawHofRecord & { total_score: number }) | null
+    top_table: {
+      total_score: number
+      players: number
       played_at: string
+      is_mine: boolean
     } | null
-  }
+    top_card: (RawHofRecord & { card_key: string; points: number }) | null
+    top_margin: (RawHofRecord & { margin: number }) | null
+    top_forest: (RawHofRecord & { cards: number }) | null
+    category_bests:
+      | (RawHofRecord & { card_category: CardCategory; card_key: string; points: number })[]
+      | null
+    card_meta: {
+      most_played: { card_key: string; plays: number } | null
+      best_average: { card_key: string; avg_points: number; appearances: number } | null
+    } | null
+  } | null
   return {
+    since: raw?.since ?? null,
     totalGames: raw?.total_games ?? 0,
     totalPlayers: raw?.total_players ?? 0,
-    topGame: raw?.top_game
+    me: raw?.me
       ? {
-          playerName: raw.top_game.player_name,
-          totalScore: raw.top_game.total_score,
-          playedAt: raw.top_game.played_at,
+          bestScore: raw.me.best_score,
+          rank: raw.me.rank,
+          total: raw.me.total,
+          betterThanPct: raw.me.better_than_pct,
+        }
+      : null,
+    topGame: raw?.top_game
+      ? { ...mapRecord(raw.top_game), totalScore: raw.top_game.total_score }
+      : null,
+    topTable: raw?.top_table
+      ? {
+          totalScore: raw.top_table.total_score,
+          players: raw.top_table.players,
+          playedAt: raw.top_table.played_at,
+          isMine: raw.top_table.is_mine ?? false,
         }
       : null,
     topCard: raw?.top_card
       ? {
-          playerName: raw.top_card.player_name,
+          ...mapRecord(raw.top_card),
           cardKey: raw.top_card.card_key,
           points: raw.top_card.points,
-          playedAt: raw.top_card.played_at,
         }
       : null,
+    topMargin: raw?.top_margin
+      ? { ...mapRecord(raw.top_margin), margin: raw.top_margin.margin }
+      : null,
+    topForest: raw?.top_forest
+      ? { ...mapRecord(raw.top_forest), cards: raw.top_forest.cards }
+      : null,
+    categoryBests: (raw?.category_bests ?? []).map((c) => ({
+      ...mapRecord(c),
+      cardCategory: c.card_category,
+      cardKey: c.card_key,
+      points: c.points,
+    })),
+    cardMeta: {
+      mostPlayed: raw?.card_meta?.most_played
+        ? {
+            cardKey: raw.card_meta.most_played.card_key,
+            plays: raw.card_meta.most_played.plays,
+          }
+        : null,
+      bestAverage: raw?.card_meta?.best_average
+        ? {
+            cardKey: raw.card_meta.best_average.card_key,
+            avgPoints: raw.card_meta.best_average.avg_points,
+            appearances: raw.card_meta.best_average.appearances,
+          }
+        : null,
+    },
   }
 }

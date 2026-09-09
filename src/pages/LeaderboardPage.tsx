@@ -87,6 +87,15 @@ export function LeaderboardPage() {
     [games, edition, time, selectedPlayerIds, matchMode, playerCount],
   )
 
+  // The Hall of Fame percentile compares against every game logged on this
+  // device, so the player filter must not narrow it.
+  const myBestScore = useMemo(() => {
+    const own = applyFilters(games, edition, time, [], 'union', playerCount)
+    let best = 0
+    for (const g of own) for (const p of g.players) best = Math.max(best, p.total_score)
+    return best > 0 ? best : null
+  }, [games, edition, time, playerCount])
+
   const hasAnyGames = games.length > 0
   const filtersActive = edition !== 'all' || time !== 'all' || selectedPlayerIds.length > 0 || playerCount !== 'all'
 
@@ -123,7 +132,21 @@ export function LeaderboardPage() {
             onChange={setSelectedPlayerIds}
             onMatchModeChange={setMatchMode}
           />
+        </>
+      )}
 
+      {/* Global records sit above the local ranking: they are the one card that
+          has something to show before the first own game. */}
+      {hasAnyGames && filteredGames.length > 0 && <AtAGlance metrics={atAGlance} />}
+      <HallOfFame
+        playerCount={playerCount}
+        edition={edition}
+        time={time}
+        myScore={myBestScore}
+      />
+
+      {hasAnyGames && (
+        <>
           {filteredGames.length === 0 ? (
             <div className="text-center py-12">
               <Trophy className="h-12 w-12 text-forest-200 mx-auto mb-3" />
@@ -159,7 +182,6 @@ export function LeaderboardPage() {
             </div>
           ) : (
             <>
-              <AtAGlance metrics={atAGlance} />
               <LeaderboardList players={aggregatedPlayers} solo={playerCount === 1} />
               <PlayerStrategies players={playerStrategies} />
               <CardAnalytics cards={cardAggregates} />
@@ -170,10 +192,6 @@ export function LeaderboardPage() {
           )}
         </>
       )}
-
-      {/* Global records render even before the first own game — most
-          motivating exactly then. */}
-      <HallOfFame playerCount={playerCount} edition={edition} />
     </div>
   )
 }
