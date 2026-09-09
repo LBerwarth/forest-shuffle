@@ -12,6 +12,7 @@ import {
   aggregateTagSynergies,
   aggregatePlayerStrategies,
   computeAtAGlance,
+  MAX_PLAUSIBLE_SCORE,
   type EditionFilter,
   type TimeFilter,
   type PlayerMatchMode,
@@ -92,7 +93,9 @@ export function LeaderboardPage() {
   const myBestScore = useMemo(() => {
     const own = applyFilters(games, edition, time, [], 'union', playerCount)
     let best = 0
-    for (const g of own) for (const p of g.players) best = Math.max(best, p.total_score)
+    for (const g of own)
+      for (const p of g.players)
+        if (p.total_score <= MAX_PLAUSIBLE_SCORE) best = Math.max(best, p.total_score)
     return best > 0 ? best : null
   }, [games, edition, time, playerCount])
 

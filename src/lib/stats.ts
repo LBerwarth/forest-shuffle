@@ -88,6 +88,10 @@ function computeCutoff(time: TimeFilter, now: Date): number | null {
   return d.getTime()
 }
 
+// Above this a score is data-entry practice rather than a played game; the
+// hall_of_fame() function drops the same games server-side.
+export const MAX_PLAUSIBLE_SCORE = 1000
+
 /** Window start for a time filter, so server-side aggregates match applyFilters. */
 export function timeFilterCutoff(time: TimeFilter, now: Date = new Date()): Date | null {
   const ms = computeCutoff(time, now)
