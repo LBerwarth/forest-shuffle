@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { AppShell } from '@/components/layout/AppShell'
+import { AuthListener } from '@/components/AuthListener'
 import { LangRoute, SEO_LANGS } from '@/components/LangRoute'
 import { HomePage } from '@/pages/HomePage'
 import { NewGamePage } from '@/pages/NewGamePage'
@@ -54,6 +55,7 @@ const appRoutes = (
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <AuthListener />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LangRoute />}>

@@ -1,9 +1,19 @@
 import { supabase, getDeviceId } from './supabase'
+import { getUserId } from './auth'
 import type { Player } from '@/types/player'
 import type { GameWithPlayers } from '@/types/game'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { LiveSession, LiveSessionPlayer, LiveSessionStatus } from '@/types/live-session'
 import type { Expansion, GameEdition } from '@/types/card'
+
+/** Rows owned by this account, plus unclaimed legacy rows keyed by this device. */
+async function ownerFilter(): Promise<string> {
+  const deviceId = getDeviceId()
+  const userId = await getUserId()
+  return userId
+    ? `user_id.eq.${userId},and(user_id.is.null,device_id.eq.${deviceId})`
+    : `device_id.eq.${deviceId}`
+}
 
 // ─── Players ────────────────────────────────────────────────────────────────
 
@@ -12,7 +22,7 @@ export async function fetchPlayers(): Promise<Player[]> {
   const { data, error } = await supabase
     .from('profiles')
     .select('*')
-    .eq('device_id', getDeviceId())
+    .or(await ownerFilter())
     .order('created_at', { ascending: true })
   if (error) throw error
   return data as Player[]
@@ -24,11 +34,11 @@ function playerNameKey(name: string): string {
 }
 
 /**
- * Create a player, or reuse an existing same-name profile on this device.
+ * Create a player, or reuse an existing same-name profile of this account.
  *
  * Matching is trim + case-insensitive, so re-adding someone who already exists
  * (e.g. from a different screen) returns their existing profile instead of
- * minting a duplicate. The DB unique index uq_profiles_name_device is the
+ * minting a duplicate. The DB unique index uq_profiles_name_user is the
  * backstop for any concurrent insert that slips past this check.
  */
 export async function createPlayer(
@@ -36,13 +46,14 @@ export async function createPlayer(
 ): Promise<Player> {
   if (!supabase) throw new Error('Supabase not configured')
   const deviceId = getDeviceId()
+  const filter = await ownerFilter()
   const name = player.name.trim()
   const key = playerNameKey(name)
 
   const { data: existing, error: lookupError } = await supabase
     .from('profiles')
     .select('*')
-    .eq('device_id', deviceId)
+    .or(filter)
   if (lookupError) throw lookupError
   const match = (existing ?? []).find((p) => playerNameKey(p.name) === key)
   if (match) return match as Player
@@ -58,7 +69,7 @@ export async function createPlayer(
       const { data: raced } = await supabase
         .from('profiles')
         .select('*')
-        .eq('device_id', deviceId)
+        .or(filter)
       const winner = (raced ?? []).find((p) => playerNameKey(p.name) === key)
       if (winner) return winner as Player
     }
@@ -88,23 +99,6 @@ export async function deletePlayer(id: string): Promise<void> {
   if (error) throw error
 }
 
-export async function deleteAllDeviceData(): Promise<void> {
-  if (!supabase) throw new Error('Supabase not configured')
-  const deviceId = getDeviceId()
-  // Order matters when cascades aren't guaranteed: games first (and their
-  // game_players via cascade), then profiles.
-  const { error: gamesError } = await supabase
-    .from('games')
-    .delete()
-    .eq('device_id', deviceId)
-  if (gamesError) throw gamesError
-  const { error: profilesError } = await supabase
-    .from('profiles')
-    .delete()
-    .eq('device_id', deviceId)
-  if (profilesError) throw profilesError
-}
-
 // ─── Games ──────────────────────────────────────────────────────────────────
 
 export async function fetchGames(): Promise<GameWithPlayers[]> {
@@ -116,7 +110,7 @@ export async function fetchGames(): Promise<GameWithPlayers[]> {
       *,
       game_players (*)
     `)
-    .eq('device_id', getDeviceId())
+    .or(await ownerFilter())
     .order('played_at', { ascending: false })
 
   if (error) throw error
@@ -259,7 +253,7 @@ export async function saveGame(game: GameWithPlayers): Promise<GameWithPlayers> 
     .from('games')
     .delete()
     .eq('id', game.id)
-    .eq('device_id', getDeviceId())
+    .or(await ownerFilter())
   if (deleteError) throw deleteError
   return createGame(game)
 }

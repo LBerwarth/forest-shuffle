@@ -4,6 +4,7 @@ import { ArrowLeft, Calendar, Users, Trash2 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { useGames, useDeleteGame } from '@/hooks/use-games'
+import { AccountHint } from '@/components/AccountHint'
 
 export function GameHistoryPage() {
   const { t, i18n } = useTranslation()
@@ -20,6 +21,8 @@ export function GameHistoryPage() {
         <h1 className="font-heading text-xl font-bold text-forest-800">{t('history.title')}</h1>
         <span className="ml-auto text-sm text-forest-400">{t('history.gameCount', { count: games.length })}</span>
       </div>
+
+      {games.length > 0 && <AccountHint />}
 
       {games.length === 0 ? (
         <div className="text-center py-12">

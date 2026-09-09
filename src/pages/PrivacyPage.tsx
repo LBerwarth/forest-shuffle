@@ -34,21 +34,30 @@ export function PrivacyPage() {
             the Forest Shuffle game.
           </p>
 
-          <h2 className="font-heading text-base font-semibold text-forest-800">No accounts required</h2>
+          <h2 className="font-heading text-base font-semibold text-forest-800">Accounts are optional</h2>
           <p>
-            The App does not require you to sign up or sign in. We do not collect your
-            email address, phone number, real name, date of birth, location, or any other
-            government-issued identifier.
+            The App works without signing up. On first launch it creates an anonymous
+            account with a random identifier so that your games can be stored; no
+            personal information is attached to it. If you want to keep your history when
+            you change phone, you can optionally link an e-mail address to that account
+            in Settings. We never ask for a password, phone number, real name, date of
+            birth, location, or any government-issued identifier.
           </p>
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Data we handle</h2>
           <p>The App handles the following information:</p>
           <ul className="list-disc pl-5">
             <li>
-              <strong>Device identifier</strong> — a random UUID generated on first launch
-              and stored in your device&apos;s local storage. This identifier is used only
-              to associate game data with your device. It is not linked to any personal
-              information and cannot identify you as a person.
+              <strong>Device and account identifiers</strong> — a random UUID generated on
+              first launch and stored in your device&apos;s local storage, plus the random
+              identifier of your anonymous account. They are used only to associate game
+              data with your device or account and cannot identify you as a person.
+            </li>
+            <li>
+              <strong>E-mail address (optional)</strong> — only if you choose to link one
+              to your account. It is used solely to send you sign-in codes so you can
+              restore your history on another device. We do not send newsletters or
+              marketing.
             </li>
             <li>
               <strong>Player profiles you create</strong> — display names and color
@@ -75,14 +84,15 @@ export function PrivacyPage() {
           <h2 className="font-heading text-base font-semibold text-forest-800">Where data is stored</h2>
           <ul className="list-disc pl-5">
             <li>
-              <strong>On your device</strong> — most data (device ID, preferences, cached
-              games and players) is stored locally on your device using browser storage.
-              It stays on your device until you clear it.
+              <strong>On your device</strong> — most data (device ID, session token,
+              preferences, cached games and players) is stored locally on your device
+              using browser storage. It stays on your device until you clear it.
             </li>
             <li>
               <strong>On Supabase</strong> — to enable multi-device sync and live
-              multiplayer sessions, game data is also stored on Supabase (a third-party
-              hosted database service operated by Supabase, Inc.). Data is transmitted
+              multiplayer sessions, game data and your account (including the optional
+              e-mail address) are stored on Supabase (a third-party hosted database and
+              authentication service operated by Supabase, Inc.). Data is transmitted
               over HTTPS. See Supabase&apos;s privacy policy at{' '}
               <a
                 href="https://supabase.com/privacy"
@@ -107,6 +117,10 @@ export function PrivacyPage() {
             </li>
             <li>Remember your preferences between visits.</li>
             <li>
+              Send you a one-time sign-in code when you link an e-mail address or restore
+              your history on another device.
+            </li>
+            <li>
               Reply to feedback you send through the App, if you chose to include your
               e-mail address. The address is optional and is used for no other purpose.
             </li>
@@ -121,11 +135,11 @@ export function PrivacyPage() {
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Sharing</h2>
           <p>
-            Game and player data is associated with your randomly generated device ID and
-            is not shared with other users by default. When you host or join a live
-            multiplayer scoring session, the nickname and score inputs you submit during
-            that session are visible to other participants in the same session for the
-            duration of the session.
+            Game and player data is associated with your account and is not shared with
+            other users by default. When you host or join a live multiplayer scoring
+            session, the nickname and score inputs you submit during that session are
+            visible to other participants in the same session for the duration of the
+            session.
           </p>
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Third-party services</h2>
@@ -164,7 +178,7 @@ export function PrivacyPage() {
             </a>{' '}
             to measure aggregate usage (page views, country, device type). It sets no
             cookies and stores no IP addresses; visitors are counted with a hash that is
-            discarded after 24 hours. Your device ID and game data are never sent to it.
+            discarded after 24 hours. Your identifiers and game data are never sent to it.
             See{' '}
             <a
               href="https://vercel.com/legal/privacy-policy"
@@ -180,32 +194,38 @@ export function PrivacyPage() {
           <h2 className="font-heading text-base font-semibold text-forest-800">Children</h2>
           <p>
             The App does not knowingly collect personal information from children. Because
-            no account is required and no personal identifiers are requested, the App is
-            suitable for use by players of all ages under adult supervision.
+            no sign-up is required and the only personal identifier (an e-mail address)
+            is optional, the App is suitable for use by players of all ages under adult
+            supervision.
           </p>
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Your choices and data deletion</h2>
           <ul className="list-disc pl-5">
             <li>
-              <strong>Clear local data</strong> — open Settings in the App and use
-              &quot;Clear data&quot; to remove all game and preference data stored on your
-              device.
+              <strong>Delete your account and all data</strong> — open Settings in the App
+              and use &quot;Clear All Data&quot;. This deletes your account, every game,
+              player and score stored on our servers, and all local data on your device.
+              No e-mail or waiting period is needed.
+            </li>
+            <li>
+              <strong>Sign out</strong> — if you linked an e-mail, Settings lets you sign
+              out on one device. Your history stays in your account; the device starts
+              with a fresh anonymous account.
             </li>
             <li>
               <strong>Export your data</strong> — Settings includes an &quot;Export&quot;
               option that downloads your players and games as a JSON file.
             </li>
             <li>
-              <strong>Delete remote data</strong> — to request deletion of any game data
-              associated with your device ID from the Supabase backend, contact us at the
-              address below and provide the device ID shown in Settings (if displayed) or
-              describe the games you wish to remove. We will action the request within a
-              reasonable period.
+              <strong>Deletion without the App</strong> — if you no longer have the App
+              installed, e-mail us at the address below with the e-mail address linked to
+              your account, or describe the games you wish to remove. We will action the
+              request within a reasonable period.
             </li>
             <li>
               <strong>Uninstall</strong> — uninstalling the App removes the locally cached
               data on your device. Records previously synced to the backend are retained
-              until deleted on request.
+              until you delete them as described above.
             </li>
           </ul>
 
@@ -213,9 +233,10 @@ export function PrivacyPage() {
           <p>
             All communication with the backend is encrypted in transit using HTTPS. Data
             is stored by Supabase, which provides industry-standard infrastructure
-            security. Because the App does not collect sensitive personal information, the
-            data exposure risk is limited to the nicknames and game records you choose to
-            enter.
+            security. Sign-in uses one-time codes sent by e-mail; the App never stores a
+            password. Because the App collects no sensitive personal information, the
+            data exposure risk is limited to the nicknames, optional e-mail address and
+            game records you choose to enter.
           </p>
 
           <h2 className="font-heading text-base font-semibold text-forest-800">Changes to this policy</h2>

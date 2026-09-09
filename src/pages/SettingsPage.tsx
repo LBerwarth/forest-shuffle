@@ -8,7 +8,9 @@ import { useSettingsStore } from '@/store/settings-store'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { useScoringStore } from '@/store/scoring-store'
-import { deleteAllDeviceData } from '@/lib/supabase-api'
+import { deleteAccount } from '@/lib/auth'
+import { useAccount } from '@/hooks/use-account'
+import { AccountCard } from '@/components/AccountCard'
 import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
 import { LanguagePicker } from '@/components/LanguagePicker'
@@ -25,11 +27,15 @@ export function SettingsPage() {
   const { data: players = [] } = usePlayers()
   const [searchParams] = useSearchParams()
   const feedbackRef = useRef<HTMLDivElement>(null)
+  const accountRef = useRef<HTMLDivElement>(null)
+  const { isAnonymous } = useAccount()
 
-  // Deep link from the home-page notice (/settings?feedback=1) scrolls to the form.
+  // Deep links (/settings?feedback=1, /settings?account=1) scroll to their card.
   useEffect(() => {
     if (searchParams.get('feedback') !== null) {
       feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else if (searchParams.get('account') !== null) {
+      accountRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }, [searchParams])
 
@@ -48,9 +54,9 @@ export function SettingsPage() {
     if (!confirm(t('settings.clearConfirm1'))) return
     if (!confirm(t('settings.clearConfirm2'))) return
     try {
-      await deleteAllDeviceData()
+      await deleteAccount()
     } catch (err) {
-      console.error('Failed to delete device data from Supabase:', err)
+      console.error('Failed to delete account data from Supabase:', err)
       alert(t('settings.clearError'))
       return
     }
@@ -274,6 +280,10 @@ export function SettingsPage() {
         </CardContent>
       </Card>
 
+      <div ref={accountRef} className="scroll-mt-4">
+        <AccountCard />
+      </div>
+
       {/* Data management */}
       <Card className="mb-4">
         <CardHeader>
@@ -295,7 +305,9 @@ export function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-red-600">{t('settings.clearData')}</p>
-                <p className="text-xs text-forest-400">{t('settings.clearDesc')}</p>
+                <p className="text-xs text-forest-400">
+                  {t(isAnonymous ? 'settings.clearDesc' : 'settings.clearDescAccount')}
+                </p>
               </div>
               <Button size="sm" variant="destructive" onClick={handleClearData}>
                 <Trash2 className="h-3.5 w-3.5" />
