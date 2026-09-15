@@ -112,7 +112,7 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
   const hasMore =
     categoryBests.length > 0 ||
     data.topForest !== null ||
-    data.mostGames !== null ||
+    data.mostGamesTop.length > 0 ||
     data.cardMeta.mostPlayed !== null ||
     (!soloOnly && (data.topMargin !== null || data.topTable !== null))
 
@@ -225,17 +225,28 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
                 />
               )}
 
-              {data.mostGames && (
-                <Row
-                  icon={<Flame className="h-4 w-4 text-forest-400 shrink-0" />}
-                  label={t('leaderboard.mostGames')}
-                  detail={who(data.mostGames)}
-                  value={
-                    <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
-                      {t('leaderboard.mostGamesCount', { count: data.mostGames.games })}
-                    </span>
-                  }
-                />
+              {data.mostGamesTop.length > 0 && (
+                <div className="rounded-lg bg-forest-50 px-2.5 py-2">
+                  <div className="flex items-center gap-2">
+                    <Flame className="h-4 w-4 text-forest-400 shrink-0" />
+                    <p className="text-[10px] text-forest-400">{t('leaderboard.mostGames')}</p>
+                  </div>
+                  <ol className="mt-1 space-y-1">
+                    {data.mostGamesTop.map((r, i) => (
+                      <li key={r.games} className="flex items-center gap-2 pl-6">
+                        <span className="w-3 shrink-0 text-[10px] font-semibold text-forest-400 tabular-nums">
+                          {i + 1}
+                        </span>
+                        <span className="min-w-0 flex-1 truncate text-xs font-medium text-forest-700">
+                          {who(r)}
+                        </span>
+                        <span className="shrink-0 text-sm font-bold text-forest-700 tabular-nums">
+                          {t('leaderboard.mostGamesCount', { count: r.games })}
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
               )}
 
               {categoryBests.map((c) => (
