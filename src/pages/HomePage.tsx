@@ -18,6 +18,18 @@ export function HomePage() {
   const { data: games = [] } = useGames()
   const { data: players = [] } = usePlayers()
   const recentGame = games[0]
+  const featured = recentGame
+    ? recentGame.player_count < 2
+      ? recentGame.players[0]
+      : recentGame.players.find((p) => p.is_winner)
+    : undefined
+  const featuredName = featured?.player_name ?? '—'
+  const featuredBadge = recentGame ? (
+    <Badge tone="forest" className={featured?.player_id ? 'transition-colors hover:bg-forest-200' : undefined}>
+      {recentGame.player_count >= 2 && <Trophy className="h-3 w-3" />}
+      {recentGame.player_count < 2 ? t('home.soloGame', { name: featuredName }) : featuredName}
+    </Badge>
+  ) : null
 
   const [showNewNotice, setShowNewNotice] = useState(() => localStorage.getItem(NEW_NOTICE_KEY) !== '1')
   function dismissNewNotice() {
@@ -151,22 +163,15 @@ export function HomePage() {
                 </p>
               </div>
               <div className="flex flex-col items-end gap-1">
-                {recentGame.player_count < 2 ? (
-                  <Badge tone="forest">
-                    {t('home.soloGame', {
-                      name: recentGame.players[0]?.player_name ?? '—',
-                    })}
-                  </Badge>
+                {featured?.player_id ? (
+                  <Link to="/players">
+                    {featuredBadge}
+                  </Link>
                 ) : (
-                  <Badge tone="forest">
-                    <Trophy className="h-3 w-3" />
-                    {recentGame.players.find((p) => p.is_winner)?.player_name ?? '—'}
-                  </Badge>
+                  featuredBadge
                 )}
                 <p className="text-xs text-forest-400 flex items-center gap-0.5">
-                  {recentGame.player_count < 2
-                    ? (recentGame.players[0]?.total_score ?? 0)
-                    : (recentGame.players.find((p) => p.is_winner)?.total_score ?? 0)}
+                  {featured?.total_score ?? 0}
                   <AcornIcon className="h-3 w-3" />
                 </p>
               </div>

@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Calendar, Users, Pencil } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
@@ -79,9 +79,18 @@ export function GameDetailPage() {
                   #{p.rank}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-forest-700 truncate">
-                    {p.is_winner && '🏆 '}{p.player_name}
-                  </p>
+                  {p.player_id ? (
+                    <Link
+                      to="/players"
+                      className="block text-sm font-semibold text-forest-700 truncate transition-colors hover:text-forest-900 hover:underline"
+                    >
+                      {p.is_winner && '🏆 '}{p.player_name}
+                    </Link>
+                  ) : (
+                    <p className="text-sm font-semibold text-forest-700 truncate">
+                      {p.is_winner && '🏆 '}{p.player_name}
+                    </p>
+                  )}
                 </div>
                 <span className="flex items-center gap-0.5 text-lg font-bold text-forest-600 tabular-nums">
                   {p.total_score}

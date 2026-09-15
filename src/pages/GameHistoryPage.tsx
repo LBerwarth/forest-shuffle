@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Calendar, Users, Trash2 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
@@ -33,81 +33,92 @@ export function GameHistoryPage() {
       ) : (
         <div className="space-y-3">
           {games.map((game) => {
+            const playedAt = new Date(game.played_at).toLocaleDateString(i18n.language, {
+              weekday: 'short',
+              month: 'short',
+              day: 'numeric',
+            })
             return (
-              <button
-                key={game.id}
-                type="button"
-                onClick={() => navigate(`/history/${game.id}`)}
-                className="w-full text-left"
-              >
-                <Card className="hover:shadow-card-hover transition-shadow">
-                  <CardContent className="py-3">
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <Calendar className="h-3.5 w-3.5 text-forest-400 shrink-0" />
-                          <span className="text-xs text-forest-400">
-                            {new Date(game.played_at).toLocaleDateString(i18n.language, {
-                              weekday: 'short',
-                              month: 'short',
-                              day: 'numeric',
-                            })}
+              <Card key={game.id} className="relative hover:shadow-card-hover transition-shadow">
+                <CardContent className="py-3">
+                  {/* Stretched link: whole card opens the game, pills stay clickable on top. */}
+                  <Link
+                    to={`/history/${game.id}`}
+                    aria-label={playedAt}
+                    className="absolute inset-0 rounded-2xl"
+                  />
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <Calendar className="h-3.5 w-3.5 text-forest-400 shrink-0" />
+                        <span className="text-xs text-forest-400">
+                          {playedAt}
+                        </span>
+                        <span className="flex items-center gap-1 text-xs text-forest-400">
+                          <Users className="h-3 w-3" />
+                          {game.player_count}
+                        </span>
+                        {game.player_count === 1 && (
+                          <span className="rounded-full bg-forest-100 px-1.5 py-0.5 text-[10px] font-medium text-forest-600">
+                            {t('history.soloBadge')}
                           </span>
-                          <span className="flex items-center gap-1 text-xs text-forest-400">
-                            <Users className="h-3 w-3" />
-                            {game.player_count}
+                        )}
+                        {game.edition === 'dartmoor' && (
+                          <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                            Dartmoor
                           </span>
-                          {game.player_count === 1 && (
-                            <span className="rounded-full bg-forest-100 px-1.5 py-0.5 text-[10px] font-medium text-forest-600">
-                              {t('history.soloBadge')}
-                            </span>
-                          )}
-                          {game.edition === 'dartmoor' && (
-                            <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
-                              Dartmoor
-                            </span>
-                          )}
-                          {game.edition === 'smoky' && (
-                            <span className="rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-medium text-sky-700">
-                              Smoky Mountains
-                            </span>
-                          )}
-                        </div>
-
-                        {/* Player scores */}
-                        <div className="flex flex-wrap gap-1.5 mt-2">
-                          {game.players
-                            .sort((a, b) => a.rank - b.rank)
-                            .map((p) => (
-                              <span
-                                key={p.id}
-                                className={`rounded-full px-2 py-0.5 text-xs font-medium ${
-                                  p.is_winner
-                                    ? 'bg-yellow-100 text-yellow-700'
-                                    : 'bg-forest-100 text-forest-600'
-                                }`}
-                              >
-                                {p.is_winner && '🏆 '}
-                                {p.player_name}: {p.total_score}<AcornIcon className="h-3 w-3 inline-block ml-0.5" />
-                              </span>
-                            ))}
-                        </div>
+                        )}
+                        {game.edition === 'smoky' && (
+                          <span className="rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-medium text-sky-700">
+                            Smoky Mountains
+                          </span>
+                        )}
                       </div>
 
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          if (confirm(t('history.deleteConfirm'))) deleteGameMutation.mutate(game.id)
-                        }}
-                        className="shrink-0 p-1 text-forest-300 hover:text-red-500 transition-colors"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </button>
+                      {/* Player scores */}
+                      <div className="flex flex-wrap gap-1.5 mt-2">
+                        {game.players
+                          .sort((a, b) => a.rank - b.rank)
+                          .map((p) => {
+                            const pill = `rounded-full px-2 py-0.5 text-xs font-medium ${
+                              p.is_winner
+                                ? 'bg-yellow-100 text-yellow-700'
+                                : 'bg-forest-100 text-forest-600'
+                            }`
+                            const label = (
+                              <>
+                                {p.is_winner && '🏆 '}
+                                {p.player_name}: {p.total_score}<AcornIcon className="h-3 w-3 inline-block ml-0.5" />
+                              </>
+                            )
+                            return p.player_id ? (
+                              <Link
+                                key={p.id}
+                                to="/players"
+                                className={`${pill} relative transition-colors hover:brightness-95`}
+                              >
+                                {label}
+                              </Link>
+                            ) : (
+                              <span key={p.id} className={pill}>{label}</span>
+                            )
+                          })}
+                      </div>
                     </div>
-                  </CardContent>
-                </Card>
-              </button>
+
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        if (confirm(t('history.deleteConfirm'))) deleteGameMutation.mutate(game.id)
+                      }}
+                      className="relative shrink-0 p-1 text-forest-300 hover:text-red-500 transition-colors"
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  </div>
+                </CardContent>
+              </Card>
             )
           })}
         </div>

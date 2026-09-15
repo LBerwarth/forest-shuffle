@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Check, KeyRound, LogOut, Mail, UserRound } from 'lucide-react'
+import { Check, ChevronRight, KeyRound, LogOut, Mail, UserRound, Users } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { useAccount } from '@/hooks/use-account'
@@ -236,6 +237,15 @@ export function AccountCard() {
             </div>
           </form>
         )}
+
+        <Link
+          to="/players"
+          className="-mx-1 flex items-center gap-2 rounded-xl px-1 py-2 text-sm font-medium text-forest-600 transition-colors hover:text-forest-800"
+        >
+          <Users className="h-4 w-4 text-forest-500" />
+          <span className="flex-1">{t('home.managePlayers')}</span>
+          <ChevronRight className="h-4 w-4 text-forest-300" />
+        </Link>
       </CardContent>
     </Card>
   )
