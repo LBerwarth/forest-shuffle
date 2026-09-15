@@ -231,6 +231,8 @@
     "topMargin": "Legnagyobb győzelmi előny",
     "topForest": "Legtöbb kijátszott kártya",
     "topForestCards": "{{count}} kártya",
+    "mostGames": "Legtöbb lejátszott parti",
+    "mostGamesCount": "{{count}} parti",
     "topCategoryBest": "Legjobb kártya · {{category}}",
     "cardMetaMostPlayed": "Legtöbbet játszott kártya",
     "cardMetaBestAverage": "Legjobb átlagú kártya",

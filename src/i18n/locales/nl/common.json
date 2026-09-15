@@ -231,6 +231,8 @@
     "topMargin": "Grootste overwinningsmarge",
     "topForest": "Meeste kaarten gespeeld",
     "topForestCards": "{{count}} kaarten",
+    "mostGames": "Meeste partijen gespeeld",
+    "mostGamesCount": "{{count}} partijen",
     "topCategoryBest": "Beste kaart · {{category}}",
     "cardMetaMostPlayed": "Meest gespeelde kaart",
     "cardMetaBestAverage": "Beste gemiddelde kaart",

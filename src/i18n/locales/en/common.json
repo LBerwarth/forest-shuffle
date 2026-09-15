@@ -234,6 +234,8 @@
     "topMargin": "Biggest win margin",
     "topForest": "Most cards played",
     "topForestCards": "{{count}} cards",
+    "mostGames": "Most games played",
+    "mostGamesCount": "{{count}} games",
     "topCategoryBest": "Best card · {{category}}",
     "cardMetaMostPlayed": "Most played card",
     "cardMetaBestAverage": "Best average card",

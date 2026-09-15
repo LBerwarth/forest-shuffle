@@ -457,6 +457,7 @@ export interface HallOfFameData {
   topCard: (HofRecord & { cardKey: string; points: number }) | null
   topMargin: (HofRecord & { margin: number }) | null
   topForest: (HofRecord & { cards: number }) | null
+  mostGames: (HofRecord & { games: number }) | null
   categoryBests: (HofRecord & {
     cardCategory: CardCategory
     cardKey: string
@@ -522,6 +523,7 @@ export async function fetchHallOfFame({
     top_card: (RawHofRecord & { card_key: string; points: number }) | null
     top_margin: (RawHofRecord & { margin: number }) | null
     top_forest: (RawHofRecord & { cards: number }) | null
+    most_games: (RawHofRecord & { games: number }) | null
     category_bests:
       | (RawHofRecord & { card_category: CardCategory; card_key: string; points: number })[]
       | null
@@ -565,6 +567,9 @@ export async function fetchHallOfFame({
       : null,
     topForest: raw?.top_forest
       ? { ...mapRecord(raw.top_forest), cards: raw.top_forest.cards }
+      : null,
+    mostGames: raw?.most_games
+      ? { ...mapRecord(raw.most_games), games: raw.most_games.games }
       : null,
     categoryBests: (raw?.category_bests ?? []).map((c) => ({
       ...mapRecord(c),

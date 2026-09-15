@@ -231,6 +231,8 @@
     "topMargin": "Suurin voittomarginaali",
     "topForest": "Eniten pelattuja kortteja",
     "topForestCards": "{{count}} korttia",
+    "mostGames": "Eniten pelattuja pelejä",
+    "mostGamesCount": "{{count}} peliä",
     "topCategoryBest": "Paras kortti · {{category}}",
     "cardMetaMostPlayed": "Pelatuin kortti",
     "cardMetaBestAverage": "Paras keskiarvokortti",

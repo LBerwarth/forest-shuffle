@@ -234,6 +234,8 @@
     "topMargin": "Größter Siegvorsprung",
     "topForest": "Meiste Karten gespielt",
     "topForestCards": "{{count}} Karten",
+    "mostGames": "Meiste Partien gespielt",
+    "mostGamesCount": "{{count}} Partien",
     "topCategoryBest": "Beste Karte · {{category}}",
     "cardMetaMostPlayed": "Häufigste Karte",
     "cardMetaBestAverage": "Beste Durchschnittskarte",

@@ -234,6 +234,8 @@
     "topMargin": "Největší vítězný odstup",
     "topForest": "Nejvíce zahraných karet",
     "topForestCards": "{{count}} karet",
+    "mostGames": "Nejvíce odehraných her",
+    "mostGamesCount": "{{count}} her",
     "topCategoryBest": "Nejlepší karta · {{category}}",
     "cardMetaMostPlayed": "Nejhranější karta",
     "cardMetaBestAverage": "Nejlepší průměr karty",

@@ -231,6 +231,8 @@
     "topMargin": "Största segermarginal",
     "topForest": "Flest spelade kort",
     "topForestCards": "{{count}} kort",
+    "mostGames": "Flest spelade partier",
+    "mostGamesCount": "{{count}} partier",
     "topCategoryBest": "Bästa kort · {{category}}",
     "cardMetaMostPlayed": "Mest spelade kort",
     "cardMetaBestAverage": "Bästa genomsnittskort",

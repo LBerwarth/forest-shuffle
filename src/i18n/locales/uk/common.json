@@ -233,6 +233,8 @@
     "topMargin": "Найбільший відрив у перемозі",
     "topForest": "Найбільше викладених карт",
     "topForestCards": "{{count}} карт",
+    "mostGames": "Найбільше зіграних партій",
+    "mostGamesCount": "{{count}} партій",
     "topCategoryBest": "Найкраща карта · {{category}}",
     "cardMetaMostPlayed": "Найчастіша карта",
     "cardMetaBestAverage": "Найкраща середня карта",

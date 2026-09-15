@@ -233,6 +233,8 @@
     "topMargin": "Największa przewaga zwycięstwa",
     "topForest": "Najwięcej zagranych kart",
     "topForestCards": "{{count}} kart",
+    "mostGames": "Najwięcej rozegranych gier",
+    "mostGamesCount": "{{count}} gier",
     "topCategoryBest": "Najlepsza karta · {{category}}",
     "cardMetaMostPlayed": "Najczęściej grana karta",
     "cardMetaBestAverage": "Najlepsza średnia karty",

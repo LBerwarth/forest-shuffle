@@ -1,6 +1,6 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ChevronDown, Layers, Sparkles, Swords, Trophy, Users } from 'lucide-react'
+import { ChevronDown, Flame, Layers, Sparkles, Swords, Trophy, Users } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { getCardIconUrl } from '@/data/cardIcons'
@@ -112,6 +112,7 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
   const hasMore =
     categoryBests.length > 0 ||
     data.topForest !== null ||
+    data.mostGames !== null ||
     data.cardMeta.mostPlayed !== null ||
     (!soloOnly && (data.topMargin !== null || data.topTable !== null))
 
@@ -219,6 +220,19 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
                   value={
                     <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
                       {t('leaderboard.topForestCards', { count: data.topForest.cards })}
+                    </span>
+                  }
+                />
+              )}
+
+              {data.mostGames && (
+                <Row
+                  icon={<Flame className="h-4 w-4 text-forest-400 shrink-0" />}
+                  label={t('leaderboard.mostGames')}
+                  detail={who(data.mostGames)}
+                  value={
+                    <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
+                      {t('leaderboard.mostGamesCount', { count: data.mostGames.games })}
                     </span>
                   }
                 />

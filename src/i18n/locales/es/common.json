@@ -234,6 +234,8 @@
     "topMargin": "Mayor margen de victoria",
     "topForest": "Más cartas jugadas",
     "topForestCards": "{{count}} cartas",
+    "mostGames": "Más partidas jugadas",
+    "mostGamesCount": "{{count}} partidas",
     "topCategoryBest": "Mejor carta · {{category}}",
     "cardMetaMostPlayed": "Carta más jugada",
     "cardMetaBestAverage": "Mejor media por carta",

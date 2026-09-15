@@ -234,6 +234,8 @@
     "topMargin": "Plus grand écart de victoire",
     "topForest": "Le plus de cartes posées",
     "topForestCards": "{{count}} cartes",
+    "mostGames": "Le plus de parties jouées",
+    "mostGamesCount": "{{count}} parties",
     "topCategoryBest": "Meilleure carte · {{category}}",
     "cardMetaMostPlayed": "Carte la plus jouée",
     "cardMetaBestAverage": "Meilleure moyenne par carte",

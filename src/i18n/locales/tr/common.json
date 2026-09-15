@@ -231,6 +231,8 @@
     "topMargin": "En büyük kazanma farkı",
     "topForest": "Bir oyunda en çok kart",
     "topForestCards": "{{count}} kart",
+    "mostGames": "En çok oynanan oyun",
+    "mostGamesCount": "{{count}} oyun",
     "topCategoryBest": "En iyi kart · {{category}}",
     "cardMetaMostPlayed": "En çok oynanan kart",
     "cardMetaBestAverage": "En iyi ortalamalı kart",
