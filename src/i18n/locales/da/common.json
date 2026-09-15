@@ -128,7 +128,10 @@
     "addPlayer": "Tilføj spiller",
     "removeConfirm": "Fjern {{name}}?",
     "removeWithHistoryWarning": "{{name}} har {{count}} spil i din statistikhistorik. Sletning fjerner permanent adgangen til denne statistik. Vil du fortsætte alligevel?",
-    "removeConfirmFinal": "Vil du virkelig slette {{name}}? Dette kan ikke fortrydes."
+    "removeConfirmFinal": "Vil du virkelig slette {{name}}? Dette kan ikke fortrydes.",
+    "rename": "Omdøb",
+    "renameDuplicate": "Der findes allerede en spiller ved navn {{name}}.",
+    "renameFailed": "Spilleren kunne ikke omdøbes. Prøv igen."
   },
   "playerDetail": {
     "wins": "Sejre ({{rate}}%)",

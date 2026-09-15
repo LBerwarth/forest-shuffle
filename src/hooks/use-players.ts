@@ -34,7 +34,12 @@ export function useUpdatePlayer() {
       id: string
       updates: Partial<Pick<Player, 'name' | 'color'>>
     }) => updatePlayer(id, updates),
-    onSuccess: () => qc.invalidateQueries({ queryKey: PLAYERS_KEY }),
+    // A rename is mirrored onto game_players by a DB trigger (migration 018).
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: PLAYERS_KEY })
+      qc.invalidateQueries({ queryKey: ['games'] })
+      qc.invalidateQueries({ queryKey: ['hall-of-fame'] })
+    },
   })
 }
 

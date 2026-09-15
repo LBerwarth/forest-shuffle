@@ -128,7 +128,10 @@
     "addPlayer": "Speler toevoegen",
     "removeConfirm": "{{name}} verwijderen?",
     "removeWithHistoryWarning": "{{name}} heeft {{count}} partij(en) in je statistieken. Na verwijderen zijn deze gegevens definitief niet meer toegankelijk. Toch doorgaan?",
-    "removeConfirmFinal": "{{name}} echt verwijderen? Dit kan niet ongedaan worden gemaakt."
+    "removeConfirmFinal": "{{name}} echt verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "rename": "Naam wijzigen",
+    "renameDuplicate": "Er bestaat al een speler met de naam {{name}}.",
+    "renameFailed": "Speler kon niet worden hernoemd. Probeer het opnieuw."
   },
   "playerDetail": {
     "wins": "Zeges ({{rate}}%)",

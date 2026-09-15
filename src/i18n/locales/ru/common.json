@@ -130,7 +130,10 @@
     "addPlayer": "Добавить игрока",
     "removeConfirm": "Удалить {{name}}?",
     "removeWithHistoryWarning": "У {{name}} есть игр в статистике: {{count}}. Удаление навсегда закроет доступ к этим данным. Всё равно продолжить?",
-    "removeConfirmFinal": "Точно удалить {{name}}? Это нельзя отменить."
+    "removeConfirmFinal": "Точно удалить {{name}}? Это нельзя отменить.",
+    "rename": "Переименовать",
+    "renameDuplicate": "Игрок с именем {{name}} уже существует.",
+    "renameFailed": "Не удалось переименовать игрока. Попробуйте ещё раз."
   },
   "playerDetail": {
     "wins": "Победы ({{rate}}%)",

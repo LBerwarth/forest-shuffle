@@ -29,7 +29,7 @@ export async function fetchPlayers(): Promise<Player[]> {
 }
 
 /** Normalized key for matching player names (trim + case-insensitive). */
-function playerNameKey(name: string): string {
+export function playerNameKey(name: string): string {
   return name.trim().toLowerCase()
 }
 
@@ -83,9 +83,10 @@ export async function updatePlayer(
   updates: Partial<Pick<Player, 'name' | 'color'>>,
 ): Promise<Player> {
   if (!supabase) throw new Error('Supabase not configured')
+  const patch = updates.name === undefined ? updates : { ...updates, name: updates.name.trim() }
   const { data, error } = await supabase
     .from('profiles')
-    .update(updates)
+    .update(patch)
     .eq('id', id)
     .select()
     .single()

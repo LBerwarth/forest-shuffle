@@ -128,7 +128,10 @@
     "addPlayer": "Oyuncu Ekle",
     "removeConfirm": "{{name}} kaldırılsın mı?",
     "removeWithHistoryWarning": "{{name}} istatistik geçmişinde {{count}} oyuna sahip. Silersen bu istatistiklere erişimi kalıcı olarak kaybedersin. Yine de devam edilsin mi?",
-    "removeConfirmFinal": "{{name}} gerçekten silinsin mi? Bu geri alınamaz."
+    "removeConfirmFinal": "{{name}} gerçekten silinsin mi? Bu geri alınamaz.",
+    "rename": "Yeniden adlandır",
+    "renameDuplicate": "{{name}} adında bir oyuncu zaten var.",
+    "renameFailed": "Oyuncu yeniden adlandırılamadı. Lütfen tekrar deneyin."
   },
   "playerDetail": {
     "wins": "Galibiyet ({{rate}}%)",

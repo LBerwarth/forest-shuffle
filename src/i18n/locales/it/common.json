@@ -128,7 +128,10 @@
     "addPlayer": "Aggiungi giocatore",
     "removeConfirm": "Rimuovere {{name}}?",
     "removeWithHistoryWarning": "{{name}} ha {{count}} partita/e nelle tue statistiche. Eliminando perderai definitivamente l'accesso a questi dati. Continuare comunque?",
-    "removeConfirmFinal": "Eliminare davvero {{name}}? Non si può annullare."
+    "removeConfirmFinal": "Eliminare davvero {{name}}? Non si può annullare.",
+    "rename": "Rinomina",
+    "renameDuplicate": "Esiste già un giocatore di nome {{name}}.",
+    "renameFailed": "Impossibile rinominare il giocatore. Riprova."
   },
   "playerDetail": {
     "wins": "Vittorie ({{rate}}%)",

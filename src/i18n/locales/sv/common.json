@@ -128,7 +128,10 @@
     "addPlayer": "Lägg till spelare",
     "removeConfirm": "Ta bort {{name}}?",
     "removeWithHistoryWarning": "{{name}} har {{count}} spel i din statistikhistorik. Om du raderar tas åtkomsten till denna statistik bort permanent. Fortsätta ändå?",
-    "removeConfirmFinal": "Vill du verkligen radera {{name}}? Detta kan inte ångras."
+    "removeConfirmFinal": "Vill du verkligen radera {{name}}? Detta kan inte ångras.",
+    "rename": "Byt namn",
+    "renameDuplicate": "Det finns redan en spelare som heter {{name}}.",
+    "renameFailed": "Spelaren kunde inte byta namn. Försök igen."
   },
   "playerDetail": {
     "wins": "Vinster ({{rate}}%)",

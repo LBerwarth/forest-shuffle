@@ -128,7 +128,10 @@
     "addPlayer": "Afegeix jugador",
     "removeConfirm": "Vols eliminar {{name}}?",
     "removeWithHistoryWarning": "{{name}} té {{count}} partida(es) al teu historial d'estadístiques. En eliminar-lo perdràs l'accés permanent a aquestes dades. Vols continuar igualment?",
-    "removeConfirmFinal": "Segur que vols eliminar {{name}}? Això no es pot desfer."
+    "removeConfirmFinal": "Segur que vols eliminar {{name}}? Això no es pot desfer.",
+    "rename": "Canviar el nom",
+    "renameDuplicate": "Ja existeix un jugador anomenat {{name}}.",
+    "renameFailed": "No s'ha pogut canviar el nom del jugador. Torna-ho a provar."
   },
   "playerDetail": {
     "wins": "Victòries ({{rate}}%)",

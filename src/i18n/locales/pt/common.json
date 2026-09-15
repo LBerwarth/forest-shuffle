@@ -128,7 +128,10 @@
     "addPlayer": "Adicionar jogador",
     "removeConfirm": "Remover {{name}}?",
     "removeWithHistoryWarning": "{{name}} tem {{count}} partida(s) no histórico de estatísticas. Ao eliminar, o acesso a estas estatísticas será perdido para sempre. Continuar mesmo assim?",
-    "removeConfirmFinal": "Eliminar mesmo {{name}}? Esta ação não pode ser desfeita."
+    "removeConfirmFinal": "Eliminar mesmo {{name}}? Esta ação não pode ser desfeita.",
+    "rename": "Renomear",
+    "renameDuplicate": "Já existe um jogador chamado {{name}}.",
+    "renameFailed": "Não foi possível renomear o jogador. Tenta novamente."
   },
   "playerDetail": {
     "wins": "Vitórias ({{rate}}%)",

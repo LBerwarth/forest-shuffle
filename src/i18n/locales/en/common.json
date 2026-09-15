@@ -130,7 +130,10 @@
     "addPlayer": "Add Player",
     "removeConfirm": "Remove {{name}}?",
     "removeWithHistoryWarning": "{{name}} has {{count}} game(s) in your stats history. Deleting will permanently remove access to these stats. Continue anyway?",
-    "removeConfirmFinal": "Really delete {{name}}? This cannot be undone."
+    "removeConfirmFinal": "Really delete {{name}}? This cannot be undone.",
+    "rename": "Rename",
+    "renameDuplicate": "A player named {{name}} already exists.",
+    "renameFailed": "Couldn't rename the player. Please try again."
   },
   "playerDetail": {
     "wins": "Wins ({{rate}}%)",

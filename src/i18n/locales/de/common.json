@@ -130,7 +130,10 @@
     "addPlayer": "Spieler hinzufügen",
     "removeConfirm": "{{name}} entfernen?",
     "removeWithHistoryWarning": "{{name}} hat {{count}} Spiel(e) in deiner Statistik. Beim Löschen verlierst du dauerhaft den Zugriff auf diese Daten. Trotzdem fortfahren?",
-    "removeConfirmFinal": "{{name}} wirklich löschen? Das kann nicht rückgängig gemacht werden."
+    "removeConfirmFinal": "{{name}} wirklich löschen? Das kann nicht rückgängig gemacht werden.",
+    "rename": "Umbenennen",
+    "renameDuplicate": "Es gibt bereits einen Spieler namens {{name}}.",
+    "renameFailed": "Spieler konnte nicht umbenannt werden. Bitte erneut versuchen."
   },
   "playerDetail": {
     "wins": "Siege ({{rate}}%)",

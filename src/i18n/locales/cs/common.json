@@ -131,7 +131,10 @@
     "addPlayer": "Přidat hráče",
     "removeConfirm": "Odebrat {{name}}?",
     "removeWithHistoryWarning": "{{name}} má ve tvé statistice uložené hry ({{count}}). Smazáním trvale ztratíš přístup k těmto statistikám. Přesto pokračovat?",
-    "removeConfirmFinal": "Opravdu smazat {{name}}? Tuto akci nelze vrátit zpět."
+    "removeConfirmFinal": "Opravdu smazat {{name}}? Tuto akci nelze vrátit zpět.",
+    "rename": "Přejmenovat",
+    "renameDuplicate": "Hráč se jménem {{name}} už existuje.",
+    "renameFailed": "Hráče se nepodařilo přejmenovat. Zkuste to znovu."
   },
   "playerDetail": {
     "wins": "Výhry ({{rate}}%)",

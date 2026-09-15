@@ -128,7 +128,10 @@
     "addPlayer": "Játékos hozzáadása",
     "removeConfirm": "Eltávolítod: {{name}}?",
     "removeWithHistoryWarning": "{{name}} {{count}} játékkal szerepel a statisztikádban. Törléskor véglegesen elveszíted a hozzáférést ezekhez az adatokhoz. Folytatod mégis?",
-    "removeConfirmFinal": "Biztosan törlöd: {{name}}? Ez nem vonható vissza."
+    "removeConfirmFinal": "Biztosan törlöd: {{name}}? Ez nem vonható vissza.",
+    "rename": "Átnevezés",
+    "renameDuplicate": "Már létezik {{name}} nevű játékos.",
+    "renameFailed": "Nem sikerült átnevezni a játékost. Próbáld újra."
   },
   "playerDetail": {
     "wins": "Győzelmek ({{rate}}%)",

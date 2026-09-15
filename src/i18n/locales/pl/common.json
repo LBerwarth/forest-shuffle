@@ -130,7 +130,10 @@
     "addPlayer": "Dodaj gracza",
     "removeConfirm": "Usunąć {{name}}?",
     "removeWithHistoryWarning": "{{name}} ma zapisane gry ({{count}}) w historii statystyk. Usunięcie trwale odbierze dostęp do tych statystyk. Kontynuować mimo to?",
-    "removeConfirmFinal": "Na pewno usunąć {{name}}? Tej operacji nie można cofnąć."
+    "removeConfirmFinal": "Na pewno usunąć {{name}}? Tej operacji nie można cofnąć.",
+    "rename": "Zmień nazwę",
+    "renameDuplicate": "Gracz o nazwie {{name}} już istnieje.",
+    "renameFailed": "Nie udało się zmienić nazwy gracza. Spróbuj ponownie."
   },
   "playerDetail": {
     "wins": "Zwycięstwa ({{rate}}%)",

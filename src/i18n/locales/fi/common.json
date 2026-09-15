@@ -128,7 +128,10 @@
     "addPlayer": "Lisää pelaaja",
     "removeConfirm": "Poistetaanko {{name}}?",
     "removeWithHistoryWarning": "{{name}} on mukana {{count}} pelissä tilastohistoriassasi. Poistaminen vie pysyvästi pääsyn näihin tilastoihin. Jatketaanko silti?",
-    "removeConfirmFinal": "Poistetaanko {{name}} varmasti? Tätä ei voi perua."
+    "removeConfirmFinal": "Poistetaanko {{name}} varmasti? Tätä ei voi perua.",
+    "rename": "Nimeä uudelleen",
+    "renameDuplicate": "Pelaaja nimeltä {{name}} on jo olemassa.",
+    "renameFailed": "Pelaajan nimeäminen ei onnistunut. Yritä uudelleen."
   },
   "playerDetail": {
     "wins": "Voitot ({{rate}} %)",
