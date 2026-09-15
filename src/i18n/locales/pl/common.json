@@ -229,6 +229,7 @@
     "hallOfFameRank": "nr {{rank}} z {{total}}",
     "hallOfFameYours": "ty",
     "hallOfFameMore": "Więcej rekordów świata",
+    "hallOfFameLess": "Mniej rekordów świata",
     "topTableScore": "Najwyższa suma przy stole",
     "topMargin": "Największa przewaga zwycięstwa",
     "topForest": "Najwięcej zagranych kart",

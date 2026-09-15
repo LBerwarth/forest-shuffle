@@ -227,6 +227,7 @@
     "hallOfFameRank": "nro {{rank}} / {{total}}",
     "hallOfFameYours": "sinä",
     "hallOfFameMore": "Lisää maailmanennätyksiä",
+    "hallOfFameLess": "Vähemmän maailmanennätyksiä",
     "topTableScore": "Suurin pöytäsumma",
     "topMargin": "Suurin voittomarginaali",
     "topForest": "Eniten pelattuja kortteja",

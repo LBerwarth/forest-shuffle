@@ -546,6 +546,9 @@ export async function fetchHallOfFame({
     category_bests:
       | (RawHofRecord & { card_category: CardCategory; card_key: string; points: number })[]
       | null
+    category_bests_top:
+      | (RawHofRecord & { card_category: CardCategory; card_key: string; points: number })[]
+      | null
     card_meta: {
       most_played: RawHofMostPlayed | null
       most_played_top: RawHofMostPlayed[] | null
@@ -596,7 +599,10 @@ export async function fetchHallOfFame({
       ...mapRecord(r),
       games: r.games,
     })),
-    categoryBests: (raw?.category_bests ?? []).map((c) => ({
+    categoryBests: (raw?.category_bests_top?.length
+      ? raw.category_bests_top
+      : (raw?.category_bests ?? [])
+    ).map((c) => ({
       ...mapRecord(c),
       cardCategory: c.card_category,
       cardKey: c.card_key,

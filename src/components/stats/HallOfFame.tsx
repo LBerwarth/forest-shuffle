@@ -109,6 +109,7 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
   const categoryBests = [...data.categoryBests].sort(
     (a, b) => catRank(a.cardCategory) - catRank(b.cardCategory),
   )
+  const categories = [...new Set(categoryBests.map((c) => c.cardCategory))]
   const multiTables = data.topTables.filter((tt) => tt.players > 1)
   const hasMore =
     categoryBests.length > 0 ||
@@ -251,25 +252,24 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
                 }))}
               />
 
-              {categoryBests.map((c) => (
-                <Row
-                  key={c.cardCategory}
-                  icon={
-                    <img
-                      src={CATEGORY_ICON_URLS[c.cardCategory]}
-                      alt=""
-                      className="h-4 w-4 shrink-0"
-                    />
-                  }
+              {categories.map((cat) => (
+                <Ranked
+                  key={cat}
+                  icon={<img src={CATEGORY_ICON_URLS[cat]} alt="" className="h-4 w-4 shrink-0" />}
                   label={t('leaderboard.topCategoryBest', {
-                    category: t(`category.${getCategoryLabel(c.cardCategory, catEdition)}`),
+                    category: t(`category.${getCategoryLabel(cat, catEdition)}`),
                   })}
-                  detail={
-                    <>
-                      {tc(`${c.cardKey}.name`)} · {who(c)}
-                    </>
-                  }
-                  value={<Value points={c.points} />}
+                  items={categoryBests
+                    .filter((c) => c.cardCategory === cat)
+                    .map((c) => ({
+                      key: `${c.cardKey}-${c.points}`,
+                      detail: (
+                        <>
+                          {tc(`${c.cardKey}.name`)} · {who(c)}
+                        </>
+                      ),
+                      value: <Value points={c.points} />,
+                    }))}
                 />
               ))}
 
@@ -315,7 +315,7 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
             onClick={() => setExpanded((v) => !v)}
             className="mt-2 flex w-full items-center justify-center gap-1 text-[11px] font-medium text-forest-500"
           >
-            {t('leaderboard.hallOfFameMore')}
+            {t(expanded ? 'leaderboard.hallOfFameLess' : 'leaderboard.hallOfFameMore')}
             <ChevronDown className={cn('h-3 w-3 transition-transform', expanded && 'rotate-180')} />
           </button>
         )}

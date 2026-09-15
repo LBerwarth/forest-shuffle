@@ -227,6 +227,7 @@
     "hallOfFameRank": "{{rank}}. / {{total}}",
     "hallOfFameYours": "te",
     "hallOfFameMore": "Több világrekord",
+    "hallOfFameLess": "Kevesebb világrekord",
     "topTableScore": "Legnagyobb asztalösszeg",
     "topMargin": "Legnagyobb győzelmi előny",
     "topForest": "Legtöbb kijátszott kártya",

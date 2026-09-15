@@ -229,6 +229,7 @@
     "hallOfFameRank": "№{{rank}} из {{total}}",
     "hallOfFameYours": "ты",
     "hallOfFameMore": "Больше мировых рекордов",
+    "hallOfFameLess": "Меньше мировых рекордов",
     "topTableScore": "Наибольшая сумма за столом",
     "topMargin": "Крупнейший отрыв в победе",
     "topForest": "Больше всего выложенных карт",

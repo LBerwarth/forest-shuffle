@@ -227,6 +227,7 @@
     "hallOfFameRank": "n.º {{rank}} de {{total}}",
     "hallOfFameYours": "você",
     "hallOfFameMore": "Mais recordes mundiais",
+    "hallOfFameLess": "Menos recordes mundiais",
     "topTableScore": "Maior total de mesa",
     "topMargin": "Maior margem de vitória",
     "topForest": "Mais cartas jogadas",

@@ -230,6 +230,7 @@
     "hallOfFameRank": "#{{rank}} of {{total}}",
     "hallOfFameYours": "you",
     "hallOfFameMore": "More world records",
+    "hallOfFameLess": "Fewer world records",
     "topTableScore": "Highest table total",
     "topMargin": "Biggest win margin",
     "topForest": "Most cards played",

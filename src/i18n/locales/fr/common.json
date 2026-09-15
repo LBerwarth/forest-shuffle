@@ -230,6 +230,7 @@
     "hallOfFameRank": "n°{{rank}} sur {{total}}",
     "hallOfFameYours": "toi",
     "hallOfFameMore": "Plus de records mondiaux",
+    "hallOfFameLess": "Moins de records mondiaux",
     "topTableScore": "Meilleur total de table",
     "topMargin": "Plus grand écart de victoire",
     "topForest": "Le plus de cartes posées",
