@@ -452,11 +452,11 @@ export interface HallOfFameData {
   totalGames: number
   totalPlayers: number
   me: { bestScore: number; rank: number; total: number; betterThanPct: number } | null
-  topGame: (HofRecord & { totalScore: number }) | null
-  topTable: { totalScore: number; players: number; playedAt: string; isMine: boolean } | null
-  topCard: (HofRecord & { cardKey: string; points: number }) | null
-  topMargin: (HofRecord & { margin: number }) | null
-  topForest: (HofRecord & { cards: number }) | null
+  topGames: (HofRecord & { totalScore: number })[]
+  topTables: { totalScore: number; players: number; playedAt: string; isMine: boolean }[]
+  topCards: (HofRecord & { cardKey: string; points: number })[]
+  topMargins: (HofRecord & { margin: number })[]
+  topForests: (HofRecord & { cards: number })[]
   mostGamesTop: (HofRecord & { games: number })[]
   categoryBests: (HofRecord & {
     cardCategory: CardCategory
@@ -464,8 +464,8 @@ export interface HallOfFameData {
     points: number
   })[]
   cardMeta: {
-    mostPlayed: { cardKey: string; appearances: number } | null
-    bestAverage: { cardKey: string; avgPoints: number; appearances: number } | null
+    mostPlayed: { cardKey: string; appearances: number }[]
+    bestAverage: { cardKey: string; avgPoints: number; appearances: number }[]
   }
 }
 
@@ -474,6 +474,25 @@ interface RawHofRecord {
   holders: number
   played_at: string
   is_mine: boolean
+}
+
+interface RawHofTable {
+  total_score: number
+  players: number
+  played_at: string
+  is_mine: boolean
+}
+
+interface RawHofMostPlayed {
+  card_key: string
+  appearances: number
+  plays: number
+}
+
+interface RawHofBestAverage {
+  card_key: string
+  avg_points: number
+  appearances: number
 }
 
 function mapRecord(raw: RawHofRecord): HofRecord {
@@ -514,24 +533,30 @@ export async function fetchHallOfFame({
     total_players: number
     me: { best_score: number; rank: number; total: number; better_than_pct: number } | null
     top_game: (RawHofRecord & { total_score: number }) | null
-    top_table: {
-      total_score: number
-      players: number
-      played_at: string
-      is_mine: boolean
-    } | null
+    top_game_top: (RawHofRecord & { total_score: number })[] | null
+    top_table: RawHofTable | null
+    top_table_top: RawHofTable[] | null
     top_card: (RawHofRecord & { card_key: string; points: number }) | null
+    top_card_top: (RawHofRecord & { card_key: string; points: number })[] | null
     top_margin: (RawHofRecord & { margin: number }) | null
+    top_margin_top: (RawHofRecord & { margin: number })[] | null
     top_forest: (RawHofRecord & { cards: number }) | null
+    top_forest_top: (RawHofRecord & { cards: number })[] | null
     most_games_top: (RawHofRecord & { games: number })[] | null
     category_bests:
       | (RawHofRecord & { card_category: CardCategory; card_key: string; points: number })[]
       | null
     card_meta: {
-      most_played: { card_key: string; appearances: number; plays: number } | null
-      best_average: { card_key: string; avg_points: number; appearances: number } | null
+      most_played: RawHofMostPlayed | null
+      most_played_top: RawHofMostPlayed[] | null
+      best_average: RawHofBestAverage | null
+      best_average_top: RawHofBestAverage[] | null
     } | null
   } | null
+  // a client can load before the migration runs, so a missing top-3 array
+  // falls back to the single record the older function returns
+  const top3 = <T,>(arr: T[] | null | undefined, one: T | null | undefined): T[] =>
+    arr && arr.length > 0 ? arr : one ? [one] : []
   return {
     since: raw?.since ?? null,
     totalGames: raw?.total_games ?? 0,
@@ -544,30 +569,29 @@ export async function fetchHallOfFame({
           betterThanPct: raw.me.better_than_pct,
         }
       : null,
-    topGame: raw?.top_game
-      ? { ...mapRecord(raw.top_game), totalScore: raw.top_game.total_score }
-      : null,
-    topTable: raw?.top_table
-      ? {
-          totalScore: raw.top_table.total_score,
-          players: raw.top_table.players,
-          playedAt: raw.top_table.played_at,
-          isMine: raw.top_table.is_mine ?? false,
-        }
-      : null,
-    topCard: raw?.top_card
-      ? {
-          ...mapRecord(raw.top_card),
-          cardKey: raw.top_card.card_key,
-          points: raw.top_card.points,
-        }
-      : null,
-    topMargin: raw?.top_margin
-      ? { ...mapRecord(raw.top_margin), margin: raw.top_margin.margin }
-      : null,
-    topForest: raw?.top_forest
-      ? { ...mapRecord(raw.top_forest), cards: raw.top_forest.cards }
-      : null,
+    topGames: top3(raw?.top_game_top, raw?.top_game).map((r) => ({
+      ...mapRecord(r),
+      totalScore: r.total_score,
+    })),
+    topTables: top3(raw?.top_table_top, raw?.top_table).map((t) => ({
+      totalScore: t.total_score,
+      players: t.players,
+      playedAt: t.played_at,
+      isMine: t.is_mine ?? false,
+    })),
+    topCards: top3(raw?.top_card_top, raw?.top_card).map((c) => ({
+      ...mapRecord(c),
+      cardKey: c.card_key,
+      points: c.points,
+    })),
+    topMargins: top3(raw?.top_margin_top, raw?.top_margin).map((r) => ({
+      ...mapRecord(r),
+      margin: r.margin,
+    })),
+    topForests: top3(raw?.top_forest_top, raw?.top_forest).map((r) => ({
+      ...mapRecord(r),
+      cards: r.cards,
+    })),
     mostGamesTop: (raw?.most_games_top ?? []).map((r) => ({
       ...mapRecord(r),
       games: r.games,
@@ -579,19 +603,15 @@ export async function fetchHallOfFame({
       points: c.points,
     })),
     cardMeta: {
-      mostPlayed: raw?.card_meta?.most_played
-        ? {
-            cardKey: raw.card_meta.most_played.card_key,
-            appearances: raw.card_meta.most_played.appearances,
-          }
-        : null,
-      bestAverage: raw?.card_meta?.best_average
-        ? {
-            cardKey: raw.card_meta.best_average.card_key,
-            avgPoints: raw.card_meta.best_average.avg_points,
-            appearances: raw.card_meta.best_average.appearances,
-          }
-        : null,
+      mostPlayed: top3(raw?.card_meta?.most_played_top, raw?.card_meta?.most_played).map((c) => ({
+        cardKey: c.card_key,
+        appearances: c.appearances,
+      })),
+      bestAverage: top3(raw?.card_meta?.best_average_top, raw?.card_meta?.best_average).map((c) => ({
+        cardKey: c.card_key,
+        avgPoints: c.avg_points,
+        appearances: c.appearances,
+      })),
     },
   }
 }

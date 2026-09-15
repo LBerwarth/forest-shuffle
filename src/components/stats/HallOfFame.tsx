@@ -109,12 +109,13 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
   const categoryBests = [...data.categoryBests].sort(
     (a, b) => catRank(a.cardCategory) - catRank(b.cardCategory),
   )
+  const multiTables = data.topTables.filter((tt) => tt.players > 1)
   const hasMore =
     categoryBests.length > 0 ||
-    data.topForest !== null ||
+    data.topForests.length > 0 ||
     data.mostGamesTop.length > 0 ||
-    data.cardMeta.mostPlayed !== null ||
-    (!soloOnly && (data.topMargin !== null || data.topTable !== null))
+    data.cardMeta.mostPlayed.length > 0 ||
+    (!soloOnly && (data.topMargins.length > 0 || multiTables.length > 0))
 
   return (
     <Card className="mb-4">
@@ -152,102 +153,103 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
             </div>
           )}
 
-          {data.topGame && (
-            <Row
-              tone="amber"
-              icon={<Trophy className="h-4 w-4 text-amber-500 shrink-0" />}
-              label={t('leaderboard.topGameScore')}
-              detail={
+          <Ranked
+            tone="amber"
+            icon={<Trophy className="h-4 w-4 text-amber-500 shrink-0" />}
+            label={t('leaderboard.topGameScore')}
+            items={data.topGames.map((r) => ({
+              key: String(r.totalScore),
+              detail: (
                 <>
-                  {who(data.topGame)} · {formatDate(data.topGame.playedAt)}
+                  {who(r)} · {formatDate(r.playedAt)}
                 </>
-              }
-              value={<Value points={data.topGame.totalScore} />}
-            />
-          )}
+              ),
+              value: <Value points={r.totalScore} />,
+            }))}
+          />
 
-          {data.topCard && (
-            <Row
-              icon={<CardIcon cardKey={data.topCard.cardKey} />}
+          {data.topCards.length > 0 && (
+            <Ranked
+              icon={<CardIcon cardKey={data.topCards[0].cardKey} />}
               label={t('leaderboard.topCardScore')}
-              detail={
-                <>
-                  {tc(`${data.topCard.cardKey}.name`)} · {who(data.topCard)}
-                </>
-              }
-              value={<Value points={data.topCard.points} />}
+              items={data.topCards.map((c) => ({
+                key: `${c.cardKey}-${c.points}`,
+                detail: (
+                  <>
+                    {tc(`${c.cardKey}.name`)} · {who(c)}
+                  </>
+                ),
+                value: <Value points={c.points} />,
+              }))}
             />
           )}
 
           {expanded && (
             <>
-              {!soloOnly && data.topTable && data.topTable.players > 1 && (
-                <Row
+              {!soloOnly && (
+                <Ranked
                   icon={<Users className="h-4 w-4 text-forest-400 shrink-0" />}
                   label={t('leaderboard.topTableScore')}
-                  detail={
-                    <>
-                      {t('gameDetail.playerCount', { count: data.topTable.players })} ·{' '}
-                      {formatDate(data.topTable.playedAt)}
-                    </>
-                  }
-                  value={<Value points={data.topTable.totalScore} />}
+                  items={multiTables.map((tt) => ({
+                    key: `${tt.totalScore}-${tt.playedAt}`,
+                    detail: (
+                      <>
+                        {t('gameDetail.playerCount', { count: tt.players })} ·{' '}
+                        {formatDate(tt.playedAt)}
+                      </>
+                    ),
+                    value: <Value points={tt.totalScore} />,
+                  }))}
                 />
               )}
 
-              {!soloOnly && data.topMargin && (
-                <Row
+              {!soloOnly && (
+                <Ranked
                   icon={<Swords className="h-4 w-4 text-forest-400 shrink-0" />}
                   label={t('leaderboard.topMargin')}
-                  detail={
-                    <>
-                      {who(data.topMargin)} · {formatDate(data.topMargin.playedAt)}
-                    </>
-                  }
-                  value={<Value points={data.topMargin.margin} />}
+                  items={data.topMargins.map((r) => ({
+                    key: String(r.margin),
+                    detail: (
+                      <>
+                        {who(r)} · {formatDate(r.playedAt)}
+                      </>
+                    ),
+                    value: <Value points={r.margin} />,
+                  }))}
                 />
               )}
 
-              {data.topForest && (
-                <Row
-                  icon={<Layers className="h-4 w-4 text-forest-400 shrink-0" />}
-                  label={t('leaderboard.topForest')}
-                  detail={
+              <Ranked
+                icon={<Layers className="h-4 w-4 text-forest-400 shrink-0" />}
+                label={t('leaderboard.topForest')}
+                items={data.topForests.map((r) => ({
+                  key: String(r.cards),
+                  detail: (
                     <>
-                      {who(data.topForest)} · {formatDate(data.topForest.playedAt)}
+                      {who(r)} · {formatDate(r.playedAt)}
                     </>
-                  }
-                  value={
+                  ),
+                  value: (
                     <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
-                      {t('leaderboard.topForestCards', { count: data.topForest.cards })}
+                      {t('leaderboard.topForestCards', { count: r.cards })}
                     </span>
-                  }
-                />
-              )}
+                  ),
+                }))}
+              />
 
-              {data.mostGamesTop.length > 0 && (
-                <div className="rounded-lg bg-forest-50 px-2.5 py-2">
-                  <div className="flex items-center gap-2">
-                    <Flame className="h-4 w-4 text-forest-400 shrink-0" />
-                    <p className="text-[10px] text-forest-400">{t('leaderboard.mostGames')}</p>
-                  </div>
-                  <ol className="mt-1 space-y-1">
-                    {data.mostGamesTop.map((r, i) => (
-                      <li key={r.games} className="flex items-center gap-2 pl-6">
-                        <span className="w-3 shrink-0 text-[10px] font-semibold text-forest-400 tabular-nums">
-                          {i + 1}
-                        </span>
-                        <span className="min-w-0 flex-1 truncate text-xs font-medium text-forest-700">
-                          {who(r)}
-                        </span>
-                        <span className="shrink-0 text-sm font-bold text-forest-700 tabular-nums">
-                          {t('leaderboard.mostGamesCount', { count: r.games })}
-                        </span>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-              )}
+              <Ranked
+                icon={<Flame className="h-4 w-4 text-forest-400 shrink-0" />}
+                label={t('leaderboard.mostGames')}
+                items={data.mostGamesTop.map((r) => ({
+                  key: String(r.games),
+                  detail: who(r),
+                  value: (
+                    <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
+                      {t('leaderboard.mostGamesCount', { count: r.games })}
+                    </span>
+                  ),
+                }))}
+              />
 
               {categoryBests.map((c) => (
                 <Row
@@ -271,34 +273,36 @@ export function HallOfFame({ playerCount, edition, time, myScore }: HallOfFamePr
                 />
               ))}
 
-              {data.cardMeta.mostPlayed && (
-                <Row
-                  icon={<CardIcon cardKey={data.cardMeta.mostPlayed.cardKey} />}
+              {data.cardMeta.mostPlayed.length > 0 && (
+                <Ranked
+                  icon={<CardIcon cardKey={data.cardMeta.mostPlayed[0].cardKey} />}
                   label={t('leaderboard.cardMetaMostPlayed')}
-                  detail={tc(`${data.cardMeta.mostPlayed.cardKey}.name`)}
-                  value={
-                    <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
-                      {t('leaderboard.cardMetaPlays', {
-                        count: data.cardMeta.mostPlayed.appearances,
-                      })}
-                    </span>
-                  }
+                  items={data.cardMeta.mostPlayed.map((c) => ({
+                    key: c.cardKey,
+                    detail: tc(`${c.cardKey}.name`),
+                    value: (
+                      <span className="text-sm font-bold text-forest-700 tabular-nums shrink-0">
+                        {t('leaderboard.cardMetaPlays', { count: c.appearances })}
+                      </span>
+                    ),
+                  }))}
                 />
               )}
 
-              {data.cardMeta.bestAverage && (
-                <Row
-                  icon={<CardIcon cardKey={data.cardMeta.bestAverage.cardKey} />}
+              {data.cardMeta.bestAverage.length > 0 && (
+                <Ranked
+                  icon={<CardIcon cardKey={data.cardMeta.bestAverage[0].cardKey} />}
                   label={t('leaderboard.cardMetaBestAverage')}
-                  detail={
-                    <>
-                      {tc(`${data.cardMeta.bestAverage.cardKey}.name`)} ·{' '}
-                      {t('leaderboard.cardMetaPlays', {
-                        count: data.cardMeta.bestAverage.appearances,
-                      })}
-                    </>
-                  }
-                  value={<Value points={data.cardMeta.bestAverage.avgPoints} />}
+                  items={data.cardMeta.bestAverage.map((c) => ({
+                    key: c.cardKey,
+                    detail: (
+                      <>
+                        {tc(`${c.cardKey}.name`)} ·{' '}
+                        {t('leaderboard.cardMetaPlays', { count: c.appearances })}
+                      </>
+                    ),
+                    value: <Value points={c.avgPoints} />,
+                  }))}
                 />
               )}
             </>
@@ -346,6 +350,48 @@ function Row({
         <p className="text-xs font-medium text-forest-700 truncate">{detail}</p>
       </div>
       {value}
+    </div>
+  )
+}
+
+function Ranked({
+  icon,
+  label,
+  items,
+  tone = 'forest',
+}: {
+  icon: ReactNode
+  label: string
+  items: { key: string; detail: ReactNode; value: ReactNode }[]
+  tone?: 'forest' | 'amber'
+}) {
+  if (items.length === 0) return null
+  if (items.length === 1) {
+    return (
+      <Row icon={icon} label={label} detail={items[0].detail} value={items[0].value} tone={tone} />
+    )
+  }
+  return (
+    <div
+      className={cn('rounded-lg px-2.5 py-2', tone === 'amber' ? 'bg-amber-50' : 'bg-forest-50')}
+    >
+      <div className="flex items-center gap-2">
+        {icon}
+        <p className="text-[10px] text-forest-400">{label}</p>
+      </div>
+      <ol className="mt-1 space-y-1">
+        {items.map((it, i) => (
+          <li key={it.key} className="flex items-center gap-2 pl-6">
+            <span className="w-3 shrink-0 text-[10px] font-semibold text-forest-400 tabular-nums">
+              {i + 1}
+            </span>
+            <span className="min-w-0 flex-1 truncate text-xs font-medium text-forest-700">
+              {it.detail}
+            </span>
+            {it.value}
+          </li>
+        ))}
+      </ol>
     </div>
   )
 }
