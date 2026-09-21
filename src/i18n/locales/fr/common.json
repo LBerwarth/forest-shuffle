@@ -407,5 +407,41 @@
     "hintBody": "Ajoute un e-mail pour garder l'historique de tes parties. C'est facultatif.",
     "hintAction": "Configurer",
     "hintDismiss": "Non merci"
+  },
+  "landing": {
+    "heading": "Calculateur de points gratuit pour Forêt Mixte",
+    "intro": "Forest Shuffle Scorer additionne votre forêt en fin de partie. Sélectionnez les arbres, animaux, plantes et champignons de votre zone de jeu, et l’application applique pour vous chaque effet de carte et chaque synergie. Plus de calculs à la main, plus d’erreurs de comptage.",
+    "features": [
+      "Compte le jeu de base avec Alpine, Lisière de forêt et Exploration, Forêt Mixte : Dartmoor avec Exmoor, et Forest Shuffle : Smoky Mountains",
+      "Fonctionne hors ligne et s’installe sur votre téléphone comme une application native",
+      "Conserve l’historique de vos parties avec statistiques par joueur, classements et un Hall of Fame mondial",
+      "Comptage en direct : chaque joueur saisit sa propre forêt sur son propre téléphone",
+      "Gratuit, sans publicité, sans compte, disponible en 18 langues"
+    ],
+    "faqHeading": "Questions fréquentes",
+    "faq": [
+      {
+        "q": "Comment compte-t-on les points à Forêt Mixte ?",
+        "a": "En fin de partie, chaque carte de votre forêt compte. Les arbres ont une valeur fixe, tandis que les animaux, plantes et champignons rapportent des points selon leurs symboles et les autres cartes de votre forêt. Chaque carte dans votre grotte vaut un point. Les cartes restées en main ou dans la clairière ne rapportent rien. L’application applique toutes ces règles pour vous."
+      },
+      {
+        "q": "Quelles éditions et extensions le calculateur prend-il en charge ?",
+        "a": "Forêt Mixte avec les extensions Alpine, Lisière de forêt et Exploration, Forêt Mixte : Dartmoor avec l’extension Exmoor, et Forest Shuffle : Smoky Mountains. Les nouvelles cartes sont ajoutées dès leur sortie."
+      },
+      {
+        "q": "Qu’est-ce qu’un bon score à Forêt Mixte ?",
+        "a": "Cela dépend du nombre de joueurs et des extensions utilisées. Dans les parties enregistrées avec cette application, environ un score final sur cinq dépasse 300 points. Le Hall of Fame affiche les records actuels."
+      },
+      {
+        "q": "Faut-il un compte ou une connexion internet ?",
+        "a": "Non. L’application fonctionne hors ligne et enregistre vos parties sur votre appareil. Vous pouvez, si vous le souhaitez, vous connecter avec votre adresse e-mail pour conserver votre historique sur plusieurs appareils."
+      },
+      {
+        "q": "Existe-t-il une application Android ?",
+        "a": "Oui. Forest Shuffle Scorer est disponible sur Google Play, et la version web fonctionne dans n’importe quel navigateur sur iPhone, Android et ordinateur."
+      }
+    ],
+    "playStore": "Disponible sur Google Play",
+    "hallOfFame": "Ouvrir le Hall of Fame"
   }
 }

@@ -406,5 +406,41 @@
     "hintBody": "Přidej e-mail, aby ti zůstala historie her. Je to volitelné.",
     "hintAction": "Nastavit",
     "hintDismiss": "Ne, díky"
+  },
+  "landing": {
+    "heading": "Bezplatná kalkulačka bodů pro Forest Shuffle",
+    "intro": "Forest Shuffle Scorer sečte váš les na konci hry. Vyberte stromy, zvířata, rostliny a houby ve své herní oblasti a aplikace za vás uplatní každý efekt karty i každou synergii. Konec počítání z hlavy a chyb v bodování.",
+    "features": [
+      "Boduje základní hru s rozšířeními Alpine, Woodland Edge a Exploration, Forest Shuffle: Dartmoor s Exmoorem a Forest Shuffle: Smoky Mountains",
+      "Funguje offline a nainstaluje se do telefonu jako běžná aplikace",
+      "Ukládá historii her se statistikami hráčů, žebříčky a celosvětovou Síní slávy",
+      "Živé bodování: každý hráč zadá svůj les na vlastním telefonu",
+      "Zdarma, bez reklam, bez účtu, k dispozici v 18 jazycích"
+    ],
+    "faqHeading": "Časté dotazy",
+    "faq": [
+      {
+        "q": "Jak se ve Forest Shuffle počítají body?",
+        "a": "Na konci hry se počítá každá karta ve vašem lese. Stromy mají pevnou hodnotu, zatímco zvířata, rostliny a houby bodují podle svých symbolů a ostatních karet ve vašem lese. Každá karta ve vaší jeskyni má hodnotu jednoho bodu. Karty v ruce nebo na mýtině nepřinášejí nic. Aplikace všechna tato pravidla uplatní za vás."
+      },
+      {
+        "q": "Které edice a rozšíření kalkulačka podporuje?",
+        "a": "Forest Shuffle s rozšířeními Alpine, Woodland Edge a Exploration, Forest Shuffle: Dartmoor s rozšířením Exmoor a Forest Shuffle: Smoky Mountains. Nové karty přidáváme hned po jejich vydání."
+      },
+      {
+        "q": "Jaké je dobré skóre ve Forest Shuffle?",
+        "a": "Záleží na počtu hráčů a použitých rozšířeních. Ve hrách zaznamenaných touto aplikací přesahuje zhruba každé páté konečné skóre 300 bodů. Aktuální rekordy najdete v Síni slávy."
+      },
+      {
+        "q": "Potřebuji účet nebo připojení k internetu?",
+        "a": "Ne. Aplikace funguje offline a ukládá hry ve vašem zařízení. Volitelně se můžete přihlásit e-mailem a mít historii na více zařízeních."
+      },
+      {
+        "q": "Existuje aplikace pro Android?",
+        "a": "Ano. Forest Shuffle Scorer je na Google Play a webová verze běží v jakémkoli prohlížeči na iPhonu, Androidu i počítači."
+      }
+    ],
+    "playStore": "Stáhnout z Google Play",
+    "hallOfFame": "Otevřít Síň slávy"
   }
 }

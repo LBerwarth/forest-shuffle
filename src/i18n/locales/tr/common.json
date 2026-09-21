@@ -403,5 +403,41 @@
     "hintBody": "Oyun geçmişini korumak için bir e-posta ekle. İsteğe bağlı.",
     "hintAction": "Ayarla",
     "hintDismiss": "Hayır, teşekkürler"
+  },
+  "landing": {
+    "heading": "Forest Shuffle için ücretsiz puan hesaplayıcı",
+    "intro": "Forest Shuffle Scorer, oyun sonunda ormanınızı toplar. Oyun alanınızdaki ağaçları, hayvanları, bitkileri ve mantarları seçin; uygulama her kart etkisini ve her sinerjiyi sizin için uygular. Artık elle saymak ve puanlama hataları yok.",
+    "features": [
+      "Temel oyunu Alpine, Woodland Edge ve Exploration ile, Forest Shuffle: Dartmoor’u Exmoor ile ve Forest Shuffle: Smoky Mountains’ı puanlar",
+      "Çevrimdışı çalışır ve telefonunuza yerel bir uygulama gibi kurulur",
+      "Oyun geçmişinizi oyuncu istatistikleri, sıralamalar ve dünya çapında bir Şöhret Salonu ile saklar",
+      "Canlı puanlama: her oyuncu kendi ormanını kendi telefonundan girer",
+      "Ücretsiz, reklamsız, hesap gerektirmez, 18 dilde kullanılabilir"
+    ],
+    "faqHeading": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "Forest Shuffle’da puanlama nasıl yapılır?",
+        "a": "Oyun sonunda ormanınızdaki her kart sayılır. Ağaçların sabit bir değeri vardır; hayvanlar, bitkiler ve mantarlar ise sembollerine ve ormanınızdaki diğer kartlara göre puan getirir. Mağaranızdaki her kart bir puan değerindedir. Elinizde veya açıklıkta kalan kartlar puan getirmez. Uygulama tüm bu kuralları sizin için uygular."
+      },
+      {
+        "q": "Hesaplayıcı hangi sürümleri ve genişletmeleri destekler?",
+        "a": "Alpine, Woodland Edge ve Exploration genişletmeleriyle Forest Shuffle, Exmoor genişletmesiyle Forest Shuffle: Dartmoor ve Forest Shuffle: Smoky Mountains. Yeni kartlar çıktıkları anda eklenir."
+      },
+      {
+        "q": "Forest Shuffle’da iyi bir puan nedir?",
+        "a": "Oyuncu sayısına ve kullanılan genişletmelere bağlıdır. Bu uygulamayla kayıt edilen oyunlarda yaklaşık her beş final puanından biri 300’ü geçiyor. Güncel rekorları Şöhret Salonu gösterir."
+      },
+      {
+        "q": "Hesap veya internet bağlantısı gerekir mi?",
+        "a": "Hayır. Uygulama çevrimdışı çalışır ve oyunlarınızı cihazınızda saklar. İsterseniz geçmişinizi birden fazla cihazda tutmak için e-posta adresinizle giriş yapabilirsiniz."
+      },
+      {
+        "q": "Android uygulaması var mı?",
+        "a": "Evet. Forest Shuffle Scorer Google Play’de mevcut; web sürümü ise iPhone, Android ve masaüstünde her tarayıcıda çalışır."
+      }
+    ],
+    "playStore": "Google Play’den indir",
+    "hallOfFame": "Şöhret Salonu’nu aç"
   }
 }

@@ -405,5 +405,41 @@
     "hintBody": "Dodaj e-mail, żeby zachować historię swoich gier. To opcjonalne.",
     "hintAction": "Skonfiguruj",
     "hintDismiss": "Nie, dziękuję"
+  },
+  "landing": {
+    "heading": "Darmowy kalkulator punktów do Forest Shuffle",
+    "intro": "Forest Shuffle Scorer podlicza Twój las na koniec gry. Wybierz drzewa, zwierzęta, rośliny i grzyby ze swojego obszaru gry, a aplikacja zastosuje za Ciebie każdy efekt karty i każdą synergię. Koniec z liczeniem w głowie i pomyłkami w punktacji.",
+    "features": [
+      "Liczy grę podstawową z dodatkami Alpine, Woodland Edge i Exploration, Forest Shuffle: Dartmoor z Exmoor oraz Forest Shuffle: Smoky Mountains",
+      "Działa offline i instaluje się na telefonie jak zwykła aplikacja",
+      "Zapisuje historię rozgrywek ze statystykami graczy, rankingami i światową Galerią sław",
+      "Punktacja na żywo: każdy gracz wpisuje swój las na własnym telefonie",
+      "Darmowa, bez reklam, bez konta, dostępna w 18 językach"
+    ],
+    "faqHeading": "Najczęstsze pytania",
+    "faq": [
+      {
+        "q": "Jak liczy się punkty w Forest Shuffle?",
+        "a": "Na koniec gry liczy się każda karta w Twoim lesie. Drzewa mają stałą wartość, a zwierzęta, rośliny i grzyby punktują w zależności od swoich symboli i pozostałych kart w Twoim lesie. Każda karta w Twojej jaskini jest warta jeden punkt. Karty pozostałe na ręce lub na polanie nie dają nic. Aplikacja stosuje wszystkie te zasady za Ciebie."
+      },
+      {
+        "q": "Które edycje i dodatki obsługuje kalkulator?",
+        "a": "Forest Shuffle z dodatkami Alpine, Woodland Edge i Exploration, Forest Shuffle: Dartmoor z dodatkiem Exmoor oraz Forest Shuffle: Smoky Mountains. Nowe karty pojawiają się zaraz po premierze."
+      },
+      {
+        "q": "Jaki wynik w Forest Shuffle jest dobry?",
+        "a": "To zależy od liczby graczy i użytych dodatków. W rozgrywkach zapisanych w tej aplikacji mniej więcej co piąty wynik końcowy przekracza 300 punktów. Aktualne rekordy pokazuje Galeria sław."
+      },
+      {
+        "q": "Czy potrzebuję konta lub połączenia z internetem?",
+        "a": "Nie. Aplikacja działa offline i zapisuje rozgrywki na Twoim urządzeniu. Opcjonalnie możesz zalogować się adresem e-mail, aby zachować historię na kilku urządzeniach."
+      },
+      {
+        "q": "Czy jest aplikacja na Androida?",
+        "a": "Tak. Forest Shuffle Scorer jest dostępny w Google Play, a wersja webowa działa w każdej przeglądarce na iPhonie, Androidzie i komputerze."
+      }
+    ],
+    "playStore": "Pobierz z Google Play",
+    "hallOfFame": "Otwórz Galerię sław"
   }
 }

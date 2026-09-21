@@ -403,5 +403,41 @@
     "hintBody": "Afegeix un correu per conservar l'historial de les teves partides. És opcional.",
     "hintAction": "Configurar",
     "hintDismiss": "No, gràcies"
+  },
+  "landing": {
+    "heading": "Calculadora de punts gratuïta per a Forest Shuffle",
+    "intro": "Forest Shuffle Scorer suma el teu bosc al final de la partida. Tria els arbres, animals, plantes i bolets de la teva zona de joc i l’aplicació aplica per tu cada efecte de carta i cada sinergia. S’ha acabat comptar a mà i equivocar-se en la puntuació.",
+    "features": [
+      "Puntua el joc base amb Alpine, Woodland Edge i Exploration, Forest Shuffle: Dartmoor amb Exmoor i Forest Shuffle: Smoky Mountains",
+      "Funciona sense connexió i s’instal·la al mòbil com una app nativa",
+      "Desa l’historial de partides amb estadístiques per jugador, classificacions i un Saló de la fama mundial",
+      "Puntuació en directe: cada jugador introdueix el seu propi bosc al seu propi mòbil",
+      "Gratuïta, sense anuncis, sense compte, disponible en 18 idiomes"
+    ],
+    "faqHeading": "Preguntes freqüents",
+    "faq": [
+      {
+        "q": "Com es puntua a Forest Shuffle?",
+        "a": "Al final de la partida compta cada carta del teu bosc. Els arbres tenen un valor fix, mentre que animals, plantes i bolets puntuen segons els seus símbols i les altres cartes del teu bosc. Cada carta a la teva cova val un punt. Les cartes que queden a la mà o a la clariana no puntuen. L’aplicació aplica totes aquestes regles per tu."
+      },
+      {
+        "q": "Quines edicions i expansions admet la calculadora?",
+        "a": "Forest Shuffle amb les expansions Alpine, Woodland Edge i Exploration, Forest Shuffle: Dartmoor amb l’expansió Exmoor i Forest Shuffle: Smoky Mountains. Les cartes noves s’afegeixen tan bon punt surten."
+      },
+      {
+        "q": "Què és una bona puntuació a Forest Shuffle?",
+        "a": "Depèn del nombre de jugadors i de les expansions en joc. A les partides registrades amb aquesta aplicació, aproximadament una de cada cinc puntuacions finals supera els 300 punts. El Saló de la fama mostra els rècords actuals."
+      },
+      {
+        "q": "Necessito un compte o connexió a internet?",
+        "a": "No. L’aplicació funciona sense connexió i desa les partides al teu dispositiu. Si vols, pots iniciar sessió amb el teu correu electrònic per conservar l’historial en diversos dispositius."
+      },
+      {
+        "q": "Hi ha una app per a Android?",
+        "a": "Sí. Forest Shuffle Scorer és a Google Play, i la versió web funciona en qualsevol navegador a iPhone, Android i ordinador."
+      }
+    ],
+    "playStore": "Disponible a Google Play",
+    "hallOfFame": "Obrir el Saló de la fama"
   }
 }

@@ -403,5 +403,41 @@
     "hintBody": "Adj meg egy e-mail-címet, hogy megmaradjanak a játékaid előzményei. Nem kötelező.",
     "hintAction": "Beállítás",
     "hintDismiss": "Köszönöm, nem"
+  },
+  "landing": {
+    "heading": "Ingyenes pontszámláló a Forest Shuffle-hoz",
+    "intro": "A Forest Shuffle Scorer a játék végén összeadja az erdődet. Válaszd ki a játékterületed fáit, állatait, növényeit és gombáit, és az alkalmazás minden kártyahatást és szinergiát alkalmaz helyetted. Nincs többé fejben számolás és pontozási hiba.",
+    "features": [
+      "Pontozza az alapjátékot az Alpine, Woodland Edge és Exploration kiegészítőkkel, a Forest Shuffle: Dartmoort az Exmoorral és a Forest Shuffle: Smoky Mountainst",
+      "Offline is működik, és natív alkalmazásként telepíthető a telefonra",
+      "Elmenti a játékaid előzményeit játékosstatisztikákkal, ranglistákkal és világszintű Dicsőségtáblával",
+      "Élő pontozás: minden játékos a saját telefonján viszi be a saját erdejét",
+      "Ingyenes, reklámmentes, nem kell fiók, 18 nyelven elérhető"
+    ],
+    "faqHeading": "Gyakori kérdések",
+    "faq": [
+      {
+        "q": "Hogyan pontoznak a Forest Shuffle-ban?",
+        "a": "A játék végén az erdőd minden kártyája számít. A fák rögzített értékűek, az állatok, növények és gombák pedig a szimbólumaik és az erdőd többi kártyája alapján pontoznak. A barlangodban minden kártya egy pontot ér. A kézben vagy a tisztáson maradt kártyák nem érnek semmit. Az alkalmazás mindezeket a szabályokat alkalmazza helyetted."
+      },
+      {
+        "q": "Mely kiadásokat és kiegészítőket támogatja a pontszámláló?",
+        "a": "A Forest Shuffle-t az Alpine, Woodland Edge és Exploration kiegészítőkkel, a Forest Shuffle: Dartmoort az Exmoor kiegészítővel, valamint a Forest Shuffle: Smoky Mountainst. Az új kártyák megjelenésük után azonnal bekerülnek."
+      },
+      {
+        "q": "Mi számít jó pontszámnak a Forest Shuffle-ban?",
+        "a": "Ez a játékosok számától és a használt kiegészítőktől függ. Az ezzel az alkalmazással rögzített játékokban körülbelül minden ötödik végeredmény meghaladja a 300 pontot. Az aktuális rekordokat a Dicsőségtábla mutatja."
+      },
+      {
+        "q": "Kell fiók vagy internetkapcsolat?",
+        "a": "Nem. Az alkalmazás offline működik, és a játékaidat az eszközödön tárolja. Opcionálisan bejelentkezhetsz az e-mail-címeddel, hogy az előzményeid több eszközön is megmaradjanak."
+      },
+      {
+        "q": "Van Android-alkalmazás?",
+        "a": "Igen. A Forest Shuffle Scorer elérhető a Google Playen, a webes verzió pedig bármely böngészőben fut iPhone-on, Androidon és számítógépen."
+      }
+    ],
+    "playStore": "Letöltés a Google Playről",
+    "hallOfFame": "Dicsőségtábla megnyitása"
   }
 }

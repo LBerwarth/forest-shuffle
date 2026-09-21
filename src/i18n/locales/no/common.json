@@ -403,5 +403,41 @@
     "hintBody": "Legg til en e-post for å beholde spillhistorikken din. Det er valgfritt.",
     "hintAction": "Sett opp",
     "hintDismiss": "Nei takk"
+  },
+  "landing": {
+    "heading": "Gratis poengkalkulator for Forest Shuffle",
+    "intro": "Forest Shuffle Scorer summerer skogen din når spillet er over. Velg trærne, dyrene, plantene og soppene i spillområdet ditt, og appen bruker hver korteffekt og hver synergi for deg. Slutt på hoderegning og poengfeil.",
+    "features": [
+      "Teller grunnspillet med Alpine, Woodland Edge og Exploration, Forest Shuffle: Dartmoor med Exmoor og Forest Shuffle: Smoky Mountains",
+      "Fungerer offline og installeres på telefonen som en vanlig app",
+      "Lagrer spillhistorikken din med spillerstatistikk, rangeringer og en verdensomspennende Hall of Fame",
+      "Live-poeng: hver spiller legger inn sin egen skog på sin egen telefon",
+      "Gratis, uten reklame, uten konto, tilgjengelig på 18 språk"
+    ],
+    "faqHeading": "Ofte stilte spørsmål",
+    "faq": [
+      {
+        "q": "Hvordan telles poeng i Forest Shuffle?",
+        "a": "Når spillet er over, teller hvert kort i skogen din. Trær har en fast verdi, mens dyr, planter og sopp gir poeng etter symbolene sine og de andre kortene i skogen din. Hvert kort i hulen din er verdt ett poeng. Kort på hånden eller i lysningen gir ingenting. Appen bruker alle disse reglene for deg."
+      },
+      {
+        "q": "Hvilke utgaver og utvidelser støtter poengkalkulatoren?",
+        "a": "Forest Shuffle med utvidelsene Alpine, Woodland Edge og Exploration, Forest Shuffle: Dartmoor med utvidelsen Exmoor og Forest Shuffle: Smoky Mountains. Nye kort legges til så snart de kommer ut."
+      },
+      {
+        "q": "Hva er en god poengsum i Forest Shuffle?",
+        "a": "Det avhenger av antall spillere og utvidelsene som er i bruk. I spillene som er registrert med denne appen, passerer omtrent hver femte sluttsum 300 poeng. Hall of Fame viser de gjeldende rekordene."
+      },
+      {
+        "q": "Trenger jeg en konto eller internettforbindelse?",
+        "a": "Nei. Appen fungerer offline og lagrer spillene dine på enheten din. Du kan eventuelt logge inn med e-postadressen din for å beholde historikken på flere enheter."
+      },
+      {
+        "q": "Finnes det en Android-app?",
+        "a": "Ja. Forest Shuffle Scorer finnes på Google Play, og nettversjonen kjører i alle nettlesere på iPhone, Android og datamaskin."
+      }
+    ],
+    "playStore": "Last ned på Google Play",
+    "hallOfFame": "Åpne Hall of Fame"
   }
 }

@@ -403,5 +403,41 @@
     "hintBody": "Voeg een e-mailadres toe om je spelgeschiedenis te behouden. Dit is optioneel.",
     "hintAction": "Instellen",
     "hintDismiss": "Nee, bedankt"
+  },
+  "landing": {
+    "heading": "Gratis puntenteller voor Forest Shuffle",
+    "intro": "Forest Shuffle Scorer telt je bos aan het einde van het spel op. Kies de bomen, dieren, planten en paddenstoelen in je speelgebied en de app past elk kaarteffect en elke synergie voor je toe. Niet meer met de hand tellen, geen telfouten meer.",
+    "features": [
+      "Telt het basisspel met Alpine, Woodland Edge en Exploration, Forest Shuffle: Dartmoor met Exmoor en Forest Shuffle: Smoky Mountains",
+      "Werkt offline en installeert op je telefoon als een gewone app",
+      "Bewaart je spelgeschiedenis met spelersstatistieken, ranglijsten en een wereldwijde Hall of Fame",
+      "Live scoren: elke speler voert zijn eigen bos in op zijn eigen telefoon",
+      "Gratis, zonder advertenties, zonder account, beschikbaar in 18 talen"
+    ],
+    "faqHeading": "Veelgestelde vragen",
+    "faq": [
+      {
+        "q": "Hoe worden de punten in Forest Shuffle geteld?",
+        "a": "Aan het einde van het spel telt elke kaart in je bos. Bomen hebben een vaste waarde, terwijl dieren, planten en paddenstoelen punten opleveren op basis van hun symbolen en de andere kaarten in je bos. Elke kaart in je grot is één punt waard. Kaarten in je hand of op de open plek leveren niets op. De app past al deze regels voor je toe."
+      },
+      {
+        "q": "Welke edities en uitbreidingen ondersteunt de puntenteller?",
+        "a": "Forest Shuffle met de uitbreidingen Alpine, Woodland Edge en Exploration, Forest Shuffle: Dartmoor met de uitbreiding Exmoor en Forest Shuffle: Smoky Mountains. Nieuwe kaarten worden toegevoegd zodra ze verschijnen."
+      },
+      {
+        "q": "Wat is een goede score in Forest Shuffle?",
+        "a": "Dat hangt af van het aantal spelers en de gebruikte uitbreidingen. In de spellen die met deze app zijn vastgelegd, komt ongeveer één op de vijf eindscores boven de 300 punten. De Hall of Fame toont de huidige records."
+      },
+      {
+        "q": "Heb ik een account of internetverbinding nodig?",
+        "a": "Nee. De app werkt offline en bewaart je spellen op je apparaat. Je kunt optioneel inloggen met je e-mailadres om je geschiedenis op meerdere apparaten te bewaren."
+      },
+      {
+        "q": "Is er een Android-app?",
+        "a": "Ja. Forest Shuffle Scorer staat in Google Play, en de webversie werkt in elke browser op iPhone, Android en desktop."
+      }
+    ],
+    "playStore": "Downloaden in Google Play",
+    "hallOfFame": "Hall of Fame openen"
   }
 }

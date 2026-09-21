@@ -8,6 +8,7 @@ import { AcornIcon } from '@/components/ui/AcornIcon'
 import { AcornLogo } from '@/components/ui/AcornLogo'
 import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
+import { LandingSection } from '@/components/LandingSection'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 
@@ -195,6 +196,8 @@ export function HomePage() {
           </CardContent>
         </Card>
       </div>
+
+      <LandingSection />
 
       {/* Settings link */}
       <Link

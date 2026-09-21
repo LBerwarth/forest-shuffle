@@ -342,8 +342,8 @@
     "total": "Total"
   },
   "seo": {
-    "title": "Forest Shuffle Scorer — Score Calculator & Tracker",
-    "description": "Free score calculator & game tracker for the Forest Shuffle board game — all expansions included: Alpine, Woodland Edge, Dartmoor, Exmoor. Works offline, no ads."
+    "title": "Forest Shuffle Scorer — Free Scoring App & Score Calculator",
+    "description": "Free scoring app & score calculator for the Forest Shuffle board game — Alpine, Woodland Edge, Dartmoor, Exmoor, Smoky Mountains. Works offline, no ads."
   },
   "install": {
     "playMessage": "Get the free Android app on Google Play!",
@@ -407,5 +407,41 @@
     "hintBody": "Add an e-mail to keep your game history. It's optional.",
     "hintAction": "Set up",
     "hintDismiss": "No thanks"
+  },
+  "landing": {
+    "heading": "Free score calculator for Forest Shuffle",
+    "intro": "Forest Shuffle Scorer adds up your forest at the end of the game. Pick the trees, animals, plants and mushrooms in your play area and the app applies every card effect and synergy for you. No more counting by hand, no more scoring mistakes.",
+    "features": [
+      "Scores the base game with Alpine, Woodland Edge and Exploration, Forest Shuffle: Dartmoor with Exmoor, and Forest Shuffle: Smoky Mountains",
+      "Works offline and installs on your phone like a native app",
+      "Keeps your game history with player stats, rankings and a worldwide Hall of Fame",
+      "Live scoring: every player enters their own forest on their own phone",
+      "Free, no ads, no account required, available in 18 languages"
+    ],
+    "faqHeading": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How is Forest Shuffle scored?",
+        "a": "At the end of the game every card in your forest counts. Trees have a fixed value, while animals, plants and mushrooms score depending on their symbols and on the other cards in your forest. Each card in your cave is worth one point. Cards left in your hand or in the clearing score nothing. The app applies all of these rules for you."
+      },
+      {
+        "q": "Which editions and expansions does the scorer support?",
+        "a": "Forest Shuffle with the Alpine, Woodland Edge and Exploration expansions, Forest Shuffle: Dartmoor with the Exmoor expansion, and Forest Shuffle: Smoky Mountains. New cards are added as they are released."
+      },
+      {
+        "q": "What is a good score in Forest Shuffle?",
+        "a": "That depends on the player count and the expansions in play. In games recorded with this app, roughly one in five final scores passes 300 points. The Hall of Fame shows the current records."
+      },
+      {
+        "q": "Do I need an account or an internet connection?",
+        "a": "No. The app works offline and stores your games on your device. You can optionally sign in with your e-mail address to keep your history across devices."
+      },
+      {
+        "q": "Is there an Android app?",
+        "a": "Yes. Forest Shuffle Scorer is available on Google Play, and the web version runs in any browser on iPhone, Android and desktop."
+      }
+    ],
+    "playStore": "Get it on Google Play",
+    "hallOfFame": "Open the Hall of Fame"
   }
 }

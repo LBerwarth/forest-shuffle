@@ -403,5 +403,41 @@
     "hintBody": "Adicione um e-mail para manter o histórico dos seus jogos. É opcional.",
     "hintAction": "Configurar",
     "hintDismiss": "Não, obrigado"
+  },
+  "landing": {
+    "heading": "Calculadora de pontos gratuita para Forest Shuffle",
+    "intro": "O Forest Shuffle Scorer soma a sua floresta no fim do jogo. Escolha as árvores, animais, plantas e cogumelos da sua área de jogo e a aplicação aplica por si cada efeito de carta e cada sinergia. Acabou o contar à mão e os erros de pontuação.",
+    "features": [
+      "Pontua o jogo base com Alpine, Woodland Edge e Exploration, Forest Shuffle: Dartmoor com Exmoor e Forest Shuffle: Smoky Mountains",
+      "Funciona offline e instala-se no telemóvel como uma aplicação nativa",
+      "Guarda o histórico de jogos com estatísticas por jogador, classificações e um Hall da Fama mundial",
+      "Pontuação ao vivo: cada jogador introduz a sua própria floresta no seu próprio telemóvel",
+      "Grátis, sem anúncios, sem conta, disponível em 18 idiomas"
+    ],
+    "faqHeading": "Perguntas frequentes",
+    "faq": [
+      {
+        "q": "Como se pontua no Forest Shuffle?",
+        "a": "No fim do jogo conta cada carta da sua floresta. As árvores têm um valor fixo, enquanto animais, plantas e cogumelos pontuam conforme os seus símbolos e as outras cartas da sua floresta. Cada carta na sua gruta vale um ponto. As cartas que ficam na mão ou na clareira não pontuam. A aplicação aplica todas estas regras por si."
+      },
+      {
+        "q": "Que edições e expansões suporta a calculadora?",
+        "a": "Forest Shuffle com as expansões Alpine, Woodland Edge e Exploration, Forest Shuffle: Dartmoor com a expansão Exmoor e Forest Shuffle: Smoky Mountains. As cartas novas são adicionadas assim que saem."
+      },
+      {
+        "q": "O que é uma boa pontuação no Forest Shuffle?",
+        "a": "Depende do número de jogadores e das expansões em jogo. Nos jogos registados com esta aplicação, cerca de uma em cada cinco pontuações finais ultrapassa os 300 pontos. O Hall da Fama mostra os recordes atuais."
+      },
+      {
+        "q": "Preciso de conta ou de ligação à internet?",
+        "a": "Não. A aplicação funciona offline e guarda os seus jogos no seu dispositivo. Opcionalmente, pode iniciar sessão com o seu e-mail para manter o histórico em vários dispositivos."
+      },
+      {
+        "q": "Existe uma aplicação para Android?",
+        "a": "Sim. O Forest Shuffle Scorer está disponível no Google Play, e a versão web funciona em qualquer navegador no iPhone, Android e computador."
+      }
+    ],
+    "playStore": "Disponível no Google Play",
+    "hallOfFame": "Abrir o Hall da Fama"
   }
 }

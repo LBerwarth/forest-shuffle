@@ -407,5 +407,41 @@
     "hintBody": "Añade un e-mail para conservar el historial de tus partidas. Es opcional.",
     "hintAction": "Configurar",
     "hintDismiss": "No, gracias"
+  },
+  "landing": {
+    "heading": "Calculadora de puntos gratuita para Forest Shuffle",
+    "intro": "Forest Shuffle Scorer suma tu bosque al final de la partida. Elige los árboles, animales, plantas y setas de tu zona de juego y la aplicación aplica por ti cada efecto de carta y cada sinergia. Se acabó contar a mano y equivocarse en la puntuación.",
+    "features": [
+      "Puntúa el juego base con Alpine, Woodland Edge y Exploration, Forest Shuffle: Dartmoor con Exmoor y Forest Shuffle: Smoky Mountains",
+      "Funciona sin conexión y se instala en tu móvil como una app nativa",
+      "Guarda tu historial de partidas con estadísticas por jugador, clasificaciones y un Salón de la fama mundial",
+      "Puntuación en vivo: cada jugador introduce su propio bosque en su propio móvil",
+      "Gratis, sin anuncios, sin cuenta, disponible en 18 idiomas"
+    ],
+    "faqHeading": "Preguntas frecuentes",
+    "faq": [
+      {
+        "q": "¿Cómo se puntúa en Forest Shuffle?",
+        "a": "Al final de la partida cuenta cada carta de tu bosque. Los árboles tienen un valor fijo, mientras que animales, plantas y setas puntúan según sus símbolos y las demás cartas de tu bosque. Cada carta en tu cueva vale un punto. Las cartas que quedan en la mano o en el claro no puntúan. La aplicación aplica todas estas reglas por ti."
+      },
+      {
+        "q": "¿Qué ediciones y expansiones admite la calculadora?",
+        "a": "Forest Shuffle con las expansiones Alpine, Woodland Edge y Exploration, Forest Shuffle: Dartmoor con la expansión Exmoor y Forest Shuffle: Smoky Mountains. Las cartas nuevas se añaden en cuanto salen."
+      },
+      {
+        "q": "¿Qué es una buena puntuación en Forest Shuffle?",
+        "a": "Depende del número de jugadores y de las expansiones en juego. En las partidas registradas con esta aplicación, aproximadamente una de cada cinco puntuaciones finales supera los 300 puntos. El Salón de la fama muestra los récords actuales."
+      },
+      {
+        "q": "¿Necesito una cuenta o conexión a internet?",
+        "a": "No. La aplicación funciona sin conexión y guarda tus partidas en tu dispositivo. Si quieres, puedes iniciar sesión con tu correo electrónico para conservar tu historial en varios dispositivos."
+      },
+      {
+        "q": "¿Hay una app para Android?",
+        "a": "Sí. Forest Shuffle Scorer está disponible en Google Play, y la versión web funciona en cualquier navegador en iPhone, Android y ordenador."
+      }
+    ],
+    "playStore": "Disponible en Google Play",
+    "hallOfFame": "Abrir el Salón de la fama"
   }
 }
