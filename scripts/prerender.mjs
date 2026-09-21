@@ -101,7 +101,16 @@ function pageHtml(template, page) {
   return html
 }
 
-const template = await readFile(path.join(dist, 'index.html'), 'utf8')
+// The single stylesheet is the only render-blocking request left; inlining it
+// removes a round trip in front of first paint.
+async function inlineStylesheet(html) {
+  const match = html.match(/<link rel="stylesheet"[^>]*href="\/([^"]+\.css)"[^>]*>/)
+  if (!match) return html
+  const css = await readFile(path.join(dist, match[1]), 'utf8')
+  return html.replace(match[0], `<style>${css}</style>`)
+}
+
+const template = await inlineStylesheet(await readFile(path.join(dist, 'index.html'), 'utf8'))
 for (const lang of LANGS) {
   const page = await render(lang)
   const html = pageHtml(template, page)
