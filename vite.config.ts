@@ -57,10 +57,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
+        // Only genuinely eager packages get a manual chunk: naming recharts and
+        // framer-motion here made the entry import them even though the routes
+        // that use them are lazy.
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
-          charts: ['recharts'],
-          motion: ['framer-motion'],
         },
       },
     },
