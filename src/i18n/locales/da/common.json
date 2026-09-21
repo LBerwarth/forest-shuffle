@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Hvordan gives der point i Forest Shuffle?",
-        "a": "Når spillet er slut, tæller hvert kort i din skov. Træer har en fast værdi, mens dyr, planter og svampe giver point efter deres symboler og de andre kort i din skov. Hvert kort i din hule er ét point værd. Kort på hånden eller i lysningen giver ingenting. Appen anvender alle disse regler for dig."
+        "a": "Der findes ingen enkelt formel: hvert kort giver point efter den betingelse, der står på det. Nogle træer giver et fast beløb pr. eksemplar, som Douglasgran med 5 point stykket. Andre giver først point fra en grænse: Bøg giver ingenting under fire eksemplarer, og Eg kræver otte forskellige træarter, mens Ahorn vokser med størrelsen på din skov. Dyr og planter tæller det, der omgiver dem: træarter, symboler eller eksemplarer af et andet kort, og de fleste svampe giver en effekt undervejs i spillet i stedet for point. Hvert kort i din hule er ét point værd, og kort på hånden giver ingenting. Appen kender hvert korts regel og anvender den for dig."
       },
       {
         "q": "Hvilke udgaver og udvidelser understøtter pointberegneren?",

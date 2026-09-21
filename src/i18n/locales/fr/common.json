@@ -422,7 +422,7 @@
     "faq": [
       {
         "q": "Comment compte-t-on les points à Forêt Mixte ?",
-        "a": "En fin de partie, chaque carte de votre forêt compte. Les arbres ont une valeur fixe, tandis que les animaux, plantes et champignons rapportent des points selon leurs symboles et les autres cartes de votre forêt. Chaque carte dans votre grotte vaut un point. Les cartes restées en main ou dans la clairière ne rapportent rien. L’application applique toutes ces règles pour vous."
+        "a": "Il n’y a pas de formule unique : chaque carte rapporte selon la condition imprimée dessus. Certains arbres donnent un montant fixe par exemplaire, comme le Sapin Douglas à 5 points chacun. D’autres ne rapportent qu’à partir d’un seuil : le Hêtre ne vaut rien en dessous de quatre exemplaires et le Chêne exige huit essences d’arbres différentes, tandis que l’Érable grandit avec la taille de votre forêt. Les animaux et les plantes comptent ce qui les entoure : essences d’arbres, symboles ou exemplaires d’une autre carte, et la plupart des champignons offrent un effet en cours de partie plutôt que des points. Chaque carte de votre grotte vaut un point, et les cartes restées en main ne rapportent rien. L’application connaît la règle de chaque carte et l’applique pour vous."
       },
       {
         "q": "Quelles éditions et extensions le calculateur prend-il en charge ?",

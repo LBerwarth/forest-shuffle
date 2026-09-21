@@ -421,7 +421,7 @@
     "faq": [
       {
         "q": "Jak se ve Forest Shuffle počítají body?",
-        "a": "Na konci hry se počítá každá karta ve vašem lese. Stromy mají pevnou hodnotu, zatímco zvířata, rostliny a houby bodují podle svých symbolů a ostatních karet ve vašem lese. Každá karta ve vaší jeskyni má hodnotu jednoho bodu. Karty v ruce nebo na mýtině nepřinášejí nic. Aplikace všechna tato pravidla uplatní za vás."
+        "a": "Neexistuje jednotný vzorec: každá karta boduje podle podmínky, která je na ní vytištěná. Některé stromy dávají pevnou hodnotu za kus, například Douglaska tisolistá po 5 bodech. Jiné platí až od určité hranice: Buk pod čtyřmi kusy nedá nic a Dub vyžaduje osm různých druhů stromů, zatímco Javor klen roste s velikostí tvého lesa. Zvířata a rostliny počítají to, co je obklopuje: druhy stromů, symboly nebo kusy jiné karty, a většina hub dává efekt během hry místo bodů. Každá karta ve tvé jeskyni má hodnotu jednoho bodu a karty zůstalé v ruce nedají nic. Aplikace zná pravidlo každé karty a použije je za tebe."
       },
       {
         "q": "Které edice a rozšíření kalkulačka podporuje?",

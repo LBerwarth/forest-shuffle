@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
-import i18n from '@/i18n'
+import { changeLanguage } from '@/i18n'
 import type { GameEdition } from '@/types/card'
 
 interface SettingsState {
@@ -33,8 +33,8 @@ export const useSettingsStore = create<SettingsState>()(
       toggleExploration: () => set({ includeExploration: !get().includeExploration }),
       toggleExmoor: () => set({ includeExmoor: !get().includeExmoor }),
       setLanguage: (lang) => {
-        i18n.changeLanguage(lang)
         set({ language: lang })
+        void changeLanguage(lang)
       },
     }),
     {
@@ -42,7 +42,7 @@ export const useSettingsStore = create<SettingsState>()(
       storage: createJSONStorage(() => localStorage),
       onRehydrateStorage: () => (state) => {
         if (state?.language) {
-          i18n.changeLanguage(state.language)
+          void changeLanguage(state.language)
         }
       },
     },

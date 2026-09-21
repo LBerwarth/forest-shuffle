@@ -1,0 +1,42 @@
+# Forest Shuffle Scorer
+
+> Free score calculator and game tracker for the Forest Shuffle board game by Kosch (Lookout Games). Players pick the cards in their forest and the app applies every card effect, synergy and threshold to produce the final score.
+
+The app is a progressive web app: it works offline, needs no account and carries no ads. It covers Forest Shuffle with the Alpine, Woodland Edge and Exploration expansions, Forest Shuffle: Dartmoor with Exmoor, and Forest Shuffle: Smoky Mountains. The interface and all card names are available in 18 languages. Games are stored on the device, with an optional e-mail sign-in to sync history across devices. An Android build is published on Google Play.
+
+## Pages
+
+- [Home](https://forest-shuffle-app.vercel.app/): what the app does, feature list and answers to common scoring questions.
+- [Score a game](https://forest-shuffle-app.vercel.app/new-game): pick the edition and expansions, then enter each player's cards.
+- [Live session](https://forest-shuffle-app.vercel.app/join): every player enters their own forest on their own phone during the same game.
+- [Game history](https://forest-shuffle-app.vercel.app/history): past games with per-card score breakdowns.
+- [Players](https://forest-shuffle-app.vercel.app/players): per-player statistics and head-to-head records.
+- [Stats and Hall of Fame](https://forest-shuffle-app.vercel.app/leaderboard): local rankings plus worldwide records across all recorded games.
+- [Settings](https://forest-shuffle-app.vercel.app/settings): edition, expansions, language and account.
+- [Privacy](https://forest-shuffle-app.vercel.app/privacy): what is stored and where.
+
+## Languages
+
+- [English](https://forest-shuffle-app.vercel.app/)
+- [French](https://forest-shuffle-app.vercel.app/fr): the game is published as Forêt Mixte.
+- [German](https://forest-shuffle-app.vercel.app/de): the game is published as Mischwald.
+- [Spanish](https://forest-shuffle-app.vercel.app/es)
+- [Dutch](https://forest-shuffle-app.vercel.app/nl)
+- [Italian](https://forest-shuffle-app.vercel.app/it)
+- [Polish](https://forest-shuffle-app.vercel.app/pl)
+- [Portuguese](https://forest-shuffle-app.vercel.app/pt)
+- [Czech](https://forest-shuffle-app.vercel.app/cs)
+- [Hungarian](https://forest-shuffle-app.vercel.app/hu)
+- [Ukrainian](https://forest-shuffle-app.vercel.app/uk)
+- [Russian](https://forest-shuffle-app.vercel.app/ru)
+- [Turkish](https://forest-shuffle-app.vercel.app/tr)
+- [Catalan](https://forest-shuffle-app.vercel.app/ca)
+- [Danish](https://forest-shuffle-app.vercel.app/da)
+- [Swedish](https://forest-shuffle-app.vercel.app/sv)
+- [Norwegian](https://forest-shuffle-app.vercel.app/no)
+- [Finnish](https://forest-shuffle-app.vercel.app/fi)
+
+## Optional
+
+- [Android app](https://play.google.com/store/apps/details?id=app.forestshuffle.companion): the same app packaged for Google Play.
+- [Sitemap](https://forest-shuffle-app.vercel.app/sitemap.xml): every indexable URL.

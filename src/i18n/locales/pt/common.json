@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Como se pontua no Forest Shuffle?",
-        "a": "No fim do jogo conta cada carta da sua floresta. As árvores têm um valor fixo, enquanto animais, plantas e cogumelos pontuam conforme os seus símbolos e as outras cartas da sua floresta. Cada carta na sua gruta vale um ponto. As cartas que ficam na mão ou na clareira não pontuam. A aplicação aplica todas estas regras por si."
+        "a": "Não há uma fórmula única: cada carta pontua segundo a condição impressa nela. Algumas árvores dão um valor fixo por cópia, como a Pseudotsuga com 5 pontos cada. Outras só pontuam a partir de um limiar: a Faia não vale nada abaixo de quatro cópias e o Carvalho exige oito espécies de árvore diferentes, enquanto o Plátano-bastardo cresce com o tamanho da sua floresta. Animais e plantas contam o que os rodeia, como espécies de árvore, símbolos ou cópias de outra carta, e a maioria dos cogumelos dá um efeito durante o jogo em vez de pontos. Cada carta na sua gruta vale um ponto, e as cartas que ficam na mão não pontuam. A aplicação conhece a regra de cada carta e aplica-a por si."
       },
       {
         "q": "Que edições e expansões suporta a calculadora?",

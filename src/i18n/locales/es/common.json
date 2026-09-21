@@ -422,7 +422,7 @@
     "faq": [
       {
         "q": "¿Cómo se puntúa en Forest Shuffle?",
-        "a": "Al final de la partida cuenta cada carta de tu bosque. Los árboles tienen un valor fijo, mientras que animales, plantas y setas puntúan según sus símbolos y las demás cartas de tu bosque. Cada carta en tu cueva vale un punto. Las cartas que quedan en la mano o en el claro no puntúan. La aplicación aplica todas estas reglas por ti."
+        "a": "No hay una fórmula única: cada carta puntúa según la condición impresa en ella. Algunos árboles dan una cantidad fija por copia, como el Abeto de Douglas con 5 puntos cada uno. Otros solo puntúan a partir de un umbral: el Haya no vale nada por debajo de cuatro copias y el Roble exige ocho especies de árbol distintas, mientras que el Arce crece con el tamaño de tu bosque. Los animales y las plantas cuentan lo que hay a su alrededor, como especies de árbol, símbolos o copias de otra carta, y la mayoría de las setas dan un efecto durante la partida en lugar de puntos. Cada carta de tu cueva vale un punto, y las cartas que quedan en la mano no puntúan. La aplicación conoce la regla de cada carta y la aplica por ti."
       },
       {
         "q": "¿Qué ediciones y expansiones admite la calculadora?",

@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Miten Forest Shufflessa lasketaan pisteet?",
-        "a": "Pelin lopussa jokainen metsäsi kortti lasketaan. Puilla on kiinteä arvo, kun taas eläimet, kasvit ja sienet tuottavat pisteitä symboliensa ja metsäsi muiden korttien mukaan. Jokainen luolassasi oleva kortti on yhden pisteen arvoinen. Käteen tai aukealle jääneet kortit eivät tuota mitään. Sovellus soveltaa kaikki nämä säännöt puolestasi."
+        "a": "Yhtä kaavaa ei ole: jokainen kortti pisteytyy siihen painetun ehdon mukaan. Osa puista antaa kiinteän määrän kappaletta kohden, kuten Douglaskuusi 5 pistettä kukin. Toiset maksavat vasta kynnyksestä alkaen: Pyökki ei anna mitään alle neljällä kappaleella ja Tammi vaatii kahdeksan eri puulajia, kun taas Vuorivaahtera kasvaa metsäsi koon mukana. Eläimet ja kasvit laskevat sitä, mikä niitä ympäröi: puulajeja, symboleja tai toisen kortin kappaleita, ja useimmat sienet antavat pelin aikana vaikutuksen pisteiden sijaan. Jokainen kortti luolassasi on yhden pisteen arvoinen, eivätkä käteen jääneet kortit anna mitään. Sovellus tuntee jokaisen kortin säännön ja soveltaa sen puolestasi."
       },
       {
         "q": "Mitä versioita ja lisäosia pistelaskuri tukee?",

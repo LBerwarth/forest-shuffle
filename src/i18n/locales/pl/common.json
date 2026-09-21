@@ -420,7 +420,7 @@
     "faq": [
       {
         "q": "Jak liczy się punkty w Forest Shuffle?",
-        "a": "Na koniec gry liczy się każda karta w Twoim lesie. Drzewa mają stałą wartość, a zwierzęta, rośliny i grzyby punktują w zależności od swoich symboli i pozostałych kart w Twoim lesie. Każda karta w Twojej jaskini jest warta jeden punkt. Karty pozostałe na ręce lub na polanie nie dają nic. Aplikacja stosuje wszystkie te zasady za Ciebie."
+        "a": "Nie ma jednego wzoru: każda karta punktuje według warunku na niej wydrukowanego. Niektóre drzewa dają stałą wartość za egzemplarz, jak Daglezja po 5 punktów. Inne płacą dopiero od progu: Buk poniżej czterech egzemplarzy nie daje nic, a Dąb wymaga ośmiu różnych gatunków drzew, natomiast Jawor rośnie wraz z wielkością twojego lasu. Zwierzęta i rośliny liczą to, co je otacza: gatunki drzew, symbole lub egzemplarze innej karty, a większość grzybów daje efekt w trakcie gry zamiast punktów. Każda karta w twojej jaskini jest warta jeden punkt, a karty pozostałe na ręce nie dają nic. Aplikacja zna zasadę każdej karty i stosuje ją za ciebie."
       },
       {
         "q": "Które edycje i dodatki obsługuje kalkulator?",

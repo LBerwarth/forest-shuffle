@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Hogyan pontoznak a Forest Shuffle-ban?",
-        "a": "A játék végén az erdőd minden kártyája számít. A fák rögzített értékűek, az állatok, növények és gombák pedig a szimbólumaik és az erdőd többi kártyája alapján pontoznak. A barlangodban minden kártya egy pontot ér. A kézben vagy a tisztáson maradt kártyák nem érnek semmit. Az alkalmazás mindezeket a szabályokat alkalmazza helyetted."
+        "a": "Nincs egyetlen képlet: minden lap a rá nyomtatott feltétel szerint pontoz. Néhány fa fix értéket ad példányonként, például a Duglászfenyő egyenként 5 pontot. Mások csak egy küszöbtől fizetnek: a Bükk négy példány alatt semmit sem ér, a Tölgy pedig nyolc különböző fafajt kíván, míg a Hegyi juhar az erdőd méretével nő. Az állatok és növények azt számolják, ami körülöttük van: fafajok, szimbólumok vagy egy másik lap példányai, és a gombák többsége pontok helyett játék közbeni hatást ad. A barlangodban minden lap egy pontot ér, a kézben maradt lapok pedig semmit. Az alkalmazás ismeri minden lap szabályát, és helyetted alkalmazza."
       },
       {
         "q": "Mely kiadásokat és kiegészítőket támogatja a pontszámláló?",

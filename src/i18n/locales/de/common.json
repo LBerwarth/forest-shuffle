@@ -422,7 +422,7 @@
     "faq": [
       {
         "q": "Wie wird bei Forest Shuffle gewertet?",
-        "a": "Am Ende der Partie zählt jede Karte in deinem Wald. Bäume haben einen festen Wert, Tiere, Pflanzen und Pilze punkten je nach ihren Symbolen und den anderen Karten in deinem Wald. Jede Karte in deiner Höhle ist einen Punkt wert. Karten auf der Hand oder in der Lichtung bringen nichts. Die App wendet alle diese Regeln für dich an."
+        "a": "Es gibt keine einheitliche Formel: Jede Karte wertet nach der Bedingung, die auf ihr steht. Manche Bäume geben einen festen Betrag pro Exemplar, etwa die Douglasie mit 5 Punkten je Stück. Andere zahlen erst ab einer Schwelle, die Buche bringt unter vier Exemplaren gar nichts und die Eiche verlangt acht verschiedene Baumarten, während der Bergahorn mit der Größe deines Waldes wächst. Tiere und Pflanzen zählen, was um sie herum liegt: Baumarten, Symbole oder Exemplare einer anderen Karte, und die meisten Pilze geben einen Effekt während der Partie statt Punkten. Jede Karte in deiner Höhle ist einen Punkt wert, Karten auf der Hand bringen nichts. Die App kennt die Regel jeder Karte und wendet sie für dich an."
       },
       {
         "q": "Welche Editionen und Erweiterungen unterstützt der Rechner?",

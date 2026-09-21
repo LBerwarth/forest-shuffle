@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Come si calcolano i punti in Forest Shuffle?",
-        "a": "A fine partita conta ogni carta della tua foresta. Gli alberi hanno un valore fisso, mentre animali, piante e funghi fanno punti in base ai loro simboli e alle altre carte della tua foresta. Ogni carta nella tua caverna vale un punto. Le carte rimaste in mano o nella radura non valgono nulla. L’app applica tutte queste regole per te."
+        "a": "Non esiste una formula unica: ogni carta segna secondo la condizione stampata su di essa. Alcuni alberi danno un valore fisso per copia, come la Douglasia con 5 punti ciascuna. Altri pagano solo da una soglia in poi: il Faggio non vale nulla sotto le quattro copie e la Quercia richiede otto specie di albero diverse, mentre l’Acero di monte cresce con le dimensioni della tua foresta. Animali e piante contano ciò che li circonda, come specie di albero, simboli o copie di un’altra carta, e la maggior parte dei funghi offre un effetto durante la partita invece di punti. Ogni carta nella tua caverna vale un punto, e le carte rimaste in mano non valgono nulla. L’app conosce la regola di ogni carta e la applica per te."
       },
       {
         "q": "Quali edizioni ed espansioni supporta il calcolatore?",

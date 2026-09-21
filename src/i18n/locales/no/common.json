@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Hvordan telles poeng i Forest Shuffle?",
-        "a": "Når spillet er over, teller hvert kort i skogen din. Trær har en fast verdi, mens dyr, planter og sopp gir poeng etter symbolene sine og de andre kortene i skogen din. Hvert kort i hulen din er verdt ett poeng. Kort på hånden eller i lysningen gir ingenting. Appen bruker alle disse reglene for deg."
+        "a": "Det finnes ingen enkelt formel: hvert kort gir poeng etter betingelsen som står på det. Noen trær gir et fast beløp per eksemplar, som Douglasgran med 5 poeng stykket. Andre gir først poeng fra en terskel: Bøk gir ingenting under fire eksemplarer og Eik krever åtte forskjellige treslag, mens Platanlønn vokser med størrelsen på skogen din. Dyr og planter teller det som omgir dem: treslag, symboler eller eksemplarer av et annet kort, og de fleste sopper gir en effekt underveis i spillet i stedet for poeng. Hvert kort i hulen din er verdt ett poeng, og kort på hånden gir ingenting. Appen kjenner regelen til hvert kort og bruker den for deg."
       },
       {
         "q": "Hvilke utgaver og utvidelser støtter poengkalkulatoren?",

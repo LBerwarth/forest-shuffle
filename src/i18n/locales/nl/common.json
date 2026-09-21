@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Hoe worden de punten in Forest Shuffle geteld?",
-        "a": "Aan het einde van het spel telt elke kaart in je bos. Bomen hebben een vaste waarde, terwijl dieren, planten en paddenstoelen punten opleveren op basis van hun symbolen en de andere kaarten in je bos. Elke kaart in je grot is één punt waard. Kaarten in je hand of op de open plek leveren niets op. De app past al deze regels voor je toe."
+        "a": "Er is geen enkele formule: elke kaart scoort volgens de voorwaarde die erop staat. Sommige bomen geven een vast bedrag per exemplaar, zoals de Douglasspar met 5 punten per stuk. Andere leveren pas iets op vanaf een drempel: de Beuk is onder vier exemplaren niets waard en de Eik vraagt acht verschillende boomsoorten, terwijl de Gewone esdoorn meegroeit met de omvang van je bos. Dieren en planten tellen wat er om hen heen ligt, zoals boomsoorten, symbolen of exemplaren van een andere kaart, en de meeste paddenstoelen geven een effect tijdens het spel in plaats van punten. Elke kaart in je grot is één punt waard, en kaarten in je hand leveren niets op. De app kent de regel van elke kaart en past die voor je toe."
       },
       {
         "q": "Welke edities en uitbreidingen ondersteunt de puntenteller?",

@@ -422,7 +422,7 @@
     "faq": [
       {
         "q": "How is Forest Shuffle scored?",
-        "a": "At the end of the game every card in your forest counts. Trees have a fixed value, while animals, plants and mushrooms score depending on their symbols and on the other cards in your forest. Each card in your cave is worth one point. Cards left in your hand or in the clearing score nothing. The app applies all of these rules for you."
+        "a": "There is no single formula: every card scores by the condition printed on it. Some trees pay a flat amount per copy, like Douglas Fir at 5 points each. Others only pay once you reach a threshold, so Beech scores nothing below four copies and Oak needs eight different tree species, while Sycamore grows with the size of your forest. Animals and plants count what surrounds them, such as tree species, symbols or copies of another card, and most mushrooms give an effect during the game instead of points. Every card in your cave is worth one point, and cards left in your hand score nothing. The app knows each card’s rule and applies it for you."
       },
       {
         "q": "Which editions and expansions does the scorer support?",

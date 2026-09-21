@@ -418,7 +418,7 @@
     "faq": [
       {
         "q": "Hur räknas poängen i Forest Shuffle?",
-        "a": "När spelet är slut räknas varje kort i din skog. Träd har ett fast värde, medan djur, växter och svampar ger poäng beroende på sina symboler och de andra korten i din skog. Varje kort i din grotta är värt ett poäng. Kort på handen eller i gläntan ger ingenting. Appen tillämpar alla dessa regler åt dig."
+        "a": "Det finns ingen enda formel: varje kort ger poäng efter villkoret som står på det. Vissa träd ger ett fast belopp per exemplar, som Douglasgran med 5 poäng styck. Andra ger poäng först från en gräns: Bok ger ingenting under fyra exemplar och Ek kräver åtta olika trädslag, medan Tysklönn växer med storleken på din skog. Djur och växter räknar det som omger dem: trädslag, symboler eller exemplar av ett annat kort, och de flesta svampar ger en effekt under spelets gång i stället för poäng. Varje kort i din grotta är värt ett poäng, och kort på handen ger ingenting. Appen känner till varje korts regel och tillämpar den åt dig."
       },
       {
         "q": "Vilka utgåvor och expansioner stöder poängräknaren?",
