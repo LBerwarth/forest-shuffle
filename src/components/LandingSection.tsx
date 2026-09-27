@@ -10,7 +10,8 @@ export interface FaqEntry {
   a: string
 }
 
-export function LandingSection() {
+// Prerendered pages carry no app header, so the landing heading is their h1.
+export function LandingSection({ headingAs: Heading = 'h2' }: { headingAs?: 'h1' | 'h2' }) {
   const { t } = useTranslation()
   const features = t('landing.features', { returnObjects: true }) as string[]
   const faq = t('landing.faq', { returnObjects: true }) as FaqEntry[]
@@ -19,9 +20,9 @@ export function LandingSection() {
     <section aria-labelledby="landing-heading" className="mt-8 space-y-4">
       <Card>
         <CardContent className="pt-4">
-          <h2 id="landing-heading" className="font-heading text-lg font-bold text-forest-700">
+          <Heading id="landing-heading" className="font-heading text-lg font-bold text-forest-700">
             {t('landing.heading')}
-          </h2>
+          </Heading>
           <p className="mt-2 text-sm leading-relaxed text-forest-600">{t('landing.intro')}</p>
           <ul className="mt-3 space-y-2">
             {features.map((feature) => (

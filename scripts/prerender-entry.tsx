@@ -45,7 +45,7 @@ export async function render(lang: string): Promise<Prerendered> {
     <I18nextProvider i18n={instance}>
       <StaticRouter location={location}>
         <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
-          <LandingSection />
+          <LandingSection headingAs="h1" />
         </div>
       </StaticRouter>
     </I18nextProvider>,
