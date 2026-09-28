@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Blauwzwarte houtbij",
-    "scoring": "Telt als een extra boom van de soort waaraan ze vastzit",
+    "scoring": "Telt 1 op bij het aantal van haar boom (Beuk, Witte paardenkastanje, Linde) en bij je totaal aantal bomen (Mos, Grote bonte specht). Levert geen punten op",
     "context": "Aan welke boom vastgemaakt?"
   },
   "beech_marten": {

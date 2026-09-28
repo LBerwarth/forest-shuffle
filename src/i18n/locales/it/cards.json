@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Ape legnaiola",
-    "scoring": "Conta come un albero in più della specie a cui è attaccata",
+    "scoring": "Aggiunge 1 al numero del suo albero (Faggio, Ippocastano, Tiglio) e al totale dei tuoi alberi (Muschio, Picchio rosso maggiore). Non dà punti",
     "context": "Attaccata a quale albero?"
   },
   "beech_marten": {

@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Blå tømrerbi",
-    "scoring": "Tæller som et ekstra træ af den art, den er tilknyttet",
+    "scoring": "Lægger 1 til antallet af sit træ (Bøg, Hestekastanje, Lind) og til dit samlede antal træer (Mos, Stor flagspætte). Giver ingen point",
     "context": "Tilknyttet hvilket træ?"
   },
   "beech_marten": {

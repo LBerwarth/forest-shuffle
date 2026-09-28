@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Sinipuumehiläinen",
-    "scoring": "Lasketaan ylimääräiseksi puuksi sitä lajia, johon se on kiinnitetty",
+    "scoring": "Lisää 1 puunsa määrään (Pyökki, Hevoskastanja, Lehmus) ja puiden kokonaismäärään (Sammal, Käpytikka). Ei anna pisteitä",
     "context": "Mihin puuhun kiinnitetty?"
   },
   "beech_marten": {

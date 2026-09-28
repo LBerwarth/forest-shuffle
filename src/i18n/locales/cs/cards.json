@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Drvodělka fialová",
-    "scoring": "Počítá se jako další strom druhu, ke kterému je připojena",
+    "scoring": "Přičte 1 k počtu svého stromu (Buk, Jírovec maďal, Lípa) a k celkovému počtu stromů (Mech, Strakapoud velký). Nepřináší body",
     "context": "Ke kterému stromu je připojena?"
   },
   "beech_marten": {

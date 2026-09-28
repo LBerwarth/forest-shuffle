@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Holzbiene",
-    "scoring": "Zählt als ein zusätzlicher Baum der Art, an der sie angebracht ist",
+    "scoring": "Erhöht die Anzahl ihres Baums um 1 (Buche, Rosskastanie, Linde) und deine Baumzahl (Moos, Buntspecht). Bringt keine Punkte",
     "context": "An welchem Baum angebracht?"
   },
   "beech_marten": {

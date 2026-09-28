@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Abelha-carpinteira",
-    "scoring": "Conta como uma árvore adicional da espécie em que está colocada",
+    "scoring": "Soma 1 ao número da sua árvore (Faia, Castanheiro-da-índia, Tília) e ao teu total de árvores (Musgo, Pica-pau-malhado-grande). Não pontua",
     "context": "Colocada em que árvore?"
   },
   "beech_marten": {

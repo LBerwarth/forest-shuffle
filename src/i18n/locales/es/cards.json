@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Abeja carpintera",
-    "scoring": "Cuenta como un árbol adicional de la especie a la que está unida",
+    "scoring": "Suma 1 al número de su árbol (Haya, Castaño de Indias, Tilo) y a tu total de árboles (Musgo, Pico picapinos). No da puntos",
     "context": "¿Pegada a qué árbol?"
   },
   "beech_marten": {

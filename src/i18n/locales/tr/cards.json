@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Mor marangoz arısı",
-    "scoring": "bağlı olduğu türden fazladan bir ağaç sayılır",
+    "scoring": "Bağlı olduğu ağacın sayısına (Kayın, At kestanesi, Ihlamur) ve toplam ağaç sayına (Yosun, Orman alaca ağaçkakanı) 1 ekler. Puan getirmez",
     "context": "Hangi ağaca bağlı?"
   },
   "beech_marten": {

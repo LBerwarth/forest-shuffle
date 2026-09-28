@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Abella fustera",
-    "scoring": "Compta com un arbre addicional de l'espècie a què està unida",
+    "scoring": "Suma 1 al nombre del seu arbre (Faig, Castanyer d'Índies, Til·ler) i al total d'arbres (Molsa, Picot garser gros). No puntua",
     "context": "Unida a quin arbre?"
   },
   "beech_marten": {

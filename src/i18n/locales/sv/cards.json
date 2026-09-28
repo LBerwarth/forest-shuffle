@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Blåbi",
-    "scoring": "Räknas som ett extra träd av arten den är fäst vid",
+    "scoring": "Lägger till 1 till antalet av sitt träd (Bok, Hästkastanj, Lind) och till ditt totala antal träd (Mossa, Större hackspett). Ger inga poäng",
     "context": "Fäst vid vilket träd?"
   },
   "beech_marten": {

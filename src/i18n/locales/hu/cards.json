@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Kék fadongó",
-    "scoring": "Egy plusz fának számít abból a fajból, amelyhez csatolva van",
+    "scoring": "1-gyel növeli a fája darabszámát (Bükk, Vadgesztenye, Hárs) és a fák összesített számát (Moha, Nagy fakopáncs). Nem ér pontot",
     "context": "Melyik fához csatolva?"
   },
   "beech_marten": {

@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Blå tømmerbie",
-    "scoring": "Teller som et ekstra tre av arten den er festet til",
+    "scoring": "Legger 1 til antallet av treet sitt (Bøk, Hestekastanje, Lind) og til ditt totale antall trær (Mose, Flaggspett). Gir ingen poeng",
     "context": "Festet til hvilket tre?"
   },
   "beech_marten": {

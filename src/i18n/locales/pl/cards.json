@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Zadrzechnia fioletowa",
-    "scoring": "Liczy się jako dodatkowe drzewo gatunku, przy którym jest umieszczona",
+    "scoring": "Dodaje 1 do liczby swojego drzewa (Buk, Kasztanowiec, Lipa) i do łącznej liczby drzew (Mech, Dzięcioł duży). Nie daje punktów",
     "context": "Przy którym drzewie?"
   },
   "beech_marten": {
