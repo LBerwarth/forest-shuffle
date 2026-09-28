@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Xylocope violet",
-    "scoring": "Compte comme un arbre supplémentaire de l'espèce sur laquelle il est posé",
+    "scoring": "Ajoute 1 au nombre de son arbre (Hêtre, Marronnier, Tilleul) et à votre total d'arbres (Mousse, Pic épeiche). Ne rapporte aucun point",
     "context": "Posé sur quel arbre ?"
   },
   "beech_marten": {

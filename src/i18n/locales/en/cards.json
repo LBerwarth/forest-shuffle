@@ -373,7 +373,7 @@
   },
   "violet_carpenter_bee": {
     "name": "Violet Carpenter Bee",
-    "scoring": "Counts as an extra tree of the species it is attached to",
+    "scoring": "Adds 1 to the count of its tree (Beech, Horse Chestnut, Linden) and to your tree total (Moss, Woodpecker). Scores no points",
     "context": "Attached to which tree?"
   },
   "beech_marten": {

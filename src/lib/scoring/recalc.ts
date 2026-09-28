@@ -46,8 +46,7 @@ export function recalcPlayer(
   // expansion assignment changed later (e.g. woodland → exploration)
   const countedKeys = Object.keys(player.cardCounts).filter((k) => (player.cardCounts[k] || 0) > 0)
   const activeCardKeys = [...new Set([...classicCards.map((c) => c.key), ...countedKeys])]
-  // A Violet Carpenter Bee counts as an extra tree of its host species
-  // (reference card #13), so it must feed the cross-player comparisons too
+  // Bees raise the Linden and tree totals used by the cross-player comparisons
   const beeHosts = (p: PlayerScoringData): string[] =>
     (p.cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? [])
       .slice(0, p.cardCounts['violet_carpenter_bee'] || 0)

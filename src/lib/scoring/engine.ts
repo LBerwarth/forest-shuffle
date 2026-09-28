@@ -40,6 +40,20 @@ function countCard(ctx: ForestContext, key: string): number {
   return ctx.cardCounts[key] || 0
 }
 
+function beesAt(ctx: ForestContext, treeKey: string): number {
+  return ctx.beeHostCounts?.[treeKey] || 0
+}
+
+// Bees at non-shrub trees add to the tree total for Moss and Woodpecker only
+export function beeTreeCount(ctx: ForestContext): number {
+  let n = 0
+  for (const [key, bees] of Object.entries(ctx.beeHostCounts ?? {})) {
+    const host = CARDS.find((c) => c.key === key)
+    if (host && host.category === 'tree' && !host.tags.includes('shrub')) n += bees
+  }
+  return n
+}
+
 function countHares(ctx: ForestContext): number {
   return countCard(ctx, 'european_hare') + countCard(ctx, 'mountain_hare')
 }
@@ -149,10 +163,10 @@ function butterflyCardPoints(key: string, count: number, ctx: ForestContext): nu
 const scoringFunctions: Record<string, ScoringFunction> = {
   // --- TREES ---
   birch: (count) => count * 1,
-  beech: (count) => count >= 4 ? count * 5 : 0,
+  beech: (count, ctx) => count + beesAt(ctx, 'beech') >= 4 ? count * 5 : 0,
   douglas_fir: (count) => count * 5,
   oak: (count, ctx) => ctx.treeSpeciesCount >= 8 ? count * 10 : 0,
-  horse_chestnut: (count) => lookupSet(CHESTNUT_SET, count),
+  horse_chestnut: (count, ctx) => lookupSet(CHESTNUT_SET, count + beesAt(ctx, 'horse_chestnut')),
   linden: () => 0, // comparison card - handled separately
   sycamore: (count, ctx) => count * ctx.totalTrees,
 
@@ -228,7 +242,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   chanterelle: () => 0,
   fly_agaric: () => 0,
   parasol_mushroom: () => 0,
-  moss: (count, ctx) => ctx.totalTrees >= 10 ? count * 10 : 0,
+  moss: (count, ctx) => ctx.totalTrees + beeTreeCount(ctx) >= 10 ? count * 10 : 0,
   wild_strawberries: (count, ctx) => ctx.treeSpeciesCount >= 8 ? count * 10 : 0,
   hedgehog: (count, ctx) => count * (countTag(ctx, 'butterfly') * 2),
   pond_turtle: (count) => count * 5,
@@ -363,19 +377,21 @@ const scoringFunctions: Record<string, ScoringFunction> = {
 // ============================================================
 
 // Solo rules replace the cross-player comparison with fixed thresholds
+// Bees raise the Linden total for the majority but score no points themselves
 export function scoreLinden(
   playerLindenCount: number,
   allPlayerLindenCounts: number[],
   solo = false,
+  scoringLindenCount = playerLindenCount,
 ): number {
   if (solo) {
-    return playerLindenCount * (playerLindenCount >= 3 ? 3 : 1)
+    return scoringLindenCount * (playerLindenCount >= 3 ? 3 : 1)
   }
   const maxLindens = Math.max(...allPlayerLindenCounts)
   if (playerLindenCount >= maxLindens && playerLindenCount > 0) {
-    return playerLindenCount * 3
+    return scoringLindenCount * 3
   }
-  return playerLindenCount * 1
+  return scoringLindenCount * 1
 }
 
 export function scoreWoodpecker(
@@ -444,27 +460,12 @@ export function buildForestContext(
   )
   tagCounts.woodland_edge += edgePiglets
 
-  // Apply Violet Carpenter Bee bonuses: per reference card #13 each bee counts
-  // as one extra tree of its host species — for the host's own scoring formula
-  // AND for total tree count (Moss, Sycamore, Woodpecker, ...). The bee itself
-  // stays a 1-count insect lateral — tags, slot counts, and species counts are
-  // unaffected. Each bee can have its own host tree.
-  let effectiveCardCounts = cardCounts
+  // Appendix: bees only matter for Beech, Horse Chestnut, Linden, Moss, Woodpecker
   // Cap by bee count: host picks outlive a removed bee in saved metadata
-  const beeHostKeys = (cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? [])
-    .slice(0, cardCounts['violet_carpenter_bee'] || 0)
-    .filter(Boolean)
-  if (beeHostKeys.length > 0) {
-    const bumped = { ...cardCounts }
-    for (const hostKey of beeHostKeys) {
-      if (!hostKey) continue
-      bumped[hostKey] = (bumped[hostKey] || 0) + 1
-      const host = CARDS.find((c) => c.key === hostKey)
-      if (host && host.category === 'tree' && !host.tags.includes('shrub')) {
-        totalTrees += 1
-      }
-    }
-    effectiveCardCounts = bumped
+  const beeHostCounts: Record<string, number> = {}
+  for (const hostKey of (cardMetadata['violet_carpenter_bee']?.hostCardKeys ?? [])
+    .slice(0, cardCounts['violet_carpenter_bee'] || 0)) {
+    if (hostKey) beeHostCounts[hostKey] = (beeHostCounts[hostKey] || 0) + 1
   }
 
   return {
@@ -472,12 +473,13 @@ export function buildForestContext(
     treeSpeciesCount: treeSpeciesPresent.size,
     treeSpeciesPresent,
     tagCounts,
-    cardCounts: effectiveCardCounts,
+    cardCounts,
     slotCounts,
     fullyOccupiedTrees: cardMetadata['beech_marten']?.contextValue ?? fullyOccupiedTrees,
     totalCards,
     totalMoors: 0,
     cardMetadata,
+    beeHostCounts,
   }
 }
 
@@ -518,9 +520,6 @@ export function computeScoreBreakdown(
 
   for (const cardKey of activeCards) {
     const count = cardCounts[cardKey] || 0
-    // For the bee's host tree, ctx.cardCounts has the +1 bonus applied; pass
-    // that to the scoring function so threshold/set-scoring rules see it.
-    const effectiveCount = context.cardCounts[cardKey] ?? count
 
     const card = CARDS.find((c) => c.key === cardKey)
     if (!card) continue
@@ -529,7 +528,7 @@ export function computeScoreBreakdown(
     if (card.scoringType === 'comparison') continue
 
     const metadata = cardMetadata[cardKey]
-    const points = scoreCard(cardKey, effectiveCount, context, metadata)
+    const points = scoreCard(cardKey, count, context, metadata)
 
     // Include entry even when count is 0 if there are synergy points
     if (count === 0 && points === 0) continue
@@ -543,13 +542,11 @@ export function computeScoreBreakdown(
     categoryTotals[card.category] += points
   }
 
-  // Comparison cards (cross-player) — use effective counts so a bee hosted
-  // on a Linden counts as an extra Linden
   if (allPlayerLindenCounts && allPlayerLindenCounts.length > 0) {
     const lindenCount = cardCounts['linden'] || 0
-    const effectiveLindenCount = context.cardCounts['linden'] || 0
-    if (effectiveLindenCount > 0) {
-      const lindenPoints = scoreLinden(effectiveLindenCount, allPlayerLindenCounts, solo)
+    const effectiveLindenCount = lindenCount + beesAt(context, 'linden')
+    if (lindenCount > 0) {
+      const lindenPoints = scoreLinden(effectiveLindenCount, allPlayerLindenCounts, solo, lindenCount)
       entries.push({ cardKey: 'linden', cardCategory: 'tree', count: lindenCount, points: lindenPoints })
       categoryTotals.tree += lindenPoints
     }
@@ -558,7 +555,7 @@ export function computeScoreBreakdown(
   if (allPlayerTreeCounts && allPlayerTreeCounts.length > 0) {
     const wpCount = cardCounts['great_spotted_woodpecker'] || 0
     if (wpCount > 0) {
-      const wpPoints = scoreWoodpecker(wpCount, context.totalTrees, allPlayerTreeCounts, solo)
+      const wpPoints = scoreWoodpecker(wpCount, context.totalTrees + beeTreeCount(context), allPlayerTreeCounts, solo)
       entries.push({ cardKey: 'great_spotted_woodpecker', cardCategory: 'top', count: wpCount, points: wpPoints })
       categoryTotals.top += wpPoints
     }

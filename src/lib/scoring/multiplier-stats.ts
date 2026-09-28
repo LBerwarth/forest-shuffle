@@ -1,6 +1,7 @@
 import type { ForestContext } from '@/types/scoring'
 import type { GameEdition } from '@/types/card'
 import { CARDS } from '@/data/cards'
+import { beeTreeCount } from './engine'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
 import { EXMOOR_CARDS } from '@/data/exmoor-cards'
 
@@ -80,7 +81,7 @@ const classicStats: Record<string, StatDef> = {
   alpine_newt: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
   gentian: (ctx) => [{ iconKey: 'butterfly', value: ctx.tagCounts.butterfly }],
   great_green_bush_cricket: (ctx) => [{ iconKey: 'insect', value: ctx.tagCounts.insect }],
-  moss: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees }],
+  moss: (ctx) => [{ iconKey: 'tree', value: ctx.totalTrees + beeTreeCount(ctx) }],
   wild_strawberries: (ctx) => [{ iconKey: 'tree', value: ctx.treeSpeciesCount }],
   blueberry: (ctx) => [{ iconKey: 'bird', value: uniqueByTag(CARDS, 'bird', ctx) }],
   digitalis: (ctx) => [{ iconKey: 'plant', value: uniqueByTag(CARDS, 'plant', ctx) }],

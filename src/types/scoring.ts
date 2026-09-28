@@ -22,6 +22,8 @@ export interface ForestContext {
   totalMoors: number
   /** Per-card metadata (e.g., contextual answers) */
   cardMetadata: Record<string, CardMetadata>
+  /** Violet Carpenter Bees per host tree species */
+  beeHostCounts?: Record<string, number>
 }
 
 export interface CardMetadata {
