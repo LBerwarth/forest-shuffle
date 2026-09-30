@@ -56,6 +56,18 @@
     "startScoring_one": "Começar pontuação solo",
     "soloHint": "Partida solo — a Tília e o Pica-pau-malhado-grande usam as regras solo (mín. 3 Tílias / mín. 10 árvores)."
   },
+  "setup": {
+    "title": "Preparação",
+    "removeDesc": "Devolve à caixa, sem olhar, este número de cartas conforme o número de jogadores:",
+    "players": "{{count}} jogadores",
+    "noteFlat": "Regra com expansão: devolve primeiro 10 cartas e depois a quantidade para o vosso número de jogadores.",
+    "notePiles": "Atalho para {{count}} jogadores: divide o baralho em {{piles}} pilhas iguais e retira {{remove}}.",
+    "noteExploration": "Exploration: devolve 1 carta extra por cada carta rara que juntares (15 com todas). As grutas especiais substituem as grutas do jogo base — cada um escolhe uma por ordem inversa de turno.",
+    "noteDartmoorCaves": "Grutas: baralha as 5 grutas, coloca uma por jogador na clareira e escolham por ordem inversa de turno.",
+    "noteExmoorCaves": "Usa as grutas de Exmoor em vez das grutas de Dartmoor.",
+    "noteWinter": "Divide o resto em 3 pilhas, baralha 2 cartas de inverno numa delas, põe a 3.ª no topo dessa pilha e coloca-a no fundo do baralho.",
+    "noteSolo": "Solo: devolve {{count}} cartas como num jogo a 2 jogadores, usa só 1 carta de inverno (baralhada nas 10 últimas cartas) e coloca 5 cartas na clareira."
+  },
   "wizard": {
     "scoreEntry": "Entrada de pontos",
     "cancel": "Cancelar pontuação",

@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import { changeLanguage } from '@/i18n'
-import type { GameEdition } from '@/types/card'
+import type { Expansion, GameEdition } from '@/types/card'
 
 interface SettingsState {
   edition: GameEdition
@@ -48,3 +48,15 @@ export const useSettingsStore = create<SettingsState>()(
     },
   ),
 )
+
+type ExpansionSettings = Pick<SettingsState, 'edition' | 'includeAlpine' | 'includeWoodland' | 'includeExploration' | 'includeExmoor'>
+
+export function selectExpansions(s: ExpansionSettings): Expansion[] {
+  if (s.edition === 'smoky') return ['smoky_base']
+  if (s.edition === 'dartmoor') return s.includeExmoor ? ['dartmoor_base', 'dartmoor_exmoor'] : ['dartmoor_base']
+  const exp: Expansion[] = ['base']
+  if (s.includeAlpine) exp.push('alpine')
+  if (s.includeWoodland) exp.push('woodland')
+  if (s.includeExploration) exp.push('exploration')
+  return exp
+}

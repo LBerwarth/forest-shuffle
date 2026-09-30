@@ -56,6 +56,18 @@
     "startScoring_one": "Solo Puanlamayı Başlat",
     "soloHint": "Solo oyun — Ihlamur ve Orman alaca ağaçkakanı solo puanlama kullanır (3+ Ihlamur / 10+ ağaç)."
   },
+  "setup": {
+    "title": "Oyun hazırlığı",
+    "removeDesc": "Oyuncu sayısına göre şu kadar kartı bakmadan kutuya geri koyun:",
+    "players": "{{count}} oyuncu",
+    "noteFlat": "Genişleme kuralı: önce 10 kart, ardından oyuncu sayınıza göre belirtilen miktarı geri koyun.",
+    "notePiles": "{{count}} oyuncu için kısayol: desteyi {{piles}} eşit yığına bölün ve {{remove}} tanesini çıkarın.",
+    "noteExploration": "Exploration: eklediğiniz her nadir kart için 1 kart daha geri koyun (hepsiyle 15). Özel mağaralar temel oyun mağaralarının yerine geçer; herkes ters tur sırasıyla birini seçer.",
+    "noteDartmoorCaves": "Mağaralar: 5 mağarayı karıştırın, oyuncu başına birini açıklığa koyun ve ters tur sırasıyla seçin.",
+    "noteExmoorCaves": "Dartmoor mağaraları yerine Exmoor mağaralarını kullanın.",
+    "noteWinter": "Kalanı 3 yığına bölün, 2 kış kartını birine karıştırın, 3.sünü o yığının üstüne koyun ve bu yığını destenin en altına yerleştirin.",
+    "noteSolo": "Solo: 2 oyunculu oyundaki gibi {{count}} kart geri koyun, yalnızca 1 kış kartı kullanın (alttaki 10 karta karıştırılmış) ve açıklığa 5 kart dizin."
+  },
   "wizard": {
     "scoreEntry": "Puan Girişi",
     "cancel": "Puanlamayı iptal et",

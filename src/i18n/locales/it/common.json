@@ -56,6 +56,18 @@
     "startScoring_one": "Inizia il calcolo in solitario",
     "soloHint": "Partita in solitario — Tiglio e Picchio rosso maggiore usano il punteggio solo (3+ Tigli / 10+ alberi)."
   },
+  "setup": {
+    "title": "Preparazione",
+    "removeDesc": "Rimetti nella scatola, senza guardarle, questo numero di carte in base al numero di giocatori:",
+    "players": "{{count}} giocatori",
+    "noteFlat": "Regola con espansione: rimetti prima 10 carte nella scatola, poi la quantità per il vostro numero di giocatori.",
+    "notePiles": "Scorciatoia per {{count}} giocatori: dividi il mazzo in {{piles}} pile uguali e rimuovine {{remove}}.",
+    "noteExploration": "Exploration: rimetti 1 carta in più per ogni carta rara aggiunta (15 se le usi tutte). Le grotte speciali sostituiscono quelle base: ognuno ne sceglie una in ordine di turno inverso.",
+    "noteDartmoorCaves": "Grotte: mescola le 5 grotte, mettine una per giocatore nella radura e sceglietele in ordine di turno inverso.",
+    "noteExmoorCaves": "Usa le grotte Exmoor al posto di quelle Dartmoor.",
+    "noteWinter": "Dividi il resto in 3 pile, mescola 2 carte inverno in una di esse, metti la 3ª in cima a quella pila e mettila in fondo al mazzo.",
+    "noteSolo": "Solo: rimetti {{count}} carte come in una partita a 2 giocatori, usa solo 1 carta inverno (mescolata nelle ultime 10 carte) e disponi 5 carte nella radura."
+  },
   "wizard": {
     "scoreEntry": "Inserimento punti",
     "cancel": "Annulla calcolo",

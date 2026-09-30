@@ -57,6 +57,18 @@
     "startScoring_one": "Start Solo Scoring",
     "soloHint": "Solo game — Linden and Woodpecker use solo scoring (3+ Lindens / 10+ trees)."
   },
+  "setup": {
+    "title": "Game setup",
+    "removeDesc": "Return this many cards to the box unseen, depending on the player count:",
+    "players": "{{count}} players",
+    "noteFlat": "Expansion rule: first return 10 cards, then the amount for your player count.",
+    "notePiles": "Shortcut for {{count}} players: split the deck into {{piles}} equal piles and remove {{remove}} of them.",
+    "noteExploration": "Exploration: return 1 extra card per rare card you shuffle in (15 with all of them). The special caves replace the base caves — everyone picks one in reverse turn order.",
+    "noteDartmoorCaves": "Caves: shuffle the 5 caves, put one per player into the clearing and pick in reverse turn order.",
+    "noteExmoorCaves": "Use the Exmoor caves instead of the Dartmoor caves.",
+    "noteWinter": "Split the rest into 3 piles, shuffle 2 winter cards into one of them, put the 3rd on top of that pile and place it at the bottom of the deck.",
+    "noteSolo": "Solo: return {{count}} cards like in a 2-player game, use only 1 winter card (shuffled into the bottom 10 cards) and lay out 5 cards in the clearing."
+  },
   "wizard": {
     "scoreEntry": "Score Entry",
     "cancel": "Cancel scoring",

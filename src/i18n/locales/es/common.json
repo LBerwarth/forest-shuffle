@@ -57,6 +57,18 @@
     "startScoring_one": "Empezar puntuación en solitario",
     "soloHint": "Partida en solitario — el Tilo y el Pico picapinos usan las reglas solo (mín. 3 Tilos / mín. 10 árboles)."
   },
+  "setup": {
+    "title": "Preparación",
+    "removeDesc": "Devuelve a la caja, sin mirarlas, esta cantidad de cartas según el número de jugadores:",
+    "players": "{{count}} jugadores",
+    "noteFlat": "Regla con expansión: devuelve primero 10 cartas y después la cantidad para vuestro número de jugadores.",
+    "notePiles": "Atajo para {{count}} jugadores: divide el mazo en {{piles}} montones iguales y retira {{remove}}.",
+    "noteExploration": "Exploración: devuelve 1 carta más por cada carta rara que añadas (15 si usas todas). Las cuevas especiales sustituyen a las del juego base: cada jugador elige una en orden inverso de turno.",
+    "noteDartmoorCaves": "Cuevas: mezcla las 5 cuevas, pon una por jugador en el claro y elegidlas en orden inverso de turno.",
+    "noteExmoorCaves": "Usa las cuevas de Exmoor en lugar de las de Dartmoor.",
+    "noteWinter": "Divide el resto en 3 montones, mezcla 2 cartas de invierno en uno de ellos, pon la 3.ª encima de ese montón y colócalo al fondo del mazo.",
+    "noteSolo": "Solo: devuelve {{count}} cartas como en una partida de 2 jugadores, usa solo 1 carta de invierno (mezclada entre las 10 últimas cartas) y coloca 5 cartas en el claro."
+  },
   "wizard": {
     "scoreEntry": "Entrada de puntos",
     "cancel": "Cancelar puntuación",

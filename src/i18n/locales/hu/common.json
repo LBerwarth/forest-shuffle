@@ -56,6 +56,18 @@
     "startScoring_one": "Szólópontozás indítása",
     "soloHint": "Szólójáték — a Hárs és a Nagy fakopáncs szólópontozást használ (3+ hárs / 10+ fa)."
   },
+  "setup": {
+    "title": "Előkészületek",
+    "removeDesc": "A játékosok számától függően ennyi lapot tegyetek vissza a dobozba, megnézés nélkül:",
+    "players": "{{count}} játékos",
+    "noteFlat": "Kiegészítővel: először 10 lapot tegyetek vissza, majd a játékosszámnak megfelelő mennyiséget.",
+    "notePiles": "Gyorsabban {{count}} játékosnál: osszátok a paklit {{piles}} egyenlő kupacra, és vegyetek ki {{remove}} kupacot.",
+    "noteExploration": "Exploration: minden bekevert ritka lap után 1 további lapot tegyetek vissza (15-öt, ha mindet használjátok). A különleges barlangok az alapjáték barlangjait helyettesítik – mindenki választ egyet fordított körsorrendben.",
+    "noteDartmoorCaves": "Barlangok: keverjétek meg az 5 barlangot, tegyetek játékosonként egyet a tisztásra, és válasszatok fordított körsorrendben.",
+    "noteExmoorCaves": "A Dartmoor barlangok helyett az Exmoor barlangokat használjátok.",
+    "noteWinter": "A maradékot osszátok 3 kupacra, keverjetek 2 téllapot az egyikbe, a 3.-at tegyétek annak a tetejére, és ezt a kupacot tegyétek a húzópakli aljára.",
+    "noteSolo": "Szóló: {{count}} lapot tegyetek vissza, mint 2 játékosnál, csak 1 téllapot használjatok (az alsó 10 lap közé keverve), és tegyetek 5 lapot a tisztásra."
+  },
   "wizard": {
     "scoreEntry": "Pontbevitel",
     "cancel": "Pontozás megszakítása",

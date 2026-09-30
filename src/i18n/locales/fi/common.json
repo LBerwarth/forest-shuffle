@@ -56,6 +56,18 @@
     "startScoring_one": "Aloita soolopisteytys",
     "soloHint": "Soolopeli — Lehmus ja Käpytikka käyttävät soolopisteytystä (3+ lehmusta / 10+ puuta)."
   },
+  "setup": {
+    "title": "Pelin valmistelu",
+    "removeDesc": "Palauta pelaajamäärän mukaan näin monta korttia laatikkoon katsomatta niitä:",
+    "players": "{{count}} pelaajaa",
+    "noteFlat": "Laajennussääntö: palauta ensin 10 korttia ja sitten pelaajamääränne mukainen määrä.",
+    "notePiles": "Nopeammin {{count}} pelaajalla: jaa pakka {{piles}} yhtä suureen pinoon ja poista niistä {{remove}}.",
+    "noteExploration": "Exploration: palauta 1 lisäkortti jokaista sekoitettua harvinaista korttia kohti (15, jos käytät kaikkia). Erikoisluolat korvaavat peruspelin luolat – jokainen valitsee yhden käänteisessä vuorojärjestyksessä.",
+    "noteDartmoorCaves": "Luolat: sekoita 5 luolaa, aseta yksi per pelaaja aukiolle ja valitkaa käänteisessä vuorojärjestyksessä.",
+    "noteExmoorCaves": "Käytä Exmoor-luolia Dartmoor-luolien sijaan.",
+    "noteWinter": "Jaa loput 3 pinoon, sekoita 2 talvikorttia yhteen niistä, aseta 3. sen pinon päälle ja laita pino nostopakan alimmaiseksi.",
+    "noteSolo": "Soolo: palauta {{count}} korttia kuten 2 pelaajan pelissä, käytä vain 1 talvikorttia (sekoitettuna alimpiin 10 korttiin) ja aseta 5 korttia aukiolle."
+  },
   "wizard": {
     "scoreEntry": "Pisteiden syöttö",
     "cancel": "Peruuta pisteytys",

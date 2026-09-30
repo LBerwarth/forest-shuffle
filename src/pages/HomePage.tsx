@@ -9,6 +9,8 @@ import { AcornLogo } from '@/components/ui/AcornLogo'
 import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
 import { LandingSection } from '@/components/LandingSection'
+import { SetupGuide } from '@/components/SetupGuide'
+import { useSettingsStore, selectExpansions } from '@/store/settings-store'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 
@@ -18,6 +20,8 @@ export function HomePage() {
   const { t, i18n } = useTranslation()
   const { data: games = [] } = useGames()
   const { data: players = [] } = usePlayers()
+  const { edition, includeAlpine, includeWoodland, includeExploration, includeExmoor } = useSettingsStore()
+  const expansions = selectExpansions({ edition, includeAlpine, includeWoodland, includeExploration, includeExmoor })
   const recentGame = games[0]
   const featured = recentGame
     ? recentGame.player_count < 2
@@ -148,6 +152,8 @@ export function HomePage() {
           </Link>
         ))}
       </div>
+
+      <SetupGuide collapsible edition={edition} expansions={expansions} className="mb-4" />
 
       {/* Recent game */}
       {recentGame && (

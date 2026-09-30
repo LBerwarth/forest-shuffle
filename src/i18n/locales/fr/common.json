@@ -57,6 +57,18 @@
     "startScoring_one": "Commencer en solo",
     "soloHint": "Partie solo — le Tilleul et le Pic épeiche utilisent les règles solo (3 Tilleuls min. / 10 arbres min.)."
   },
+  "setup": {
+    "title": "Mise en place",
+    "removeDesc": "Remettez ce nombre de cartes dans la boîte sans les regarder, selon le nombre de joueurs :",
+    "players": "{{count}} joueurs",
+    "noteFlat": "Règle avec extension : remettez d'abord 10 cartes dans la boîte, puis le nombre correspondant à votre nombre de joueurs.",
+    "notePiles": "Raccourci à {{count}} joueurs : divisez la pioche en {{piles}} piles égales et retirez-en {{remove}}.",
+    "noteExploration": "Exploration : remettez 1 carte de plus par carte rare ajoutée (15 si vous les utilisez toutes). Les grottes spéciales remplacent les grottes de base — chacun en choisit une dans l'ordre inverse du tour.",
+    "noteDartmoorCaves": "Grottes : mélangez les 5 grottes, placez-en une par joueur dans la clairière et choisissez dans l'ordre inverse du tour.",
+    "noteExmoorCaves": "Utilisez les grottes Exmoor à la place des grottes Dartmoor.",
+    "noteWinter": "Divisez le reste en 3 piles, mélangez 2 cartes Hiver dans l'une d'elles, posez la 3e dessus et placez cette pile sous la pioche.",
+    "noteSolo": "Solo : remettez {{count}} cartes comme à 2 joueurs, n'utilisez qu'1 carte Hiver (mélangée dans les 10 dernières cartes) et posez 5 cartes dans la clairière."
+  },
   "wizard": {
     "scoreEntry": "Saisie des scores",
     "cancel": "Annuler la saisie",

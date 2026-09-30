@@ -57,6 +57,18 @@
     "startScoring_one": "Solo-Wertung starten",
     "soloHint": "Solospiel — Linde und Buntspecht nutzen die Solo-Wertung (mind. 3 Linden / mind. 10 Bäume)."
   },
+  "setup": {
+    "title": "Spielaufbau",
+    "removeDesc": "So viele Karten kommen je nach Spielerzahl ungesehen zurück in die Schachtel:",
+    "players": "{{count}} Spieler",
+    "noteFlat": "Regel mit Erweiterung: zuerst 10 Karten zurücklegen, dann die Anzahl für eure Spielerzahl.",
+    "notePiles": "Abkürzung bei {{count}} Spielern: den Stapel in {{piles}} gleich große Stapel teilen und {{remove}} davon entfernen.",
+    "noteExploration": "Exploration: pro eingemischter seltener Karte 1 Karte zusätzlich zurücklegen (15 bei allen). Die Spezialhöhlen ersetzen die Grundspiel-Höhlen – jeder wählt eine in umgekehrter Spielreihenfolge.",
+    "noteDartmoorCaves": "Höhlen: die 5 Höhlen mischen, pro Spieler eine in die Lichtung legen und in umgekehrter Spielreihenfolge wählen.",
+    "noteExmoorCaves": "Statt der Dartmoor-Höhlen die Exmoor-Höhlen verwenden.",
+    "noteWinter": "Den Rest in 3 Stapel teilen, 2 Winterkarten in einen davon mischen, die 3. obenauf legen und diesen Stapel ganz nach unten in den Nachziehstapel legen.",
+    "noteSolo": "Solo: {{count}} Karten wie im Spiel zu zweit zurücklegen, nur 1 Winterkarte verwenden (in die unteren 10 Karten gemischt) und 5 Karten in die Lichtung legen."
+  },
   "wizard": {
     "scoreEntry": "Punkteingabe",
     "cancel": "Scoring abbrechen",

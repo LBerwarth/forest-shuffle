@@ -56,6 +56,18 @@
     "startScoring_one": "Solotelling starten",
     "soloHint": "Solospel — Linde en Grote bonte specht gebruiken de solotelling (min. 3 Linden / min. 10 bomen)."
   },
+  "setup": {
+    "title": "Spelopbouw",
+    "removeDesc": "Leg dit aantal kaarten ongezien terug in de doos, afhankelijk van het aantal spelers:",
+    "players": "{{count}} spelers",
+    "noteFlat": "Regel met uitbreiding: leg eerst 10 kaarten terug en daarna het aantal voor jullie spelersaantal.",
+    "notePiles": "Sneller met {{count}} spelers: verdeel de stapel in {{piles}} gelijke stapels en verwijder er {{remove}}.",
+    "noteExploration": "Exploration: leg 1 extra kaart terug per zeldzame kaart die je toevoegt (15 bij allemaal). De speciale grotten vervangen de basisgrotten – iedereen kiest er één in omgekeerde beurtvolgorde.",
+    "noteDartmoorCaves": "Grotten: schud de 5 grotten, leg er per speler één op de open plek en kies in omgekeerde beurtvolgorde.",
+    "noteExmoorCaves": "Gebruik de Exmoor-grotten in plaats van de Dartmoor-grotten.",
+    "noteWinter": "Verdeel de rest in 3 stapels, schud 2 winterkaarten door een ervan, leg de 3e erbovenop en leg die stapel onderaan de trekstapel.",
+    "noteSolo": "Solo: leg {{count}} kaarten terug zoals bij 2 spelers, gebruik maar 1 winterkaart (geschud door de onderste 10 kaarten) en leg 5 kaarten op de open plek."
+  },
   "wizard": {
     "scoreEntry": "Punteninvoer",
     "cancel": "Telling annuleren",

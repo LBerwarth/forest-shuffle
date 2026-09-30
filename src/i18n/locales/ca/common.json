@@ -56,6 +56,18 @@
     "startScoring_one": "Comença en solitari",
     "soloHint": "Partida en solitari — el Til·ler i el Picot garser gros usen la puntuació solo (mín. 3 Til·lers / mín. 10 arbres)."
   },
+  "setup": {
+    "title": "Preparació",
+    "removeDesc": "Torna a la caixa, sense mirar-les, aquesta quantitat de cartes segons el nombre de jugadors:",
+    "players": "{{count}} jugadors",
+    "noteFlat": "Regla amb expansió: torna primer 10 cartes i després la quantitat per al vostre nombre de jugadors.",
+    "notePiles": "Drecera per a {{count}} jugadors: divideix la pila en {{piles}} munts iguals i retira'n {{remove}}.",
+    "noteExploration": "Exploration: torna 1 carta més per cada carta rara que afegeixis (15 si les uses totes). Les coves especials substitueixen les del joc base: cadascú en tria una en ordre invers de torn.",
+    "noteDartmoorCaves": "Coves: barreja les 5 coves, posa'n una per jugador a la clariana i trieu-les en ordre invers de torn.",
+    "noteExmoorCaves": "Fes servir les coves d'Exmoor en lloc de les de Dartmoor.",
+    "noteWinter": "Divideix la resta en 3 munts, barreja 2 cartes d'hivern en un d'ells, posa la 3a a sobre d'aquest munt i col·loca'l al fons de la pila.",
+    "noteSolo": "Solitari: torna {{count}} cartes com en una partida de 2 jugadors, fes servir només 1 carta d'hivern (barrejada entre les 10 últimes cartes) i posa 5 cartes a la clariana."
+  },
   "wizard": {
     "scoreEntry": "Introducció de punts",
     "cancel": "Cancel·la la puntuació",

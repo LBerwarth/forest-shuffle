@@ -5,10 +5,11 @@ import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Calculator, Trash2 } from 'lu
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { NoAppNotice } from '@/components/NoAppNotice'
+import { SetupGuide } from '@/components/SetupGuide'
 import { usePlayers, useCreatePlayer, useDeletePlayer } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
 import { useScoringStore } from '@/store/scoring-store'
-import { useSettingsStore } from '@/store/settings-store'
+import { useSettingsStore, selectExpansions } from '@/store/settings-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { createLiveSession, joinLiveSession } from '@/lib/supabase-api'
 import { readLastJoinedPlayer, writeLastJoinedPlayer } from '@/lib/last-joined-player'
@@ -102,13 +103,7 @@ export function NewGamePage() {
   }
 
   function getExpansions(): Expansion[] {
-    if (edition === 'smoky') return ['smoky_base']
-    if (edition === 'dartmoor') return includeExmoor ? ['dartmoor_base', 'dartmoor_exmoor'] : ['dartmoor_base']
-    const exp: Expansion[] = ['base']
-    if (includeAlpine) exp.push('alpine')
-    if (includeWoodland) exp.push('woodland')
-    if (includeExploration) exp.push('exploration')
-    return exp
+    return selectExpansions({ edition, includeAlpine, includeWoodland, includeExploration, includeExmoor })
   }
 
   async function handleCreateLive() {
@@ -299,6 +294,8 @@ export function NewGamePage() {
             </CardContent>
           </Card>
         )}
+
+        <SetupGuide edition={edition} expansions={getExpansions()} className="mb-4" />
 
         {/* Continue to mode selection */}
         <Button

@@ -56,6 +56,18 @@
     "startScoring_one": "Start soloregistrering",
     "soloHint": "Solospill — Lind og Flaggspett bruker solopoeng (3+ Lind / 10+ trær)."
   },
+  "setup": {
+    "title": "Oppsett",
+    "removeDesc": "Legg så mange kort tilbake i esken uten å se på dem, avhengig av antall spillere:",
+    "players": "{{count}} spillere",
+    "noteFlat": "Regel med utvidelse: legg først tilbake 10 kort, deretter antallet for deres spillerantall.",
+    "notePiles": "Raskere med {{count}} spillere: del bunken i {{piles}} like store bunker og fjern {{remove}} av dem.",
+    "noteExploration": "Exploration: legg tilbake 1 ekstra kort per sjeldne kort du blander inn (15 med alle). Spesialhulene erstatter grunnspillets huler – alle velger én i omvendt turrekkefølge.",
+    "noteDartmoorCaves": "Huler: bland de 5 hulene, legg én per spiller på lysningen og velg i omvendt turrekkefølge.",
+    "noteExmoorCaves": "Bruk Exmoor-hulene i stedet for Dartmoor-hulene.",
+    "noteWinter": "Del resten i 3 bunker, bland 2 vinterkort inn i en av dem, legg det 3. øverst på den bunken og plasser den nederst i trekkbunken.",
+    "noteSolo": "Solo: legg tilbake {{count}} kort som i et spill med 2 spillere, bruk bare 1 vinterkort (blandet inn blant de nederste 10 kortene) og legg ut 5 kort på lysningen."
+  },
   "wizard": {
     "scoreEntry": "Poengregistrering",
     "cancel": "Avbryt registrering",

@@ -56,6 +56,18 @@
     "startScoring_one": "Börja soloräkning",
     "soloHint": "Solospel — Lind och Hackspett använder solopoäng (3+ Lindar / 10+ träd)."
   },
+  "setup": {
+    "title": "Förberedelser",
+    "removeDesc": "Lägg tillbaka så många kort i lådan utan att titta, beroende på antal spelare:",
+    "players": "{{count}} spelare",
+    "noteFlat": "Regel med expansion: lägg först tillbaka 10 kort och sedan antalet för ert spelarantal.",
+    "notePiles": "Snabbare med {{count}} spelare: dela leken i {{piles}} lika stora högar och ta bort {{remove}} av dem.",
+    "noteExploration": "Exploration: lägg tillbaka 1 extra kort per sällsynt kort du blandar in (15 med alla). Specialgrottorna ersätter grundspelets grottor – alla väljer en i omvänd turordning.",
+    "noteDartmoorCaves": "Grottor: blanda de 5 grottorna, lägg en per spelare på gläntan och välj i omvänd turordning.",
+    "noteExmoorCaves": "Använd Exmoor-grottorna i stället för Dartmoor-grottorna.",
+    "noteWinter": "Dela resten i 3 högar, blanda in 2 vinterkort i en av dem, lägg det 3:e överst på den högen och placera den underst i dragleken.",
+    "noteSolo": "Solo: lägg tillbaka {{count}} kort som i ett spel med 2 spelare, använd bara 1 vinterkort (inblandat bland de nedersta 10 korten) och lägg ut 5 kort på gläntan."
+  },
   "wizard": {
     "scoreEntry": "Poänginmatning",
     "cancel": "Avbryt räkning",

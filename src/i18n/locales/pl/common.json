@@ -58,6 +58,18 @@
     "startScoring_many": "Rozpocznij podliczanie ({{count}} graczy)",
     "soloHint": "Gra solo — Lipa i Dzięcioł duży używają punktacji solo (min. 3 Lipy / min. 10 drzew)."
   },
+  "setup": {
+    "title": "Przygotowanie gry",
+    "removeDesc": "Odłóż do pudełka, nie patrząc, tyle kart w zależności od liczby graczy:",
+    "players": "{{count}} graczy",
+    "noteFlat": "Zasada z dodatkiem: najpierw odłóż 10 kart, a potem liczbę odpowiednią dla waszej liczby graczy.",
+    "notePiles": "Skrót dla {{count}} graczy: podziel talię na {{piles}} równe stosy i usuń {{remove}} z nich.",
+    "noteExploration": "Exploration: odłóż 1 dodatkową kartę za każdą dodaną rzadką kartę (15 przy wszystkich). Specjalne jaskinie zastępują jaskinie z podstawki – każdy wybiera jedną w odwrotnej kolejności tur.",
+    "noteDartmoorCaves": "Jaskinie: potasuj 5 jaskiń, połóż po jednej na gracza na polanie i wybierajcie w odwrotnej kolejności tur.",
+    "noteExmoorCaves": "Użyj jaskiń z Exmoor zamiast jaskiń z Dartmoor.",
+    "noteWinter": "Podziel resztę na 3 stosy, wtasuj 2 karty zimy do jednego z nich, połóż 3. na wierzchu tego stosu i umieść go na spodzie talii.",
+    "noteSolo": "Solo: odłóż {{count}} kart jak w grze na 2 osoby, użyj tylko 1 karty zimy (wtasowanej w 10 ostatnich kart) i wyłóż 5 kart na polanę."
+  },
   "wizard": {
     "scoreEntry": "Wprowadzanie punktów",
     "cancel": "Przerwij podliczanie",

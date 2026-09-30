@@ -56,6 +56,18 @@
     "startScoring_one": "Start solo-scoring",
     "soloHint": "Solospil — Lind og Stor flagspætte bruger solo-scoring (3+ linde / 10+ træer)."
   },
+  "setup": {
+    "title": "Opsætning",
+    "removeDesc": "Læg så mange kort tilbage i æsken uden at kigge, afhængigt af antal spillere:",
+    "players": "{{count}} spillere",
+    "noteFlat": "Regel med udvidelse: læg først 10 kort tilbage og derefter antallet for jeres spillerantal.",
+    "notePiles": "Hurtigere med {{count}} spillere: del bunken i {{piles}} lige store bunker og fjern {{remove}} af dem.",
+    "noteExploration": "Exploration: læg 1 ekstra kort tilbage pr. sjældent kort, du blander i (15 med alle). De særlige huler erstatter grundspillets huler – alle vælger én i omvendt turrækkefølge.",
+    "noteDartmoorCaves": "Huler: bland de 5 huler, læg én pr. spiller på lysningen og vælg i omvendt turrækkefølge.",
+    "noteExmoorCaves": "Brug Exmoor-hulerne i stedet for Dartmoor-hulerne.",
+    "noteWinter": "Del resten i 3 bunker, bland 2 vinterkort i en af dem, læg det 3. øverst på den bunke og placer den nederst i trækbunken.",
+    "noteSolo": "Solo: læg {{count}} kort tilbage som i et spil med 2 spillere, brug kun 1 vinterkort (blandet ind i de nederste 10 kort) og læg 5 kort på lysningen."
+  },
   "wizard": {
     "scoreEntry": "Pointindtastning",
     "cancel": "Annuller scoring",

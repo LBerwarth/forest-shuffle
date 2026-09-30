@@ -59,6 +59,18 @@
     "startScoring_other": "Zahájit bodování ({{count}} hráčů)",
     "soloHint": "Sólová hra — Lípa a Strakapoud velký používají sólové bodování (min. 3 lípy / min. 10 stromů)."
   },
+  "setup": {
+    "title": "Příprava hry",
+    "removeDesc": "Podle počtu hráčů vraťte do krabice, aniž byste se na ně podívali, tolik karet:",
+    "players": "{{count}} hráči",
+    "noteFlat": "Pravidlo s rozšířením: nejprve vraťte 10 karet, poté počet podle vašeho počtu hráčů.",
+    "notePiles": "Zkratka pro {{count}} hráče: rozdělte balíček na {{piles}} stejné hromádky a {{remove}} z nich odeberte.",
+    "noteExploration": "Exploration: za každou přidanou vzácnou kartu vraťte 1 kartu navíc (15 při všech). Speciální jeskyně nahrazují jeskyně ze základní hry – každý si jednu vybere v opačném pořadí tahů.",
+    "noteDartmoorCaves": "Jeskyně: zamíchejte 5 jeskyní, na mýtinu položte jednu na hráče a vybírejte v opačném pořadí tahů.",
+    "noteExmoorCaves": "Použijte jeskyně z Exmooru místo jeskyní z Dartmooru.",
+    "noteWinter": "Zbytek rozdělte na 3 hromádky, do jedné zamíchejte 2 zimní karty, 3. položte na tuto hromádku a dejte ji na spodek dobíracího balíčku.",
+    "noteSolo": "Sólo: vraťte {{count}} karet jako ve hře pro 2 hráče, použijte jen 1 zimní kartu (zamíchanou do spodních 10 karet) a vyložte 5 karet na mýtinu."
+  },
   "wizard": {
     "scoreEntry": "Zadávání bodů",
     "cancel": "Zrušit bodování",
