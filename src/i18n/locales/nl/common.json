@@ -361,6 +361,10 @@
     "action": "Installeren",
     "dismiss": "Sluiten"
   },
+  "loadError": {
+    "message": "Je gegevens konden niet worden geladen. Controleer je verbinding.",
+    "retry": "Opnieuw"
+  },
   "live": {
     "joinSession": "Deelnemen aan live-sessie",
     "createSession": "Live-sessie aanmaken",

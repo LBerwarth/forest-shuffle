@@ -364,6 +364,10 @@
     "action": "Instalovat",
     "dismiss": "Zavřít"
   },
+  "loadError": {
+    "message": "Data se nepodařilo načíst. Zkontrolujte připojení.",
+    "retry": "Zkusit znovu"
+  },
   "live": {
     "joinSession": "Připojit se k živé relaci",
     "createSession": "Vytvořit živou relaci",

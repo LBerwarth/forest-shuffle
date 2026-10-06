@@ -365,6 +365,10 @@
     "action": "Installer",
     "dismiss": "Fermer"
   },
+  "loadError": {
+    "message": "Impossible de charger vos données. Vérifiez votre connexion.",
+    "retry": "Réessayer"
+  },
   "live": {
     "joinSession": "Rejoindre une session",
     "createSession": "Créer une session live",

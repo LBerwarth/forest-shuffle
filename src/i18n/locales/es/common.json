@@ -365,6 +365,10 @@
     "action": "Instalar",
     "dismiss": "Cerrar"
   },
+  "loadError": {
+    "message": "No se pudieron cargar tus datos. Comprueba tu conexión.",
+    "retry": "Reintentar"
+  },
   "live": {
     "joinSession": "Unirse a sesión",
     "createSession": "Crear sesión en vivo",

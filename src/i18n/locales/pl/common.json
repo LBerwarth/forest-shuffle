@@ -363,6 +363,10 @@
     "action": "Zainstaluj",
     "dismiss": "Zamknij"
   },
+  "loadError": {
+    "message": "Nie udało się wczytać danych. Sprawdź połączenie.",
+    "retry": "Spróbuj ponownie"
+  },
   "live": {
     "joinSession": "Dołącz do sesji na żywo",
     "createSession": "Utwórz sesję na żywo",

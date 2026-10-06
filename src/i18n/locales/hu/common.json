@@ -361,6 +361,10 @@
     "action": "Telepítés",
     "dismiss": "Bezárás"
   },
+  "loadError": {
+    "message": "Nem sikerült betölteni az adatokat. Ellenőrizd a kapcsolatot.",
+    "retry": "Újra"
+  },
   "live": {
     "joinSession": "Csatlakozás élő munkamenethez",
     "createSession": "Élő munkamenet létrehozása",

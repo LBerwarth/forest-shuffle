@@ -361,6 +361,10 @@
     "action": "Instalar",
     "dismiss": "Fechar"
   },
+  "loadError": {
+    "message": "Não foi possível carregar os dados. Verifique a conexão.",
+    "retry": "Tentar novamente"
+  },
   "live": {
     "joinSession": "Entrar numa sessão",
     "createSession": "Criar sessão ao vivo",

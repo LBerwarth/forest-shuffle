@@ -365,6 +365,10 @@
     "action": "Install",
     "dismiss": "Dismiss"
   },
+  "loadError": {
+    "message": "Couldn't load your data. Check your connection.",
+    "retry": "Retry"
+  },
   "live": {
     "joinSession": "Join Live Session",
     "createSession": "Create Live Session",

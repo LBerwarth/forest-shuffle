@@ -3,6 +3,7 @@ import { Home, Calculator, History, BarChart3, Settings } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
 import { InstallBanner } from '@/components/InstallBanner'
+import { LoadErrorBanner } from '@/components/LoadErrorBanner'
 
 const navItems = [
   { to: '/', icon: Home, key: 'nav.home' },
@@ -30,6 +31,7 @@ export function AppShell() {
         className="fixed inset-0 -z-10 bg-gradient-to-b from-forest-50/92 via-cream-warm/94 to-forest-100/95"
       />
       <InstallBanner />
+      <LoadErrorBanner />
       <main className={cn('flex-1', !isWizard && 'pb-20')}>
         <Outlet />
       </main>

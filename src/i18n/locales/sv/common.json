@@ -361,6 +361,10 @@
     "action": "Installera",
     "dismiss": "Avfärda"
   },
+  "loadError": {
+    "message": "Det gick inte att läsa in data. Kontrollera anslutningen.",
+    "retry": "Försök igen"
+  },
   "live": {
     "joinSession": "Anslut till livesession",
     "createSession": "Skapa livesession",

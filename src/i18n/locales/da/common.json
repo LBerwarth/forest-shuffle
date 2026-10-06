@@ -361,6 +361,10 @@
     "action": "Installer",
     "dismiss": "Afvis"
   },
+  "loadError": {
+    "message": "Dine data kunne ikke indlæses. Tjek din forbindelse.",
+    "retry": "Prøv igen"
+  },
   "live": {
     "joinSession": "Deltag i live-session",
     "createSession": "Opret live-session",

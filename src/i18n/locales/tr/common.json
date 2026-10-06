@@ -361,6 +361,10 @@
     "action": "Yükle",
     "dismiss": "Kapat"
   },
+  "loadError": {
+    "message": "Veriler yüklenemedi. Bağlantını kontrol et.",
+    "retry": "Tekrar dene"
+  },
   "live": {
     "joinSession": "Canlı Oturuma Katıl",
     "createSession": "Canlı Oturum Oluştur",

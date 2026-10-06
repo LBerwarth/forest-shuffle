@@ -361,6 +361,10 @@
     "action": "Installer",
     "dismiss": "Avvis"
   },
+  "loadError": {
+    "message": "Kunne ikke laste inn dataene. Sjekk tilkoblingen.",
+    "retry": "Prøv igjen"
+  },
   "live": {
     "joinSession": "Bli med i live-økt",
     "createSession": "Opprett live-økt",

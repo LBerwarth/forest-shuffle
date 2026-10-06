@@ -365,6 +365,10 @@
     "action": "Installieren",
     "dismiss": "Schließen"
   },
+  "loadError": {
+    "message": "Daten konnten nicht geladen werden. Prüfe deine Verbindung.",
+    "retry": "Erneut versuchen"
+  },
   "live": {
     "joinSession": "Live-Session beitreten",
     "createSession": "Live-Session erstellen",

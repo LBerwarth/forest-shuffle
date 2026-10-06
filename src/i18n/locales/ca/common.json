@@ -361,6 +361,10 @@
     "action": "Instal·la",
     "dismiss": "Tanca"
   },
+  "loadError": {
+    "message": "No s'han pogut carregar les dades. Comprova la connexió.",
+    "retry": "Torna-ho a provar"
+  },
   "live": {
     "joinSession": "Uneix-te a la sessió",
     "createSession": "Crea una sessió en directe",

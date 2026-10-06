@@ -361,6 +361,10 @@
     "action": "Asenna",
     "dismiss": "Hylkää"
   },
+  "loadError": {
+    "message": "Tietoja ei voitu ladata. Tarkista yhteys.",
+    "retry": "Yritä uudelleen"
+  },
   "live": {
     "joinSession": "Liity live-istuntoon",
     "createSession": "Luo live-istunto",
