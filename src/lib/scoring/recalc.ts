@@ -14,6 +14,7 @@ export function recalcPlayer(
   allPlayers: PlayerScoringData[],
   expansions: Expansion[],
   edition: GameEdition = 'classic',
+  solo = allPlayers.length === 1,
 ): ScoreBreakdown {
   if (edition === 'smoky') {
     const smokyCards = getCards(expansions, 'smoky')
@@ -71,6 +72,6 @@ export function recalcPlayer(
     activeCardKeys,
     allLindenCounts,
     allTreeCounts,
-    allPlayers.length === 1,
+    solo,
   )
 }

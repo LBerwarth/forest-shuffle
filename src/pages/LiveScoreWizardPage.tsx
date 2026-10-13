@@ -620,7 +620,6 @@ export function LiveScoreWizardPage() {
                       : undefined
                   : undefined
               }
-              solo={players.length === 1}
             />
           ))}
         </div>

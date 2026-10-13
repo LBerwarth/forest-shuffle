@@ -4,6 +4,9 @@ import type { CardMetadata, ScoreBreakdown } from '@/types/scoring'
 import type { Expansion, GameEdition } from '@/types/card'
 import { recalcPlayer } from '@/lib/scoring/recalc'
 
+// Live sessions hold only this device's player, so one player there isn't solo.
+const isSolo = (sessionId: string | null, players: unknown[]) => !sessionId && players.length === 1
+
 export interface PlayerScoring {
   playerId: string
   /** Profile to save under; undefined = same as playerId, null = profile deleted */
@@ -95,7 +98,7 @@ export const useScoringStore = create<ScoringState>()(
         // Recalculate all players (cross-player cards)
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.expansions, state.edition),
+          breakdown: recalcPlayer(p, players, state.expansions, state.edition, isSolo(state.sessionId, players)),
         }))
         set({ players: updatedPlayers })
       },
@@ -115,7 +118,7 @@ export const useScoringStore = create<ScoringState>()(
         })
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.expansions, state.edition),
+          breakdown: recalcPlayer(p, players, state.expansions, state.edition, isSolo(state.sessionId, players)),
         }))
         set({ players: updatedPlayers })
       },
@@ -128,7 +131,7 @@ export const useScoringStore = create<ScoringState>()(
         })
         const updatedPlayers = players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, players, state.expansions, state.edition),
+          breakdown: recalcPlayer(p, players, state.expansions, state.edition, isSolo(state.sessionId, players)),
         }))
         set({ players: updatedPlayers })
       },
@@ -137,7 +140,7 @@ export const useScoringStore = create<ScoringState>()(
         const state = get()
         const updatedPlayers = state.players.map((p) => ({
           ...p,
-          breakdown: recalcPlayer(p, state.players, state.expansions, state.edition),
+          breakdown: recalcPlayer(p, state.players, state.expansions, state.edition, isSolo(state.sessionId, state.players)),
         }))
         set({ players: updatedPlayers })
       },
