@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi, Sparkles, MessageSquare, X } from 'lucide-react'
+import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi, Sparkles, MessageSquare, X, Hand } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { AcornIcon } from '@/components/ui/AcornIcon'
@@ -153,7 +153,13 @@ export function HomePage() {
         ))}
       </div>
 
-      <SetupGuide collapsible edition={edition} expansions={expansions} className="mb-4" />
+      <SetupGuide collapsible edition={edition} expansions={expansions} className="mb-3" />
+      <Link to="/first-player">
+        <Button variant="secondary" size="lg" className="w-full mb-4 text-base">
+          <Hand className="h-5 w-5" />
+          {t('firstPlayer.title')}
+        </Button>
+      </Link>
 
       {/* Recent game */}
       {recentGame && (

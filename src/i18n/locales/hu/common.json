@@ -68,6 +68,13 @@
     "noteWinter": "A maradékot osszátok 3 kupacra, keverjetek 2 téllapot az egyikbe, a 3.-at tegyétek annak a tetejére, és ezt a kupacot tegyétek a húzópakli aljára.",
     "noteSolo": "Szóló: {{count}} lapot tegyetek vissza, mint 2 játékosnál, csak 1 téllapot használjatok (az alsó 10 lap közé keverve), és tegyetek 5 lapot a tisztásra."
   },
+  "firstPlayer": {
+    "title": "Kezdőjátékos sorsolása",
+    "hint": "Mindenki tegye egy ujját a képernyőre",
+    "hold": "Ne mozduljatok…",
+    "starts": "Te kezdesz!",
+    "close": "Bezárás"
+  },
   "wizard": {
     "scoreEntry": "Pontbevitel",
     "cancel": "Pontozás megszakítása",

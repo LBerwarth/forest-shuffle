@@ -68,6 +68,13 @@
     "noteWinter": "Del resten i 3 bunker, bland 2 vinterkort i en af dem, læg det 3. øverst på den bunke og placer den nederst i trækbunken.",
     "noteSolo": "Solo: læg {{count}} kort tilbage som i et spil med 2 spillere, brug kun 1 vinterkort (blandet ind i de nederste 10 kort) og læg 5 kort på lysningen."
   },
+  "firstPlayer": {
+    "title": "Træk startspiller",
+    "hint": "Alle lægger en finger på skærmen",
+    "hold": "Hold stille…",
+    "starts": "Du starter!",
+    "close": "Luk"
+  },
   "wizard": {
     "scoreEntry": "Pointindtastning",
     "cancel": "Annuller scoring",

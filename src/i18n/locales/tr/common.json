@@ -68,6 +68,13 @@
     "noteWinter": "Kalanı 3 yığına bölün, 2 kış kartını birine karıştırın, 3.sünü o yığının üstüne koyun ve bu yığını destenin en altına yerleştirin.",
     "noteSolo": "Solo: 2 oyunculu oyundaki gibi {{count}} kart geri koyun, yalnızca 1 kış kartı kullanın (alttaki 10 karta karıştırılmış) ve açıklığa 5 kart dizin."
   },
+  "firstPlayer": {
+    "title": "İlk oyuncuyu seç",
+    "hint": "Herkes ekrana bir parmağını koysun",
+    "hold": "Kıpırdamayın…",
+    "starts": "Sen başlıyorsun!",
+    "close": "Kapat"
+  },
   "wizard": {
     "scoreEntry": "Puan Girişi",
     "cancel": "Puanlamayı iptal et",

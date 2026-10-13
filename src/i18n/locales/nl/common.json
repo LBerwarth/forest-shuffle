@@ -68,6 +68,13 @@
     "noteWinter": "Verdeel de rest in 3 stapels, schud 2 winterkaarten door een ervan, leg de 3e erbovenop en leg die stapel onderaan de trekstapel.",
     "noteSolo": "Solo: leg {{count}} kaarten terug zoals bij 2 spelers, gebruik maar 1 winterkaart (geschud door de onderste 10 kaarten) en leg 5 kaarten op de open plek."
   },
+  "firstPlayer": {
+    "title": "Startspeler loten",
+    "hint": "Iedereen legt een vinger op het scherm",
+    "hold": "Stil houden…",
+    "starts": "Jij begint!",
+    "close": "Sluiten"
+  },
   "wizard": {
     "scoreEntry": "Punteninvoer",
     "cancel": "Telling annuleren",

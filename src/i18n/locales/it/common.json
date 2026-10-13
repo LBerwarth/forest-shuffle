@@ -68,6 +68,13 @@
     "noteWinter": "Dividi il resto in 3 pile, mescola 2 carte inverno in una di esse, metti la 3ª in cima a quella pila e mettila in fondo al mazzo.",
     "noteSolo": "Solo: rimetti {{count}} carte come in una partita a 2 giocatori, usa solo 1 carta inverno (mescolata nelle ultime 10 carte) e disponi 5 carte nella radura."
   },
+  "firstPlayer": {
+    "title": "Sorteggia il primo giocatore",
+    "hint": "Ognuno appoggi un dito sullo schermo",
+    "hold": "Fermi…",
+    "starts": "Inizi tu!",
+    "close": "Chiudi"
+  },
   "wizard": {
     "scoreEntry": "Inserimento punti",
     "cancel": "Annulla calcolo",

@@ -70,6 +70,13 @@
     "noteWinter": "Podziel resztę na 3 stosy, wtasuj 2 karty zimy do jednego z nich, połóż 3. na wierzchu tego stosu i umieść go na spodzie talii.",
     "noteSolo": "Solo: odłóż {{count}} kart jak w grze na 2 osoby, użyj tylko 1 karty zimy (wtasowanej w 10 ostatnich kart) i wyłóż 5 kart na polanę."
   },
+  "firstPlayer": {
+    "title": "Losuj pierwszego gracza",
+    "hint": "Każdy kładzie jeden palec na ekranie",
+    "hold": "Nie ruszać się…",
+    "starts": "Zaczynasz!",
+    "close": "Zamknij"
+  },
   "wizard": {
     "scoreEntry": "Wprowadzanie punktów",
     "cancel": "Przerwij podliczanie",

@@ -68,6 +68,13 @@
     "noteWinter": "Jaa loput 3 pinoon, sekoita 2 talvikorttia yhteen niistä, aseta 3. sen pinon päälle ja laita pino nostopakan alimmaiseksi.",
     "noteSolo": "Soolo: palauta {{count}} korttia kuten 2 pelaajan pelissä, käytä vain 1 talvikorttia (sekoitettuna alimpiin 10 korttiin) ja aseta 5 korttia aukiolle."
   },
+  "firstPlayer": {
+    "title": "Arvo aloituspelaaja",
+    "hint": "Jokainen laittaa yhden sormen näytölle",
+    "hold": "Pysykää paikallanne…",
+    "starts": "Sinä aloitat!",
+    "close": "Sulje"
+  },
   "wizard": {
     "scoreEntry": "Pisteiden syöttö",
     "cancel": "Peruuta pisteytys",

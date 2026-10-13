@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Calculator, Trash2 } from 'lucide-react'
+import { ArrowLeft, ArrowRight, X, UserPlus, Wifi, Calculator, Trash2, Hand } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { NoAppNotice } from '@/components/NoAppNotice'
@@ -295,7 +295,14 @@ export function NewGamePage() {
           </Card>
         )}
 
-        <SetupGuide edition={edition} expansions={getExpansions()} className="mb-4" />
+        <SetupGuide edition={edition} expansions={getExpansions()} className="mb-3" />
+        <Link to="/first-player">
+          <Button variant="secondary" size="lg" className="w-full mb-4">
+            <Hand className="h-4 w-4" />
+            {t('firstPlayer.title')}
+          </Button>
+        </Link>
+
 
         {/* Continue to mode selection */}
         <Button

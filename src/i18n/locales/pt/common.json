@@ -68,6 +68,13 @@
     "noteWinter": "Divide o resto em 3 pilhas, baralha 2 cartas de inverno numa delas, põe a 3.ª no topo dessa pilha e coloca-a no fundo do baralho.",
     "noteSolo": "Solo: devolve {{count}} cartas como num jogo a 2 jogadores, usa só 1 carta de inverno (baralhada nas 10 últimas cartas) e coloca 5 cartas na clareira."
   },
+  "firstPlayer": {
+    "title": "Sortear primeiro jogador",
+    "hint": "Cada um põe um dedo no ecrã",
+    "hold": "Não mexam…",
+    "starts": "Começas tu!",
+    "close": "Fechar"
+  },
   "wizard": {
     "scoreEntry": "Entrada de pontos",
     "cancel": "Cancelar pontuação",

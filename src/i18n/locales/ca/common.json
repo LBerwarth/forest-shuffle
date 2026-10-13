@@ -68,6 +68,13 @@
     "noteWinter": "Divideix la resta en 3 munts, barreja 2 cartes d'hivern en un d'ells, posa la 3a a sobre d'aquest munt i col·loca'l al fons de la pila.",
     "noteSolo": "Solitari: torna {{count}} cartes com en una partida de 2 jugadors, fes servir només 1 carta d'hivern (barrejada entre les 10 últimes cartes) i posa 5 cartes a la clariana."
   },
+  "firstPlayer": {
+    "title": "Sortejar el jugador inicial",
+    "hint": "Cadascú posa un dit a la pantalla",
+    "hold": "Quiets…",
+    "starts": "Comences tu!",
+    "close": "Tanca"
+  },
   "wizard": {
     "scoreEntry": "Introducció de punts",
     "cancel": "Cancel·la la puntuació",

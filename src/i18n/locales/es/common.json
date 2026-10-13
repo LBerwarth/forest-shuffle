@@ -69,6 +69,13 @@
     "noteWinter": "Divide el resto en 3 montones, mezcla 2 cartas de invierno en uno de ellos, pon la 3.ª encima de ese montón y colócalo al fondo del mazo.",
     "noteSolo": "Solo: devuelve {{count}} cartas como en una partida de 2 jugadores, usa solo 1 carta de invierno (mezclada entre las 10 últimas cartas) y coloca 5 cartas en el claro."
   },
+  "firstPlayer": {
+    "title": "Sortear jugador inicial",
+    "hint": "Cada uno pone un dedo en la pantalla",
+    "hold": "Quietos…",
+    "starts": "¡Empiezas tú!",
+    "close": "Cerrar"
+  },
   "wizard": {
     "scoreEntry": "Entrada de puntos",
     "cancel": "Cancelar puntuación",

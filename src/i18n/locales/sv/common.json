@@ -68,6 +68,13 @@
     "noteWinter": "Dela resten i 3 högar, blanda in 2 vinterkort i en av dem, lägg det 3:e överst på den högen och placera den underst i dragleken.",
     "noteSolo": "Solo: lägg tillbaka {{count}} kort som i ett spel med 2 spelare, använd bara 1 vinterkort (inblandat bland de nedersta 10 korten) och lägg ut 5 kort på gläntan."
   },
+  "firstPlayer": {
+    "title": "Lotta startspelare",
+    "hint": "Alla lägger ett finger på skärmen",
+    "hold": "Håll still…",
+    "starts": "Du börjar!",
+    "close": "Stäng"
+  },
   "wizard": {
     "scoreEntry": "Poänginmatning",
     "cancel": "Avbryt räkning",

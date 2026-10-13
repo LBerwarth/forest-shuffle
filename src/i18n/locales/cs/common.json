@@ -71,6 +71,13 @@
     "noteWinter": "Zbytek rozdělte na 3 hromádky, do jedné zamíchejte 2 zimní karty, 3. položte na tuto hromádku a dejte ji na spodek dobíracího balíčku.",
     "noteSolo": "Sólo: vraťte {{count}} karet jako ve hře pro 2 hráče, použijte jen 1 zimní kartu (zamíchanou do spodních 10 karet) a vyložte 5 karet na mýtinu."
   },
+  "firstPlayer": {
+    "title": "Vylosovat začínajícího hráče",
+    "hint": "Každý položí jeden prst na obrazovku",
+    "hold": "Nehýbejte se…",
+    "starts": "Začínáš ty!",
+    "close": "Zavřít"
+  },
   "wizard": {
     "scoreEntry": "Zadávání bodů",
     "cancel": "Zrušit bodování",

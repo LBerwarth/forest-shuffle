@@ -21,6 +21,7 @@ const PrivacyPage = lazy(() => import('@/pages/PrivacyPage').then((m) => ({ defa
 const JoinSessionPage = lazy(() => import('@/pages/JoinSessionPage').then((m) => ({ default: m.JoinSessionPage })))
 const LiveLobbyPage = lazy(() => import('@/pages/LiveLobbyPage').then((m) => ({ default: m.LiveLobbyPage })))
 const LiveScoreWizardPage = lazy(() => import('@/pages/LiveScoreWizardPage').then((m) => ({ default: m.LiveScoreWizardPage })))
+const FirstPlayerPage = lazy(() => import('@/pages/FirstPlayerPage').then((m) => ({ default: m.FirstPlayerPage })))
 const LiveResultPage = lazy(() => import('@/pages/LiveResultPage').then((m) => ({ default: m.LiveResultPage })))
 
 const queryClient = new QueryClient({
@@ -51,6 +52,7 @@ const appRoutes = (
       <Route path="privacy" element={<PrivacyPage />} />
     </Route>
     {/* Wizard routes without bottom nav */}
+    <Route path="first-player" element={<FirstPlayerPage />} />
     <Route path="score/:gameId" element={<ScoreWizardPage />} />
     <Route path="score/:gameId/results" element={<GameResultPage />} />
     {/* Live session routes without bottom nav */}

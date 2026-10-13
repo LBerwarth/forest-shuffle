@@ -69,6 +69,13 @@
     "noteWinter": "Divisez le reste en 3 piles, mélangez 2 cartes Hiver dans l'une d'elles, posez la 3e dessus et placez cette pile sous la pioche.",
     "noteSolo": "Solo : remettez {{count}} cartes comme à 2 joueurs, n'utilisez qu'1 carte Hiver (mélangée dans les 10 dernières cartes) et posez 5 cartes dans la clairière."
   },
+  "firstPlayer": {
+    "title": "Tirer le premier joueur",
+    "hint": "Chacun pose un doigt sur l'écran",
+    "hold": "Ne bougez plus…",
+    "starts": "C'est toi qui commences !",
+    "close": "Fermer"
+  },
   "wizard": {
     "scoreEntry": "Saisie des scores",
     "cancel": "Annuler la saisie",

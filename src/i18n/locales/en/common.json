@@ -69,6 +69,13 @@
     "noteWinter": "Split the rest into 3 piles, shuffle 2 winter cards into one of them, put the 3rd on top of that pile and place it at the bottom of the deck.",
     "noteSolo": "Solo: return {{count}} cards like in a 2-player game, use only 1 winter card (shuffled into the bottom 10 cards) and lay out 5 cards in the clearing."
   },
+  "firstPlayer": {
+    "title": "Pick first player",
+    "hint": "Everyone place one finger on the screen",
+    "hold": "Hold still…",
+    "starts": "You start!",
+    "close": "Close"
+  },
   "wizard": {
     "scoreEntry": "Score Entry",
     "cancel": "Cancel scoring",
