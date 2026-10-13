@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { AcornIcon } from '@/components/ui/AcornIcon'
 import { AcornLogo } from '@/components/ui/AcornLogo'
+import { HillSilhouette } from '@/components/ui/HillSilhouette'
 import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
 import { LandingSection } from '@/components/LandingSection'
@@ -66,24 +67,7 @@ export function HomePage() {
             </p>
           </div>
         </div>
-        {/* Decorative rolling-hill silhouette along the bottom edge */}
-        <svg
-          className="pointer-events-none absolute -bottom-px left-0 w-full text-white/10"
-          viewBox="0 0 400 48"
-          fill="none"
-          aria-hidden="true"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0 30 C 60 12, 120 38, 200 26 S 340 10, 400 28 V 48 H 0 Z"
-            fill="currentColor"
-          />
-          <path
-            d="M0 40 C 80 26, 160 44, 240 34 S 360 24, 400 40 V 48 H 0 Z"
-            fill="currentColor"
-            opacity="0.6"
-          />
-        </svg>
+        <HillSilhouette className="text-white/10" />
       </header>
 
       {/* Quick start */}

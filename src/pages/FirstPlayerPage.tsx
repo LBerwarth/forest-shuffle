@@ -2,8 +2,11 @@ import { useEffect, useState, type PointerEvent } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { X } from 'lucide-react'
+import { AcornIcon } from '@/components/ui/AcornIcon'
+import { AcornLogo } from '@/components/ui/AcornLogo'
+import { HillSilhouette } from '@/components/ui/HillSilhouette'
 
-const COLORS = ['#e11d48', '#2563eb', '#f59e0b', '#16a34a', '#9333ea', '#0891b2', '#ea580c', '#db2777']
+const COLORS = ['#5c9468', '#b5452f', '#d9a536', '#8e3b62', '#3f7f9a', '#8c7040', '#c8702a', '#8cc08c']
 const HOLD_MS = 2000
 
 interface Finger {
@@ -68,27 +71,47 @@ export function FirstPlayerPage() {
 
   return (
     <div
-      className="fixed inset-0 touch-none select-none overflow-hidden bg-forest-900 transition-colors duration-500 [-webkit-touch-callout:none]"
-      style={winnerColor ? { backgroundColor: winnerColor } : undefined}
+      className="fixed inset-0 touch-none select-none overflow-hidden bg-forest-900 bg-[url('/forest-bg.jpg')] bg-cover bg-center [-webkit-touch-callout:none]"
       onPointerDown={down}
       onPointerMove={move}
       onPointerUp={up}
       onPointerCancel={up}
       onContextMenu={(e) => e.preventDefault()}
     >
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-forest-700/90 via-forest-800/92 to-forest-900/95" />
+      <div
+        className="pointer-events-none absolute inset-0 transition-opacity duration-500"
+        style={{ backgroundColor: winnerColor, opacity: winnerColor ? 0.85 : 0 }}
+      />
+      <HillSilhouette className="h-24 text-white/10" />
+
       <button
         type="button"
         onPointerDown={(e) => e.stopPropagation()}
         onClick={() => (location.key === 'default' ? navigate('/') : navigate(-1))}
         aria-label={t('firstPlayer.close')}
-        className="absolute right-4 top-4 z-10 rounded-full bg-white/15 p-2 text-white"
+        className="absolute right-4 top-[max(1rem,env(safe-area-inset-top))] z-10 rounded-full bg-white/15 p-2 text-white ring-1 ring-white/25 backdrop-blur-md"
       >
         <X className="h-6 w-6" />
       </button>
 
-      <p className="pointer-events-none absolute inset-x-0 top-1/3 px-8 text-center font-heading text-2xl font-semibold text-white/90">
-        {message}
-      </p>
+      <header className="pointer-events-none absolute inset-x-0 top-[max(1.5rem,env(safe-area-inset-top))] flex flex-col items-center px-8 text-center text-white">
+        <div className="flex items-center gap-3">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/90 shadow-sm ring-1 ring-white/50">
+            <AcornLogo className="h-8 w-8" />
+          </div>
+          <h1 className="font-heading text-xl font-bold tracking-tight">{t('firstPlayer.title')}</h1>
+        </div>
+        <p
+          className={
+            winner !== null
+              ? 'mt-6 font-heading text-4xl font-bold drop-shadow'
+              : 'mt-4 text-sm font-light text-forest-50/90'
+          }
+        >
+          {message}
+        </p>
+      </header>
 
       {[...fingers].map(([id, f]) => {
         const isWinner = id === winner
@@ -107,9 +130,13 @@ export function FirstPlayerPage() {
               />
             )}
             <div
-              className="absolute inset-0 rounded-full border-4 border-white shadow-lg"
+              className="absolute inset-0 flex items-center justify-center rounded-full shadow-hero ring-4 ring-white/90"
               style={{ backgroundColor: f.color }}
-            />
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-sm">
+                {isWinner ? <AcornLogo className="h-9 w-9" /> : <AcornIcon className="h-7 w-7" />}
+              </div>
+            </div>
           </div>
         )
       })}
