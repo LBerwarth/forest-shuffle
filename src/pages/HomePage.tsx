@@ -84,6 +84,18 @@ export function HomePage() {
           {t('live.joinSession')}
         </Button>
       </Link>
+      <Link
+        to="/first-player"
+        className="mb-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 px-4 py-3 text-white shadow-card transition-shadow hover:shadow-card-hover"
+      >
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/25">
+          <Hand className="h-5 w-5" />
+        </div>
+        <div className="min-w-0 text-left">
+          <p className="text-base font-semibold">{t('firstPlayer.title')}</p>
+          <p className="text-xs text-white/90">{t('firstPlayer.hint')}</p>
+        </div>
+      </Link>
 
       {showNewNotice && (
         <Card className="mb-3 ring-forest-200">
@@ -138,13 +150,7 @@ export function HomePage() {
         ))}
       </div>
 
-      <SetupGuide collapsible edition={edition} expansions={expansions} className="mb-3" />
-      <Link to="/first-player">
-        <Button variant="secondary" size="lg" className="w-full mb-4 text-base">
-          <Hand className="h-5 w-5" />
-          {t('firstPlayer.title')}
-        </Button>
-      </Link>
+      <SetupGuide collapsible edition={edition} expansions={expansions} className="mb-4" />
 
       {/* Recent game */}
       {recentGame && (
