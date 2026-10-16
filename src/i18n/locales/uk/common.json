@@ -269,7 +269,8 @@
     "usageWeek": "Тиждень",
     "usageMonth": "Місяць",
     "usageYear": "Рік",
-    "usageTotal": "Усього"
+    "usageTotal": "Усього",
+    "usageToday": "Сьогодні"
   },
   "tag": {
     "pawed": "Лапи",

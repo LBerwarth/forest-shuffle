@@ -270,7 +270,8 @@
     "usageWeek": "Week",
     "usageMonth": "Month",
     "usageYear": "Year",
-    "usageTotal": "Total"
+    "usageTotal": "Total",
+    "usageToday": "Today"
   },
   "tag": {
     "pawed": "Pawed",

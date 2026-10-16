@@ -267,7 +267,8 @@
     "usageWeek": "Vecka",
     "usageMonth": "Månad",
     "usageYear": "År",
-    "usageTotal": "Totalt"
+    "usageTotal": "Totalt",
+    "usageToday": "I dag"
   },
   "tag": {
     "pawed": "Tassdjur",

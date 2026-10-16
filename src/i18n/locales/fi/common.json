@@ -267,7 +267,8 @@
     "usageWeek": "Viikko",
     "usageMonth": "Kuukausi",
     "usageYear": "Vuosi",
-    "usageTotal": "Yhteensä"
+    "usageTotal": "Yhteensä",
+    "usageToday": "Tänään"
   },
   "tag": {
     "pawed": "Tassueläimet",

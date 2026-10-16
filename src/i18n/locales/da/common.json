@@ -267,7 +267,8 @@
     "usageWeek": "Uge",
     "usageMonth": "Måned",
     "usageYear": "År",
-    "usageTotal": "I alt"
+    "usageTotal": "I alt",
+    "usageToday": "I dag"
   },
   "tag": {
     "pawed": "Poter",

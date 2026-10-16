@@ -267,7 +267,8 @@
     "usageWeek": "Hét",
     "usageMonth": "Hónap",
     "usageYear": "Év",
-    "usageTotal": "Összesen"
+    "usageTotal": "Összesen",
+    "usageToday": "Ma"
   },
   "tag": {
     "pawed": "Mancsosok",

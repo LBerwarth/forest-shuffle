@@ -11,7 +11,7 @@ const EDITION_KEY: Record<GameEdition, string> = {
   smoky: 'leaderboard.editionSmoky',
 }
 const EXPANSION_ORDER: Expansion[] = ['alpine', 'woodland', 'exploration', 'dartmoor_exmoor']
-const PERIODS = ['week', 'month', 'year', 'total'] as const
+const PERIODS = ['today', 'week', 'month', 'year', 'total'] as const
 
 export function UsageStats() {
   const { t } = useTranslation()

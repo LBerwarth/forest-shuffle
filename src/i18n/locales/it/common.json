@@ -267,7 +267,8 @@
     "usageWeek": "Settimana",
     "usageMonth": "Mese",
     "usageYear": "Anno",
-    "usageTotal": "Totale"
+    "usageTotal": "Totale",
+    "usageToday": "Oggi"
   },
   "tag": {
     "pawed": "Zampe",

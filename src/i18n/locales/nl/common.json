@@ -267,7 +267,8 @@
     "usageWeek": "Week",
     "usageMonth": "Maand",
     "usageYear": "Jaar",
-    "usageTotal": "Totaal"
+    "usageTotal": "Totaal",
+    "usageToday": "Vandaag"
   },
   "tag": {
     "pawed": "Poten",

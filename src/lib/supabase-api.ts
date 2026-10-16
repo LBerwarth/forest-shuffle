@@ -630,6 +630,7 @@ export async function fetchHallOfFame({
 export interface UsageRow {
   edition: GameEdition
   expansions: Expansion[]
+  today: number
   week: number
   month: number
   year: number

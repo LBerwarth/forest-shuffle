@@ -270,7 +270,8 @@
     "usageWeek": "Týden",
     "usageMonth": "Měsíc",
     "usageYear": "Rok",
-    "usageTotal": "Celkem"
+    "usageTotal": "Celkem",
+    "usageToday": "Dnes"
   },
   "tag": {
     "pawed": "Tlapky",

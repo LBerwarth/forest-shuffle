@@ -269,7 +269,8 @@
     "usageWeek": "Неделя",
     "usageMonth": "Месяц",
     "usageYear": "Год",
-    "usageTotal": "Всего"
+    "usageTotal": "Всего",
+    "usageToday": "Сегодня"
   },
   "tag": {
     "pawed": "Лапы",

@@ -267,7 +267,8 @@
     "usageWeek": "Uke",
     "usageMonth": "Måned",
     "usageYear": "År",
-    "usageTotal": "Totalt"
+    "usageTotal": "Totalt",
+    "usageToday": "I dag"
   },
   "tag": {
     "pawed": "Labbedyr",

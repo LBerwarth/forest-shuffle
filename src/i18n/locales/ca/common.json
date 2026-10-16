@@ -267,7 +267,8 @@
     "usageWeek": "Setmana",
     "usageMonth": "Mes",
     "usageYear": "Any",
-    "usageTotal": "Total"
+    "usageTotal": "Total",
+    "usageToday": "Avui"
   },
   "tag": {
     "pawed": "Potes",

@@ -267,7 +267,8 @@
     "usageWeek": "Hafta",
     "usageMonth": "Ay",
     "usageYear": "Yıl",
-    "usageTotal": "Toplam"
+    "usageTotal": "Toplam",
+    "usageToday": "Bugün"
   },
   "tag": {
     "pawed": "Pençeliler",

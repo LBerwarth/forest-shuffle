@@ -269,7 +269,8 @@
     "usageWeek": "Tydzień",
     "usageMonth": "Miesiąc",
     "usageYear": "Rok",
-    "usageTotal": "Razem"
+    "usageTotal": "Razem",
+    "usageToday": "Dziś"
   },
   "tag": {
     "pawed": "Łapy",
