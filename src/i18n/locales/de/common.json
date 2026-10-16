@@ -63,7 +63,7 @@
     "players": "{{count}} Spieler",
     "noteFlat": "Regel mit Erweiterung: zuerst 10 Karten zurücklegen, dann die Anzahl für eure Spielerzahl.",
     "notePiles": "Abkürzung bei {{count}} Spielern: den Stapel in {{piles}} gleich große Stapel teilen und {{remove}} davon entfernen.",
-    "noteExploration": "Exploration: pro eingemischter seltener Karte 1 Karte zusätzlich zurücklegen (15 bei allen). Die Spezialhöhlen ersetzen die Grundspiel-Höhlen – jeder wählt eine in umgekehrter Spielreihenfolge.",
+    "noteExploration": "Entdeckungen: pro eingemischter seltener Karte 1 Karte zusätzlich zurücklegen (15 bei allen). Die Spezialhöhlen ersetzen die Grundspiel-Höhlen – jeder wählt eine in umgekehrter Spielreihenfolge.",
     "noteDartmoorCaves": "Höhlen: die 5 Höhlen mischen, pro Spieler eine in die Lichtung legen und in umgekehrter Spielreihenfolge wählen.",
     "noteExmoorCaves": "Statt der Dartmoor-Höhlen die Exmoor-Höhlen verwenden.",
     "noteWinter": "Den Rest in 3 Stapel teilen, 2 Winterkarten in einen davon mischen, die 3. obenauf legen und diesen Stapel ganz nach unten in den Nachziehstapel legen.",
@@ -298,19 +298,19 @@
     "base": "Grundspiel",
     "alpine": "Alpin",
     "woodland": "Waldrand",
-    "exploration": "Exploration",
+    "exploration": "Entdeckungen",
     "dartmoor_base": "Dartmoor",
     "dartmoor_exmoor": "Exmoor"
   },
   "settings": {
     "title": "Einstellungen",
     "expansions": "Erweiterungen",
-    "alpineExpansion": "Alpine-Erweiterung",
-    "alpineDesc": "Alpine-Karten im Punkteassistenten einbeziehen",
-    "woodlandExpansion": "Woodland-Erweiterung",
-    "woodlandDesc": "Woodland-Karten im Punkteassistenten einbeziehen",
-    "explorationExpansion": "Exploration-Erweiterung",
-    "explorationDesc": "Exploration-Karten (Promos + Spezialhöhlen) im Punkteassistenten einbeziehen",
+    "alpineExpansion": "Alpin-Erweiterung",
+    "alpineDesc": "Alpin-Karten im Punkteassistenten einbeziehen",
+    "woodlandExpansion": "Waldrand-Erweiterung",
+    "woodlandDesc": "Waldrand-Karten im Punkteassistenten einbeziehen",
+    "explorationExpansion": "Entdeckungen-Erweiterung",
+    "explorationDesc": "Entdeckungen-Karten (Promos + Spezialhöhlen) im Punkteassistenten einbeziehen",
     "exmoorExpansion": "Exmoor-Erweiterung",
     "exmoorSoon": "Bald verfügbar",
     "exmoorDesc": "55 neue Karten — Exmoor-Höhlen ersetzen die Grundspiel-Höhlen",
@@ -443,7 +443,7 @@
     "heading": "Kostenloser Punkterechner für Forest Shuffle (Mischwald)",
     "intro": "Forest Shuffle Scorer zählt deinen Wald am Ende der Partie zusammen. Wähle die Bäume, Tiere, Pflanzen und Pilze in deiner Auslage, und die App wendet jeden Karteneffekt und jede Synergie für dich an. Kein Kopfrechnen mehr, keine Zählfehler.",
     "features": [
-      "Wertet das Grundspiel mit Alpin, Waldrand und Exploration, Forest Shuffle: Dartmoor mit Exmoor sowie Forest Shuffle: Smoky Mountains",
+      "Wertet das Grundspiel mit Alpin, Waldrand und Entdeckungen, Forest Shuffle: Dartmoor mit Exmoor sowie Forest Shuffle: Smoky Mountains",
       "Funktioniert offline und lässt sich wie eine native App auf dem Handy installieren",
       "Speichert deine Partien mit Spielerstatistiken, Ranglisten und einer weltweiten Hall of Fame",
       "Live-Wertung: Jeder Spieler gibt seinen Wald auf dem eigenen Handy ein",
@@ -457,7 +457,7 @@
       },
       {
         "q": "Welche Editionen und Erweiterungen unterstützt der Rechner?",
-        "a": "Forest Shuffle (Mischwald) mit den Erweiterungen Alpin, Waldrand und Exploration, Forest Shuffle: Dartmoor mit der Erweiterung Exmoor sowie Forest Shuffle: Smoky Mountains. Neue Karten kommen hinzu, sobald sie erscheinen."
+        "a": "Forest Shuffle (Mischwald) mit den Erweiterungen Alpin, Waldrand und Entdeckungen, Forest Shuffle: Dartmoor mit der Erweiterung Exmoor sowie Forest Shuffle: Smoky Mountains. Neue Karten kommen hinzu, sobald sie erscheinen."
       },
       {
         "q": "Was ist eine gute Punktzahl bei Forest Shuffle?",

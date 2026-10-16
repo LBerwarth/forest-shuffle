@@ -39,7 +39,7 @@
   },
   "stone_pine": {
     "name": "Zirbelkiefer",
-    "scoring": "1 Punkt pro Alpine-Karte (sich selbst eingeschlossen)",
+    "scoring": "1 Punkt pro Alpin-Karte (sich selbst eingeschlossen)",
     "context": "An Zirbelkiefern angelegte Karten"
   },
   "palm_tree": {
@@ -483,7 +483,7 @@
   "wild_boar_piglet": {
     "name": "Frischling",
     "scoring": "1 Punkt pro Frischling",
-    "context": "Wie viele Frischlinge zeigen das Woodland-Symbol?"
+    "context": "Wie viele Frischlinge zeigen das Waldrand-Symbol?"
   },
   "honey_bee": {
     "name": "Honigbiene",
