@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
 import { LandingSection } from '@/components/LandingSection'
 import { SEO_LANGS } from '@/components/LangRoute'
+import { EDITION_PAGES } from '@/data/edition-pages'
 import { SetupGuide } from '@/components/SetupGuide'
 import { UsageStats } from '@/components/stats/UsageStats'
 import { useSettingsStore, selectExpansions } from '@/store/settings-store'
@@ -206,12 +207,14 @@ export function HomePage() {
       </div>
 
       <LandingSection>
-        <Button asChild size="sm" variant="secondary">
-          <Link to={`${lang ? `/${lang}` : ''}/smoky-mountains`}>
-            <Mountain className="h-3.5 w-3.5" aria-hidden="true" />
-            {t('leaderboard.editionSmoky')}
-          </Link>
-        </Button>
+        {EDITION_PAGES.map((p) => (
+          <Button key={p.slug} asChild size="sm" variant="secondary">
+            <Link to={`${lang ? `/${lang}` : ''}/${p.slug}`}>
+              <Mountain className="h-3.5 w-3.5" aria-hidden="true" />
+              {t(`${p.prefix}.link`)}
+            </Link>
+          </Button>
+        ))}
       </LandingSection>
 
       {/* Settings link */}

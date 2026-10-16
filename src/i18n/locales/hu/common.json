@@ -504,6 +504,79 @@
         "q": "Egy lap másképp számít, mint a játékomban. Mit tegyek?",
         "a": "A lapok szabályai a megjelent angol szabálykönyvből és függelékből származnak. Ha egy lap másképp számít, mint a te példányodban, küldj visszajelzést a beállításokból, és javítjuk."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor pontszámláló Exmoorral — ingyenes",
+      "description": "Ingyenes pontszámláló a Forest Shuffle: Dartmoor játékhoz és az Exmoor kiegészítőhöz. Válaszd ki az erdőd, a lápok és a barlang lapjait, az app mindent összead. Offline is működik, reklám nélkül."
+    },
+    "link": "Dartmoor és Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – pontszámláló",
+    "intro": "A Forest Shuffle: Dartmoor a Forest Shuffle sorozat önálló játéka, amely Délnyugat-Anglia lápvidékén játszódik, a fáid és cserjéid mellett láp kártyákkal. Ez az ingyenes app a játék végén megszámolja az erdődet, az Exmoor kiegészítővel vagy anélkül: válaszd ki a kijátszott lapokat, és az app alkalmazza minden lap pontozási szabályát.",
+    "cta": "Dartmoor játszma pontozása",
+    "features": [
+      "A Dartmoor összes lapja, a megjelent szabálykönyv és függelék szerint pontozva",
+      "Az Exmoor kiegészítő új lapjaival és saját barlangjaival",
+      "A lápok, a fák és cserjék és a barlang az erdőd többi részével együtt számítanak",
+      "Élő pontozás: mindenki a saját telefonján adja meg az erdejét, plusz játszmaelőzmények és játékosstatisztikák",
+      "Ingyenes, reklám és fiók nélkül, offline is működik"
+    ],
+    "faqHeading": "Kérdések a Dartmoor pontozásáról",
+    "faq": [
+      {
+        "q": "Hogyan kell pontozni a Forest Shuffle: Dartmoor játékot?",
+        "a": "Ahogy az eredeti Forest Shuffle-ban, minden lap a rá nyomtatott feltétel szerint ad pontot. A fák és cserjék, állatok és növények azt számolják, ami körülveszi őket, például fafajokat, szimbólumokat vagy más lapok példányait, a láp kártyák pedig egy második tájat adnak, amellyel egyes lapok pontot szereznek. A barlangodban minden lap egy pontot ér, a kézben maradt lapok nem érnek pontot. Az app ismeri minden lap szabályát és mindent összead."
+      },
+      {
+        "q": "Támogatja az app az Exmoor kiegészítőt?",
+        "a": "Igen. Kapcsold be az Exmoort egy Dartmoor játszma indításakor, és a lapjai megjelennek a pontozó varázslóban. Exmoorral a saját barlangjai helyettesítik a Dartmoor barlangjait, és az app ennek megfelelően pontozza őket."
+      },
+      {
+        "q": "Ingyenes a Dartmoor pontszámláló?",
+        "a": "Igen. Ingyenes, reklám és fiók nélkül. Bármely böngészőben fut, betöltés után offline is működik, és Android-appként is elérhető a Google Playen."
+      },
+      {
+        "q": "Egy lap másképp számít, mint a játékomban. Mit tegyek?",
+        "a": "A lapok szabályai a megjelent szabálykönyvből és függelékből származnak. Ha egy lap másképp számít, mint a te példányodban, küldj visszajelzést a beállításokból, és javítjuk."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge és Exploration pontszámláló",
+      "description": "Ingyenes pontszámláló a Forest Shuffle-hoz az Alpine, Woodland Edge és Exploration kiegészítőkkel, bármilyen kombinációban. Válaszd ki a lapjaidat, az app mindent összead. Offline is működik, reklám nélkül."
+    },
+    "link": "Alpine, Woodland Edge és Exploration",
+    "heading": "Pontszámláló a Forest Shuffle kiegészítőihez",
+    "intro": "A Forest Shuffle minden kiegészítővel bővül: az Alpine hegyi fákat és állatokat hoz, a Woodland Edge az erdőszél fajait, az Exploration pedig ritka fajokat és különleges barlangokat. Ez az ingyenes app bármilyen kombinációval megszámolja az erdődet: kapcsold be a kiegészítőket, amelyekkel játszol, válaszd ki az erdőd lapjait, és az app alkalmazza minden lap pontozási szabályát.",
+    "cta": "Játszma pontozása kiegészítőkkel",
+    "features": [
+      "Alpine, Woodland Edge és Exploration, külön vagy bármilyen kombinációban",
+      "Minden lap a megjelent szabálykönyvek és függelék szerint pontozva",
+      "Az Exploration különleges barlangjai az alapbarlangok helyett számítanak",
+      "Élő pontozás: mindenki a saját telefonján adja meg az erdejét, plusz játszmaelőzmények és játékosstatisztikák",
+      "Ingyenes, reklám és fiók nélkül, offline is működik"
+    ],
+    "faqHeading": "Kérdések a kiegészítőkkel való pontozásról",
+    "faq": [
+      {
+        "q": "Mely Forest Shuffle kiegészítőket támogatja a pontszámláló?",
+        "a": "Az Alpine, Woodland Edge és Exploration kiegészítőt az eredeti Forest Shuffle-hoz, külön vagy bármilyen kombinációban. A Forest Shuffle: Dartmoor az Exmoorral és a Forest Shuffle: Smoky Mountains saját kiadással szerepel az appban."
+      },
+      {
+        "q": "Hogyan pontozok egy játszmát kiegészítőkkel?",
+        "a": "Új játszma indításakor kapcsold be a kiegészítőket, amelyekkel játszol. A lapjaik ezután megjelennek a pontozó varázslóban az alapjáték lapjai mellett. Válaszd ki, mi van az egyes játékosok erdejében, és az app minden lap szabályát alkalmazza, azokét is, amelyek más kiegészítők lapjait számolják."
+      },
+      {
+        "q": "Hogyan pontoznak az Exploration barlangjai?",
+        "a": "Az Exploration különleges barlangjai helyettesítik az alapbarlangokat, és minden játékos választ egyet. Minden különleges barlang a maga módján ad pontot: válaszd ki a varázslóban a játékos barlangját, és az app alkalmazza a szabályát."
+      },
+      {
+        "q": "Ingyenes a pontszámláló?",
+        "a": "Igen. Ingyenes, reklám és fiók nélkül. Bármely böngészőben fut, betöltés után offline is működik, és Android-appként is elérhető a Google Playen."
+      }
     ]
   }
 }

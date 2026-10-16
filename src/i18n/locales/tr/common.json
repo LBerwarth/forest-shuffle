@@ -504,6 +504,79 @@
         "q": "Bir kart oyunumdakinden farklı sayılıyor. Ne yapmalıyım?",
         "a": "Kart kuralları yayımlanan İngilizce kural kitabı ve ekinden alınmıştır. Bir kart senin oyun kopyandakinden farklı sayılıyorsa ayarlardan geri bildirim gönder, düzeltilecektir."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — Exmoor dahil ücretsiz puan hesaplayıcı",
+      "description": "Forest Shuffle: Dartmoor ve Exmoor genişlemesi için ücretsiz puan hesaplayıcı. Ormanındaki, bozkırlardaki ve mağaradaki kartları seç, uygulama hepsini toplasın. Çevrimdışı çalışır, reklamsız."
+    },
+    "link": "Dartmoor ve Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – puan hesaplayıcı",
+    "intro": "Forest Shuffle: Dartmoor, güneybatı İngiltere'nin bozkırlarında geçen ve ağaçlarının ve çalılarının yanında bozkır kartları bulunan, Forest Shuffle serisinin bağımsız oyunudur. Bu ücretsiz uygulama oyun sonunda ormanını sayar, Exmoor genişlemesiyle ya da onsuz: oynadığın kartları seç, uygulama her kartın puanlama kuralını senin için uygular.",
+    "cta": "Dartmoor oyununu puanla",
+    "features": [
+      "Dartmoor'un tüm kartları, yayımlanan kural kitabı ve eke göre puanlanır",
+      "Yeni kartları ve kendi mağaralarıyla Exmoor genişlemesi",
+      "Bozkırlar, ağaçlar ve çalılar ile mağara ormanının geri kalanıyla birlikte sayılır",
+      "Canlı puanlama: herkes kendi ormanını kendi telefonuna girer, ayrıca oyun geçmişi ve oyuncu istatistikleri",
+      "Ücretsiz, reklamsız, hesap gerektirmez, çevrimdışı çalışır"
+    ],
+    "faqHeading": "Dartmoor puanlaması hakkında sorular",
+    "faq": [
+      {
+        "q": "Forest Shuffle: Dartmoor nasıl puanlanır?",
+        "a": "Orijinal Forest Shuffle'da olduğu gibi her kart üzerinde yazan koşula göre puan verir. Ağaçlar ve çalılar, hayvanlar ve bitkiler çevrelerindekileri sayar; örneğin ağaç türleri, semboller veya başka kartların kopyaları. Bozkır kartları ise bazı kartların puan aldığı ikinci bir manzara ekler. Mağarandaki her kart bir puan değerindedir, elde kalan kartlar puan getirmez. Uygulama her kartın kuralını bilir ve hepsini toplar."
+      },
+      {
+        "q": "Uygulama Exmoor genişlemesini destekliyor mu?",
+        "a": "Evet. Bir Dartmoor oyununa başlarken Exmoor'u aç, kartları puanlama sihirbazında görünür. Exmoor ile kendi mağaraları Dartmoor mağaralarının yerini alır ve uygulama bunları buna göre puanlar."
+      },
+      {
+        "q": "Dartmoor hesaplayıcısı ücretsiz mi?",
+        "a": "Evet. Ücretsizdir, reklam içermez ve hesap gerektirmez. Her tarayıcıda çalışır, yüklendikten sonra çevrimdışı da kullanılabilir ve Google Play'de Android uygulaması olarak da mevcuttur."
+      },
+      {
+        "q": "Bir kart oyunumdakinden farklı sayılıyor. Ne yapmalıyım?",
+        "a": "Kart kuralları yayımlanan kural kitabı ve ekinden alınmıştır. Bir kart senin oyun kopyandakinden farklı sayılıyorsa ayarlardan geri bildirim gönder, düzeltilecektir."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge ve Exploration puan hesaplayıcı",
+      "description": "Alpine, Woodland Edge ve Exploration genişlemeleriyle Forest Shuffle için her kombinasyonda ücretsiz puan hesaplayıcı. Kartlarını seç, uygulama hepsini toplasın. Çevrimdışı çalışır, reklamsız."
+    },
+    "link": "Alpine, Woodland Edge ve Exploration",
+    "heading": "Forest Shuffle genişlemeleri için puan hesaplayıcı",
+    "intro": "Forest Shuffle her genişlemeyle büyür: Alpine dağ ağaçları ve hayvanları, Woodland Edge orman kenarının türlerini, Exploration ise nadir türler ve özel mağaralar getirir. Bu ücretsiz uygulama ormanını her kombinasyonla sayar: oynadığın genişlemeleri aç, ormanındaki kartları seç, uygulama her kartın puanlama kuralını senin için uygular.",
+    "cta": "Genişlemelerle bir oyunu puanla",
+    "features": [
+      "Alpine, Woodland Edge ve Exploration, tek başına veya her kombinasyonda",
+      "Her kart yayımlanan kural kitapları ve eke göre puanlanır",
+      "Exploration'ın özel mağaraları temel mağaraların yerine puanlanır",
+      "Canlı puanlama: herkes kendi ormanını kendi telefonuna girer, ayrıca oyun geçmişi ve oyuncu istatistikleri",
+      "Ücretsiz, reklamsız, hesap gerektirmez, çevrimdışı çalışır"
+    ],
+    "faqHeading": "Genişlemelerle puanlama hakkında sorular",
+    "faq": [
+      {
+        "q": "Hesaplayıcı hangi Forest Shuffle genişlemelerini destekliyor?",
+        "a": "Orijinal Forest Shuffle için Alpine, Woodland Edge ve Exploration, tek başına veya her kombinasyonda. Exmoor ile Forest Shuffle: Dartmoor ve Forest Shuffle: Smoky Mountains uygulamada kendi sürümlerine sahiptir."
+      },
+      {
+        "q": "Genişlemelerle bir oyunu nasıl puanlarım?",
+        "a": "Yeni bir oyuna başlarken oynadığın genişlemeleri aç. Kartları puanlama sihirbazında temel oyun kartlarının yanında görünür. Her oyuncunun ormanında ne olduğunu seç, uygulama diğer genişlemelerden kart sayan kartlar dahil her kartın kuralını uygular."
+      },
+      {
+        "q": "Exploration mağaraları nasıl puanlanır?",
+        "a": "Exploration'ın özel mağaraları temel mağaraların yerini alır ve her oyuncu bir tane seçer. Her özel mağara kendi yöntemiyle puan verir: sihirbazda oyuncunun aldığı mağarayı seç, uygulama kuralını uygular."
+      },
+      {
+        "q": "Hesaplayıcı ücretsiz mi?",
+        "a": "Evet. Ücretsizdir, reklam içermez ve hesap gerektirmez. Her tarayıcıda çalışır, yüklendikten sonra çevrimdışı da kullanılabilir ve Google Play'de Android uygulaması olarak da mevcuttur."
+      }
     ]
   }
 }

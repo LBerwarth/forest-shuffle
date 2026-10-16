@@ -5,6 +5,7 @@ import { Check, ChevronDown, Trophy, Play } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { PLAY_STORE_URL } from '@/hooks/use-install-prompt'
+import type { EditionPagePrefix } from '@/data/edition-pages'
 
 export interface FaqEntry {
   q: string
@@ -18,7 +19,7 @@ export function LandingSection({
   children,
 }: {
   headingAs?: 'h1' | 'h2'
-  prefix?: 'landing' | 'smokyPage'
+  prefix?: 'landing' | EditionPagePrefix
   children?: ReactNode
 }) {
   const { t } = useTranslation()

@@ -504,6 +504,79 @@
         "q": "Una carta conta diversamente rispetto al mio gioco. Cosa faccio?",
         "a": "Le regole delle carte provengono dal regolamento e dall'appendice pubblicati in inglese. Se una carta conta diversamente rispetto alla tua copia del gioco, invia un feedback dalle impostazioni e verrà corretta."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — calcolatore di punti con Exmoor, gratis",
+      "description": "Calcolatore di punti gratuito per Forest Shuffle: Dartmoor e l'espansione Exmoor. Scegli le carte della tua foresta, delle brughiere e della grotta, e l'app somma tutto. Offline, senza pubblicità."
+    },
+    "link": "Dartmoor ed Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – calcolatore di punti",
+    "intro": "Forest Shuffle: Dartmoor è il gioco autonomo della serie Forest Shuffle ambientato nelle brughiere dell'Inghilterra sud-occidentale, con carte brughiera accanto ai tuoi alberi e arbusti. Questa app gratuita conta la tua foresta a fine partita, con o senza l'espansione Exmoor: scegli le carte che hai giocato e l'app applica per te la regola di punteggio di ogni carta.",
+    "cta": "Calcola una partita di Dartmoor",
+    "features": [
+      "Tutte le carte di Dartmoor, conteggiate secondo il regolamento e l'appendice pubblicati",
+      "L'espansione Exmoor con le sue nuove carte e le sue grotte",
+      "Brughiere, alberi e arbusti e la grotta vengono contati con il resto della tua foresta",
+      "Punteggio dal vivo: ognuno inserisce la propria foresta sul proprio telefono, più storico delle partite e statistiche dei giocatori",
+      "Gratis, senza pubblicità, senza account, funziona offline"
+    ],
+    "faqHeading": "Domande sul punteggio di Dartmoor",
+    "faq": [
+      {
+        "q": "Come si calcola il punteggio di Forest Shuffle: Dartmoor?",
+        "a": "Come nel Forest Shuffle originale, ogni carta dà punti secondo la condizione stampata su di essa. Alberi e arbusti, animali e piante contano ciò che li circonda, come specie di alberi, simboli o copie di altre carte, e le carte brughiera aggiungono un secondo paesaggio con cui alcune carte fanno punti. Ogni carta nella tua grotta vale un punto; le carte rimaste in mano non valgono nulla. L'app conosce la regola di ogni carta e somma tutto."
+      },
+      {
+        "q": "L'app supporta l'espansione Exmoor?",
+        "a": "Sì. Attiva Exmoor quando inizi una partita di Dartmoor e le sue carte compaiono nell'assistente di punteggio. Con Exmoor, le sue grotte sostituiscono quelle di Dartmoor e l'app le conteggia di conseguenza."
+      },
+      {
+        "q": "Il calcolatore di Dartmoor è gratuito?",
+        "a": "Sì. È gratuito, senza pubblicità e senza account. Funziona in qualsiasi browser, offline una volta caricato, ed è disponibile anche come app Android su Google Play."
+      },
+      {
+        "q": "Una carta conta diversamente rispetto al mio gioco. Cosa faccio?",
+        "a": "Le regole delle carte provengono dal regolamento e dall'appendice pubblicati. Se una carta conta diversamente rispetto alla tua copia del gioco, invia un feedback dalle impostazioni e verrà corretta."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge ed Exploration — calcolatore di punti",
+      "description": "Calcolatore di punti gratuito per Forest Shuffle con le espansioni Alpine, Woodland Edge ed Exploration, in qualsiasi combinazione. Scegli le tue carte e l'app somma tutto. Offline, senza pubblicità."
+    },
+    "link": "Alpine, Woodland Edge ed Exploration",
+    "heading": "Calcolatore di punti per le espansioni di Forest Shuffle",
+    "intro": "Forest Shuffle cresce con ogni espansione: Alpine porta alberi e animali di montagna, Woodland Edge le specie del margine del bosco ed Exploration specie rare e grotte speciali. Questa app gratuita conta la tua foresta con qualsiasi combinazione: attiva le espansioni con cui giochi, scegli le carte della tua foresta e l'app applica per te la regola di punteggio di ogni carta.",
+    "cta": "Calcola una partita con espansioni",
+    "features": [
+      "Alpine, Woodland Edge ed Exploration, da sole o in qualsiasi combinazione",
+      "Ogni carta conteggiata secondo i regolamenti e l'appendice pubblicati",
+      "Le grotte speciali di Exploration vengono conteggiate al posto delle grotte base",
+      "Punteggio dal vivo: ognuno inserisce la propria foresta sul proprio telefono, più storico delle partite e statistiche dei giocatori",
+      "Gratis, senza pubblicità, senza account, funziona offline"
+    ],
+    "faqHeading": "Domande sul punteggio con le espansioni",
+    "faq": [
+      {
+        "q": "Quali espansioni di Forest Shuffle supporta il calcolatore?",
+        "a": "Alpine, Woodland Edge ed Exploration per il Forest Shuffle originale, da sole o in qualsiasi combinazione. Forest Shuffle: Dartmoor con Exmoor e Forest Shuffle: Smoky Mountains hanno edizioni proprie nell'app."
+      },
+      {
+        "q": "Come calcolo una partita con le espansioni?",
+        "a": "Attiva le espansioni con cui giochi quando inizi una nuova partita. Le loro carte compaiono nell'assistente di punteggio accanto a quelle del gioco base. Scegli cosa c'è nella foresta di ogni giocatore e l'app applica la regola di ogni carta, comprese quelle che contano carte di altre espansioni."
+      },
+      {
+        "q": "Come si contano le grotte di Exploration?",
+        "a": "Le grotte speciali di Exploration sostituiscono le grotte base e ogni giocatore ne sceglie una. Ogni grotta speciale fa punti a modo suo: scegli nell'assistente la grotta presa da un giocatore e l'app applica la sua regola."
+      },
+      {
+        "q": "Il calcolatore è gratuito?",
+        "a": "Sì. È gratuito, senza pubblicità e senza account. Funziona in qualsiasi browser, offline una volta caricato, ed è disponibile anche come app Android su Google Play."
+      }
     ]
   }
 }

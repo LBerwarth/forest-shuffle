@@ -508,6 +508,79 @@
         "q": "Une carte compte autrement que dans mon jeu. Que faire ?",
         "a": "Les règles des cartes viennent de la règle et de l'annexe anglaises publiées. Si une carte compte autrement que dans ton exemplaire du jeu, envoie un avis depuis les paramètres et ce sera corrigé."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forêt Mixte Dartmoor — calculateur de points avec Exmoor, gratuit",
+      "description": "Calculateur de points gratuit pour Forêt Mixte Dartmoor et l'extension Exmoor. Choisis les cartes de ta forêt, des landes et de ta grotte : l'appli additionne tout. Hors ligne, sans pub."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Forêt Mixte Dartmoor – calculateur de points",
+    "intro": "Forêt Mixte Dartmoor est le jeu autonome de la série Forest Shuffle, situé dans les landes du sud-ouest de l'Angleterre, avec des cartes lande à côté de tes arbres et arbustes. Cette appli gratuite compte ta forêt en fin de partie, avec ou sans l'extension Exmoor : choisis les cartes que tu as jouées et l'appli applique la règle de score de chaque carte pour toi.",
+    "cta": "Compter une partie Dartmoor",
+    "features": [
+      "Toutes les cartes de Dartmoor, comptées selon la règle et l'annexe publiées",
+      "L'extension Exmoor avec ses nouvelles cartes et ses propres grottes",
+      "Les landes, les arbres et arbustes et la grotte sont comptés avec le reste de ta forêt",
+      "Score en direct : chacun saisit sa forêt sur son propre téléphone, plus l'historique des parties et les statistiques des joueurs",
+      "Gratuit, sans pub, sans compte, fonctionne hors ligne"
+    ],
+    "faqHeading": "Questions sur le score de Dartmoor",
+    "faq": [
+      {
+        "q": "Comment compter les points de Forêt Mixte Dartmoor ?",
+        "a": "Comme dans Forêt Mixte, chaque carte rapporte des points selon la condition imprimée dessus. Arbres et arbustes, animaux et plantes comptent ce qui les entoure, comme les espèces d'arbres, les symboles ou les exemplaires d'autres cartes, et les cartes lande ajoutent un second paysage avec lequel certaines cartes marquent des points. Chaque carte dans ta grotte vaut un point, les cartes restées en main ne rapportent rien. L'appli connaît la règle de chaque carte et additionne tout."
+      },
+      {
+        "q": "L'appli gère-t-elle l'extension Exmoor ?",
+        "a": "Oui. Active Exmoor au début d'une partie Dartmoor et ses cartes apparaissent dans l'assistant de score. Avec Exmoor, ses propres grottes remplacent les grottes de Dartmoor, et l'appli les compte en conséquence."
+      },
+      {
+        "q": "Le calculateur Dartmoor est-il gratuit ?",
+        "a": "Oui. Il est gratuit, sans pub et sans compte. Il fonctionne dans n'importe quel navigateur, hors ligne une fois chargé, et existe aussi en appli Android sur Google Play."
+      },
+      {
+        "q": "Une carte compte autrement que dans mon jeu. Que faire ?",
+        "a": "Les règles des cartes viennent de la règle et de l'annexe publiées. Si une carte compte autrement que dans ton exemplaire du jeu, envoie un avis depuis les paramètres et ce sera corrigé."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forêt Mixte Alpine, Lisière & Exploration — calculateur de points",
+      "description": "Calculateur de points gratuit pour Forêt Mixte avec les extensions Alpine, Lisière et Exploration, dans toutes les combinaisons. Choisis tes cartes : l'appli additionne tout. Hors ligne, sans pub."
+    },
+    "link": "Alpine, Lisière & Exploration",
+    "heading": "Calculateur de points pour les extensions de Forêt Mixte",
+    "intro": "Forêt Mixte s'agrandit à chaque extension : Alpine apporte les arbres et animaux des montagnes, Lisière les espèces de l'orée du bois, et Exploration des espèces rares et des grottes spéciales. Cette appli gratuite compte ta forêt avec n'importe quel mélange : active les extensions avec lesquelles tu joues, choisis les cartes de ta forêt et l'appli applique la règle de score de chaque carte pour toi.",
+    "cta": "Compter une partie avec extensions",
+    "features": [
+      "Alpine, Lisière et Exploration, seules ou dans toutes les combinaisons",
+      "Chaque carte comptée selon les règles et l'annexe publiées",
+      "Les grottes spéciales d'Exploration sont comptées à la place des grottes de base",
+      "Score en direct : chacun saisit sa forêt sur son propre téléphone, plus l'historique des parties et les statistiques des joueurs",
+      "Gratuit, sans pub, sans compte, fonctionne hors ligne"
+    ],
+    "faqHeading": "Questions sur le score avec extensions",
+    "faq": [
+      {
+        "q": "Quelles extensions de Forêt Mixte le calculateur gère-t-il ?",
+        "a": "Alpine, Lisière et Exploration pour le Forêt Mixte d'origine, seules ou dans toutes les combinaisons. Forêt Mixte Dartmoor avec Exmoor et Forêt Mixte : Smoky Mountains ont leurs propres éditions dans l'appli."
+      },
+      {
+        "q": "Comment compter une partie avec extensions ?",
+        "a": "Active les extensions avec lesquelles tu joues au début d'une nouvelle partie. Leurs cartes apparaissent alors dans l'assistant de score à côté des cartes du jeu de base. Choisis ce qu'il y a dans la forêt de chaque joueur et l'appli applique la règle de chaque carte, y compris celles qui comptent des cartes d'autres extensions."
+      },
+      {
+        "q": "Comment se comptent les grottes d'Exploration ?",
+        "a": "Les grottes spéciales d'Exploration remplacent les grottes de base, et chaque joueur en choisit une. Chaque grotte spéciale rapporte des points à sa façon : choisis dans l'assistant la grotte prise par le joueur et l'appli applique sa règle."
+      },
+      {
+        "q": "Le calculateur est-il gratuit ?",
+        "a": "Oui. Il est gratuit, sans pub et sans compte. Il fonctionne dans n'importe quel navigateur, hors ligne une fois chargé, et existe aussi en appli Android sur Google Play."
+      }
     ]
   }
 }

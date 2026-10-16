@@ -504,6 +504,79 @@
         "q": "Ett kort räknas annorlunda än i mitt spel. Vad gör jag?",
         "a": "Kortreglerna kommer från de publicerade engelska reglerna och bilagan. Om ett kort räknas annorlunda än i ditt exemplar av spelet, skicka feedback från inställningarna så rättas det."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — gratis poängräknare med Exmoor",
+      "description": "Gratis poängräknare för Forest Shuffle: Dartmoor och expansionen Exmoor. Välj korten i din skog, hedar och grotta, så räknar appen ihop allt. Fungerar offline, utan reklam."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – poängräknare",
+    "intro": "Forest Shuffle: Dartmoor är det fristående spelet i Forest Shuffle-serien, som utspelar sig på hedarna i sydvästra England, med hedkort bredvid dina träd och buskar. Den här gratisappen räknar ihop din skog i slutet av spelet, med eller utan expansionen Exmoor: välj de kort du spelat, så tillämpar appen varje korts poängregel åt dig.",
+    "cta": "Räkna poäng för ett Dartmoor-spel",
+    "features": [
+      "Alla kort i Dartmoor, räknade enligt de publicerade reglerna och bilagan",
+      "Expansionen Exmoor med nya kort och egna grottor",
+      "Hedar, träd och buskar och grottan räknas tillsammans med resten av din skog",
+      "Liveräkning: alla matar in sin egen skog på sin egen telefon, plus spelhistorik och spelarstatistik",
+      "Gratis, ingen reklam, inget konto, fungerar offline"
+    ],
+    "faqHeading": "Frågor om poängräkning i Dartmoor",
+    "faq": [
+      {
+        "q": "Hur räknar man poäng i Forest Shuffle: Dartmoor?",
+        "a": "Som i det ursprungliga Forest Shuffle ger varje kort poäng enligt villkoret som står på det. Träd och buskar, djur och växter räknar det som omger dem, till exempel trädarter, symboler eller kopior av andra kort, och hedkorten lägger till ett andra landskap som vissa kort ger poäng för. Varje kort i din grotta är värt en poäng och kort kvar på handen ger inget. Appen kan varje korts regel och räknar ihop allt."
+      },
+      {
+        "q": "Stöder appen expansionen Exmoor?",
+        "a": "Ja. Slå på Exmoor när du startar ett Dartmoor-spel så visas korten i poängguiden. Med Exmoor ersätter expansionens egna grottor Dartmoor-grottorna, och appen räknar dem därefter."
+      },
+      {
+        "q": "Är Dartmoor-räknaren gratis?",
+        "a": "Ja. Den är gratis, utan reklam och kräver inget konto. Den körs i alla webbläsare, fungerar offline när den har laddats och finns även som Android-app på Google Play."
+      },
+      {
+        "q": "Ett kort räknas annorlunda än i mitt spel. Vad gör jag?",
+        "a": "Kortreglerna kommer från de publicerade reglerna och bilagan. Om ett kort räknas annorlunda än i ditt exemplar av spelet, skicka feedback från inställningarna så rättas det."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge & Exploration poängräknare",
+      "description": "Gratis poängräknare för Forest Shuffle med expansionerna Alpine, Woodland Edge och Exploration i valfri kombination. Välj dina kort så räknar appen ihop allt. Fungerar offline, utan reklam."
+    },
+    "link": "Alpine, Woodland Edge & Exploration",
+    "heading": "Poängräknare för Forest Shuffle-expansionerna",
+    "intro": "Forest Shuffle växer med varje expansion: Alpine tillför bergens träd och djur, Woodland Edge arterna i skogsbrynet och Exploration sällsynta arter och särskilda grottor. Den här gratisappen räknar ihop din skog med valfri kombination: slå på expansionerna du spelar med, välj korten i din skog så tillämpar appen varje korts poängregel åt dig.",
+    "cta": "Räkna poäng för ett spel med expansioner",
+    "features": [
+      "Alpine, Woodland Edge och Exploration, var för sig eller i valfri kombination",
+      "Varje kort räknat enligt de publicerade reglerna och bilagan",
+      "Explorations särskilda grottor räknas i stället för grundspelets grottor",
+      "Liveräkning: alla matar in sin egen skog på sin egen telefon, plus spelhistorik och spelarstatistik",
+      "Gratis, ingen reklam, inget konto, fungerar offline"
+    ],
+    "faqHeading": "Frågor om poängräkning med expansioner",
+    "faq": [
+      {
+        "q": "Vilka Forest Shuffle-expansioner stöder räknaren?",
+        "a": "Alpine, Woodland Edge och Exploration för det ursprungliga Forest Shuffle, var för sig eller i valfri kombination. Forest Shuffle: Dartmoor med Exmoor och Forest Shuffle: Smoky Mountains har egna utgåvor i appen."
+      },
+      {
+        "q": "Hur räknar jag poäng för ett spel med expansioner?",
+        "a": "Slå på expansionerna du spelar med när du startar ett nytt spel. Deras kort visas då i poängguiden bredvid grundspelets kort. Välj vad som ligger i varje spelares skog så tillämpar appen varje korts regel, även för kort som räknar kort från andra expansioner."
+      },
+      {
+        "q": "Hur ger Explorations grottor poäng?",
+        "a": "Explorations särskilda grottor ersätter grundspelets grottor och varje spelare väljer en. Varje särskild grotta ger poäng på sitt eget sätt: välj i guiden grottan en spelare tog så tillämpar appen dess regel."
+      },
+      {
+        "q": "Är räknaren gratis?",
+        "a": "Ja. Den är gratis, utan reklam och kräver inget konto. Den körs i alla webbläsare, fungerar offline när den har laddats och finns även som Android-app på Google Play."
+      }
     ]
   }
 }

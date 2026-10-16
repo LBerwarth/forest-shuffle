@@ -27,7 +27,7 @@ await build({
   alias: { '@': path.join(root, 'src') },
   logLevel: 'warning',
 })
-const { LANGS, render, renderSmoky } = await import(`file://${entryOut}`)
+const { LANGS, EDITION_PAGES, render, renderEditionPage } = await import(`file://${entryOut}`)
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -46,8 +46,8 @@ function setMeta(html, attr, key, content) {
 }
 
 function pageHtml(template, page) {
-  const { lang, title, description, features, faq, body, path: pagePath } = page
-  const page_ = pagePath ? '/smoky-mountains' : ''
+  const { lang, title, description, features, faq, body, slug } = page
+  const page_ = slug ? `/${slug}` : ''
   const pathFor = (l) => (l === 'en' ? page_ || '/' : `/${l}${page_}`)
   const url = `${ORIGIN}${pathFor(lang)}`
   let html = template
@@ -117,10 +117,12 @@ for (const lang of LANGS) {
   await mkdir(path.dirname(out), { recursive: true })
   await writeFile(out, html)
 }
-for (const lang of LANGS) {
-  const smoky = await renderSmoky(lang)
-  const out = path.join(dist, smoky.path, 'index.html')
-  await mkdir(path.dirname(out), { recursive: true })
-  await writeFile(out, pageHtml(template, smoky))
+for (const editionPage of EDITION_PAGES) {
+  for (const lang of LANGS) {
+    const page = await renderEditionPage(lang, editionPage)
+    const out = path.join(dist, page.path, 'index.html')
+    await mkdir(path.dirname(out), { recursive: true })
+    await writeFile(out, pageHtml(template, page))
+  }
 }
-console.log(`prerendered ${LANGS.length} landing + ${LANGS.length} Smoky Mountains pages`)
+console.log(`prerendered ${LANGS.length} landing + ${LANGS.length * EDITION_PAGES.length} edition pages`)

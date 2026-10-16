@@ -507,6 +507,79 @@
         "q": "Karta se počítá jinak než v mé hře. Co teď?",
         "a": "Pravidla karet pocházejí z vydaných anglických pravidel a dodatku. Pokud se karta počítá jinak než ve tvém výtisku hry, pošli zpětnou vazbu z nastavení a bude to opraveno."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — kalkulačka bodů s Exmoor, zdarma",
+      "description": "Bezplatná kalkulačka bodů pro Forest Shuffle: Dartmoor a rozšíření Exmoor. Vyber karty ze svého lesa, vřesovišť a jeskyně a aplikace vše sečte. Funguje offline, bez reklam."
+    },
+    "link": "Dartmoor a Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – kalkulačka bodů",
+    "intro": "Forest Shuffle: Dartmoor je samostatná hra ze série Forest Shuffle zasazená do vřesovišť jihozápadní Anglie, s kartami vřesoviště vedle tvých stromů a keřů. Tato bezplatná aplikace na konci hry spočítá tvůj les, s rozšířením Exmoor i bez něj: vyber zahrané karty a aplikace za tebe použije bodovací pravidlo každé karty.",
+    "cta": "Spočítat hru Dartmoor",
+    "features": [
+      "Všechny karty Dartmoor, počítané podle vydaných pravidel a dodatku",
+      "Rozšíření Exmoor s novými kartami a vlastními jeskyněmi",
+      "Vřesoviště, stromy a keře i jeskyně se počítají spolu se zbytkem lesa",
+      "Živé počítání: každý zadává svůj les na vlastním telefonu, k tomu historie her a statistiky hráčů",
+      "Zdarma, bez reklam, bez účtu, funguje offline"
+    ],
+    "faqHeading": "Otázky k bodování Dartmoor",
+    "faq": [
+      {
+        "q": "Jak se boduje Forest Shuffle: Dartmoor?",
+        "a": "Stejně jako v původním Forest Shuffle boduje každá karta podle podmínky na ní vytištěné. Stromy a keře, zvířata a rostliny počítají, co je obklopuje, například druhy stromů, symboly nebo kopie jiných karet, a karty vřesoviště přidávají druhou krajinu, se kterou některé karty bodují. Každá karta v tvé jeskyni má hodnotu jednoho bodu, karty v ruce se nepočítají. Aplikace zná pravidlo každé karty a vše sečte."
+      },
+      {
+        "q": "Podporuje aplikace rozšíření Exmoor?",
+        "a": "Ano. Zapni Exmoor při zahájení hry Dartmoor a jeho karty se objeví v průvodci bodováním. S Exmoor jeho vlastní jeskyně nahrazují jeskyně Dartmoor a aplikace je podle toho boduje."
+      },
+      {
+        "q": "Je kalkulačka Dartmoor zdarma?",
+        "a": "Ano. Je zdarma, bez reklam a bez účtu. Funguje v každém prohlížeči, po načtení i offline, a je k dispozici také jako aplikace pro Android na Google Play."
+      },
+      {
+        "q": "Karta se počítá jinak než v mé hře. Co teď?",
+        "a": "Pravidla karet pocházejí z vydaných pravidel a dodatku. Pokud se karta počítá jinak než ve tvém výtisku hry, pošli zpětnou vazbu z nastavení a bude to opraveno."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge a Exploration — kalkulačka bodů",
+      "description": "Bezplatná kalkulačka bodů pro Forest Shuffle s rozšířeními Alpine, Woodland Edge a Exploration v libovolné kombinaci. Vyber karty a aplikace vše sečte. Funguje offline, bez reklam."
+    },
+    "link": "Alpine, Woodland Edge a Exploration",
+    "heading": "Kalkulačka bodů pro rozšíření Forest Shuffle",
+    "intro": "Forest Shuffle roste s každým rozšířením: Alpine přináší horské stromy a zvířata, Woodland Edge druhy z okraje lesa a Exploration vzácné druhy a speciální jeskyně. Tato bezplatná aplikace spočítá tvůj les s libovolnou kombinací: zapni rozšíření, se kterými hraješ, vyber karty ve svém lese a aplikace za tebe použije bodovací pravidlo každé karty.",
+    "cta": "Spočítat hru s rozšířeními",
+    "features": [
+      "Alpine, Woodland Edge a Exploration, samostatně nebo v libovolné kombinaci",
+      "Každá karta počítaná podle vydaných pravidel a dodatku",
+      "Speciální jeskyně z Exploration se počítají místo základních jeskyní",
+      "Živé počítání: každý zadává svůj les na vlastním telefonu, k tomu historie her a statistiky hráčů",
+      "Zdarma, bez reklam, bez účtu, funguje offline"
+    ],
+    "faqHeading": "Otázky k bodování s rozšířeními",
+    "faq": [
+      {
+        "q": "Která rozšíření Forest Shuffle kalkulačka podporuje?",
+        "a": "Alpine, Woodland Edge a Exploration pro původní Forest Shuffle, samostatně nebo v libovolné kombinaci. Forest Shuffle: Dartmoor s Exmoor a Forest Shuffle: Smoky Mountains mají v aplikaci vlastní edice."
+      },
+      {
+        "q": "Jak spočítám hru s rozšířeními?",
+        "a": "Při zahájení nové hry zapni rozšíření, se kterými hraješ. Jejich karty se pak objeví v průvodci bodováním vedle karet základní hry. Vyber, co leží v lese každého hráče, a aplikace použije pravidlo každé karty, i u karet, které počítají karty z jiných rozšíření."
+      },
+      {
+        "q": "Jak bodují jeskyně z Exploration?",
+        "a": "Speciální jeskyně z Exploration nahrazují základní jeskyně a každý hráč si jednu vybere. Každá speciální jeskyně boduje po svém: v průvodci vyber jeskyni, kterou hráč získal, a aplikace použije její pravidlo."
+      },
+      {
+        "q": "Je kalkulačka zdarma?",
+        "a": "Ano. Je zdarma, bez reklam a bez účtu. Funguje v každém prohlížeči, po načtení i offline, a je k dispozici také jako aplikace pro Android na Google Play."
+      }
     ]
   }
 }

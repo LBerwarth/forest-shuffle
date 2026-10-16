@@ -504,6 +504,79 @@
         "q": "Kortti lasketaan eri tavalla kuin pelissäni. Mitä teen?",
         "a": "Korttien säännöt ovat peräisin julkaistuista englanninkielisistä säännöistä ja liitteestä. Jos kortti lasketaan eri tavalla kuin omassa peliversiossasi, lähetä palautetta asetuksista, niin se korjataan."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — ilmainen pistelaskuri Exmoorilla",
+      "description": "Ilmainen pistelaskuri Forest Shuffle: Dartmoor -peliin ja Exmoor-laajennukseen. Valitse metsäsi, nummien ja luolan kortit, niin sovellus laskee kaiken yhteen. Toimii offline, ei mainoksia."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – pistelaskuri",
+    "intro": "Forest Shuffle: Dartmoor on Forest Shuffle -sarjan itsenäinen peli, joka sijoittuu Lounais-Englannin nummille ja jossa puidesi ja pensaidesi vieressä on nummikortteja. Tämä ilmainen sovellus laskee metsäsi pelin lopussa Exmoor-laajennuksen kanssa tai ilman: valitse pelaamasi kortit, niin sovellus soveltaa jokaisen kortin pisteytyssääntöä puolestasi.",
+    "cta": "Laske Dartmoor-pelin pisteet",
+    "features": [
+      "Kaikki Dartmoorin kortit, pisteytettynä julkaistujen sääntöjen ja liitteen mukaan",
+      "Exmoor-laajennus uusine kortteineen ja omine luolineen",
+      "Nummet, puut ja pensaat sekä luola lasketaan muun metsäsi kanssa",
+      "Reaaliaikainen pisteytys: jokainen syöttää oman metsänsä omalla puhelimellaan, lisäksi pelihistoria ja pelaajatilastot",
+      "Ilmainen, ei mainoksia, ei tiliä, toimii offline"
+    ],
+    "faqHeading": "Kysymyksiä Dartmoorin pisteytyksestä",
+    "faq": [
+      {
+        "q": "Miten Forest Shuffle: Dartmoorin pisteet lasketaan?",
+        "a": "Kuten alkuperäisessä Forest Shufflessa, jokainen kortti antaa pisteitä siihen painetun ehdon mukaan. Puut ja pensaat, eläimet ja kasvit laskevat ympäröiviä asioita, kuten puulajeja, symboleja tai muiden korttien kopioita, ja nummikortit tuovat toisen maiseman, josta osa korteista saa pisteitä. Jokainen luolasi kortti on yhden pisteen arvoinen, eikä käteen jääneistä korteista saa pisteitä. Sovellus tuntee jokaisen kortin säännön ja laskee kaiken yhteen."
+      },
+      {
+        "q": "Tukeeko sovellus Exmoor-laajennusta?",
+        "a": "Kyllä. Kytke Exmoor päälle, kun aloitat Dartmoor-pelin, niin sen kortit näkyvät pisteytysoppaassa. Exmoorin kanssa sen omat luolat korvaavat Dartmoorin luolat, ja sovellus pisteyttää ne sen mukaisesti."
+      },
+      {
+        "q": "Onko Dartmoor-laskuri ilmainen?",
+        "a": "Kyllä. Se on ilmainen, ilman mainoksia eikä vaadi tiliä. Se toimii kaikissa selaimissa, latauksen jälkeen myös offline, ja on saatavilla myös Android-sovelluksena Google Playssa."
+      },
+      {
+        "q": "Kortti lasketaan eri tavalla kuin pelissäni. Mitä teen?",
+        "a": "Korttien säännöt ovat peräisin julkaistuista säännöistä ja liitteestä. Jos kortti lasketaan eri tavalla kuin omassa peliversiossasi, lähetä palautetta asetuksista, niin se korjataan."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge & Exploration -pistelaskuri",
+      "description": "Ilmainen pistelaskuri Forest Shuffleen Alpine-, Woodland Edge- ja Exploration-laajennuksilla missä tahansa yhdistelmässä. Valitse korttisi, niin sovellus laskee kaiken yhteen. Toimii offline, ei mainoksia."
+    },
+    "link": "Alpine, Woodland Edge & Exploration",
+    "heading": "Pistelaskuri Forest Shuffle -laajennuksille",
+    "intro": "Forest Shuffle kasvaa jokaisen laajennuksen myötä: Alpine tuo vuorten puita ja eläimiä, Woodland Edge metsänreunan lajeja ja Exploration harvinaisia lajeja ja erikoisluolia. Tämä ilmainen sovellus laskee metsäsi millä tahansa yhdistelmällä: kytke päälle laajennukset, joilla pelaat, valitse metsäsi kortit, niin sovellus soveltaa jokaisen kortin pisteytyssääntöä puolestasi.",
+    "cta": "Laske laajennuksilla pelatun pelin pisteet",
+    "features": [
+      "Alpine, Woodland Edge ja Exploration, erikseen tai missä tahansa yhdistelmässä",
+      "Jokainen kortti pisteytettynä julkaistujen sääntöjen ja liitteen mukaan",
+      "Explorationin erikoisluolat pisteytetään perusluolien sijaan",
+      "Reaaliaikainen pisteytys: jokainen syöttää oman metsänsä omalla puhelimellaan, lisäksi pelihistoria ja pelaajatilastot",
+      "Ilmainen, ei mainoksia, ei tiliä, toimii offline"
+    ],
+    "faqHeading": "Kysymyksiä laajennusten pisteytyksestä",
+    "faq": [
+      {
+        "q": "Mitä Forest Shuffle -laajennuksia laskuri tukee?",
+        "a": "Alpine, Woodland Edge ja Exploration alkuperäiseen Forest Shuffleen, erikseen tai missä tahansa yhdistelmässä. Forest Shuffle: Dartmoorilla Exmoorin kanssa ja Forest Shuffle: Smoky Mountainsilla on sovelluksessa omat painoksensa."
+      },
+      {
+        "q": "Miten lasken laajennuksilla pelatun pelin pisteet?",
+        "a": "Kytke päälle laajennukset, joilla pelaat, kun aloitat uuden pelin. Niiden kortit näkyvät pisteytysoppaassa peruspelin korttien vieressä. Valitse, mitä kunkin pelaajan metsässä on, niin sovellus soveltaa jokaisen kortin sääntöä, myös korteille, jotka laskevat muiden laajennusten kortteja."
+      },
+      {
+        "q": "Miten Explorationin luolat pisteytetään?",
+        "a": "Explorationin erikoisluolat korvaavat perusluolat, ja jokainen pelaaja valitsee yhden. Jokainen erikoisluola antaa pisteitä omalla tavallaan: valitse oppaassa pelaajan ottama luola, niin sovellus soveltaa sen sääntöä."
+      },
+      {
+        "q": "Onko laskuri ilmainen?",
+        "a": "Kyllä. Se on ilmainen, ilman mainoksia eikä vaadi tiliä. Se toimii kaikissa selaimissa, latauksen jälkeen myös offline, ja on saatavilla myös Android-sovelluksena Google Playssa."
+      }
     ]
   }
 }

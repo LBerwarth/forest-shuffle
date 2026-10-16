@@ -7,6 +7,9 @@ import { createInstance } from 'i18next'
 import { Link } from 'react-router-dom'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import { LandingSection, type FaqEntry } from '../src/components/LandingSection'
+import { EDITION_PAGES, type EditionPageDef } from '../src/data/edition-pages'
+
+export { EDITION_PAGES }
 
 export const LANGS = ['en', 'fr', 'de', 'es', 'nl', 'it', 'pl', 'pt', 'cs', 'hu', 'uk', 'ru', 'tr', 'ca', 'da', 'sv', 'no', 'fi'] as const
 
@@ -19,6 +22,7 @@ export interface Prerendered {
   features: string[]
   faq: FaqEntry[]
   body: string
+  slug?: string
   path?: string
 }
 
@@ -48,7 +52,11 @@ export async function render(lang: string): Promise<Prerendered> {
       <StaticRouter location={location}>
         <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
           <LandingSection headingAs="h1">
-            <Link to={`${lang === 'en' ? '' : `/${lang}`}/smoky-mountains`}>{t('leaderboard.editionSmoky')}</Link>
+            {EDITION_PAGES.map((p) => (
+              <Link key={p.slug} to={`${lang === 'en' ? '' : `/${lang}`}/${p.slug}`}>
+                {t(`${p.prefix}.link`)}
+              </Link>
+            ))}
           </LandingSection>
         </div>
       </StaticRouter>
@@ -64,26 +72,28 @@ export async function render(lang: string): Promise<Prerendered> {
   }
 }
 
-export async function renderSmoky(lang: string): Promise<Prerendered> {
+export async function renderEditionPage(lang: string, page: EditionPageDef): Promise<Prerendered> {
   const instance = instanceFor(lang)
   const t = instance.getFixedT(lang)
-  const path = `${lang === 'en' ? '' : `/${lang}`}/smoky-mountains`
+  const { slug, prefix } = page
+  const path = `${lang === 'en' ? '' : `/${lang}`}/${slug}`
   const body = renderToStaticMarkup(
     <I18nextProvider i18n={instance}>
       <StaticRouter location={path}>
         <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
-          <LandingSection headingAs="h1" prefix="smokyPage" />
+          <LandingSection headingAs="h1" prefix={prefix} />
         </div>
       </StaticRouter>
     </I18nextProvider>,
   )
   return {
     lang,
+    slug,
     path,
-    title: t('smokyPage.seo.title'),
-    description: t('smokyPage.seo.description'),
-    features: t('smokyPage.features', { returnObjects: true }) as string[],
-    faq: t('smokyPage.faq', { returnObjects: true }) as FaqEntry[],
+    title: t(`${prefix}.seo.title`),
+    description: t(`${prefix}.seo.description`),
+    features: t(`${prefix}.features`, { returnObjects: true }) as string[],
+    faq: t(`${prefix}.faq`, { returnObjects: true }) as FaqEntry[],
     body,
   }
 }

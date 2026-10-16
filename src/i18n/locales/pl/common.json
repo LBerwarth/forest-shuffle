@@ -506,6 +506,79 @@
         "q": "Karta liczy się inaczej niż w mojej grze. Co teraz?",
         "a": "Zasady kart pochodzą z opublikowanej angielskiej instrukcji i dodatku. Jeśli karta liczy się inaczej niż w twoim egzemplarzu gry, wyślij opinię z ustawień, a zostanie to poprawione."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — kalkulator punktów z Exmoor, za darmo",
+      "description": "Darmowy kalkulator punktów do Forest Shuffle: Dartmoor i dodatku Exmoor. Wybierz karty z lasu, wrzosowisk i jaskini, a aplikacja wszystko zsumuje. Działa offline, bez reklam."
+    },
+    "link": "Dartmoor i Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – kalkulator punktów",
+    "intro": "Forest Shuffle: Dartmoor to samodzielna gra z serii Forest Shuffle osadzona na wrzosowiskach południowo-zachodniej Anglii, z kartami wrzosowisk obok twoich drzew i krzewów. Ta darmowa aplikacja podlicza twój las na koniec gry, z dodatkiem Exmoor lub bez: wybierz zagrane karty, a aplikacja zastosuje zasadę punktacji każdej karty za ciebie.",
+    "cta": "Podlicz grę Dartmoor",
+    "features": [
+      "Wszystkie karty Dartmoor, liczone według opublikowanej instrukcji i dodatku",
+      "Dodatek Exmoor z nowymi kartami i własnymi jaskiniami",
+      "Wrzosowiska, drzewa i krzewy oraz jaskinia są liczone razem z resztą lasu",
+      "Punktacja na żywo: każdy wpisuje swój las na własnym telefonie, do tego historia gier i statystyki graczy",
+      "Za darmo, bez reklam, bez konta, działa offline"
+    ],
+    "faqHeading": "Pytania o punktację Dartmoor",
+    "faq": [
+      {
+        "q": "Jak liczyć punkty w Forest Shuffle: Dartmoor?",
+        "a": "Jak w oryginalnym Forest Shuffle, każda karta daje punkty według warunku na niej wydrukowanego. Drzewa i krzewy, zwierzęta i rośliny liczą to, co je otacza, na przykład gatunki drzew, symbole lub kopie innych kart, a karty wrzosowisk dodają drugi krajobraz, z którym punktują niektóre karty. Każda karta w twojej jaskini jest warta jeden punkt, a karty w ręce nie dają punktów. Aplikacja zna zasadę każdej karty i wszystko sumuje."
+      },
+      {
+        "q": "Czy aplikacja obsługuje dodatek Exmoor?",
+        "a": "Tak. Włącz Exmoor na początku gry Dartmoor, a jego karty pojawią się w kreatorze punktacji. Z Exmoor jego własne jaskinie zastępują jaskinie Dartmoor, a aplikacja odpowiednio je liczy."
+      },
+      {
+        "q": "Czy kalkulator Dartmoor jest darmowy?",
+        "a": "Tak. Jest darmowy, bez reklam i bez konta. Działa w każdej przeglądarce, offline po pierwszym załadowaniu, i jest też dostępny jako aplikacja na Androida w Google Play."
+      },
+      {
+        "q": "Karta liczy się inaczej niż w mojej grze. Co teraz?",
+        "a": "Zasady kart pochodzą z opublikowanej instrukcji i dodatku. Jeśli karta liczy się inaczej niż w twoim egzemplarzu gry, wyślij opinię z ustawień, a zostanie to poprawione."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge i Exploration — kalkulator punktów",
+      "description": "Darmowy kalkulator punktów do Forest Shuffle z dodatkami Alpine, Woodland Edge i Exploration, w dowolnym połączeniu. Wybierz karty, a aplikacja wszystko zsumuje. Działa offline, bez reklam."
+    },
+    "link": "Alpine, Woodland Edge i Exploration",
+    "heading": "Kalkulator punktów dla dodatków do Forest Shuffle",
+    "intro": "Forest Shuffle rośnie z każdym dodatkiem: Alpine wnosi drzewa i zwierzęta gór, Woodland Edge gatunki ze skraju lasu, a Exploration rzadkie gatunki i specjalne jaskinie. Ta darmowa aplikacja podlicza twój las z dowolnym połączeniem: włącz dodatki, z którymi grasz, wybierz karty w swoim lesie, a aplikacja zastosuje zasadę punktacji każdej karty za ciebie.",
+    "cta": "Podlicz grę z dodatkami",
+    "features": [
+      "Alpine, Woodland Edge i Exploration, osobno lub w dowolnym połączeniu",
+      "Każda karta liczona według opublikowanych instrukcji i dodatku",
+      "Specjalne jaskinie z Exploration są liczone zamiast podstawowych",
+      "Punktacja na żywo: każdy wpisuje swój las na własnym telefonie, do tego historia gier i statystyki graczy",
+      "Za darmo, bez reklam, bez konta, działa offline"
+    ],
+    "faqHeading": "Pytania o punktację z dodatkami",
+    "faq": [
+      {
+        "q": "Które dodatki do Forest Shuffle obsługuje kalkulator?",
+        "a": "Alpine, Woodland Edge i Exploration do oryginalnego Forest Shuffle, osobno lub w dowolnym połączeniu. Forest Shuffle: Dartmoor z Exmoor i Forest Shuffle: Smoky Mountains mają w aplikacji własne edycje."
+      },
+      {
+        "q": "Jak podliczyć grę z dodatkami?",
+        "a": "Na początku nowej gry włącz dodatki, z którymi grasz. Ich karty pojawią się w kreatorze punktacji obok kart z gry podstawowej. Wybierz, co leży w lesie każdego gracza, a aplikacja zastosuje zasadę każdej karty, także tych, które liczą karty z innych dodatków."
+      },
+      {
+        "q": "Jak punktują jaskinie z Exploration?",
+        "a": "Specjalne jaskinie z Exploration zastępują jaskinie podstawowe i każdy gracz wybiera jedną. Każda specjalna jaskinia punktuje na swój sposób: wybierz w kreatorze jaskinię, którą wziął gracz, a aplikacja zastosuje jej zasadę."
+      },
+      {
+        "q": "Czy kalkulator jest darmowy?",
+        "a": "Tak. Jest darmowy, bez reklam i bez konta. Działa w każdej przeglądarce, offline po pierwszym załadowaniu, i jest też dostępny jako aplikacja na Androida w Google Play."
+      }
     ]
   }
 }

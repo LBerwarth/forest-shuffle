@@ -504,6 +504,79 @@
         "q": "Una carta puntua diferent que al meu joc. Què faig?",
         "a": "Les regles de les cartes provenen del reglament i l'apèndix publicats en anglès. Si una carta puntua diferent que a la teva còpia del joc, envia comentaris des de la configuració i es corregirà."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — calculadora de punts amb Exmoor, gratis",
+      "description": "Calculadora de punts gratuïta per a Forest Shuffle: Dartmoor i l'expansió Exmoor. Tria les cartes del teu bosc, erms i cova, i l'app ho suma tot. Funciona sense connexió, sense anuncis."
+    },
+    "link": "Dartmoor i Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – calculadora de punts",
+    "intro": "Forest Shuffle: Dartmoor és el joc independent de la sèrie Forest Shuffle ambientat als erms del sud-oest d'Anglaterra, amb cartes d'erm al costat dels teus arbres i arbustos. Aquesta app gratuïta compta el teu bosc al final de la partida, amb l'expansió Exmoor o sense: tria les cartes que has jugat i l'app aplica per tu la regla de puntuació de cada carta.",
+    "cta": "Puntuar una partida de Dartmoor",
+    "features": [
+      "Totes les cartes de Dartmoor, puntuades segons el reglament i l'apèndix publicats",
+      "L'expansió Exmoor amb les seves noves cartes i coves pròpies",
+      "Els erms, els arbres i arbustos i la cova es compten amb la resta del teu bosc",
+      "Puntuació en directe: cadascú introdueix el seu bosc al seu mòbil, a més d'historial de partides i estadístiques de jugadors",
+      "Gratuït, sense anuncis, sense compte, funciona sense connexió"
+    ],
+    "faqHeading": "Preguntes sobre la puntuació de Dartmoor",
+    "faq": [
+      {
+        "q": "Com es puntua Forest Shuffle: Dartmoor?",
+        "a": "Com al Forest Shuffle original, cada carta puntua segons la condició impresa. Arbres i arbustos, animals i plantes compten el que els envolta, com espècies d'arbres, símbols o còpies d'altres cartes, i les cartes d'erm afegeixen un segon paisatge amb què puntuen algunes cartes. Cada carta de la teva cova val un punt i les cartes que queden a la mà no puntuen. L'app coneix la regla de cada carta i ho suma tot."
+      },
+      {
+        "q": "L'app admet l'expansió Exmoor?",
+        "a": "Sí. Activa Exmoor en començar una partida de Dartmoor i les seves cartes apareixeran a l'assistent de puntuació. Amb Exmoor, les seves coves substitueixen les de Dartmoor i l'app les puntua en conseqüència."
+      },
+      {
+        "q": "La calculadora de Dartmoor és gratuïta?",
+        "a": "Sí. És gratuïta, sense anuncis i sense compte. Funciona en qualsevol navegador, sense connexió un cop carregada, i també està disponible com a app d'Android a Google Play."
+      },
+      {
+        "q": "Una carta puntua diferent que al meu joc. Què faig?",
+        "a": "Les regles de les cartes provenen del reglament i l'apèndix publicats. Si una carta puntua diferent que a la teva còpia del joc, envia comentaris des de la configuració i es corregirà."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge i Exploration — calculadora de punts",
+      "description": "Calculadora de punts gratuïta per a Forest Shuffle amb les expansions Alpine, Woodland Edge i Exploration, en qualsevol combinació. Tria les teves cartes i l'app ho suma tot. Sense connexió, sense anuncis."
+    },
+    "link": "Alpine, Woodland Edge i Exploration",
+    "heading": "Calculadora de punts per a les expansions de Forest Shuffle",
+    "intro": "Forest Shuffle creix amb cada expansió: Alpine porta arbres i animals de muntanya, Woodland Edge les espècies de la vora del bosc i Exploration espècies rares i coves especials. Aquesta app gratuïta compta el teu bosc amb qualsevol combinació: activa les expansions amb què jugues, tria les cartes del teu bosc i l'app aplica per tu la regla de puntuació de cada carta.",
+    "cta": "Puntuar una partida amb expansions",
+    "features": [
+      "Alpine, Woodland Edge i Exploration, soles o en qualsevol combinació",
+      "Cada carta puntuada segons els reglaments i l'apèndix publicats",
+      "Les coves especials d'Exploration es puntuen en lloc de les coves bàsiques",
+      "Puntuació en directe: cadascú introdueix el seu bosc al seu mòbil, a més d'historial de partides i estadístiques de jugadors",
+      "Gratuït, sense anuncis, sense compte, funciona sense connexió"
+    ],
+    "faqHeading": "Preguntes sobre la puntuació amb expansions",
+    "faq": [
+      {
+        "q": "Quines expansions de Forest Shuffle admet la calculadora?",
+        "a": "Alpine, Woodland Edge i Exploration per al Forest Shuffle original, soles o en qualsevol combinació. Forest Shuffle: Dartmoor amb Exmoor i Forest Shuffle: Smoky Mountains tenen les seves pròpies edicions a l'app."
+      },
+      {
+        "q": "Com puntuo una partida amb expansions?",
+        "a": "Activa les expansions amb què jugues en començar una partida nova. Les seves cartes apareixeran a l'assistent de puntuació al costat de les del joc base. Tria el que hi ha al bosc de cada jugador i l'app aplica la regla de cada carta, incloses les que compten cartes d'altres expansions."
+      },
+      {
+        "q": "Com puntuen les coves d'Exploration?",
+        "a": "Les coves especials d'Exploration substitueixen les coves bàsiques i cada jugador en tria una. Cada cova especial puntua a la seva manera: tria a l'assistent la cova que ha agafat cada jugador i l'app aplica la seva regla."
+      },
+      {
+        "q": "La calculadora és gratuïta?",
+        "a": "Sí. És gratuïta, sense anuncis i sense compte. Funciona en qualsevol navegador, sense connexió un cop carregada, i també està disponible com a app d'Android a Google Play."
+      }
     ]
   }
 }

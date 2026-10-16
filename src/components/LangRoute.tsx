@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useSettingsStore } from '@/store/settings-store'
+import { EDITION_PAGES } from '@/data/edition-pages'
 
 export const SEO_LANGS = [
   'fr', 'de', 'es', 'nl', 'it', 'pl', 'pt', 'cs', 'hu',
@@ -42,8 +43,8 @@ export function LangRoute({ lang }: { lang?: SeoLang }) {
   }, [lang, setLanguage])
 
   useEffect(() => {
-    const isSmoky = pathname.endsWith('/smoky-mountains')
-    const seo = isSmoky ? 'smokyPage.seo' : 'seo'
+    const editionPage = EDITION_PAGES.find((p) => pathname.endsWith(`/${p.slug}`))
+    const seo = editionPage ? `${editionPage.prefix}.seo` : 'seo'
     document.title = t(`${seo}.title`)
     document.documentElement.lang = i18n.language
     document
@@ -52,8 +53,8 @@ export function LangRoute({ lang }: { lang?: SeoLang }) {
 
     // Canonical + hreflang only on the 18 landing URLs listed in the sitemap
     const isLanding = pathname === '/' || pathname === `/${lang}`
-    if (isSmoky || isLanding) {
-      const page = isSmoky ? '/smoky-mountains' : ''
+    if (editionPage || isLanding) {
+      const page = editionPage ? `/${editionPage.slug}` : ''
       upsertLink('canonical', `${ORIGIN}${lang ? `/${lang}` : ''}${page || '/'}`)
       upsertLink('alternate', `${ORIGIN}${page || '/'}`, 'en')
       upsertLink('alternate', `${ORIGIN}${page || '/'}`, 'x-default')

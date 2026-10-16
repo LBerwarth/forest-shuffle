@@ -504,6 +504,79 @@
         "q": "Een kaart scoort anders dan in mijn spel. Wat nu?",
         "a": "De kaartregels komen uit de gepubliceerde Engelse spelregels en bijlage. Als een kaart anders scoort dan in jouw exemplaar van het spel, stuur dan feedback via de instellingen en het wordt gecorrigeerd."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor puntenteller met Exmoor — gratis",
+      "description": "Gratis puntenteller voor Forest Shuffle: Dartmoor en de uitbreiding Exmoor. Kies de kaarten in je bos, heide en grot, en de app telt alles op. Werkt offline, zonder advertenties."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – puntenteller",
+    "intro": "Forest Shuffle: Dartmoor is het zelfstandige spel uit de Forest Shuffle-reeks, gesitueerd op de heide van Zuidwest-Engeland, met heidekaarten naast je bomen en struiken. Deze gratis app telt je bos aan het einde van het spel, met of zonder de uitbreiding Exmoor: kies de kaarten die je hebt gespeeld en de app past de scoreregel van elke kaart voor je toe.",
+    "cta": "Een Dartmoor-spel scoren",
+    "features": [
+      "Alle kaarten van Dartmoor, gescoord volgens de gepubliceerde spelregels en bijlage",
+      "De uitbreiding Exmoor met nieuwe kaarten en eigen grotten",
+      "Heide, bomen en struiken en de grot tellen mee met de rest van je bos",
+      "Live scoren: iedereen voert zijn eigen bos in op zijn eigen telefoon, plus spelgeschiedenis en spelersstatistieken",
+      "Gratis, geen advertenties, geen account nodig, werkt offline"
+    ],
+    "faqHeading": "Vragen over het scoren van Dartmoor",
+    "faq": [
+      {
+        "q": "Hoe scoor je Forest Shuffle: Dartmoor?",
+        "a": "Net als in het originele Forest Shuffle scoort elke kaart volgens de voorwaarde die erop staat. Bomen en struiken, dieren en planten tellen wat hen omringt, zoals boomsoorten, symbolen of exemplaren van andere kaarten, en de heidekaarten voegen een tweede landschap toe waarmee sommige kaarten punten scoren. Elke kaart in je grot is één punt waard; kaarten in je hand tellen niet. De app kent de regel van elke kaart en telt alles op."
+      },
+      {
+        "q": "Ondersteunt de app de uitbreiding Exmoor?",
+        "a": "Ja. Zet Exmoor aan wanneer je een Dartmoor-spel start en de kaarten verschijnen in de score-assistent. Met Exmoor vervangen de eigen grotten de Dartmoor-grotten, en de app scoort ze daarnaar."
+      },
+      {
+        "q": "Is de Dartmoor-teller gratis?",
+        "a": "Ja. Hij is gratis, zonder advertenties en zonder account. Hij werkt in elke browser, offline zodra hij geladen is, en is ook beschikbaar als Android-app in Google Play."
+      },
+      {
+        "q": "Een kaart scoort anders dan in mijn spel. Wat nu?",
+        "a": "De kaartregels komen uit de gepubliceerde spelregels en bijlage. Als een kaart anders scoort dan in jouw exemplaar van het spel, stuur dan feedback via de instellingen en het wordt gecorrigeerd."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge & Exploration puntenteller",
+      "description": "Gratis puntenteller voor Forest Shuffle met de uitbreidingen Alpine, Woodland Edge en Exploration, in elke combinatie. Kies je kaarten en de app telt alles op. Werkt offline, zonder advertenties."
+    },
+    "link": "Alpine, Woodland Edge & Exploration",
+    "heading": "Puntenteller voor de Forest Shuffle-uitbreidingen",
+    "intro": "Forest Shuffle groeit met elke uitbreiding: Alpine brengt bomen en dieren uit de bergen, Woodland Edge de soorten van de bosrand en Exploration zeldzame soorten en speciale grotten. Deze gratis app telt je bos met elke combinatie: zet de uitbreidingen aan waarmee je speelt, kies de kaarten in je bos en de app past de scoreregel van elke kaart voor je toe.",
+    "cta": "Een spel met uitbreidingen scoren",
+    "features": [
+      "Alpine, Woodland Edge en Exploration, los of in elke combinatie",
+      "Elke kaart gescoord volgens de gepubliceerde spelregels en bijlage",
+      "De speciale grotten van Exploration worden gescoord in plaats van de basisgrotten",
+      "Live scoren: iedereen voert zijn eigen bos in op zijn eigen telefoon, plus spelgeschiedenis en spelersstatistieken",
+      "Gratis, geen advertenties, geen account nodig, werkt offline"
+    ],
+    "faqHeading": "Vragen over scoren met uitbreidingen",
+    "faq": [
+      {
+        "q": "Welke Forest Shuffle-uitbreidingen ondersteunt de teller?",
+        "a": "Alpine, Woodland Edge en Exploration voor het originele Forest Shuffle, los of in elke combinatie. Forest Shuffle: Dartmoor met Exmoor en Forest Shuffle: Smoky Mountains hebben eigen edities in de app."
+      },
+      {
+        "q": "Hoe scoor ik een spel met uitbreidingen?",
+        "a": "Zet bij het starten van een nieuw spel de uitbreidingen aan waarmee je speelt. Hun kaarten verschijnen dan in de score-assistent naast de kaarten van het basisspel. Kies wat er in het bos van elke speler ligt en de app past de regel van elke kaart toe, ook bij kaarten die kaarten uit andere uitbreidingen tellen."
+      },
+      {
+        "q": "Hoe scoren de grotten van Exploration?",
+        "a": "De speciale grotten van Exploration vervangen de basisgrotten en elke speler kiest er één. Elke speciale grot scoort op zijn eigen manier: kies in de assistent de grot die een speler nam en de app past de regel toe."
+      },
+      {
+        "q": "Is de teller gratis?",
+        "a": "Ja. Hij is gratis, zonder advertenties en zonder account. Hij werkt in elke browser, offline zodra hij geladen is, en is ook beschikbaar als Android-app in Google Play."
+      }
     ]
   }
 }

@@ -508,6 +508,79 @@
         "q": "Eine Karte zählt anders als in meinem Spiel. Was nun?",
         "a": "Die Kartenregeln stammen aus der veröffentlichten englischen Spielregel und dem Anhang. Wenn eine Karte anders zählt als in deinem Spiel, schick Feedback über die Einstellungen, dann wird es korrigiert."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Mischwald Dartmoor Punkterechner mit Exmoor — kostenlose Wertungs-App",
+      "description": "Kostenloser Punkterechner für Mischwald Dartmoor und die Erweiterung Exmoor. Karten in Wald, Moor und Höhle wählen – die App zählt alles zusammen. Offline, ohne Werbung."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Mischwald Dartmoor – Punkterechner",
+    "intro": "Mischwald Dartmoor ist das eigenständige Spiel der Forest-Shuffle-Reihe, angesiedelt im Moorland Südwestenglands, mit Moorkarten neben deinen Bäumen und Sträuchern. Diese kostenlose App zählt deinen Wald am Spielende, mit oder ohne die Erweiterung Exmoor: Wähle die gespielten Karten, und die App wendet die Wertungsregel jeder Karte für dich an.",
+    "cta": "Dartmoor-Partie werten",
+    "features": [
+      "Alle Dartmoor-Karten, gewertet nach Spielregel und Anhang",
+      "Die Erweiterung Exmoor mit ihren neuen Karten und eigenen Höhlen",
+      "Moore, Bäume und Sträucher sowie die Höhle werden mit dem Rest deines Waldes gezählt",
+      "Live-Wertung, bei der jeder seinen Wald auf dem eigenen Handy eingibt, dazu Partiehistorie und Spielerstatistiken",
+      "Kostenlos, ohne Werbung, ohne Konto, funktioniert offline"
+    ],
+    "faqHeading": "Fragen zur Wertung von Dartmoor",
+    "faq": [
+      {
+        "q": "Wie wertet man Mischwald Dartmoor?",
+        "a": "Wie im ursprünglichen Mischwald punktet jede Karte nach der Bedingung, die auf ihr steht. Bäume und Sträucher, Tiere und Pflanzen zählen, was sie umgibt, etwa Baumarten, Symbole oder Kopien anderer Karten, und die Moorkarten bringen eine zweite Landschaft ins Spiel, mit der manche Karten punkten. Jede Karte in deiner Höhle bringt einen Punkt, Karten auf der Hand zählen nichts. Die App kennt die Regel jeder Karte und rechnet alles zusammen."
+      },
+      {
+        "q": "Unterstützt die App die Erweiterung Exmoor?",
+        "a": "Ja. Schalte Exmoor beim Start einer Dartmoor-Partie ein, dann erscheinen ihre Karten im Punkteassistenten. Mit Exmoor ersetzen deren eigene Höhlen die Dartmoor-Höhlen, und die App wertet sie entsprechend."
+      },
+      {
+        "q": "Ist der Dartmoor-Rechner kostenlos?",
+        "a": "Ja. Er ist kostenlos, ohne Werbung und braucht kein Konto. Er läuft in jedem Browser, funktioniert nach dem ersten Laden offline und ist auch als Android-App bei Google Play erhältlich."
+      },
+      {
+        "q": "Eine Karte zählt anders als in meinem Spiel. Was nun?",
+        "a": "Die Kartenregeln stammen aus der veröffentlichten Spielregel und dem Anhang. Wenn eine Karte anders zählt als in deinem Spiel, schick Feedback über die Einstellungen, dann wird es korrigiert."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Mischwald Alpin, Waldrand & Entdeckungen Punkterechner",
+      "description": "Kostenloser Punkterechner für Mischwald mit den Erweiterungen Alpin, Waldrand und Entdeckungen (Exploration), in jeder Kombination. Karten wählen – die App zählt alles zusammen. Offline, ohne Werbung."
+    },
+    "link": "Alpin, Waldrand & Entdeckungen",
+    "heading": "Punkterechner für die Mischwald-Erweiterungen",
+    "intro": "Mischwald wächst mit jeder Erweiterung: Alpin bringt Bäume und Tiere der Berge, Waldrand die Arten am Rand des Waldes, und Entdeckungen (Exploration) seltene Arten und Spezialhöhlen. Diese kostenlose App zählt deinen Wald mit jeder Mischung davon: Schalte die Erweiterungen ein, mit denen du spielst, wähle die Karten in deinem Wald, und die App wendet die Wertungsregel jeder Karte für dich an.",
+    "cta": "Partie mit Erweiterungen werten",
+    "features": [
+      "Alpin, Waldrand und Entdeckungen, einzeln oder in jeder Kombination",
+      "Jede Karte gewertet nach den veröffentlichten Spielregeln und dem Anhang",
+      "Die Spezialhöhlen aus Entdeckungen werden statt der Grundspiel-Höhlen gewertet",
+      "Live-Wertung, bei der jeder seinen Wald auf dem eigenen Handy eingibt, dazu Partiehistorie und Spielerstatistiken",
+      "Kostenlos, ohne Werbung, ohne Konto, funktioniert offline"
+    ],
+    "faqHeading": "Fragen zur Wertung mit Erweiterungen",
+    "faq": [
+      {
+        "q": "Welche Mischwald-Erweiterungen unterstützt der Rechner?",
+        "a": "Alpin, Waldrand und Entdeckungen für das ursprüngliche Mischwald, einzeln oder in jeder Kombination. Mischwald Dartmoor mit Exmoor und Mischwald: Smoky Mountains haben in der App eigene Editionen."
+      },
+      {
+        "q": "Wie werte ich eine Partie mit Erweiterungen?",
+        "a": "Schalte beim Start einer neuen Partie die Erweiterungen ein, mit denen du spielst. Ihre Karten erscheinen dann im Punkteassistenten neben den Karten des Grundspiels. Wähle, was im Wald jedes Spielers liegt, und die App wendet jede Kartenregel an, auch bei Karten, die Karten aus anderen Erweiterungen zählen."
+      },
+      {
+        "q": "Wie werden die Höhlen aus Entdeckungen gewertet?",
+        "a": "Die Spezialhöhlen aus Entdeckungen ersetzen die Höhlen des Grundspiels, und jeder Spieler wählt eine. Jede Spezialhöhle punktet auf ihre eigene Weise: Wähle im Punkteassistenten die Höhle, die ein Spieler genommen hat, und die App wendet ihre Regel an."
+      },
+      {
+        "q": "Ist der Rechner kostenlos?",
+        "a": "Ja. Er ist kostenlos, ohne Werbung und braucht kein Konto. Er läuft in jedem Browser, funktioniert nach dem ersten Laden offline und ist auch als Android-App bei Google Play erhältlich."
+      }
     ]
   }
 }

@@ -508,6 +508,79 @@
         "q": "A card scored differently from my game. What now?",
         "a": "The card rules come from the published English rulebook and appendix. If a card scores differently from your copy of the game, send feedback from the settings page and it will be corrected."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor Score Calculator with Exmoor — Free Scoring App",
+      "description": "Free score calculator for Forest Shuffle: Dartmoor and the Exmoor expansion. Pick the cards in your forest, moors and cave, and the app adds up every card. Works offline, no ads."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Forest Shuffle: Dartmoor score calculator",
+    "intro": "Forest Shuffle: Dartmoor is the stand-alone Forest Shuffle game set on the moors of south-west England, with moor cards next to your trees and shrubs. This free scoring app adds up your forest at the end of the game, with or without the Exmoor expansion: pick the cards you played and the app applies each card’s scoring rule for you.",
+    "cta": "Score a Dartmoor game",
+    "features": [
+      "Every Dartmoor card, scored by the rules in the published rulebook and appendix",
+      "The Exmoor expansion with its new cards and its own caves",
+      "Moors, trees and shrubs and the cave are counted together with the rest of your forest",
+      "Live scoring where everyone enters their own forest on their own phone, plus game history and player stats",
+      "Free, no ads, no account required, works offline"
+    ],
+    "faqHeading": "Dartmoor scoring questions",
+    "faq": [
+      {
+        "q": "How do you score Forest Shuffle: Dartmoor?",
+        "a": "As in the original Forest Shuffle, every card scores by the condition printed on it. Trees and shrubs, animals and plants count what surrounds them, such as tree species, symbols or copies of other cards, and the moor cards add a second landscape that some cards score with. Every card in your cave is worth one point, and cards left in your hand score nothing. The app knows each card’s rule and adds everything up."
+      },
+      {
+        "q": "Does the app support the Exmoor expansion?",
+        "a": "Yes. Switch on Exmoor when you start a Dartmoor game and its cards appear in the scoring wizard. With Exmoor, its own caves replace the Dartmoor caves, and the app scores them accordingly."
+      },
+      {
+        "q": "Is the Dartmoor scorer free?",
+        "a": "Yes. It is free, has no ads and needs no account. It runs in any browser, works offline once loaded, and is also available as an Android app on Google Play."
+      },
+      {
+        "q": "A card scored differently from my game. What now?",
+        "a": "The card rules come from the published rulebook and appendix. If a card scores differently from your copy of the game, send feedback from the settings page and it will be corrected."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge & Exploration Score Calculator",
+      "description": "Free score calculator for Forest Shuffle with the Alpine, Woodland Edge and Exploration expansions, in any combination. Pick your cards and the app adds up every card. Works offline, no ads."
+    },
+    "link": "Alpine, Woodland Edge & Exploration",
+    "heading": "Score calculator for the Forest Shuffle expansions",
+    "intro": "Forest Shuffle grows with every expansion: Alpine brings mountain trees and animals, Woodland Edge adds the species of the forest edge, and Exploration brings rare species and special caves. This free scoring app counts your forest with any mix of them: switch on the expansions you play with, pick the cards in your forest and the app applies each card’s scoring rule for you.",
+    "cta": "Score a game with expansions",
+    "features": [
+      "Alpine, Woodland Edge and Exploration, alone or in any combination",
+      "Every card scored by the rules in the published rulebooks and appendix",
+      "Exploration’s special caves are scored instead of the base caves",
+      "Live scoring where everyone enters their own forest on their own phone, plus game history and player stats",
+      "Free, no ads, no account required, works offline"
+    ],
+    "faqHeading": "Questions about scoring with expansions",
+    "faq": [
+      {
+        "q": "Which Forest Shuffle expansions does the scorer support?",
+        "a": "Alpine, Woodland Edge and Exploration for the original Forest Shuffle, alone or in any combination. Forest Shuffle: Dartmoor with Exmoor and Forest Shuffle: Smoky Mountains have their own editions in the app."
+      },
+      {
+        "q": "How do I score a game with expansions?",
+        "a": "Switch on the expansions you play with when you start a new game. Their cards then appear in the scoring wizard next to the base game cards. Pick what is in each player’s forest and the app applies every card’s rule, including cards that count cards from other expansions."
+      },
+      {
+        "q": "How do the Exploration caves score?",
+        "a": "Exploration’s special caves replace the base caves, and each player picks one. Every special cave scores in its own way: choose the cave a player took in the scoring wizard and the app applies its rule."
+      },
+      {
+        "q": "Is the scorer free?",
+        "a": "Yes. It is free, has no ads and needs no account. It runs in any browser, works offline once loaded, and is also available as an Android app on Google Play."
+      }
     ]
   }
 }

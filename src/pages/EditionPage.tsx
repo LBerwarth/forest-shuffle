@@ -4,8 +4,9 @@ import { Calculator } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { LandingSection } from '@/components/LandingSection'
 import { useSettingsStore } from '@/store/settings-store'
+import type { EditionPageDef } from '@/data/edition-pages'
 
-export function SmokyMountainsPage() {
+export function EditionPage({ page }: { page: EditionPageDef }) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const setEdition = useSettingsStore((s) => s.setEdition)
@@ -16,14 +17,14 @@ export function SmokyMountainsPage() {
         size="lg"
         className="w-full text-base"
         onClick={() => {
-          setEdition('smoky')
+          setEdition(page.edition)
           navigate('/new-game')
         }}
       >
         <Calculator className="h-5 w-5" />
-        {t('smokyPage.cta')}
+        {t(`${page.prefix}.cta`)}
       </Button>
-      <LandingSection headingAs="h1" prefix="smokyPage" />
+      <LandingSection headingAs="h1" prefix={page.prefix} />
     </div>
   )
 }

@@ -504,6 +504,79 @@
         "q": "Et kort tæller anderledes end i mit spil. Hvad nu?",
         "a": "Kortreglerne stammer fra de udgivne engelske regler og appendiks. Hvis et kort tæller anderledes end i dit eksemplar af spillet, så send feedback fra indstillingerne, så bliver det rettet."
       }
+    ],
+    "link": "Smoky Mountains"
+  },
+  "dartmoorPage": {
+    "seo": {
+      "title": "Forest Shuffle: Dartmoor — gratis pointberegner med Exmoor",
+      "description": "Gratis pointberegner til Forest Shuffle: Dartmoor og udvidelsen Exmoor. Vælg kortene i din skov, hede og hule, så lægger appen det hele sammen. Virker offline, uden reklamer."
+    },
+    "link": "Dartmoor & Exmoor",
+    "heading": "Forest Shuffle: Dartmoor – pointberegner",
+    "intro": "Forest Shuffle: Dartmoor er det selvstændige spil i Forest Shuffle-serien, der foregår på hederne i det sydvestlige England, med hedekort ved siden af dine træer og buske. Denne gratis app tæller din skov op ved spillets slutning, med eller uden udvidelsen Exmoor: vælg de kort, du har spillet, og appen anvender hvert korts pointregel for dig.",
+    "cta": "Tæl et Dartmoor-spil op",
+    "features": [
+      "Alle kort i Dartmoor, talt op efter de udgivne regler og appendiks",
+      "Udvidelsen Exmoor med nye kort og egne huler",
+      "Heder, træer og buske og hulen tælles med sammen med resten af din skov",
+      "Live-optælling: alle indtaster deres egen skov på deres egen telefon, plus spilhistorik og spillerstatistik",
+      "Gratis, uden reklamer, uden konto, virker offline"
+    ],
+    "faqHeading": "Spørgsmål om pointgivning i Dartmoor",
+    "faq": [
+      {
+        "q": "Hvordan tæller man point i Forest Shuffle: Dartmoor?",
+        "a": "Som i det originale Forest Shuffle giver hvert kort point efter den betingelse, der står på det. Træer og buske, dyr og planter tæller det, der omgiver dem, fx træarter, symboler eller kopier af andre kort, og hedekortene tilføjer et ekstra landskab, som nogle kort scorer med. Hvert kort i din hule er ét point værd, og kort på hånden giver intet. Appen kender hvert korts regel og lægger det hele sammen."
+      },
+      {
+        "q": "Understøtter appen udvidelsen Exmoor?",
+        "a": "Ja. Slå Exmoor til, når du starter et Dartmoor-spil, så vises kortene i pointguiden. Med Exmoor erstatter udvidelsens egne huler Dartmoor-hulerne, og appen tæller dem op derefter."
+      },
+      {
+        "q": "Er Dartmoor-beregneren gratis?",
+        "a": "Ja. Den er gratis, uden reklamer og kræver ingen konto. Den kører i enhver browser, virker offline, når den er indlæst, og findes også som Android-app på Google Play."
+      },
+      {
+        "q": "Et kort tæller anderledes end i mit spil. Hvad nu?",
+        "a": "Kortreglerne stammer fra de udgivne regler og appendiks. Hvis et kort tæller anderledes end i dit eksemplar af spillet, så send feedback fra indstillingerne, så bliver det rettet."
+      }
+    ]
+  },
+  "expansionsPage": {
+    "seo": {
+      "title": "Forest Shuffle Alpine, Woodland Edge & Exploration pointberegner",
+      "description": "Gratis pointberegner til Forest Shuffle med udvidelserne Alpine, Woodland Edge og Exploration i enhver kombination. Vælg dine kort, så lægger appen det hele sammen. Virker offline, uden reklamer."
+    },
+    "link": "Alpine, Woodland Edge & Exploration",
+    "heading": "Pointberegner til Forest Shuffle-udvidelserne",
+    "intro": "Forest Shuffle vokser med hver udvidelse: Alpine bringer bjergenes træer og dyr, Woodland Edge arterne fra skovbrynet og Exploration sjældne arter og særlige huler. Denne gratis app tæller din skov op med enhver kombination: slå de udvidelser til, du spiller med, vælg kortene i din skov, og appen anvender hvert korts pointregel for dig.",
+    "cta": "Tæl et spil med udvidelser op",
+    "features": [
+      "Alpine, Woodland Edge og Exploration, alene eller i enhver kombination",
+      "Hvert kort talt op efter de udgivne regler og appendiks",
+      "Exploration's særlige huler tælles i stedet for grundspillets huler",
+      "Live-optælling: alle indtaster deres egen skov på deres egen telefon, plus spilhistorik og spillerstatistik",
+      "Gratis, uden reklamer, uden konto, virker offline"
+    ],
+    "faqHeading": "Spørgsmål om pointgivning med udvidelser",
+    "faq": [
+      {
+        "q": "Hvilke Forest Shuffle-udvidelser understøtter beregneren?",
+        "a": "Alpine, Woodland Edge og Exploration til det originale Forest Shuffle, alene eller i enhver kombination. Forest Shuffle: Dartmoor med Exmoor og Forest Shuffle: Smoky Mountains har egne udgaver i appen."
+      },
+      {
+        "q": "Hvordan tæller jeg et spil med udvidelser op?",
+        "a": "Slå de udvidelser til, du spiller med, når du starter et nyt spil. Deres kort vises så i pointguiden ved siden af grundspillets kort. Vælg, hvad der ligger i hver spillers skov, og appen anvender hvert korts regel, også for kort, der tæller kort fra andre udvidelser."
+      },
+      {
+        "q": "Hvordan giver huler fra Exploration point?",
+        "a": "Exploration's særlige huler erstatter grundspillets huler, og hver spiller vælger én. Hver særlig hule giver point på sin egen måde: vælg i guiden den hule, en spiller tog, og appen anvender dens regel."
+      },
+      {
+        "q": "Er beregneren gratis?",
+        "a": "Ja. Den er gratis, uden reklamer og kræver ingen konto. Den kører i enhver browser, virker offline, når den er indlæst, og findes også som Android-app på Google Play."
+      }
     ]
   }
 }
