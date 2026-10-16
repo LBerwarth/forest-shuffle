@@ -86,14 +86,14 @@ export function HomePage() {
       </Link>
       <Link
         to="/first-player"
-        className="mb-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 px-4 py-3 text-white shadow-card transition-shadow hover:shadow-card-hover"
+        className="mb-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-forest-700 to-forest-900 px-4 py-3 text-white shadow-card transition-shadow hover:shadow-card-hover"
       >
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/25">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-forest-50 text-forest-700">
           <Hand className="h-5 w-5" />
         </div>
         <div className="min-w-0 text-left">
           <p className="text-base font-semibold">{t('firstPlayer.title')}</p>
-          <p className="text-xs text-white/90">{t('firstPlayer.hint')}</p>
+          <p className="text-xs text-forest-100">{t('firstPlayer.hint')}</p>
         </div>
       </Link>
 
