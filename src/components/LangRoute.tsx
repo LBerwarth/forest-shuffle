@@ -52,14 +52,12 @@ export function LangRoute({ lang }: { lang?: SeoLang }) {
 
     // Canonical + hreflang only on the 18 landing URLs listed in the sitemap
     const isLanding = pathname === '/' || pathname === `/${lang}`
-    if (isSmoky) {
-      removeSeoLinks()
-      upsertLink('canonical', `${ORIGIN}/smoky-mountains`)
-    } else if (isLanding) {
-      upsertLink('canonical', lang ? `${ORIGIN}/${lang}` : `${ORIGIN}/`)
-      upsertLink('alternate', `${ORIGIN}/`, 'en')
-      upsertLink('alternate', `${ORIGIN}/`, 'x-default')
-      for (const l of SEO_LANGS) upsertLink('alternate', `${ORIGIN}/${l}`, l)
+    if (isSmoky || isLanding) {
+      const page = isSmoky ? '/smoky-mountains' : ''
+      upsertLink('canonical', `${ORIGIN}${lang ? `/${lang}` : ''}${page || '/'}`)
+      upsertLink('alternate', `${ORIGIN}${page || '/'}`, 'en')
+      upsertLink('alternate', `${ORIGIN}${page || '/'}`, 'x-default')
+      for (const l of SEO_LANGS) upsertLink('alternate', `${ORIGIN}/${l}${page}`, l)
     } else {
       removeSeoLinks()
     }

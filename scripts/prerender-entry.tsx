@@ -48,7 +48,7 @@ export async function render(lang: string): Promise<Prerendered> {
       <StaticRouter location={location}>
         <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
           <LandingSection headingAs="h1">
-            <Link to="/smoky-mountains">{t('leaderboard.editionSmoky')}</Link>
+            <Link to={`${lang === 'en' ? '' : `/${lang}`}/smoky-mountains`}>{t('leaderboard.editionSmoky')}</Link>
           </LandingSection>
         </div>
       </StaticRouter>
@@ -64,10 +64,10 @@ export async function render(lang: string): Promise<Prerendered> {
   }
 }
 
-export async function renderSmoky(): Promise<Prerendered> {
-  const instance = instanceFor('en')
-  const t = instance.getFixedT('en')
-  const path = '/smoky-mountains'
+export async function renderSmoky(lang: string): Promise<Prerendered> {
+  const instance = instanceFor(lang)
+  const t = instance.getFixedT(lang)
+  const path = `${lang === 'en' ? '' : `/${lang}`}/smoky-mountains`
   const body = renderToStaticMarkup(
     <I18nextProvider i18n={instance}>
       <StaticRouter location={path}>
@@ -78,7 +78,7 @@ export async function renderSmoky(): Promise<Prerendered> {
     </I18nextProvider>,
   )
   return {
-    lang: 'en',
+    lang,
     path,
     title: t('smokyPage.seo.title'),
     description: t('smokyPage.seo.description'),

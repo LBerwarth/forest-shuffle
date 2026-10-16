@@ -471,5 +471,40 @@
     ],
     "playStore": "Pobierz z Google Play",
     "hallOfFame": "Otwórz Galerię sław"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — darmowy kalkulator punktów",
+      "description": "Darmowy kalkulator punktów do Forest Shuffle: Smoky Mountains. Wybierz karty z lasu, rzek i jaskini, a aplikacja wszystko zsumuje. Działa offline, bez reklam."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – kalkulator punktów",
+    "intro": "Forest Shuffle: Smoky Mountains to samodzielna gra z serii Forest Shuffle osadzona w Great Smoky Mountains, z kartami terenu rzeki obok twoich drzew. Ta darmowa aplikacja podlicza twój las na koniec gry: wybierz zagrane drzewa, zwierzęta i rośliny, a aplikacja zastosuje zasadę punktacji każdej karty za ciebie.",
+    "cta": "Podlicz grę Smoky Mountains",
+    "features": [
+      "Wszystkie karty Smoky Mountains, liczone według opublikowanej instrukcji i dodatku",
+      "Rzeki i jaskinia są liczone razem z resztą twojego lasu",
+      "Od 2 do 5 graczy oraz punktacja na żywo: każdy wpisuje swój las na własnym telefonie",
+      "Historia gier, statystyki graczy i światowa Hall of Fame dla Smoky Mountains",
+      "Za darmo, bez reklam, bez konta, działa offline"
+    ],
+    "faqHeading": "Pytania o punktację Smoky Mountains",
+    "faq": [
+      {
+        "q": "Jak liczyć punkty w Forest Shuffle: Smoky Mountains?",
+        "a": "Jak w innych grach Forest Shuffle, każda karta daje punkty według warunku na niej wydrukowanego. Drzewa, zwierzęta i rośliny liczą to, co je otacza, na przykład gatunki drzew, symbole lub kopie innych kart, a karty terenu rzeki dodają drugie siedlisko, z którym punktują niektóre karty. Każda karta w twojej jaskini jest warta jeden punkt, a karty w ręce nie dają punktów. Aplikacja zna zasadę każdej karty i wszystko sumuje."
+      },
+      {
+        "q": "Czy mogę łączyć Smoky Mountains z Forest Shuffle lub jego dodatkami?",
+        "a": "Nie. Smoky Mountains to samodzielna gra i nie można jej łączyć z Forest Shuffle, jego dodatkami ani innymi odsłonami. Wybierz w aplikacji edycję Smoky Mountains, a zobaczysz tylko jej karty."
+      },
+      {
+        "q": "Czy kalkulator Smoky Mountains jest darmowy?",
+        "a": "Tak. Jest darmowy, bez reklam i bez konta. Działa w każdej przeglądarce, offline po pierwszym załadowaniu, i jest też dostępny jako aplikacja na Androida w Google Play."
+      },
+      {
+        "q": "Karta liczy się inaczej niż w mojej grze. Co teraz?",
+        "a": "Zasady kart pochodzą z opublikowanej angielskiej instrukcji i dodatku. Jeśli karta liczy się inaczej niż w twoim egzemplarzu gry, wyślij opinię z ustawień, a zostanie to poprawione."
+      }
+    ]
   }
 }

@@ -469,5 +469,40 @@
     ],
     "playStore": "Downloaden in Google Play",
     "hallOfFame": "Hall of Fame openen"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — gratis puntenteller",
+      "description": "Gratis puntenteller voor Forest Shuffle: Smoky Mountains. Kies de kaarten in je bos, rivieren en grot, en de app telt alles op. Werkt offline, zonder advertenties."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – puntenteller",
+    "intro": "Forest Shuffle: Smoky Mountains is het zelfstandige spel uit de Forest Shuffle-reeks, gesitueerd in de Great Smoky Mountains, met rivierterreinkaarten naast je bomen. Deze gratis app telt je bos aan het einde van het spel: kies de bomen, dieren en planten die je hebt gespeeld en de app past de scoreregel van elke kaart voor je toe.",
+    "cta": "Een Smoky Mountains-spel scoren",
+    "features": [
+      "Alle kaarten van Smoky Mountains, gescoord volgens de gepubliceerde spelregels en bijlage",
+      "Rivieren en de grot tellen mee met de rest van je bos",
+      "2 tot 5 spelers, plus live scoren: iedereen voert zijn eigen bos in op zijn eigen telefoon",
+      "Spelgeschiedenis, spelersstatistieken en een wereldwijde Hall of Fame voor Smoky Mountains",
+      "Gratis, geen advertenties, geen account nodig, werkt offline"
+    ],
+    "faqHeading": "Vragen over het scoren van Smoky Mountains",
+    "faq": [
+      {
+        "q": "Hoe scoor je Forest Shuffle: Smoky Mountains?",
+        "a": "Net als in de andere Forest Shuffle-spellen scoort elke kaart volgens de voorwaarde die erop staat. Bomen, dieren en planten tellen wat hen omringt, zoals boomsoorten, symbolen of exemplaren van andere kaarten, en de rivierterreinkaarten voegen een tweede leefgebied toe waarmee sommige kaarten punten scoren. Elke kaart in je grot is één punt waard; kaarten in je hand tellen niet. De app kent de regel van elke kaart en telt alles op."
+      },
+      {
+        "q": "Kan ik Smoky Mountains combineren met Forest Shuffle of de uitbreidingen?",
+        "a": "Nee. Smoky Mountains is een zelfstandig spel en kan niet worden gecombineerd met Forest Shuffle, de uitbreidingen of andere spin-offs. Kies de editie Smoky Mountains in de app en je ziet alleen de eigen kaarten."
+      },
+      {
+        "q": "Is de Smoky Mountains-teller gratis?",
+        "a": "Ja. Hij is gratis, zonder advertenties en zonder account. Hij werkt in elke browser, offline zodra hij geladen is, en is ook beschikbaar als Android-app in Google Play."
+      },
+      {
+        "q": "Een kaart scoort anders dan in mijn spel. Wat nu?",
+        "a": "De kaartregels komen uit de gepubliceerde Engelse spelregels en bijlage. Als een kaart anders scoort dan in jouw exemplaar van het spel, stuur dan feedback via de instellingen en het wordt gecorrigeerd."
+      }
+    ]
   }
 }

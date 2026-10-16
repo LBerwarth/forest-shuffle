@@ -469,5 +469,40 @@
     ],
     "playStore": "Lataa Google Playsta",
     "hallOfFame": "Avaa Hall of Fame"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — ilmainen pistelaskuri",
+      "description": "Ilmainen pistelaskuri Forest Shuffle: Smoky Mountains -peliin. Valitse metsäsi, jokien ja luolan kortit, niin sovellus laskee kaiken yhteen. Toimii offline, ei mainoksia."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – pistelaskuri",
+    "intro": "Forest Shuffle: Smoky Mountains on Forest Shuffle -sarjan itsenäinen peli, joka sijoittuu Great Smoky Mountainsiin ja jossa puidesi vieressä on jokimaastokortteja. Tämä ilmainen sovellus laskee metsäsi pelin lopussa: valitse pelaamasi puut, eläimet ja kasvit, niin sovellus soveltaa jokaisen kortin pisteytyssääntöä puolestasi.",
+    "cta": "Laske Smoky Mountains -pelin pisteet",
+    "features": [
+      "Kaikki Smoky Mountainsin kortit, pisteytettynä julkaistujen sääntöjen ja liitteen mukaan",
+      "Joet ja luola lasketaan muun metsäsi kanssa",
+      "2–5 pelaajaa sekä reaaliaikainen pisteytys: jokainen syöttää oman metsänsä omalla puhelimellaan",
+      "Pelihistoria, pelaajatilastot ja maailmanlaajuinen Hall of Fame Smoky Mountains -peleille",
+      "Ilmainen, ei mainoksia, ei tiliä, toimii offline"
+    ],
+    "faqHeading": "Kysymyksiä Smoky Mountainsin pisteytyksestä",
+    "faq": [
+      {
+        "q": "Miten Forest Shuffle: Smoky Mountainsin pisteet lasketaan?",
+        "a": "Kuten muissakin Forest Shuffle -peleissä, jokainen kortti antaa pisteitä siihen painetun ehdon mukaan. Puut, eläimet ja kasvit laskevat ympäröiviä asioita, kuten puulajeja, symboleja tai muiden korttien kopioita, ja jokimaastokortit tuovat toisen elinympäristön, josta osa korteista saa pisteitä. Jokainen luolasi kortti on yhden pisteen arvoinen, eikä käteen jääneistä korteista saa pisteitä. Sovellus tuntee jokaisen kortin säännön ja laskee kaiken yhteen."
+      },
+      {
+        "q": "Voiko Smoky Mountainsia yhdistää Forest Shuffleen tai sen laajennuksiin?",
+        "a": "Ei. Smoky Mountains on itsenäinen peli, eikä sitä voi yhdistää Forest Shuffleen, sen laajennuksiin tai muihin sivupeleihin. Valitse sovelluksessa Smoky Mountains -painos, niin näet vain sen kortit."
+      },
+      {
+        "q": "Onko Smoky Mountains -laskuri ilmainen?",
+        "a": "Kyllä. Se on ilmainen, ilman mainoksia eikä vaadi tiliä. Se toimii kaikissa selaimissa, latauksen jälkeen myös offline, ja on saatavilla myös Android-sovelluksena Google Playssa."
+      },
+      {
+        "q": "Kortti lasketaan eri tavalla kuin pelissäni. Mitä teen?",
+        "a": "Korttien säännöt ovat peräisin julkaistuista englanninkielisistä säännöistä ja liitteestä. Jos kortti lasketaan eri tavalla kuin omassa peliversiossasi, lähetä palautetta asetuksista, niin se korjataan."
+      }
+    ]
   }
 }

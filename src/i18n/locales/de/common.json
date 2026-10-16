@@ -473,5 +473,40 @@
     ],
     "playStore": "Bei Google Play laden",
     "hallOfFame": "Hall of Fame öffnen"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Mischwald: Smoky Mountains Punkterechner — kostenlose Wertungs-App",
+      "description": "Kostenloser Punkterechner für Mischwald: Smoky Mountains (Forest Shuffle). Karten in Wald, Flüssen und Höhle wählen – die App zählt alles zusammen. Offline, ohne Werbung."
+    },
+    "heading": "Mischwald: Smoky Mountains – Punkterechner",
+    "intro": "Mischwald: Smoky Mountains ist das eigenständige Spiel der Forest-Shuffle-Reihe, angesiedelt in den Great Smoky Mountains, mit Fluss-Geländekarten neben deinen Bäumen. Diese kostenlose App zählt deinen Wald am Spielende: Wähle die gespielten Bäume, Tiere und Pflanzen, und die App wendet die Wertungsregel jeder Karte für dich an.",
+    "cta": "Smoky-Mountains-Partie werten",
+    "features": [
+      "Das komplette Smoky-Mountains-Deck, gewertet nach Spielregel und Anhang",
+      "Flüsse und Höhle werden mit dem Rest deines Waldes gezählt",
+      "2 bis 5 Spieler, dazu Live-Wertung: Jeder gibt seinen Wald auf dem eigenen Handy ein",
+      "Partiehistorie, Spielerstatistiken und eine weltweite Hall of Fame für Smoky-Mountains-Partien",
+      "Kostenlos, ohne Werbung, ohne Konto, funktioniert offline"
+    ],
+    "faqHeading": "Fragen zur Wertung von Smoky Mountains",
+    "faq": [
+      {
+        "q": "Wie wertet man Mischwald: Smoky Mountains?",
+        "a": "Wie in den anderen Mischwald-Spielen punktet jede Karte nach der Bedingung, die auf ihr steht. Bäume, Tiere und Pflanzen zählen, was sie umgibt, etwa Baumarten, Symbole oder Kopien anderer Karten, und die Fluss-Geländekarten bringen einen zweiten Lebensraum ins Spiel, mit dem manche Karten punkten. Jede Karte in deiner Höhle bringt einen Punkt, Karten auf der Hand zählen nichts. Die App kennt die Regel jeder Karte und rechnet alles zusammen."
+      },
+      {
+        "q": "Kann ich Smoky Mountains mit Mischwald oder seinen Erweiterungen kombinieren?",
+        "a": "Nein. Smoky Mountains ist ein eigenständiges Spiel und lässt sich nicht mit Mischwald, seinen Erweiterungen oder Ablegern kombinieren. Wähle in der App die Edition Smoky Mountains, dann siehst du nur deren Karten."
+      },
+      {
+        "q": "Ist der Smoky-Mountains-Rechner kostenlos?",
+        "a": "Ja. Er ist kostenlos, ohne Werbung und braucht kein Konto. Er läuft in jedem Browser, funktioniert nach dem ersten Laden offline und ist auch als Android-App bei Google Play erhältlich."
+      },
+      {
+        "q": "Eine Karte zählt anders als in meinem Spiel. Was nun?",
+        "a": "Die Kartenregeln stammen aus der veröffentlichten englischen Spielregel und dem Anhang. Wenn eine Karte anders zählt als in deinem Spiel, schick Feedback über die Einstellungen, dann wird es korrigiert."
+      }
+    ]
   }
 }

@@ -47,7 +47,9 @@ function setMeta(html, attr, key, content) {
 
 function pageHtml(template, page) {
   const { lang, title, description, features, faq, body, path: pagePath } = page
-  const url = pagePath ? `${ORIGIN}${pagePath}` : lang === 'en' ? `${ORIGIN}/` : `${ORIGIN}/${lang}`
+  const page_ = pagePath ? '/smoky-mountains' : ''
+  const pathFor = (l) => (l === 'en' ? page_ || '/' : `/${l}${page_}`)
+  const url = `${ORIGIN}${pathFor(lang)}`
   let html = template
   html = setTag(html, /<html lang="[^"]*">/, `<html lang="${lang}">`)
   html = setTag(html, /<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
@@ -59,13 +61,10 @@ function pageHtml(template, page) {
   html = setMeta(html, 'name', 'twitter:title', title)
   html = setMeta(html, 'name', 'twitter:description', description)
 
-  const links = pagePath ? [`<link rel="canonical" href="${url}" />`] : [
+  const links = [
     `<link rel="canonical" href="${url}" />`,
-    `<link rel="alternate" hreflang="en" href="${ORIGIN}/" />`,
-    `<link rel="alternate" hreflang="x-default" href="${ORIGIN}/" />`,
-    ...LANGS.filter((l) => l !== 'en').map(
-      (l) => `<link rel="alternate" hreflang="${l}" href="${ORIGIN}/${l}" />`,
-    ),
+    `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${pathFor('en')}" />`,
+    ...LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${ORIGIN}${pathFor(l)}" />`),
   ]
   const schema = [
     jsonLd({
@@ -118,7 +117,10 @@ for (const lang of LANGS) {
   await mkdir(path.dirname(out), { recursive: true })
   await writeFile(out, html)
 }
-const smoky = await renderSmoky()
-await mkdir(path.join(dist, 'smoky-mountains'), { recursive: true })
-await writeFile(path.join(dist, 'smoky-mountains', 'index.html'), pageHtml(template, smoky))
-console.log(`prerendered ${LANGS.length} landing pages + ${smoky.path}`)
+for (const lang of LANGS) {
+  const smoky = await renderSmoky(lang)
+  const out = path.join(dist, smoky.path, 'index.html')
+  await mkdir(path.dirname(out), { recursive: true })
+  await writeFile(out, pageHtml(template, smoky))
+}
+console.log(`prerendered ${LANGS.length} landing + ${LANGS.length} Smoky Mountains pages`)

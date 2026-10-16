@@ -469,5 +469,40 @@
     ],
     "playStore": "Letöltés a Google Playről",
     "hallOfFame": "Dicsőségtábla megnyitása"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — ingyenes pontszámláló",
+      "description": "Ingyenes pontszámláló a Forest Shuffle: Smoky Mountains játékhoz. Válaszd ki az erdőd, a folyók és a barlang lapjait, az app mindent összead. Offline is működik, reklám nélkül."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – pontszámláló",
+    "intro": "A Forest Shuffle: Smoky Mountains a Forest Shuffle sorozat önálló játéka, amely a Great Smoky Mountains hegységben játszódik, a fáid mellett folyó terepkártyákkal. Ez az ingyenes app a játék végén megszámolja az erdődet: válaszd ki a kijátszott fákat, állatokat és növényeket, és az app alkalmazza minden lap pontozási szabályát.",
+    "cta": "Smoky Mountains játszma pontozása",
+    "features": [
+      "A Smoky Mountains összes lapja, a megjelent szabálykönyv és függelék szerint pontozva",
+      "A folyók és a barlang az erdőd többi részével együtt számítanak",
+      "2–5 játékos, valamint élő pontozás: mindenki a saját telefonján adja meg az erdejét",
+      "Játszmaelőzmények, játékosstatisztikák és világméretű Hírességek Csarnoka a Smoky Mountains játszmákhoz",
+      "Ingyenes, reklám és fiók nélkül, offline is működik"
+    ],
+    "faqHeading": "Kérdések a Smoky Mountains pontozásáról",
+    "faq": [
+      {
+        "q": "Hogyan kell pontozni a Forest Shuffle: Smoky Mountains játékot?",
+        "a": "Ahogy a többi Forest Shuffle játékban, minden lap a rá nyomtatott feltétel szerint ad pontot. A fák, állatok és növények azt számolják, ami körülveszi őket, például fafajokat, szimbólumokat vagy más lapok példányait, a folyó terepkártyák pedig egy második élőhelyet adnak, amellyel egyes lapok pontot szereznek. A barlangodban minden lap egy pontot ér, a kézben maradt lapok nem érnek pontot. Az app ismeri minden lap szabályát és mindent összead."
+      },
+      {
+        "q": "Kombinálhatom a Smoky Mountains-t a Forest Shuffle-lal vagy a kiegészítőivel?",
+        "a": "Nem. A Smoky Mountains önálló játék, és nem kombinálható a Forest Shuffle-lal, annak kiegészítőivel vagy más változataival. Válaszd az appban a Smoky Mountains kiadást, és csak annak lapjait látod."
+      },
+      {
+        "q": "Ingyenes a Smoky Mountains pontszámláló?",
+        "a": "Igen. Ingyenes, reklám és fiók nélkül. Bármely böngészőben fut, betöltés után offline is működik, és Android-appként is elérhető a Google Playen."
+      },
+      {
+        "q": "Egy lap másképp számít, mint a játékomban. Mit tegyek?",
+        "a": "A lapok szabályai a megjelent angol szabálykönyvből és függelékből származnak. Ha egy lap másképp számít, mint a te példányodban, küldj visszajelzést a beállításokból, és javítjuk."
+      }
+    ]
   }
 }

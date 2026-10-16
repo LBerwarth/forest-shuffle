@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi, Sparkles, MessageSquare, X, Hand, Mountain } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
@@ -10,6 +10,7 @@ import { HillSilhouette } from '@/components/ui/HillSilhouette'
 import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
 import { LandingSection } from '@/components/LandingSection'
+import { SEO_LANGS } from '@/components/LangRoute'
 import { SetupGuide } from '@/components/SetupGuide'
 import { UsageStats } from '@/components/stats/UsageStats'
 import { useSettingsStore, selectExpansions } from '@/store/settings-store'
@@ -20,6 +21,8 @@ const NEW_NOTICE_KEY = 'forest-shuffle-hide-new-notice'
 
 export function HomePage() {
   const { t, i18n } = useTranslation()
+  const segment = useLocation().pathname.split('/')[1]
+  const lang = (SEO_LANGS as readonly string[]).includes(segment) ? segment : undefined
   const { data: games = [] } = useGames()
   const { data: players = [] } = usePlayers()
   const { edition, includeAlpine, includeWoodland, includeExploration, includeExmoor } = useSettingsStore()
@@ -204,7 +207,7 @@ export function HomePage() {
 
       <LandingSection>
         <Button asChild size="sm" variant="secondary">
-          <Link to="/smoky-mountains">
+          <Link to={`${lang ? `/${lang}` : ''}/smoky-mountains`}>
             <Mountain className="h-3.5 w-3.5" aria-hidden="true" />
             {t('leaderboard.editionSmoky')}
           </Link>

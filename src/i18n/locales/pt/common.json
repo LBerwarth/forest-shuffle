@@ -469,5 +469,40 @@
     ],
     "playStore": "Disponível no Google Play",
     "hallOfFame": "Abrir o Hall da Fama"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — calculadora de pontos gratuita",
+      "description": "Calculadora de pontos gratuita para Forest Shuffle: Smoky Mountains. Escolha as cartas da sua floresta, rios e caverna, e a app soma tudo. Funciona offline, sem anúncios."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – calculadora de pontos",
+    "intro": "Forest Shuffle: Smoky Mountains é o jogo independente da série Forest Shuffle passado nas Great Smoky Mountains, com cartas de terreno de rio ao lado das suas árvores. Esta app gratuita conta a sua floresta no fim do jogo: escolha as árvores, animais e plantas que jogou e a app aplica por si a regra de pontuação de cada carta.",
+    "cta": "Pontuar um jogo de Smoky Mountains",
+    "features": [
+      "Todas as cartas de Smoky Mountains, pontuadas segundo as regras e o apêndice publicados",
+      "Os rios e a caverna são contados com o resto da sua floresta",
+      "De 2 a 5 jogadores, e pontuação ao vivo: cada um introduz a sua floresta no seu próprio telemóvel",
+      "Histórico de jogos, estatísticas de jogadores e um Hall of Fame mundial para Smoky Mountains",
+      "Grátis, sem anúncios, sem conta, funciona offline"
+    ],
+    "faqHeading": "Perguntas sobre a pontuação de Smoky Mountains",
+    "faq": [
+      {
+        "q": "Como se pontua Forest Shuffle: Smoky Mountains?",
+        "a": "Tal como nos outros jogos Forest Shuffle, cada carta pontua segundo a condição impressa nela. Árvores, animais e plantas contam o que as rodeia, como espécies de árvores, símbolos ou cópias de outras cartas, e as cartas de terreno de rio acrescentam um segundo habitat com o qual algumas cartas pontuam. Cada carta na sua caverna vale um ponto e as cartas que ficam na mão não pontuam. A app conhece a regra de cada carta e soma tudo."
+      },
+      {
+        "q": "Posso combinar Smoky Mountains com Forest Shuffle ou as suas expansões?",
+        "a": "Não. Smoky Mountains é um jogo independente e não pode ser combinado com Forest Shuffle, as suas expansões ou outros derivados. Escolha a edição Smoky Mountains na app e verá apenas as suas cartas."
+      },
+      {
+        "q": "A calculadora de Smoky Mountains é gratuita?",
+        "a": "Sim. É gratuita, sem anúncios e sem conta. Funciona em qualquer navegador, offline depois de carregada, e também está disponível como app Android no Google Play."
+      },
+      {
+        "q": "Uma carta pontua de forma diferente do meu jogo. E agora?",
+        "a": "As regras das cartas vêm das regras e do apêndice publicados em inglês. Se uma carta pontuar de forma diferente da sua cópia do jogo, envie feedback a partir das definições e será corrigido."
+      }
+    ]
   }
 }

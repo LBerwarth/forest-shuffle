@@ -473,5 +473,40 @@
     ],
     "playStore": "Disponible sur Google Play",
     "hallOfFame": "Ouvrir le Hall of Fame"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forêt Mixte : Smoky Mountains — calculateur de points gratuit",
+      "description": "Calculateur de points gratuit pour Forêt Mixte : Smoky Mountains (Forest Shuffle). Choisis les cartes de ta forêt, des rivières et de ta grotte : l'appli additionne tout. Hors ligne, sans pub."
+    },
+    "heading": "Forêt Mixte : Smoky Mountains – calculateur de points",
+    "intro": "Forêt Mixte : Smoky Mountains est le jeu autonome de la série Forest Shuffle, situé dans les Great Smoky Mountains, avec des cartes terrain rivière à côté de tes arbres. Cette appli gratuite compte ta forêt en fin de partie : choisis les arbres, animaux et plantes que tu as joués, et l'appli applique la règle de score de chaque carte pour toi.",
+    "cta": "Compter une partie Smoky Mountains",
+    "features": [
+      "Toutes les cartes de Smoky Mountains, comptées selon la règle et l'annexe publiées",
+      "Les rivières et la grotte sont comptées avec le reste de ta forêt",
+      "De 2 à 5 joueurs, plus le score en direct : chacun saisit sa forêt sur son propre téléphone",
+      "Historique des parties, statistiques des joueurs et Hall of Fame mondial pour Smoky Mountains",
+      "Gratuit, sans pub, sans compte, fonctionne hors ligne"
+    ],
+    "faqHeading": "Questions sur le score de Smoky Mountains",
+    "faq": [
+      {
+        "q": "Comment compter les points de Forêt Mixte : Smoky Mountains ?",
+        "a": "Comme dans les autres jeux Forêt Mixte, chaque carte rapporte des points selon la condition imprimée dessus. Arbres, animaux et plantes comptent ce qui les entoure, comme les espèces d'arbres, les symboles ou les exemplaires d'autres cartes, et les cartes terrain rivière ajoutent un second habitat avec lequel certaines cartes marquent des points. Chaque carte dans ta grotte vaut un point, les cartes restées en main ne rapportent rien. L'appli connaît la règle de chaque carte et additionne tout."
+      },
+      {
+        "q": "Peut-on combiner Smoky Mountains avec Forêt Mixte ou ses extensions ?",
+        "a": "Non. Smoky Mountains est un jeu autonome et ne peut pas être combiné avec Forêt Mixte, ses extensions ou ses autres déclinaisons. Choisis l'édition Smoky Mountains dans l'appli : seules ses cartes s'affichent."
+      },
+      {
+        "q": "Le calculateur Smoky Mountains est-il gratuit ?",
+        "a": "Oui. Il est gratuit, sans pub et sans compte. Il fonctionne dans n'importe quel navigateur, hors ligne une fois chargé, et existe aussi en appli Android sur Google Play."
+      },
+      {
+        "q": "Une carte compte autrement que dans mon jeu. Que faire ?",
+        "a": "Les règles des cartes viennent de la règle et de l'annexe anglaises publiées. Si une carte compte autrement que dans ton exemplaire du jeu, envoie un avis depuis les paramètres et ce sera corrigé."
+      }
+    ]
   }
 }

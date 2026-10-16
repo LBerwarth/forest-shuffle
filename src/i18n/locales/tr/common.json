@@ -469,5 +469,40 @@
     ],
     "playStore": "Google Play’den indir",
     "hallOfFame": "Şöhret Salonu’nu aç"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — ücretsiz puan hesaplayıcı",
+      "description": "Forest Shuffle: Smoky Mountains için ücretsiz puan hesaplayıcı. Ormanındaki, nehirlerdeki ve mağaradaki kartları seç, uygulama hepsini toplasın. Çevrimdışı çalışır, reklamsız."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – puan hesaplayıcı",
+    "intro": "Forest Shuffle: Smoky Mountains, Great Smoky Mountains'ta geçen ve ağaçlarının yanında nehir arazi kartları bulunan, Forest Shuffle serisinin bağımsız oyunudur. Bu ücretsiz uygulama oyun sonunda ormanını sayar: oynadığın ağaçları, hayvanları ve bitkileri seç, uygulama her kartın puanlama kuralını senin için uygular.",
+    "cta": "Smoky Mountains oyununu puanla",
+    "features": [
+      "Smoky Mountains'ın tüm kartları, yayımlanan kural kitabı ve eke göre puanlanır",
+      "Nehirler ve mağara ormanının geri kalanıyla birlikte sayılır",
+      "2 ila 5 oyuncu ve canlı puanlama: herkes kendi ormanını kendi telefonuna girer",
+      "Oyun geçmişi, oyuncu istatistikleri ve Smoky Mountains için dünya çapında bir Şöhretler Salonu",
+      "Ücretsiz, reklamsız, hesap gerektirmez, çevrimdışı çalışır"
+    ],
+    "faqHeading": "Smoky Mountains puanlaması hakkında sorular",
+    "faq": [
+      {
+        "q": "Forest Shuffle: Smoky Mountains nasıl puanlanır?",
+        "a": "Diğer Forest Shuffle oyunlarında olduğu gibi her kart üzerinde yazan koşula göre puan verir. Ağaçlar, hayvanlar ve bitkiler çevrelerindekileri sayar; örneğin ağaç türleri, semboller veya başka kartların kopyaları. Nehir arazi kartları ise bazı kartların puan aldığı ikinci bir yaşam alanı ekler. Mağarandaki her kart bir puan değerindedir, elde kalan kartlar puan getirmez. Uygulama her kartın kuralını bilir ve hepsini toplar."
+      },
+      {
+        "q": "Smoky Mountains'ı Forest Shuffle veya genişlemeleriyle birleştirebilir miyim?",
+        "a": "Hayır. Smoky Mountains bağımsız bir oyundur ve Forest Shuffle, genişlemeleri veya diğer yan oyunlarıyla birleştirilemez. Uygulamada Smoky Mountains sürümünü seç, yalnızca onun kartlarını görürsün."
+      },
+      {
+        "q": "Smoky Mountains hesaplayıcısı ücretsiz mi?",
+        "a": "Evet. Ücretsizdir, reklam içermez ve hesap gerektirmez. Her tarayıcıda çalışır, yüklendikten sonra çevrimdışı da kullanılabilir ve Google Play'de Android uygulaması olarak da mevcuttur."
+      },
+      {
+        "q": "Bir kart oyunumdakinden farklı sayılıyor. Ne yapmalıyım?",
+        "a": "Kart kuralları yayımlanan İngilizce kural kitabı ve ekinden alınmıştır. Bir kart senin oyun kopyandakinden farklı sayılıyorsa ayarlardan geri bildirim gönder, düzeltilecektir."
+      }
+    ]
   }
 }

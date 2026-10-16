@@ -472,5 +472,40 @@
     ],
     "playStore": "Stáhnout z Google Play",
     "hallOfFame": "Otevřít Síň slávy"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — bezplatná kalkulačka bodů",
+      "description": "Bezplatná kalkulačka bodů pro Forest Shuffle: Smoky Mountains. Vyber karty ze svého lesa, řek a jeskyně a aplikace vše sečte. Funguje offline, bez reklam."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – kalkulačka bodů",
+    "intro": "Forest Shuffle: Smoky Mountains je samostatná hra ze série Forest Shuffle zasazená do Great Smoky Mountains, s kartami říčního terénu vedle tvých stromů. Tato bezplatná aplikace na konci hry spočítá tvůj les: vyber zahrané stromy, zvířata a rostliny a aplikace za tebe použije bodovací pravidlo každé karty.",
+    "cta": "Spočítat hru Smoky Mountains",
+    "features": [
+      "Všechny karty Smoky Mountains, počítané podle vydaných pravidel a dodatku",
+      "Řeky a jeskyně se počítají spolu se zbytkem tvého lesa",
+      "2 až 5 hráčů a živé počítání: každý zadává svůj les na vlastním telefonu",
+      "Historie her, statistiky hráčů a celosvětová Síň slávy pro Smoky Mountains",
+      "Zdarma, bez reklam, bez účtu, funguje offline"
+    ],
+    "faqHeading": "Otázky k bodování Smoky Mountains",
+    "faq": [
+      {
+        "q": "Jak se boduje Forest Shuffle: Smoky Mountains?",
+        "a": "Stejně jako v ostatních hrách Forest Shuffle boduje každá karta podle podmínky na ní vytištěné. Stromy, zvířata a rostliny počítají, co je obklopuje, například druhy stromů, symboly nebo kopie jiných karet, a karty říčního terénu přidávají druhé prostředí, se kterým některé karty bodují. Každá karta v tvé jeskyni má hodnotu jednoho bodu, karty v ruce se nepočítají. Aplikace zná pravidlo každé karty a vše sečte."
+      },
+      {
+        "q": "Mohu kombinovat Smoky Mountains s Forest Shuffle nebo jeho rozšířeními?",
+        "a": "Ne. Smoky Mountains je samostatná hra a nelze ji kombinovat s Forest Shuffle, jeho rozšířeními ani dalšími odnožemi. V aplikaci zvol edici Smoky Mountains a uvidíš jen její karty."
+      },
+      {
+        "q": "Je kalkulačka Smoky Mountains zdarma?",
+        "a": "Ano. Je zdarma, bez reklam a bez účtu. Funguje v každém prohlížeči, po načtení i offline, a je k dispozici také jako aplikace pro Android na Google Play."
+      },
+      {
+        "q": "Karta se počítá jinak než v mé hře. Co teď?",
+        "a": "Pravidla karet pocházejí z vydaných anglických pravidel a dodatku. Pokud se karta počítá jinak než ve tvém výtisku hry, pošli zpětnou vazbu z nastavení a bude to opraveno."
+      }
+    ]
   }
 }

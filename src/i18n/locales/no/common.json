@@ -469,5 +469,40 @@
     ],
     "playStore": "Last ned på Google Play",
     "hallOfFame": "Åpne Hall of Fame"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains — gratis poengkalkulator",
+      "description": "Gratis poengkalkulator for Forest Shuffle: Smoky Mountains. Velg kortene i skogen, elvene og hulen din, så legger appen sammen alt. Fungerer offline, uten reklame."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains – poengkalkulator",
+    "intro": "Forest Shuffle: Smoky Mountains er det frittstående spillet i Forest Shuffle-serien, satt til Great Smoky Mountains, med elveterrengkort ved siden av trærne dine. Denne gratisappen teller opp skogen din ved slutten av spillet: velg trærne, dyrene og plantene du har spilt, så bruker appen poengregelen til hvert kort for deg.",
+    "cta": "Tell opp et Smoky Mountains-spill",
+    "features": [
+      "Alle kortene i Smoky Mountains, telt opp etter de publiserte reglene og vedlegget",
+      "Elvene og hulen telles sammen med resten av skogen din",
+      "2 til 5 spillere, pluss direkte opptelling: alle legger inn sin egen skog på sin egen telefon",
+      "Spillhistorikk, spillerstatistikk og en verdensomspennende Hall of Fame for Smoky Mountains",
+      "Gratis, uten reklame, uten konto, fungerer offline"
+    ],
+    "faqHeading": "Spørsmål om poengtelling i Smoky Mountains",
+    "faq": [
+      {
+        "q": "Hvordan teller man poeng i Forest Shuffle: Smoky Mountains?",
+        "a": "Som i de andre Forest Shuffle-spillene gir hvert kort poeng etter betingelsen som står på det. Trær, dyr og planter teller det som omgir dem, for eksempel treslag, symboler eller kopier av andre kort, og elveterrengkortene legger til et ekstra leveområde som noen kort gir poeng for. Hvert kort i hulen din er verdt ett poeng, og kort igjen på hånden gir ingenting. Appen kjenner regelen til hvert kort og legger sammen alt."
+      },
+      {
+        "q": "Kan jeg kombinere Smoky Mountains med Forest Shuffle eller utvidelsene?",
+        "a": "Nei. Smoky Mountains er et frittstående spill og kan ikke kombineres med Forest Shuffle, utvidelsene eller andre spin-offs. Velg utgaven Smoky Mountains i appen, så ser du bare dens kort."
+      },
+      {
+        "q": "Er Smoky Mountains-kalkulatoren gratis?",
+        "a": "Ja. Den er gratis, uten reklame og krever ingen konto. Den kjører i alle nettlesere, fungerer offline når den er lastet inn, og finnes også som Android-app på Google Play."
+      },
+      {
+        "q": "Et kort teller annerledes enn i spillet mitt. Hva nå?",
+        "a": "Kortreglene kommer fra de publiserte engelske reglene og vedlegget. Hvis et kort teller annerledes enn i ditt eksemplar av spillet, send tilbakemelding fra innstillingene, så blir det rettet."
+      }
+    ]
   }
 }
