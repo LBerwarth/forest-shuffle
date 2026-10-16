@@ -13,6 +13,7 @@ interface Finger {
   x: number
   y: number
   color: string
+  lifted?: boolean
 }
 
 export function FirstPlayerPage() {
@@ -40,7 +41,11 @@ export function FirstPlayerPage() {
   function down(e: PointerEvent) {
     const { pointerId, clientX: x, clientY: y } = e
     setState((s) => {
-      if (s.winner !== null) return s
+      if (s.winner !== null) {
+        // the result stays on screen until everyone has let go and someone taps again
+        if (![...s.fingers.values()].every((f) => f.lifted)) return s
+        return { fingers: new Map([[pointerId, { x, y, color: COLORS[0] }]]), winner: null }
+      }
       const used = new Set([...s.fingers.values()].map((f) => f.color))
       const color = COLORS.find((c) => !used.has(c)) ?? COLORS[s.fingers.size % COLORS.length]
       return { ...s, fingers: new Map(s.fingers).set(pointerId, { x, y, color }) }
@@ -51,16 +56,18 @@ export function FirstPlayerPage() {
     const { pointerId, clientX: x, clientY: y } = e
     setState((s) => {
       const f = s.fingers.get(pointerId)
-      return f ? { ...s, fingers: new Map(s.fingers).set(pointerId, { ...f, x, y }) } : s
+      return f && !f.lifted ? { ...s, fingers: new Map(s.fingers).set(pointerId, { ...f, x, y }) } : s
     })
   }
 
   function up(e: PointerEvent) {
     const { pointerId } = e
     setState((s) => {
-      if (!s.fingers.has(pointerId)) return s
+      const f = s.fingers.get(pointerId)
+      if (!f) return s
       const next = new Map(s.fingers)
-      next.delete(pointerId)
+      if (pointerId === s.winner) next.set(pointerId, { ...f, lifted: true })
+      else next.delete(pointerId)
       return { fingers: next, winner: next.size > 0 ? s.winner : null }
     })
   }
