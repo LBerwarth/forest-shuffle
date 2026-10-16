@@ -31,7 +31,7 @@ export function UsageStats() {
   const cell = 'py-1 pl-2 text-right tabular-nums'
 
   return (
-    <Card className="mt-4">
+    <Card className="mb-6">
       <CardHeader>
         <h2 className="font-heading text-base font-semibold text-forest-700 flex items-center gap-1.5">
           <BarChart3 className="h-4 w-4 text-forest-500" />

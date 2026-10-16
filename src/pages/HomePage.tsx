@@ -131,6 +131,8 @@ export function HomePage() {
 
       <NoAppNotice className="mb-6" />
 
+      <UsageStats />
+
       {/* Quick actions grid */}
       <div className="grid grid-cols-2 gap-3 mb-6">
         {quickActions.map(({ to, icon: Icon, label, description, color }) => (
@@ -199,8 +201,6 @@ export function HomePage() {
           </CardContent>
         </Card>
       </div>
-
-      <UsageStats />
 
       <LandingSection>
         <Button asChild size="sm" variant="secondary">
