@@ -260,7 +260,14 @@
     "minGamesShort": "da {{count}} partite",
     "onlySoloGames": "Per ora hai solo partite in solitario — passa alla vista in solitario.",
     "showSoloGames": "Mostra solitario",
-    "showMorePlayers": "Mostra altri (+{{count}})"
+    "showMorePlayers": "Mostra altri (+{{count}})",
+    "usageTitle": "Partite conteggiate",
+    "usageSubtitle": "Nel mondo · una partita dal vivo conta una volta",
+    "usageAll": "Tutte le versioni",
+    "usageWeek": "Settimana",
+    "usageMonth": "Mese",
+    "usageYear": "Anno",
+    "usageTotal": "Totale"
   },
   "tag": {
     "pawed": "Zampe",

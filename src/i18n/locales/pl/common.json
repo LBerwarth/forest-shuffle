@@ -262,7 +262,14 @@
     "minGamesShort": "od {{count}} partii",
     "onlySoloGames": "Masz na razie tylko partie solo — przełącz na widok solo.",
     "showSoloGames": "Pokaż solo",
-    "showMorePlayers": "Pokaż więcej (+{{count}})"
+    "showMorePlayers": "Pokaż więcej (+{{count}})",
+    "usageTitle": "Policzone gry",
+    "usageSubtitle": "Na całym świecie · gra na żywo liczy się raz",
+    "usageAll": "Wszystkie wersje",
+    "usageWeek": "Tydzień",
+    "usageMonth": "Miesiąc",
+    "usageYear": "Rok",
+    "usageTotal": "Razem"
   },
   "tag": {
     "pawed": "Łapy",

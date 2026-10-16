@@ -260,7 +260,14 @@
     "minGamesShort": "från {{count}} partier",
     "onlySoloGames": "Du har hittills bara solopartier — byt till solovyn.",
     "showSoloGames": "Visa solo",
-    "showMorePlayers": "Visa fler (+{{count}})"
+    "showMorePlayers": "Visa fler (+{{count}})",
+    "usageTitle": "Räknade spel",
+    "usageSubtitle": "Världen över · ett live-spel räknas en gång",
+    "usageAll": "Alla versioner",
+    "usageWeek": "Vecka",
+    "usageMonth": "Månad",
+    "usageYear": "År",
+    "usageTotal": "Totalt"
   },
   "tag": {
     "pawed": "Tassdjur",

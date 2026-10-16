@@ -260,7 +260,14 @@
     "minGamesShort": "a partir de {{count}} partides",
     "onlySoloGames": "De moment només tens partides en solitari — canvia a la vista en solitari.",
     "showSoloGames": "Mostra el solitari",
-    "showMorePlayers": "Mostra'n més (+{{count}})"
+    "showMorePlayers": "Mostra'n més (+{{count}})",
+    "usageTitle": "Partides puntuades",
+    "usageSubtitle": "Arreu del món · una partida en directe compta una vegada",
+    "usageAll": "Totes les versions",
+    "usageWeek": "Setmana",
+    "usageMonth": "Mes",
+    "usageYear": "Any",
+    "usageTotal": "Total"
   },
   "tag": {
     "pawed": "Potes",

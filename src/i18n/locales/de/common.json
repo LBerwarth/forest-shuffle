@@ -263,7 +263,14 @@
     "minGamesShort": "ab {{count}} Spielen",
     "onlySoloGames": "Du hast bisher nur Solo-Partien — wechsle zur Solo-Ansicht.",
     "showSoloGames": "Solo anzeigen",
-    "showMorePlayers": "Weitere anzeigen (+{{count}})"
+    "showMorePlayers": "Weitere anzeigen (+{{count}})",
+    "usageTitle": "Gezählte Partien",
+    "usageSubtitle": "Weltweit · eine Live-Partie zählt einmal",
+    "usageAll": "Alle Versionen",
+    "usageWeek": "Woche",
+    "usageMonth": "Monat",
+    "usageYear": "Jahr",
+    "usageTotal": "Gesamt"
   },
   "tag": {
     "pawed": "Pfoten",

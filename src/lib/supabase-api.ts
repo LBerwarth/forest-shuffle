@@ -5,6 +5,8 @@ import type { GameWithPlayers } from '@/types/game'
 import type { ScoreBreakdown } from '@/types/scoring'
 import type { LiveSession, LiveSessionPlayer, LiveSessionStatus } from '@/types/live-session'
 import type { CardCategory, Expansion, GameEdition } from '@/types/card'
+import { CARDS } from '@/data/cards'
+import { EXMOOR_CARDS } from '@/data/exmoor-cards'
 
 /** Rows owned by this account, plus unclaimed legacy rows keyed by this device. */
 async function ownerFilter(): Promise<string> {
@@ -186,6 +188,7 @@ export async function createGame(
     notes: game.notes ?? null,
     edition: game.edition ?? 'classic',
     device_id: getDeviceId(),
+    ...(game.live_session_id && { live_session_id: game.live_session_id }),
   })
   if (gameError) throw gameError
 
@@ -620,4 +623,37 @@ export async function fetchHallOfFame({
       })),
     },
   }
+}
+
+// ─── Usage stats ────────────────────────────────────────────────────────────
+
+export interface UsageRow {
+  edition: GameEdition
+  expansions: Expansion[]
+  week: number
+  month: number
+  year: number
+  total: number
+}
+
+function expansionCards(): Partial<Record<GameEdition, Partial<Record<Expansion, string[]>>>> {
+  const keys = (cards: { key: string; expansion: Expansion }[], exp: Expansion) =>
+    cards.filter((c) => c.expansion === exp).map((c) => c.key)
+  return {
+    classic: {
+      alpine: keys(CARDS, 'alpine'),
+      woodland: keys(CARDS, 'woodland'),
+      exploration: keys(CARDS, 'exploration'),
+    },
+    dartmoor: { dartmoor_exmoor: keys(EXMOOR_CARDS, 'dartmoor_exmoor') },
+  }
+}
+
+export async function fetchUsageStats(): Promise<UsageRow[]> {
+  if (!supabase) throw new Error('Supabase not configured')
+  const { data, error } = await supabase.rpc('usage_stats', {
+    p_expansion_cards: expansionCards(),
+  })
+  if (error) throw error
+  return (data ?? []) as UsageRow[]
 }

@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/Badge'
 import { NoAppNotice } from '@/components/NoAppNotice'
 import { LandingSection } from '@/components/LandingSection'
 import { SetupGuide } from '@/components/SetupGuide'
+import { UsageStats } from '@/components/stats/UsageStats'
 import { useSettingsStore, selectExpansions } from '@/store/settings-store'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
@@ -192,6 +193,8 @@ export function HomePage() {
           </CardContent>
         </Card>
       </div>
+
+      <UsageStats />
 
       <LandingSection />
 

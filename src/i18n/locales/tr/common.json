@@ -260,7 +260,14 @@
     "minGamesShort": "{{count}} oyundan itibaren",
     "onlySoloGames": "Şimdilik yalnızca solo oyunların var — solo görünüme geç.",
     "showSoloGames": "Soloyu göster",
-    "showMorePlayers": "Daha fazla göster (+{{count}})"
+    "showMorePlayers": "Daha fazla göster (+{{count}})",
+    "usageTitle": "Puanlanan oyunlar",
+    "usageSubtitle": "Dünya genelinde · canlı oyun bir kez sayılır",
+    "usageAll": "Tüm sürümler",
+    "usageWeek": "Hafta",
+    "usageMonth": "Ay",
+    "usageYear": "Yıl",
+    "usageTotal": "Toplam"
   },
   "tag": {
     "pawed": "Pençeliler",

@@ -260,7 +260,14 @@
     "minGamesShort": "fra {{count}} partier",
     "onlySoloGames": "Du har så langt bare solopartier — bytt til solovisningen.",
     "showSoloGames": "Vis solo",
-    "showMorePlayers": "Vis flere (+{{count}})"
+    "showMorePlayers": "Vis flere (+{{count}})",
+    "usageTitle": "Telte spill",
+    "usageSubtitle": "På verdensbasis · et live-spill teller én gang",
+    "usageAll": "Alle versjoner",
+    "usageWeek": "Uke",
+    "usageMonth": "Måned",
+    "usageYear": "År",
+    "usageTotal": "Totalt"
   },
   "tag": {
     "pawed": "Labbedyr",

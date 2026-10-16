@@ -7,6 +7,7 @@ export interface Game {
   player_count: number
   notes?: string
   edition?: GameEdition
+  live_session_id?: string
 }
 
 export interface GamePlayer {

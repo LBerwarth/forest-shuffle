@@ -263,7 +263,14 @@
     "minGamesShort": "à partir de {{count}} parties",
     "onlySoloGames": "Vous n'avez que des parties solo pour l'instant — passez à la vue solo.",
     "showSoloGames": "Afficher le solo",
-    "showMorePlayers": "Afficher plus (+{{count}})"
+    "showMorePlayers": "Afficher plus (+{{count}})",
+    "usageTitle": "Parties comptées",
+    "usageSubtitle": "Dans le monde · une partie en direct compte une fois",
+    "usageAll": "Toutes les versions",
+    "usageWeek": "Semaine",
+    "usageMonth": "Mois",
+    "usageYear": "Année",
+    "usageTotal": "Total"
   },
   "tag": {
     "pawed": "Pattes",

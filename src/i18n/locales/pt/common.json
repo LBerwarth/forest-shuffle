@@ -260,7 +260,14 @@
     "minGamesShort": "a partir de {{count}} partidas",
     "onlySoloGames": "Por enquanto só tens partidas a solo — muda para a vista a solo.",
     "showSoloGames": "Mostrar solo",
-    "showMorePlayers": "Mostrar mais (+{{count}})"
+    "showMorePlayers": "Mostrar mais (+{{count}})",
+    "usageTitle": "Partidas pontuadas",
+    "usageSubtitle": "No mundo · uma partida ao vivo conta uma vez",
+    "usageAll": "Todas as versões",
+    "usageWeek": "Semana",
+    "usageMonth": "Mês",
+    "usageYear": "Ano",
+    "usageTotal": "Total"
   },
   "tag": {
     "pawed": "Patas",

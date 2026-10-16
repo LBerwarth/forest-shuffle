@@ -262,7 +262,14 @@
     "minGamesShort": "від {{count}} партій",
     "onlySoloGames": "Поки що у вас лише сольні партії — перейдіть до сольного перегляду.",
     "showSoloGames": "Показати соло",
-    "showMorePlayers": "Показати більше (+{{count}})"
+    "showMorePlayers": "Показати більше (+{{count}})",
+    "usageTitle": "Підраховані ігри",
+    "usageSubtitle": "У світі · жива гра рахується один раз",
+    "usageAll": "Усі версії",
+    "usageWeek": "Тиждень",
+    "usageMonth": "Місяць",
+    "usageYear": "Рік",
+    "usageTotal": "Усього"
   },
   "tag": {
     "pawed": "Лапи",

@@ -260,7 +260,14 @@
     "minGamesShort": "vanaf {{count}} partijen",
     "onlySoloGames": "Je hebt tot nu toe alleen solopartijen — schakel over naar de soloweergave.",
     "showSoloGames": "Solo tonen",
-    "showMorePlayers": "Meer tonen (+{{count}})"
+    "showMorePlayers": "Meer tonen (+{{count}})",
+    "usageTitle": "Gescoorde spellen",
+    "usageSubtitle": "Wereldwijd · een live spel telt één keer",
+    "usageAll": "Alle versies",
+    "usageWeek": "Week",
+    "usageMonth": "Maand",
+    "usageYear": "Jaar",
+    "usageTotal": "Totaal"
   },
   "tag": {
     "pawed": "Poten",

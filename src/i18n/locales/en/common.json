@@ -263,7 +263,14 @@
     "minGamesShort": "from {{count}} games",
     "onlySoloGames": "You only have solo games so far — switch to the solo view.",
     "showSoloGames": "Show solo games",
-    "showMorePlayers": "Show more (+{{count}})"
+    "showMorePlayers": "Show more (+{{count}})",
+    "usageTitle": "Games scored",
+    "usageSubtitle": "Worldwide · a live game counts once",
+    "usageAll": "All versions",
+    "usageWeek": "Week",
+    "usageMonth": "Month",
+    "usageYear": "Year",
+    "usageTotal": "Total"
   },
   "tag": {
     "pawed": "Pawed",

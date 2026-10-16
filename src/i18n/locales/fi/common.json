@@ -260,7 +260,14 @@
     "minGamesShort": "alkaen {{count}} pelistä",
     "onlySoloGames": "Sinulla on toistaiseksi vain soolopelejä — vaihda soolonäkymään.",
     "showSoloGames": "Näytä soolo",
-    "showMorePlayers": "Näytä lisää (+{{count}})"
+    "showMorePlayers": "Näytä lisää (+{{count}})",
+    "usageTitle": "Lasketut pelit",
+    "usageSubtitle": "Maailmanlaajuisesti · live-peli lasketaan kerran",
+    "usageAll": "Kaikki versiot",
+    "usageWeek": "Viikko",
+    "usageMonth": "Kuukausi",
+    "usageYear": "Vuosi",
+    "usageTotal": "Yhteensä"
   },
   "tag": {
     "pawed": "Tassueläimet",

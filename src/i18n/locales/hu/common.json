@@ -260,7 +260,14 @@
     "minGamesShort": "{{count}} játszmától",
     "onlySoloGames": "Eddig csak szóló játszmáid vannak — válts a szóló nézetre.",
     "showSoloGames": "Szóló megjelenítése",
-    "showMorePlayers": "Továbbiak megjelenítése (+{{count}})"
+    "showMorePlayers": "Továbbiak megjelenítése (+{{count}})",
+    "usageTitle": "Pontozott játékok",
+    "usageSubtitle": "Világszerte · egy élő játék egyszer számít",
+    "usageAll": "Minden változat",
+    "usageWeek": "Hét",
+    "usageMonth": "Hónap",
+    "usageYear": "Év",
+    "usageTotal": "Összesen"
   },
   "tag": {
     "pawed": "Mancsosok",

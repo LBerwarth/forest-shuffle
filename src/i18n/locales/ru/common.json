@@ -262,7 +262,14 @@
     "minGamesShort": "от {{count}} партий",
     "onlySoloGames": "Пока у вас только сольные партии — переключитесь на сольный вид.",
     "showSoloGames": "Показать соло",
-    "showMorePlayers": "Показать ещё (+{{count}})"
+    "showMorePlayers": "Показать ещё (+{{count}})",
+    "usageTitle": "Подсчитанные игры",
+    "usageSubtitle": "В мире · живая игра считается один раз",
+    "usageAll": "Все версии",
+    "usageWeek": "Неделя",
+    "usageMonth": "Месяц",
+    "usageYear": "Год",
+    "usageTotal": "Всего"
   },
   "tag": {
     "pawed": "Лапы",

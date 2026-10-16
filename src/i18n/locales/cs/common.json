@@ -263,7 +263,14 @@
     "minGamesShort": "od {{count}} partií",
     "onlySoloGames": "Zatím máš jen sólové partie — přepni na sólové zobrazení.",
     "showSoloGames": "Zobrazit sólo",
-    "showMorePlayers": "Zobrazit další (+{{count}})"
+    "showMorePlayers": "Zobrazit další (+{{count}})",
+    "usageTitle": "Spočítané hry",
+    "usageSubtitle": "Celosvětově · živá hra se počítá jednou",
+    "usageAll": "Všechny verze",
+    "usageWeek": "Týden",
+    "usageMonth": "Měsíc",
+    "usageYear": "Rok",
+    "usageTotal": "Celkem"
   },
   "tag": {
     "pawed": "Tlapky",

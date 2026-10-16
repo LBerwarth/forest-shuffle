@@ -101,6 +101,7 @@ export function LiveResultPage() {
       played_at: new Date().toISOString(),
       player_count: rankedPlayers.length,
       edition: session.edition !== 'classic' ? session.edition : undefined,
+      live_session_id: sessionId,
       players: gamePlayers,
     }
 
