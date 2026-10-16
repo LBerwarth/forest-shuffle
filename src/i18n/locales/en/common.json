@@ -473,5 +473,40 @@
     ],
     "playStore": "Get it on Google Play",
     "hallOfFame": "Open the Hall of Fame"
+  },
+  "smokyPage": {
+    "seo": {
+      "title": "Forest Shuffle: Smoky Mountains Score Calculator — Free Scoring App",
+      "description": "Free score calculator for Forest Shuffle: Smoky Mountains. Pick the cards in your forest, rivers and cave, and the app adds up every card. Works offline, no ads."
+    },
+    "heading": "Forest Shuffle: Smoky Mountains score calculator",
+    "intro": "Forest Shuffle: Smoky Mountains is the stand-alone Forest Shuffle game set in the Great Smoky Mountains, with river terrain cards next to your trees. This free scoring app adds up your forest at the end of the game: pick the trees, animals and plants you played, and the app applies each card’s scoring rule for you.",
+    "cta": "Score a Smoky Mountains game",
+    "features": [
+      "The full Smoky Mountains deck, scored by the rules in the published rulebook and appendix",
+      "Rivers and the cave are counted together with the rest of your forest",
+      "2 to 5 players, plus live scoring where everyone enters their own forest on their own phone",
+      "Game history, player stats and a worldwide Hall of Fame for Smoky Mountains games",
+      "Free, no ads, no account required, works offline"
+    ],
+    "faqHeading": "Smoky Mountains scoring questions",
+    "faq": [
+      {
+        "q": "How do you score Forest Shuffle: Smoky Mountains?",
+        "a": "As in the other Forest Shuffle games, every card scores by the condition printed on it. Trees, animals and plants count what surrounds them, such as tree species, symbols or copies of other cards, and the river terrain cards add a second kind of habitat that some cards score with. Every card in your cave is worth one point, and cards left in your hand score nothing. The app knows each card’s rule and adds everything up."
+      },
+      {
+        "q": "Can I combine Smoky Mountains with Forest Shuffle or its expansions?",
+        "a": "No. Smoky Mountains is a stand-alone game and cannot be combined with Forest Shuffle, its expansions or its spin-offs. Choose the Smoky Mountains edition in the app and it shows only its own cards."
+      },
+      {
+        "q": "Is the Smoky Mountains scorer free?",
+        "a": "Yes. It is free, has no ads and needs no account. It runs in any browser, works offline once loaded, and is also available as an Android app on Google Play."
+      },
+      {
+        "q": "A card scored differently from my game. What now?",
+        "a": "The card rules come from the published English rulebook and appendix. If a card scores differently from your copy of the game, send feedback from the settings page and it will be corrected."
+      }
+    ]
   }
 }

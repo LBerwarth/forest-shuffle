@@ -414,4 +414,8 @@
     <xhtml:link rel="alternate" hreflang="no" href="https://forest-shuffle-app.vercel.app/no"/>
     <xhtml:link rel="alternate" hreflang="fi" href="https://forest-shuffle-app.vercel.app/fi"/>
   </url>
+  <url>
+    <loc>https://forest-shuffle-app.vercel.app/smoky-mountains</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
 </urlset>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi, Sparkles, MessageSquare, X, Hand } from 'lucide-react'
+import { Calculator, History, Users, BarChart3, Settings, Trophy, Wifi, Sparkles, MessageSquare, X, Hand, Mountain } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { AcornIcon } from '@/components/ui/AcornIcon'
@@ -202,7 +202,14 @@ export function HomePage() {
 
       <UsageStats />
 
-      <LandingSection />
+      <LandingSection>
+        <Button asChild size="sm" variant="secondary">
+          <Link to="/smoky-mountains">
+            <Mountain className="h-3.5 w-3.5" aria-hidden="true" />
+            {t('leaderboard.editionSmoky')}
+          </Link>
+        </Button>
+      </LandingSection>
 
       {/* Settings link */}
       <Link

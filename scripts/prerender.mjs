@@ -27,7 +27,7 @@ await build({
   alias: { '@': path.join(root, 'src') },
   logLevel: 'warning',
 })
-const { LANGS, render } = await import(`file://${entryOut}`)
+const { LANGS, render, renderSmoky } = await import(`file://${entryOut}`)
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -46,8 +46,8 @@ function setMeta(html, attr, key, content) {
 }
 
 function pageHtml(template, page) {
-  const { lang, title, description, features, faq, body } = page
-  const url = lang === 'en' ? `${ORIGIN}/` : `${ORIGIN}/${lang}`
+  const { lang, title, description, features, faq, body, path: pagePath } = page
+  const url = pagePath ? `${ORIGIN}${pagePath}` : lang === 'en' ? `${ORIGIN}/` : `${ORIGIN}/${lang}`
   let html = template
   html = setTag(html, /<html lang="[^"]*">/, `<html lang="${lang}">`)
   html = setTag(html, /<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
@@ -59,7 +59,7 @@ function pageHtml(template, page) {
   html = setMeta(html, 'name', 'twitter:title', title)
   html = setMeta(html, 'name', 'twitter:description', description)
 
-  const links = [
+  const links = pagePath ? [`<link rel="canonical" href="${url}" />`] : [
     `<link rel="canonical" href="${url}" />`,
     `<link rel="alternate" hreflang="en" href="${ORIGIN}/" />`,
     `<link rel="alternate" hreflang="x-default" href="${ORIGIN}/" />`,
@@ -118,4 +118,7 @@ for (const lang of LANGS) {
   await mkdir(path.dirname(out), { recursive: true })
   await writeFile(out, html)
 }
-console.log(`prerendered ${LANGS.length} landing pages`)
+const smoky = await renderSmoky()
+await mkdir(path.join(dist, 'smoky-mountains'), { recursive: true })
+await writeFile(path.join(dist, 'smoky-mountains', 'index.html'), pageHtml(template, smoky))
+console.log(`prerendered ${LANGS.length} landing pages + ${smoky.path}`)

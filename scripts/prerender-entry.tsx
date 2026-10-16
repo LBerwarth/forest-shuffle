@@ -4,6 +4,7 @@ import path from 'node:path'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import { createInstance } from 'i18next'
+import { Link } from 'react-router-dom'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import { LandingSection, type FaqEntry } from '../src/components/LandingSection'
 
@@ -18,6 +19,7 @@ export interface Prerendered {
   features: string[]
   faq: FaqEntry[]
   body: string
+  path?: string
 }
 
 // Reads the locale files straight off disk: the app's own i18n module relies on
@@ -45,7 +47,9 @@ export async function render(lang: string): Promise<Prerendered> {
     <I18nextProvider i18n={instance}>
       <StaticRouter location={location}>
         <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
-          <LandingSection headingAs="h1" />
+          <LandingSection headingAs="h1">
+            <Link to="/smoky-mountains">{t('leaderboard.editionSmoky')}</Link>
+          </LandingSection>
         </div>
       </StaticRouter>
     </I18nextProvider>,
@@ -56,6 +60,30 @@ export async function render(lang: string): Promise<Prerendered> {
     description: t('seo.description'),
     features: t('landing.features', { returnObjects: true }) as string[],
     faq: t('landing.faq', { returnObjects: true }) as FaqEntry[],
+    body,
+  }
+}
+
+export async function renderSmoky(): Promise<Prerendered> {
+  const instance = instanceFor('en')
+  const t = instance.getFixedT('en')
+  const path = '/smoky-mountains'
+  const body = renderToStaticMarkup(
+    <I18nextProvider i18n={instance}>
+      <StaticRouter location={path}>
+        <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
+          <LandingSection headingAs="h1" prefix="smokyPage" />
+        </div>
+      </StaticRouter>
+    </I18nextProvider>,
+  )
+  return {
+    lang: 'en',
+    path,
+    title: t('smokyPage.seo.title'),
+    description: t('smokyPage.seo.description'),
+    features: t('smokyPage.features', { returnObjects: true }) as string[],
+    faq: t('smokyPage.faq', { returnObjects: true }) as FaqEntry[],
     body,
   }
 }

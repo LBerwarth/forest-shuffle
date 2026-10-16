@@ -42,15 +42,20 @@ export function LangRoute({ lang }: { lang?: SeoLang }) {
   }, [lang, setLanguage])
 
   useEffect(() => {
-    document.title = t('seo.title')
+    const isSmoky = pathname.endsWith('/smoky-mountains')
+    const seo = isSmoky ? 'smokyPage.seo' : 'seo'
+    document.title = t(`${seo}.title`)
     document.documentElement.lang = i18n.language
     document
       .querySelector('meta[name="description"]')
-      ?.setAttribute('content', t('seo.description'))
+      ?.setAttribute('content', t(`${seo}.description`))
 
     // Canonical + hreflang only on the 18 landing URLs listed in the sitemap
     const isLanding = pathname === '/' || pathname === `/${lang}`
-    if (isLanding) {
+    if (isSmoky) {
+      removeSeoLinks()
+      upsertLink('canonical', `${ORIGIN}/smoky-mountains`)
+    } else if (isLanding) {
       upsertLink('canonical', lang ? `${ORIGIN}/${lang}` : `${ORIGIN}/`)
       upsertLink('alternate', `${ORIGIN}/`, 'en')
       upsertLink('alternate', `${ORIGIN}/`, 'x-default')

@@ -8,6 +8,7 @@ import { HomePage } from '@/pages/HomePage'
 
 // Everything but the landing page loads on demand: the charting and animation
 // bundles are dead weight on first paint, which is what Google measures.
+const SmokyMountainsPage = lazy(() => import('@/pages/SmokyMountainsPage').then((m) => ({ default: m.SmokyMountainsPage })))
 const NewGamePage = lazy(() => import('@/pages/NewGamePage').then((m) => ({ default: m.NewGamePage })))
 const ScoreWizardPage = lazy(() => import('@/pages/ScoreWizardPage').then((m) => ({ default: m.ScoreWizardPage })))
 const GameResultPage = lazy(() => import('@/pages/GameResultPage').then((m) => ({ default: m.GameResultPage })))
@@ -50,6 +51,7 @@ const appRoutes = (
       <Route path="leaderboard" element={<LeaderboardPage />} />
       <Route path="settings" element={<SettingsPage />} />
       <Route path="privacy" element={<PrivacyPage />} />
+      <Route path="smoky-mountains" element={<SmokyMountainsPage />} />
     </Route>
     {/* Wizard routes without bottom nav */}
     <Route path="first-player" element={<FirstPlayerPage />} />

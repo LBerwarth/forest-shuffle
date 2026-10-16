@@ -7,6 +7,7 @@ The app is a progressive web app: it works offline, needs no account and carries
 ## Pages
 
 - [Home](https://forest-shuffle-app.vercel.app/): what the app does, feature list and answers to common scoring questions.
+- [Smoky Mountains score calculator](https://forest-shuffle-app.vercel.app/smoky-mountains): scoring for the stand-alone Forest Shuffle: Smoky Mountains game, with FAQ.
 - [Score a game](https://forest-shuffle-app.vercel.app/new-game): pick the edition and expansions, then enter each player's cards.
 - [Live session](https://forest-shuffle-app.vercel.app/join): every player enters their own forest on their own phone during the same game.
 - [Game history](https://forest-shuffle-app.vercel.app/history): past games with per-card score breakdowns.
