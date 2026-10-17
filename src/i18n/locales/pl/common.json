@@ -354,6 +354,12 @@
     "emailLabel": "Twój e-mail (opcjonalnie, do odpowiedzi)",
     "emailPlaceholder": "ty@przyklad.pl"
   },
+  "tip": {
+    "title": "Postaw mi kawę",
+    "desc": "Forest Shuffle Scorer to prywatny projekt bez reklam. Jeśli oszczędza ci czas przy stole, możesz postawić mi kawę.",
+    "button": "Postaw kawę",
+    "note": "Z kawą czy bez, aplikacja pozostaje darmowa, bez reklam i taka sama dla wszystkich."
+  },
   "review": {
     "title": "Podoba Ci się aplikacja?",
     "desc": "Ocena w Google Play pomoże innym graczom Forest Shuffle ją znaleźć.",

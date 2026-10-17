@@ -352,6 +352,12 @@
     "emailLabel": "E-postan (isteğe bağlı, cevap verebilmem için)",
     "emailPlaceholder": "sen@ornek.com"
   },
+  "tip": {
+    "title": "Bana bir kahve ısmarla",
+    "desc": "Forest Shuffle Scorer kişisel ve reklamsız bir hobi projesi. Masada sana zaman kazandırıyorsa bana bir kahve ısmarlayabilirsin.",
+    "button": "Kahve ısmarla",
+    "note": "Kahveli ya da kahvesiz, uygulama ücretsiz, reklamsız ve herkes için aynı kalır."
+  },
   "review": {
     "title": "Uygulamayı beğendin mi?",
     "desc": "Play Store'da vereceğin puan, diğer Forest Shuffle oyuncularının uygulamayı bulmasına yardımcı olur.",

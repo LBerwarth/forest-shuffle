@@ -356,6 +356,12 @@
     "emailLabel": "Your e-mail (optional, so I can reply)",
     "emailPlaceholder": "you@example.com"
   },
+  "tip": {
+    "title": "Buy me a coffee",
+    "desc": "Forest Shuffle Scorer is a personal, ad-free side project. If it saves you time at the table, you can buy me a coffee.",
+    "button": "Buy me a coffee",
+    "note": "With or without coffee, the app stays free, ad-free and the same for everyone."
+  },
   "review": {
     "title": "Enjoying the app?",
     "desc": "A rating on the Play Store helps other Forest Shuffle players find it.",

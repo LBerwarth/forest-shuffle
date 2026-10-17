@@ -352,6 +352,12 @@
     "emailLabel": "Az e-mail-címed (nem kötelező, hogy válaszolhassak)",
     "emailPlaceholder": "te@pelda.hu"
   },
+  "tip": {
+    "title": "Hívj meg egy kávéra",
+    "desc": "A Forest Shuffle Scorer egy reklámmentes, személyes hobbiprojekt. Ha időt spórol neked az asztalnál, meghívhatsz egy kávéra.",
+    "button": "Kávé meghívás",
+    "note": "Kávéval vagy anélkül az app ingyenes, reklámmentes és mindenkinek ugyanaz marad."
+  },
   "review": {
     "title": "Tetszik az alkalmazás?",
     "desc": "Egy értékelés a Play Áruházban segít más Forest Shuffle-játékosoknak megtalálni.",

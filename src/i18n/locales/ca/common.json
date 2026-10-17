@@ -352,6 +352,12 @@
     "emailLabel": "El teu correu (opcional, per poder respondre't)",
     "emailPlaceholder": "tu@exemple.cat"
   },
+  "tip": {
+    "title": "Convida'm a un cafè",
+    "desc": "Forest Shuffle Scorer és un projecte personal i sense publicitat. Si t'estalvia temps a la taula, pots convidar-me a un cafè.",
+    "button": "Convidar a un cafè",
+    "note": "Amb cafè o sense, l'app continua sent gratuïta, sense publicitat i igual per a tothom."
+  },
   "review": {
     "title": "T'agrada l'aplicació?",
     "desc": "Una valoració a Play Store ajuda altres jugadors de Forest Shuffle a trobar-la.",

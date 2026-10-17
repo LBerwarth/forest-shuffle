@@ -352,6 +352,12 @@
     "emailLabel": "Je e-mail (optioneel, zodat ik kan antwoorden)",
     "emailPlaceholder": "jij@voorbeeld.nl"
   },
+  "tip": {
+    "title": "Trakteer me op een koffie",
+    "desc": "Forest Shuffle Scorer is een persoonlijk hobbyproject zonder reclame. Bespaart het je tijd aan tafel, dan kun je me op een koffie trakteren.",
+    "button": "Trakteer op koffie",
+    "note": "Met of zonder koffie: de app blijft gratis, reclamevrij en voor iedereen hetzelfde."
+  },
   "review": {
     "title": "Bevalt de app?",
     "desc": "Een beoordeling in de Play Store helpt andere Forest Shuffle-spelers om hem te vinden.",

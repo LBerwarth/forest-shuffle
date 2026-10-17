@@ -15,6 +15,7 @@ import { STAT_ICONS } from '@/assets/icons'
 import { cn } from '@/lib/utils'
 import { LanguagePicker } from '@/components/LanguagePicker'
 import { FeedbackForm } from '@/components/FeedbackForm'
+import { TipJar } from '@/components/TipJar'
 import { isPlayStoreApp, openPlayStoreListing } from '@/lib/play-store'
 
 export function SettingsPage() {
@@ -351,6 +352,8 @@ export function SettingsPage() {
           <FeedbackForm />
         </CardContent>
       </Card>
+
+      <TipJar className="mb-4" />
 
       {/* About */}
       <Card>

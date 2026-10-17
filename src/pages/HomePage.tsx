@@ -14,6 +14,7 @@ import { SEO_LANGS } from '@/components/LangRoute'
 import { EDITION_PAGES } from '@/data/edition-pages'
 import { SetupGuide } from '@/components/SetupGuide'
 import { UsageStats } from '@/components/stats/UsageStats'
+import { TipJar } from '@/components/TipJar'
 import { useSettingsStore, selectExpansions } from '@/store/settings-store'
 import { usePlayers } from '@/hooks/use-players'
 import { useGames } from '@/hooks/use-games'
@@ -216,6 +217,8 @@ export function HomePage() {
           </Button>
         ))}
       </LandingSection>
+
+      <TipJar className="mt-4" />
 
       {/* Settings link */}
       <Link

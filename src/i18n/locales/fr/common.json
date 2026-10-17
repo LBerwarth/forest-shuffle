@@ -356,6 +356,12 @@
     "emailLabel": "Ton e-mail (facultatif, pour la réponse)",
     "emailPlaceholder": "toi@exemple.fr"
   },
+  "tip": {
+    "title": "Offrir un café",
+    "desc": "Forest Shuffle Scorer est une application personnelle et bénévole, sans publicité. Si elle vous fait gagner du temps à table, vous pouvez m'offrir un café.",
+    "button": "Offrir un café",
+    "note": "Avec ou sans café, elle reste gratuite, sans publicité, et la même pour tout le monde."
+  },
   "review": {
     "title": "L'appli te plaît ?",
     "desc": "Une note sur le Play Store aide les autres joueurs de Forest Shuffle à la découvrir.",

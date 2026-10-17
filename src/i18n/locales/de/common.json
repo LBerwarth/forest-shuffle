@@ -356,6 +356,12 @@
     "emailLabel": "Deine E-Mail (optional, damit ich antworten kann)",
     "emailPlaceholder": "du@beispiel.de"
   },
+  "tip": {
+    "title": "Spendier mir einen Kaffee",
+    "desc": "Forest Shuffle Scorer ist ein privates, werbefreies Hobbyprojekt. Wenn dir die App am Spieltisch Zeit spart, kannst du mir einen Kaffee spendieren.",
+    "button": "Kaffee spendieren",
+    "note": "Mit oder ohne Kaffee: Die App bleibt kostenlos, werbefrei und für alle gleich."
+  },
   "review": {
     "title": "Gefällt dir die App?",
     "desc": "Eine Bewertung im Play Store hilft anderen Forest-Shuffle-Spielern, sie zu finden.",

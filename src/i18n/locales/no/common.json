@@ -352,6 +352,12 @@
     "emailLabel": "Din e-post (valgfritt, så jeg kan svare)",
     "emailPlaceholder": "deg@eksempel.no"
   },
+  "tip": {
+    "title": "Spander en kaffe på meg",
+    "desc": "Forest Shuffle Scorer er et personlig hobbyprosjekt uten reklame. Hvis den sparer deg tid rundt bordet, kan du spandere en kaffe på meg.",
+    "button": "Spander kaffe",
+    "note": "Med eller uten kaffe forblir appen gratis, reklamefri og lik for alle."
+  },
   "review": {
     "title": "Liker du appen?",
     "desc": "En vurdering i Play Store hjelper andre Forest Shuffle-spillere å finne den.",

@@ -352,6 +352,12 @@
     "emailLabel": "Sähköpostisi (valinnainen, jotta voin vastata)",
     "emailPlaceholder": "sina@esimerkki.fi"
   },
+  "tip": {
+    "title": "Tarjoa minulle kahvit",
+    "desc": "Forest Shuffle Scorer on henkilökohtainen ja mainokseton harrasteprojekti. Jos se säästää aikaasi pelipöydässä, voit tarjota minulle kahvit.",
+    "button": "Tarjoa kahvit",
+    "note": "Kahvin kanssa tai ilman sovellus pysyy ilmaisena, mainoksettomana ja samana kaikille."
+  },
   "review": {
     "title": "Pidätkö sovelluksesta?",
     "desc": "Arvostelu Play Kaupassa auttaa muita Forest Shuffle -pelaajia löytämään sen.",

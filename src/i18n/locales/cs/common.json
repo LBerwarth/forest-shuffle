@@ -355,6 +355,12 @@
     "emailLabel": "Tvůj e-mail (nepovinné, pro odpověď)",
     "emailPlaceholder": "ty@priklad.cz"
   },
+  "tip": {
+    "title": "Kup mi kávu",
+    "desc": "Forest Shuffle Scorer je osobní projekt bez reklam. Pokud ti u stolu šetří čas, můžeš mi koupit kávu.",
+    "button": "Koupit kávu",
+    "note": "S kávou i bez ní zůstává aplikace zdarma, bez reklam a stejná pro všechny."
+  },
   "review": {
     "title": "Líbí se ti aplikace?",
     "desc": "Hodnocení na Google Play pomůže ostatním hráčům Forest Shuffle ji najít.",
