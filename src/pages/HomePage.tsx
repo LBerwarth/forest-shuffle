@@ -157,6 +157,8 @@ export function HomePage() {
         ))}
       </div>
 
+      <TipJar className="mb-4" />
+
       <SetupGuide collapsible edition={edition} expansions={expansions} className="mb-4" />
 
       {/* Recent game */}
@@ -217,8 +219,6 @@ export function HomePage() {
           </Button>
         ))}
       </LandingSection>
-
-      <TipJar className="mt-4" />
 
       {/* Settings link */}
       <Link
