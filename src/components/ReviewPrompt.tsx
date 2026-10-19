@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Star, MessageSquare } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useReviewStore } from '@/store/review-store'
-import { isPlayStoreApp, openPlayStoreListing } from '@/lib/play-store'
+import { isPlayStoreApp, requestInAppReview } from '@/lib/play-store'
 
 const SHOW_DELAY_MS = 1500
 
@@ -28,7 +28,7 @@ export function ReviewPrompt({ gameId }: { gameId: string | undefined }) {
   function handleRate() {
     useReviewStore.getState().stop()
     setVisible(false)
-    openPlayStoreListing()
+    requestInAppReview()
   }
 
   function handleFeedback() {

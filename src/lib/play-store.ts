@@ -1,7 +1,6 @@
 const PACKAGE_ID = 'app.forestshuffle.companion'
 const LISTING_URL = `https://play.google.com/store/apps/details?id=${PACKAGE_ID}`
 const INSTALLED_FLAG = 'forest-shuffle-play-app'
-const SCHEME_FALLBACK_MS = 1500
 
 // A Trusted Web Activity only sets this referrer on the initial document load,
 // so latch it — a reload inside the app would otherwise look like a browser.
@@ -12,12 +11,8 @@ export function isPlayStoreApp(): boolean {
   return true
 }
 
-export function openPlayStoreListing() {
-  // market:// hands off to the Play app via Android intent; if nothing claims
-  // the scheme the page stays visible and we send it to the web listing.
-  const fallback = window.setTimeout(() => {
-    if (document.visibilityState === 'visible') window.location.href = LISTING_URL
-  }, SCHEME_FALLBACK_MS)
-  document.addEventListener('visibilitychange', () => window.clearTimeout(fallback), { once: true })
-  window.location.href = `market://details?id=${PACKAGE_ID}`
+export function requestInAppReview() {
+  // App builds without ReviewActivity (< 1.0.12) let Chrome follow the fallback URL.
+  const fallback = encodeURIComponent(LISTING_URL)
+  window.location.href = `intent://review#Intent;scheme=forestshuffle;package=${PACKAGE_ID};S.browser_fallback_url=${fallback};end`
 }

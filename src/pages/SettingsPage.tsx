@@ -16,7 +16,7 @@ import { cn } from '@/lib/utils'
 import { LanguagePicker } from '@/components/LanguagePicker'
 import { FeedbackForm } from '@/components/FeedbackForm'
 import { TipJar } from '@/components/TipJar'
-import { isPlayStoreApp, openPlayStoreListing } from '@/lib/play-store'
+import { isPlayStoreApp, requestInAppReview } from '@/lib/play-store'
 
 export function SettingsPage() {
   const { t } = useTranslation()
@@ -331,7 +331,7 @@ export function SettingsPage() {
                   <p className="text-xs text-forest-400">{t('settings.rateDesc')}</p>
                 </div>
               </div>
-              <Button size="sm" variant="secondary" onClick={openPlayStoreListing}>
+              <Button size="sm" variant="secondary" onClick={requestInAppReview}>
                 {t('settings.rate')}
               </Button>
             </div>
