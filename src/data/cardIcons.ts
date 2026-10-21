@@ -29,7 +29,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
 
   // Amphibians
   tree_frog: 'amphibian', common_toad: 'amphibian', fire_salamander: 'amphibian',
-  alpine_newt: 'amphibian', pond_turtle: 'amphibian', water_vole: 'amphibian',
+  alpine_newt: 'amphibian', pond_turtle: 'amphibian',
 
   // Squirrel / Pawed
   red_squirrel: 'pawed',
@@ -56,7 +56,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
   european_fat_dormouse: 'pawed', squeaker: 'pawed', alpine_marmot: 'pawed',
   beech_marten: 'pawed', raccoon: 'pawed', european_polecat: 'pawed',
   european_wildcat: 'pawed', genet: 'pawed', red_panda: 'pawed', sable: 'pawed',
-  mole: 'pawed',
+  mole: 'pawed', water_vole: 'pawed',
 
   // Deer / Cloven-hoofed — all use cloven_hoofed icon (the game symbol)
   roe_deer: 'cloven_hoofed', red_deer: 'cloven_hoofed', chamois: 'cloven_hoofed',

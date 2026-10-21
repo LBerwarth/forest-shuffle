@@ -91,7 +91,7 @@ export const CARDS: CardDefinition[] = [
   { key: 'digitalis', category: 'bottom', tags: ['plant', 'woodland_edge'], expansion: 'woodland', scoringType: 'custom' },
   { key: 'great_green_bush_cricket', category: 'bottom', tags: ['insect', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
   { key: 'stinging_nettle', category: 'bottom', tags: ['plant', 'woodland_edge'], expansion: 'woodland', scoringType: 'per_tag' },
-  { key: 'water_vole', category: 'bottom', tags: ['amphibian', 'woodland_edge'], expansion: 'woodland', scoringType: 'fixed' },
+  { key: 'water_vole', category: 'bottom', tags: ['pawed', 'woodland_edge'], expansion: 'woodland', scoringType: 'fixed' },
   // Exploration bottom (promo compilation)
   { key: 'marsh_cinquefoil', category: 'bottom', tags: ['plant'], expansion: 'exploration', scoringType: 'custom' },
   { key: 'wild_tulip', category: 'bottom', tags: ['plant'], expansion: 'exploration', scoringType: 'fixed' },

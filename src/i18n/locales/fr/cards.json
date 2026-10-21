@@ -285,8 +285,8 @@
     "scoring": "2 points par papillon"
   },
   "water_vole": {
-    "name": "Campagnol amphibie",
-    "scoring": "0 points (compte comme amphibien)"
+    "name": "Campagnol terrestre",
+    "scoring": "0 points"
   },
   "wild_tulip": {
     "name": "Tulipe des bois",
@@ -331,8 +331,8 @@
     "context": "Cartes avec le même symbole d'arbre que votre Chamois"
   },
   "steinbock": {
-    "name": "Bouquetin",
-    "scoring": "10 points par Bouquetin"
+    "name": "Bouquetin des Alpes",
+    "scoring": "10 points par Bouquetin des Alpes"
   },
   "lynx": {
     "name": "Lynx",

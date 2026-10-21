@@ -286,7 +286,7 @@
   },
   "water_vole": {
     "name": "Water Vole",
-    "scoring": "0 points (counts as amphibian)"
+    "scoring": "0 points"
   },
   "wild_tulip": {
     "name": "Wild Tulip",
