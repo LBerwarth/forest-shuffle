@@ -104,6 +104,7 @@
     "set": "Zestaw",
     "series": "Seria {{index}}",
     "dragonflySet": "Zestaw ważek",
+    "squirrelSet": "Zestaw wiewiórek",
     "butterflySet": "Zestaw motyli"
   },
   "result": {

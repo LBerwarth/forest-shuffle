@@ -20,6 +20,8 @@ const TAG_ORDER: readonly CardTag[] = [
   'dragonfly',
   'bat',
   'mouse',
+  'squirrel',
+  'fish',
   'pawed',
   'rabbit',
   'cloven_hoofed',

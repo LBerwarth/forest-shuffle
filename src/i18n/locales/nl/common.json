@@ -102,6 +102,7 @@
     "set": "Set",
     "series": "Serie {{index}}",
     "dragonflySet": "Libellenset",
+    "squirrelSet": "Eekhoornset",
     "butterflySet": "Vlinderset"
   },
   "result": {

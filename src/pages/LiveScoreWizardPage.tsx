@@ -12,7 +12,7 @@ import { useScoringStore } from '@/store/scoring-store'
 import { useLiveSessionStore } from '@/store/live-session-store'
 import { useLiveSession } from '@/hooks/use-live-session'
 import { getCards, getCardsByCategory } from '@/data/cards'
-import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreSmokyCard, buildSmokyForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown, getSquirrelSeriesBreakdown } from '@/lib/scoring'
+import { scoreCard, buildForestContext, scoreDartmoorCard, buildDartmoorForestContext, scoreSmokyCard, buildSmokyForestContext, scoreButterflySet, scoreDragonflySet, getButterflySeriesBreakdown, getDragonflySeriesBreakdown, getSquirrelSeriesBreakdown, scoreSquirrelSet } from '@/lib/scoring'
 import { getMultiplierStats } from '@/lib/scoring/multiplier-stats'
 import { findMissingContextCards } from '@/lib/scoring/missing-context'
 import { AcornIcon } from '@/components/ui/AcornIcon'
@@ -38,7 +38,7 @@ const EXPANSION_ICON_KEY: Record<Expansion, string | null> = {
 
 const TAG_ORDER: readonly CardTag[] = [
   'tree', 'shrub', 'moor',
-  'bird', 'butterfly', 'insect', 'dragonfly', 'bat', 'mouse',
+  'bird', 'butterfly', 'insect', 'dragonfly', 'bat', 'mouse', 'squirrel', 'fish',
   'pawed', 'cloven_hoofed', 'hoofed', 'deer',
   'amphibian', 'plant', 'mushroom',
 ] as const
@@ -549,14 +549,16 @@ export function LiveScoreWizardPage() {
             ) : null
           })()}
 
-          {stepCategories[currentStep]?.[0] === 'top' && forestContext && (
-            edition === 'smoky' ? (
-              <SetSeriesBreakdown
-                series={getSquirrelSeriesBreakdown(forestContext)}
-                iconUrl={STAT_ICONS.pawed}
-                titleKey="wizard.squirrelSet"
-              />
-            ) : edition === 'dartmoor' ? (
+          {forestContext && edition === 'smoky' && filteredCards.some((c) => c.tags.includes('squirrel')) && (
+            <SetSeriesBreakdown
+              series={getSquirrelSeriesBreakdown(forestContext)}
+              iconUrl={STAT_ICONS.squirrel}
+              titleKey="wizard.squirrelSet"
+            />
+          )}
+
+          {stepCategories[currentStep]?.[0] === 'top' && forestContext && edition !== 'smoky' && (
+            edition === 'dartmoor' ? (
               <SetSeriesBreakdown
                 series={getDragonflySeriesBreakdown(forestContext)}
                 iconUrl={STAT_ICONS.dragonfly}
@@ -617,7 +619,9 @@ export function LiveScoreWizardPage() {
                     ? scoreDragonflySet(forestContext)
                     : card.tags.includes('butterfly')
                       ? scoreButterflySet(forestContext)
-                      : undefined
+                      : card.tags.includes('squirrel')
+                        ? scoreSquirrelSet(forestContext)
+                        : undefined
                   : undefined
               }
             />

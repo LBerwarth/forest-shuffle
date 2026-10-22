@@ -102,6 +102,7 @@
     "set": "Sarja",
     "series": "Sarja {{index}}",
     "dragonflySet": "Sudenkorentosarja",
+    "squirrelSet": "Oravasarja",
     "butterflySet": "Perhossarja"
   },
   "result": {

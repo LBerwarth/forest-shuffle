@@ -102,6 +102,7 @@
     "set": "Szett",
     "series": "Sorozat {{index}}",
     "dragonflySet": "Szitakötő-szett",
+    "squirrelSet": "Mókus-szett",
     "butterflySet": "Lepke-szett"
   },
   "result": {
