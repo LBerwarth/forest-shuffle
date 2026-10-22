@@ -273,6 +273,8 @@
     "usageToday": "Сьогодні"
   },
   "tag": {
+    "fish": "Риби",
+    "squirrel": "Білки",
     "pawed": "Лапи",
     "butterfly": "Метелики",
     "bat": "Кажани",
@@ -294,6 +296,7 @@
     "moor": "Пустища"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Базова гра",
     "alpine": "Alpine",
     "woodland": "Woodland",

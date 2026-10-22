@@ -273,6 +273,8 @@
     "usageToday": "Dziś"
   },
   "tag": {
+    "fish": "Ryby",
+    "squirrel": "Wiewiórki",
     "pawed": "Łapy",
     "butterfly": "Motyle",
     "bat": "Nietoperze",
@@ -294,6 +296,7 @@
     "moor": "Wrzosowiska"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Podstawa",
     "alpine": "Alpine",
     "woodland": "Woodland",

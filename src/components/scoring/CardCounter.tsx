@@ -211,6 +211,7 @@ export function CardCounter({
                   card.expansion === 'woodland' && 'bg-amber-100 text-amber-700',
                   card.expansion === 'exploration' && 'bg-purple-100 text-purple-700',
                   card.expansion === 'dartmoor_exmoor' && 'bg-teal-100 text-teal-700',
+                  card.expansion === 'smoky_base' && 'bg-orange-100 text-orange-700',
                 )}
               >
                 {t(`expansion.${card.expansion}`)}

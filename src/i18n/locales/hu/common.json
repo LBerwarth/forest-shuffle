@@ -271,6 +271,8 @@
     "usageToday": "Ma"
   },
   "tag": {
+    "fish": "Halak",
+    "squirrel": "Mókusok",
     "pawed": "Mancsosok",
     "butterfly": "Lepkék",
     "bat": "Denevérek",
@@ -292,6 +294,7 @@
     "moor": "Lápok"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Alapjáték",
     "alpine": "Alpine",
     "woodland": "Woodland",

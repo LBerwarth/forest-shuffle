@@ -7,6 +7,7 @@ import cave from './cave.svg'
 import cloven_hoofed from './cloven_hoofed.svg'
 import deer from './deer.svg'
 import dragonfly from './dragonfly.svg'
+import fish from './fish.svg'
 import exmoor from './exmoor.svg'
 import hare from './hare.svg'
 import insect from './insect.svg'
@@ -16,6 +17,7 @@ import mushroom from './mushroom.svg'
 import pawed from './pawed.svg'
 import plant from './plant.svg'
 import shrub from './shrub.svg'
+import squirrel from './squirrel.svg'
 import tree from './tree.svg'
 import woodland_edge from './woodland_edge.svg'
 
@@ -30,6 +32,7 @@ export const STAT_ICONS: Record<string, string> = {
   deer,
   dragonfly,
   exmoor,
+  fish,
   hare,
   hoofed: cloven_hoofed,
   insect,
@@ -40,6 +43,7 @@ export const STAT_ICONS: Record<string, string> = {
   rabbit: pawed,
   plant,
   shrub,
+  squirrel,
   tree,
   woodland_edge,
 }

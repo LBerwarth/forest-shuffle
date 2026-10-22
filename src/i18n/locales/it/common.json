@@ -271,6 +271,8 @@
     "usageToday": "Oggi"
   },
   "tag": {
+    "fish": "Pesci",
+    "squirrel": "Scoiattoli",
     "pawed": "Zampe",
     "butterfly": "Farfalle",
     "bat": "Pipistrelli",
@@ -292,6 +294,7 @@
     "moor": "Brughiere"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Base",
     "alpine": "Alpine",
     "woodland": "Woodland",

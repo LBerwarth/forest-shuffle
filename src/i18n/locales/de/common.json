@@ -274,6 +274,8 @@
     "usageToday": "Heute"
   },
   "tag": {
+    "fish": "Fische",
+    "squirrel": "Hörnchen",
     "pawed": "Pfoten",
     "butterfly": "Schmetterlinge",
     "bat": "Fledermäuse",
@@ -295,6 +297,7 @@
     "moor": "Moore"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Grundspiel",
     "alpine": "Alpin",
     "woodland": "Waldrand",

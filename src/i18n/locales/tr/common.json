@@ -271,6 +271,8 @@
     "usageToday": "Bugün"
   },
   "tag": {
+    "fish": "Balıklar",
+    "squirrel": "Sincaplar",
     "pawed": "Pençeliler",
     "butterfly": "Kelebekler",
     "bat": "Yarasalar",
@@ -292,6 +294,7 @@
     "moor": "Fundalıklar"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Temel",
     "alpine": "Alpine",
     "woodland": "Woodland",

@@ -271,6 +271,8 @@
     "usageToday": "Vandaag"
   },
   "tag": {
+    "fish": "Vissen",
+    "squirrel": "Eekhoorns",
     "pawed": "Poten",
     "butterfly": "Vlinders",
     "bat": "Vleermuizen",
@@ -292,6 +294,7 @@
     "moor": "Venen"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Basis",
     "alpine": "Alpine",
     "woodland": "Woodland",

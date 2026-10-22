@@ -271,6 +271,8 @@
     "usageToday": "Avui"
   },
   "tag": {
+    "fish": "Peixos",
+    "squirrel": "Esquirols",
     "pawed": "Potes",
     "butterfly": "Papallones",
     "bat": "Ratpenats",
@@ -292,6 +294,7 @@
     "moor": "Landes"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Base",
     "alpine": "Alpine",
     "woodland": "Woodland",

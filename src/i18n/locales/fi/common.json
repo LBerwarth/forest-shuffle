@@ -271,6 +271,8 @@
     "usageToday": "Tänään"
   },
   "tag": {
+    "fish": "Kalat",
+    "squirrel": "Oravat",
     "pawed": "Tassueläimet",
     "butterfly": "Perhoset",
     "bat": "Lepakot",
@@ -292,6 +294,7 @@
     "moor": "Nummet"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Peruspeli",
     "alpine": "Alpine",
     "woodland": "Woodland",

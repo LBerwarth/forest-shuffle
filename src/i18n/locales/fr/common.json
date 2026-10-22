@@ -274,6 +274,8 @@
     "usageToday": "Aujourd'hui"
   },
   "tag": {
+    "fish": "Poissons",
+    "squirrel": "Écureuils",
     "pawed": "Pattes",
     "butterfly": "Papillons",
     "bat": "Chauves-souris",
@@ -295,6 +297,7 @@
     "moor": "Landes"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Base",
     "alpine": "Alpine",
     "woodland": "Lisière",

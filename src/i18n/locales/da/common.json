@@ -271,6 +271,8 @@
     "usageToday": "I dag"
   },
   "tag": {
+    "fish": "Fisk",
+    "squirrel": "Egern",
     "pawed": "Poter",
     "butterfly": "Sommerfugle",
     "bat": "Flagermus",
@@ -292,6 +294,7 @@
     "moor": "Moser"
   },
   "expansion": {
+    "smoky_base": "Smoky Mountains",
     "base": "Grundspil",
     "alpine": "Alpine",
     "woodland": "Woodland",
