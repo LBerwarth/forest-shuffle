@@ -882,11 +882,11 @@
     "context": "Linden-Symbole an deinen Linden insgesamt (Bäume + angelegte Karten, auch unter einem Fluss)"
   },
   "black_gum": {
-    "name": "Tupelobaum",
+    "name": "Schwarzer Tupelo",
     "scoring": "1 Punkt pro Fluss"
   },
   "buckeye": {
-    "name": "Ohio-Rosskastanie",
+    "name": "Rosskastanie",
     "scoring": "1 Punkt pro Rosskastanien-Symbol in deinem Wald (Rosskastanien eingeschlossen)",
     "context": "Rosskastanien-Symbole in deinem Wald (Rosskastanien eingeschlossen)"
   },
@@ -952,7 +952,7 @@
     "scoring": "1 Punkt pro Vogel in deinem Wald (sich selbst eingeschlossen)"
   },
   "rockcap_fern": {
-    "name": "Tüpfelfarn",
+    "name": "Appalachen-Farn",
     "scoring": "1 Punkt pro Pflanze in deinem Wald (sich selbst eingeschlossen)"
   },
   "ruby_throated_hummingbird": {
@@ -960,21 +960,21 @@
     "scoring": "1 Punkt pro Pflanze und pro Baum in deinem Wald"
   },
   "scarlet_tanager": {
-    "name": "Scharlachtangare",
+    "name": "Scharlachkardinal",
     "scoring": "2 Punkte pro Scharlachtangare"
   },
   "thermometer_cricket": {
-    "name": "Thermometer-Grille",
+    "name": "Thermometergrille",
     "scoring": "1 Punkt pro Insekt in deinem Wald (sich selbst eingeschlossen)"
   },
   "tufted_titmouse": {
-    "name": "Indianermeise",
+    "name": "Grauhäubchenmeise",
     "scoring": "Keine Punkte (Zieheffekt beim Spielen von Pflanzen)"
   },
   "virginia_opossum": {
-    "name": "Virginia-Opossum",
+    "name": "Nordopossum",
     "scoring": "2 Punkte pro unterschiedlichem Baumsymbol an seinem Baum",
-    "context": "Unterschiedliche Baumsymbole an den Bäumen deiner Opossums (aufsummiert)"
+    "context": "Unterschiedliche Baumsymbole an den Bäumen deiner Nordopossums (aufsummiert)"
   },
   "water_starwort": {
     "name": "Wasserstern",
@@ -985,8 +985,8 @@
     "scoring": "Keine Punkte (Zieheffekt beim Spielen von Vögeln)"
   },
   "blue_mistflower": {
-    "name": "Blaue Nebelblume",
-    "scoring": "2 Punkte pro Blauer Nebelblume"
+    "name": "Blauer Wasserdost",
+    "scoring": "2 Punkte pro Blauem Wasserdost"
   },
   "brook_trout": {
     "name": "Bachsaibling",
@@ -994,15 +994,15 @@
     "context": "Flüsse ohne Fisch darunter"
   },
   "brown_water_scorpion": {
-    "name": "Brauner Wasserskorpion",
-    "scoring": "2 Punkte pro Braunem Wasserskorpion"
+    "name": "Stabwanze",
+    "scoring": "2 Punkte pro Stabwanze"
   },
   "common_box_turtle": {
-    "name": "Dosenschildkröte",
-    "scoring": "5 Punkte pro Dosenschildkröte"
+    "name": "Carolina-Dosenschildkröte",
+    "scoring": "5 Punkte pro Carolina-Dosenschildkröte"
   },
   "eastern_chipmunk": {
-    "name": "Streifenhörnchen",
+    "name": "Streifen-Backenhörnchen",
     "scoring": "Hörnchen-Serie: 5/10/20/40 Punkte für 1-4 verschiedene Hörnchen"
   },
   "eastern_hellbender": {
@@ -1010,15 +1010,15 @@
     "scoring": "2 Punkte pro Fluss"
   },
   "greenside_darter": {
-    "name": "Grüner Springbarsch",
+    "name": "Grünseiten-Springbarsch",
     "scoring": "3 Punkte pro Insekt in deinem Wald"
   },
   "imitator_salamander": {
-    "name": "Imitator-Salamander",
+    "name": "Schwanzlurch",
     "scoring": "10 Punkte pro Stück mit 3+ verschiedenen Amphibienarten, sonst 0"
   },
   "largeleaf_pondweed": {
-    "name": "Großblättriges Laichkraut",
+    "name": "Schmalblättriges Laichkraut",
     "scoring": "2 Punkte pro Laichkraut"
   },
   "skipper_caterpillar": {
@@ -1026,15 +1026,15 @@
     "scoring": "10 Punkte pro Stück mit 3+ verschiedenen Insektenarten, sonst 0"
   },
   "six_spotted_tiger_beetle": {
-    "name": "Sechsfleck-Sandlaufkäfer",
-    "scoring": "5 Punkte pro Sechsfleck-Sandlaufkäfer"
+    "name": "Sechspunkt-Sandlaufkäfer",
+    "scoring": "5 Punkte pro Sechspunkt-Sandlaufkäfer"
   },
   "smallmouth_bass": {
     "name": "Schwarzbarsch",
     "scoring": "3 Punkte pro unterschiedlicher Fischart (die eigene eingeschlossen)"
   },
   "solomons_seal": {
-    "name": "Salomonssiegel",
+    "name": "Salomons Siegel",
     "scoring": "6 Punkte pro Amphibie in deinem Wald"
   },
   "wintergreen": {
@@ -1095,8 +1095,8 @@
     "scoring": "3 Punkte pro Maskenspitzmaus"
   },
   "mink": {
-    "name": "Mink",
-    "scoring": "5 Punkte pro Mink"
+    "name": "Nerz",
+    "scoring": "5 Punkte pro Nerz"
   },
   "pileated_woodpecker": {
     "name": "Helmspecht",
@@ -1111,11 +1111,11 @@
     "scoring": "Hörnchen-Serie: 5/10/20/40 Punkte für 1-4 verschiedene Hörnchen"
   },
   "river_otter": {
-    "name": "Flussotter",
+    "name": "Fischotter",
     "scoring": "2 Punkte pro Fisch, Insekt und Amphibie in deinem Wald"
   },
   "rock_vole": {
-    "name": "Felsenwühlmaus",
+    "name": "Gelbnasige Wühlmaus",
     "scoring": "1 Punkt pro Maus und pro Insekt (sich selbst eingeschlossen)"
   },
   "short_tailed_shrew": {
@@ -1128,7 +1128,7 @@
     "context": "Skunks, die allein an ihrem Baum sind"
   },
   "synchronous_firefly": {
-    "name": "Synchron-Glühwürmchen",
+    "name": "Synchrone Glühwürmchen",
     "scoring": "3 Punkte pro Glühwürmchen für jedes Glühwürmchen (1/2/3/4 = 3/12/27/48)"
   },
   "turkey": {
@@ -1137,7 +1137,7 @@
     "context": "Passende Baumsymbole über alle deine Truthähne insgesamt"
   },
   "virgins_bower": {
-    "name": "Virginia-Waldrebe",
+    "name": "Virginische Waldrebe",
     "scoring": "2 Punkte pro Vogel in deinem Wald"
   },
   "weevil_wasp": {
