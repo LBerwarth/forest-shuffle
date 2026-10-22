@@ -60,6 +60,7 @@ export const SMOKY_CARDS: CardDefinition[] = [
   { key: 'imitator_salamander', category: 'bottom', tags: ['amphibian'], expansion: 'smoky_base', scoringType: 'threshold' },
   { key: 'largeleaf_pondweed', category: 'bottom', tags: ['plant'], expansion: 'smoky_base', scoringType: 'fixed' },
   { key: 'skipper_caterpillar', category: 'bottom', tags: ['insect'], expansion: 'smoky_base', scoringType: 'threshold' },
+  { key: 'six_spotted_tiger_beetle', category: 'bottom', tags: ['insect'], expansion: 'smoky_base', scoringType: 'fixed' },
   { key: 'smallmouth_bass', category: 'bottom', tags: ['fish'], expansion: 'smoky_base', scoringType: 'per_tag' },
   { key: 'solomons_seal', category: 'bottom', tags: ['plant'], expansion: 'smoky_base', scoringType: 'per_tag' },
   { key: 'wintergreen', category: 'bottom', tags: ['plant'], expansion: 'smoky_base', scoringType: 'per_tag' },

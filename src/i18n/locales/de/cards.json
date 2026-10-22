@@ -1025,6 +1025,10 @@
     "name": "Dickkopffalter-Raupe",
     "scoring": "10 Punkte pro Stück mit 3+ verschiedenen Insektenarten, sonst 0"
   },
+  "six_spotted_tiger_beetle": {
+    "name": "Sechsfleck-Sandlaufkäfer",
+    "scoring": "5 Punkte pro Sechsfleck-Sandlaufkäfer"
+  },
   "smallmouth_bass": {
     "name": "Schwarzbarsch",
     "scoring": "3 Punkte pro unterschiedlicher Fischart (die eigene eingeschlossen)"

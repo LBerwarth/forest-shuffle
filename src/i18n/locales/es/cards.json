@@ -1025,6 +1025,10 @@
     "name": "Oruga de hespéride",
     "scoring": "10 puntos cada una con 3+ especies de insectos diferentes, si no 0"
   },
+  "six_spotted_tiger_beetle": {
+    "name": "Cicindela de seis manchas",
+    "scoring": "5 puntos por Cicindela de seis manchas"
+  },
   "smallmouth_bass": {
     "name": "Lobina de boca pequeña",
     "scoring": "3 puntos por especie de pez diferente (incluyendo la suya)"

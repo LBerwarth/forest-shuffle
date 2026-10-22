@@ -132,6 +132,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   largeleaf_pondweed: (count) => count * 2,
   skipper_caterpillar: (count, ctx) =>
     uniqueSpeciesWithTag(ctx, 'insect') >= 3 ? count * 10 : 0,
+  six_spotted_tiger_beetle: (count) => count * 5,
   smallmouth_bass: (count, ctx) => count * (3 * uniqueSpeciesWithTag(ctx, 'fish')),
   solomons_seal: (count, ctx) => count * (6 * countTag(ctx, 'amphibian')),
   wintergreen: (count, ctx) => count * (3 * countTag(ctx, 'squirrel')),

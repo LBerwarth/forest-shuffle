@@ -1025,6 +1025,10 @@
     "name": "Chenille d'hespérie",
     "scoring": "10 points chacune avec 3+ espèces d'insectes différentes, sinon 0"
   },
+  "six_spotted_tiger_beetle": {
+    "name": "Cicindèle à six points",
+    "scoring": "5 points par Cicindèle à six points"
+  },
   "smallmouth_bass": {
     "name": "Achigan à petite bouche",
     "scoring": "3 points par espèce de poisson différente (la sienne incluse)"

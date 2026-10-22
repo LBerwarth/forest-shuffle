@@ -1025,6 +1025,10 @@
     "name": "Skipper Caterpillar",
     "scoring": "10 points each with 3+ different insect species, otherwise 0"
   },
+  "six_spotted_tiger_beetle": {
+    "name": "Six-Spotted Tiger Beetle",
+    "scoring": "5 points per Six-Spotted Tiger Beetle"
+  },
   "smallmouth_bass": {
     "name": "Smallmouth Bass",
     "scoring": "3 points per different fish species (incl. its own)"
