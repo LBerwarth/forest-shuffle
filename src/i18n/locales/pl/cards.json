@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Jaskinia (Exmoor)",
     "scoring": "1 punkt za kartę w jaskini"
+  },
+  "basswood": {
+    "name": "Lipa amerykańska",
+    "scoring": "2 punkty za symbol Lipy amerykańskiej na drzewie i dołączonych kartach",
+    "context": "Suma symboli Lipy amerykańskiej na twoich Lipach (drzewa + dołączone karty, także pod rzeką)"
+  },
+  "black_gum": {
+    "name": "Tupela leśna",
+    "scoring": "1 punkt za rzekę"
+  },
+  "buckeye": {
+    "name": "Kasztanowiec żółty",
+    "scoring": "1 punkt za symbol Kasztanowca żółtego w twoim lesie (wliczając te drzewa)",
+    "context": "Symbole Kasztanowca żółtego w twoim lesie (wliczając te drzewa)"
+  },
+  "fraser_fir": {
+    "name": "Jodła Frasera",
+    "scoring": "1 punkt za drzewo w twoim lesie (wliczając siebie)"
+  },
+  "hemlock": {
+    "name": "Choina kanadyjska",
+    "scoring": "5 punktów za Choinę kanadyjską"
+  },
+  "hickory": {
+    "name": "Orzesznik",
+    "scoring": "2 punkty za kartę dołączoną do niego (liczą się rzeka i karty pod nią)",
+    "context": "Suma kart dołączonych do twoich Orzeszników"
+  },
+  "silver_maple": {
+    "name": "Klon srebrzysty",
+    "scoring": "Po 5 punktów, jeśli masz 3+ Klony srebrzyste"
+  },
+  "yellow_birch": {
+    "name": "Brzoza żółta",
+    "scoring": "1 punkt za Brzozę żółtą"
+  },
+  "creek": {
+    "name": "Strumień",
+    "scoring": "1 punkt za rybę"
+  },
+  "river_bend": {
+    "name": "Zakole rzeki",
+    "scoring": "Brak punktów (dobierasz karty przy zagraniu ryby)"
+  },
+  "waterfall": {
+    "name": "Wodospad",
+    "scoring": "Brak punktów (pod nim mieszczą się tylko ryby)"
+  },
+  "universal_river": {
+    "name": "Rzeka uniwersalna",
+    "scoring": "Brak punktów, ale liczy się jako rzeka"
+  },
+  "bald_eagle": {
+    "name": "Bielik amerykański",
+    "scoring": "Po 30 punktów przy 5+ rybach, inaczej 10"
+  },
+  "caddisfly": {
+    "name": "Chruścik",
+    "scoring": "2 punkty za Chruścika"
+  },
+  "flying_squirrel": {
+    "name": "Polatucha",
+    "scoring": "Wiewiórki: 5/10/20/40 punktów za 1-4 różne wiewiórki"
+  },
+  "great_blue_heron": {
+    "name": "Czapla modra",
+    "scoring": "2 punkty za rybę"
+  },
+  "long_eared_owl": {
+    "name": "Uszatka",
+    "scoring": "2 punkty za mysz"
+  },
+  "peregrine_falcon_s": {
+    "name": "Sokół wędrowny",
+    "scoring": "1 punkt za ptaka (wliczając siebie)"
+  },
+  "rockcap_fern": {
+    "name": "Paprotka wirginijska",
+    "scoring": "1 punkt za roślinę (wliczając siebie)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Koliber rubinobrody",
+    "scoring": "1 punkt za roślinę i za drzewo"
+  },
+  "scarlet_tanager": {
+    "name": "Tanagra szkarłatna",
+    "scoring": "2 punkty za Tanagrę szkarłatną"
+  },
+  "thermometer_cricket": {
+    "name": "Nadrzewik śnieżny",
+    "scoring": "1 punkt za owada (wliczając siebie)"
+  },
+  "tufted_titmouse": {
+    "name": "Sikora dwubarwna",
+    "scoring": "Brak punktów (dobierasz karty przy zagraniu rośliny)"
+  },
+  "virginia_opossum": {
+    "name": "Dydelf wirginijski",
+    "scoring": "2 punkty za każdy inny symbol drzewa przy jego drzewie",
+    "context": "Suma różnych symboli drzew przy drzewach twoich Dydelfów (zsumowana dla wszystkich Dydelfów)"
+  },
+  "water_starwort": {
+    "name": "Rzęśl",
+    "scoring": "1 punkt za rzekę i za rybę"
+  },
+  "wood_thrush": {
+    "name": "Drozdek plamisty",
+    "scoring": "Brak punktów (dobierasz karty przy zagraniu ptaka)"
+  },
+  "blue_mistflower": {
+    "name": "Sadziec błękitny",
+    "scoring": "2 punkty za Sadziec błękitny"
+  },
+  "brook_trout": {
+    "name": "Pstrąg źródlany",
+    "scoring": "3 punkty za rzekę bez ryby pod nią",
+    "context": "Rzeki bez ryby pod nimi"
+  },
+  "brown_water_scorpion": {
+    "name": "Płoszczyca brunatna",
+    "scoring": "2 punkty za Płoszczycę brunatną"
+  },
+  "common_box_turtle": {
+    "name": "Żółw pudełkowy karoliński",
+    "scoring": "5 punktów za Żółwia pudełkowego"
+  },
+  "eastern_chipmunk": {
+    "name": "Pręgowiec amerykański",
+    "scoring": "Wiewiórki: 5/10/20/40 punktów za 1-4 różne wiewiórki"
+  },
+  "eastern_hellbender": {
+    "name": "Skrytoskrzel aleganijski",
+    "scoring": "2 punkty za rzekę"
+  },
+  "greenside_darter": {
+    "name": "Okoniczek zielonoboki",
+    "scoring": "3 punkty za owada"
+  },
+  "imitator_salamander": {
+    "name": "Salamandra naśladowcza",
+    "scoring": "Po 10 punktów przy 3+ różnych gatunkach płazów, inaczej 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Rdestnica szerokolistna",
+    "scoring": "2 punkty za Rdestnicę szerokolistną"
+  },
+  "skipper_caterpillar": {
+    "name": "Gąsienica powszelatka",
+    "scoring": "Po 10 punktów przy 3+ różnych gatunkach owadów, inaczej 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Trzyszcz sześcioplamy",
+    "scoring": "5 punktów za Trzyszcza sześcioplamego"
+  },
+  "smallmouth_bass": {
+    "name": "Bass małogębowy",
+    "scoring": "3 punkty za każdy gatunek ryby (wliczając własny)"
+  },
+  "solomons_seal": {
+    "name": "Kokoryczka",
+    "scoring": "6 punktów za płaza"
+  },
+  "wintergreen": {
+    "name": "Golteria",
+    "scoring": "3 punkty za wiewiórkę"
+  },
+  "wood_frog": {
+    "name": "Żaba leśna",
+    "scoring": "1 punkt za drzewo"
+  },
+  "yellow_bullhead": {
+    "name": "Sumik żółty",
+    "scoring": "Brak punktów (dobierasz karty przy zagraniu rzeki)"
+  },
+  "yellow_perch": {
+    "name": "Okoń żółty",
+    "scoring": "2 punkty za Okonia żółtego"
+  },
+  "beaver_s": {
+    "name": "Bóbr",
+    "scoring": "1 punkt za kartę w twojej jaskini"
+  },
+  "black_bear": {
+    "name": "Niedźwiedź czarny",
+    "scoring": "Po 30 punktów przy 2 rybach przy jego drzewie, inaczej 10",
+    "context": "Niedźwiedzie czarne z 2 rybami przy swoim drzewie"
+  },
+  "bobcat": {
+    "name": "Ryś rudy",
+    "scoring": "Po 30 punktów przy 5+ ptakach, inaczej 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Lasówka rdzawoboka",
+    "scoring": "5 punktów za Lasówkę"
+  },
+  "coyote": {
+    "name": "Kojot",
+    "scoring": "Po 30 punktów przy 6+ zwierzętach z łapami (wliczając Kojoty), inaczej 10"
+  },
+  "elk_s": {
+    "name": "Wapiti",
+    "scoring": "Po 30 punktów przy 5+ różnych gatunkach drzew, inaczej 10"
+  },
+  "gray_fox": {
+    "name": "Lis szary",
+    "scoring": "1 punkt za zwierzę z łapami (wliczając siebie)"
+  },
+  "gray_squirrel": {
+    "name": "Wiewiórka szara",
+    "scoring": "Wiewiórki: 5/10/20/40 punktów za 1-4 różne wiewiórki"
+  },
+  "long_tailed_weasel": {
+    "name": "Łasica długoogonowa",
+    "scoring": "Po 10 punktów przy 3+ myszach, inaczej 0"
+  },
+  "masked_shrew": {
+    "name": "Ryjówka popielata",
+    "scoring": "3 punkty za Ryjówkę popielatą"
+  },
+  "mink": {
+    "name": "Norka",
+    "scoring": "5 punktów za Norkę"
+  },
+  "pileated_woodpecker": {
+    "name": "Dzięcioł smugoszyi",
+    "scoring": "1 punkt za ptaka (wliczając siebie)"
+  },
+  "raccoon_s": {
+    "name": "Szop pracz",
+    "scoring": "Brak punktów (efekt jaskini)"
+  },
+  "red_squirrel_s": {
+    "name": "Wiewiórka czerwona",
+    "scoring": "Wiewiórki: 5/10/20/40 punktów za 1-4 różne wiewiórki"
+  },
+  "river_otter": {
+    "name": "Wydra kanadyjska",
+    "scoring": "2 punkty za rybę, owada i płaza"
+  },
+  "rock_vole": {
+    "name": "Nornik skalny",
+    "scoring": "1 punkt za mysz i za owada (wliczając siebie)"
+  },
+  "short_tailed_shrew": {
+    "name": "Blarina krótkoogonowa",
+    "scoring": "5 punktów za Blarinę krótkoogonową"
+  },
+  "spotted_skunk": {
+    "name": "Skunks plamisty",
+    "scoring": "Po 10 punktów, jeśli sam przy swoim drzewie (rzeka się nie liczy), inaczej 0",
+    "context": "Skunksy, które są same przy swoim drzewie"
+  },
+  "synchronous_firefly": {
+    "name": "Świetlik synchroniczny",
+    "scoring": "3 punkty za Świetlika za każdego Świetlika (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Indyk",
+    "scoring": "2 punkty za symbol drzewa zgodny z symbolem Indyka (wliczając własny)",
+    "context": "Suma pasujących symboli drzew dla twoich Indyków"
+  },
+  "virgins_bower": {
+    "name": "Powojnik wirginijski",
+    "scoring": "2 punkty za ptaka"
+  },
+  "weevil_wasp": {
+    "name": "Osa ryjkowcowa",
+    "scoring": "Po 10 punktów przy drzewie z innym owadem, inaczej 0",
+    "context": "Osy ryjkowcowe przy drzewie z co najmniej jednym innym owadem"
+  },
+  "white_footed_mouse": {
+    "name": "Myszak białonogi",
+    "scoring": "1 punkt za mysz (wliczając siebie)"
+  },
+  "white_tailed_deer": {
+    "name": "Jeleń wirginijski",
+    "scoring": "2 punkty za drzewo"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Dzięcioł żółtobrzuchy",
+    "scoring": "2 punkty za Dzięcioła żółtobrzuchego"
+  },
+  "cave_s": {
+    "name": "Jaskinia",
+    "scoring": "1 punkt za kartę w twojej jaskini"
   }
 }
