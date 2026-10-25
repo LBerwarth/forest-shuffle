@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Jeskyně (Exmoor)",
     "scoring": "1 bod za kartu v jeskyni"
+  },
+  "basswood": {
+    "name": "Lípa americká",
+    "scoring": "2 body za symbol lípy americké na stromu a na připojených kartách",
+    "context": "Celkový počet symbolů lípy americké na tvých lípách (stromy + připojené karty, včetně karet pod řekou)"
+  },
+  "black_gum": {
+    "name": "Tupela lesní",
+    "scoring": "1 bod za řeku"
+  },
+  "buckeye": {
+    "name": "Jírovec žlutý",
+    "scoring": "1 bod za symbol jírovce žlutého ve tvém lese (včetně jírovců)",
+    "context": "Symboly jírovce žlutého ve tvém lese (včetně stromů jírovce)"
+  },
+  "fraser_fir": {
+    "name": "Jedle Fraserova",
+    "scoring": "1 bod za strom ve tvém lese (včetně sebe)"
+  },
+  "hemlock": {
+    "name": "Jedlovec kanadský",
+    "scoring": "5 bodů za jedlovec"
+  },
+  "hickory": {
+    "name": "Ořechovec",
+    "scoring": "2 body za kartu připojenou k němu (počítá se řeka i karty pod ní)",
+    "context": "Celkový počet karet připojených k tvým ořechovcům"
+  },
+  "silver_maple": {
+    "name": "Javor stříbrný",
+    "scoring": "Po 5 bodech, pokud máš 3+ javory stříbrné"
+  },
+  "yellow_birch": {
+    "name": "Bříza žlutá",
+    "scoring": "1 bod za břízu žlutou"
+  },
+  "creek": {
+    "name": "Potok",
+    "scoring": "1 bod za rybu"
+  },
+  "river_bend": {
+    "name": "Ohyb řeky",
+    "scoring": "0 bodů (efekt dobírání při vyložení ryby)"
+  },
+  "waterfall": {
+    "name": "Vodopád",
+    "scoring": "0 bodů (pod něj lze umístit jen ryby)"
+  },
+  "universal_river": {
+    "name": "Univerzální řeka",
+    "scoring": "0 bodů, ale počítá se jako řeka"
+  },
+  "bald_eagle": {
+    "name": "Orel bělohlavý",
+    "scoring": "Po 30 bodech při 5+ rybách; jinak po 10"
+  },
+  "caddisfly": {
+    "name": "Chrostík",
+    "scoring": "2 body za chrostíka"
+  },
+  "flying_squirrel": {
+    "name": "Poletuška",
+    "scoring": "Veverky: 5/10/20/40 bodů za 1-4 různé veverky"
+  },
+  "great_blue_heron": {
+    "name": "Volavka velká",
+    "scoring": "2 body za rybu"
+  },
+  "long_eared_owl": {
+    "name": "Kalous ušatý",
+    "scoring": "2 body za myš"
+  },
+  "peregrine_falcon_s": {
+    "name": "Sokol stěhovavý",
+    "scoring": "1 bod za ptáka (včetně sebe)"
+  },
+  "rockcap_fern": {
+    "name": "Osladič virginský",
+    "scoring": "1 bod za rostlinu (včetně sebe)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Kolibřík rubínohrdlý",
+    "scoring": "1 bod za rostlinu a za strom"
+  },
+  "scarlet_tanager": {
+    "name": "Tangara rudočerná",
+    "scoring": "2 body za tangaru rudočernou"
+  },
+  "thermometer_cricket": {
+    "name": "Cvrček teploměrný",
+    "scoring": "1 bod za hmyz (včetně sebe)"
+  },
+  "tufted_titmouse": {
+    "name": "Sýkora dvoubarvá",
+    "scoring": "0 bodů (efekt dobírání při vyložení rostlin)"
+  },
+  "virginia_opossum": {
+    "name": "Vačice virginská",
+    "scoring": "2 body za každý různý symbol stromu u jejího stromu",
+    "context": "Celkový počet různých symbolů stromů u stromů tvých vačic (součet za všechny vačice)"
+  },
+  "water_starwort": {
+    "name": "Hvězdoš",
+    "scoring": "1 bod za řeku a za rybu"
+  },
+  "wood_thrush": {
+    "name": "Drozdec lesní",
+    "scoring": "0 bodů (efekt dobírání při vyložení ptáků)"
+  },
+  "blue_mistflower": {
+    "name": "Konoklinium modré",
+    "scoring": "2 body za konoklinium modré"
+  },
+  "brook_trout": {
+    "name": "Siven americký",
+    "scoring": "3 body za řeku bez ryby pod ní",
+    "context": "Řeky bez ryby pod nimi"
+  },
+  "brown_water_scorpion": {
+    "name": "Splešťule hnědá",
+    "scoring": "2 body za splešťuli hnědou"
+  },
+  "common_box_turtle": {
+    "name": "Terapena karolinská",
+    "scoring": "5 bodů za terapenu karolinskou"
+  },
+  "eastern_chipmunk": {
+    "name": "Čipmank východní",
+    "scoring": "Veverky: 5/10/20/40 bodů za 1-4 různé veverky"
+  },
+  "eastern_hellbender": {
+    "name": "Velemlok americký",
+    "scoring": "2 body za řeku"
+  },
+  "greenside_darter": {
+    "name": "Okounek zelenoboký",
+    "scoring": "3 body za hmyz"
+  },
+  "imitator_salamander": {
+    "name": "Mlok napodobivý",
+    "scoring": "Po 10 bodech při 3+ různých druzích obojživelníků; jinak 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Rdest velkolistý",
+    "scoring": "2 body za rdest velkolistý"
+  },
+  "skipper_caterpillar": {
+    "name": "Housenka soumračníka",
+    "scoring": "Po 10 bodech při 3+ různých druzích hmyzu; jinak 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Svižník šestitečný",
+    "scoring": "5 bodů za svižníka šestitečného"
+  },
+  "smallmouth_bass": {
+    "name": "Okounek malotlamý",
+    "scoring": "3 body za každý různý druh ryb (včetně vlastního)"
+  },
+  "solomons_seal": {
+    "name": "Kokořík",
+    "scoring": "6 bodů za obojživelníka"
+  },
+  "wintergreen": {
+    "name": "Libavka polehlá",
+    "scoring": "3 body za veverku"
+  },
+  "wood_frog": {
+    "name": "Skokan lesní",
+    "scoring": "1 bod za strom"
+  },
+  "yellow_bullhead": {
+    "name": "Sumeček žlutý",
+    "scoring": "0 bodů (efekt dobírání při vyložení řek)"
+  },
+  "yellow_perch": {
+    "name": "Okoun žlutý",
+    "scoring": "2 body za okouna žlutého"
+  },
+  "beaver_s": {
+    "name": "Bobr kanadský",
+    "scoring": "1 bod za kartu v jeskyni"
+  },
+  "black_bear": {
+    "name": "Baribal",
+    "scoring": "Po 30 bodech se 2 rybami u jeho stromu; jinak po 10",
+    "context": "Baribalové se 2 rybami u svého stromu"
+  },
+  "bobcat": {
+    "name": "Rys červený",
+    "scoring": "Po 30 bodech při 5+ ptácích; jinak po 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Lesňáček kaštanoboký",
+    "scoring": "5 bodů za lesňáčka"
+  },
+  "coyote": {
+    "name": "Kojot",
+    "scoring": "Po 30 bodech při 6+ zvířatech s tlapami (včetně kojotů); jinak po 10"
+  },
+  "elk_s": {
+    "name": "Jelen wapiti",
+    "scoring": "Po 30 bodech při 5+ různých druzích stromů; jinak po 10"
+  },
+  "gray_fox": {
+    "name": "Liška šedá",
+    "scoring": "1 bod za zvíře s tlapami (včetně sebe)"
+  },
+  "gray_squirrel": {
+    "name": "Veverka popelavá",
+    "scoring": "Veverky: 5/10/20/40 bodů za 1-4 různé veverky"
+  },
+  "long_tailed_weasel": {
+    "name": "Lasice dlouhoocasá",
+    "scoring": "Po 10 bodech při 3+ myších; jinak 0"
+  },
+  "masked_shrew": {
+    "name": "Rejsek popelavý",
+    "scoring": "3 body za rejska popelavého"
+  },
+  "mink": {
+    "name": "Norek americký",
+    "scoring": "5 bodů za norka"
+  },
+  "pileated_woodpecker": {
+    "name": "Datel chocholatý",
+    "scoring": "1 bod za ptáka (včetně sebe)"
+  },
+  "raccoon_s": {
+    "name": "Mýval severní",
+    "scoring": "0 bodů (efekt jeskyně)"
+  },
+  "red_squirrel_s": {
+    "name": "Veverka červená",
+    "scoring": "Veverky: 5/10/20/40 bodů za 1-4 různé veverky"
+  },
+  "river_otter": {
+    "name": "Vydra kanadská",
+    "scoring": "2 body za rybu, hmyz a obojživelníka"
+  },
+  "rock_vole": {
+    "name": "Hraboš skalní",
+    "scoring": "1 bod za myš a za hmyz (včetně sebe)"
+  },
+  "short_tailed_shrew": {
+    "name": "Rejsek krátkoocasý",
+    "scoring": "5 bodů za rejska krátkoocasého"
+  },
+  "spotted_skunk": {
+    "name": "Skunk skvrnitý",
+    "scoring": "Po 10 bodech, pokud je u svého stromu sám (řeka se nepočítá); jinak 0",
+    "context": "Skunkové, kteří jsou u svého stromu sami"
+  },
+  "synchronous_firefly": {
+    "name": "Světluška synchronní",
+    "scoring": "3 body za světlušku za každou světlušku (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Krocan divoký",
+    "scoring": "2 body za symbol stromu shodný s vlastním symbolem krocana (včetně vlastního)",
+    "context": "Celkový počet shodných symbolů stromů u tvých krocanů"
+  },
+  "virgins_bower": {
+    "name": "Plamének virginský",
+    "scoring": "2 body za ptáka"
+  },
+  "weevil_wasp": {
+    "name": "Kutilka nosatcová",
+    "scoring": "Po 10 bodech, pokud je u stromu s jiným hmyzem; jinak 0",
+    "context": "Kutilky nosatcové u stromu s alespoň jedním dalším hmyzem"
+  },
+  "white_footed_mouse": {
+    "name": "Křečík bělonohý",
+    "scoring": "1 bod za myš (včetně sebe)"
+  },
+  "white_tailed_deer": {
+    "name": "Jelenec běloocasý",
+    "scoring": "2 body za strom"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Datlík žlutobřichý",
+    "scoring": "2 body za datlíka"
+  },
+  "cave_s": {
+    "name": "Jeskyně",
+    "scoring": "1 bod za kartu v jeskyni"
   }
 }

@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Barlang (Exmoor)",
     "scoring": "1 pont a barlangban lévő kártyánként"
+  },
+  "basswood": {
+    "name": "Amerikai hárs",
+    "scoring": "2 pont amerikaihárs-szimbólumonként a fán és a hozzá kapcsolt kártyákon",
+    "context": "Amerikaihárs-szimbólumok összesen az amerikai hársaidon (fák + kapcsolt kártyák, a folyó alattiakkal együtt)"
+  },
+  "black_gum": {
+    "name": "Erdei tupelófa",
+    "scoring": "1 pont folyónként"
+  },
+  "buckeye": {
+    "name": "Sárga vadgesztenye",
+    "scoring": "1 pont sárgavadgesztenye-szimbólumonként az erdődben (a sárga vadgesztenyékkel együtt)",
+    "context": "Sárgavadgesztenye-szimbólumok az erdődben (a sárga vadgesztenyefákkal együtt)"
+  },
+  "fraser_fir": {
+    "name": "Fraser-jegenyefenyő",
+    "scoring": "1 pont fánként az erdődben (önmagával együtt)"
+  },
+  "hemlock": {
+    "name": "Kanadai hemlokfenyő",
+    "scoring": "5 pont darabonként"
+  },
+  "hickory": {
+    "name": "Hikoridió",
+    "scoring": "2 pont a hozzá kapcsolt kártyánként (a folyó és az alatta lévő kártyák is számítanak)",
+    "context": "A hikoridióidhoz kapcsolt kártyák összesen"
+  },
+  "silver_maple": {
+    "name": "Ezüstjuhar",
+    "scoring": "5 pont darabonként, ha 3+ ezüstjuharod van"
+  },
+  "yellow_birch": {
+    "name": "Sárga nyír",
+    "scoring": "1 pont darabonként"
+  },
+  "creek": {
+    "name": "Patak",
+    "scoring": "1 pont halanként"
+  },
+  "river_bend": {
+    "name": "Folyókanyar",
+    "scoring": "0 pont (húzási hatás hal kijátszásakor)"
+  },
+  "waterfall": {
+    "name": "Vízesés",
+    "scoring": "0 pont (csak hal kerülhet alá)"
+  },
+  "universal_river": {
+    "name": "Univerzális folyó",
+    "scoring": "0 pont, de folyónak számít"
+  },
+  "bald_eagle": {
+    "name": "Fehérfejű rétisas",
+    "scoring": "30 pont darabonként, ha 5+ hal; egyébként 10 darabonként"
+  },
+  "caddisfly": {
+    "name": "Tegzes",
+    "scoring": "2 pont darabonként"
+  },
+  "flying_squirrel": {
+    "name": "Repülőmókus",
+    "scoring": "Mókusok: 5/10/20/40 pont 1-4 különböző mókusért"
+  },
+  "great_blue_heron": {
+    "name": "Nagy kékgém",
+    "scoring": "2 pont halanként"
+  },
+  "long_eared_owl": {
+    "name": "Erdei fülesbagoly",
+    "scoring": "2 pont egerenként"
+  },
+  "peregrine_falcon_s": {
+    "name": "Vándorsólyom",
+    "scoring": "1 pont madaranként (önmagával együtt)"
+  },
+  "rockcap_fern": {
+    "name": "Virginiai édesgyökerű páfrány",
+    "scoring": "1 pont növényenként (önmagával együtt)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Rubintorkú kolibri",
+    "scoring": "1 pont növényenként és fánként"
+  },
+  "scarlet_tanager": {
+    "name": "Skarláttangara",
+    "scoring": "2 pont darabonként"
+  },
+  "thermometer_cricket": {
+    "name": "Hőmérő tücsök",
+    "scoring": "1 pont rovaronként (önmagával együtt)"
+  },
+  "tufted_titmouse": {
+    "name": "Kétszínű cinege",
+    "scoring": "0 pont (húzási hatás növény kijátszásakor)"
+  },
+  "virginia_opossum": {
+    "name": "Virginiai oposszum",
+    "scoring": "2 pont a fáján lévő különböző faszimbólumonként",
+    "context": "Különböző faszimbólumok összesen az oposszumaid fáin (az összes oposszumra összegezve)"
+  },
+  "water_starwort": {
+    "name": "Mocsárhúr",
+    "scoring": "1 pont folyónként és halanként"
+  },
+  "wood_thrush": {
+    "name": "Erdei rigó",
+    "scoring": "0 pont (húzási hatás madár kijátszásakor)"
+  },
+  "blue_mistflower": {
+    "name": "Kék ködvirág",
+    "scoring": "2 pont darabonként"
+  },
+  "brook_trout": {
+    "name": "Pataki szaibling",
+    "scoring": "3 pont minden olyan folyóért, amely alatt nincs hal",
+    "context": "Folyók, amelyek alatt nincs hal"
+  },
+  "brown_water_scorpion": {
+    "name": "Barna víziskorpió",
+    "scoring": "2 pont darabonként"
+  },
+  "common_box_turtle": {
+    "name": "Karolinai dobozteknős",
+    "scoring": "5 pont darabonként"
+  },
+  "eastern_chipmunk": {
+    "name": "Keleti csíkosmókus",
+    "scoring": "Mókusok: 5/10/20/40 pont 1-4 különböző mókusért"
+  },
+  "eastern_hellbender": {
+    "name": "Amerikai óriásszalamandra",
+    "scoring": "2 pont folyónként"
+  },
+  "greenside_darter": {
+    "name": "Zöldoldalú sügér",
+    "scoring": "3 pont rovaronként"
+  },
+  "imitator_salamander": {
+    "name": "Utánzó szalamandra",
+    "scoring": "10 pont darabonként, ha 3+ különböző kétéltűfaj; egyébként 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Nagylevelű békaszőlő",
+    "scoring": "2 pont darabonként"
+  },
+  "skipper_caterpillar": {
+    "name": "Busalepke-hernyó",
+    "scoring": "10 pont darabonként, ha 3+ különböző rovarfaj; egyébként 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Hatpettyes homokfutrinka",
+    "scoring": "5 pont darabonként"
+  },
+  "smallmouth_bass": {
+    "name": "Kisszájú fekete sügér",
+    "scoring": "3 pont különböző halfajonként (a sajátjával együtt)"
+  },
+  "solomons_seal": {
+    "name": "Salamonpecsét",
+    "scoring": "6 pont kétéltűnként"
+  },
+  "wintergreen": {
+    "name": "Fajdbogyó",
+    "scoring": "3 pont mókusonként"
+  },
+  "wood_frog": {
+    "name": "Erdei béka",
+    "scoring": "1 pont fánként"
+  },
+  "yellow_bullhead": {
+    "name": "Sárga törpeharcsa",
+    "scoring": "0 pont (húzási hatás folyó kijátszásakor)"
+  },
+  "yellow_perch": {
+    "name": "Sárga sügér",
+    "scoring": "2 pont darabonként"
+  },
+  "beaver_s": {
+    "name": "Kanadai hód",
+    "scoring": "1 pont a barlangodban lévő kártyánként"
+  },
+  "black_bear": {
+    "name": "Baribál",
+    "scoring": "30 pont darabonként, ha 2 hal van a fáján; egyébként 10 darabonként",
+    "context": "Baribálok 2 hallal a fájukon"
+  },
+  "bobcat": {
+    "name": "Vörös hiúz",
+    "scoring": "30 pont darabonként, ha 5+ madár; egyébként 10 darabonként"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Gesztenyeoldalú lombjáró",
+    "scoring": "5 pont lombjárónként"
+  },
+  "coyote": {
+    "name": "Prérifarkas",
+    "scoring": "30 pont darabonként, ha 6+ mancsos állat (a prérifarkasokkal együtt); egyébként 10 darabonként"
+  },
+  "elk_s": {
+    "name": "Vapiti",
+    "scoring": "30 pont darabonként, ha 5+ különböző fafaj; egyébként 10 darabonként"
+  },
+  "gray_fox": {
+    "name": "Szürke róka",
+    "scoring": "1 pont mancsos állatonként (önmagával együtt)"
+  },
+  "gray_squirrel": {
+    "name": "Szürkemókus",
+    "scoring": "Mókusok: 5/10/20/40 pont 1-4 különböző mókusért"
+  },
+  "long_tailed_weasel": {
+    "name": "Hosszúfarkú menyét",
+    "scoring": "10 pont darabonként, ha 3+ egér; egyébként 0"
+  },
+  "masked_shrew": {
+    "name": "Maszkos cickány",
+    "scoring": "3 pont darabonként"
+  },
+  "mink": {
+    "name": "Amerikai nyérc",
+    "scoring": "5 pont darabonként"
+  },
+  "pileated_woodpecker": {
+    "name": "Búbos harkály",
+    "scoring": "1 pont madaranként (önmagával együtt)"
+  },
+  "raccoon_s": {
+    "name": "Mosómedve",
+    "scoring": "0 pont (barlanghatás)"
+  },
+  "red_squirrel_s": {
+    "name": "Amerikai vörösmókus",
+    "scoring": "Mókusok: 5/10/20/40 pont 1-4 különböző mókusért"
+  },
+  "river_otter": {
+    "name": "Kanadai vidra",
+    "scoring": "2 pont halanként, rovaronként és kétéltűnként"
+  },
+  "rock_vole": {
+    "name": "Sziklai pocok",
+    "scoring": "1 pont egerenként és rovaronként (önmagával együtt)"
+  },
+  "short_tailed_shrew": {
+    "name": "Rövidfarkú cickány",
+    "scoring": "5 pont darabonként"
+  },
+  "spotted_skunk": {
+    "name": "Pettyes bűzösborz",
+    "scoring": "10 pont darabonként, ha egyedül van a fáján (a folyó nem számít); egyébként 0",
+    "context": "Bűzösborzok, amelyek egyedül vannak a fájukon"
+  },
+  "synchronous_firefly": {
+    "name": "Szinkron szentjánosbogár",
+    "scoring": "3 pont szentjánosbogaranként minden szentjánosbogárért (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Vadpulyka",
+    "scoring": "2 pont a pulyka saját szimbólumával egyező faszimbólumonként (a sajátjával együtt)",
+    "context": "Egyező faszimbólumok összesen a pulykáidnál"
+  },
+  "virgins_bower": {
+    "name": "Virginiai iszalag",
+    "scoring": "2 pont madaranként"
+  },
+  "weevil_wasp": {
+    "name": "Ormányosvadász darázs",
+    "scoring": "10 pont darabonként, ha egy fán van egy másik rovarral; egyébként 0",
+    "context": "Ormányosvadász darazsak egy fán legalább egy másik rovarral"
+  },
+  "white_footed_mouse": {
+    "name": "Fehérlábú egérhörcsög",
+    "scoring": "1 pont egerenként (önmagával együtt)"
+  },
+  "white_tailed_deer": {
+    "name": "Fehérfarkú szarvas",
+    "scoring": "2 pont fánként"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Sárgahasú nedvszívó harkály",
+    "scoring": "2 pont darabonként"
+  },
+  "cave_s": {
+    "name": "Barlang",
+    "scoring": "1 pont a barlangodban lévő kártyánként"
   }
 }

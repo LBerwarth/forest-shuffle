@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Gruta (Exmoor)",
     "scoring": "1 ponto por carta na gruta"
+  },
+  "basswood": {
+    "name": "Tília-americana",
+    "scoring": "2 pontos por símbolo de Tília na árvore e nas cartas colocadas",
+    "context": "Total de símbolos de Tília nas suas Tílias (árvores + cartas colocadas, incl. por baixo de um rio)"
+  },
+  "black_gum": {
+    "name": "Tupelo-negro",
+    "scoring": "1 ponto por rio"
+  },
+  "buckeye": {
+    "name": "Castanheiro-da-índia-americano",
+    "scoring": "1 ponto por símbolo de Castanheiro-da-índia-americano na sua floresta (incl. os próprios)",
+    "context": "Símbolos de Castanheiro-da-índia-americano na sua floresta (incl. as árvores)"
+  },
+  "fraser_fir": {
+    "name": "Abeto-de-fraser",
+    "scoring": "1 ponto por árvore na sua floresta (incluindo ele mesmo)"
+  },
+  "hemlock": {
+    "name": "Tsuga",
+    "scoring": "5 pontos por Tsuga"
+  },
+  "hickory": {
+    "name": "Nogueira-americana",
+    "scoring": "2 pontos por carta colocada (o rio e as cartas por baixo dele contam)",
+    "context": "Total de cartas colocadas nas suas Nogueiras-americanas"
+  },
+  "silver_maple": {
+    "name": "Ácer-prateado",
+    "scoring": "5 pontos cada se tiver 3+ Áceres-prateados"
+  },
+  "yellow_birch": {
+    "name": "Bétula-amarela",
+    "scoring": "1 ponto por Bétula-amarela"
+  },
+  "creek": {
+    "name": "Ribeiro",
+    "scoring": "1 ponto por peixe"
+  },
+  "river_bend": {
+    "name": "Meandro",
+    "scoring": "Sem pontos (efeito de compra ao jogar peixes)"
+  },
+  "waterfall": {
+    "name": "Cascata",
+    "scoring": "Sem pontos (só cabem peixes por baixo)"
+  },
+  "universal_river": {
+    "name": "Rio universal",
+    "scoring": "Sem pontos, mas conta como rio"
+  },
+  "bald_eagle": {
+    "name": "Águia-de-cabeça-branca",
+    "scoring": "30 pontos cada com 5+ peixes; senão 10"
+  },
+  "caddisfly": {
+    "name": "Frigânea",
+    "scoring": "2 pontos por Frigânea"
+  },
+  "flying_squirrel": {
+    "name": "Esquilo-voador",
+    "scoring": "Coleção de esquilos: 5/10/20/40 pontos para 1-4 esquilos diferentes"
+  },
+  "great_blue_heron": {
+    "name": "Garça-azul-grande",
+    "scoring": "2 pontos por peixe"
+  },
+  "long_eared_owl": {
+    "name": "Bufo-pequeno",
+    "scoring": "2 pontos por rato"
+  },
+  "peregrine_falcon_s": {
+    "name": "Falcão-peregrino",
+    "scoring": "1 ponto por ave (incluindo ele mesmo)"
+  },
+  "rockcap_fern": {
+    "name": "Polipódio-das-rochas",
+    "scoring": "1 ponto por planta (incluindo ele mesmo)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Colibri-de-garganta-rubi",
+    "scoring": "1 ponto por planta e por árvore"
+  },
+  "scarlet_tanager": {
+    "name": "Sanhaço-escarlate",
+    "scoring": "2 pontos por Sanhaço-escarlate"
+  },
+  "thermometer_cricket": {
+    "name": "Grilo-termómetro",
+    "scoring": "1 ponto por inseto (incluindo ele mesmo)"
+  },
+  "tufted_titmouse": {
+    "name": "Chapim-bicolor",
+    "scoring": "Sem pontos (efeito de compra ao jogar plantas)"
+  },
+  "virginia_opossum": {
+    "name": "Opossum-da-virgínia",
+    "scoring": "2 pontos por símbolo de árvore diferente na sua árvore",
+    "context": "Total de símbolos de árvore diferentes nas árvores dos seus Opossuns (somados em todos os Opossuns)"
+  },
+  "water_starwort": {
+    "name": "Estrela-de-água",
+    "scoring": "1 ponto por rio e por peixe"
+  },
+  "wood_thrush": {
+    "name": "Tordo-dos-bosques",
+    "scoring": "Sem pontos (efeito de compra ao jogar aves)"
+  },
+  "blue_mistflower": {
+    "name": "Eupatório-azul",
+    "scoring": "2 pontos por Eupatório-azul"
+  },
+  "brook_trout": {
+    "name": "Truta-das-fontes",
+    "scoring": "3 pontos por rio sem peixe por baixo",
+    "context": "Rios sem peixe por baixo"
+  },
+  "brown_water_scorpion": {
+    "name": "Escorpião-de-água-castanho",
+    "scoring": "2 pontos por Escorpião-de-água-castanho"
+  },
+  "common_box_turtle": {
+    "name": "Tartaruga-de-caixa",
+    "scoring": "5 pontos por Tartaruga-de-caixa"
+  },
+  "eastern_chipmunk": {
+    "name": "Tâmia-oriental",
+    "scoring": "Coleção de esquilos: 5/10/20/40 pontos para 1-4 esquilos diferentes"
+  },
+  "eastern_hellbender": {
+    "name": "Salamandra-gigante-americana",
+    "scoring": "2 pontos por rio"
+  },
+  "greenside_darter": {
+    "name": "Dardo-de-flancos-verdes",
+    "scoring": "3 pontos por inseto"
+  },
+  "imitator_salamander": {
+    "name": "Salamandra-imitadora",
+    "scoring": "10 pontos cada com 3+ espécies de anfíbios diferentes; senão 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Potamogeto-de-folhas-largas",
+    "scoring": "2 pontos por Potamogeto-de-folhas-largas"
+  },
+  "skipper_caterpillar": {
+    "name": "Lagarta-de-hespérida",
+    "scoring": "10 pontos cada com 3+ espécies de insetos diferentes; senão 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Cicindela-de-seis-pintas",
+    "scoring": "5 pontos por Cicindela-de-seis-pintas"
+  },
+  "smallmouth_bass": {
+    "name": "Achigã-de-boca-pequena",
+    "scoring": "3 pontos por espécie de peixe diferente (incluindo a sua)"
+  },
+  "solomons_seal": {
+    "name": "Selo-de-salomão",
+    "scoring": "6 pontos por anfíbio"
+  },
+  "wintergreen": {
+    "name": "Gaultéria",
+    "scoring": "3 pontos por esquilo"
+  },
+  "wood_frog": {
+    "name": "Rã-da-floresta",
+    "scoring": "1 ponto por árvore"
+  },
+  "yellow_bullhead": {
+    "name": "Peixe-gato-amarelo",
+    "scoring": "Sem pontos (efeito de compra ao jogar rios)"
+  },
+  "yellow_perch": {
+    "name": "Perca-amarela",
+    "scoring": "2 pontos por Perca-amarela"
+  },
+  "beaver_s": {
+    "name": "Castor",
+    "scoring": "1 ponto por carta na sua gruta"
+  },
+  "black_bear": {
+    "name": "Urso-negro",
+    "scoring": "30 pontos cada com 2 peixes na sua árvore; senão 10",
+    "context": "Ursos-negros com 2 peixes na sua árvore"
+  },
+  "bobcat": {
+    "name": "Lince-vermelho",
+    "scoring": "30 pontos cada com 5+ aves; senão 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Mariquita-de-flancos-castanhos",
+    "scoring": "5 pontos por Mariquita"
+  },
+  "coyote": {
+    "name": "Coiote",
+    "scoring": "30 pontos cada com 6+ animais com patas (incl. Coiotes); senão 10"
+  },
+  "elk_s": {
+    "name": "Uapiti",
+    "scoring": "30 pontos cada com 5+ espécies de árvores diferentes; senão 10"
+  },
+  "gray_fox": {
+    "name": "Raposa-cinzenta",
+    "scoring": "1 ponto por animal com patas (incluindo ela mesma)"
+  },
+  "gray_squirrel": {
+    "name": "Esquilo-cinzento",
+    "scoring": "Coleção de esquilos: 5/10/20/40 pontos para 1-4 esquilos diferentes"
+  },
+  "long_tailed_weasel": {
+    "name": "Doninha-de-cauda-longa",
+    "scoring": "10 pontos cada com 3+ ratos; senão 0"
+  },
+  "masked_shrew": {
+    "name": "Musaranho-mascarado",
+    "scoring": "3 pontos por Musaranho-mascarado"
+  },
+  "mink": {
+    "name": "Vison-americano",
+    "scoring": "5 pontos por Vison-americano"
+  },
+  "pileated_woodpecker": {
+    "name": "Pica-pau-pileado",
+    "scoring": "1 ponto por ave (incluindo ele mesmo)"
+  },
+  "raccoon_s": {
+    "name": "Guaxinim",
+    "scoring": "Sem pontos (efeito de gruta)"
+  },
+  "red_squirrel_s": {
+    "name": "Esquilo-vermelho-americano",
+    "scoring": "Coleção de esquilos: 5/10/20/40 pontos para 1-4 esquilos diferentes"
+  },
+  "river_otter": {
+    "name": "Lontra-de-rio",
+    "scoring": "2 pontos por peixe, inseto e anfíbio"
+  },
+  "rock_vole": {
+    "name": "Rato-das-rochas",
+    "scoring": "1 ponto por rato e por inseto (incluindo ele mesmo)"
+  },
+  "short_tailed_shrew": {
+    "name": "Musaranho-de-cauda-curta",
+    "scoring": "5 pontos por Musaranho-de-cauda-curta"
+  },
+  "spotted_skunk": {
+    "name": "Doninha-fedorenta-malhada",
+    "scoring": "10 pontos cada se estiver sozinha na sua árvore (um rio não conta); senão 0",
+    "context": "Doninhas-fedorentas sozinhas na sua árvore"
+  },
+  "synchronous_firefly": {
+    "name": "Pirilampo-sincronizado",
+    "scoring": "3 pontos por Pirilampo por cada Pirilampo (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Peru-selvagem",
+    "scoring": "2 pontos por símbolo de árvore igual ao do Peru (incluindo o seu)",
+    "context": "Total de símbolos de árvore correspondentes nos seus Perus"
+  },
+  "virgins_bower": {
+    "name": "Clematite-da-virgínia",
+    "scoring": "2 pontos por ave"
+  },
+  "weevil_wasp": {
+    "name": "Vespa-caçadora-de-gorgulhos",
+    "scoring": "10 pontos cada numa árvore com outro inseto; senão 0",
+    "context": "Vespas-caçadoras numa árvore com pelo menos outro inseto"
+  },
+  "white_footed_mouse": {
+    "name": "Rato-de-patas-brancas",
+    "scoring": "1 ponto por rato (incluindo ele mesmo)"
+  },
+  "white_tailed_deer": {
+    "name": "Veado-de-cauda-branca",
+    "scoring": "2 pontos por árvore"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Chupa-seiva-de-barriga-amarela",
+    "scoring": "2 pontos por Chupa-seiva"
+  },
+  "cave_s": {
+    "name": "Gruta",
+    "scoring": "1 ponto por carta na sua gruta"
   }
 }

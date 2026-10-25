@@ -9,6 +9,7 @@
   "category": {
     "tree": "Puut",
     "tree_dartmoor": "Puut ja pensaat",
+    "river_smoky": "Joet",
     "top": "Ylä",
     "bottom": "Ala",
     "lateral": "Sivu",
@@ -191,6 +192,7 @@
     "editionAll": "Kaikki versiot",
     "editionClassic": "Klassinen",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Pelaajamäärä",
     "playerCountAll": "Kaikki",
     "playerCountSolo": "Soolo",
@@ -331,6 +333,7 @@
     "edition": "Peliversio",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Valitse, mitä Forest Shuffle -peliä pisteytät",
     "editionChangeConfirm": "Version vaihtaminen nollaa nykyisen pisteytysistunnon. Oletko varma?",
     "appName": "Forest Shuffle Scorer",

@@ -9,6 +9,7 @@
   "category": {
     "tree": "Деревья",
     "tree_dartmoor": "Деревья и кустарники",
+    "river_smoky": "Реки",
     "top": "Верх",
     "bottom": "Низ",
     "lateral": "Сбоку",
@@ -193,6 +194,7 @@
     "editionAll": "Все издания",
     "editionClassic": "Классическое",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Кол-во игроков",
     "playerCountAll": "Все",
     "playerCountSolo": "Solo",
@@ -333,6 +335,7 @@
     "edition": "Издание игры",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Выбери, какую игру Forest Shuffle считать",
     "editionChangeConfirm": "Смена издания сбросит текущую сессию подсчёта. Ты уверен?",
     "appName": "Forest Shuffle Scorer",

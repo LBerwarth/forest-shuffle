@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Luola (Exmoor)",
     "scoring": "1 piste / kortti luolassa"
+  },
+  "basswood": {
+    "name": "Amerikanlehmus",
+    "scoring": "2 pistettä / lehmussymboli puussa ja siihen kiinnitetyissä korteissa",
+    "context": "Lehmussymbolit amerikanlehmuksissasi yhteensä (puut + kiinnitetyt kortit, ml. joen alla)"
+  },
+  "black_gum": {
+    "name": "Metsätupelo",
+    "scoring": "1 piste / joki"
+  },
+  "buckeye": {
+    "name": "Keltahevoskastanja",
+    "scoring": "1 piste / hevoskastanjasymboli metsässäsi (ml. keltahevoskastanjat)",
+    "context": "Hevoskastanjasymbolit metsässäsi (ml. keltahevoskastanjapuut)"
+  },
+  "fraser_fir": {
+    "name": "Fraserinpihta",
+    "scoring": "1 piste / puu metsässäsi (ml. tämä)"
+  },
+  "hemlock": {
+    "name": "Hemlokki",
+    "scoring": "5 pistettä / hemlokki"
+  },
+  "hickory": {
+    "name": "Hikkori",
+    "scoring": "2 pistettä / siihen kiinnitetty kortti (joki ja sen alla olevat kortit lasketaan)",
+    "context": "Hikkoreihisi kiinnitetyt kortit yhteensä"
+  },
+  "silver_maple": {
+    "name": "Hopeavaahtera",
+    "scoring": "5 pistettä kustakin, jos sinulla on 3+ hopeavaahteraa"
+  },
+  "yellow_birch": {
+    "name": "Keltakoivu",
+    "scoring": "1 piste / keltakoivu"
+  },
+  "creek": {
+    "name": "Puro",
+    "scoring": "1 piste / kala"
+  },
+  "river_bend": {
+    "name": "Joenmutka",
+    "scoring": "0 pistettä (nostovaikutus, kun pelaat kaloja)"
+  },
+  "waterfall": {
+    "name": "Vesiputous",
+    "scoring": "0 pistettä (vain kaloja voi asettaa sen alle)"
+  },
+  "universal_river": {
+    "name": "Yleisjoki",
+    "scoring": "0 pistettä, mutta lasketaan joeksi"
+  },
+  "bald_eagle": {
+    "name": "Valkopäämerikotka",
+    "scoring": "30 pistettä kustakin, jos 5+ kalaa; muuten 10"
+  },
+  "caddisfly": {
+    "name": "Vesiperhonen",
+    "scoring": "2 pistettä / vesiperhonen"
+  },
+  "flying_squirrel": {
+    "name": "Liito-orava",
+    "scoring": "Oravasarja: 5/10/20/40 pistettä (1-4 eri oravaa)"
+  },
+  "great_blue_heron": {
+    "name": "Amerikanharmaahaikara",
+    "scoring": "2 pistettä / kala"
+  },
+  "long_eared_owl": {
+    "name": "Sarvipöllö",
+    "scoring": "2 pistettä / hiiri"
+  },
+  "peregrine_falcon_s": {
+    "name": "Muuttohaukka",
+    "scoring": "1 piste / lintu (ml. tämä)"
+  },
+  "rockcap_fern": {
+    "name": "Amerikankallioimarre",
+    "scoring": "1 piste / kasvi (ml. tämä)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Rubiinikurkkukolibri",
+    "scoring": "1 piste / kasvi + 1 / puu"
+  },
+  "scarlet_tanager": {
+    "name": "Helakkatanagra",
+    "scoring": "2 pistettä / helakkatanagra"
+  },
+  "thermometer_cricket": {
+    "name": "Lämpömittarisirkka",
+    "scoring": "1 piste / hyönteinen (ml. tämä)"
+  },
+  "tufted_titmouse": {
+    "name": "Harmaatöyhtötiainen",
+    "scoring": "0 pistettä (nostovaikutus, kun pelaat kasveja)"
+  },
+  "virginia_opossum": {
+    "name": "Virginianopossumi",
+    "scoring": "2 pistettä / erilainen puusymboli sen puussa",
+    "context": "Erilaiset puusymbolit opossumiesi puissa yhteensä (kaikki opossumit laskettuna yhteen)"
+  },
+  "water_starwort": {
+    "name": "Vesitähti",
+    "scoring": "1 piste / joki + 1 / kala"
+  },
+  "wood_thrush": {
+    "name": "Puurastas",
+    "scoring": "0 pistettä (nostovaikutus, kun pelaat lintuja)"
+  },
+  "blue_mistflower": {
+    "name": "Sininen sumukukka",
+    "scoring": "2 pistettä / sininen sumukukka"
+  },
+  "brook_trout": {
+    "name": "Puronieriä",
+    "scoring": "3 pistettä / joki, jonka alla ei ole kalaa",
+    "context": "Joet, joiden alla ei ole kalaa"
+  },
+  "brown_water_scorpion": {
+    "name": "Ruskea vesiskorpioni",
+    "scoring": "2 pistettä / ruskea vesiskorpioni"
+  },
+  "common_box_turtle": {
+    "name": "Karoliinanrasiakilpikonna",
+    "scoring": "5 pistettä / karoliinanrasiakilpikonna"
+  },
+  "eastern_chipmunk": {
+    "name": "Itäinen maaorava",
+    "scoring": "Oravasarja: 5/10/20/40 pistettä (1-4 eri oravaa)"
+  },
+  "eastern_hellbender": {
+    "name": "Itäinen hellbender",
+    "scoring": "2 pistettä / joki"
+  },
+  "greenside_darter": {
+    "name": "Viherkylkikääpiöahven",
+    "scoring": "3 pistettä / hyönteinen"
+  },
+  "imitator_salamander": {
+    "name": "Jäljittelijäsalamanteri",
+    "scoring": "10 pistettä kustakin, jos 3+ eri sammakkoeläinlajia; muuten 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Isolehtivita",
+    "scoring": "2 pistettä / isolehtivita"
+  },
+  "skipper_caterpillar": {
+    "name": "Paksupääntoukka",
+    "scoring": "10 pistettä kustakin, jos 3+ eri hyönteislajia; muuten 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Kuusitäpläkiitäjäinen",
+    "scoring": "5 pistettä / kuusitäpläkiitäjäinen"
+  },
+  "smallmouth_bass": {
+    "name": "Pikkubassi",
+    "scoring": "3 pistettä / eri kalalaji (ml. oma lajinsa)"
+  },
+  "solomons_seal": {
+    "name": "Lehtokielo",
+    "scoring": "6 pistettä / sammakkoeläin"
+  },
+  "wintergreen": {
+    "name": "Kanadantalvikki",
+    "scoring": "3 pistettä / orava"
+  },
+  "wood_frog": {
+    "name": "Metsäsammakko",
+    "scoring": "1 piste / puu"
+  },
+  "yellow_bullhead": {
+    "name": "Keltapiikkimonni",
+    "scoring": "0 pistettä (nostovaikutus, kun pelaat jokia)"
+  },
+  "yellow_perch": {
+    "name": "Kelta-ahven",
+    "scoring": "2 pistettä / kelta-ahven"
+  },
+  "beaver_s": {
+    "name": "Majava",
+    "scoring": "1 piste / kortti luolassasi"
+  },
+  "black_bear": {
+    "name": "Mustakarhu",
+    "scoring": "30 pistettä kustakin, jos sen puussa on 2 kalaa; muuten 10",
+    "context": "Mustakarhut, joiden puussa on 2 kalaa"
+  },
+  "bobcat": {
+    "name": "Punailves",
+    "scoring": "30 pistettä kustakin, jos 5+ lintua; muuten 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Kastanjakylkikerttuli",
+    "scoring": "5 pistettä / kerttuli"
+  },
+  "coyote": {
+    "name": "Kojootti",
+    "scoring": "30 pistettä kustakin, jos 6+ tassueläintä (ml. kojootit); muuten 10"
+  },
+  "elk_s": {
+    "name": "Vapiti",
+    "scoring": "30 pistettä kustakin, jos 5+ eri puulajia; muuten 10"
+  },
+  "gray_fox": {
+    "name": "Harmaakettu",
+    "scoring": "1 piste / tassueläin (ml. tämä)"
+  },
+  "gray_squirrel": {
+    "name": "Harmaaorava",
+    "scoring": "Oravasarja: 5/10/20/40 pistettä (1-4 eri oravaa)"
+  },
+  "long_tailed_weasel": {
+    "name": "Pitkähäntälumikko",
+    "scoring": "10 pistettä kustakin, jos 3+ hiirtä; muuten 0"
+  },
+  "masked_shrew": {
+    "name": "Naamiopäästäinen",
+    "scoring": "3 pistettä / naamiopäästäinen"
+  },
+  "mink": {
+    "name": "Minkki",
+    "scoring": "5 pistettä / minkki"
+  },
+  "pileated_woodpecker": {
+    "name": "Amerikanpalokärki",
+    "scoring": "1 piste / lintu (ml. tämä)"
+  },
+  "raccoon_s": {
+    "name": "Pesukarhu",
+    "scoring": "0 pistettä (luolavaikutus)"
+  },
+  "red_squirrel_s": {
+    "name": "Amerikanpunaorava",
+    "scoring": "Oravasarja: 5/10/20/40 pistettä (1-4 eri oravaa)"
+  },
+  "river_otter": {
+    "name": "Kanadansaukko",
+    "scoring": "2 pistettä / kala, hyönteinen ja sammakkoeläin"
+  },
+  "rock_vole": {
+    "name": "Kalliomyyrä",
+    "scoring": "1 piste / hiiri + 1 / hyönteinen (ml. tämä)"
+  },
+  "short_tailed_shrew": {
+    "name": "Lyhythäntäpäästäinen",
+    "scoring": "5 pistettä / lyhythäntäpäästäinen"
+  },
+  "spotted_skunk": {
+    "name": "Täplähaisunäätä",
+    "scoring": "10 pistettä kustakin, jos yksin puussaan (jokea ei lasketa); muuten 0",
+    "context": "Haisunäädät, jotka ovat yksin puussaan"
+  },
+  "synchronous_firefly": {
+    "name": "Synkroninen kiiltomato",
+    "scoring": "3 pistettä / kiiltomato jokaista kiiltomatoa kohden (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Villikalkkuna",
+    "scoring": "2 pistettä / puusymboli, joka vastaa villikalkkunan omaa symbolia (ml. oma)",
+    "context": "Villikalkkunoidesi vastaavat puusymbolit yhteensä"
+  },
+  "virgins_bower": {
+    "name": "Virginiankärhö",
+    "scoring": "2 pistettä / lintu"
+  },
+  "weevil_wasp": {
+    "name": "Kärsäkäspistiäinen",
+    "scoring": "10 pistettä kustakin, jos puussa on toinen hyönteinen; muuten 0",
+    "context": "Kärsäkäspistiäiset puussa, jossa on vähintään yksi muu hyönteinen"
+  },
+  "white_footed_mouse": {
+    "name": "Valkojalkahiiri",
+    "scoring": "1 piste / hiiri (ml. tämä)"
+  },
+  "white_tailed_deer": {
+    "name": "Valkohäntäpeura",
+    "scoring": "2 pistettä / puu"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Keltavatsamahlatikka",
+    "scoring": "2 pistettä / mahlatikka"
+  },
+  "cave_s": {
+    "name": "Luola",
+    "scoring": "1 piste / kortti luolassasi"
   }
 }

@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Grot (Exmoor)",
     "scoring": "1 punt per kaart in de grot"
+  },
+  "basswood": {
+    "name": "Amerikaanse linde",
+    "scoring": "2 punten per symbool van de Amerikaanse linde op de boom en de aangelegde kaarten",
+    "context": "Totaal aantal symbolen van de Amerikaanse linde op je Amerikaanse linden (bomen + aangelegde kaarten, incl. onder een rivier)"
+  },
+  "black_gum": {
+    "name": "Tupeloboom",
+    "scoring": "1 punt per rivier"
+  },
+  "buckeye": {
+    "name": "Pavia",
+    "scoring": "1 punt per Pavia-symbool in je bos (incl. de Pavia's)",
+    "context": "Pavia-symbolen in je bos (incl. de Pavia-bomen)"
+  },
+  "fraser_fir": {
+    "name": "Fraserspar",
+    "scoring": "1 punt per boom in je bos (incl. zichzelf)"
+  },
+  "hemlock": {
+    "name": "Hemlockspar",
+    "scoring": "5 punten per Hemlockspar"
+  },
+  "hickory": {
+    "name": "Hickory",
+    "scoring": "2 punten per kaart aangelegd aan deze boom (rivier en kaarten eronder tellen mee)",
+    "context": "Totaal aantal kaarten aangelegd aan je Hickory's"
+  },
+  "silver_maple": {
+    "name": "Zilveresdoorn",
+    "scoring": "5 punten per stuk bij 3+ Zilveresdoorns"
+  },
+  "yellow_birch": {
+    "name": "Gele berk",
+    "scoring": "1 punt per Gele berk"
+  },
+  "creek": {
+    "name": "Kreek",
+    "scoring": "1 punt per vis"
+  },
+  "river_bend": {
+    "name": "Rivierbocht",
+    "scoring": "0 punten (trekeffect bij het spelen van vissen)"
+  },
+  "waterfall": {
+    "name": "Waterval",
+    "scoring": "0 punten (alleen vissen passen eronder)"
+  },
+  "universal_river": {
+    "name": "Universele rivier",
+    "scoring": "0 punten, maar telt als rivier"
+  },
+  "bald_eagle": {
+    "name": "Amerikaanse zeearend",
+    "scoring": "30 punten per stuk bij 5+ vissen; anders 10"
+  },
+  "caddisfly": {
+    "name": "Schietmot",
+    "scoring": "2 punten per Schietmot"
+  },
+  "flying_squirrel": {
+    "name": "Vliegende eekhoorn",
+    "scoring": "Eekhoornset: 5/10/20/40 punten voor 1-4 verschillende eekhoorns"
+  },
+  "great_blue_heron": {
+    "name": "Amerikaanse blauwe reiger",
+    "scoring": "2 punten per vis"
+  },
+  "long_eared_owl": {
+    "name": "Ransuil",
+    "scoring": "2 punten per muis"
+  },
+  "peregrine_falcon_s": {
+    "name": "Slechtvalk",
+    "scoring": "1 punt per vogel (incl. zichzelf)"
+  },
+  "rockcap_fern": {
+    "name": "Amerikaanse eikvaren",
+    "scoring": "1 punt per plant (incl. zichzelf)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Robijnkeelkolibrie",
+    "scoring": "1 punt per plant en per boom"
+  },
+  "scarlet_tanager": {
+    "name": "Zwartvleugeltangare",
+    "scoring": "2 punten per Zwartvleugeltangare"
+  },
+  "thermometer_cricket": {
+    "name": "Thermometerkrekel",
+    "scoring": "1 punt per insect (incl. zichzelf)"
+  },
+  "tufted_titmouse": {
+    "name": "Tweekleurige mees",
+    "scoring": "0 punten (trekeffect bij het spelen van planten)"
+  },
+  "virginia_opossum": {
+    "name": "Noord-Amerikaanse opossum",
+    "scoring": "2 punten per verschillend boomsymbool bij zijn boom",
+    "context": "Totaal aantal verschillende boomsymbolen bij de bomen van je Opossums (opgeteld over alle Opossums)"
+  },
+  "water_starwort": {
+    "name": "Sterrenkroos",
+    "scoring": "1 punt per rivier en per vis"
+  },
+  "wood_thrush": {
+    "name": "Amerikaanse boslijster",
+    "scoring": "0 punten (trekeffect bij het spelen van vogels)"
+  },
+  "blue_mistflower": {
+    "name": "Blauwe mistbloem",
+    "scoring": "2 punten per Blauwe mistbloem"
+  },
+  "brook_trout": {
+    "name": "Bronforel",
+    "scoring": "3 punten per rivier zonder vis eronder",
+    "context": "Rivieren zonder vis eronder"
+  },
+  "brown_water_scorpion": {
+    "name": "Bruine waterschorpioen",
+    "scoring": "2 punten per Bruine waterschorpioen"
+  },
+  "common_box_turtle": {
+    "name": "Carolinadoosschildpad",
+    "scoring": "5 punten per Carolinadoosschildpad"
+  },
+  "eastern_chipmunk": {
+    "name": "Oostelijke wangzakeekhoorn",
+    "scoring": "Eekhoornset: 5/10/20/40 punten voor 1-4 verschillende eekhoorns"
+  },
+  "eastern_hellbender": {
+    "name": "Slijkduivel",
+    "scoring": "2 punten per rivier"
+  },
+  "greenside_darter": {
+    "name": "Groenzijdige grondbaars",
+    "scoring": "3 punten per insect"
+  },
+  "imitator_salamander": {
+    "name": "Imitatorsalamander",
+    "scoring": "10 punten per stuk bij 3+ verschillende amfibieënsoorten; anders 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Breedbladig fonteinkruid",
+    "scoring": "2 punten per Breedbladig fonteinkruid"
+  },
+  "skipper_caterpillar": {
+    "name": "Dikkopjesrups",
+    "scoring": "10 punten per stuk bij 3+ verschillende insectensoorten; anders 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Zesvlekkige zandloopkever",
+    "scoring": "5 punten per Zesvlekkige zandloopkever"
+  },
+  "smallmouth_bass": {
+    "name": "Kleinbekbaars",
+    "scoring": "3 punten per verschillende vissoort (incl. de eigen)"
+  },
+  "solomons_seal": {
+    "name": "Salomonszegel",
+    "scoring": "6 punten per amfibie"
+  },
+  "wintergreen": {
+    "name": "Bergthee",
+    "scoring": "3 punten per eekhoorn"
+  },
+  "wood_frog": {
+    "name": "Boskikker",
+    "scoring": "1 punt per boom"
+  },
+  "yellow_bullhead": {
+    "name": "Gele dwergmeerval",
+    "scoring": "0 punten (trekeffect bij het spelen van rivieren)"
+  },
+  "yellow_perch": {
+    "name": "Gele baars",
+    "scoring": "2 punten per Gele baars"
+  },
+  "beaver_s": {
+    "name": "Bever",
+    "scoring": "1 punt per kaart in je grot"
+  },
+  "black_bear": {
+    "name": "Zwarte beer",
+    "scoring": "30 punten per stuk met 2 vissen bij zijn boom; anders 10",
+    "context": "Zwarte beren met 2 vissen bij hun boom"
+  },
+  "bobcat": {
+    "name": "Rode lynx",
+    "scoring": "30 punten per stuk bij 5+ vogels; anders 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Roestflankzanger",
+    "scoring": "5 punten per Roestflankzanger"
+  },
+  "coyote": {
+    "name": "Coyote",
+    "scoring": "30 punten per stuk bij 6+ dieren met poten (incl. Coyotes); anders 10"
+  },
+  "elk_s": {
+    "name": "Wapiti",
+    "scoring": "30 punten per stuk bij 5+ verschillende boomsoorten; anders 10"
+  },
+  "gray_fox": {
+    "name": "Grijze vos",
+    "scoring": "1 punt per dier met poten (incl. zichzelf)"
+  },
+  "gray_squirrel": {
+    "name": "Grijze eekhoorn",
+    "scoring": "Eekhoornset: 5/10/20/40 punten voor 1-4 verschillende eekhoorns"
+  },
+  "long_tailed_weasel": {
+    "name": "Langstaartwezel",
+    "scoring": "10 punten per stuk bij 3+ muizen; anders 0"
+  },
+  "masked_shrew": {
+    "name": "Gemaskerde spitsmuis",
+    "scoring": "3 punten per Gemaskerde spitsmuis"
+  },
+  "mink": {
+    "name": "Amerikaanse nerts",
+    "scoring": "5 punten per Amerikaanse nerts"
+  },
+  "pileated_woodpecker": {
+    "name": "Helmspecht",
+    "scoring": "1 punt per vogel (incl. zichzelf)"
+  },
+  "raccoon_s": {
+    "name": "Wasbeer",
+    "scoring": "0 punten (grot-effect)"
+  },
+  "red_squirrel_s": {
+    "name": "Amerikaanse rode eekhoorn",
+    "scoring": "Eekhoornset: 5/10/20/40 punten voor 1-4 verschillende eekhoorns"
+  },
+  "river_otter": {
+    "name": "Noord-Amerikaanse otter",
+    "scoring": "2 punten per vis, insect en amfibie"
+  },
+  "rock_vole": {
+    "name": "Rotswoelmuis",
+    "scoring": "1 punt per muis en per insect (incl. zichzelf)"
+  },
+  "short_tailed_shrew": {
+    "name": "Kortstaartspitsmuis",
+    "scoring": "5 punten per Kortstaartspitsmuis"
+  },
+  "spotted_skunk": {
+    "name": "Gevlekte skunk",
+    "scoring": "10 punten per stuk als alleen bij zijn boom (een rivier telt niet); anders 0",
+    "context": "Skunks die alleen bij hun boom zijn"
+  },
+  "synchronous_firefly": {
+    "name": "Synchrone vuurvlieg",
+    "scoring": "3 punten per Vuurvlieg voor elke Vuurvlieg (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Wilde kalkoen",
+    "scoring": "2 punten per boomsymbool gelijk aan het eigen symbool van de Kalkoen (incl. het eigen)",
+    "context": "Totaal aantal overeenkomende boomsymbolen bij je Kalkoenen"
+  },
+  "virgins_bower": {
+    "name": "Virginische clematis",
+    "scoring": "2 punten per vogel"
+  },
+  "weevil_wasp": {
+    "name": "Snuitkeverwesp",
+    "scoring": "10 punten per stuk bij een boom met een ander insect; anders 0",
+    "context": "Snuitkeverwespen bij een boom met minstens één ander insect"
+  },
+  "white_footed_mouse": {
+    "name": "Witvoetmuis",
+    "scoring": "1 punt per muis (incl. zichzelf)"
+  },
+  "white_tailed_deer": {
+    "name": "Witstaarthert",
+    "scoring": "2 punten per boom"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Geelbuiksapspecht",
+    "scoring": "2 punten per Geelbuiksapspecht"
+  },
+  "cave_s": {
+    "name": "Grot",
+    "scoring": "1 punt per kaart in je grot"
   }
 }

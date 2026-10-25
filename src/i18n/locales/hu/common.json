@@ -9,6 +9,7 @@
   "category": {
     "tree": "Fák",
     "tree_dartmoor": "Fák és cserjék",
+    "river_smoky": "Folyók",
     "top": "Felső",
     "bottom": "Alsó",
     "lateral": "Oldalsó",
@@ -191,6 +192,7 @@
     "editionAll": "Minden kiadás",
     "editionClassic": "Klasszikus",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Játékosszám",
     "playerCountAll": "Mind",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Játékkiadás",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Válaszd ki, melyik Forest Shuffle játékot pontozod",
     "editionChangeConfirm": "A kiadás módosítása visszaállítja a jelenlegi pontozási munkamenetet. Biztos vagy benne?",
     "appName": "Forest Shuffle Scorer",

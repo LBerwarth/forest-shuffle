@@ -9,6 +9,7 @@
   "category": {
     "tree": "Дерева",
     "tree_dartmoor": "Дерева і кущі",
+    "river_smoky": "Річки",
     "top": "Верх",
     "bottom": "Низ",
     "lateral": "Збоку",
@@ -193,6 +194,7 @@
     "editionAll": "Усі видання",
     "editionClassic": "Класичне",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "К-ть гравців",
     "playerCountAll": "Усі",
     "playerCountSolo": "Solo",
@@ -333,6 +335,7 @@
     "edition": "Видання гри",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Обери, яку гру Forest Shuffle рахувати",
     "editionChangeConfirm": "Зміна видання скине поточну сесію підрахунку. Ти впевнений?",
     "appName": "Forest Shuffle Scorer",

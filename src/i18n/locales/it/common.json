@@ -9,6 +9,7 @@
   "category": {
     "tree": "Alberi",
     "tree_dartmoor": "Alberi & Arbusti",
+    "river_smoky": "Fiumi",
     "top": "In alto",
     "bottom": "In basso",
     "lateral": "Laterale",
@@ -191,6 +192,7 @@
     "editionAll": "Tutte le edizioni",
     "editionClassic": "Classica",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "N° giocatori",
     "playerCountAll": "Tutti",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Edizione del gioco",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Scegli quale gioco Forest Shuffle calcolare",
     "editionChangeConfirm": "Cambiare edizione azzererà la sessione di calcolo attuale. Sei sicuro?",
     "appName": "Forest Shuffle Scorer",

@@ -9,6 +9,7 @@
   "category": {
     "tree": "Træer",
     "tree_dartmoor": "Træer & buske",
+    "river_smoky": "Floder",
     "top": "Top",
     "bottom": "Bund",
     "lateral": "Side",
@@ -191,6 +192,7 @@
     "editionAll": "Alle udgaver",
     "editionClassic": "Klassisk",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Antal spillere",
     "playerCountAll": "Alle",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Spiludgave",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Vælg hvilket Forest Shuffle-spil du vil score",
     "editionChangeConfirm": "Skift af udgave nulstiller din nuværende scoringssession. Er du sikker?",
     "appName": "Forest Shuffle Scorer",

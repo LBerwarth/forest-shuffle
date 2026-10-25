@@ -9,6 +9,7 @@
   "category": {
     "tree": "Ağaçlar",
     "tree_dartmoor": "Ağaçlar ve Çalılar",
+    "river_smoky": "Nehirler",
     "top": "Üst",
     "bottom": "Alt",
     "lateral": "Yan",
@@ -191,6 +192,7 @@
     "editionAll": "Tüm sürümler",
     "editionClassic": "Klasik",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Oyuncu sayısı",
     "playerCountAll": "Tümü",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Oyun Sürümü",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Hangi Forest Shuffle oyununu puanlayacağını seç",
     "editionChangeConfirm": "Sürümü değiştirmek mevcut puanlama oturumunu sıfırlar. Emin misin?",
     "appName": "Forest Shuffle Scorer",

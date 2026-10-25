@@ -9,6 +9,7 @@
   "category": {
     "tree": "Bomen",
     "tree_dartmoor": "Bomen & Struiken",
+    "river_smoky": "Rivieren",
     "top": "Boven",
     "bottom": "Onder",
     "lateral": "Zijkant",
@@ -191,6 +192,7 @@
     "editionAll": "Alle edities",
     "editionClassic": "Klassiek",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Aantal spelers",
     "playerCountAll": "Alle",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Speleditie",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Kies welk Forest Shuffle-spel je wilt scoren",
     "editionChangeConfirm": "Het wijzigen van de editie reset je huidige puntentelling. Weet je het zeker?",
     "appName": "Forest Shuffle Scorer",

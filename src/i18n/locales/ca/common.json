@@ -9,6 +9,7 @@
   "category": {
     "tree": "Arbres",
     "tree_dartmoor": "Arbres i arbustos",
+    "river_smoky": "Rius",
     "top": "Dalt",
     "bottom": "Baix",
     "lateral": "Lateral",
@@ -191,6 +192,7 @@
     "editionAll": "Totes",
     "editionClassic": "Clàssica",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Nre. jugadors",
     "playerCountAll": "Tots",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Edició del joc",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Tria quin joc de Forest Shuffle vols puntuar",
     "editionChangeConfirm": "Canviar l'edició reiniciarà la sessió de puntuació actual. Segur?",
     "appName": "Forest Shuffle Scorer",

@@ -9,6 +9,7 @@
   "category": {
     "tree": "Trær",
     "tree_dartmoor": "Trær og busker",
+    "river_smoky": "Elver",
     "top": "Topp",
     "bottom": "Bunn",
     "lateral": "Side",
@@ -191,6 +192,7 @@
     "editionAll": "Alle utgaver",
     "editionClassic": "Klassisk",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Antall spillere",
     "playerCountAll": "Alle",
     "playerCountSolo": "Solo",
@@ -331,6 +333,7 @@
     "edition": "Spillutgave",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Velg hvilket Forest Shuffle-spill du vil registrere",
     "editionChangeConfirm": "Å endre utgave nullstiller den pågående registreringsøkten. Er du sikker?",
     "appName": "Forest Shuffle Scorer",

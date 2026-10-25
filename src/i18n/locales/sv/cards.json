@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Grotta (Exmoor)",
     "scoring": "1 poäng per kort i grottan"
+  },
+  "basswood": {
+    "name": "Amerikansk lind",
+    "scoring": "2 poäng per lindsymbol på trädet och dess fästa kort",
+    "context": "Totalt antal lindsymboler på dina Amerikanska lindar (träd + fästa kort, inkl. under en flod)"
+  },
+  "black_gum": {
+    "name": "Skogstupelo",
+    "scoring": "1 poäng per flod"
+  },
+  "buckeye": {
+    "name": "Gul hästkastanj",
+    "scoring": "1 poäng per hästkastanjsymbol i din skog (inkl. Gula hästkastanjer)",
+    "context": "Hästkastanjsymboler i din skog (inkl. Gul hästkastanj-träden)"
+  },
+  "fraser_fir": {
+    "name": "Frasergran",
+    "scoring": "1 poäng per träd i din skog (inkl. sig själv)"
+  },
+  "hemlock": {
+    "name": "Hemlock",
+    "scoring": "5 poäng per Hemlock"
+  },
+  "hickory": {
+    "name": "Hickory",
+    "scoring": "2 poäng per kort fäst vid det (flod och kort under den räknas)",
+    "context": "Totalt antal kort fästa vid dina Hickoryträd"
+  },
+  "silver_maple": {
+    "name": "Silverlönn",
+    "scoring": "5 poäng styck om du har 3+ Silverlönnar"
+  },
+  "yellow_birch": {
+    "name": "Gulbjörk",
+    "scoring": "1 poäng per Gulbjörk"
+  },
+  "creek": {
+    "name": "Bäck",
+    "scoring": "1 poäng per fisk"
+  },
+  "river_bend": {
+    "name": "Flodkrök",
+    "scoring": "0 poäng (dra-effekt när du spelar fisk)"
+  },
+  "waterfall": {
+    "name": "Vattenfall",
+    "scoring": "0 poäng (endast fisk får plats under det)"
+  },
+  "universal_river": {
+    "name": "Universalflod",
+    "scoring": "0 poäng, men räknas som en flod"
+  },
+  "bald_eagle": {
+    "name": "Vithövdad havsörn",
+    "scoring": "30 poäng styck om 5+ fiskar; annars 10"
+  },
+  "caddisfly": {
+    "name": "Nattslända",
+    "scoring": "2 poäng per Nattslända"
+  },
+  "flying_squirrel": {
+    "name": "Flygekorre",
+    "scoring": "Ekorrset: 5/10/20/40 poäng för 1-4 olika ekorrar"
+  },
+  "great_blue_heron": {
+    "name": "Amerikansk gråhäger",
+    "scoring": "2 poäng per fisk"
+  },
+  "long_eared_owl": {
+    "name": "Hornuggla",
+    "scoring": "2 poäng per mus"
+  },
+  "peregrine_falcon_s": {
+    "name": "Pilgrimsfalk",
+    "scoring": "1 poäng per fågel (inkl. sig själv)"
+  },
+  "rockcap_fern": {
+    "name": "Amerikansk stensöta",
+    "scoring": "1 poäng per växt (inkl. sig själv)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Rubinstrupig kolibri",
+    "scoring": "1 poäng per växt och per träd"
+  },
+  "scarlet_tanager": {
+    "name": "Scharlakanstangara",
+    "scoring": "2 poäng per Scharlakanstangara"
+  },
+  "thermometer_cricket": {
+    "name": "Termometersyrsa",
+    "scoring": "1 poäng per insekt (inkl. sig själv)"
+  },
+  "tufted_titmouse": {
+    "name": "Amerikansk tofsmes",
+    "scoring": "0 poäng (dra-effekt när du spelar växter)"
+  },
+  "virginia_opossum": {
+    "name": "Virginiaopossum",
+    "scoring": "2 poäng per olik trädsymbol vid dess träd",
+    "context": "Totalt antal olika trädsymboler vid dina Opossumers träd (summerat över alla Opossumer)"
+  },
+  "water_starwort": {
+    "name": "Lånke",
+    "scoring": "1 poäng per flod och per fisk"
+  },
+  "wood_thrush": {
+    "name": "Skogstrast",
+    "scoring": "0 poäng (dra-effekt när du spelar fåglar)"
+  },
+  "blue_mistflower": {
+    "name": "Blå dimblomma",
+    "scoring": "2 poäng per Blå dimblomma"
+  },
+  "brook_trout": {
+    "name": "Bäckröding",
+    "scoring": "3 poäng per flod utan fisk under sig",
+    "context": "Floder utan fisk under sig"
+  },
+  "brown_water_scorpion": {
+    "name": "Brun vattenskorpion",
+    "scoring": "2 poäng per Brun vattenskorpion"
+  },
+  "common_box_turtle": {
+    "name": "Vanlig dossköldpadda",
+    "scoring": "5 poäng per Vanlig dossköldpadda"
+  },
+  "eastern_chipmunk": {
+    "name": "Östlig jordekorre",
+    "scoring": "Ekorrset: 5/10/20/40 poäng för 1-4 olika ekorrar"
+  },
+  "eastern_hellbender": {
+    "name": "Östlig hellbender",
+    "scoring": "2 poäng per flod"
+  },
+  "greenside_darter": {
+    "name": "Grönsidig dvärgabborre",
+    "scoring": "3 poäng per insekt"
+  },
+  "imitator_salamander": {
+    "name": "Imitatorsalamander",
+    "scoring": "10 poäng styck om 3+ olika groddjursarter; annars 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Storbladig nate",
+    "scoring": "2 poäng per Storbladig nate"
+  },
+  "skipper_caterpillar": {
+    "name": "Tjockhuvudlarv",
+    "scoring": "10 poäng styck om 3+ olika insektsarter; annars 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Sexfläckig sandjägare",
+    "scoring": "5 poäng per Sexfläckig sandjägare"
+  },
+  "smallmouth_bass": {
+    "name": "Smalmunnad svartabborre",
+    "scoring": "3 poäng per olik fiskart (inkl. sin egen)"
+  },
+  "solomons_seal": {
+    "name": "Storrams",
+    "scoring": "6 poäng per groddjur"
+  },
+  "wintergreen": {
+    "name": "Bergte",
+    "scoring": "3 poäng per ekorre"
+  },
+  "wood_frog": {
+    "name": "Skogsgroda",
+    "scoring": "1 poäng per träd"
+  },
+  "yellow_bullhead": {
+    "name": "Gul dvärgmal",
+    "scoring": "0 poäng (dra-effekt när du spelar floder)"
+  },
+  "yellow_perch": {
+    "name": "Gul abborre",
+    "scoring": "2 poäng per Gul abborre"
+  },
+  "beaver_s": {
+    "name": "Bäver",
+    "scoring": "1 poäng per kort i din grotta"
+  },
+  "black_bear": {
+    "name": "Svartbjörn",
+    "scoring": "30 poäng styck om 2 fiskar vid dess träd; annars 10",
+    "context": "Svartbjörnar med 2 fiskar vid sitt träd"
+  },
+  "bobcat": {
+    "name": "Rödlo",
+    "scoring": "30 poäng styck om 5+ fåglar; annars 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Brunsidig skogssångare",
+    "scoring": "5 poäng per Skogssångare"
+  },
+  "coyote": {
+    "name": "Prärievarg",
+    "scoring": "30 poäng styck om 6+ tassdjur (inkl. Prärievargar); annars 10"
+  },
+  "elk_s": {
+    "name": "Vapiti",
+    "scoring": "30 poäng styck om 5+ olika trädarter; annars 10"
+  },
+  "gray_fox": {
+    "name": "Gråräv",
+    "scoring": "1 poäng per tassdjur (inkl. sig själv)"
+  },
+  "gray_squirrel": {
+    "name": "Gråekorre",
+    "scoring": "Ekorrset: 5/10/20/40 poäng för 1-4 olika ekorrar"
+  },
+  "long_tailed_weasel": {
+    "name": "Långsvansad vessla",
+    "scoring": "10 poäng styck om 3+ möss; annars 0"
+  },
+  "masked_shrew": {
+    "name": "Masknäbbmus",
+    "scoring": "3 poäng per Masknäbbmus"
+  },
+  "mink": {
+    "name": "Mink",
+    "scoring": "5 poäng per Mink"
+  },
+  "pileated_woodpecker": {
+    "name": "Amerikansk spillkråka",
+    "scoring": "1 poäng per fågel (inkl. sig själv)"
+  },
+  "raccoon_s": {
+    "name": "Tvättbjörn",
+    "scoring": "0 poäng (grotteffekt)"
+  },
+  "red_squirrel_s": {
+    "name": "Amerikansk röd ekorre",
+    "scoring": "Ekorrset: 5/10/20/40 poäng för 1-4 olika ekorrar"
+  },
+  "river_otter": {
+    "name": "Kanadensisk utter",
+    "scoring": "2 poäng per fisk, insekt och groddjur"
+  },
+  "rock_vole": {
+    "name": "Klippsork",
+    "scoring": "1 poäng per mus och per insekt (inkl. sig själv)"
+  },
+  "short_tailed_shrew": {
+    "name": "Kortsvansad näbbmus",
+    "scoring": "5 poäng per Kortsvansad näbbmus"
+  },
+  "spotted_skunk": {
+    "name": "Fläckskunk",
+    "scoring": "10 poäng styck om ensam vid sitt träd (en flod räknas inte); annars 0",
+    "context": "Skunkar som är ensamma vid sitt träd"
+  },
+  "synchronous_firefly": {
+    "name": "Synkron lysmask",
+    "scoring": "3 poäng per Lysmask för varje Lysmask (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Vildkalkon",
+    "scoring": "2 poäng per trädsymbol som matchar Vildkalkonens egen symbol (inkl. sin egen)",
+    "context": "Totalt antal matchande trädsymboler för dina Vildkalkoner"
+  },
+  "virgins_bower": {
+    "name": "Virginiaklematis",
+    "scoring": "2 poäng per fågel"
+  },
+  "weevil_wasp": {
+    "name": "Vivelgeting",
+    "scoring": "10 poäng styck om vid ett träd med en annan insekt; annars 0",
+    "context": "Vivelgetingar vid ett träd med minst en annan insekt"
+  },
+  "white_footed_mouse": {
+    "name": "Vitfotsmus",
+    "scoring": "1 poäng per mus (inkl. sig själv)"
+  },
+  "white_tailed_deer": {
+    "name": "Vitsvanshjort",
+    "scoring": "2 poäng per träd"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Gulbukig savspett",
+    "scoring": "2 poäng per Savspett"
+  },
+  "cave_s": {
+    "name": "Grotta",
+    "scoring": "1 poäng per kort i din grotta"
   }
 }

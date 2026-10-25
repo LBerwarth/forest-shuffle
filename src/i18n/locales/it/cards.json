@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Grotta (Exmoor)",
     "scoring": "1 punto per carta nella grotta"
+  },
+  "basswood": {
+    "name": "Tiglio americano",
+    "scoring": "2 punti per simbolo di Tiglio sull'albero e sulle carte attaccate",
+    "context": "Totale dei simboli di Tiglio sui tuoi Tigli (alberi + carte attaccate, anche sotto un fiume)"
+  },
+  "black_gum": {
+    "name": "Nissa",
+    "scoring": "1 punto per fiume"
+  },
+  "buckeye": {
+    "name": "Ippocastano americano",
+    "scoring": "1 punto per simbolo di Ippocastano americano nel tuo bosco (inclusi gli Ippocastani stessi)",
+    "context": "Simboli di Ippocastano americano nel tuo bosco (inclusi gli alberi)"
+  },
+  "fraser_fir": {
+    "name": "Abete di Fraser",
+    "scoring": "1 punto per albero nel tuo bosco (se stesso incluso)"
+  },
+  "hemlock": {
+    "name": "Tsuga",
+    "scoring": "5 punti per Tsuga"
+  },
+  "hickory": {
+    "name": "Hickory",
+    "scoring": "2 punti per carta attaccata (contano il fiume e le carte sotto di esso)",
+    "context": "Totale delle carte attaccate ai tuoi Hickory"
+  },
+  "silver_maple": {
+    "name": "Acero argentato",
+    "scoring": "5 punti ciascuno se hai 3+ Aceri argentati"
+  },
+  "yellow_birch": {
+    "name": "Betulla gialla",
+    "scoring": "1 punto per Betulla gialla"
+  },
+  "creek": {
+    "name": "Torrente",
+    "scoring": "1 punto per pesce"
+  },
+  "river_bend": {
+    "name": "Ansa del fiume",
+    "scoring": "Nessun punto (effetto di pesca quando giochi pesci)"
+  },
+  "waterfall": {
+    "name": "Cascata",
+    "scoring": "Nessun punto (sotto ci vanno solo pesci)"
+  },
+  "universal_river": {
+    "name": "Fiume universale",
+    "scoring": "Nessun punto, ma conta come fiume"
+  },
+  "bald_eagle": {
+    "name": "Aquila di mare testabianca",
+    "scoring": "30 punti ciascuna con 5+ pesci; altrimenti 10"
+  },
+  "caddisfly": {
+    "name": "Tricottero",
+    "scoring": "2 punti per Tricottero"
+  },
+  "flying_squirrel": {
+    "name": "Scoiattolo volante",
+    "scoring": "Set scoiattoli: 5/10/20/40 punti per 1-4 scoiattoli diversi"
+  },
+  "great_blue_heron": {
+    "name": "Airone azzurro maggiore",
+    "scoring": "2 punti per pesce"
+  },
+  "long_eared_owl": {
+    "name": "Gufo comune",
+    "scoring": "2 punti per topo"
+  },
+  "peregrine_falcon_s": {
+    "name": "Falco pellegrino",
+    "scoring": "1 punto per uccello (se stesso incluso)"
+  },
+  "rockcap_fern": {
+    "name": "Felce delle rocce",
+    "scoring": "1 punto per pianta (se stessa inclusa)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Colibrì golarubino",
+    "scoring": "1 punto per pianta e per albero"
+  },
+  "scarlet_tanager": {
+    "name": "Tanagra scarlatta",
+    "scoring": "2 punti per Tanagra scarlatta"
+  },
+  "thermometer_cricket": {
+    "name": "Grillo termometro",
+    "scoring": "1 punto per insetto (se stesso incluso)"
+  },
+  "tufted_titmouse": {
+    "name": "Cincia bicolore",
+    "scoring": "Nessun punto (effetto di pesca quando giochi piante)"
+  },
+  "virginia_opossum": {
+    "name": "Opossum della Virginia",
+    "scoring": "2 punti per simbolo d'albero diverso sul suo albero",
+    "context": "Totale dei simboli d'albero diversi sugli alberi dei tuoi Opossum (sommati su tutti gli Opossum)"
+  },
+  "water_starwort": {
+    "name": "Gamberaja",
+    "scoring": "1 punto per fiume e per pesce"
+  },
+  "wood_thrush": {
+    "name": "Tordo dei boschi",
+    "scoring": "Nessun punto (effetto di pesca quando giochi uccelli)"
+  },
+  "blue_mistflower": {
+    "name": "Eupatorio celeste",
+    "scoring": "2 punti per Eupatorio celeste"
+  },
+  "brook_trout": {
+    "name": "Salmerino di fonte",
+    "scoring": "3 punti per fiume senza un pesce sotto",
+    "context": "Fiumi senza un pesce sotto"
+  },
+  "brown_water_scorpion": {
+    "name": "Scorpione d'acqua bruno",
+    "scoring": "2 punti per Scorpione d'acqua bruno"
+  },
+  "common_box_turtle": {
+    "name": "Tartaruga scatola",
+    "scoring": "5 punti per Tartaruga scatola"
+  },
+  "eastern_chipmunk": {
+    "name": "Tamia striato",
+    "scoring": "Set scoiattoli: 5/10/20/40 punti per 1-4 scoiattoli diversi"
+  },
+  "eastern_hellbender": {
+    "name": "Criptobranco",
+    "scoring": "2 punti per fiume"
+  },
+  "greenside_darter": {
+    "name": "Dardo dai fianchi verdi",
+    "scoring": "3 punti per insetto"
+  },
+  "imitator_salamander": {
+    "name": "Salamandra imitatrice",
+    "scoring": "10 punti ciascuna con 3+ specie di anfibi diverse; altrimenti 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Brasca a foglie larghe",
+    "scoring": "2 punti per Brasca a foglie larghe"
+  },
+  "skipper_caterpillar": {
+    "name": "Bruco di esperide",
+    "scoring": "10 punti ciascuno con 3+ specie di insetti diverse; altrimenti 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Cicindela a sei macchie",
+    "scoring": "5 punti per Cicindela a sei macchie"
+  },
+  "smallmouth_bass": {
+    "name": "Persico spigola",
+    "scoring": "3 punti per specie di pesce diversa (la propria inclusa)"
+  },
+  "solomons_seal": {
+    "name": "Sigillo di Salomone",
+    "scoring": "6 punti per anfibio"
+  },
+  "wintergreen": {
+    "name": "Gaulteria",
+    "scoring": "3 punti per scoiattolo"
+  },
+  "wood_frog": {
+    "name": "Rana dei boschi",
+    "scoring": "1 punto per albero"
+  },
+  "yellow_bullhead": {
+    "name": "Pesce gatto giallo",
+    "scoring": "Nessun punto (effetto di pesca quando giochi fiumi)"
+  },
+  "yellow_perch": {
+    "name": "Persico giallo",
+    "scoring": "2 punti per Persico giallo"
+  },
+  "beaver_s": {
+    "name": "Castoro",
+    "scoring": "1 punto per carta nella tua grotta"
+  },
+  "black_bear": {
+    "name": "Orso nero",
+    "scoring": "30 punti ciascuno con 2 pesci sul suo albero; altrimenti 10",
+    "context": "Orsi neri con 2 pesci sul loro albero"
+  },
+  "bobcat": {
+    "name": "Lince rossa",
+    "scoring": "30 punti ciascuna con 5+ uccelli; altrimenti 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Parula dai fianchi castani",
+    "scoring": "5 punti per Parula"
+  },
+  "coyote": {
+    "name": "Coyote",
+    "scoring": "30 punti ciascuno con 6+ animali con zampe (Coyote inclusi); altrimenti 10"
+  },
+  "elk_s": {
+    "name": "Wapiti",
+    "scoring": "30 punti ciascuno con 5+ specie di alberi diverse; altrimenti 10"
+  },
+  "gray_fox": {
+    "name": "Volpe grigia",
+    "scoring": "1 punto per animale con zampe (se stessa inclusa)"
+  },
+  "gray_squirrel": {
+    "name": "Scoiattolo grigio",
+    "scoring": "Set scoiattoli: 5/10/20/40 punti per 1-4 scoiattoli diversi"
+  },
+  "long_tailed_weasel": {
+    "name": "Donnola dalla coda lunga",
+    "scoring": "10 punti ciascuna con 3+ topi; altrimenti 0"
+  },
+  "masked_shrew": {
+    "name": "Toporagno mascherato",
+    "scoring": "3 punti per Toporagno mascherato"
+  },
+  "mink": {
+    "name": "Visone americano",
+    "scoring": "5 punti per Visone americano"
+  },
+  "pileated_woodpecker": {
+    "name": "Picchio pileato",
+    "scoring": "1 punto per uccello (se stesso incluso)"
+  },
+  "raccoon_s": {
+    "name": "Procione",
+    "scoring": "Nessun punto (effetto grotta)"
+  },
+  "red_squirrel_s": {
+    "name": "Scoiattolo rosso americano",
+    "scoring": "Set scoiattoli: 5/10/20/40 punti per 1-4 scoiattoli diversi"
+  },
+  "river_otter": {
+    "name": "Lontra di fiume",
+    "scoring": "2 punti per pesce, insetto e anfibio"
+  },
+  "rock_vole": {
+    "name": "Arvicola delle rocce",
+    "scoring": "1 punto per topo e per insetto (se stessa inclusa)"
+  },
+  "short_tailed_shrew": {
+    "name": "Toporagno codacorta",
+    "scoring": "5 punti per Toporagno codacorta"
+  },
+  "spotted_skunk": {
+    "name": "Moffetta maculata",
+    "scoring": "10 punti ciascuna se da sola sul suo albero (un fiume non conta); altrimenti 0",
+    "context": "Moffette da sole sul loro albero"
+  },
+  "synchronous_firefly": {
+    "name": "Lucciola sincrona",
+    "scoring": "3 punti per Lucciola per ogni Lucciola (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Tacchino selvatico",
+    "scoring": "2 punti per simbolo d'albero uguale a quello del Tacchino (il proprio incluso)",
+    "context": "Totale dei simboli d'albero corrispondenti dei tuoi Tacchini"
+  },
+  "virgins_bower": {
+    "name": "Clematide della Virginia",
+    "scoring": "2 punti per uccello"
+  },
+  "weevil_wasp": {
+    "name": "Vespa cacciatrice di punteruoli",
+    "scoring": "10 punti ciascuna su un albero con un altro insetto; altrimenti 0",
+    "context": "Vespe cacciatrici su un albero con almeno un altro insetto"
+  },
+  "white_footed_mouse": {
+    "name": "Topo dai piedi bianchi",
+    "scoring": "1 punto per topo (se stesso incluso)"
+  },
+  "white_tailed_deer": {
+    "name": "Cervo dalla coda bianca",
+    "scoring": "2 punti per albero"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Picchio succhialinfa ventregiallo",
+    "scoring": "2 punti per Picchio succhialinfa"
+  },
+  "cave_s": {
+    "name": "Grotta",
+    "scoring": "1 punto per carta nella tua grotta"
   }
 }

@@ -9,6 +9,7 @@
   "category": {
     "tree": "Stromy",
     "tree_dartmoor": "Stromy a keře",
+    "river_smoky": "Řeky",
     "top": "Nahoře",
     "bottom": "Dole",
     "lateral": "Boční",
@@ -194,6 +195,7 @@
     "editionAll": "Všechny edice",
     "editionClassic": "Klasická",
     "editionDartmoor": "Dartmoor",
+    "editionSmoky": "Smoky Mountains",
     "playerCount": "Počet hráčů",
     "playerCountAll": "Všechny",
     "playerCountSolo": "Solo",
@@ -334,6 +336,7 @@
     "edition": "Verze hry",
     "classicEdition": "Forest Shuffle",
     "dartmoorEdition": "Dartmoor",
+    "smokyEdition": "Smoky Mountains",
     "editionDesc": "Vyber, kterou hru Forest Shuffle bodovat",
     "editionChangeConfirm": "Změna verze resetuje tvé aktuální bodování. Určitě?",
     "appName": "Forest Shuffle Scorer",

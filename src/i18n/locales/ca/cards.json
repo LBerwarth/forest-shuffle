@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Cova (Exmoor)",
     "scoring": "1 punt per carta a la cova"
+  },
+  "basswood": {
+    "name": "Til·ler americà",
+    "scoring": "2 punts per símbol de Til·ler a l'arbre i a les seves cartes unides",
+    "context": "Total de símbols de Til·ler als teus Til·lers (arbres + cartes unides, incloses les de sota un riu)"
+  },
+  "black_gum": {
+    "name": "Tupelo negre",
+    "scoring": "1 punt per riu"
+  },
+  "buckeye": {
+    "name": "Castanyer d'Índies americà",
+    "scoring": "1 punt per símbol de Castanyer d'Índies americà del teu bosc (ells mateixos inclosos)",
+    "context": "Símbols de Castanyer d'Índies americà del teu bosc (arbres inclosos)"
+  },
+  "fraser_fir": {
+    "name": "Avet de Fraser",
+    "scoring": "1 punt per arbre del teu bosc (ell mateix inclòs)"
+  },
+  "hemlock": {
+    "name": "Tsuga",
+    "scoring": "5 punts per Tsuga"
+  },
+  "hickory": {
+    "name": "Hicòria",
+    "scoring": "2 punts per carta unida (el riu i les cartes de sota compten)",
+    "context": "Total de cartes unides a les teves Hicòries"
+  },
+  "silver_maple": {
+    "name": "Auró argentat",
+    "scoring": "5 punts cadascun si tens 3+ Aurons argentats"
+  },
+  "yellow_birch": {
+    "name": "Bedoll groc",
+    "scoring": "1 punt per Bedoll groc"
+  },
+  "creek": {
+    "name": "Riera",
+    "scoring": "1 punt per peix"
+  },
+  "river_bend": {
+    "name": "Meandre",
+    "scoring": "Cap punt (efecte de robar en jugar peixos)"
+  },
+  "waterfall": {
+    "name": "Cascada",
+    "scoring": "Cap punt (només hi caben peixos a sota)"
+  },
+  "universal_river": {
+    "name": "Riu universal",
+    "scoring": "Cap punt, però compta com a riu"
+  },
+  "bald_eagle": {
+    "name": "Pigarg de cap blanc",
+    "scoring": "30 punts cadascun amb 5+ peixos; si no, 10"
+  },
+  "caddisfly": {
+    "name": "Frigània",
+    "scoring": "2 punts per Frigània"
+  },
+  "flying_squirrel": {
+    "name": "Esquirol volador",
+    "scoring": "Col·lecció d'esquirols: 5/10/20/40 punts per 1-4 esquirols diferents"
+  },
+  "great_blue_heron": {
+    "name": "Agró blau americà",
+    "scoring": "2 punts per peix"
+  },
+  "long_eared_owl": {
+    "name": "Mussol banyut",
+    "scoring": "2 punts per ratolí"
+  },
+  "peregrine_falcon_s": {
+    "name": "Falcó pelegrí",
+    "scoring": "1 punt per ocell (ell mateix inclòs)"
+  },
+  "rockcap_fern": {
+    "name": "Polipodi de roca",
+    "scoring": "1 punt per planta (ella mateixa inclosa)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Colibrí gorjarubí",
+    "scoring": "1 punt per planta i per arbre"
+  },
+  "scarlet_tanager": {
+    "name": "Tàngara escarlata",
+    "scoring": "2 punts per Tàngara escarlata"
+  },
+  "thermometer_cricket": {
+    "name": "Grill termòmetre",
+    "scoring": "1 punt per insecte (ell mateix inclòs)"
+  },
+  "tufted_titmouse": {
+    "name": "Mallerenga emplomallada",
+    "scoring": "Cap punt (efecte de robar en jugar plantes)"
+  },
+  "virginia_opossum": {
+    "name": "Opòssum de Virgínia",
+    "scoring": "2 punts per símbol d'arbre diferent al seu arbre",
+    "context": "Total de símbols d'arbre diferents als arbres dels teus Opòssums (sumats per a tots els Opòssums)"
+  },
+  "water_starwort": {
+    "name": "Estrella d'aigua",
+    "scoring": "1 punt per riu i per peix"
+  },
+  "wood_thrush": {
+    "name": "Tord del bosc",
+    "scoring": "Cap punt (efecte de robar en jugar ocells)"
+  },
+  "blue_mistflower": {
+    "name": "Eupatori blau",
+    "scoring": "2 punts per Eupatori blau"
+  },
+  "brook_trout": {
+    "name": "Salvelí de font",
+    "scoring": "3 punts per riu sense cap peix a sota",
+    "context": "Rius sense cap peix a sota"
+  },
+  "brown_water_scorpion": {
+    "name": "Escorpí d'aigua marró",
+    "scoring": "2 punts per Escorpí d'aigua marró"
+  },
+  "common_box_turtle": {
+    "name": "Tortuga de caixa",
+    "scoring": "5 punts per Tortuga de caixa"
+  },
+  "eastern_chipmunk": {
+    "name": "Esquirol llistat oriental",
+    "scoring": "Col·lecció d'esquirols: 5/10/20/40 punts per 1-4 esquirols diferents"
+  },
+  "eastern_hellbender": {
+    "name": "Salamandra gegant americana",
+    "scoring": "2 punts per riu"
+  },
+  "greenside_darter": {
+    "name": "Perqueta de flancs verds",
+    "scoring": "3 punts per insecte"
+  },
+  "imitator_salamander": {
+    "name": "Salamandra imitadora",
+    "scoring": "10 punts cadascuna amb 3+ espècies d'amfibi diferents; si no, 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Potamogeton de fulla ampla",
+    "scoring": "2 punts per Potamogeton de fulla ampla"
+  },
+  "skipper_caterpillar": {
+    "name": "Eruga d'hespèrid",
+    "scoring": "10 punts cadascuna amb 3+ espècies d'insecte diferents; si no, 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Cicindela de sis punts",
+    "scoring": "5 punts per Cicindela de sis punts"
+  },
+  "smallmouth_bass": {
+    "name": "Perca americana de boca petita",
+    "scoring": "3 punts per espècie de peix diferent (la seva inclosa)"
+  },
+  "solomons_seal": {
+    "name": "Segell de Salomó",
+    "scoring": "6 punts per amfibi"
+  },
+  "wintergreen": {
+    "name": "Gaultèria",
+    "scoring": "3 punts per esquirol"
+  },
+  "wood_frog": {
+    "name": "Granota de bosc",
+    "scoring": "1 punt per arbre"
+  },
+  "yellow_bullhead": {
+    "name": "Peix gat groc",
+    "scoring": "Cap punt (efecte de robar en jugar rius)"
+  },
+  "yellow_perch": {
+    "name": "Perca groga",
+    "scoring": "2 punts per Perca groga"
+  },
+  "beaver_s": {
+    "name": "Castor",
+    "scoring": "1 punt per carta a la teva cova"
+  },
+  "black_bear": {
+    "name": "Ós negre",
+    "scoring": "30 punts cadascun amb 2 peixos al seu arbre; si no, 10",
+    "context": "Óssos negres amb 2 peixos al seu arbre"
+  },
+  "bobcat": {
+    "name": "Linx vermell",
+    "scoring": "30 punts cadascun amb 5+ ocells; si no, 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Bosquerola de flancs castanys",
+    "scoring": "5 punts per Bosquerola"
+  },
+  "coyote": {
+    "name": "Coiot",
+    "scoring": "30 punts cadascun amb 6+ animals amb potes (Coiots inclosos); si no, 10"
+  },
+  "elk_s": {
+    "name": "Wapití",
+    "scoring": "30 punts cadascun amb 5+ espècies d'arbre diferents; si no, 10"
+  },
+  "gray_fox": {
+    "name": "Guineu grisa",
+    "scoring": "1 punt per animal amb potes (ella mateixa inclosa)"
+  },
+  "gray_squirrel": {
+    "name": "Esquirol gris",
+    "scoring": "Col·lecció d'esquirols: 5/10/20/40 punts per 1-4 esquirols diferents"
+  },
+  "long_tailed_weasel": {
+    "name": "Mostela de cua llarga",
+    "scoring": "10 punts cadascuna amb 3+ ratolins; si no, 0"
+  },
+  "masked_shrew": {
+    "name": "Musaranya emmascarada",
+    "scoring": "3 punts per Musaranya emmascarada"
+  },
+  "mink": {
+    "name": "Visó americà",
+    "scoring": "5 punts per Visó americà"
+  },
+  "pileated_woodpecker": {
+    "name": "Picot pileat",
+    "scoring": "1 punt per ocell (ell mateix inclòs)"
+  },
+  "raccoon_s": {
+    "name": "Ós rentador",
+    "scoring": "Cap punt (efecte de cova)"
+  },
+  "red_squirrel_s": {
+    "name": "Esquirol roig americà",
+    "scoring": "Col·lecció d'esquirols: 5/10/20/40 punts per 1-4 esquirols diferents"
+  },
+  "river_otter": {
+    "name": "Llúdria de riu",
+    "scoring": "2 punts per peix, insecte i amfibi"
+  },
+  "rock_vole": {
+    "name": "Talpó de roca",
+    "scoring": "1 punt per ratolí i per insecte (ell mateix inclòs)"
+  },
+  "short_tailed_shrew": {
+    "name": "Musaranya de cua curta",
+    "scoring": "5 punts per Musaranya de cua curta"
+  },
+  "spotted_skunk": {
+    "name": "Mofeta tacada",
+    "scoring": "10 punts cadascuna si està sola al seu arbre (un riu no compta); si no, 0",
+    "context": "Mofetes soles al seu arbre"
+  },
+  "synchronous_firefly": {
+    "name": "Cuca de llum sincrònica",
+    "scoring": "3 punts per Cuca de llum per cada Cuca de llum (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Gall dindi",
+    "scoring": "2 punts per símbol d'arbre igual al del Gall dindi (el seu inclòs)",
+    "context": "Total de símbols d'arbre coincidents dels teus Galls dindis"
+  },
+  "virgins_bower": {
+    "name": "Clemàtide de Virgínia",
+    "scoring": "2 punts per ocell"
+  },
+  "weevil_wasp": {
+    "name": "Vespa caçadora de corcs",
+    "scoring": "10 punts cadascuna en un arbre amb un altre insecte; si no, 0",
+    "context": "Vespes caçadores de corcs en un arbre amb almenys un altre insecte"
+  },
+  "white_footed_mouse": {
+    "name": "Ratolí de peus blancs",
+    "scoring": "1 punt per ratolí (ell mateix inclòs)"
+  },
+  "white_tailed_deer": {
+    "name": "Cérvol de cua blanca",
+    "scoring": "2 punts per arbre"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Picot xuclador ventregroc",
+    "scoring": "2 punts per Picot xuclador"
+  },
+  "cave_s": {
+    "name": "Cova",
+    "scoring": "1 punt per carta a la teva cova"
   }
 }

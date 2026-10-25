@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Mağara (Exmoor)",
     "scoring": "mağaradaki her kart için 1 puan"
+  },
+  "basswood": {
+    "name": "Amerikan ıhlamuru",
+    "scoring": "ağaçtaki ve ona bağlı kartlardaki her Amerikan ıhlamuru sembolü için 2 puan",
+    "context": "Amerikan ıhlamurlarındaki toplam Amerikan ıhlamuru sembolü (ağaçlar + bağlı kartlar, nehir altındakiler dahil)"
+  },
+  "black_gum": {
+    "name": "Kara tupelo",
+    "scoring": "nehir başına 1 puan"
+  },
+  "buckeye": {
+    "name": "Sarı at kestanesi",
+    "scoring": "ormanındaki her Sarı at kestanesi sembolü için 1 puan (Sarı at kestaneleri dahil)",
+    "context": "Ormanındaki Sarı at kestanesi sembolleri (Sarı at kestanesi ağaçları dahil)"
+  },
+  "fraser_fir": {
+    "name": "Fraser göknarı",
+    "scoring": "ormanındaki her ağaç için 1 puan (kendisi dahil)"
+  },
+  "hemlock": {
+    "name": "Kanada hemloku",
+    "scoring": "Kanada hemloku başına 5 puan"
+  },
+  "hickory": {
+    "name": "Hikori",
+    "scoring": "ona bağlı her kart için 2 puan (nehir ve altındaki kartlar sayılır)",
+    "context": "Hikorilerine bağlı toplam kart"
+  },
+  "silver_maple": {
+    "name": "Gümüşi akçaağaç",
+    "scoring": "3+ Gümüşi akçaağaç varsa her biri için 5 puan"
+  },
+  "yellow_birch": {
+    "name": "Sarı huş",
+    "scoring": "Sarı huş başına 1 puan"
+  },
+  "creek": {
+    "name": "Dere",
+    "scoring": "balık başına 1 puan"
+  },
+  "river_bend": {
+    "name": "Nehir kıvrımı",
+    "scoring": "0 puan (balık oynarken kart çekme etkisi)"
+  },
+  "waterfall": {
+    "name": "Şelale",
+    "scoring": "0 puan (altına yalnızca balık konabilir)"
+  },
+  "universal_river": {
+    "name": "Evrensel nehir",
+    "scoring": "0 puan, ama nehir sayılır"
+  },
+  "bald_eagle": {
+    "name": "Ak başlı kartal",
+    "scoring": "5+ balık varsa her biri için 30 puan; aksi halde her biri için 10 puan"
+  },
+  "caddisfly": {
+    "name": "Tüylükanatlı",
+    "scoring": "Tüylükanatlı başına 2 puan"
+  },
+  "flying_squirrel": {
+    "name": "Uçan sincap",
+    "scoring": "Sincap seti: 1-4 farklı sincap için 5/10/20/40 puan"
+  },
+  "great_blue_heron": {
+    "name": "Büyük mavi balıkçıl",
+    "scoring": "balık başına 2 puan"
+  },
+  "long_eared_owl": {
+    "name": "Kulaklı orman baykuşu",
+    "scoring": "fare başına 2 puan"
+  },
+  "peregrine_falcon_s": {
+    "name": "Gökdoğan",
+    "scoring": "her kuş için 1 puan (kendisi dahil)"
+  },
+  "rockcap_fern": {
+    "name": "Virginia benekotu",
+    "scoring": "her bitki için 1 puan (kendisi dahil)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Yakut boğazlı sinekkuşu",
+    "scoring": "her bitki ve her ağaç için 1 puan"
+  },
+  "scarlet_tanager": {
+    "name": "Kızıl tangara",
+    "scoring": "Kızıl tangara başına 2 puan"
+  },
+  "thermometer_cricket": {
+    "name": "Termometre cırcır böceği",
+    "scoring": "her böcek için 1 puan (kendisi dahil)"
+  },
+  "tufted_titmouse": {
+    "name": "Tepeli baştankara",
+    "scoring": "0 puan (bitki oynarken kart çekme etkisi)"
+  },
+  "virginia_opossum": {
+    "name": "Virginia oposumu",
+    "scoring": "ağacındaki her farklı ağaç sembolü için 2 puan",
+    "context": "Oposumlarının ağaçlarındaki toplam farklı ağaç sembolü (tüm Oposumlar için toplanır)"
+  },
+  "water_starwort": {
+    "name": "Su yıldızı",
+    "scoring": "her nehir ve her balık için 1 puan"
+  },
+  "wood_thrush": {
+    "name": "Orman ardıcı",
+    "scoring": "0 puan (kuş oynarken kart çekme etkisi)"
+  },
+  "blue_mistflower": {
+    "name": "Mavi sis çiçeği",
+    "scoring": "Mavi sis çiçeği başına 2 puan"
+  },
+  "brook_trout": {
+    "name": "Kaynak alabalığı",
+    "scoring": "altında balık olmayan her nehir için 3 puan",
+    "context": "Altında balık olmayan nehirler"
+  },
+  "brown_water_scorpion": {
+    "name": "Kahverengi su akrebi",
+    "scoring": "Kahverengi su akrebi başına 2 puan"
+  },
+  "common_box_turtle": {
+    "name": "Karolina kutu kaplumbağası",
+    "scoring": "Karolina kutu kaplumbağası başına 5 puan"
+  },
+  "eastern_chipmunk": {
+    "name": "Doğu çizgili sincabı",
+    "scoring": "Sincap seti: 1-4 farklı sincap için 5/10/20/40 puan"
+  },
+  "eastern_hellbender": {
+    "name": "Amerikan dev semenderi",
+    "scoring": "nehir başına 2 puan"
+  },
+  "greenside_darter": {
+    "name": "Yeşil yanlı levrek",
+    "scoring": "böcek başına 3 puan"
+  },
+  "imitator_salamander": {
+    "name": "Taklitçi semender",
+    "scoring": "3+ farklı amfibi türü varsa her biri için 10 puan; aksi halde 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Geniş yapraklı göl otu",
+    "scoring": "Geniş yapraklı göl otu başına 2 puan"
+  },
+  "skipper_caterpillar": {
+    "name": "Zıpzıp kelebeği tırtılı",
+    "scoring": "3+ farklı böcek türü varsa her biri için 10 puan; aksi halde 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Altı benekli kaplan böceği",
+    "scoring": "Altı benekli kaplan böceği başına 5 puan"
+  },
+  "smallmouth_bass": {
+    "name": "Küçük ağızlı levrek",
+    "scoring": "her farklı balık türü için 3 puan (kendi türü dahil)"
+  },
+  "solomons_seal": {
+    "name": "Süleyman mührü",
+    "scoring": "amfibi başına 6 puan"
+  },
+  "wintergreen": {
+    "name": "Kış yeşili",
+    "scoring": "sincap başına 3 puan"
+  },
+  "wood_frog": {
+    "name": "Orman kurbağası",
+    "scoring": "ağaç başına 1 puan"
+  },
+  "yellow_bullhead": {
+    "name": "Sarı kedi balığı",
+    "scoring": "0 puan (nehir oynarken kart çekme etkisi)"
+  },
+  "yellow_perch": {
+    "name": "Sarı levrek",
+    "scoring": "Sarı levrek başına 2 puan"
+  },
+  "beaver_s": {
+    "name": "Kanada kunduzu",
+    "scoring": "mağarandaki her kart için 1 puan"
+  },
+  "black_bear": {
+    "name": "Kara ayı",
+    "scoring": "ağacında 2 balık varsa her biri için 30 puan; aksi halde her biri için 10 puan",
+    "context": "Ağacında 2 balık olan Kara ayılar"
+  },
+  "bobcat": {
+    "name": "Kızıl vaşak",
+    "scoring": "5+ kuş varsa her biri için 30 puan; aksi halde her biri için 10 puan"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Kestane böğürlü ötleğen",
+    "scoring": "Ötleğen başına 5 puan"
+  },
+  "coyote": {
+    "name": "Kır kurdu",
+    "scoring": "6+ pençeli hayvan varsa (Kır kurtları dahil) her biri için 30 puan; aksi halde her biri için 10 puan"
+  },
+  "elk_s": {
+    "name": "Vapiti",
+    "scoring": "5+ farklı ağaç türü varsa her biri için 30 puan; aksi halde her biri için 10 puan"
+  },
+  "gray_fox": {
+    "name": "Gri tilki",
+    "scoring": "her pençeli hayvan için 1 puan (kendisi dahil)"
+  },
+  "gray_squirrel": {
+    "name": "Gri sincap",
+    "scoring": "Sincap seti: 1-4 farklı sincap için 5/10/20/40 puan"
+  },
+  "long_tailed_weasel": {
+    "name": "Uzun kuyruklu gelincik",
+    "scoring": "3+ fare varsa her biri için 10 puan; aksi halde 0"
+  },
+  "masked_shrew": {
+    "name": "Maskeli sivri fare",
+    "scoring": "Maskeli sivri fare başına 3 puan"
+  },
+  "mink": {
+    "name": "Amerikan vizonu",
+    "scoring": "Amerikan vizonu başına 5 puan"
+  },
+  "pileated_woodpecker": {
+    "name": "Tepeli ağaçkakan",
+    "scoring": "her kuş için 1 puan (kendisi dahil)"
+  },
+  "raccoon_s": {
+    "name": "Rakun",
+    "scoring": "0 puan (mağara etkisi)"
+  },
+  "red_squirrel_s": {
+    "name": "Amerikan kızıl sincabı",
+    "scoring": "Sincap seti: 1-4 farklı sincap için 5/10/20/40 puan"
+  },
+  "river_otter": {
+    "name": "Kanada su samuru",
+    "scoring": "her balık, böcek ve amfibi için 2 puan"
+  },
+  "rock_vole": {
+    "name": "Kaya tarla faresi",
+    "scoring": "her fare ve her böcek için 1 puan (kendisi dahil)"
+  },
+  "short_tailed_shrew": {
+    "name": "Kısa kuyruklu sivri fare",
+    "scoring": "Kısa kuyruklu sivri fare başına 5 puan"
+  },
+  "spotted_skunk": {
+    "name": "Benekli kokarca",
+    "scoring": "ağacında yalnızsa her biri için 10 puan (nehir sayılmaz); aksi halde 0",
+    "context": "Ağacında yalnız olan Kokarcalar"
+  },
+  "synchronous_firefly": {
+    "name": "Senkron ateş böceği",
+    "scoring": "her Ateş böceği için Ateş böceği başına 3 puan (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Yaban hindisi",
+    "scoring": "Yaban hindisinin kendi sembolüyle eşleşen her ağaç sembolü için 2 puan (kendi sembolü dahil)",
+    "context": "Yaban hindilerindeki toplam eşleşen ağaç sembolü"
+  },
+  "virgins_bower": {
+    "name": "Virginia akasması",
+    "scoring": "kuş başına 2 puan"
+  },
+  "weevil_wasp": {
+    "name": "Hortumlu böcek avcısı arı",
+    "scoring": "başka bir böcekle aynı ağaçtaysa her biri için 10 puan; aksi halde 0",
+    "context": "En az bir başka böcekle aynı ağaçta olan Hortumlu böcek avcısı arılar"
+  },
+  "white_footed_mouse": {
+    "name": "Ak ayaklı geyik faresi",
+    "scoring": "her fare için 1 puan (kendisi dahil)"
+  },
+  "white_tailed_deer": {
+    "name": "Ak kuyruklu geyik",
+    "scoring": "ağaç başına 2 puan"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Sarı karınlı özsuemer",
+    "scoring": "Özsuemer başına 2 puan"
+  },
+  "cave_s": {
+    "name": "Mağara",
+    "scoring": "mağarandaki her kart için 1 puan"
   }
 }

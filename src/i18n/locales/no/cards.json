@@ -875,5 +875,290 @@
   "cave_exmoor": {
     "name": "Hule (Exmoor)",
     "scoring": "1 poeng per kort i hulen"
+  },
+  "basswood": {
+    "name": "Amerikansk lind",
+    "scoring": "2 poeng per lindesymbol på treet og kortene festet til det",
+    "context": "Lindesymboler totalt på dine Amerikansk lind (trær + festede kort, inkl. under en elv)"
+  },
+  "black_gum": {
+    "name": "Skogtupelo",
+    "scoring": "1 poeng per elv"
+  },
+  "buckeye": {
+    "name": "Gul hestekastanje",
+    "scoring": "1 poeng per hestekastanjesymbol i skogen din (inkl. Gul hestekastanje)",
+    "context": "Hestekastanjesymboler i skogen din (inkl. Gul hestekastanje-trærne)"
+  },
+  "fraser_fir": {
+    "name": "Frasergran",
+    "scoring": "1 poeng per tre i skogen din (inkl. seg selv)"
+  },
+  "hemlock": {
+    "name": "Hemlokk",
+    "scoring": "5 poeng per Hemlokk"
+  },
+  "hickory": {
+    "name": "Hickory",
+    "scoring": "2 poeng per kort festet til det (elv og kort under den teller)",
+    "context": "Kort festet til dine Hickory totalt"
+  },
+  "silver_maple": {
+    "name": "Sølvlønn",
+    "scoring": "5 poeng hver hvis du har 3+ Sølvlønn"
+  },
+  "yellow_birch": {
+    "name": "Gulbjørk",
+    "scoring": "1 poeng per Gulbjørk"
+  },
+  "creek": {
+    "name": "Bekk",
+    "scoring": "1 poeng per fisk"
+  },
+  "river_bend": {
+    "name": "Elvesving",
+    "scoring": "0 poeng (trekkeffekt når du spiller fisk)"
+  },
+  "waterfall": {
+    "name": "Foss",
+    "scoring": "0 poeng (bare fisk kan legges under den)"
+  },
+  "universal_river": {
+    "name": "Universalelv",
+    "scoring": "0 poeng, men teller som en elv"
+  },
+  "bald_eagle": {
+    "name": "Hvithodehavørn",
+    "scoring": "30 poeng hver hvis 5+ fisk; ellers 10"
+  },
+  "caddisfly": {
+    "name": "Vårflue",
+    "scoring": "2 poeng per Vårflue"
+  },
+  "flying_squirrel": {
+    "name": "Flygeekorn",
+    "scoring": "Ekornsett: 5/10/20/40 poeng for 1-4 ulike ekorn"
+  },
+  "great_blue_heron": {
+    "name": "Kanadahegre",
+    "scoring": "2 poeng per fisk"
+  },
+  "long_eared_owl": {
+    "name": "Hornugle",
+    "scoring": "2 poeng per mus"
+  },
+  "peregrine_falcon_s": {
+    "name": "Vandrefalk",
+    "scoring": "1 poeng per fugl (inkl. seg selv)"
+  },
+  "rockcap_fern": {
+    "name": "Amerikansk sisselrot",
+    "scoring": "1 poeng per plante (inkl. seg selv)"
+  },
+  "ruby_throated_hummingbird": {
+    "name": "Rubinstrupekolibri",
+    "scoring": "1 poeng per plante og per tre"
+  },
+  "scarlet_tanager": {
+    "name": "Skarlagentanagar",
+    "scoring": "2 poeng per Skarlagentanagar"
+  },
+  "thermometer_cricket": {
+    "name": "Termometersirisser",
+    "scoring": "1 poeng per insekt (inkl. seg selv)"
+  },
+  "tufted_titmouse": {
+    "name": "Amerikatoppmeis",
+    "scoring": "0 poeng (trekkeffekt når du spiller planter)"
+  },
+  "virginia_opossum": {
+    "name": "Virginiaopossum",
+    "scoring": "2 poeng per ulikt tresymbol ved treet sitt",
+    "context": "Ulike tresymboler totalt ved treene til dine Virginiaopossum (summert over alle)"
+  },
+  "water_starwort": {
+    "name": "Vasshår",
+    "scoring": "1 poeng per elv og per fisk"
+  },
+  "wood_thrush": {
+    "name": "Skogtrost",
+    "scoring": "0 poeng (trekkeffekt når du spiller fugler)"
+  },
+  "blue_mistflower": {
+    "name": "Blå tåkeblomst",
+    "scoring": "2 poeng per Blå tåkeblomst"
+  },
+  "brook_trout": {
+    "name": "Bekkerøye",
+    "scoring": "3 poeng per elv uten fisk under seg",
+    "context": "Elver uten fisk under seg"
+  },
+  "brown_water_scorpion": {
+    "name": "Brun vannskorpion",
+    "scoring": "2 poeng per Brun vannskorpion"
+  },
+  "common_box_turtle": {
+    "name": "Vanlig boksskilpadde",
+    "scoring": "5 poeng per Vanlig boksskilpadde"
+  },
+  "eastern_chipmunk": {
+    "name": "Østlig jordekorn",
+    "scoring": "Ekornsett: 5/10/20/40 poeng for 1-4 ulike ekorn"
+  },
+  "eastern_hellbender": {
+    "name": "Østlig hellbender",
+    "scoring": "2 poeng per elv"
+  },
+  "greenside_darter": {
+    "name": "Grønnsidet dvergabbor",
+    "scoring": "3 poeng per insekt"
+  },
+  "imitator_salamander": {
+    "name": "Imitatorsalamander",
+    "scoring": "10 poeng hver hvis 3+ ulike amfibiearter; ellers 0"
+  },
+  "largeleaf_pondweed": {
+    "name": "Storbladet tjønnaks",
+    "scoring": "2 poeng per Storbladet tjønnaks"
+  },
+  "skipper_caterpillar": {
+    "name": "Smygerlarve",
+    "scoring": "10 poeng hver hvis 3+ ulike insektarter; ellers 0"
+  },
+  "six_spotted_tiger_beetle": {
+    "name": "Seksflekket sandjeger",
+    "scoring": "5 poeng per Seksflekket sandjeger"
+  },
+  "smallmouth_bass": {
+    "name": "Småmunnet svartabbor",
+    "scoring": "3 poeng per ulik fiskeart (inkl. sin egen)"
+  },
+  "solomons_seal": {
+    "name": "Storkonvall",
+    "scoring": "6 poeng per amfibium"
+  },
+  "wintergreen": {
+    "name": "Bergte",
+    "scoring": "3 poeng per ekorn"
+  },
+  "wood_frog": {
+    "name": "Skogfrosk",
+    "scoring": "1 poeng per tre"
+  },
+  "yellow_bullhead": {
+    "name": "Gul dvergmalle",
+    "scoring": "0 poeng (trekkeffekt når du spiller elver)"
+  },
+  "yellow_perch": {
+    "name": "Gul abbor",
+    "scoring": "2 poeng per Gul abbor"
+  },
+  "beaver_s": {
+    "name": "Bever",
+    "scoring": "1 poeng per kort i hulen din"
+  },
+  "black_bear": {
+    "name": "Svartbjørn",
+    "scoring": "30 poeng hver hvis 2 fisk ved treet sitt; ellers 10",
+    "context": "Svartbjørner med 2 fisk ved treet sitt"
+  },
+  "bobcat": {
+    "name": "Rødgaupe",
+    "scoring": "30 poeng hver hvis 5+ fugler; ellers 10"
+  },
+  "chestnut_sided_warbler": {
+    "name": "Kastanjesidet skogsanger",
+    "scoring": "5 poeng per Skogsanger"
+  },
+  "coyote": {
+    "name": "Prærieulv",
+    "scoring": "30 poeng hver hvis 6+ labbedyr (inkl. Prærieulver); ellers 10"
+  },
+  "elk_s": {
+    "name": "Wapiti",
+    "scoring": "30 poeng hver hvis 5+ ulike trearter; ellers 10"
+  },
+  "gray_fox": {
+    "name": "Grårev",
+    "scoring": "1 poeng per labbedyr (inkl. seg selv)"
+  },
+  "gray_squirrel": {
+    "name": "Gråekorn",
+    "scoring": "Ekornsett: 5/10/20/40 poeng for 1-4 ulike ekorn"
+  },
+  "long_tailed_weasel": {
+    "name": "Langhalet snømus",
+    "scoring": "10 poeng hver hvis 3+ mus; ellers 0"
+  },
+  "masked_shrew": {
+    "name": "Maskespissmus",
+    "scoring": "3 poeng per Maskespissmus"
+  },
+  "mink": {
+    "name": "Mink",
+    "scoring": "5 poeng per Mink"
+  },
+  "pileated_woodpecker": {
+    "name": "Amerikasvartspett",
+    "scoring": "1 poeng per fugl (inkl. seg selv)"
+  },
+  "raccoon_s": {
+    "name": "Vaskebjørn",
+    "scoring": "0 poeng (hule-effekt)"
+  },
+  "red_squirrel_s": {
+    "name": "Amerikansk rødekorn",
+    "scoring": "Ekornsett: 5/10/20/40 poeng for 1-4 ulike ekorn"
+  },
+  "river_otter": {
+    "name": "Kanadaoter",
+    "scoring": "2 poeng per fisk, insekt og amfibium"
+  },
+  "rock_vole": {
+    "name": "Klippemarkmus",
+    "scoring": "1 poeng per mus og per insekt (inkl. seg selv)"
+  },
+  "short_tailed_shrew": {
+    "name": "Korthalespissmus",
+    "scoring": "5 poeng per Korthalespissmus"
+  },
+  "spotted_skunk": {
+    "name": "Flekkskunk",
+    "scoring": "10 poeng hver hvis alene ved treet sitt (en elv teller ikke); ellers 0",
+    "context": "Skunker som er alene ved treet sitt"
+  },
+  "synchronous_firefly": {
+    "name": "Synkron ildflue",
+    "scoring": "3 poeng per Ildflue for hver Ildflue (1/2/3/4 = 3/12/27/48)"
+  },
+  "turkey": {
+    "name": "Villkalkun",
+    "scoring": "2 poeng per tresymbol som matcher Villkalkunens eget symbol (inkl. sitt eget)",
+    "context": "Matchende tresymboler totalt for dine Villkalkuner"
+  },
+  "virgins_bower": {
+    "name": "Virginiaklematis",
+    "scoring": "2 poeng per fugl"
+  },
+  "weevil_wasp": {
+    "name": "Snutebilleveps",
+    "scoring": "10 poeng hver hvis ved et tre med et annet insekt; ellers 0",
+    "context": "Snutebilleveps ved et tre med minst ett annet insekt"
+  },
+  "white_footed_mouse": {
+    "name": "Hvitfotmus",
+    "scoring": "1 poeng per mus (inkl. seg selv)"
+  },
+  "white_tailed_deer": {
+    "name": "Hvithalehjort",
+    "scoring": "2 poeng per tre"
+  },
+  "yellow_bellied_sapsucker": {
+    "name": "Gulbuksaftspett",
+    "scoring": "2 poeng per Saftspett"
+  },
+  "cave_s": {
+    "name": "Hule",
+    "scoring": "1 poeng per kort i hulen din"
   }
 }
