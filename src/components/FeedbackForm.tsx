@@ -7,6 +7,7 @@ import { submitFeedback, type FeedbackItem } from '@/lib/supabase-api'
 import { CARDS } from '@/data/cards'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
 import { EXMOOR_CARDS } from '@/data/exmoor-cards'
+import { SMOKY_CARDS } from '@/data/smoky-cards'
 import { cn } from '@/lib/utils'
 import { noAutofill } from '@/lib/no-autofill'
 
@@ -14,7 +15,7 @@ const FEEDBACK_EMAIL = 'lena.berw@gmail.com'
 
 // Every card key across all editions, deduped — a report can be about any of them.
 const ALL_CARD_KEYS = Array.from(
-  new Set([...CARDS, ...DARTMOOR_CARDS, ...EXMOOR_CARDS].map((c) => c.key)),
+  new Set([...CARDS, ...DARTMOOR_CARDS, ...EXMOOR_CARDS, ...SMOKY_CARDS].map((c) => c.key)),
 )
 
 export function FeedbackForm() {

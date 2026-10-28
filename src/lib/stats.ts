@@ -4,10 +4,11 @@ import type { CardCategory, CardTag } from '@/types/card'
 import { CARDS } from '@/data/cards'
 import { DARTMOOR_CARDS } from '@/data/dartmoor-cards'
 import { EXMOOR_CARDS } from '@/data/exmoor-cards'
+import { SMOKY_CARDS } from '@/data/smoky-cards'
 
 const CARD_TAGS_BY_KEY: Map<string, readonly CardTag[]> = (() => {
   const m = new Map<string, readonly CardTag[]>()
-  for (const c of [...CARDS, ...DARTMOOR_CARDS, ...EXMOOR_CARDS]) m.set(c.key, c.tags)
+  for (const c of [...CARDS, ...DARTMOOR_CARDS, ...EXMOOR_CARDS, ...SMOKY_CARDS]) m.set(c.key, c.tags)
   return m
 })()
 
