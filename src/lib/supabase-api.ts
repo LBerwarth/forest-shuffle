@@ -118,12 +118,22 @@ export async function fetchGames(): Promise<GameWithPlayers[]> {
 
   if (error) throw error
 
-  return (data ?? []).map((row: any) => ({
+  // Live games are saved once per device; show the owner's newest copy only
+  const seenSessions = new Set<string>()
+  const rows = (data ?? []).filter((row: any) => {
+    if (!row.live_session_id) return true
+    if (seenSessions.has(row.live_session_id)) return false
+    seenSessions.add(row.live_session_id)
+    return true
+  })
+
+  return rows.map((row: any) => ({
     id: row.id,
     played_at: row.played_at,
     player_count: row.player_count,
     notes: row.notes ?? undefined,
     edition: row.edition !== 'classic' ? row.edition : undefined,
+    live_session_id: row.live_session_id ?? undefined,
     players: (row.game_players ?? []).map((gp: any) => ({
       id: gp.id,
       game_id: gp.game_id,
@@ -240,9 +250,19 @@ export async function createGame(
   return game
 }
 
+async function liveSessionIdOf(id: string): Promise<string | undefined> {
+  const { data, error } = await supabase!.from('games').select('live_session_id').eq('id', id).maybeSingle()
+  if (error) throw error
+  return data?.live_session_id ?? undefined
+}
+
 export async function deleteGame(id: string): Promise<void> {
   if (!supabase) throw new Error('Supabase not configured')
-  const { error } = await supabase.from('games').delete().eq('id', id)
+  const liveSessionId = await liveSessionIdOf(id)
+  // History shows live games once, so delete all of the owner's copies
+  const { error } = liveSessionId
+    ? await supabase.from('games').delete().eq('live_session_id', liveSessionId).or(await ownerFilter())
+    : await supabase.from('games').delete().eq('id', id)
   if (error) throw error
 }
 
@@ -253,13 +273,15 @@ export async function deleteGame(id: string): Promise<void> {
  */
 export async function saveGame(game: GameWithPlayers): Promise<GameWithPlayers> {
   if (!supabase) throw new Error('Supabase not configured')
+  // Edit Scores from history runs the plain wizard, which drops the session id
+  const liveSessionId = game.live_session_id ?? (await liveSessionIdOf(game.id))
   const { error: deleteError } = await supabase
     .from('games')
     .delete()
     .eq('id', game.id)
     .or(await ownerFilter())
   if (deleteError) throw deleteError
-  return createGame(game)
+  return createGame({ ...game, live_session_id: liveSessionId })
 }
 
 // ─── Feedback ─────────────────────────────────────────────────────────────
