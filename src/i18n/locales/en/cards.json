@@ -840,7 +840,7 @@
     "scoring": "1 point per insect"
   },
   "tormentil": {
-    "name": "Tormentil",
+    "name": "Common Tormentil",
     "scoring": "5 points"
   },
   "wood_rush": {
@@ -848,24 +848,24 @@
     "scoring": "3 points"
   },
   "bilberry_bumblebee": {
-    "name": "Bilberry Bumblebee",
+    "name": "Mountain Bumblebee",
     "scoring": "2 points per shrub"
   },
   "dormouse": {
-    "name": "Edible Dormouse",
+    "name": "Dormouse",
     "scoring": "15 points each if a bat is on the same tree",
     "context": "How many share a tree with a bat?"
   },
   "exmoor_pony_foal": {
-    "name": "Foal",
+    "name": "Exmoor Pony Foal",
     "scoring": "1 point"
   },
   "horse": {
-    "name": "Horse",
-    "scoring": "10 points per pony (Dartmoor Pony, Horse, Foal)"
+    "name": "Exmoor Pony",
+    "scoring": "10 points per pony (Dartmoor Pony, Exmoor Pony, Exmoor Pony Foal)"
   },
   "red_devon_cow": {
-    "name": "Red Devon Cow",
+    "name": "Red Ruby Devons",
     "scoring": "1 point per plant"
   },
   "whiskered_bat": {

@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Новая игра",
-    "selectPlayers": "Выбери игроков (1-5)",
+    "selectPlayers": "Выбери игроков",
     "playerName": "Имя игрока",
     "add": "Добавить",
     "addNewPlayer": "Добавить нового игрока",

@@ -51,7 +51,7 @@ export function StatsFilters({
         ? t('leaderboard.playerCountGroup')
         : c === 1
           ? t('leaderboard.playerCountSolo')
-          : String(c)
+          : c === 6 ? '6+' : String(c)
 
   return (
     <div className="space-y-2 mb-4">

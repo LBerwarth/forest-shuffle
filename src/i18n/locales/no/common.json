@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Nytt spill",
-    "selectPlayers": "Velg spillere (1-5)",
+    "selectPlayers": "Velg spillere",
     "playerName": "Spillernavn",
     "add": "Legg til",
     "addNewPlayer": "Legg til ny spiller",

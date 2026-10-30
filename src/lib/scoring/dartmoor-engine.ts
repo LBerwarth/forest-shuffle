@@ -327,7 +327,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   cave_exmoor: (count) => count * 1,
 }
 
-// Rulebook: Dartmoor Pony, the Horse (FR Cheval, "Exmoor Pony") and the Foal are ponies
+// Rulebook: Dartmoor Pony, the Exmoor Pony (FR Cheval) and the Foal are ponies
 const PONY_KEYS = ['dartmoor_pony', 'horse', 'exmoor_pony_foal']
 
 /** Cards in the forest showing the Exmoor type symbol (cave contents excluded) */

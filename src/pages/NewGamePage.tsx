@@ -51,7 +51,7 @@ export function NewGamePage() {
 
   function togglePlayer(id: string) {
     setSelectedPlayerIds((prev) =>
-      prev.includes(id) ? prev.filter((pid) => pid !== id) : prev.length < 5 ? [...prev, id] : prev,
+      prev.includes(id) ? prev.filter((pid) => pid !== id) : [...prev, id],
     )
   }
 

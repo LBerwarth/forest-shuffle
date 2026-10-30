@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Yeni Oyun",
-    "selectPlayers": "Oyuncuları seç (1-5)",
+    "selectPlayers": "Oyuncuları seç",
     "playerName": "Oyuncu adı",
     "add": "Ekle",
     "addNewPlayer": "Yeni Oyuncu Ekle",

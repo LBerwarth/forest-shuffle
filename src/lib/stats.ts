@@ -26,7 +26,7 @@ export const STRATEGY_TAGS: readonly CardTag[] = [
 export type EditionFilter = 'all' | 'classic' | 'dartmoor' | 'smoky'
 export type TimeFilter = 'all' | 'year' | 'month' | 'week'
 export type PlayerMatchMode = 'union' | 'intersection'
-// 'group' = any multiplayer game (2+ players); 1 = solo.
+// 'group' = any multiplayer game (2+ players); 1 = solo; 6 = 6+.
 export type PlayerCountFilter = 'all' | 'group' | 1 | 2 | 3 | 4 | 5 | 6
 
 export function applyFilters(
@@ -47,7 +47,7 @@ export function applyFilters(
     const count = g.player_count ?? g.players.length
     if (playerCount === 'group') {
       if (count < 2) return false
-    } else if (playerCount !== 'all' && count !== playerCount) {
+    } else if (playerCount === 6 ? count < 6 : playerCount !== 'all' && count !== playerCount) {
       return false
     }
     if (selectedSet.size > 0) {

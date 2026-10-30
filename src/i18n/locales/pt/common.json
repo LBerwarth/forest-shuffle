@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Nova Partida",
-    "selectPlayers": "Selecionar jogadores (1-5)",
+    "selectPlayers": "Selecionar jogadores",
     "playerName": "Nome do jogador",
     "add": "Adicionar",
     "addNewPlayer": "Adicionar novo jogador",

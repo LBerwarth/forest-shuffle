@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Új játék",
-    "selectPlayers": "Válassz játékosokat (1-5)",
+    "selectPlayers": "Válassz játékosokat",
     "playerName": "Játékos neve",
     "add": "Hozzáadás",
     "addNewPlayer": "Új játékos hozzáadása",

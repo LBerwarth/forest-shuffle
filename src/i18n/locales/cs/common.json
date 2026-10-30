@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Nová hra",
-    "selectPlayers": "Vyber hráče (1-5)",
+    "selectPlayers": "Vyber hráče",
     "playerName": "Jméno hráče",
     "add": "Přidat",
     "addNewPlayer": "Přidat nového hráče",

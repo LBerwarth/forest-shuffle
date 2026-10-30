@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Uusi peli",
-    "selectPlayers": "Valitse pelaajat (1-5)",
+    "selectPlayers": "Valitse pelaajat",
     "playerName": "Pelaajan nimi",
     "add": "Lisää",
     "addNewPlayer": "Lisää uusi pelaaja",

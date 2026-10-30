@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "New Game",
-    "selectPlayers": "Select players (1-5)",
+    "selectPlayers": "Select players",
     "playerName": "Player name",
     "add": "Add",
     "addNewPlayer": "Add New Player",

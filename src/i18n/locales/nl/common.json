@@ -41,7 +41,7 @@
   },
   "newGame": {
     "title": "Nieuwe partij",
-    "selectPlayers": "Selecteer spelers (1-5)",
+    "selectPlayers": "Selecteer spelers",
     "playerName": "Spelersnaam",
     "add": "Toevoegen",
     "addNewPlayer": "Nieuwe speler toevoegen",
