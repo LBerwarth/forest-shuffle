@@ -1,4 +1,4 @@
-import { useEffect, useState, type PointerEvent } from 'react'
+import { useEffect, useRef, useState, type PointerEvent } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { X } from 'lucide-react'
@@ -25,6 +25,18 @@ export function FirstPlayerPage() {
     winner: null,
   })
   const idsKey = [...fingers.keys()].join(',')
+  const rootRef = useRef<HTMLDivElement>(null)
+
+  // iOS Safari cancels held touches (long-press gesture) unless touchstart is prevented
+  useEffect(() => {
+    const el = rootRef.current
+    if (!el) return
+    const block = (e: TouchEvent) => {
+      if (!(e.target as Element).closest('button')) e.preventDefault()
+    }
+    el.addEventListener('touchstart', block, { passive: false })
+    return () => el.removeEventListener('touchstart', block)
+  }, [])
 
   useEffect(() => {
     if (winner !== null || idsKey.split(',').length < 2) return
@@ -78,6 +90,7 @@ export function FirstPlayerPage() {
 
   return (
     <div
+      ref={rootRef}
       className="fixed inset-0 touch-none select-none overflow-hidden bg-forest-900 bg-[url('/forest-bg.jpg')] bg-cover bg-center [-webkit-touch-callout:none]"
       onPointerDown={down}
       onPointerMove={move}
