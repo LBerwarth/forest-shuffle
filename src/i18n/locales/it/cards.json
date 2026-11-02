@@ -50,6 +50,10 @@
     "name": "Cerro",
     "scoring": "1 punto per animale con zoccoli"
   },
+  "moor_birch_promo": {
+    "name": "Betulla pubescente",
+    "scoring": "1 punto per Betulla pubescente"
+  },
   "o_christmas_tree": {
     "name": "O Albero di Natale",
     "scoring": "2 punti per carta attaccata a questo albero",

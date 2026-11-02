@@ -50,6 +50,10 @@
     "name": "Turkey Oak",
     "scoring": "1 point per cloven-hoofed animal"
   },
+  "moor_birch_promo": {
+    "name": "Moor Birch",
+    "scoring": "1 point per Moor Birch"
+  },
   "o_christmas_tree": {
     "name": "O Christmas Tree",
     "scoring": "2 points per card attached to this tree",

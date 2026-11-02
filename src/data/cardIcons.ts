@@ -9,7 +9,7 @@ const CARD_ICON_KEYS: Record<string, string> = {
   birch: 'tree', beech: 'tree', douglas_fir: 'tree', oak: 'tree',
   horse_chestnut: 'tree', linden: 'tree', sycamore: 'tree', silver_fir: 'tree',
   european_larch: 'tree', stone_pine: 'tree', palm_tree: 'tree', turkey_oak: 'tree',
-  o_christmas_tree: 'tree', tree_sapling: 'tree',
+  o_christmas_tree: 'tree', tree_sapling: 'tree', moor_birch_promo: 'tree',
   // Shrubs
   common_hazel: 'shrub', elderberry: 'shrub', blackthorn: 'shrub',
 

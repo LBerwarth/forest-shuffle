@@ -50,6 +50,10 @@
     "name": "Turkintammi",
     "scoring": "1 piste / sorkkaeläin"
   },
+  "moor_birch_promo": {
+    "name": "Hieskoivu",
+    "scoring": "1 piste / hieskoivu"
+  },
   "o_christmas_tree": {
     "name": "Oi kuusipuu",
     "scoring": "2 pistettä / tähän puuhun kiinnitetty kortti",

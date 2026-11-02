@@ -50,6 +50,10 @@
     "name": "Roure turc",
     "scoring": "1 punt per animal peülla partida"
   },
+  "moor_birch_promo": {
+    "name": "Bedoll pubescent",
+    "scoring": "1 punt per Bedoll pubescent"
+  },
   "o_christmas_tree": {
     "name": "Oh, arbre de Nadal",
     "scoring": "2 punts per carta unida a aquest arbre",

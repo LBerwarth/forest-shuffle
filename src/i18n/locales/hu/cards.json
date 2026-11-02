@@ -50,6 +50,10 @@
     "name": "Csertölgy",
     "scoring": "1 pont párosujjú patásonként"
   },
+  "moor_birch_promo": {
+    "name": "Szőrös nyír",
+    "scoring": "1 pont darabonként"
+  },
   "o_christmas_tree": {
     "name": "Ó, szép fenyő",
     "scoring": "2 pont az ehhez a fához csatolt kártyánként",

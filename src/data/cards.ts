@@ -21,6 +21,7 @@ export const CARDS: CardDefinition[] = [
   // Exploration trees (promo compilation P004/P014/P015) — no woodland-edge symbol
   { key: 'palm_tree', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'per_tag' },
   { key: 'turkey_oak', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'per_tag' },
+  { key: 'moor_birch_promo', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'fixed' },
   { key: 'o_christmas_tree', category: 'tree', tags: ['tree'], expansion: 'exploration', scoringType: 'custom', needsContext: true },
   { key: 'tree_sapling', category: 'tree', tags: ['tree'], expansion: 'base', scoringType: 'fixed' },
   // Woodland shrubs (count as trees for card slots, but NOT for tree counts)

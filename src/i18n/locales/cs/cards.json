@@ -50,6 +50,10 @@
     "name": "Dub cer",
     "scoring": "1 bod za sudokopytníka"
   },
+  "moor_birch_promo": {
+    "name": "Bříza pýřitá",
+    "scoring": "1 bod za břízu pýřitou"
+  },
   "o_christmas_tree": {
     "name": "Vánoční stromeček",
     "scoring": "2 body za kartu připojenou k tomuto stromu",

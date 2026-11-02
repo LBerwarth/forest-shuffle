@@ -50,6 +50,10 @@
     "name": "Zerreiche",
     "scoring": "1 Punkt pro Paarhufer"
   },
+  "moor_birch_promo": {
+    "name": "Moorbirke",
+    "scoring": "1 Punkt pro Moorbirke"
+  },
   "o_christmas_tree": {
     "name": "O Tannenbaum",
     "scoring": "2 Punkte pro an diesen Baum angelegter Karte",

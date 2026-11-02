@@ -46,6 +46,10 @@
     "name": "Palmier",
     "scoring": "1 point par oiseau"
   },
+  "moor_birch_promo": {
+    "name": "Bouleau pubescent",
+    "scoring": "1 point par Bouleau pubescent"
+  },
   "turkey_oak": {
     "name": "Chêne chevelu",
     "scoring": "1 point par animal à sabots"

@@ -50,6 +50,10 @@
     "name": "Frynseeg",
     "scoring": "1 point pr. klovdyr"
   },
+  "moor_birch_promo": {
+    "name": "Dunbirk",
+    "scoring": "1 point pr. dunbirk"
+  },
   "o_christmas_tree": {
     "name": "O juletræ",
     "scoring": "2 point pr. kort tilknyttet dette træ",

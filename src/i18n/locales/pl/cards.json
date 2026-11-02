@@ -50,6 +50,10 @@
     "name": "Dąb burgundzki",
     "scoring": "1 punkt za zwierzę parzystokopytne"
   },
+  "moor_birch_promo": {
+    "name": "Brzoza omszona",
+    "scoring": "1 punkt za Brzozę omszoną"
+  },
   "o_christmas_tree": {
     "name": "Choinka",
     "scoring": "2 punkty za kartę przy tym drzewie",

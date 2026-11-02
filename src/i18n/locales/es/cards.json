@@ -50,6 +50,10 @@
     "name": "Roble turco",
     "scoring": "1 punto por animal de pezuña"
   },
+  "moor_birch_promo": {
+    "name": "Abedul pubescente",
+    "scoring": "1 punto por Abedul pubescente"
+  },
   "o_christmas_tree": {
     "name": "Oh árbol de Navidad",
     "scoring": "2 puntos por carta adjunta a este árbol",

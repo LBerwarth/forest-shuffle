@@ -50,6 +50,10 @@
     "name": "Saçlı meşe",
     "scoring": "çift tırnaklı hayvan başına 1 puan"
   },
+  "moor_birch_promo": {
+    "name": "Tüylü huş",
+    "scoring": "Tüylü huş başına 1 puan"
+  },
   "o_christmas_tree": {
     "name": "Ey Çam Ağacı",
     "scoring": "bu ağaca bağlı her kart için 2 puan",

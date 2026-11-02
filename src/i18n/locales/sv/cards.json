@@ -50,6 +50,10 @@
     "name": "Turkisk ek",
     "scoring": "1 poäng per klövdjur"
   },
+  "moor_birch_promo": {
+    "name": "Glasbjörk",
+    "scoring": "1 poäng per Glasbjörk"
+  },
   "o_christmas_tree": {
     "name": "O julgran",
     "scoring": "2 poäng per kort fäst vid detta träd",

@@ -163,6 +163,7 @@ function butterflyCardPoints(key: string, count: number, ctx: ForestContext): nu
 const scoringFunctions: Record<string, ScoringFunction> = {
   // --- TREES ---
   birch: (count) => count * 1,
+  moor_birch_promo: (count) => count * 1,
   beech: (count, ctx) => count + beesAt(ctx, 'beech') >= 4 ? count * 5 : 0,
   douglas_fir: (count) => count * 5,
   oak: (count, ctx) => ctx.treeSpeciesCount >= 8 ? count * 10 : 0,

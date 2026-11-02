@@ -50,6 +50,10 @@
     "name": "Moseik",
     "scoring": "1 punt per evenhoevige"
   },
+  "moor_birch_promo": {
+    "name": "Zachte berk",
+    "scoring": "1 punt per Zachte berk"
+  },
   "o_christmas_tree": {
     "name": "O Dennenboom",
     "scoring": "2 punten per kaart aangelegd aan deze boom",

@@ -50,6 +50,10 @@
     "name": "Carvalho-turco",
     "scoring": "1 ponto por animal de cascos"
   },
+  "moor_birch_promo": {
+    "name": "Bétula-pubescente",
+    "scoring": "1 ponto por Bétula-pubescente"
+  },
   "o_christmas_tree": {
     "name": "Ó Pinheirinho de Natal",
     "scoring": "2 pontos por carta colocada nesta árvore",
