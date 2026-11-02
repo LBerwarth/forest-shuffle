@@ -102,8 +102,16 @@ export function GameResultPage() {
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-8">
-      <div className="flex justify-end mb-2">
-        <Link to="/settings" className="text-forest-500">
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-4">
+          <button onClick={() => { navigate('/'); endSession() }} className="text-forest-500" aria-label={t('result.home')}>
+            <Home className="h-5 w-5" />
+          </button>
+          <button onClick={handleNewGame} className="text-forest-500" aria-label={t('result.newGame')}>
+            <RotateCcw className="h-5 w-5" />
+          </button>
+        </div>
+        <Link to="/settings" className="text-forest-500" aria-label={t('settings.title')}>
           <Settings className="h-5 w-5" />
         </Link>
       </div>

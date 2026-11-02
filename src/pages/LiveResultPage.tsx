@@ -139,6 +139,12 @@ export function LiveResultPage() {
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-8">
+      <div className="flex mb-2">
+        <button onClick={handleHome} className="text-forest-500" aria-label={t('result.home')}>
+          <Home className="h-5 w-5" />
+        </button>
+      </div>
+
       <ResultsDisplay rankedPlayers={rankedPlayers} edition={session?.edition ?? 'classic'} />
 
       <GameInsights rankedPlayers={rankedPlayers} />
