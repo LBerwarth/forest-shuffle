@@ -13,8 +13,8 @@ Vorbehalt: App-Nutzer sind keine Zufallsstichprobe, und die Daten zeigen nur fer
 - Der Wapiti ist der schlimmste Fall: in 47 % aller Wälder, 1,7 Kopien pro Wald, 29 Punkte pro Kopie, 92 % der Wapiti-Besitzer erreichen die 30er-Schwelle. Die Bedingung "5 verschiedene Baumarten" erfüllt jeder, weil jede Strategie Bäume braucht. Dazu holt der Wapiti selbst gratis einen Baum von der Lichtung und erfüllt so seine eigene Bedingung.
 - Dein Eindruck "fast nur gewinnen mit den 30ern" stimmt zur Hälfte: In 62 % der Smoky-Partien gewinnt der Spieler mit den meisten Punkten aus diesen fünf Arten, und sie erklären etwa die Hälfte des Siegabstands (im Schnitt +32 von +63 Punkten). Der Rest des Waldes entscheidet die andere Hälfte. Glück beim Ziehen dieser 21 Karten ist also ein großer, aber nicht der einzige Faktor.
 - Zum Vergleich: In Classic kommt keine Art über 12 % Punkteanteil, in Dartmoor nur das Exmoor-Pferd (17 %). In Smoky liegen fünf Arten bei 14 bis 20 %.
-- Was Smoky gut macht und übernommen wird: Wasserbedarf (räumlicher Zwang), universelle Flüsse (tote Handkarten werden Gelände), Bezahlbonus bei passender Baumfarbe, Positionsbedingungen (allein am Baum, mit anderem Insekt).
-- Die Amazonas-Edition bekommt drei neue Mechaniken, die es in keiner Edition gibt: Stockwerke (Emergenten, Kronendach, Unterholz) mit Kronendach-Bedarf für Baumkronen-Tiere, Epiphyten (Pflanzen, die einen belegten Oben-Slot teilen und Frösche beherbergen) und Mutualismus-Paare (Paranuss braucht Agouti und Prachtbiene, Cecropia und Azteca-Ameise, Würgefeige und Feigenwespe). Dazu die Würgefeige als Baum, der auf einen Baum gelegt wird. Gewässer und Igarapé (überfluteter Wald) sind Smokys Flussmechanik, umbenannt.
+- Was Smoky gut macht und übernommen wird: Wasserbedarf (räumlicher Zwang), universelle Flüsse (tote Handkarten werden Gelände), Positionsbedingungen (allein am Baum, mit anderem Insekt). Der Bezahlbonus bei passender Baumfarbe ist Grundspiel-Regel und bleibt sowieso.
+- Die Amazonas-Edition bekommt drei neue Mechaniken, die es in keiner Edition gibt: Stockwerke (Emergenten, Kronendach, Unterholz) mit Kronendach-Bedarf für Baumkronen-Tiere, Epiphyten (Pflanzen, die einen belegten Oben-Slot teilen und Frösche beherbergen) und Mutualismus-Paare (Paranuss braucht Agouti und Prachtbiene, Cecropia und Azteca-Ameise, Würgefeige und Feigenwespe). Dazu die Würgefeige als Baum, der auf einen Baum gelegt wird. Gewässer und Igarapé (überfluteter Wald) sind Smokys Flussmechanik, umbenannt; Zug, Lichtung, Kosten, Bezahlbonus und Winterkarten sind der gemeinsame Kern aller drei Editionen.
 - Balance-Grundsatz: keine 0/30- oder 10/30-Schwellen. Jede Bedingung kostet etwas, das eine andere Strategie auch will (Slots, Unterholz-Bäume statt Kronendach, Alleinsein am Baum, Mehrheit gegen Mitspieler). Maximal 20 bis 25 Punkte aus einer Karte, und nur mit echter Gegenleistung.
 - Abschnitt 8 enthält einen kompletten Kartensatz mit 180 Karten (56 Bäume, 107 geteilte Karten, 9 Gewässer, 5 Höhlen, 3 Hochwasserkarten), jede Karte mit Slot, Anzahl, Kosten, Effekt, Punkten und dem erprobten Vorbild aus den drei Editionen.
 
@@ -27,7 +27,7 @@ Vorbehalt: App-Nutzer sind keine Zufallsstichprobe, und die Daten zeigen nur fer
 | Karten | 180 (+Alpin 40, +Waldrand 40, +Entdeckungen) | 180 (+Exmoor 50) | 180 |
 | Bäume | 8 Arten, 66 Karten (Birke 10, Buche 10, Kastanie 11, Linde 9, Douglasie 7, Eiche 7, Bergahorn 6, Weißtanne 6) | 6 Arten + 2 Sträucher | 8 Arten, 56 Karten (Buckeye 9, Silberahorn 9, Gelbbirke 8, 4x6, Hickory 6) |
 | Gelände | keins (Sträucher erst mit Waldrand) | Moore: horizontale Karten, nur oben/unten Slots, Moore punkten selbst (2 pro Amphib, pro Huf, pro Insekt usw.), Universalmoor verdeckt | Flüsse: 9 benannte (3 Creek, 3 River Bend, 3 Wasserfall) + universeller Fluss verdeckt unter einem Baum, dann 5 Slots |
-| Neue Zwänge | Slot-Seiten | Moor-Slots | Wasserbedarf (Karten nur in Flüssen), Bezahlbonus bei gleicher Baumfarbe |
+| Neue Zwänge | Slot-Seiten, Bezahlbonus bei gleicher Baumfarbe (in allen drei Editionen) | Moor-Slots | Wasserbedarf (Karten nur in Flüssen) |
 | Vergleichskarten | Linde (Mehrheit 3 statt 1), Buntspecht (10 bei meisten Bäumen) | Uferschnepfe, Dartmoor-Pony | keine |
 | Sets | Schmetterlinge 3/6/12/20/35 (bis 80 mit Erw.), Kastanie n², Fledermäuse 5 je ab 3 Arten, Feuersalamander 5/15/25, Glühwürmchen 10/15/20 | Libellen 5/10/15/30/50, Kammmolch 5/15/25, Fledermäuse | Hörnchen 5/10/20/40 über vier Kartenhälften, Glühwürmchen 3n² |
 | Schwellen | Luchs 10 bei Reh, Keiler 10 bei Frischling, Eiche 10 bei 8 Arten, Moos 10 bei 10 Bäumen, Buche 5 ab 4 | Brachvogel 3/10, Waldeidechse 5/15, Orchidee 3/15, Moorfrosch 8 ab 5 Mooren (alle "klein oder groß", nie 0 oder 30) | Wapiti, Rotluchs, Kojote, Bär, Adler je 10/30; Wiesel 0/10, Salamander 0/10, Raupe 0/10, Silberahorn 0/5 |
@@ -100,7 +100,7 @@ Lesart: In Classic erklären die 10 stärksten Arten den Siegabstand fast allein
 
 - Wasserbedarf: Karten, die nur in Flüsse dürfen, zwingen zu einer Gelände-Entscheidung. Ein Baum mit Fluss hat 5 Slots, ein Fluss allein 4, aber nur für Wasserkarten.
 - Universeller Fluss: jede tote Handkarte wird verdeckt zu Gelände. Hervorragende Kartenökonomie, Dartmoor hat das Gleiche als Universalmoor.
-- Bezahlbonus: alle Zahlkarten mit gleichem Baumsymbol lösen einen Bonus aus. Belohnt Handmanagement und Farbtreue, ohne Punkte zu verschenken.
+- Bezahlbonus (Grundspiel-Regel, in allen drei Editionen): alle Zahlkarten mit gleichem Baumsymbol lösen einen Bonus aus. Belohnt Handmanagement und Farbtreue, ohne Punkte zu verschenken.
 - Positionsbedingungen (Skunk allein 10, Wespe mit anderem Insekt 10): kosten Slots, sind also echte Entscheidungen. Nur der Bär (30 mit 2 Fischen am eigenen Baum) ist zu hoch dotiert.
 - Motoren ohne Punkte (Meise, Walddrossel, Zwergwels, Fluss-Biegung): 0 Punkte, aber Kartenfluss.
 - Hörnchen-Set über vier Kartenhälften: zwingt in alle vier Slot-Typen.
@@ -193,7 +193,7 @@ Baumkarte, die auf einen eigenen Baum gelegt wird. Der Wirtsbaum punktet nicht m
 
 Alle Paare sind gestuft oder linear, keins springt auf 30.
 
-### 6.6 Bezahlbonus (übernommen aus Smoky)
+### 6.6 Bezahlbonus (Grundspiel-Regel, alle drei Editionen)
 
 Alle Zahlkarten mit gleichem Baumsymbol lösen den Bonus der gespielten Karte aus. Bonus nur auf Motoren und Füllern (Abschnitt 11), nie auf den Karten aus Abschnitt 9.
 

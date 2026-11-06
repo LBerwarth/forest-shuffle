@@ -1,0 +1,892 @@
+{
+ "fromager": {
+  "file": "File:Ceiba pentandra Blanco2.238-cropped.jpg",
+  "author": "Francisco Manuel Blanco (O.S.A.)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACeiba_pentandra_Blanco2.238-cropped.jpg",
+  "name": "Fromager",
+  "kind": "illustration",
+  "query": "\"Ceiba pentandra\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "noyer-du-bresil": {
+  "file": "File:Nuts (1), illustration from The Encyclopedia of Food by Artemas Ward.jpg",
+  "author": "Artemas Ward",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANuts_%281%29%2C_illustration_from_The_Encyclopedia_of_Food_by_Artemas_Ward.jpg",
+  "name": "Noyer du Brésil",
+  "kind": "illustration",
+  "query": "\"Bertholletia excelsa\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "bois-canon": {
+  "file": "File:(Cecropia peltata, Linn.)., da Coleção Brasiliana Iconográfica.jpg",
+  "author": "Unknown",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3A%28Cecropia_peltata%2C_Linn.%29.%2C_da_Cole%C3%A7%C3%A3o_Brasiliana_Iconogr%C3%A1fica.jpg",
+  "name": "Bois canon",
+  "kind": "illustration",
+  "query": "\"Cecropia peltata\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "acajou": {
+  "file": "File:Penny Magazine 1832 108 Mahogany Tree.jpg",
+  "author": "Unknown artistUnknown artist",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1832_108_Mahogany_Tree.jpg",
+  "name": "Acajou",
+  "kind": "illustration",
+  "query": "\"Swietenia mahagoni\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "ebene-verte": {
+  "file": "File:Les bois indigènes de São Paulo (Page 179) BHL13035003.jpg",
+  "author": "Navarro de Andrade, Edmundo.; Vecchi, Octavio.",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ALes_bois_indig%C3%A8nes_de_S%C3%A3o_Paulo_%28Page_179%29_BHL13035003.jpg",
+  "name": "Ébène verte",
+  "kind": "illustration",
+  "query": "\"Handroanthus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "hevea": {
+  "file": "File:Penny Magazine 1832 216 Trees producing Caoutchouc.jpg",
+  "author": "Unknown artistUnknown artist",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1832_216_Trees_producing_Caoutchouc.jpg",
+  "name": "Hévéa",
+  "kind": "illustration",
+  "query": "\"Hevea brasiliensis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "palmier-wassai": {
+  "file": "File:PSM V60 D410 The assai palm euterpe oleracea.png",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APSM_V60_D410_The_assai_palm_euterpe_oleracea.png",
+  "name": "Palmier wassaï",
+  "kind": "illustration",
+  "query": "\"Euterpe oleracea\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "palmier-bache": {
+  "file": "File:PSM V60 D411 Mirity palm of the amazons mauritia flexuosa.png",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APSM_V60_D411_Mirity_palm_of_the_amazons_mauritia_flexuosa.png",
+  "name": "Palmier bâche",
+  "kind": "illustration",
+  "query": "\"Mauritia flexuosa\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "harpie-feroce": {
+  "file": "File:The American harpy eagle - Kazartseva Ekaterina Nikolaevna.jpg",
+  "author": "Kazartseva Ekaterina Nikolaevna",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AThe_American_harpy_eagle_-_Kazartseva_Ekaterina_Nikolaevna.jpg",
+  "name": "Harpie féroce",
+  "kind": "illustration",
+  "query": "\"Harpia harpyja\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "sarcoramphe-roi": {
+  "file": "File:Zopilote rey - Pavel Galván.jpg",
+  "author": "Pavel Galván",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AZopilote_rey_-_Pavel_Galv%C3%A1n.jpg",
+  "name": "Sarcoramphe roi",
+  "kind": "illustration",
+  "query": "\"Sarcoramphus papa\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "toucan-toco": {
+  "file": "File:Penny Magazine 1833 193 Toucans.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1833_193_Toucans.jpg",
+  "name": "Toucan toco",
+  "kind": "illustration",
+  "query": "\"Ramphastos toco\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "colibri-topaze": {
+  "file": "File:Illustration from A History of the Earth and Animated Nature by Oliver Goldsmith from rawpixel’s own original edition of the publication 00061.jpg",
+  "author": "Rawpixel",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIllustration_from_A_History_of_the_Earth_and_Animated_Nature_by_Oliver_Goldsmith_from_rawpixel%E2%80%99s_own_original_edition_of_the_publication_00061.jpg",
+  "name": "Colibri topaze",
+  "kind": "illustration",
+  "query": "\"Topaza pella\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "coq-de-roche": {
+  "file": "File:Menniskans härledning och könsurvalet illustration sida II-64.png",
+  "author": "Robert Kretschmer",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AMenniskans_h%C3%A4rledning_och_k%C3%B6nsurvalet_illustration_sida_II-64.png",
+  "name": "Coq-de-roche",
+  "kind": "illustration",
+  "query": "\"Rupicola rupicola\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "morpho-bleu": {
+  "file": "File:Cramer&Stoll-uitlandsche kapellen vol. 1- plate 021.jpg",
+  "author": "Pieter Cramer  (1721 - 1776) and Caspar Stoll  (between 1725 and 1730 - 1791)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_021.jpg",
+  "name": "Morpho bleu",
+  "kind": "illustration",
+  "query": "\"Morpho menelaus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "heliconius": {
+  "file": "File:Naturalist on the River Amazons figure 13.png",
+  "author": "E. W. Robinson (see Preface)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANaturalist_on_the_River_Amazons_figure_13.png",
+  "name": "Héliconius",
+  "kind": "illustration",
+  "query": "\"Heliconius melpomene\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "bromeliacee": {
+  "file": "File:Bromeliaceae andreanae - description et histoire des broméliacées récoltées dans la Colombie, l'Ecuador et le Venezuela (1889) (20231225858).jpg",
+  "author": "André, Edouard François, 1840-1911",
+  "license": "No restrictions",
+  "url": "https://commons.wikimedia.org/wiki/File%3ABromeliaceae_andreanae_-_description_et_histoire_des_brom%C3%A9liac%C3%A9es_r%C3%A9colt%C3%A9es_dans_la_Colombie%2C_l%27Ecuador_et_le_Venezuela_%281889%29_%2820231225858%29.jpg",
+  "name": "Broméliacée",
+  "kind": "illustration",
+  "query": "\"Guzmania\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "orchidee": {
+  "file": "File:Cattleya violacea1.jpg",
+  "author": "Victoria and Paradise nurseries, upper Holloway, N.",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACattleya_violacea1.jpg",
+  "name": "Orchidée",
+  "kind": "illustration",
+  "query": "\"Cattleya violacea\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "guepe-du-figuier": {
+  "file": "File:Blastophaga psenes.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ABlastophaga_psenes.jpg",
+  "name": "Guêpe du figuier",
+  "kind": "illustration",
+  "query": "\"Blastophaga psenes\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "phyllomedusa": {
+  "file": "File:Animalia nova sive species novae testudinum et ranarum BHL2948587.jpg",
+  "author": "Spix, Johann Baptist von",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAnimalia_nova_sive_species_novae_testudinum_et_ranarum_BHL2948587.jpg",
+  "name": "Phyllomédusa",
+  "kind": "illustration",
+  "query": "\"Phyllomedusa bicolor\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "crapaud-buffle": {
+  "file": "File:NIEdot369.jpg",
+  "author": "Dodd, Mead and Company",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANIEdot369.jpg",
+  "name": "Crapaud buffle",
+  "kind": "illustration",
+  "query": "\"Bufo marinus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "caiman-a-lunettes": {
+  "file": "File:Illustration of a Caiman crocodilus and an Anilius scytale (1701–1705) by Maria Sibylla Merian.jpg",
+  "author": "Dorothea Maria Graff",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIllustration_of_a_Caiman_crocodilus_and_an_Anilius_scytale_%281701%E2%80%931705%29_by_Maria_Sibylla_Merian.jpg",
+  "name": "Caïman à lunettes",
+  "kind": "illustration",
+  "query": "\"Caiman crocodilus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "anaconda-vert": {
+  "file": "File:Americana 1920 Anaconda.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAmericana_1920_Anaconda.jpg",
+  "name": "Anaconda vert",
+  "kind": "illustration",
+  "query": "\"Eunectes murinus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "arapaima": {
+  "file": "File:ArapaimaImg.jpg",
+  "author": "W H Flower",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AArapaimaImg.jpg",
+  "name": "Arapaïma",
+  "kind": "illustration",
+  "query": "\"Arapaima gigas\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "tambaqui": {
+  "file": "File:Megapiranha Colossoma 2.jpg",
+  "author": "Apokryltaros",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AMegapiranha_Colossoma_2.jpg",
+  "name": "Tambaqui",
+  "kind": "illustration",
+  "query": "\"Colossoma macropomum\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "dauphin-rose": {
+  "file": "File:Inia geoffrensis1.jpg",
+  "author": "Citron",
+  "license": "CC0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AInia_geoffrensis1.jpg",
+  "name": "Dauphin rose",
+  "kind": "illustration",
+  "query": "\"Inia geoffrensis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "fourmi-coupe-feuille": {
+  "file": "File:Illustrations of Exotic Entomology III 42.jpg",
+  "author": "Plates: Dru Drury (1725–1803). Text: John Obadiah Westwood (1805–1893)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIllustrations_of_Exotic_Entomology_III_42.jpg",
+  "name": "Fourmi coupe-feuille",
+  "kind": "illustration",
+  "query": "\"Atta cephalotes\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "dynaste-hercule": {
+  "file": "File:\" Hercules beetle illustration from The Naturalist's Miscellany (1789-1813) by George Shaw (1751-1813). \".jpg",
+  "author": "Rawpixel Ltd",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3A%22_Hercules_beetle_illustration_from_The_Naturalist%27s_Miscellany_%281789-1813%29_by_George_Shaw_%281751-1813%29._%22.jpg",
+  "name": "Dynaste Hercule",
+  "kind": "illustration",
+  "query": "\"Dynastes hercules\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "fourmis-legionnaires": {
+  "file": "File:Eciton burchellii Illustration.png",
+  "author": "Illustration by Nathalie Escure.",
+  "license": "CC BY 2.5",
+  "url": "https://commons.wikimedia.org/wiki/File%3AEciton_burchellii_Illustration.png",
+  "name": "Fourmis légionnaires",
+  "kind": "illustration",
+  "query": "\"Eciton burchellii\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "champignon-luminescent": {
+  "file": "File:Illustrations of British Fungi (Hymenomycetes), to serve as an atlas to the \"Handbook of British Fungi\" (Pl. 157) (6055669689).jpg",
+  "author": "Cooke, M. C.; Cooke, Mordecai Cubitt",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIllustrations_of_British_Fungi_%28Hymenomycetes%29%2C_to_serve_as_an_atlas_to_the_%22Handbook_of_British_Fungi%22_%28Pl._157%29_%286055669689%29.jpg",
+  "name": "Champignon luminescent",
+  "kind": "illustration",
+  "query": "\"Mycena\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "balisier": {
+  "file": "File:Louis van Houtte02.jpg",
+  "author": "Louis van Houtte (1810-1876)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ALouis_van_Houtte02.jpg",
+  "name": "Balisier",
+  "kind": "illustration",
+  "query": "\"Heliconia\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "paca": {
+  "file": "File:Adolphe Millot mammiferes C paca.jpg",
+  "author": "Adolphe Millot",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAdolphe_Millot_mammiferes_C_paca.jpg",
+  "name": "Paca",
+  "kind": "illustration",
+  "query": "\"Cuniculus paca\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "jaguar": {
+  "file": "File:Natural History with Anecdotes (Miles 1895) - Jaguar illustration.jpg",
+  "author": "Illustration from a book edited by Alfred H. Miles",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANatural_History_with_Anecdotes_%28Miles_1895%29_-_Jaguar_illustration.jpg",
+  "name": "Jaguar",
+  "kind": "illustration",
+  "query": "\"Felis onca\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "puma": {
+  "file": "File:Penny Magazine 1832 132 The Puma.jpg",
+  "author": "Unknown artistUnknown artist",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1832_132_The_Puma.jpg",
+  "name": "Puma",
+  "kind": "illustration",
+  "query": "\"Felis concolor\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "ocelot": {
+  "file": "File:Penny Magazine 1836 225 The Ocelot.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1836_225_The_Ocelot.jpg",
+  "name": "Ocelot",
+  "kind": "illustration",
+  "query": "\"Felis pardalis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "tapir-du-bresil": {
+  "file": "File:Die Säugthiere in Abbildungen nach der Natur, mit Beschreibungen (Plate CCCXIX) (7257717782).jpg",
+  "author": "Goldfuss, Georg August; Schreber, Johann Christian Daniel; Wagner, Andreas Johan",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ADie_S%C3%A4ugthiere_in_Abbildungen_nach_der_Natur%2C_mit_Beschreibungen_%28Plate_CCCXIX%29_%287257717782%29.jpg",
+  "name": "Tapir du Brésil",
+  "kind": "illustration",
+  "query": "\"Tapirus americanus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "pecari-a-collier": {
+  "file": "File:Animal studies (1903) (17578547573).jpg",
+  "author": "Internet Archive Book Images",
+  "license": "No restrictions",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAnimal_studies_%281903%29_%2817578547573%29.jpg",
+  "name": "Pécari à collier",
+  "kind": "illustration",
+  "query": "\"Dicotyles torquatus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "daguet-rouge": {
+  "file": "File:CoassusWolf.jpg",
+  "author": "Joseph Wolf",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACoassusWolf.jpg",
+  "name": "Daguet rouge",
+  "kind": "illustration",
+  "query": "\"Mazama americana\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "capybara": {
+  "file": "File:Illustration from A History of the Earth and Animated Nature by Oliver Goldsmith from rawpixel’s own original edition of the publication 00018.jpg",
+  "author": "Rawpixel",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIllustration_from_A_History_of_the_Earth_and_Animated_Nature_by_Oliver_Goldsmith_from_rawpixel%E2%80%99s_own_original_edition_of_the_publication_00018.jpg",
+  "name": "Capybara",
+  "kind": "illustration",
+  "query": "\"Hydrochoerus hydrochaeris\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "agouti-dore": {
+  "file": "File:NIE 1905 Cavy - Cavies etc.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANIE_1905_Cavy_-_Cavies_etc.jpg",
+  "name": "Agouti doré",
+  "kind": "illustration",
+  "query": "\"Dasyprocta aguti\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "atele-noir": {
+  "file": "File:Meyers b1 s0140c.jpg",
+  "author": "Bibliographisches Institut",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AMeyers_b1_s0140c.jpg",
+  "name": "Atèle noir",
+  "kind": "illustration",
+  "query": "\"Ateles paniscus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "capucin": {
+  "file": "File:Handbook to the Primates Plate 19.jpg",
+  "author": "Henry Ogg Forbes (1851-1932). Species Plates by John Gerrard Keulemans (1842–191",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AHandbook_to_the_Primates_Plate_19.jpg",
+  "name": "Capucin",
+  "kind": "illustration",
+  "query": "\"Cebus apella\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "saimiri": {
+  "file": "File:An ape of the genus callithrix sciureus standing on the Wellcome L0051647.jpg",
+  "author": "",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAn_ape_of_the_genus_callithrix_sciureus_standing_on_the_Wellcome_L0051647.jpg",
+  "name": "Saïmiri",
+  "kind": "illustration",
+  "query": "\"Saimiri sciureus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "singe-laineux": {
+  "file": "File:LagothrixHumboldtiiWolf.jpg",
+  "author": "Joseph Wolf",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ALagothrixHumboldtiiWolf.jpg",
+  "name": "Singe laineux",
+  "kind": "illustration",
+  "query": "\"Lagothrix lagothricha\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "tamanoir": {
+  "file": "File:Adolphe Millot mammiferes C tamanoir.jpg",
+  "author": "Adolphe Millot",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAdolphe_Millot_mammiferes_C_tamanoir.jpg",
+  "name": "Tamanoir",
+  "kind": "illustration",
+  "query": "\"Myrmecophaga jubata\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "coati-roux": {
+  "file": "File:363 of 'The World's Inhabitants; or, Mankind, animals & plants ... With ... illustrations, etc' (11292612905).jpg",
+  "author": "The British Library",
+  "license": "No restrictions",
+  "url": "https://commons.wikimedia.org/wiki/File%3A363_of_%27The_World%27s_Inhabitants%3B_or%2C_Mankind%2C_animals_%26_plants_..._With_..._illustrations%2C_etc%27_%2811292612905%29.jpg",
+  "name": "Coati roux",
+  "kind": "illustration",
+  "query": "\"Nasua nasua\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "tamandua": {
+  "file": "File:Historia naturalis Brasiliae (Page 226) BHL289319.png",
+  "author": "Willem Piso",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AHistoria_naturalis_Brasiliae_%28Page_226%29_BHL289319.png",
+  "name": "Tamandua",
+  "kind": "illustration",
+  "query": "\"Tamandua tetradactyla\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "iguane-vert": {
+  "file": "File:Penny Magazine 1832 332 The Guana.jpg",
+  "author": "Unknown artistUnknown artist",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1832_332_The_Guana.jpg",
+  "name": "Iguane vert",
+  "kind": "illustration",
+  "query": "\"Iguana iguana\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "boa-constricteur": {
+  "file": "File:Penny Magazine 1832 289 The Boa Constrictor.jpg",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APenny_Magazine_1832_289_The_Boa_Constrictor.jpg",
+  "name": "Boa constricteur",
+  "kind": "illustration",
+  "query": "\"Boa constrictor\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "mygale-de-leblond": {
+  "file": "File:N32 w1150 (30885338581).jpg",
+  "author": "Biodiversity Heritage Library",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AN32_w1150_%2830885338581%29.jpg",
+  "name": "Mygale de Leblond",
+  "kind": "illustration",
+  "query": "\"Theraphosa blondi\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "termites": {
+  "file": "File:ITWAMOL - Fig 78.png",
+  "author": "Robert Evans Snodgrass",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AITWAMOL_-_Fig_78.png",
+  "name": "Termites",
+  "kind": "illustration",
+  "query": "\"Nasutitermes\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "margay": {
+  "file": "File:Leopardus wiedii - Tigrillo Boliviano - Joel Huanca Martinez.jpg",
+  "author": "Joel Huanca Martinez",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ALeopardus_wiedii_-_Tigrillo_Boliviano_-_Joel_Huanca_Martinez.jpg",
+  "name": "Margay",
+  "kind": "illustration",
+  "query": "\"Felis wiedii\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "coendou": {
+  "file": "File:Cambridge Natural History Mammalia Fig 244.jpg",
+  "author": "Frank E. Beddard",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACambridge_Natural_History_Mammalia_Fig_244.jpg",
+  "name": "Coendou",
+  "kind": "illustration",
+  "query": "\"Coendou prehensilis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "opossum-commun": {
+  "file": "File:Didelphis marsupialis Schreber.jpg",
+  "author": "Johann Christianus Daniel von Schreber",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ADidelphis_marsupialis_Schreber.jpg",
+  "name": "Opossum commun",
+  "kind": "illustration",
+  "query": "\"Didelphis marsupialis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "vanillier": {
+  "file": "File:Vanilla, illustration from The Encyclopedia of Food by Artemas Ward.jpg",
+  "author": "Artemas Ward",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AVanilla%2C_illustration_from_The_Encyclopedia_of_Food_by_Artemas_Ward.jpg",
+  "name": "Vanillier",
+  "kind": "illustration",
+  "query": "\"Vanilla planifolia\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "jaguarundi": {
+  "file": "File:Puma yagouaroundi 1.jpg",
+  "author": "Wyman & Sons Limited",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APuma_yagouaroundi_1.jpg",
+  "name": "Jaguarundi",
+  "kind": "illustration",
+  "query": "\"Felis yagouaroundi\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "figuier-etrangleur": {
+  "file": "File:Ficusindicamaxima.jpg",
+  "author": "Hans Sloane",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AFicusindicamaxima.jpg",
+  "name": "Figuier étrangleur",
+  "kind": "illustration",
+  "query": "\"strangler fig\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "cascade": {
+  "file": "File:Timehri - the journal of the Royal Agricultural and Commercial Society of British Guiana (1919) (14782144662).jpg",
+  "author": "Royal Agricultural and Commercial Society (Georgetown, Guyana",
+  "license": "No restrictions",
+  "url": "https://commons.wikimedia.org/wiki/File%3ATimehri_-_the_journal_of_the_Royal_Agricultural_and_Commercial_Society_of_British_Guiana_%281919%29_%2814782144662%29.jpg",
+  "name": "Cascade",
+  "kind": "illustration",
+  "query": "\"Kaieteur Falls\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "hoazin-huppe": {
+  "file": "File:EB1911 - Hoactzin.jpg",
+  "author": "Butterworth & Heath",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AEB1911_-_Hoactzin.jpg",
+  "name": "Hoazin huppé",
+  "kind": "illustration",
+  "query": "\"Opisthocomus hoazin\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "caligo": {
+  "file": "File:Cramer&Stoll-uitlandsche kapellen vol. 1- plate 034.jpg",
+  "author": "Pieter Cramer  (1721 - 1776) and Caspar Stoll  (between  1725 and 1730 - 1791)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_034.jpg",
+  "name": "Caligo",
+  "kind": "illustration",
+  "query": "\"Caligo eurilochus\" plate -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "greta-oto": {
+  "file": "File:Greta_oto.jpg",
+  "author": "David Tiller",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AGreta_oto.jpg",
+  "name": "Greta oto",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "paresseux-a-trois-doigts": {
+  "file": "File:Adolphe Millot mammiferes C paresseux.jpg",
+  "author": "Adolphe Millot",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAdolphe_Millot_mammiferes_C_paresseux.jpg",
+  "name": "Paresseux à trois doigts",
+  "kind": "illustration",
+  "query": "\"Bradypus tridactylus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "piranha-rouge": {
+  "file": "File:Pygocentrus Nattereri - Damian Soltys.jpg",
+  "author": "Damian Soltys",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3APygocentrus_Nattereri_-_Damian_Soltys.jpg",
+  "name": "Piranha rouge",
+  "kind": "illustration",
+  "query": "\"Pygocentrus nattereri\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "termitomyces": {
+  "file": "File:Termitomyces_reticulatus_37340.jpg",
+  "author": "This image was created by user Candice (Candice) at Mushroom Observer, a source ",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ATermitomyces_reticulatus_37340.jpg",
+  "name": "Termitomyces",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "victoria-amazonica": {
+  "file": "File:Victoria regia – Walter Fitch.jpg",
+  "author": "Walter Hood Fitch",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AVictoria_regia_%E2%80%93_Walter_Fitch.jpg",
+  "name": "Victoria amazonica",
+  "kind": "illustration",
+  "query": "\"Victoria regia\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "loutre-geante": {
+  "file": "File:PteronuraSandbachiWolf.jpg",
+  "author": "Joseph Wolf",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3APteronuraSandbachiWolf.jpg",
+  "name": "Loutre géante",
+  "kind": "illustration",
+  "query": "\"Pteronura brasiliensis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "hurleur-roux": {
+  "file": "File:Handbook to the Primates Plate 18.jpg",
+  "author": "Henry Ogg Forbes (1851-1932). Species Plates by John Gerrard Keulemans (1842–191",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AHandbook_to_the_Primates_Plate_18.jpg",
+  "name": "Hurleur roux",
+  "kind": "illustration",
+  "query": "\"Alouatta seniculus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "kinkajou": {
+  "file": "File:Illustration of a kinkajou on chair 1896.jpg",
+  "author": "Internet Archive Book Images",
+  "license": "No restrictions",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIllustration_of_a_kinkajou_on_chair_1896.jpg",
+  "name": "Kinkajou",
+  "kind": "illustration",
+  "query": "\"Potos flavus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "tayra": {
+  "file": "File:Cambridge Natural History Mammalia Fig 219.jpg",
+  "author": "Frank E. Beddard",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACambridge_Natural_History_Mammalia_Fig_219.jpg",
+  "name": "Tayra",
+  "kind": "illustration",
+  "query": "\"Galictis barbara\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "riviere": {
+  "file": "File:City_of_Carauari,_the_Juruá_River_and_its_tributaries,_taken_from_the_International_Space_Station.jpg",
+  "author": "Image Science and Analysis Laboratory, NASA-Johnson Space Center. \"The Gateway t",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACity_of_Carauari%2C_the_Juru%C3%A1_River_and_its_tributaries%2C_taken_from_the_International_Space_Station.jpg",
+  "name": "Rivière",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "bras-mort": {
+  "file": "File:Nowitna_river.jpg",
+  "author": "Oliver Kurmis",
+  "license": "CC BY-SA 2.0 de",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANowitna_river.jpg",
+  "name": "Bras mort",
+  "kind": "photo",
+  "query": "",
+  "ext": ".jpg"
+ },
+ "arbre-creux": {
+  "file": "File:Anna Lewicka - Wśród naszych łąk i borów (1930) - strona 143.png",
+  "author": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAnna_Lewicka_-_W%C5%9Br%C3%B3d_naszych_%C5%82%C4%85k_i_bor%C3%B3w_%281930%29_-_strona_143.png",
+  "name": "Arbre creux",
+  "kind": "illustration",
+  "query": "\"Baumhöhle\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "terrier-de-berge": {
+  "file": "File:Chipmunk-burrow_(exits).jpg",
+  "author": "EIC",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AChipmunk-burrow_%28exits%29.jpg",
+  "name": "Terrier de berge",
+  "kind": "photo",
+  "query": "",
+  "ext": ".jpg"
+ },
+ "termitiere": {
+  "file": "File:C. cavifrons illustrations.png",
+  "author": "New York Zoological Society",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AC._cavifrons_illustrations.png",
+  "name": "Termitière",
+  "kind": "illustration",
+  "query": "\"termitarium\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".png"
+ },
+ "inselberg": {
+  "file": "File:ULURU.jpg",
+  "author": "Ek2030372672",
+  "license": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AULURU.jpg",
+  "name": "Inselberg",
+  "kind": "photo",
+  "query": "",
+  "ext": ".jpg"
+ },
+ "la-crue-monte": {
+  "file": "File:Igapo.jpg",
+  "author": "Lisa Cyr",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AIgapo.jpg",
+  "name": "La crue monte",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "ara-rouge": {
+  "file": "File:Book Illustration, Illustrations of the Family of Psittacidœ, or Parrots; Macrocercus Aracanga (red and yellow macaw), 1832 (CH 68775881).jpg",
+  "author": "Edward Lear",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ABook_Illustration%2C_Illustrations_of_the_Family_of_Psittacid%C5%93%2C_or_Parrots%3B_Macrocercus_Aracanga_%28red_and_yellow_macaw%29%2C_1832_%28CH_68775881%29.jpg",
+  "name": "Ara rouge",
+  "kind": "illustration",
+  "query": "\"Macrocercus aracanga\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "ara-bleu": {
+  "file": "File:Houghton Typ 805L.32 (A) - Illustrations of the family of Psittacidœ, or parrots, plate 8.jpg",
+  "author": "Edward Lear",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AHoughton_Typ_805L.32_%28A%29_-_Illustrations_of_the_family_of_Psittacid%C5%93%2C_or_parrots%2C_plate_8.jpg",
+  "name": "Ara bleu",
+  "kind": "illustration",
+  "query": "\"Macrocercus ararauna\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "ara-hyacinthe": {
+  "file": "File:Anodorhynchus leari by Edward Lear.jpg",
+  "author": "Edward Lear",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAnodorhynchus_leari_by_Edward_Lear.jpg",
+  "name": "Ara hyacinthe",
+  "kind": "illustration",
+  "query": "\"Macrocercus hyacinthinus\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "philodendron": {
+  "file": "File:Imbé Philodendron byKoehne.jpg",
+  "author": "André Koehne",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AImb%C3%A9_Philodendron_byKoehne.jpg",
+  "name": "Philodendron",
+  "kind": "illustration",
+  "query": "\"Philodendron imbe\" drawing -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "abeille-euglossine": {
+  "file": "File:Boletim do Museu Paraense de Historia Natural e Ethnographia (Museu Goeldi) (1902) (20200430019).jpg",
+  "author": "Museu Goeldi",
+  "license": "No restrictions",
+  "url": "https://commons.wikimedia.org/wiki/File%3ABoletim_do_Museu_Paraense_de_Historia_Natural_e_Ethnographia_%28Museu_Goeldi%29_%281902%29_%2820200430019%29.jpg",
+  "name": "Abeille euglossine",
+  "kind": "illustration",
+  "query": "\"Euglossa cordata\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "dendrobate": {
+  "file": "File:Dendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg",
+  "author": "H. Zell",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ADendrobates_tinctorius_-_Karlsruhe_Zoo_05.jpg",
+  "name": "Dendrobate",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "fourmi-azteca": {
+  "file": "File:Azteca_adrepens_casent0173822_profile_1.jpg",
+  "author": "April Nobile",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AAzteca_adrepens_casent0173822_profile_1.jpg",
+  "name": "Fourmi azteca",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "passiflore": {
+  "file": "File:NIEdot346.jpg",
+  "author": "Dodd, Mead and Company",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ANIEdot346.jpg",
+  "name": "Passiflore",
+  "kind": "illustration",
+  "query": "\"Passiflora quadrangularis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "cigale": {
+  "file": "File:Cicada_-_Neotibicen_linnei,_Woodbridge,_Virginia.jpg",
+  "author": "Judy Gallagher",
+  "license": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACicada_-_Neotibicen_linnei%2C_Woodbridge%2C_Virginia.jpg",
+  "name": "Cigale",
+  "kind": "photo",
+  "query": null,
+  "ext": ".jpg"
+ },
+ "liane": {
+  "file": "File:Bauhinia guianensis Aublet 1775 pl 145.jpg",
+  "author": "Jean-Baptiste-Christophe FUSÉE-AUBLET (1720-1778)",
+  "license": "Public domain",
+  "url": "https://commons.wikimedia.org/wiki/File%3ABauhinia_guianensis_Aublet_1775_pl_145.jpg",
+  "name": "Liane",
+  "kind": "illustration",
+  "query": "\"Bauhinia guianensis\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
+ },
+ "contrefort": {
+  "file": "File:Buttress_roots.JPG",
+  "author": "Patti Neumann",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AButtress_roots.JPG",
+  "name": "Contrefort",
+  "kind": "photo",
+  "query": "",
+  "ext": ".jpg"
+ },
+ "anguille-electrique": {
+  "file": "File:Electric-eel.jpg",
+  "author": "Steven G. Johnson",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AElectric-eel.jpg",
+  "name": "Anguille électrique",
+  "kind": "photo",
+  "query": "",
+  "ext": ".jpg"
+ },
+ "cordyceps": {
+  "file": "File:Ophiocordyceps_unilateralis.png",
+  "author": "David P. Hughes, Maj-Britt Pontoppidan",
+  "license": "CC BY 2.5",
+  "url": "https://commons.wikimedia.org/wiki/File%3AOphiocordyceps_unilateralis.png",
+  "name": "Cordyceps",
+  "kind": "photo",
+  "query": "",
+  "ext": ".png"
+ },
+ "tatou-geant": {
+  "file": "File:Priodontes_maximus_at_Régina.jpg",
+  "author": "Guillaume Delaitre",
+  "license": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3APriodontes_maximus_at_R%C3%A9gina.jpg",
+  "name": "Tatou géant",
+  "kind": "photo",
+  "query": "",
+  "ext": ".jpg"
+ }
+}
