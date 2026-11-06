@@ -425,7 +425,7 @@ def half_html(h, pos):
     tree = tree_sym(h["tree"])
     return (f'<div class="half"><div class="head"><span class="cost">{sp["cost"]}</span>'
             f'<span class="name">{esc(sp["name"])}</span>{tree}</div>{badges(sp)}{pic(sp)}{body(sp)}'
-            f'<div class="foot"><span>{pos}</span><span>×{sp["n"]}</span></div></div>')
+            f'<div class="foot"><span></span><span>×{sp["n"]}</span></div></div>')
 
 
 def full_html(sp, cid, tsym=None):
@@ -445,7 +445,7 @@ def full_html(sp, cid, tsym=None):
     cost = f'<span class="cost">{sp["cost"]}</span>' if sp["slot"] in ("arbre", "eau") else ""
     return (f'<div class="full"><div class="head">{cost}<span class="name">{esc(sp["name"])}</span>{head_tree}</div>'
             f'{badges(sp, [badge(kind, icon=kind), strate] if strate else [badge(kind, icon=kind)])}'
-            f'{pic(sp)}{body(sp)}<div class="foot"><span>{cid}</span><span>×{sp["n"]}</span></div></div>')
+            f'{pic(sp)}{body(sp)}<div class="foot"><span></span><span>×{sp["n"]}</span></div></div>')
 
 
 def build():
