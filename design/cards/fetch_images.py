@@ -53,6 +53,7 @@ SPECIES = {
     "Hoazin huppé": (["Opisthocomus hoazin", "Opisthocomus cristatus"], "Hoatzin"),
     "Colibri topaze": (["Topaza pella"], "Crimson topaz"),
     "Coq-de-roche": (["Rupicola rupicola", "Rupicola crocea"], "Guianan cock-of-the-rock"),
+    "Martin-pêcheur à collier": (["Megaceryle torquata", "Ceryle torquata"], "Ringed kingfisher"),
     "Morpho bleu": (["Morpho menelaus"], "Morpho menelaus"),
     "Héliconius": (["Heliconius melpomene"], "Heliconius melpomene"),
     "Caligo": (["Caligo eurilochus", "Caligo"], "Caligo eurilochus"),

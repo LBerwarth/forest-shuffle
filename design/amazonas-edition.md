@@ -266,9 +266,10 @@ Höhlen: 5 asymmetrische wie in Exmoor, alle 1 Punkt pro Karte, je ein Setup-Eff
 | Gelbbrustara / Ara bleu | Vogel | Krone | 3 | 1 | | Ara-Set | | |
 | Hyazinth-Ara / Ara hyacinthe | Vogel | Krone | 2 | 1 | | Ara-Set: 1/2/3 Arten = 4/10/20, Mehrfachsets wie bei Faltern | Hörnchen-Set | 20 je Set |
 | Hoatzin | Vogel | | 3 | 1 | | 5 auf einem Gewässer oder Baum mit Igarapé, sonst 1 | Buchfink, gestuft | 15 |
-| Schwertschnabelkolibri / Colibri porte-épée | Vogel | | 3 | 0 | | 1 pro Pflanze | Kolibri (Smoky) | 10 |
+| Topaskolibri / Colibri topaze | Vogel | | 2 | 0 | | 1 pro Pflanze | Kolibri (Smoky) | 10 |
+| Rotbrust-Fischer / Martin-pêcheur à collier | Vogel | | 2 | 1 | | 6 pro komplettem Gewässer (alle Slots belegt, Igarapés zählen nicht) | Baummarder, auf knappes Gelände | 12 |
 | Felsenhahn / Coq-de-roche | Vogel | | 2 | 1 | nimm 1 Karte von der Lichtung | 8 | Graureiher | 16 |
-| Blauer Morpho / Morpho bleu | Falter, Insekt | | 4 | 0 | | Falter-Set | | |
+| Blauer Morpho / Morpho bleu | Falter, Insekt | | 3 | 0 | | Falter-Set | | |
 | Heliconius / Héliconie | Falter, Insekt | | 3 | 0 | | Falter-Set | | |
 | Eulenfalter / Caligo | Falter, Insekt | | 3 | 0 | | Falter-Set | | |
 | Glasflügler / Greta oto | Falter, Insekt | | 3 | 0 | | Falter-Set: 1/2/3/4 Arten = 3/8/15/25, Mehrfachsets | Schmetterlinge | 25 je Set |
@@ -279,7 +280,7 @@ Höhlen: 5 asymmetrische wie in Exmoor, alle 1 Punkt pro Karte, je ein Setup-Eff
 | Feigenwespe / Guêpe du figuier | Insekt | | 3 | 0 | | 8 auf einer Würgefeige, sonst 1 | Buchfink, gestuft | 24 |
 | Prachtbiene / Abeille euglossine | Insekt | | 3 | 1 | | 3 pro Paranussbaum | Wolf-Modell | 15 |
 
-Summe: 3+3+3+3+3+2+3+3+2+4+3+3+3+4+3+3+3+3+3 = 57.
+Summe: 3+3+3+3+3+2+3+2+2+2+3+3+3+3+4+3+3+3+3+3 = 57.
 
 ### 8.4 Unten-Slot (57 Hälften)
 
@@ -337,7 +338,7 @@ Summe: 4+3+3+3+3+3+3+3+3+2+3+3+2+2+2+2+1+3+3+2+2+2 = 57.
 | Goliath-Vogelspinne / Mygale de Leblond | Insekt | | 3 | 1 | | 1 pro Insekt (inkl. selbst) | Thermometer-Grille | 10 |
 | Zikade / Cigale | Insekt | | 4 | 0 | spiele ein Insekt aus der Hand gratis | 2 | Köcherfliege | 2 |
 | Termiten / Termites | Insekt | | 5 | 0 | | 1 pro Höhlenkarte | Biber (Dartmoor) | 8 |
-| Margay | Pfote | | 3 | 1 | | 5 | Genet | 5 |
+| Margay | Pfote | | 3 | 2 | | 4 pro komplettem Baum (alle Slots belegt; E-Bäume 5, Bäume mit Igarapé 6) | Baummarder (5, Kosten 1, 5 Kopien) | 16 |
 | Liane | Pflanze | | 3 | 1 | | 1 pro Baum | Troll | 12 |
 | Baumstachler / Coendou | Nager, Pfote | | 3 | 0 | nimm 1 Karte von der Lichtung | 3 | Spitzmaus | 3 |
 | Opossum / Opossum commun | Pfote | | 4 | 1 | | 2 pro verschiedenem Baumsymbol an seinem Baum | Virginia-Opossum | 10 |
@@ -366,6 +367,8 @@ Wie die Winterkarten: 2 im unteren Drittel, 1 obendrauf, die dritte beendet das 
 | Kinkajou 15, Gürteltier 10 | allein am Baum | drei leere Slots pro Karte |
 | Açaí n², Pekari n² | 5 Kopien derselben Art | Açaí sperrt Kronendach aus, Pekaris belegen 5 Seiten |
 | Feigenwespe 8 je Kopie | auf Würgefeige | die Feige kostet 2 und löscht die Punkte des Wirts |
+| Margay 4 je kompletter Baum | alle Slots belegt | Classic-Daten: Baummarder-Besitzer füllen 4,4 von 11 Bäumen; E-Bäume und Igarapé-Bäume brauchen 5 bzw. 6 Karten |
+| Martin-pêcheur 6 je komplettes Gewässer | 4 Slots, unten nur EAU | 9 Gewässer im Deck, 19 EAU-Hälften; realistisch 0 bis 2 komplette Gewässer |
 | Wanderameisen 24 | 12 Unten-Karten | voller Boden, dann fehlen Igarapés und Gewässer |
 | Orchidee 15 je Kopie | 5 Pflanzenarten | Pflanzen in Oben- und Unten-Slots zugleich, Falter und Frösche verlieren Platz |
 

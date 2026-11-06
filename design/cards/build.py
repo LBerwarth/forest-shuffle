@@ -64,6 +64,47 @@ TREE_GLYPH = ('<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fi
               '<path d="M5 17Q3.5 12 6 7Q6 3 10 4Q11 2 14 4Q16 2 18 4Q21 2 22 4Q26 3 26 7Q28.5 12 27 17L18.5 17Q16 19 13.5 17L5 17Z"/>'
               '<path d="M14 17L18 17L18.3 25L19.5 28Q16 28.5 12.5 28L13.7 25Z"/></g></svg>')
 
+def _leaf(cx, cy, rx, ry, rot):
+    return f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" transform="rotate({rot} {cx} {cy})" fill="#fff"/>'
+
+
+TREE_GLYPHS = {
+    # palmate compound leaf, 7 leaflets from one point
+    "Fromager": "".join(_leaf(16 + 9 * __import__("math").cos(__import__("math").radians(a)), 19 + 9 * __import__("math").sin(__import__("math").radians(a)), 6.5, 2.2, a)
+                        for a in (-150, -120, -90, -60, -30, 180, 0)) + '<rect x="15" y="19" width="2" height="9" fill="#fff"/>',
+    # simple oblong leaf with midrib
+    "Noyer du Brésil": _leaf(16, 16, 5, 12, 0) + '<line x1="16" y1="6" x2="16" y2="27" stroke="#a0522d" stroke-width="1"/>',
+    # round, palmately lobed (Cecropia)
+    "Bois canon": "".join(_leaf(16 + 7.5 * __import__("math").cos(__import__("math").radians(a)), 16 + 7.5 * __import__("math").sin(__import__("math").radians(a)), 5.5, 2.6, a) for a in range(0, 360, 45))
+                  + '<circle cx="16" cy="16" r="6" fill="#fff"/><circle cx="16" cy="16" r="1.4" fill="#27ae60"/>',
+    # pinnate compound leaf
+    "Acajou": '<line x1="16" y1="5" x2="16" y2="28" stroke="#fff" stroke-width="1.6"/>'
+              + "".join(_leaf(11, y, 4, 1.8, -35) + _leaf(21, y, 4, 1.8, 35) for y in (10, 16, 22)),
+    # trumpet flower (Tabebuia)
+    "Ébène verte": "".join(_leaf(16 + 7 * __import__("math").cos(__import__("math").radians(a)), 16 + 7 * __import__("math").sin(__import__("math").radians(a)), 5, 3.2, a) for a in (-90, -18, 54, 126, 198))
+                   + '<circle cx="16" cy="16" r="3" fill="#16a085"/>',
+    # trifoliate leaf
+    "Hévéa": _leaf(16, 11, 3.2, 8, 0) + _leaf(9, 17, 3.2, 8, -55) + _leaf(23, 17, 3.2, 8, 55) + '<rect x="15.2" y="19" width="1.6" height="9" fill="#fff"/>',
+    # pinnate palm frond
+    "Wassaï": '<path d="M6 26 Q16 4 27 8" stroke="#fff" stroke-width="1.8" fill="none"/>'
+                      + "".join(f'<line x1="{x}" y1="{y}" x2="{x - 4}" y2="{y + 6}" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>'
+                                for x, y in ((11, 16), (14, 11), (17, 8), (20, 6), (23, 5.5)))
+                      + "".join(f'<line x1="{x}" y1="{y}" x2="{x + 5}" y2="{y + 4}" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>'
+                                for x, y in ((13, 14), (16, 10), (19, 7.5), (22, 6))),
+    # fan palm
+    "Bâche": '<path d="M16 23 L4 14 A14 14 0 0 1 28 14 Z" fill="#fff"/>'
+                     + "".join(f'<line x1="16" y1="23" x2="{x}" y2="{y}" stroke="#d4ac0d" stroke-width="1"/>' for x, y in ((5, 15), (8, 11), (12, 9), (16, 8), (20, 9), (24, 11), (27, 15)))
+                     + '<rect x="15.2" y="22" width="1.6" height="7" fill="#fff"/>',
+    # ovate leaf with drip tip and aerial roots
+    "Figuier": '<path d="M16 4 C9 8 7 14 9 19 C11 23 14 24 16 29 C18 24 21 23 23 19 C25 14 23 8 16 4 Z" fill="#fff"/>'
+               + '<line x1="16" y1="8" x2="16" y2="26" stroke="#7f8c8d" stroke-width="1"/>'
+               + '<path d="M6 20 v9 M26 20 v9" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>',
+}
+
+
+def tree_sym(name):
+    return f'<span class="tsym" title="{esc(name)}">{tile(TREE_COLOR[name], TREE_GLYPHS[name])}</span>'
+
 
 def ic(key):
     return f'<span class="ic">{ICONS[key]}</span>'
@@ -158,9 +199,10 @@ SPECIES = [
     c("Ara bleu", "haut", 3, 1, ["OISEAU"], req="CANOPÉE", points="Série d'aras : 4 / 10 / 20 pts pour 1 / 2 / 3 espèces d'aras différentes (séries multiples possibles)"),
     c("Ara hyacinthe", "haut", 2, 1, ["OISEAU"], req="CANOPÉE", points="Série d'aras : 4 / 10 / 20 pts pour 1 / 2 / 3 espèces d'aras différentes (séries multiples possibles)"),
     c("Hoazin huppé", "haut", 3, 1, ["OISEAU"], points="5 pts sur un plan d'eau ou sur un arbre avec igarapé, sinon 1 pt"),
-    c("Colibri topaze", "haut", 3, 0, ["OISEAU"], points="1 pt par plante dans votre forêt"),
+    c("Colibri topaze", "haut", 2, 0, ["OISEAU"], points="1 pt par plante dans votre forêt"),
+    c("Martin-pêcheur à collier", "haut", 2, 1, ["OISEAU"], points="6 pts par plan d'eau complet (tous ses emplacements occupés, igarapés exclus)"),
     c("Coq-de-roche", "haut", 2, 1, ["OISEAU"], effet="Prenez 1 carte de la clairière.", points="8 pts"),
-    c("Morpho bleu", "haut", 4, 0, ["PAPILLON", "INSECTE"], points="Série de papillons : 3 / 8 / 15 / 25 pts pour 1 / 2 / 3 / 4 espèces différentes (séries multiples)"),
+    c("Morpho bleu", "haut", 3, 0, ["PAPILLON", "INSECTE"], points="Série de papillons : 3 / 8 / 15 / 25 pts pour 1 / 2 / 3 / 4 espèces différentes (séries multiples)"),
     c("Héliconius", "haut", 3, 0, ["PAPILLON", "INSECTE"], points="Série de papillons : 3 / 8 / 15 / 25 pts pour 1 / 2 / 3 / 4 espèces différentes (séries multiples)"),
     c("Caligo", "haut", 3, 0, ["PAPILLON", "INSECTE"], points="Série de papillons : 3 / 8 / 15 / 25 pts pour 1 / 2 / 3 / 4 espèces différentes (séries multiples)"),
     c("Greta oto", "haut", 3, 0, ["PAPILLON", "INSECTE"], points="Série de papillons : 3 / 8 / 15 / 25 pts pour 1 / 2 / 3 / 4 espèces différentes (séries multiples)"),
@@ -217,7 +259,7 @@ SPECIES = [
     c("Mygale de Leblond", "cote", 3, 1, ["INSECTE"], points="1 pt par insecte dans votre forêt (elle comprise)"),
     c("Cigale", "cote", 4, 0, ["INSECTE"], effet="Jouez gratuitement un insecte de votre main.", points="2 pts"),
     c("Termites", "cote", 5, 0, ["INSECTE"], points="1 pt par carte dans votre grotte"),
-    c("Margay", "cote", 3, 1, ["PATTE"], points="5 pts"),
+    c("Margay", "cote", 3, 2, ["PATTE"], points="4 pts par arbre complet (tous ses emplacements occupés)"),
     c("Liane", "cote", 3, 1, ["PLANTE"], points="1 pt par arbre dans votre forêt"),
     c("Coendou", "cote", 3, 0, ["RONGEUR", "PATTE"], effet="Prenez 1 carte de la clairière.", points="3 pts"),
     c("Opossum commun", "cote", 4, 1, ["PATTE"], points="2 pts par symbole d'arbre différent sur son arbre (cartes attachées comprises)"),
@@ -239,20 +281,22 @@ RULES_TPL = """
 <h2>Figuier étrangleur</h2>
 <p>Se joue sur un de vos arbres. L'hôte ne rapporte plus de points et ne compte plus comme son espèce ; il garde sa strate, ses emplacements et ses cartes. Le Figuier compte comme une espèce d'arbre.</p>
 <h2>Décompte</h2>
-<p>Somme des points de toutes les cartes visibles + 1 pt par carte dans la grotte. Les séries (papillons, aras, singes) et les cartes de comparaison (Hévéa, Sarcoramphe roi, Jaguar) se calculent comme indiqué sur les cartes. Égalité = victoire partagée.</p>
+<p>Somme des points de toutes les cartes visibles + 1 pt par carte dans la grotte. Les séries (papillons, aras, singes) et les cartes de comparaison (Hévéa, Sarcoramphe roi, Jaguar) se calculent comme indiqué sur les cartes. Égalité = victoire partagée. <b>Complet</b> (Margay, Martin-pêcheur) = tous les emplacements d'un arbre ou d'un plan d'eau sont occupés ; un épiphyte ne crée pas d'emplacement, une Broméliacée avec sa grenouille compte pour un emplacement.</p>
 <h2>Symboles</h2>
 <p class="legend">
 {LEGEND}
-<br>Le bandeau coloré de chaque moitié est son symbole d'arbre (bonus de paiement, Daguet, Opossum). Le coin supérieur gauche est le coût. "×N" = nombre d'exemplaires dans le paquet.</p>
+<br>Sur les cartes, les symboles sont des tuiles sans texte ; la tuile colorée en haut à droite de chaque moitié est son symbole d'arbre (bonus de paiement, Daguet, Opossum). Le coin supérieur gauche est le coût. "×N" = nombre d'exemplaires dans le paquet.</p>
 <p class="small">Prototype de test, texte seul, sans illustration. Édition maison, non affiliée à Lookout.</p>
 </section>
 """
 
-LEGEND = lambda: (" ".join(badge(t, icon=t) for t in ["OISEAU", "INSECTE", "PAPILLON", "AMPHIBIEN", "REPTILE", "POISSON", "PLANTE", "CHAMPIGNON", "PATTE", "SINGE", "RONGEUR", "ONGULÉ"])
+LEGEND = lambda: (" ".join(badge(t, icon=t, text=True) for t in ["OISEAU", "INSECTE", "PAPILLON", "AMPHIBIEN", "REPTILE", "POISSON", "PLANTE", "CHAMPIGNON", "PATTE", "SINGE", "RONGEUR", "ONGULÉ"])
           + " (papillon = aussi insecte ; singe et rongeur = aussi patte ; amphibien et reptile = même famille)<br>Besoins : "
-          + " ".join(badge(t, "req", t) for t in ["CANOPÉE", "EAU", "IGARAPÉ"]) + " · Propriétés : "
-          + " ".join(badge(t, "prop", t) for t in ["ÉPIPHYTE", "BROMÉLIA"]) + " · Strates : "
-          + " ".join(badge(l, "strate", f"STRATE_{k}") for k, l in [("E", "ÉMERGENT"), ("C", "CANOPÉE"), ("S", "SOUS-BOIS")]))
+          + " ".join(badge(t, "req", t, text=True) for t in ["CANOPÉE", "EAU", "IGARAPÉ"]) + " · Propriétés : "
+          + " ".join(badge(t, "prop", t, text=True) for t in ["ÉPIPHYTE", "BROMÉLIA"]) + " · Strates : "
+          + " ".join(badge(l, "strate", f"STRATE_{k}", text=True) for k, l in [("E", "ÉMERGENT"), ("C", "CANOPÉE"), ("S", "SOUS-BOIS")])
+          + " · Types de carte : " + " ".join(badge(l, icon=l, text=True) for l in ["ARBRE", "PLAN D'EAU", "GROTTE", "CRUE"])
+          + "<br>Symboles d'arbre : " + " ".join(f'{tree_sym(n)} {esc(n)}' for n in TREE_COLOR))
 
 CSS = """
 @page { size: A4; margin: 8mm; }
@@ -269,7 +313,7 @@ body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; color: #111; }
 .land .half + .half { border-top: 0; border-left: 0.3mm dashed #aaa; }
 .full { padding: 2mm 2.5mm; display: flex; flex-direction: column; height: 100%; }
 .head { display: flex; align-items: center; gap: 1.2mm; }
-.cost { width: 5.2mm; height: 5.2mm; border-radius: 50%; background: #222; color: #fff; font-weight: 700; font-size: 8pt;
+.cost { width: 4.4mm; height: 6mm; border-radius: 0.8mm; background: #222; color: #fff; font-weight: 700; font-size: 8.5pt;
         display: flex; align-items: center; justify-content: center; flex: none; }
 .name { font-weight: 700; font-size: 9pt; line-height: 1.05; flex: 1; }
 .full .name { font-size: 10pt; }
@@ -281,7 +325,9 @@ body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; color: #111; }
 .badge.strate { background: #5b3a1e; color: #fff; border-color: #5b3a1e; }
 .badge { display: inline-flex; align-items: center; gap: 0.7mm; }
 .ic { display: inline-block; width: 3.4mm; height: 3.4mm; flex: none; } .ic svg { width: 100%; height: 100%; display: block; }
-.tree { display: inline-flex; align-items: center; gap: 0.6mm; } .tree .ic { width: 2.6mm; height: 2.6mm; }
+.tsym { display: inline-flex; flex: none; } .tsym svg { width: 4.6mm; height: 4.6mm; display: block; }
+.badge.ico { padding: 0; border: 0; background: none; } .badge.ico .ic { width: 5mm; height: 5mm; }
+.badges { gap: 1mm; }
 .txt { font-size: 7.2pt; line-height: 1.22; flex: 0 0 auto; }
 .pic { flex: 1 1 0; min-height: 8mm; margin: 0.6mm 0; border-radius: 1mm; overflow: hidden; background: #eee; }
 .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -318,7 +364,7 @@ h1 { font-size: 26px; margin: 0 0 8px; text-wrap: balance; } h2 { font-size: 17p
 .half + .half { border-top: 1px dashed var(--rule); } .land .half + .half { border-top: 0; border-left: 1px dashed var(--rule); }
 .full { padding: 9px 10px; display: flex; flex-direction: column; height: 100%; }
 .head { display: flex; align-items: center; gap: 5px; }
-.cost { width: 21px; height: 21px; border-radius: 50%; background: #222; color: #fff; font-weight: 700; font-size: 12px; display: flex; align-items: center; justify-content: center; flex: none; }
+.cost { width: 18px; height: 24px; border-radius: 3px; background: #222; color: #fff; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; flex: none; }
 .name { font-weight: 700; font-size: 13px; line-height: 1.1; flex: 1; min-width: 0; } .full .name { font-size: 15px; }
 .tree { font-size: 9px; color: #fff; padding: 2px 5px; border-radius: 4px; font-weight: 600; white-space: nowrap; flex: none; }
 .badges { display: flex; flex-wrap: wrap; gap: 3px; margin: 4px 0; }
@@ -327,7 +373,9 @@ h1 { font-size: 26px; margin: 0 0 8px; text-wrap: balance; } h2 { font-size: 17p
 .badge.strate { background: var(--strate); color: #fff; border-color: var(--strate); }
 .badge { display: inline-flex; align-items: center; gap: 3px; }
 .ic { display: inline-block; width: 14px; height: 14px; flex: none; } .ic svg { width: 100%; height: 100%; display: block; }
-.tree { display: inline-flex; align-items: center; gap: 3px; } .tree .ic { width: 11px; height: 11px; }
+.tsym { display: inline-flex; flex: none; vertical-align: middle; } .tsym svg { width: 20px; height: 20px; display: block; }
+.badge.ico { padding: 0; border: 0; background: none; } .badge.ico .ic { width: 22px; height: 22px; }
+.badges { gap: 4px; }
 .txt { font-size: 11px; line-height: 1.25; flex: 0 0 auto; }
 .pic { flex: 1 1 0; min-height: 40px; margin: 3px 0; border-radius: 4px; background: #e9ebe6 center / cover no-repeat; }
 .credits { font-size: 12px; max-width: 70ch; } .credits li { margin: 0 0 4px; } .full .txt { font-size: 12px; }
@@ -344,7 +392,9 @@ def esc(s):
     return html.escape(s, quote=False)
 
 
-def badge(label, cls="", icon=None):
+def badge(label, cls="", icon=None, text=False):
+    if icon and not text:
+        return f'<span class="badge ico" title="{esc(label)}">{ic(icon)}</span>'
     i = ic(icon) if icon else ""
     return f'<span class="badge {cls}">{i}{esc(label)}</span>'
 
@@ -372,7 +422,7 @@ def body(sp):
 
 def half_html(h, pos):
     sp = h["sp"]
-    tree = f'<span class="tree" style="background:{TREE_COLOR[h["tree"]]}"><span class="ic">{TREE_GLYPH}</span>{esc(h["tree"])}</span>'
+    tree = tree_sym(h["tree"])
     return (f'<div class="half"><div class="head"><span class="cost">{sp["cost"]}</span>'
             f'<span class="name">{esc(sp["name"])}</span>{tree}</div>{badges(sp)}{pic(sp)}{body(sp)}'
             f'<div class="foot"><span>{pos}</span><span>×{sp["n"]}</span></div></div>')
@@ -382,15 +432,15 @@ def full_html(sp, cid, tsym=None):
     head_tree = ""
     if sp["slot"] == "arbre":
         sym = "Figuier" if sp["name"].startswith("Figuier") else {"Palmier wassaï": "Wassaï", "Palmier bâche": "Bâche"}.get(sp["name"], sp["name"])
-        head_tree = f'<span class="tree" style="background:{TREE_COLOR[sym]}"><span class="ic">{TREE_GLYPH}</span>{esc(sym)}</span>'
+        head_tree = tree_sym(sym)
     elif tsym:
-        head_tree = f'<span class="tree" style="background:{TREE_COLOR[tsym]}"><span class="ic">{TREE_GLYPH}</span>{esc(tsym)}</span>'
+        head_tree = tree_sym(tsym)
     strate = ""
     if sp["strate"] in ("E", "C", "S"):
         label = {"E": "ÉMERGENT · 2 empl. en haut", "C": "CANOPÉE", "S": "SOUS-BOIS"}[sp["strate"]]
         strate = badge(label, "strate", f"STRATE_{sp['strate']}")
     elif sp["strate"] == "hôte":
-        strate = badge("STRATE DE L'HÔTE", "strate")
+        strate = ""
     kind = {"arbre": "ARBRE", "eau": "PLAN D'EAU", "grotte": "GROTTE", "crue": "CRUE"}[sp["slot"]]
     cost = f'<span class="cost">{sp["cost"]}</span>' if sp["slot"] in ("arbre", "eau") else ""
     return (f'<div class="full"><div class="head">{cost}<span class="name">{esc(sp["name"])}</span>{head_tree}</div>'
@@ -448,11 +498,11 @@ def build():
         for a, b in tb:
             n += 1
             cid = f"V{n:03d}"
-            cards.append(f'<div class="card"><div class="in">{half_html(a, "HAUT · " + cid)}{half_html(b, "BAS")}</div></div>')
+            cards.append(f'<div class="card"><div class="in">{half_html(a, cid)}{half_html(b, "")}</div></div>')
         for a, b in lr:
             n += 1
             cid = f"V{n:03d}"
-            cards.append(f'<div class="card land"><div class="in">{half_html(a, "GAUCHE · " + cid)}{half_html(b, "DROITE")}</div></div>')
+            cards.append(f'<div class="card land"><div class="in">{half_html(a, cid)}{half_html(b, "")}</div></div>')
         assert len(cards) == 180, len(cards)
         return cards
 

@@ -888,5 +888,15 @@
   "kind": "photo",
   "query": "",
   "ext": ".jpg"
+ },
+ "martin-pecheur-a-collier": {
+  "file": "File:Ringed Kingfisher From The Crossley ID Guide Eastern Birds.jpg",
+  "author": "Richard Crossley",
+  "license": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ARinged_Kingfisher_From_The_Crossley_ID_Guide_Eastern_Birds.jpg",
+  "name": "Martin-pêcheur à collier",
+  "kind": "illustration",
+  "query": "\"Megaceryle torquata\" illustration -map -skull -skeleton -egg -stamp",
+  "ext": ".jpg"
  }
 }
