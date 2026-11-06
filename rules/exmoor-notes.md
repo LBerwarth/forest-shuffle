@@ -64,7 +64,7 @@ Alternative for 2p: split into 3 equal piles, remove 1 unseen. For 3p: 5 piles, 
 | sundew | E27 B | bottom | Droséra | 1 × insect (moor only) |
 | natterjack_toad | E30/E35 B | bottom | Crapaud calamite | 1 |
 | grey_wagtail | E35 T | top | Bergeronnette des ruisseaux | 1 × Exmoor card (moor only) |
-| coastal_heath | E39 | moor | Bruyère côtière d'altitude | doubles birds on it |
+| coastal_heath | E39 | moor | Bruyère côtière d'altitude (EN: High Coastal Heath) | doubles birds in this moor |
 | stone_circle | E42 | moor | Cercle de pierres | 0 (effect only) |
 | tarr_steps | E45 | moor | Tarr Steps | 0 (effect only) |
 | waxcap_grassland | E48 | moor | Prairie d'hygrocybes | 0 (effect only) |

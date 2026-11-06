@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Urzal costeiro",
-    "scoring": "Duplica os pontos das aves colocadas por baixo",
-    "context": "Que aves estão por baixo deste Urzal costeiro?"
+    "scoring": "Duplica os pontos de todas as aves nesta charneca",
+    "context": "Que aves estão nesta charneca?"
   },
   "stone_circle": {
     "name": "Círculo de pedras",

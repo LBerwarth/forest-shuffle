@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Kusthed",
-    "scoring": "Fördubblar poängen för fåglar placerade under den",
-    "context": "Vilka fåglar är under denna Kusthed?"
+    "scoring": "Fördubblar poängen för alla fåglar i denna myr",
+    "context": "Vilka fåglar är i denna myr?"
   },
   "stone_circle": {
     "name": "Stencirkel",

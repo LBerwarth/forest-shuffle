@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Kysthei",
-    "scoring": "Dobler poengene til fugler plassert under den",
-    "context": "Hvilke fugler er under denne Kystheien?"
+    "scoring": "Dobler poengene til alle fugler i denne myra",
+    "context": "Hvilke fugler er i denne myra?"
   },
   "stone_circle": {
     "name": "Steinsirkel",

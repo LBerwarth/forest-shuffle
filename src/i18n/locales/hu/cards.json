@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Tengerparti fenyér",
-    "scoring": "Megduplázza az alá helyezett madarak pontjait",
-    "context": "Mely madarak vannak e tengerparti fenyér alatt?"
+    "scoring": "Megduplázza az ezen a lápon lévő összes madár pontjait",
+    "context": "Mely madarak vannak ezen a lápon?"
   },
   "stone_circle": {
     "name": "Kőkör",

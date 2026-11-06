@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Kysthede",
-    "scoring": "Fordobler point for fugle placeret under den",
-    "context": "Hvilke fugle ligger under denne kysthede?"
+    "scoring": "Fordobler point for alle fugle i denne mose",
+    "context": "Hvilke fugle ligger i denne mose?"
   },
   "stone_circle": {
     "name": "Stenkreds",

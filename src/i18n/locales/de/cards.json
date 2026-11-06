@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Küstenheide",
-    "scoring": "Verdoppelt die Punkte der daruntergelegten Vögel",
-    "context": "Welche Vögel liegen unter dieser Heide?"
+    "scoring": "Verdoppelt die Punkte aller Vögel in diesem Moor",
+    "context": "Welche Vögel liegen in diesem Moor?"
   },
   "stone_circle": {
     "name": "Steinkreis",

@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Bruyère côtière d'altitude",
-    "scoring": "Double les points des oiseaux placés dessous",
-    "context": "Quels oiseaux sont sous cette Lande ?"
+    "scoring": "Double les points de tous les oiseaux dans cette lande",
+    "context": "Quels oiseaux sont dans cette lande ?"
   },
   "stone_circle": {
     "name": "Cercle de pierres",

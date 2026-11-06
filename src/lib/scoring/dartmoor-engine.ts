@@ -282,8 +282,7 @@ const scoringFunctions: Record<string, ScoringFunction> = {
   gorse: () => 0,
 
   // Moors
-  // Coastal Heath doubles the points of hares placed on it (same model as
-  // Blanket Bog: score one hosted copy again on top of its normal value)
+  // Doubles birds in its slots, same model as Blanket Bog
   coastal_heath: (_count, ctx, metadata) => {
     const hostKeys = metadata?.hostCardKeys ?? []
     let bonus = 0

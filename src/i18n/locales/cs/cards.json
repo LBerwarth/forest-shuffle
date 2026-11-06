@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Pobřežní vřesoviště",
-    "scoring": "Zdvojnásobuje body ptáků umístěných pod ním",
-    "context": "Kteří ptáci jsou pod tímto pobřežním vřesovištěm?"
+    "scoring": "Zdvojnásobuje body všech ptáků na tomto vřesovišti",
+    "context": "Kteří ptáci jsou na tomto vřesovišti?"
   },
   "stone_circle": {
     "name": "Kamenný kruh",

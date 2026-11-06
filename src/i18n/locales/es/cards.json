@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Brezal costero",
-    "scoring": "Duplica los puntos de las aves colocadas debajo",
-    "context": "¿Qué aves están bajo este brezal?"
+    "scoring": "Duplica los puntos de todas las aves en este páramo",
+    "context": "¿Qué aves hay en este páramo?"
   },
   "stone_circle": {
     "name": "Círculo de piedras",

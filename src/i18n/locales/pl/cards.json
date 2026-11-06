@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Wrzosowisko nadmorskie",
-    "scoring": "Podwaja punkty ptaków umieszczonych pod nim",
-    "context": "Które ptaki są pod tym Wrzosowiskiem?"
+    "scoring": "Podwaja punkty wszystkich ptaków na tym wrzosowisku",
+    "context": "Które ptaki są na tym wrzosowisku?"
   },
   "stone_circle": {
     "name": "Kamienny krąg",

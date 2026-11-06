@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Rannikkonummi",
-    "scoring": "Kaksinkertaistaa sen alle asetettujen lintujen pisteet",
-    "context": "Mitkä linnut ovat tämän rannikkonummen alla?"
+    "scoring": "Kaksinkertaistaa kaikkien tällä nummella olevien lintujen pisteet",
+    "context": "Mitkä linnut ovat tällä nummella?"
   },
   "stone_circle": {
     "name": "Kivikehä",

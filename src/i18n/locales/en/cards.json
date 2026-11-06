@@ -786,9 +786,9 @@
     "scoring": "0 points (permanent effect only)"
   },
   "coastal_heath": {
-    "name": "Coastal Heath",
-    "scoring": "Doubles points of birds placed below it",
-    "context": "Which birds are below this Coastal Heath?"
+    "name": "High Coastal Heath",
+    "scoring": "Doubles the points of all birds in this moor",
+    "context": "Which birds are in this moor?"
   },
   "stone_circle": {
     "name": "Ring Cairn",

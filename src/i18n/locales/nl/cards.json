@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Kustheide",
-    "scoring": "Verdubbelt de punten van vogels die eronder liggen",
-    "context": "Welke vogels liggen onder deze Kustheide?"
+    "scoring": "Verdubbelt de punten van alle vogels in dit veen",
+    "context": "Welke vogels liggen in dit veen?"
   },
   "stone_circle": {
     "name": "Steencirkel",

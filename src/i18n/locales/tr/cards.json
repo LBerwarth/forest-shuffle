@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Kıyı fundalığı",
-    "scoring": "Altına yerleştirilen kuşların puanını ikiye katlar",
-    "context": "Bu Kıyı fundalığının altında hangi kuşlar var?"
+    "scoring": "Bu fundalıktaki tüm kuşların puanını ikiye katlar",
+    "context": "Bu fundalıkta hangi kuşlar var?"
   },
   "stone_circle": {
     "name": "Taş çember",

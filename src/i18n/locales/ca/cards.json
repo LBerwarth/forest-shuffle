@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Bruguerar costaner",
-    "scoring": "Duplica els punts dels ocells col·locats a sota",
-    "context": "Quins ocells hi ha sota aquest Bruguerar costaner?"
+    "scoring": "Duplica els punts de tots els ocells en aquesta landa",
+    "context": "Quins ocells hi ha en aquesta landa?"
   },
   "stone_circle": {
     "name": "Cercle de pedres",

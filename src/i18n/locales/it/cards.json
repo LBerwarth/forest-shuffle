@@ -787,8 +787,8 @@
   },
   "coastal_heath": {
     "name": "Brughiera costiera",
-    "scoring": "Raddoppia i punti degli uccelli posti sotto di essa",
-    "context": "Quali uccelli sono sotto questa Brughiera costiera?"
+    "scoring": "Raddoppia i punti di tutti gli uccelli in questa brughiera",
+    "context": "Quali uccelli sono in questa brughiera?"
   },
   "stone_circle": {
     "name": "Cerchio di pietre",
