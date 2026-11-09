@@ -55,7 +55,7 @@ export function LangRoute({ lang }: { lang?: SeoLang }) {
     const isLanding = pathname === '/' || pathname === `/${lang}`
     if (editionPage || isLanding) {
       const page = editionPage ? `/${editionPage.slug}` : ''
-      upsertLink('canonical', `${ORIGIN}${lang ? `/${lang}` : ''}${page || '/'}`)
+      upsertLink('canonical', `${ORIGIN}${`${lang ? `/${lang}` : ''}${page}` || '/'}`)
       upsertLink('alternate', `${ORIGIN}${page || '/'}`, 'en')
       upsertLink('alternate', `${ORIGIN}${page || '/'}`, 'x-default')
       for (const l of SEO_LANGS) upsertLink('alternate', `${ORIGIN}/${l}${page}`, l)
