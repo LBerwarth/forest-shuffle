@@ -28,6 +28,8 @@ export function UsageStats() {
       ...EXPANSION_ORDER.filter((e) => r.expansions.includes(e)).map((e) => t(`expansion.${e}`)),
     ].join(' + ')
   const sum = (p: (typeof PERIODS)[number]) => data.reduce((n, r) => n + r[p], 0)
+  const soloSum = (p: (typeof PERIODS)[number]) => data.reduce((n, r) => n + (r.solo?.[p] ?? 0), 0)
+  const hasSolo = data.some((r) => r.solo)
   const cell = 'py-1 pl-2 text-right tabular-nums'
 
   return (
@@ -52,7 +54,7 @@ export function UsageStats() {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-forest-100 font-bold">
+            <tr className={hasSolo ? 'font-bold' : 'border-b border-forest-100 font-bold'}>
               <td className="py-1">{t('leaderboard.usageAll')}</td>
               {PERIODS.map((p) => (
                 <td key={p} className={cell}>
@@ -60,6 +62,16 @@ export function UsageStats() {
                 </td>
               ))}
             </tr>
+            {hasSolo && (
+              <tr className="border-b border-forest-100 italic text-forest-500">
+                <td className="py-1 pl-3">{t('leaderboard.usageSolo')}</td>
+                {PERIODS.map((p) => (
+                  <td key={p} className={cell}>
+                    {soloSum(p)}
+                  </td>
+                ))}
+              </tr>
+            )}
             {data.map((r) => (
               <tr key={`${r.edition}-${r.expansions.join()}`}>
                 <td className="py-1 break-words">{label(r)}</td>

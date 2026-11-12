@@ -657,6 +657,7 @@ export interface UsageRow {
   month: number
   year: number
   total: number
+  solo?: Record<'today' | 'week' | 'month' | 'year' | 'total', number>
 }
 
 function expansionCards(): Partial<Record<GameEdition, Partial<Record<Expansion, string[]>>>> {
