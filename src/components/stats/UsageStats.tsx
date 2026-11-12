@@ -27,10 +27,44 @@ export function UsageStats() {
       t(EDITION_KEY[r.edition] ?? r.edition),
       ...EXPANSION_ORDER.filter((e) => r.expansions.includes(e)).map((e) => t(`expansion.${e}`)),
     ].join(' + ')
-  const sum = (p: (typeof PERIODS)[number]) => data.reduce((n, r) => n + r[p], 0)
-  const soloSum = (p: (typeof PERIODS)[number]) => data.reduce((n, r) => n + (r.solo?.[p] ?? 0), 0)
-  const hasSolo = data.some((r) => r.solo)
+  type Period = (typeof PERIODS)[number]
+  const soloRows = data.filter((r) => r.solo && r.solo.total > 0)
   const cell = 'py-1 pl-2 text-right tabular-nums'
+
+  const table = (rows: UsageRow[], get: (r: UsageRow, p: Period) => number) => (
+    <table className="w-full text-xs text-forest-700">
+      <thead>
+        <tr className="text-[10px] text-forest-400">
+          <th className="py-1 text-left font-normal" />
+          {PERIODS.map((p) => (
+            <th key={p} className="py-1 pl-2 text-right font-normal">
+              {t(`leaderboard.usage${p[0].toUpperCase()}${p.slice(1)}`)}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        <tr className="border-b border-forest-100 font-bold">
+          <td className="py-1">{t('leaderboard.usageAll')}</td>
+          {PERIODS.map((p) => (
+            <td key={p} className={cell}>
+              {rows.reduce((n, r) => n + get(r, p), 0)}
+            </td>
+          ))}
+        </tr>
+        {rows.map((r) => (
+          <tr key={`${r.edition}-${r.expansions.join()}`}>
+            <td className="py-1 break-words">{label(r)}</td>
+            {PERIODS.map((p) => (
+              <td key={p} className={cell}>
+                {get(r, p)}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
 
   return (
     <Card className="mb-6">
@@ -42,48 +76,15 @@ export function UsageStats() {
         <p className="text-[10px] text-forest-400 mt-0.5">{t('leaderboard.usageSubtitle')}</p>
       </CardHeader>
       <CardContent>
-        <table className="w-full text-xs text-forest-700">
-          <thead>
-            <tr className="text-[10px] text-forest-400">
-              <th className="py-1 text-left font-normal" />
-              {PERIODS.map((p) => (
-                <th key={p} className="py-1 pl-2 text-right font-normal">
-                  {t(`leaderboard.usage${p[0].toUpperCase()}${p.slice(1)}`)}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            <tr className={hasSolo ? 'font-bold' : 'border-b border-forest-100 font-bold'}>
-              <td className="py-1">{t('leaderboard.usageAll')}</td>
-              {PERIODS.map((p) => (
-                <td key={p} className={cell}>
-                  {sum(p)}
-                </td>
-              ))}
-            </tr>
-            {hasSolo && (
-              <tr className="border-b border-forest-100 italic text-forest-500">
-                <td className="py-1 pl-3">{t('leaderboard.usageSolo')}</td>
-                {PERIODS.map((p) => (
-                  <td key={p} className={cell}>
-                    {soloSum(p)}
-                  </td>
-                ))}
-              </tr>
-            )}
-            {data.map((r) => (
-              <tr key={`${r.edition}-${r.expansions.join()}`}>
-                <td className="py-1 break-words">{label(r)}</td>
-                {PERIODS.map((p) => (
-                  <td key={p} className={cell}>
-                    {r[p]}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {table(data, (r, p) => r[p])}
+        {soloRows.length > 0 && (
+          <>
+            <h3 className="mt-5 mb-1 font-heading text-sm font-semibold text-forest-700">
+              {t('leaderboard.usageSolo')}
+            </h3>
+            {table(soloRows, (r, p) => r.solo?.[p] ?? 0)}
+          </>
+        )}
       </CardContent>
     </Card>
   )
