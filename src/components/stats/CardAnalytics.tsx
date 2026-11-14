@@ -115,7 +115,7 @@ export function CardAnalytics({ cards, singleGame = false }: CardAnalyticsProps)
               className={cn(
                 'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
                 mode === m.id
-                  ? 'bg-forest-500 text-white'
+                  ? 'bg-fill-500 text-white'
                   : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
               )}
             >
@@ -131,7 +131,7 @@ export function CardAnalytics({ cards, singleGame = false }: CardAnalyticsProps)
             className={cn(
               'rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-all shrink-0',
               filterTag === null
-                ? 'bg-forest-500 text-white'
+                ? 'bg-fill-500 text-white'
                 : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
             )}
           >
@@ -149,7 +149,7 @@ export function CardAnalytics({ cards, singleGame = false }: CardAnalyticsProps)
                 className={cn(
                   'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
                   active
-                    ? 'ring-2 ring-forest-500 bg-forest-500'
+                    ? 'ring-2 ring-forest-500 bg-fill-500'
                     : 'bg-forest-100 hover:bg-forest-200',
                 )}
               >

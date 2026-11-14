@@ -28,6 +28,16 @@
 
   --color-cream: #f0f5f0;
   --color-cream-warm: #faf6f0;
+  --color-surface: #ffffff;
+
+  /* Solid fills under white text: same in light and dark */
+  --color-fill-500: #4a7c59;
+  --color-fill-600: #3d6b4a;
+  --color-fill-700: #2d4a2e;
+  --color-fill-800: #1e3320;
+  --color-fill-900: #0f1a10;
+  --color-barkfill-500: #8c7040;
+  --color-barkfill-600: #6e5830;
 
   /* Semantic colors */
   --color-primary: #4a7c59;
@@ -42,6 +52,62 @@
   --shadow-card: 0 4px 16px -4px rgba(45, 74, 46, 0.12), 0 2px 6px -2px rgba(45, 74, 46, 0.07);
   --shadow-card-hover: 0 10px 30px -6px rgba(45, 74, 46, 0.18), 0 4px 12px -3px rgba(45, 74, 46, 0.1);
   --shadow-hero: 0 12px 34px -10px rgba(45, 74, 46, 0.45);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-forest-50: #0e1510;
+  --color-forest-100: #223326;
+  --color-forest-200: #2e4433;
+  --color-forest-300: #4d6b53;
+  --color-forest-400: #7d9c83;
+  --color-forest-500: #8fb596;
+  --color-forest-600: #a6c8ac;
+  --color-forest-700: #c6dec9;
+  --color-forest-800: #dfeee1;
+  --color-forest-900: #f0f7f1;
+
+  --color-bark-50: #17130d;
+  --color-bark-100: #2a2317;
+  --color-bark-200: #3d3322;
+  --color-bark-300: #6e5a3c;
+  --color-bark-400: #a88a5a;
+  --color-bark-500: #c4a77d;
+  --color-bark-600: #d6bf96;
+  --color-bark-700: #e0d0b0;
+  --color-bark-800: #f0e6d4;
+  --color-bark-900: #faf6f0;
+
+  --color-cream: #0e1510;
+  --color-cream-warm: #12160f;
+  --color-surface: #18221a;
+
+  --color-amber-50: #2a2010;
+  --color-amber-100: #3a2c12;
+  --color-amber-700: #fcd34d;
+  --color-yellow-50: #2a2610;
+  --color-yellow-100: #3a3412;
+  --color-yellow-300: #6b5d14;
+  --color-yellow-600: #fde047;
+  --color-yellow-700: #fde047;
+  --color-blue-50: #111f33;
+  --color-blue-100: #172a47;
+  --color-blue-200: #1e3a5f;
+  --color-blue-300: #2b5080;
+  --color-blue-600: #93c5fd;
+  --color-blue-700: #93c5fd;
+  --color-sky-100: #10293a;
+  --color-sky-700: #7dd3fc;
+  --color-teal-100: #0f2e2b;
+  --color-teal-700: #5eead4;
+  --color-purple-100: #2a1c40;
+  --color-purple-700: #d8b4fe;
+  --color-gray-100: #262a27;
+  --color-slate-100: #232a30;
+  --color-slate-500: #a3b1c2;
+  --color-red-50: #331616;
+  --color-red-800: #fecaca;
 }
 
 /* Base styles */

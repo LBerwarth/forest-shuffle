@@ -140,7 +140,7 @@ export function FeedbackForm() {
           <ChevronDown className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-180')} />
         </button>
         {open && (
-          <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-lg border border-forest-200 bg-white shadow-card">
+          <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-lg border border-forest-200 bg-surface shadow-card">
             <input
               type="text"
               name="card-search"
@@ -173,7 +173,7 @@ export function FeedbackForm() {
 
       {/* Selected cards */}
       {items.map((it, i) => (
-        <div key={it.cardKey} className="rounded-xl border border-forest-200 bg-white p-3 space-y-2">
+        <div key={it.cardKey} className="rounded-xl border border-forest-200 bg-surface p-3 space-y-2">
           <div className="flex items-center justify-between gap-2">
             <span className="text-sm font-medium text-forest-800">{cardName(it.cardKey)}</span>
             <button
@@ -194,7 +194,7 @@ export function FeedbackForm() {
                 className={cn(
                   'rounded-full px-3 py-1 text-xs font-medium transition-all',
                   it.type === type
-                    ? 'bg-forest-500 text-white'
+                    ? 'bg-fill-500 text-white'
                     : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                 )}
               >

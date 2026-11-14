@@ -321,7 +321,7 @@ export function ScoreWizardPage() {
         />
       )}
       {/* Header */}
-      <div className="sticky top-0 z-40 border-b border-forest-200 bg-white/95 backdrop-blur-sm">
+      <div className="sticky top-0 z-40 border-b border-forest-200 bg-surface/95 backdrop-blur-sm">
         <div className="mx-auto max-w-lg px-4 py-3">
           <div className="flex items-center justify-between mb-2">
             <button type="button" onClick={() => navigate('/new-game')} className="text-forest-500">
@@ -351,7 +351,7 @@ export function ScoreWizardPage() {
                 className={cn(
                   'flex-1 rounded-lg px-2 py-1.5 text-xs font-medium transition-all truncate',
                   idx === currentPlayerIndex
-                    ? 'bg-forest-500 text-white'
+                    ? 'bg-fill-500 text-white'
                     : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
                 )}
               >
@@ -385,7 +385,7 @@ export function ScoreWizardPage() {
               value={cardSearch}
               onChange={(e) => setCardSearch(e.target.value)}
               placeholder={t('wizard.searchCards')}
-              className="w-full rounded-xl border border-forest-200 bg-white py-2.5 pl-9 pr-9 text-sm text-forest-800 placeholder:text-forest-400 focus:border-forest-500 focus:outline-none"
+              className="w-full rounded-xl border border-forest-200 bg-surface py-2.5 pl-9 pr-9 text-sm text-forest-800 placeholder:text-forest-400 focus:border-forest-500 focus:outline-none"
             />
             {cardSearch && (
               <button
@@ -410,7 +410,7 @@ export function ScoreWizardPage() {
                 className={cn(
                   'rounded-full px-2.5 py-1 text-[11px] font-medium whitespace-nowrap transition-all shrink-0',
                   tagFilter === null && expansionFilter === null
-                    ? 'bg-forest-500 text-white'
+                    ? 'bg-fill-500 text-white'
                     : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
                 )}
               >
@@ -428,7 +428,7 @@ export function ScoreWizardPage() {
                     className={cn(
                       'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
                       active
-                        ? 'ring-2 ring-forest-500 bg-forest-500'
+                        ? 'ring-2 ring-forest-500 bg-fill-500'
                         : 'bg-forest-100 hover:bg-forest-200',
                     )}
                   >
@@ -454,7 +454,7 @@ export function ScoreWizardPage() {
                     className={cn(
                       'flex items-center justify-center rounded-full p-0.5 transition-all shrink-0',
                       active
-                        ? 'ring-2 ring-forest-500 bg-forest-500'
+                        ? 'ring-2 ring-forest-500 bg-fill-500'
                         : 'bg-forest-100 hover:bg-forest-200',
                     )}
                   >
@@ -471,7 +471,7 @@ export function ScoreWizardPage() {
 
           {/* Special cave selector */}
           {isCaveStep && hasSpecialCaves && (
-            <div className="rounded-xl border border-forest-200 bg-white p-3 mb-1">
+            <div className="rounded-xl border border-forest-200 bg-surface p-3 mb-1">
               <p className="text-xs font-medium text-forest-600 mb-2">{t('wizard.specialCave')}</p>
               <div className="flex flex-wrap gap-1.5">
                 {/* None option */}
@@ -481,7 +481,7 @@ export function ScoreWizardPage() {
                   className={cn(
                     'rounded-full px-3 py-1.5 text-xs font-medium transition-all',
                     selectedSpecialCave === null
-                      ? 'bg-forest-500 text-white'
+                      ? 'bg-fill-500 text-white'
                       : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                   )}
                 >
@@ -495,7 +495,7 @@ export function ScoreWizardPage() {
                     className={cn(
                       'rounded-full px-3 py-1.5 text-xs font-medium transition-all',
                       selectedSpecialCave === key
-                        ? 'bg-forest-500 text-white'
+                        ? 'bg-fill-500 text-white'
                         : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                     )}
                   >
@@ -604,7 +604,7 @@ export function ScoreWizardPage() {
       </div>
 
       {/* Footer */}
-      <div className="sticky bottom-0 border-t border-forest-200 bg-white/95 backdrop-blur-sm">
+      <div className="sticky bottom-0 border-t border-forest-200 bg-surface/95 backdrop-blur-sm">
         <div className="mx-auto max-w-lg px-4 py-3 space-y-2">
           <ScoreSummary breakdown={currentPlayer.breakdown} edition={edition} />
           <div className="flex gap-3">

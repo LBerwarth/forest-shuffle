@@ -73,7 +73,7 @@ export function LeaderboardList({ players, solo = false }: LeaderboardListProps)
               className={cn(
                 'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
                 effectiveSort === field
-                  ? 'bg-forest-500 text-white'
+                  ? 'bg-fill-500 text-white'
                   : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
               )}
             >

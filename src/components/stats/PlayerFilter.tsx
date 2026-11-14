@@ -40,8 +40,8 @@ export function PlayerFilter({ players, selected, matchMode, onChange, onMatchMo
               className={cn(
                 'flex items-center gap-1.5 rounded-full px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-all border',
                 isOn
-                  ? 'border-forest-500 bg-forest-500 text-white'
-                  : 'border-forest-200 bg-white text-forest-500 hover:bg-forest-100',
+                  ? 'border-forest-500 bg-fill-500 text-white'
+                  : 'border-forest-200 bg-surface text-forest-500 hover:bg-forest-100',
               )}
             >
               <span
@@ -68,7 +68,7 @@ export function PlayerFilter({ players, selected, matchMode, onChange, onMatchMo
             className={cn(
               'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
               matchMode === 'union'
-                ? 'bg-forest-500 text-white'
+                ? 'bg-fill-500 text-white'
                 : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
             )}
           >
@@ -80,7 +80,7 @@ export function PlayerFilter({ players, selected, matchMode, onChange, onMatchMo
             className={cn(
               'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
               matchMode === 'intersection'
-                ? 'bg-forest-500 text-white'
+                ? 'bg-fill-500 text-white'
                 : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
             )}
           >

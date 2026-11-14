@@ -29,7 +29,7 @@ export function NoAppNotice({ className = '' }: NoAppNoticeProps) {
           <button
             type="button"
             onClick={handleCopy}
-            className="mt-1.5 inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 text-xs font-medium text-forest-600 border border-forest-200 hover:bg-forest-100 transition-colors"
+            className="mt-1.5 inline-flex items-center gap-1 rounded-md bg-surface px-2 py-1 text-xs font-medium text-forest-600 border border-forest-200 hover:bg-forest-100 transition-colors"
           >
             <span className="font-mono">{WEB_URL_DISPLAY}</span>
             <Copy className="h-3 w-3" />

@@ -112,7 +112,7 @@ export function LiveLobbyPage() {
             <Card key={player.id}>
               <CardContent className="py-3">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-forest-500 text-white text-sm font-bold shrink-0">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-fill-500 text-white text-sm font-bold shrink-0">
                     {player.player_name.charAt(0).toUpperCase()}
                   </div>
                   <span className="text-sm font-medium text-forest-700">

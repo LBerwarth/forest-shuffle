@@ -37,7 +37,7 @@ export function AppShell() {
       </main>
 
       {!isWizard && (
-        <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-forest-100 bg-white/85 backdrop-blur-md pb-safe">
+        <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-forest-100 bg-surface/85 backdrop-blur-md pb-safe">
           <div className="mx-auto flex max-w-lg items-center justify-around">
             {navItems.map(({ to, icon: Icon, key }) => (
               <NavLink

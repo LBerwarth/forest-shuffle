@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils'
 type BadgeTone = 'forest' | 'bark' | 'amber' | 'slate'
 
 const tones: Record<BadgeTone, { wrap: string; dot: string }> = {
-  forest: { wrap: 'bg-forest-100 text-forest-700', dot: 'bg-forest-500' },
-  bark: { wrap: 'bg-bark-100 text-bark-700', dot: 'bg-bark-500' },
+  forest: { wrap: 'bg-forest-100 text-forest-700', dot: 'bg-fill-500' },
+  bark: { wrap: 'bg-bark-100 text-bark-700', dot: 'bg-barkfill-500' },
   amber: { wrap: 'bg-amber-100 text-amber-700', dot: 'bg-amber-500' },
   slate: { wrap: 'bg-slate-100 text-slate-500', dot: 'bg-slate-400' },
 }

@@ -131,7 +131,7 @@ export function PlayerDetailPage() {
               className={cn(
                 'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
                 scope === s
-                  ? 'bg-forest-500 text-white'
+                  ? 'bg-fill-500 text-white'
                   : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
               )}
             >
@@ -193,12 +193,12 @@ export function PlayerDetailPage() {
           <CardContent>
             <ResponsiveContainer width="100%" height={220}>
               <RadarChart data={radarData}>
-                <PolarGrid stroke="#d4e6d4" />
-                <PolarAngleAxis dataKey="category" tick={{ fontSize: 11, fill: '#4a7c59' }} />
+                <PolarGrid stroke="var(--color-forest-100)" />
+                <PolarAngleAxis dataKey="category" tick={{ fontSize: 11, fill: 'var(--color-forest-500)' }} />
                 <Radar
                   dataKey="value"
-                  stroke="#4a7c59"
-                  fill="#4a7c59"
+                  stroke="var(--color-forest-500)"
+                  fill="var(--color-forest-500)"
                   fillOpacity={0.3}
                 />
               </RadarChart>
@@ -216,18 +216,18 @@ export function PlayerDetailPage() {
           <CardContent>
             <ResponsiveContainer width="100%" height={180}>
               <LineChart data={scoreHistory}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#d4e6d4" />
-                <XAxis dataKey="game" tick={{ fontSize: 11 }} stroke="#8cc08c" />
-                <YAxis tick={{ fontSize: 11 }} stroke="#8cc08c" />
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--color-forest-100)" />
+                <XAxis dataKey="game" tick={{ fontSize: 11 }} stroke="var(--color-forest-300)" />
+                <YAxis tick={{ fontSize: 11 }} stroke="var(--color-forest-300)" />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#f0f5f0',
-                    border: '1px solid #d4e6d4',
+                    backgroundColor: 'var(--color-surface)',
+                    border: '1px solid var(--color-forest-100)',
                     borderRadius: '8px',
                     fontSize: '12px',
                   }}
                 />
-                <Line type="monotone" dataKey="score" stroke="#4a7c59" strokeWidth={2} dot={{ fill: '#4a7c59' }} />
+                <Line type="monotone" dataKey="score" stroke="var(--color-forest-500)" strokeWidth={2} dot={{ fill: 'var(--color-forest-500)' }} />
               </LineChart>
             </ResponsiveContainer>
           </CardContent>

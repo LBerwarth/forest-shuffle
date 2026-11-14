@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft, Mountain, Globe, Download, Trash2, MessageSquare, Star } from 'lucide-react'
+import { ArrowLeft, Mountain, Globe, Moon, Download, Trash2, MessageSquare, Star } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { useSettingsStore } from '@/store/settings-store'
@@ -17,10 +17,14 @@ import { LanguagePicker } from '@/components/LanguagePicker'
 import { FeedbackForm } from '@/components/FeedbackForm'
 import { TipJar } from '@/components/TipJar'
 import { isPlayStoreApp, requestInAppReview } from '@/lib/play-store'
+import { getTheme, setTheme, type Theme } from '@/lib/theme'
+
+const THEMES: Theme[] = ['system', 'light', 'dark']
 
 export function SettingsPage() {
   const { t } = useTranslation()
   const navigate = useNavigate()
+  const [theme, setThemeState] = useState(getTheme)
   const { edition, setEdition, includeAlpine, toggleAlpine, includeWoodland, toggleWoodland, includeExploration, toggleExploration, includeExmoor, toggleExmoor } = useSettingsStore()
   const endScoringSession = useScoringStore((s) => s.endSession)
   const scoringSessionActive = useScoringStore((s) => s.sessionActive)
@@ -106,7 +110,7 @@ export function SettingsPage() {
               className={cn(
                 'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
                 edition === 'classic'
-                  ? 'bg-forest-500 text-white'
+                  ? 'bg-fill-500 text-white'
                   : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
               )}
             >
@@ -124,7 +128,7 @@ export function SettingsPage() {
               className={cn(
                 'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
                 edition === 'dartmoor'
-                  ? 'bg-forest-500 text-white'
+                  ? 'bg-fill-500 text-white'
                   : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
               )}
             >
@@ -142,7 +146,7 @@ export function SettingsPage() {
               className={cn(
                 'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
                 edition === 'smoky'
-                  ? 'bg-forest-500 text-white'
+                  ? 'bg-fill-500 text-white'
                   : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
               )}
             >
@@ -174,7 +178,7 @@ export function SettingsPage() {
               type="button"
               onClick={toggleAlpine}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                includeAlpine ? 'bg-forest-500' : 'bg-forest-200'
+                includeAlpine ? 'bg-fill-500' : 'bg-forest-200'
               }`}
             >
               <span
@@ -196,7 +200,7 @@ export function SettingsPage() {
               type="button"
               onClick={toggleWoodland}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                includeWoodland ? 'bg-forest-500' : 'bg-forest-200'
+                includeWoodland ? 'bg-fill-500' : 'bg-forest-200'
               }`}
             >
               <span
@@ -218,7 +222,7 @@ export function SettingsPage() {
               type="button"
               onClick={toggleExploration}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                includeExploration ? 'bg-forest-500' : 'bg-forest-200'
+                includeExploration ? 'bg-fill-500' : 'bg-forest-200'
               }`}
             >
               <span
@@ -253,7 +257,7 @@ export function SettingsPage() {
               type="button"
               onClick={toggleExmoor}
               className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ${
-                includeExmoor ? 'bg-forest-500' : 'bg-forest-200'
+                includeExmoor ? 'bg-fill-500' : 'bg-forest-200'
               }`}
             >
               <span
@@ -278,6 +282,38 @@ export function SettingsPage() {
         <CardContent>
           <p className="text-xs text-forest-400 mb-3">{t('settings.languageDesc')}</p>
           <LanguagePicker />
+        </CardContent>
+      </Card>
+
+      <Card className="mb-4">
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <Moon className="h-4 w-4 text-forest-500" />
+            <h2 className="font-heading text-base font-semibold text-forest-700">{t('settings.theme')}</h2>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-wrap gap-2">
+            {THEMES.map((value) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={theme === value}
+                onClick={() => {
+                  setTheme(value)
+                  setThemeState(value)
+                }}
+                className={cn(
+                  'rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition-all',
+                  theme === value
+                    ? 'bg-fill-500 text-white'
+                    : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
+                )}
+              >
+                {t(`settings.theme${value[0].toUpperCase()}${value.slice(1)}`)}
+              </button>
+            ))}
+          </div>
         </CardContent>
       </Card>
 

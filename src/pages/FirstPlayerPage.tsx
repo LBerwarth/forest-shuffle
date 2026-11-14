@@ -91,14 +91,14 @@ export function FirstPlayerPage() {
   return (
     <div
       ref={rootRef}
-      className="fixed inset-0 touch-none select-none overflow-hidden bg-forest-900 bg-[url('/forest-bg.jpg')] bg-cover bg-center [-webkit-touch-callout:none]"
+      className="fixed inset-0 touch-none select-none overflow-hidden bg-fill-900 bg-[url('/forest-bg.jpg')] bg-cover bg-center [-webkit-touch-callout:none]"
       onPointerDown={down}
       onPointerMove={move}
       onPointerUp={up}
       onPointerCancel={up}
       onContextMenu={(e) => e.preventDefault()}
     >
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-forest-700/90 via-forest-800/92 to-forest-900/95" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-fill-700/90 via-fill-800/92 to-fill-900/95" />
       <div
         className="pointer-events-none absolute inset-0 transition-opacity duration-500"
         style={{ backgroundColor: winnerColor, opacity: winnerColor ? 0.85 : 0 }}
@@ -126,7 +126,7 @@ export function FirstPlayerPage() {
           className={
             winner !== null
               ? 'mt-6 font-heading text-4xl font-bold drop-shadow'
-              : 'mt-4 text-sm font-light text-forest-50/90'
+              : 'mt-4 text-sm font-light text-white/90'
           }
         >
           {message}

@@ -65,7 +65,7 @@ export function StatsFilters({
             className={cn(
               'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
               edition === e
-                ? 'bg-forest-500 text-white'
+                ? 'bg-fill-500 text-white'
                 : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
             )}
           >
@@ -83,7 +83,7 @@ export function StatsFilters({
             className={cn(
               'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
               time === tm
-                ? 'bg-forest-500 text-white'
+                ? 'bg-fill-500 text-white'
                 : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
             )}
           >
@@ -101,7 +101,7 @@ export function StatsFilters({
             className={cn(
               'rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-all',
               playerCount === c
-                ? 'bg-forest-500 text-white'
+                ? 'bg-fill-500 text-white'
                 : 'bg-forest-100 text-forest-500 hover:bg-forest-200',
             )}
           >

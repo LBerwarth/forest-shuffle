@@ -50,10 +50,10 @@ export function WizardStepper({ currentStep, onStepChange, completedSteps, editi
             className={cn(
               'flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-all shrink-0',
               isCurrent
-                ? 'bg-forest-500 text-white shadow-sm'
+                ? 'bg-fill-500 text-white shadow-sm'
                 : isComplete
                   ? 'bg-forest-100 text-forest-600'
-                  : 'bg-white text-forest-400 border border-forest-200',
+                  : 'bg-surface text-forest-400 border border-forest-200',
             )}
           >
             {isComplete && !isCurrent ? (

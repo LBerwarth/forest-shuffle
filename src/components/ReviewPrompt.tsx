@@ -44,7 +44,7 @@ export function ReviewPrompt({ gameId }: { gameId: string | undefined }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/40 p-4 sm:items-center">
-      <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-xl">
+      <div className="w-full max-w-md rounded-2xl bg-surface p-5 shadow-xl">
         <div className="mb-2 flex items-center gap-2">
           <Star className="h-5 w-5 shrink-0 text-amber-500" />
           <h2 className="font-heading text-base font-bold text-forest-800">{t('review.title')}</h2>

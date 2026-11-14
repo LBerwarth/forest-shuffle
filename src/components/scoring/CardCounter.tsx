@@ -173,7 +173,7 @@ export function CardCounter({
   const displayPoints = isSetBonus ? setBonus : points
 
   return (
-    <div className="flex flex-col gap-2 rounded-xl border border-forest-200 bg-white p-3">
+    <div className="flex flex-col gap-2 rounded-xl border border-forest-200 bg-surface p-3">
       <div className="flex items-center justify-between gap-2">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 flex-wrap">
@@ -270,7 +270,7 @@ export function CardCounter({
           <button
             type="button"
             onClick={() => onCountChange(count + 1)}
-            className="flex h-8 w-8 items-center justify-center rounded-lg bg-forest-500 text-white hover:bg-forest-600 active:bg-forest-700 transition-colors"
+            className="flex h-8 w-8 items-center justify-center rounded-lg bg-fill-500 text-white hover:bg-fill-600 active:bg-fill-700 transition-colors"
           >
             <Plus className="h-3.5 w-3.5" />
           </button>

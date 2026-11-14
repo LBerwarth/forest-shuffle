@@ -17,7 +17,7 @@ export function ScoreSummary({ breakdown, className, edition = 'classic' }: Scor
 
   return (
     <div className={cn(
-      'flex items-center gap-3 rounded-xl border border-forest-200 bg-white/95 backdrop-blur-sm px-4 py-2.5 shadow-card',
+      'flex items-center gap-3 rounded-xl border border-forest-200 bg-surface/95 backdrop-blur-sm px-4 py-2.5 shadow-card',
       className,
     )}>
       <div className="flex flex-1 items-center gap-2 overflow-x-auto scrollbar-hide">

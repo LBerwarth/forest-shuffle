@@ -111,7 +111,7 @@ export function JoinSessionPage() {
           value={code}
           onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z2-9]/g, ''))}
           placeholder="ABCD"
-          className="w-full rounded-xl border-2 border-forest-200 bg-white px-4 py-4 text-center text-3xl font-bold tracking-[0.5em] text-forest-700 placeholder:text-forest-200 placeholder:tracking-[0.5em] focus:border-forest-400 focus:outline-none"
+          className="w-full rounded-xl border-2 border-forest-200 bg-surface px-4 py-4 text-center text-3xl font-bold tracking-[0.5em] text-forest-700 placeholder:text-forest-200 placeholder:tracking-[0.5em] focus:border-forest-400 focus:outline-none"
         />
       </div>
 
@@ -130,7 +130,7 @@ export function JoinSessionPage() {
                   'flex w-full items-center gap-3 rounded-xl border-2 px-4 py-3 transition-all text-left',
                   isSelected
                     ? 'border-forest-500 bg-forest-50'
-                    : 'border-forest-100 bg-white hover:border-forest-200',
+                    : 'border-forest-100 bg-surface hover:border-forest-200',
                 )}
               >
                 <div

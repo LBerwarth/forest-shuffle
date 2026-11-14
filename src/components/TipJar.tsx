@@ -11,7 +11,7 @@ export function TipJar({ className }: { className?: string }) {
   return (
     <Card className={className}>
       <CardContent className="py-5 text-center">
-        <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-forest-500 text-white shadow-sm">
+        <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-fill-500 text-white shadow-sm">
           <Coffee className="h-5 w-5" aria-hidden="true" />
         </span>
         <p className="mt-3 text-sm font-semibold text-forest-800">{t('tip.title')}</p>

@@ -50,16 +50,16 @@ export function HomePage() {
   }
 
   const quickActions = [
-    { to: '/new-game', icon: Calculator, label: t('home.newGame'), description: t('home.scoreGame'), color: 'bg-forest-500' },
-    { to: '/history', icon: History, label: t('home.history'), description: t('home.pastGames'), color: 'bg-bark-500' },
-    { to: '/players', icon: Users, label: t('home.players'), description: t('home.managePlayers'), color: 'bg-forest-600' },
-    { to: '/leaderboard', icon: BarChart3, label: t('home.leaderboard'), description: t('home.rankings'), color: 'bg-bark-600' },
+    { to: '/new-game', icon: Calculator, label: t('home.newGame'), description: t('home.scoreGame'), color: 'bg-fill-500' },
+    { to: '/history', icon: History, label: t('home.history'), description: t('home.pastGames'), color: 'bg-barkfill-500' },
+    { to: '/players', icon: Users, label: t('home.players'), description: t('home.managePlayers'), color: 'bg-fill-600' },
+    { to: '/leaderboard', icon: BarChart3, label: t('home.leaderboard'), description: t('home.rankings'), color: 'bg-barkfill-600' },
   ]
 
   return (
     <div className="mx-auto max-w-lg px-4 pt-6 pb-6">
       {/* Hero */}
-      <header className="relative mb-6 overflow-hidden rounded-3xl bg-gradient-to-br from-forest-500 via-forest-600 to-forest-800 px-5 py-7 text-white shadow-hero">
+      <header className="relative mb-6 overflow-hidden rounded-3xl bg-gradient-to-br from-fill-500 via-fill-600 to-fill-800 px-5 py-7 text-white shadow-hero">
         <div className="relative z-10 flex items-center gap-3.5">
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white/90 shadow-sm ring-1 ring-white/50">
             <AcornLogo className="h-10 w-10" />
@@ -68,7 +68,7 @@ export function HomePage() {
             <h1 className="font-heading text-2xl font-bold tracking-tight">
               {t('home.title')}
             </h1>
-            <p className="mt-0.5 text-sm font-light text-forest-50/90">
+            <p className="mt-0.5 text-sm font-light text-white/90">
               {t('home.subtitle')}
             </p>
           </div>
@@ -91,14 +91,14 @@ export function HomePage() {
       </Link>
       <Link
         to="/first-player"
-        className="mb-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-forest-700 to-forest-900 px-4 py-3 text-white shadow-card transition-shadow hover:shadow-card-hover"
+        className="mb-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-fill-700 to-fill-900 px-4 py-3 text-white shadow-card transition-shadow hover:shadow-card-hover"
       >
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-forest-50 text-forest-700">
           <Hand className="h-5 w-5" />
         </div>
         <div className="min-w-0 text-left">
           <p className="text-base font-semibold">{t('firstPlayer.title')}</p>
-          <p className="text-xs text-forest-100">{t('firstPlayer.hint')}</p>
+          <p className="text-xs text-white/80">{t('firstPlayer.hint')}</p>
         </div>
       </Link>
 
@@ -106,7 +106,7 @@ export function HomePage() {
         <Card className="mb-3 ring-forest-200">
           <CardContent className="py-3">
             <div className="flex items-start gap-3">
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-forest-500 text-white">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-fill-500 text-white">
                 <Sparkles className="h-5 w-5" />
               </div>
               <div className="min-w-0 flex-1">

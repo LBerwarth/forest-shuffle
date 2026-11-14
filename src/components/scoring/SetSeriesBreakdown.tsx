@@ -14,7 +14,7 @@ export function SetSeriesBreakdown({ series, iconUrl, titleKey }: SetSeriesBreak
   const total = series.reduce((sum, s) => sum + s.points, 0)
 
   return (
-    <div className="mb-3 rounded-lg border border-forest-200 bg-white/95 p-3 shadow-card">
+    <div className="mb-3 rounded-lg border border-forest-200 bg-surface/95 p-3 shadow-card">
       <div className="mb-2 flex items-center justify-between">
         <div className="flex items-center gap-1.5">
           <img src={iconUrl} alt="" className="h-5 w-5" />

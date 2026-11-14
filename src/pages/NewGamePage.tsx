@@ -152,7 +152,7 @@ export function NewGamePage() {
                 className={cn(
                   'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
                   edition === 'classic'
-                    ? 'bg-forest-500 text-white'
+                    ? 'bg-fill-500 text-white'
                     : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                 )}
               >
@@ -164,7 +164,7 @@ export function NewGamePage() {
                 className={cn(
                   'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
                   edition === 'dartmoor'
-                    ? 'bg-forest-500 text-white'
+                    ? 'bg-fill-500 text-white'
                     : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                 )}
               >
@@ -176,7 +176,7 @@ export function NewGamePage() {
                 className={cn(
                   'flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-all',
                   edition === 'smoky'
-                    ? 'bg-forest-500 text-white'
+                    ? 'bg-fill-500 text-white'
                     : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
                 )}
               >
@@ -205,7 +205,7 @@ export function NewGamePage() {
                   type="button"
                   onClick={toggleAlpine}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                    includeAlpine ? 'bg-forest-500' : 'bg-forest-200'
+                    includeAlpine ? 'bg-fill-500' : 'bg-forest-200'
                   }`}
                 >
                   <span
@@ -227,7 +227,7 @@ export function NewGamePage() {
                   type="button"
                   onClick={toggleWoodland}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                    includeWoodland ? 'bg-forest-500' : 'bg-forest-200'
+                    includeWoodland ? 'bg-fill-500' : 'bg-forest-200'
                   }`}
                 >
                   <span
@@ -249,7 +249,7 @@ export function NewGamePage() {
                   type="button"
                   onClick={toggleExploration}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                    includeExploration ? 'bg-forest-500' : 'bg-forest-200'
+                    includeExploration ? 'bg-fill-500' : 'bg-forest-200'
                   }`}
                 >
                   <span
@@ -281,7 +281,7 @@ export function NewGamePage() {
                   type="button"
                   onClick={toggleExmoor}
                   className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors ${
-                    includeExmoor ? 'bg-forest-500' : 'bg-forest-200'
+                    includeExmoor ? 'bg-fill-500' : 'bg-forest-200'
                   }`}
                 >
                   <span
@@ -334,7 +334,7 @@ export function NewGamePage() {
           <button
             type="button"
             onClick={() => { setMode('local'); setStep('players') }}
-            className="flex w-full items-center gap-4 rounded-xl border-2 border-forest-100 bg-white px-4 py-4 text-left transition-all hover:border-forest-300"
+            className="flex w-full items-center gap-4 rounded-xl border-2 border-forest-100 bg-surface px-4 py-4 text-left transition-all hover:border-forest-300"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forest-100 text-forest-600 shrink-0">
               <Calculator className="h-5 w-5" />
@@ -348,7 +348,7 @@ export function NewGamePage() {
           <button
             type="button"
             onClick={() => { setMode('live'); setStep('players') }}
-            className="flex w-full items-center gap-4 rounded-xl border-2 border-forest-100 bg-white px-4 py-4 text-left transition-all hover:border-forest-300"
+            className="flex w-full items-center gap-4 rounded-xl border-2 border-forest-100 bg-surface px-4 py-4 text-left transition-all hover:border-forest-300"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forest-100 text-forest-600 shrink-0">
               <Wifi className="h-5 w-5" />
@@ -387,7 +387,7 @@ export function NewGamePage() {
                     'flex w-full items-center gap-3 rounded-xl border-2 px-4 py-3 transition-all text-left',
                     isSelected
                       ? 'border-forest-500 bg-forest-50'
-                      : 'border-forest-100 bg-white hover:border-forest-200',
+                      : 'border-forest-100 bg-surface hover:border-forest-200',
                   )}
                 >
                   <div
@@ -474,7 +474,7 @@ export function NewGamePage() {
                   'flex w-full items-center gap-3 rounded-xl border-2 px-4 py-3 transition-all',
                   isSelected
                     ? 'border-forest-500 bg-forest-50'
-                    : 'border-forest-100 bg-white hover:border-forest-200',
+                    : 'border-forest-100 bg-surface hover:border-forest-200',
                 )}
               >
                 <button

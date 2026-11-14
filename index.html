@@ -7,6 +7,15 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#4a7c59" />
+    <script>
+      try {
+        var t = localStorage.getItem('theme')
+        if (t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.dataset.theme = 'dark'
+          document.querySelector('meta[name="theme-color"]').content = '#0e1510'
+        }
+      } catch (e) {}
+    </script>
     <meta name="description" content="Free scoring app &amp; score calculator for the Forest Shuffle board game — Alpine, Woodland Edge, Dartmoor, Exmoor, Smoky Mountains. Works offline, no ads." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://forest-shuffle-app.vercel.app/" />

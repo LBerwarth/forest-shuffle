@@ -35,7 +35,7 @@ export function LanguagePicker() {
           className={cn(
             'rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition-all',
             language === code
-              ? 'bg-forest-500 text-white'
+              ? 'bg-fill-500 text-white'
               : 'bg-forest-100 text-forest-600 hover:bg-forest-200',
           )}
         >
