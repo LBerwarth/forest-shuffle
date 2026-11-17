@@ -487,6 +487,10 @@
       {
         "q": "Existuje aplikace pro Android?",
         "a": "Ano. Forest Shuffle Scorer je na Google Play a webová verze běží v jakémkoli prohlížeči na iPhonu, Androidu i počítači."
+      },
+      {
+        "q": "Existuje aplikace pro iPhone?",
+        "a": "V App Storu bohužel ne. Apple si účtuje roční poplatek a vydání tam znamená hodně práce navíc, což je na bezplatný hobby projekt příliš. Aplikace ale na iPhonu i iPadu funguje úplně stejně: otevři ji v Safari, klepni na Sdílet a pak na „Přidat na plochu“. Dostane vlastní ikonu, otevře se na celou obrazovku, uchová všechny tvoje hry a aktualizuje se sama."
       }
     ],
     "playStore": "Stáhnout z Google Play",
