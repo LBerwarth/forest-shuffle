@@ -34,11 +34,11 @@
     "context": "Jegenyefenyőkhöz csatolt kártyák"
   },
   "european_larch": {
-    "name": "Vörösfenyő",
+    "name": "Európai vörösfenyő",
     "scoring": "3 pont darabonként"
   },
   "stone_pine": {
-    "name": "Cirbolyafenyő",
+    "name": "Havasi cirbolyafenyő",
     "scoring": "1 pont Alpine-kártyánként (önmagával együtt)",
     "context": "Cirbolyafenyőkhöz csatolt kártyák"
   },
@@ -122,7 +122,7 @@
     "scoring": "Lepkék: 0/3/6/12/20/35/55/80"
   },
   "red_squirrel": {
-    "name": "Vörös mókus",
+    "name": "Európai mókus",
     "scoring": "5 pont, ha egy tölgyön van",
     "context": "Hány vörös mókus van tölgyön?"
   },
@@ -131,7 +131,7 @@
     "scoring": "1 pont mancsos állatonként + 1 kétéltűnként"
   },
   "bearded_vulture": {
-    "name": "Szakállas keselyű",
+    "name": "Szakállas saskeselyű",
     "scoring": "1 pont barlangkártyánként"
   },
   "common_raven": {
@@ -139,7 +139,7 @@
     "scoring": "5 pont darabonként"
   },
   "phoebus_apollo": {
-    "name": "Kis Apolló-lepke",
+    "name": "Svájci Apolló-lepke",
     "scoring": "Lepkék: 0/3/6/12/20/35/55/80"
   },
   "barn_owl": {
@@ -193,8 +193,8 @@
     "scoring": "Gyűjtemény: 5/15/25 (1/2/3)"
   },
   "tree_frog": {
-    "name": "Zöld levelibéka",
-    "scoring": "5 pont szúnyogonként, zöld levelibékánként"
+    "name": "Levelibéka",
+    "scoring": "5 pont szúnyogonként, levelibékánként"
   },
   "stag_beetle": {
     "name": "Szarvasbogár",
@@ -209,7 +209,7 @@
     "scoring": "0 pont (gombának számít)"
   },
   "chanterelle": {
-    "name": "Rókagomba",
+    "name": "Sárga rókagomba",
     "scoring": "0 pont (gombának számít)"
   },
   "fly_agaric": {
@@ -249,7 +249,7 @@
     "scoring": "0 pont"
   },
   "tree_ferns": {
-    "name": "Páfrányfák",
+    "name": "Páfrány",
     "scoring": "6 pont kétéltűnként"
   },
   "alpine_newt": {
@@ -297,7 +297,7 @@
     "scoring": "3 pont darabonként"
   },
   "barbastelle": {
-    "name": "Piszedenevér",
+    "name": "Nyugati piszedenevér",
     "scoring": "Denevérek: 5 pont darabonként, ha 3+ denevérfaj"
   },
   "bechsteins_bat": {
@@ -305,7 +305,7 @@
     "scoring": "Denevérek: 5 pont darabonként, ha 3+ denevérfaj"
   },
   "brown_long_eared_bat": {
-    "name": "Barna hosszúfülű-denevér",
+    "name": "Barna hosszúfülű denevér",
     "scoring": "Denevérek: 5 pont darabonként, ha 3+ denevérfaj"
   },
   "greater_horseshoe_bat": {
@@ -321,7 +321,7 @@
     "scoring": "Denevérek: 5 pont darabonként, ha 3+ denevérfaj"
   },
   "roe_deer": {
-    "name": "Őz",
+    "name": "Európai őz",
     "scoring": "3 pont az azonos faszimbólumú kártyánként (önmagával együtt)",
     "context": "Az őzeddel azonos faszimbólumú kártyák"
   },
@@ -343,7 +343,7 @@
     "scoring": "10 pont, ha van legalább 1 őz"
   },
   "wolf": {
-    "name": "Farkas",
+    "name": "Szürke farkas",
     "scoring": "5 pont szarvasfélénként"
   },
   "wild_boar": {
@@ -372,7 +372,7 @@
     "scoring": "0 pont"
   },
   "fox": {
-    "name": "Róka",
+    "name": "Vörös róka",
     "scoring": "2 pont nyulanként az erdődben"
   },
   "violet_carpenter_bee": {
@@ -386,7 +386,7 @@
     "context": "Hány teljesen megtelt fa van az erdődben?"
   },
   "fallow_deer": {
-    "name": "Dámszarvas",
+    "name": "Európai dámvad",
     "scoring": "3 pont párosujjú patásonként (önmagával együtt)"
   },
   "gnat": {
